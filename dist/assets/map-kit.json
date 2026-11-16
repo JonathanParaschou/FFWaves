@@ -1,0 +1,1082 @@
+{
+  "format": "fusionfall-mesh-v1",
+  "source": "Local original FusionFall Unity Web Player cache; read-only extraction via UnityPackFF",
+  "assets": {
+    "town-building-1": {
+      "url": "assets/models/town-building-1.json",
+      "source": "map/dtetc/dt_mtdb_buil01.nif",
+      "bounds": {
+        "min": [
+          -10.1,
+          0.0,
+          -15.74051
+        ],
+        "max": [
+          10.1,
+          66.00896,
+          15.74051
+        ],
+        "size": [
+          20.19999,
+          66.00896,
+          31.48101
+        ]
+      },
+      "parts": 2,
+      "triangles": 2789,
+      "bytes": 205546
+    },
+    "town-building-2": {
+      "url": "assets/models/town-building-2.json",
+      "source": "map/dtetc/dt_mtdb_buil02.nif",
+      "bounds": {
+        "min": [
+          -15.10233,
+          0.0,
+          -25.49419
+        ],
+        "max": [
+          15.10233,
+          89.9405,
+          25.49419
+        ],
+        "size": [
+          30.20466,
+          89.9405,
+          50.98838
+        ]
+      },
+      "parts": 2,
+      "triangles": 3765,
+      "bytes": 277704
+    },
+    "town-building-3": {
+      "url": "assets/models/town-building-3.json",
+      "source": "map/dtetc/dt_mtdb_buil03.nif",
+      "bounds": {
+        "min": [
+          -18.88103,
+          0.0,
+          -27.80766
+        ],
+        "max": [
+          18.88103,
+          112.29098,
+          27.80766
+        ],
+        "size": [
+          37.76206,
+          112.29098,
+          55.61533
+        ]
+      },
+      "parts": 2,
+      "triangles": 3872,
+      "bytes": 284982
+    },
+    "town-building-4": {
+      "url": "assets/models/town-building-4.json",
+      "source": "map/dtetc/dt_mtdb_buil04.nif",
+      "bounds": {
+        "min": [
+          -25.63688,
+          0.0,
+          -37.57677
+        ],
+        "max": [
+          25.63688,
+          104.54538,
+          37.57677
+        ],
+        "size": [
+          51.27376,
+          104.54538,
+          75.15354
+        ]
+      },
+      "parts": 1,
+      "triangles": 10077,
+      "bytes": 724840
+    },
+    "town-bank": {
+      "url": "assets/models/town-bank.json",
+      "source": "map/dtetc/dt_mtdb_bank.nif",
+      "bounds": {
+        "min": [
+          -36.06503,
+          0.0,
+          -35.48748
+        ],
+        "max": [
+          36.06503,
+          21.72997,
+          35.48748
+        ],
+        "size": [
+          72.13007,
+          21.72997,
+          70.97495
+        ]
+      },
+      "parts": 5,
+      "triangles": 2626,
+      "bytes": 186923
+    },
+    "town-firestation": {
+      "url": "assets/models/town-firestation.json",
+      "source": "map/dtetc/dt_mtdb_firestation.nif",
+      "bounds": {
+        "min": [
+          -33.67577,
+          0.0,
+          -18.64536
+        ],
+        "max": [
+          33.67577,
+          33.48091,
+          18.64536
+        ],
+        "size": [
+          67.35155,
+          33.48091,
+          37.29072
+        ]
+      },
+      "parts": 6,
+      "triangles": 2856,
+      "bytes": 213553
+    },
+    "town-fountain": {
+      "url": "assets/models/town-fountain.json",
+      "source": "map/dtetc/dt_mtdb_fountain_01.nif",
+      "bounds": {
+        "min": [
+          -15.31518,
+          0.0,
+          -13.25385
+        ],
+        "max": [
+          15.31518,
+          16.57715,
+          13.25385
+        ],
+        "size": [
+          30.63036,
+          16.57715,
+          26.50769
+        ]
+      },
+      "parts": 6,
+      "triangles": 1556,
+      "bytes": 100784
+    },
+    "town-fountain-small": {
+      "url": "assets/models/town-fountain-small.json",
+      "source": "map/dtetc/dt_mtdb_fountain_02.nif",
+      "bounds": {
+        "min": [
+          -11.90324,
+          0.0,
+          -17.80771
+        ],
+        "max": [
+          11.90324,
+          11.59336,
+          17.80771
+        ],
+        "size": [
+          23.80648,
+          11.59336,
+          35.61542
+        ]
+      },
+      "parts": 15,
+      "triangles": 2788,
+      "bytes": 197686
+    },
+    "town-burger": {
+      "url": "assets/models/town-burger.json",
+      "source": "map/dexter/sb_sbdx_burgerfrenzy.nif",
+      "bounds": {
+        "min": [
+          -13.28259,
+          0.0,
+          -12.617
+        ],
+        "max": [
+          13.28259,
+          12.23561,
+          12.617
+        ],
+        "size": [
+          26.56517,
+          12.23561,
+          25.234
+        ]
+      },
+      "parts": 2,
+      "triangles": 4197,
+      "bytes": 300332
+    },
+    "town-candy": {
+      "url": "assets/models/town-candy.json",
+      "source": "map/dexter/sb_sbdx_jellyscandy.nif",
+      "bounds": {
+        "min": [
+          -13.96305,
+          0.0,
+          -16.7337
+        ],
+        "max": [
+          13.96305,
+          30.81867,
+          16.7337
+        ],
+        "size": [
+          27.92609,
+          30.81867,
+          33.4674
+        ]
+      },
+      "parts": 4,
+      "triangles": 4383,
+      "bytes": 304113
+    },
+    "town-park": {
+      "url": "assets/models/town-park.json",
+      "source": "map/technologysquare/dt_sdts_park_01.nif",
+      "bounds": {
+        "min": [
+          -27.31841,
+          0.0,
+          -14.99998
+        ],
+        "max": [
+          27.31841,
+          27.54954,
+          14.99998
+        ],
+        "size": [
+          54.63682,
+          27.54954,
+          29.99997
+        ]
+      },
+      "parts": 4,
+      "triangles": 823,
+      "bytes": 60116
+    },
+    "town-monorail": {
+      "url": "assets/models/town-monorail.json",
+      "source": "map/technologysquare/dt_sdts_monorail_01.nif",
+      "bounds": {
+        "min": [
+          -22.28535,
+          0.0,
+          -3.4181
+        ],
+        "max": [
+          22.28535,
+          4.51897,
+          3.4181
+        ],
+        "size": [
+          44.57069,
+          4.51897,
+          6.8362
+        ]
+      },
+      "parts": 4,
+      "triangles": 389,
+      "bytes": 25868
+    },
+    "town-monorail-bend": {
+      "url": "assets/models/town-monorail-bend.json",
+      "source": "map/technologysquare/dt_sdts_monorail_bend_01.nif",
+      "bounds": {
+        "min": [
+          -17.52478,
+          0.0,
+          -17.52475
+        ],
+        "max": [
+          17.52478,
+          4.51902,
+          17.52475
+        ],
+        "size": [
+          35.04957,
+          4.51902,
+          35.0495
+        ]
+      },
+      "parts": 5,
+      "triangles": 881,
+      "bytes": 58603
+    },
+    "town-busstop": {
+      "url": "assets/models/town-busstop.json",
+      "source": "map/dtetc/dt_etc_busstop01.nif",
+      "bounds": {
+        "min": [
+          -2.43045,
+          0.0,
+          -0.79198
+        ],
+        "max": [
+          2.43045,
+          2.45386,
+          0.79198
+        ],
+        "size": [
+          4.8609,
+          2.45386,
+          1.58396
+        ]
+      },
+      "parts": 3,
+      "triangles": 384,
+      "bytes": 29342
+    },
+    "town-trash": {
+      "url": "assets/models/town-trash.json",
+      "source": "map/dtetc/dt_etc_dustbin_01.nif",
+      "bounds": {
+        "min": [
+          -0.33333,
+          0.0,
+          -0.28867
+        ],
+        "max": [
+          0.33333,
+          0.30278,
+          0.28867
+        ],
+        "size": [
+          0.66665,
+          0.30278,
+          0.57734
+        ]
+      },
+      "parts": 1,
+      "triangles": 147,
+      "bytes": 11457
+    },
+    "town-pickup": {
+      "url": "assets/models/town-pickup.json",
+      "source": "map/dtetc/dt_etc_pickupcar_a_01.nif",
+      "bounds": {
+        "min": [
+          -1.82709,
+          0.0,
+          -3.06368
+        ],
+        "max": [
+          1.82709,
+          1.68084,
+          3.06368
+        ],
+        "size": [
+          3.65419,
+          1.68084,
+          6.12735
+        ]
+      },
+      "parts": 1,
+      "triangles": 1094,
+      "bytes": 66398
+    },
+    "town-firetruck": {
+      "url": "assets/models/town-firetruck.json",
+      "source": "map/dtetc/dt_etc_firecar_c_00.nif",
+      "bounds": {
+        "min": [
+          -2.08941,
+          0.0,
+          -7.48279
+        ],
+        "max": [
+          2.08941,
+          4.90697,
+          7.48279
+        ],
+        "size": [
+          4.17882,
+          4.90697,
+          14.96557
+        ]
+      },
+      "parts": 2,
+      "triangles": 2800,
+      "bytes": 180332
+    },
+    "town-trees": {
+      "url": "assets/models/town-trees.json",
+      "source": "map/dtetc/dt_tree_12.nif",
+      "bounds": {
+        "min": [
+          -0.34876,
+          0.0,
+          -0.30204
+        ],
+        "max": [
+          0.34876,
+          0.95129,
+          0.30204
+        ],
+        "size": [
+          0.69753,
+          0.95129,
+          0.60408
+        ]
+      },
+      "parts": 1,
+      "triangles": 254,
+      "bytes": 14650
+    },
+    "town-planter": {
+      "url": "assets/models/town-planter.json",
+      "source": "map/dexter/sb_sbdx_flowerbed04.nif",
+      "bounds": {
+        "min": [
+          -1.51,
+          0.0,
+          -0.71045
+        ],
+        "max": [
+          1.51,
+          0.78004,
+          0.71045
+        ],
+        "size": [
+          3.01999,
+          0.78004,
+          1.42091
+        ]
+      },
+      "parts": 2,
+      "triangles": 264,
+      "bytes": 19107
+    },
+    "yard-garage": {
+      "url": "assets/models/yard-garage.json",
+      "source": "map/nuclearplant/sb_otnp_garagetruck.nif",
+      "bounds": {
+        "min": [
+          -2.45887,
+          0.0,
+          -5.96313
+        ],
+        "max": [
+          2.45887,
+          5.32144,
+          5.96313
+        ],
+        "size": [
+          4.91774,
+          5.32144,
+          11.92627
+        ]
+      },
+      "parts": 3,
+      "triangles": 4696,
+      "bytes": 302666
+    },
+    "yard-cylinder": {
+      "url": "assets/models/yard-cylinder.json",
+      "source": "map/nuclearplant/sb_otnp_etc_cylinder_02.nif",
+      "bounds": {
+        "min": [
+          -0.42802,
+          0.0,
+          -0.42802
+        ],
+        "max": [
+          0.42802,
+          1.31663,
+          0.42802
+        ],
+        "size": [
+          0.85604,
+          1.31663,
+          0.85604
+        ]
+      },
+      "parts": 1,
+      "triangles": 262,
+      "bytes": 14824
+    },
+    "yard-preservatory": {
+      "url": "assets/models/yard-preservatory.json",
+      "source": "map/nuclearplant/sb_otnp_preservatory_01.nif",
+      "bounds": {
+        "min": [
+          -34.75819,
+          0.0,
+          -34.75818
+        ],
+        "max": [
+          34.75819,
+          6.1374,
+          34.75818
+        ],
+        "size": [
+          69.51637,
+          6.1374,
+          69.51637
+        ]
+      },
+      "parts": 1,
+      "triangles": 1108,
+      "bytes": 84861
+    },
+    "yard-fence": {
+      "url": "assets/models/yard-fence.json",
+      "source": "map/nuclearplant/sb_otnp_fence_50.nif",
+      "bounds": {
+        "min": [
+          -24.84003,
+          0.0,
+          -0.11577
+        ],
+        "max": [
+          24.84003,
+          4.16887,
+          0.11577
+        ],
+        "size": [
+          49.68006,
+          4.16887,
+          0.23154
+        ]
+      },
+      "parts": 4,
+      "triangles": 797,
+      "bytes": 53877
+    }
+  },
+  "textures": {
+    "0980a5484cc2": {
+      "map": "assets/textures/0980a5484cc2.webp",
+      "alpha": false,
+      "name": "DT_MTDB_Buil01_union_02.dds",
+      "size": [
+        512,
+        512
+      ]
+    },
+    "e87d05a7056a": {
+      "map": "assets/textures/e87d05a7056a.webp",
+      "alpha": false,
+      "name": "DT_MTDB_Buil01_union_01.dds",
+      "size": [
+        512,
+        256
+      ]
+    },
+    "130a7c11014e": {
+      "map": "assets/textures/130a7c11014e.webp",
+      "alpha": false,
+      "name": "DT_MTDB_Buil03_2.dds",
+      "size": [
+        512,
+        512
+      ]
+    },
+    "20e43983aa61": {
+      "map": "assets/textures/20e43983aa61.webp",
+      "alpha": false,
+      "name": "DT_MTDB_Buil02_OPT_00.dds",
+      "size": [
+        512,
+        512
+      ]
+    },
+    "9b47efee236c": {
+      "map": "assets/textures/9b47efee236c.webp",
+      "alpha": false,
+      "name": "DT_MTDB_Buil03_1.dds",
+      "size": [
+        512,
+        512
+      ]
+    },
+    "20b92b44b213": {
+      "map": "assets/textures/20b92b44b213.webp",
+      "alpha": false,
+      "name": "DT_MTDB_Buil04_OPT_00.dds",
+      "size": [
+        512,
+        512
+      ]
+    },
+    "0f7d44cb4244": {
+      "map": "assets/textures/0f7d44cb4244.webp",
+      "alpha": false,
+      "name": "DT_MTDB_bank_01.dds",
+      "size": [
+        512,
+        256
+      ]
+    },
+    "dece46c9bbcc": {
+      "map": "assets/textures/dece46c9bbcc.webp",
+      "alpha": false,
+      "name": "DT_MTDB_bank_02.dds",
+      "size": [
+        512,
+        512
+      ]
+    },
+    "324f6522437a": {
+      "map": "assets/textures/324f6522437a.webp",
+      "alpha": false,
+      "name": "DT_MTDB_bank_03.dds",
+      "size": [
+        512,
+        512
+      ]
+    },
+    "06470acfa23b": {
+      "map": "assets/textures/06470acfa23b.webp",
+      "alpha": false,
+      "name": "DT_MTDB_bank_04.dds",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "77bc206995be": {
+      "map": "assets/textures/77bc206995be.webp",
+      "alpha": true,
+      "name": "DT_MTDB_bank_05.dds",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "c29d3cfb05b3": {
+      "map": "assets/textures/c29d3cfb05b3.webp",
+      "alpha": false,
+      "name": "DT_MTDB_OPT_AA.dds",
+      "size": [
+        512,
+        512
+      ]
+    },
+    "bc350a518b22": {
+      "map": "assets/textures/bc350a518b22.webp",
+      "alpha": false,
+      "name": "DT_MTDB_EF_01.dds",
+      "size": [
+        256,
+        64
+      ]
+    },
+    "cb3050901460": {
+      "map": "assets/textures/cb3050901460.webp",
+      "alpha": true,
+      "name": "DT_MTDB_EF_02.dds",
+      "size": [
+        128,
+        64
+      ]
+    },
+    "880734e12640": {
+      "map": "assets/textures/880734e12640.webp",
+      "alpha": true,
+      "name": "DT_MTDB_glass_wall.dds",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "18c405fe7a53": {
+      "map": "assets/textures/18c405fe7a53.webp",
+      "alpha": false,
+      "name": "DT_fountain01_01.dds",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "9623f27943de": {
+      "map": "assets/textures/9623f27943de.webp",
+      "alpha": false,
+      "name": "DT_fountain01_02.dds",
+      "size": [
+        128,
+        256
+      ]
+    },
+    "e37bf4dcedc5": {
+      "map": "assets/textures/e37bf4dcedc5.webp",
+      "alpha": true,
+      "name": "DT_fountain01_03.dds",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "0a573d5250f8": {
+      "map": "assets/textures/0a573d5250f8.webp",
+      "alpha": true,
+      "name": "DT_fountain01_05.dds",
+      "size": [
+        32,
+        128
+      ]
+    },
+    "fb42206be05a": {
+      "map": "assets/textures/fb42206be05a.webp",
+      "alpha": false,
+      "name": "DT_MTDB_center.dds",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "2121aea98d48": {
+      "map": "assets/textures/2121aea98d48.webp",
+      "alpha": false,
+      "name": "DT_MTDB_outline.dds",
+      "size": [
+        512,
+        512
+      ]
+    },
+    "593ac0b4836b": {
+      "map": "assets/textures/593ac0b4836b.webp",
+      "alpha": false,
+      "name": "DT_MTDB_marble.dds",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "90bf176d3e30": {
+      "map": "assets/textures/90bf176d3e30.webp",
+      "alpha": false,
+      "name": "DT_MTDB_water_in_tile_01.dds",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "4bbdd68f6cae": {
+      "map": "assets/textures/4bbdd68f6cae.webp",
+      "alpha": true,
+      "name": "DT_MTDB_waterfall.dds",
+      "size": [
+        128,
+        256
+      ]
+    },
+    "02472d97c41a": {
+      "map": "assets/textures/02472d97c41a.webp",
+      "alpha": true,
+      "name": "DT_MTDB_water2.dds",
+      "size": [
+        128,
+        256
+      ]
+    },
+    "2e8a42d038d4": {
+      "map": "assets/textures/2e8a42d038d4.webp",
+      "alpha": true,
+      "name": "DT_MTDB_c.dds",
+      "size": [
+        512,
+        256
+      ]
+    },
+    "70026269a73d": {
+      "map": "assets/textures/70026269a73d.webp",
+      "alpha": true,
+      "name": "DT_MTDB_center_light.dds",
+      "size": [
+        64,
+        256
+      ]
+    },
+    "9d37a8adc1bc": {
+      "map": "assets/textures/9d37a8adc1bc.webp",
+      "alpha": true,
+      "name": "DT_MTDB_waterfall_side.dds",
+      "size": [
+        64,
+        256
+      ]
+    },
+    "5c7716d0f08e": {
+      "map": "assets/textures/5c7716d0f08e.webp",
+      "alpha": false,
+      "name": "SB_SBDX_DEXTER_BurgerFrenzy_2.DDS",
+      "size": [
+        512,
+        512
+      ]
+    },
+    "fd317d4b5bac": {
+      "map": "assets/textures/fd317d4b5bac.webp",
+      "alpha": false,
+      "name": "SB_SBDX_DEXTER_BurgerFrenzy_1.DDS",
+      "size": [
+        512,
+        512
+      ]
+    },
+    "f053cb540e2e": {
+      "map": "assets/textures/f053cb540e2e.webp",
+      "alpha": false,
+      "name": "SB_SBDX_jellyscandy_2.DDS",
+      "size": [
+        512,
+        512
+      ]
+    },
+    "70bc1b652c56": {
+      "map": "assets/textures/70bc1b652c56.webp",
+      "alpha": true,
+      "name": "SB_SBDX_jellyscandy_3.DDS",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "6225c490fd0a": {
+      "map": "assets/textures/6225c490fd0a.webp",
+      "alpha": false,
+      "name": "SB_SBDX_jellyscandy_1.DDS",
+      "size": [
+        512,
+        512
+      ]
+    },
+    "93e4cb43db92": {
+      "map": "assets/textures/93e4cb43db92.webp",
+      "alpha": true,
+      "name": "SB_SBDX_jellyscandy_4.DDS",
+      "size": [
+        128,
+        64
+      ]
+    },
+    "564003e2247a": {
+      "map": "assets/textures/564003e2247a.webp",
+      "alpha": true,
+      "name": "Tech_Park_02.dds",
+      "size": [
+        512,
+        512
+      ]
+    },
+    "3d392aeb46ab": {
+      "map": "assets/textures/3d392aeb46ab.webp",
+      "alpha": false,
+      "name": "Tech_Park_01.dds",
+      "size": [
+        512,
+        512
+      ]
+    },
+    "1a2cfc6d4f96": {
+      "map": "assets/textures/1a2cfc6d4f96.webp",
+      "alpha": true,
+      "name": "fluid_02.dds",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "4bb4b697c949": {
+      "map": "assets/textures/4bb4b697c949.webp",
+      "alpha": false,
+      "name": "DT_SDTS_monorail_01.dds",
+      "size": [
+        512,
+        256
+      ]
+    },
+    "85a15032936c": {
+      "map": "assets/textures/85a15032936c.webp",
+      "alpha": false,
+      "name": "DT_SDTS_monorail_ag_01.dds",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "f70269b8b52a": {
+      "map": "assets/textures/f70269b8b52a.webp",
+      "alpha": false,
+      "name": "DT_ETC_BUSSTOP01.dds",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "f4cc54def79f": {
+      "map": "assets/textures/f4cc54def79f.webp",
+      "alpha": true,
+      "name": "SB_ETC_BUSSTOP02.DDS",
+      "size": [
+        32,
+        32
+      ]
+    },
+    "8518a4f0e587": {
+      "map": "assets/textures/8518a4f0e587.webp",
+      "alpha": false,
+      "name": "DT_ETC_BUSSTOP02.DDS",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "0041268a755f": {
+      "map": "assets/textures/0041268a755f.webp",
+      "alpha": false,
+      "name": "dt_bench_se_01.dds",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "349d07bd9eea": {
+      "map": "assets/textures/349d07bd9eea.webp",
+      "alpha": false,
+      "name": "DT_pickupcar_01.dds",
+      "size": [
+        512,
+        512
+      ]
+    },
+    "589549845a53": {
+      "map": "assets/textures/589549845a53.webp",
+      "alpha": false,
+      "name": "DT_firecar_map_01.dds",
+      "size": [
+        512,
+        512
+      ]
+    },
+    "9c68414e046d": {
+      "map": "assets/textures/9c68414e046d.webp",
+      "alpha": true,
+      "name": "DT_firecar_map_04.dds",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "0bffa05af7de": {
+      "map": "assets/textures/0bffa05af7de.webp",
+      "alpha": false,
+      "name": "DT_tree_01.dds",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "edb2f6c341d5": {
+      "map": "assets/textures/edb2f6c341d5.webp",
+      "alpha": false,
+      "name": "SB_SBDX_FLOWER02.DDS",
+      "size": [
+        128,
+        256
+      ]
+    },
+    "fc1cda3b146b": {
+      "map": "assets/textures/fc1cda3b146b.webp",
+      "alpha": true,
+      "name": "SB_SBDX_FLOWER01.DDS",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "af14f72938eb": {
+      "map": "assets/textures/af14f72938eb.webp",
+      "alpha": false,
+      "name": "sb_slsy_garagetruck1_3.dds",
+      "size": [
+        512,
+        512
+      ]
+    },
+    "16ee1e5d107a": {
+      "map": "assets/textures/16ee1e5d107a.webp",
+      "alpha": false,
+      "name": "sb_slsy_garagetruck1_2.dds",
+      "size": [
+        512,
+        512
+      ]
+    },
+    "1ee0f422063e": {
+      "map": "assets/textures/1ee0f422063e.webp",
+      "alpha": false,
+      "name": "SB_SLSY_TRUCK.dds",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "f29a6592eeb6": {
+      "map": "assets/textures/f29a6592eeb6.webp",
+      "alpha": false,
+      "name": "SB_OTNP_wall_03.DDS",
+      "size": [
+        128,
+        256
+      ]
+    },
+    "7c81191ff8b8": {
+      "map": "assets/textures/7c81191ff8b8.webp",
+      "alpha": false,
+      "name": "SB_OTNP_wall_4.DDS",
+      "size": [
+        128,
+        256
+      ]
+    },
+    "5f9f7ec79e80": {
+      "map": "assets/textures/5f9f7ec79e80.webp",
+      "alpha": false,
+      "name": "SB_OTCD_FENCE_02E.dds",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "86a0755a9b98": {
+      "map": "assets/textures/86a0755a9b98.webp",
+      "alpha": false,
+      "name": "SB_OTCD_FENCE_01E.dds",
+      "size": [
+        16,
+        16
+      ]
+    },
+    "d6cbbe475444": {
+      "map": "assets/textures/d6cbbe475444.webp",
+      "alpha": false,
+      "name": "SB_OTNP_Fence_01.dds",
+      "size": [
+        128,
+        256
+      ]
+    },
+    "66a79f240e3a": {
+      "map": "assets/textures/66a79f240e3a.webp",
+      "alpha": true,
+      "name": "SB_OTCD_FENCE04.DDS",
+      "size": [
+        256,
+        256
+      ]
+    }
+  }
+}

@@ -1,0 +1,2326 @@
+{
+  "id": "original-city-block",
+  "url": "assets/map-sections/original-city-block.json",
+  "source": "map_5f04_5f04_2eunity3d/BuildPlayer-Map_04_04",
+  "crop": [
+    150.0,
+    300.0,
+    230.0,
+    390.0
+  ],
+  "bounds": {
+    "min": [
+      -47.57077,
+      0.0,
+      -88.80487
+    ],
+    "max": [
+      47.57077,
+      172.53087,
+      88.80487
+    ],
+    "size": [
+      95.14155,
+      172.53087,
+      177.60974
+    ]
+  },
+  "parts": 59,
+  "triangles": 15461,
+  "textures": [
+    {
+      "map": "assets/map-sections/textures/db194ace194a.png",
+      "alpha": false,
+      "name": "ETC_FENCE_011.DDS",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "map": "assets/map-sections/textures/b2be2df0d578.png",
+      "alpha": false,
+      "name": "DT_Building_light_01.dds",
+      "size": [
+        16,
+        256
+      ]
+    },
+    {
+      "map": "assets/map-sections/textures/a21fffb5f81b.png",
+      "alpha": false,
+      "name": "wd_zip.DDS",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "map": "assets/map-sections/textures/9da73b5ace0c.png",
+      "alpha": false,
+      "name": "DT_MTDB_center.dds",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "map": "assets/map-sections/textures/026fafaacfd4.png",
+      "alpha": false,
+      "name": "DT_MTDB_outline.dds",
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "map": "assets/map-sections/textures/812cd7e93fcb.png",
+      "alpha": false,
+      "name": "DT_MTDB_marble.dds",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "map": "assets/map-sections/textures/7057a9e29962.png",
+      "alpha": false,
+      "name": "DT_MTDB_water_in_tile_01.dds",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "map": "assets/map-sections/textures/7b404c3b8602.png",
+      "alpha": true,
+      "name": "DT_MTDB_waterfall.dds",
+      "size": [
+        128,
+        256
+      ]
+    },
+    {
+      "map": "assets/map-sections/textures/3bbf138453af.png",
+      "alpha": true,
+      "name": "DT_MTDB_water2.dds",
+      "size": [
+        128,
+        256
+      ]
+    },
+    {
+      "map": "assets/map-sections/textures/277e7e34351f.png",
+      "alpha": true,
+      "name": "DT_MTDB_c.dds",
+      "size": [
+        512,
+        256
+      ]
+    },
+    {
+      "map": "assets/map-sections/textures/722bf2941055.png",
+      "alpha": true,
+      "name": "DT_MTDB_center_light.dds",
+      "size": [
+        64,
+        256
+      ]
+    },
+    {
+      "map": "assets/map-sections/textures/40ce5993f852.png",
+      "alpha": true,
+      "name": "DT_MTDB_waterfall_side.dds",
+      "size": [
+        64,
+        256
+      ]
+    },
+    {
+      "map": "assets/map-sections/textures/c0f0a64ed298.png",
+      "alpha": false,
+      "name": "DT_MTDB_ETC05_01.dds",
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "map": "assets/map-sections/textures/447631c9f49c.png",
+      "alpha": false,
+      "name": "DT_highway_ag_02.dds",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "map": "assets/map-sections/textures/7f153f85155b.png",
+      "alpha": false,
+      "name": "DT_CT_Platform_01_fence_02.dds",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "map": "assets/map-sections/textures/2f7e06cd42ee.png",
+      "alpha": true,
+      "name": "DT_ST_04_01.dds",
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "map": "assets/map-sections/textures/d877f033eb30.png",
+      "alpha": false,
+      "name": "DT_ST_03.DDS",
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "map": "assets/map-sections/textures/edd5ea9e7e33.png",
+      "alpha": false,
+      "name": "DT_ST_01.DDS",
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "map": "assets/map-sections/textures/67cc093c6a16.png",
+      "alpha": false,
+      "name": "DT_ST_02.DDS",
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "map": "assets/map-sections/textures/5fa8e530a4d1.png",
+      "alpha": false,
+      "name": "st.dds",
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "map": "assets/map-sections/textures/071d85e9a527.png",
+      "alpha": false,
+      "name": "DT_ST_04_01_01.DDS",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "map": "assets/map-sections/textures/43e6a1b52776.png",
+      "alpha": false,
+      "name": "DT_highway_ag_01.dds",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "map": "assets/map-sections/textures/76348220be14.png",
+      "alpha": false,
+      "name": "Platform_01_fence_03.dds",
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "map": "assets/map-sections/textures/62145d024a36.png",
+      "alpha": false,
+      "name": "Platform_01_fence_05.dds",
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "map": "assets/map-sections/textures/8cfe7a1713f8.png",
+      "alpha": false,
+      "name": "Platform_01_fence_04.dds",
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "map": "assets/map-sections/textures/37eda0055eae.png",
+      "alpha": false,
+      "name": "DT_CT_Platform_01_fence_01.dds",
+      "size": [
+        256,
+        64
+      ]
+    },
+    {
+      "map": "assets/map-sections/textures/d4b2f14a972d.png",
+      "alpha": false,
+      "name": "wd_zip_8.DDS",
+      "size": [
+        256,
+        32
+      ]
+    },
+    {
+      "map": "assets/map-sections/textures/13e1beb36f30.png",
+      "alpha": false,
+      "name": "course.dds",
+      "size": [
+        128,
+        128
+      ]
+    }
+  ],
+  "placements": [
+    {
+      "id": 4846,
+      "name": "",
+      "path": [],
+      "matrix": [
+        -1e-07,
+        0.0,
+        -1.0,
+        0.0,
+        -1.0000001,
+        -1e-07,
+        1e-07,
+        0.0,
+        -1e-07,
+        1.0000001,
+        0.0,
+        0.0,
+        -205.6974528,
+        -49.8145103,
+        330.6589355,
+        1.0
+      ],
+      "meshRef": {
+        "asset": "C:\\Users\\jnpjo\\AppData\\LocalLow\\Unity\\Web Player\\Cache\\FusionFall\\world_5fshared_5fpart2_2eresourceFile\\CustomAssetBundle-eb3e0153c75d642be888dac9b6af516e",
+        "id": 939
+      },
+      "position": [
+        -205.69745,
+        -49.81451,
+        330.65894
+      ],
+      "materialCount": 1
+    },
+    {
+      "id": 4849,
+      "name": "",
+      "path": [],
+      "matrix": [
+        -1e-07,
+        0.0,
+        -1.0,
+        0.0,
+        -1.0000001,
+        -1e-07,
+        1e-07,
+        0.0,
+        -1e-07,
+        1.0000001,
+        0.0,
+        0.0,
+        -205.7431071,
+        -49.8172684,
+        366.8522949,
+        1.0
+      ],
+      "meshRef": {
+        "asset": "C:\\Users\\jnpjo\\AppData\\LocalLow\\Unity\\Web Player\\Cache\\FusionFall\\world_5fshared_5fpart2_2eresourceFile\\CustomAssetBundle-eb3e0153c75d642be888dac9b6af516e",
+        "id": 939
+      },
+      "position": [
+        -205.74311,
+        -49.81727,
+        366.85229
+      ],
+      "materialCount": 1
+    },
+    {
+      "id": 4852,
+      "name": "",
+      "path": [],
+      "matrix": [
+        -1e-07,
+        0.0,
+        -1.0,
+        0.0,
+        -1.0000001,
+        -1e-07,
+        1e-07,
+        0.0,
+        -1e-07,
+        1.0000001,
+        0.0,
+        0.0,
+        -192.2316325,
+        -49.7919655,
+        340.8569336,
+        1.0
+      ],
+      "meshRef": {
+        "asset": "C:\\Users\\jnpjo\\AppData\\LocalLow\\Unity\\Web Player\\Cache\\FusionFall\\world_5fshared_5fpart2_2eresourceFile\\CustomAssetBundle-eb3e0153c75d642be888dac9b6af516e",
+        "id": 939
+      },
+      "position": [
+        -192.23163,
+        -49.79197,
+        340.85693
+      ],
+      "materialCount": 1
+    },
+    {
+      "id": 4855,
+      "name": "",
+      "path": [],
+      "matrix": [
+        -1e-07,
+        0.0,
+        -1.0,
+        0.0,
+        -1.0000001,
+        -1e-07,
+        1e-07,
+        0.0,
+        -1e-07,
+        1.0000001,
+        0.0,
+        0.0,
+        -192.227238,
+        -49.7919655,
+        343.3740234,
+        1.0
+      ],
+      "meshRef": {
+        "asset": "C:\\Users\\jnpjo\\AppData\\LocalLow\\Unity\\Web Player\\Cache\\FusionFall\\world_5fshared_5fpart2_2eresourceFile\\CustomAssetBundle-eb3e0153c75d642be888dac9b6af516e",
+        "id": 939
+      },
+      "position": [
+        -192.22724,
+        -49.79197,
+        343.37402
+      ],
+      "materialCount": 1
+    },
+    {
+      "id": 4882,
+      "name": "",
+      "path": [],
+      "matrix": [
+        2e-07,
+        0.0,
+        1.0,
+        0.0,
+        1.0000001,
+        -1e-07,
+        -2e-07,
+        0.0,
+        1e-07,
+        1.0000001,
+        -0.0,
+        0.0,
+        -174.1582601,
+        -49.7919655,
+        330.1027832,
+        1.0
+      ],
+      "meshRef": {
+        "asset": "C:\\Users\\jnpjo\\AppData\\LocalLow\\Unity\\Web Player\\Cache\\FusionFall\\world_5fshared_5fpart2_2eresourceFile\\CustomAssetBundle-eb3e0153c75d642be888dac9b6af516e",
+        "id": 939
+      },
+      "position": [
+        -174.15826,
+        -49.79197,
+        330.10278
+      ],
+      "materialCount": 1
+    },
+    {
+      "id": 4885,
+      "name": "",
+      "path": [],
+      "matrix": [
+        2e-07,
+        0.0,
+        1.0,
+        0.0,
+        1.0000001,
+        -1e-07,
+        -2e-07,
+        0.0,
+        1e-07,
+        1.0000001,
+        -0.0,
+        0.0,
+        -174.2039144,
+        -49.791935,
+        366.2961426,
+        1.0
+      ],
+      "meshRef": {
+        "asset": "C:\\Users\\jnpjo\\AppData\\LocalLow\\Unity\\Web Player\\Cache\\FusionFall\\world_5fshared_5fpart2_2eresourceFile\\CustomAssetBundle-eb3e0153c75d642be888dac9b6af516e",
+        "id": 939
+      },
+      "position": [
+        -174.20391,
+        -49.79193,
+        366.29614
+      ],
+      "materialCount": 1
+    },
+    {
+      "id": 5185,
+      "name": "",
+      "path": [],
+      "matrix": [
+        -3.0299984,
+        1e-07,
+        -2e-07,
+        0.0,
+        1e-07,
+        3.0299988,
+        -1e-07,
+        0.0,
+        2e-07,
+        -1e-07,
+        -3.0299984,
+        0.0,
+        -221.9162102,
+        65.6600672,
+        386.5727309,
+        1.0
+      ],
+      "meshRef": {
+        "asset": "C:\\Users\\jnpjo\\AppData\\LocalLow\\Unity\\Web Player\\Cache\\FusionFall\\world_5fshared_5fpart2_2eresourceFile\\CustomAssetBundle-eb3e0153c75d642be888dac9b6af516e",
+        "id": 992
+      },
+      "position": [
+        -221.91621,
+        65.66007,
+        386.57273
+      ],
+      "materialCount": 1
+    },
+    {
+      "id": 5512,
+      "name": "",
+      "path": [],
+      "matrix": [
+        -0.6250586,
+        0.0,
+        3e-07,
+        0.0,
+        0.0,
+        0.6250586,
+        -0.0,
+        0.0,
+        -3e-07,
+        -0.0,
+        -0.6250586,
+        0.0,
+        -183.8840332,
+        -27.326273,
+        389.7897949,
+        1.0
+      ],
+      "meshRef": {
+        "asset": "C:\\Users\\jnpjo\\AppData\\LocalLow\\Unity\\Web Player\\Cache\\FusionFall\\world_5fshared_5fpart2_2eresourceFile\\CustomAssetBundle-eb3e0153c75d642be888dac9b6af516e",
+        "id": 685
+      },
+      "position": [
+        -183.88403,
+        -27.32627,
+        389.78979
+      ],
+      "materialCount": 1
+    },
+    {
+      "id": 5515,
+      "name": "",
+      "path": [],
+      "matrix": [
+        -1.0,
+        0.0,
+        4e-07,
+        0.0,
+        -3e-07,
+        1e-07,
+        -1.0,
+        0.0,
+        -1e-07,
+        -1.0000001,
+        -2e-07,
+        0.0,
+        -184.0108346,
+        -29.5834577,
+        389.6782014,
+        1.0
+      ],
+      "meshRef": {
+        "asset": "C:\\Users\\jnpjo\\AppData\\LocalLow\\Unity\\Web Player\\Cache\\FusionFall\\world_5fshared_5fpart2_2eresourceFile\\CustomAssetBundle-eb3e0153c75d642be888dac9b6af516e",
+        "id": 1231
+      },
+      "position": [
+        -184.01083,
+        -29.58346,
+        389.6782
+      ],
+      "materialCount": 1
+    },
+    {
+      "id": 5563,
+      "name": "Fountain:0",
+      "path": [
+        "Fountain",
+        "Fountain:0"
+      ],
+      "matrix": [
+        0.6600001,
+        0.0,
+        1e-07,
+        0.0,
+        1e-07,
+        -1e-07,
+        -0.6600002,
+        0.0,
+        0.0,
+        0.6600002,
+        -1e-07,
+        0.0,
+        -190.2229221,
+        -44.7047693,
+        349.0618244,
+        1.0
+      ],
+      "meshRef": {
+        "asset": "C:\\Users\\jnpjo\\AppData\\LocalLow\\Unity\\Web Player\\Cache\\FusionFall\\tutorial_2eresourceFile\\CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a",
+        "id": 866
+      },
+      "position": [
+        -190.22292,
+        -44.70477,
+        349.06182
+      ],
+      "materialCount": 1
+    },
+    {
+      "id": 5566,
+      "name": "",
+      "path": [
+        "Fountain"
+      ],
+      "matrix": [
+        0.6600001,
+        0.0,
+        1e-07,
+        0.0,
+        1e-07,
+        -1e-07,
+        -0.6600002,
+        0.0,
+        0.0,
+        0.6600002,
+        -1e-07,
+        0.0,
+        -190.1320801,
+        -50.1588135,
+        349.5214844,
+        1.0
+      ],
+      "meshRef": {
+        "asset": "C:\\Users\\jnpjo\\AppData\\LocalLow\\Unity\\Web Player\\Cache\\FusionFall\\tutorial_2eresourceFile\\CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a",
+        "id": 867
+      },
+      "position": [
+        -190.13208,
+        -50.15881,
+        349.52148
+      ],
+      "materialCount": 1
+    },
+    {
+      "id": 5569,
+      "name": "",
+      "path": [
+        "Fountain"
+      ],
+      "matrix": [
+        0.6600001,
+        0.0,
+        1e-07,
+        0.0,
+        1e-07,
+        -1e-07,
+        -0.6600002,
+        0.0,
+        0.0,
+        0.6600002,
+        -1e-07,
+        0.0,
+        -190.1320801,
+        -50.1588135,
+        349.5214844,
+        1.0
+      ],
+      "meshRef": {
+        "asset": "C:\\Users\\jnpjo\\AppData\\LocalLow\\Unity\\Web Player\\Cache\\FusionFall\\tutorial_2eresourceFile\\CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a",
+        "id": 868
+      },
+      "position": [
+        -190.13208,
+        -50.15881,
+        349.52148
+      ],
+      "materialCount": 1
+    },
+    {
+      "id": 5572,
+      "name": "",
+      "path": [
+        "Fountain"
+      ],
+      "matrix": [
+        0.6600001,
+        0.0,
+        1e-07,
+        0.0,
+        1e-07,
+        -1e-07,
+        -0.6600002,
+        0.0,
+        0.0,
+        0.6600002,
+        -1e-07,
+        0.0,
+        -190.2229221,
+        -44.7047693,
+        349.0618244,
+        1.0
+      ],
+      "meshRef": {
+        "asset": "C:\\Users\\jnpjo\\AppData\\LocalLow\\Unity\\Web Player\\Cache\\FusionFall\\tutorial_2eresourceFile\\CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a",
+        "id": 869
+      },
+      "position": [
+        -190.22292,
+        -44.70477,
+        349.06182
+      ],
+      "materialCount": 1
+    },
+    {
+      "id": 5575,
+      "name": "w",
+      "path": [
+        "w"
+      ],
+      "matrix": [
+        0.6600001,
+        0.0,
+        1e-07,
+        0.0,
+        1e-07,
+        -1e-07,
+        -0.6600002,
+        0.0,
+        0.0,
+        0.6600002,
+        -1e-07,
+        0.0,
+        -190.2229221,
+        -44.6438932,
+        349.0618252,
+        1.0
+      ],
+      "meshRef": {
+        "asset": "C:\\Users\\jnpjo\\AppData\\LocalLow\\Unity\\Web Player\\Cache\\FusionFall\\tutorial_2eresourceFile\\CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a",
+        "id": 871
+      },
+      "position": [
+        -190.22292,
+        -44.64389,
+        349.06183
+      ],
+      "materialCount": 1
+    },
+    {
+      "id": 5578,
+      "name": "wawa:0",
+      "path": [
+        "wawa",
+        "wawa:0"
+      ],
+      "matrix": [
+        0.6600001,
+        0.0,
+        1e-07,
+        0.0,
+        1e-07,
+        -1e-07,
+        -0.6600002,
+        0.0,
+        0.0,
+        0.6600002,
+        -1e-07,
+        0.0,
+        -190.2331215,
+        -44.9162244,
+        349.0618374,
+        1.0
+      ],
+      "meshRef": {
+        "asset": "C:\\Users\\jnpjo\\AppData\\LocalLow\\Unity\\Web Player\\Cache\\FusionFall\\tutorial_2eresourceFile\\CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a",
+        "id": 872
+      },
+      "position": [
+        -190.23312,
+        -44.91622,
+        349.06184
+      ],
+      "materialCount": 1
+    },
+    {
+      "id": 5581,
+      "name": "waterfall",
+      "path": [
+        "waterfall"
+      ],
+      "matrix": [
+        0.6600001,
+        0.0,
+        1e-07,
+        0.0,
+        1e-07,
+        -1e-07,
+        -0.6600002,
+        0.0,
+        0.0,
+        0.6600002,
+        -1e-07,
+        0.0,
+        -190.2229221,
+        -44.6959479,
+        349.0618252,
+        1.0
+      ],
+      "meshRef": {
+        "asset": "C:\\Users\\jnpjo\\AppData\\LocalLow\\Unity\\Web Player\\Cache\\FusionFall\\tutorial_2eresourceFile\\CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a",
+        "id": 873
+      },
+      "position": [
+        -190.22292,
+        -44.69595,
+        349.06183
+      ],
+      "materialCount": 1
+    },
+    {
+      "id": 5584,
+      "name": "waterfall01",
+      "path": [
+        "waterfall01"
+      ],
+      "matrix": [
+        0.6600001,
+        0.0,
+        1e-07,
+        0.0,
+        1e-07,
+        -1e-07,
+        -0.6600002,
+        0.0,
+        0.0,
+        0.6600002,
+        -1e-07,
+        0.0,
+        -191.0705208,
+        -44.313039,
+        350.6140209,
+        1.0
+      ],
+      "meshRef": {
+        "asset": "C:\\Users\\jnpjo\\AppData\\LocalLow\\Unity\\Web Player\\Cache\\FusionFall\\tutorial_2eresourceFile\\CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a",
+        "id": 874
+      },
+      "position": [
+        -191.07052,
+        -44.31304,
+        350.61402
+      ],
+      "materialCount": 1
+    },
+    {
+      "id": 5587,
+      "name": "Editable Mesh",
+      "path": [
+        "water_top",
+        "Editable Mesh"
+      ],
+      "matrix": [
+        0.6600001,
+        0.0,
+        1e-07,
+        0.0,
+        1e-07,
+        -1e-07,
+        -0.6600002,
+        0.0,
+        0.0,
+        0.6600002,
+        -1e-07,
+        0.0,
+        -190.2229221,
+        -45.2424748,
+        349.0618255,
+        1.0
+      ],
+      "meshRef": {
+        "asset": "C:\\Users\\jnpjo\\AppData\\LocalLow\\Unity\\Web Player\\Cache\\FusionFall\\tutorial_2eresourceFile\\CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a",
+        "id": 875
+      },
+      "position": [
+        -190.22292,
+        -45.24247,
+        349.06183
+      ],
+      "materialCount": 1
+    },
+    {
+      "id": 5590,
+      "name": "Editable Mesh1",
+      "path": [
+        "cloud",
+        "Editable Mesh1"
+      ],
+      "matrix": [
+        0.6600001,
+        0.0,
+        1e-07,
+        0.0,
+        1e-07,
+        -1e-07,
+        -0.6600002,
+        0.0,
+        0.0,
+        0.6600002,
+        -1e-07,
+        0.0,
+        -190.9851024,
+        -49.0195394,
+        351.448958,
+        1.0
+      ],
+      "meshRef": {
+        "asset": "C:\\Users\\jnpjo\\AppData\\LocalLow\\Unity\\Web Player\\Cache\\FusionFall\\tutorial_2eresourceFile\\CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a",
+        "id": 876
+      },
+      "position": [
+        -190.9851,
+        -49.01954,
+        351.44896
+      ],
+      "materialCount": 1
+    },
+    {
+      "id": 5593,
+      "name": "Editable Mesh2",
+      "path": [
+        "light3",
+        "Editable Mesh2"
+      ],
+      "matrix": [
+        -0.6600001,
+        -1e-07,
+        -3e-07,
+        0.0,
+        2e-07,
+        0.3785607,
+        -0.5406404,
+        0.0,
+        2e-07,
+        -0.5406403,
+        -0.3785607,
+        0.0,
+        -190.0853304,
+        -48.9645301,
+        345.0508057,
+        1.0
+      ],
+      "meshRef": {
+        "asset": "C:\\Users\\jnpjo\\AppData\\LocalLow\\Unity\\Web Player\\Cache\\FusionFall\\tutorial_2eresourceFile\\CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a",
+        "id": 877
+      },
+      "position": [
+        -190.08533,
+        -48.96453,
+        345.05081
+      ],
+      "materialCount": 1
+    },
+    {
+      "id": 5596,
+      "name": "Editable Mesh3",
+      "path": [
+        "Object01",
+        "Editable Mesh3"
+      ],
+      "matrix": [
+        -0.6499732,
+        0.1146078,
+        -2e-07,
+        0.0,
+        0.0810401,
+        0.4596005,
+        -0.4666905,
+        0.0,
+        -0.0810398,
+        -0.4596005,
+        -0.4666906,
+        0.0,
+        -190.0336603,
+        -48.3865091,
+        345.0508056,
+        1.0
+      ],
+      "meshRef": {
+        "asset": "C:\\Users\\jnpjo\\AppData\\LocalLow\\Unity\\Web Player\\Cache\\FusionFall\\tutorial_2eresourceFile\\CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a",
+        "id": 756
+      },
+      "position": [
+        -190.03366,
+        -48.38651,
+        345.05081
+      ],
+      "materialCount": 1
+    },
+    {
+      "id": 5599,
+      "name": "Editable Mesh4",
+      "path": [
+        "Object02",
+        "Editable Mesh4"
+      ],
+      "matrix": [
+        -0.6600001,
+        0.0,
+        -2e-07,
+        0.0,
+        2e-07,
+        0.4666906,
+        -0.4666906,
+        0.0,
+        2e-07,
+        -0.4666906,
+        -0.4666906,
+        0.0,
+        -190.0853304,
+        -48.9645312,
+        345.0508046,
+        1.0
+      ],
+      "meshRef": {
+        "asset": "C:\\Users\\jnpjo\\AppData\\LocalLow\\Unity\\Web Player\\Cache\\FusionFall\\tutorial_2eresourceFile\\CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a",
+        "id": 757
+      },
+      "position": [
+        -190.08533,
+        -48.96453,
+        345.0508
+      ],
+      "materialCount": 1
+    },
+    {
+      "id": 5602,
+      "name": "Editable Mesh5",
+      "path": [
+        "Object03",
+        "Editable Mesh5"
+      ],
+      "matrix": [
+        -0.6600001,
+        0.0,
+        -2e-07,
+        0.0,
+        2e-07,
+        0.4666906,
+        -0.4666906,
+        0.0,
+        2e-07,
+        -0.4666906,
+        -0.4666906,
+        0.0,
+        -190.0853306,
+        -48.9645306,
+        345.0508051,
+        1.0
+      ],
+      "meshRef": {
+        "asset": "C:\\Users\\jnpjo\\AppData\\LocalLow\\Unity\\Web Player\\Cache\\FusionFall\\tutorial_2eresourceFile\\CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a",
+        "id": 758
+      },
+      "position": [
+        -190.08533,
+        -48.96453,
+        345.05081
+      ],
+      "materialCount": 1
+    },
+    {
+      "id": 5605,
+      "name": "Plane02",
+      "path": [
+        "Plane02"
+      ],
+      "matrix": [
+        0.6600001,
+        1e-07,
+        0.0,
+        0.0,
+        -0.0,
+        -1e-07,
+        0.6600002,
+        0.0,
+        1e-07,
+        -0.6600002,
+        -1e-07,
+        0.0,
+        -193.1833557,
+        -49.1396336,
+        350.4366106,
+        1.0
+      ],
+      "meshRef": {
+        "asset": "C:\\Users\\jnpjo\\AppData\\LocalLow\\Unity\\Web Player\\Cache\\FusionFall\\tutorial_2eresourceFile\\CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a",
+        "id": 759
+      },
+      "position": [
+        -193.18336,
+        -49.13963,
+        350.43661
+      ],
+      "materialCount": 1
+    },
+    {
+      "id": 5722,
+      "name": "",
+      "path": [],
+      "matrix": [
+        -1.1e-06,
+        0.0,
+        1.0,
+        0.0,
+        0.9999999,
+        2e-07,
+        1.1e-06,
+        0.0,
+        -2e-07,
+        1.0,
+        -0.0,
+        0.0,
+        -229.6047363,
+        -50.1588135,
+        374.2116699,
+        1.0
+      ],
+      "meshRef": {
+        "asset": "C:\\Users\\jnpjo\\AppData\\LocalLow\\Unity\\Web Player\\Cache\\FusionFall\\world_5fshared_5fpart2_2eresourceFile\\CustomAssetBundle-eb3e0153c75d642be888dac9b6af516e",
+        "id": 1029
+      },
+      "position": [
+        -229.60474,
+        -50.15881,
+        374.21167
+      ],
+      "materialCount": 1
+    },
+    {
+      "id": 9616,
+      "name": "",
+      "path": [
+        "gear_04"
+      ],
+      "matrix": [
+        -1e-07,
+        0.0,
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        1e-07,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        -156.5902554,
+        -35.5618265,
+        383.262328,
+        1.0
+      ],
+      "meshRef": {
+        "asset": "C:\\Users\\jnpjo\\AppData\\LocalLow\\Unity\\Web Player\\Cache\\FusionFall\\dongresources_5f04_5f04_2eresourceFile\\CustomAssetBundle-20b5bf4bae3cf400e8bf17c542dc05f6",
+        "id": 156
+      },
+      "position": [
+        -156.59026,
+        -35.56183,
+        383.26233
+      ],
+      "materialCount": 1
+    },
+    {
+      "id": 6223,
+      "name": "",
+      "path": [],
+      "matrix": [
+        1.0,
+        -2e-07,
+        1e-07,
+        0.0,
+        -2e-07,
+        -1.0,
+        0.0,
+        0.0,
+        1e-07,
+        -0.0,
+        -1.0,
+        0.0,
+        -204.0937049,
+        38.7090991,
+        301.7381208,
+        1.0
+      ],
+      "meshRef": {
+        "asset": "C:\\Users\\jnpjo\\AppData\\LocalLow\\Unity\\Web Player\\Cache\\FusionFall\\dongresources_5f04_5f04_2eresourceFile\\CustomAssetBundle-20b5bf4bae3cf400e8bf17c542dc05f6",
+        "id": 65
+      },
+      "position": [
+        -204.0937,
+        38.7091,
+        301.73812
+      ],
+      "materialCount": 1
+    },
+    {
+      "id": 6226,
+      "name": "",
+      "path": [],
+      "matrix": [
+        1.0,
+        -2e-07,
+        1e-07,
+        0.0,
+        -2e-07,
+        -1.0,
+        0.0,
+        0.0,
+        1e-07,
+        -0.0,
+        -1.0,
+        0.0,
+        -204.0937049,
+        38.7090991,
+        301.7381208,
+        1.0
+      ],
+      "meshRef": {
+        "asset": "C:\\Users\\jnpjo\\AppData\\LocalLow\\Unity\\Web Player\\Cache\\FusionFall\\dongresources_5f04_5f04_2eresourceFile\\CustomAssetBundle-20b5bf4bae3cf400e8bf17c542dc05f6",
+        "id": 36
+      },
+      "position": [
+        -204.0937,
+        38.7091,
+        301.73812
+      ],
+      "materialCount": 1
+    },
+    {
+      "id": 6229,
+      "name": "",
+      "path": [],
+      "matrix": [
+        1.0,
+        -2e-07,
+        1e-07,
+        0.0,
+        -2e-07,
+        -1.0,
+        0.0,
+        0.0,
+        1e-07,
+        -0.0,
+        -1.0,
+        0.0,
+        -204.0937049,
+        38.7090991,
+        301.7381208,
+        1.0
+      ],
+      "meshRef": {
+        "asset": "C:\\Users\\jnpjo\\AppData\\LocalLow\\Unity\\Web Player\\Cache\\FusionFall\\dongresources_5f04_5f04_2eresourceFile\\CustomAssetBundle-20b5bf4bae3cf400e8bf17c542dc05f6",
+        "id": 37
+      },
+      "position": [
+        -204.0937,
+        38.7091,
+        301.73812
+      ],
+      "materialCount": 1
+    },
+    {
+      "id": 6232,
+      "name": "",
+      "path": [],
+      "matrix": [
+        1.0,
+        -2e-07,
+        1e-07,
+        0.0,
+        -2e-07,
+        -1.0,
+        0.0,
+        0.0,
+        1e-07,
+        -0.0,
+        -1.0,
+        0.0,
+        -204.0937049,
+        38.7090991,
+        301.7381208,
+        1.0
+      ],
+      "meshRef": {
+        "asset": "C:\\Users\\jnpjo\\AppData\\LocalLow\\Unity\\Web Player\\Cache\\FusionFall\\dongresources_5f04_5f04_2eresourceFile\\CustomAssetBundle-20b5bf4bae3cf400e8bf17c542dc05f6",
+        "id": 39
+      },
+      "position": [
+        -204.0937,
+        38.7091,
+        301.73812
+      ],
+      "materialCount": 1
+    },
+    {
+      "id": 6235,
+      "name": "",
+      "path": [],
+      "matrix": [
+        1.0,
+        -2e-07,
+        1e-07,
+        0.0,
+        -2e-07,
+        -1.0,
+        0.0,
+        0.0,
+        1e-07,
+        -0.0,
+        -1.0,
+        0.0,
+        -204.0937049,
+        38.7090991,
+        301.7381208,
+        1.0
+      ],
+      "meshRef": {
+        "asset": "C:\\Users\\jnpjo\\AppData\\LocalLow\\Unity\\Web Player\\Cache\\FusionFall\\dongresources_5f04_5f04_2eresourceFile\\CustomAssetBundle-20b5bf4bae3cf400e8bf17c542dc05f6",
+        "id": 41
+      },
+      "position": [
+        -204.0937,
+        38.7091,
+        301.73812
+      ],
+      "materialCount": 1
+    },
+    {
+      "id": 6412,
+      "name": "",
+      "path": [],
+      "matrix": [
+        1.0,
+        -2e-07,
+        1e-07,
+        0.0,
+        -2e-07,
+        -1.0,
+        -0.0,
+        0.0,
+        1e-07,
+        0.0,
+        -1.0,
+        0.0,
+        -204.0937536,
+        38.4629822,
+        301.7465933,
+        1.0
+      ],
+      "meshRef": {
+        "asset": "C:\\Users\\jnpjo\\AppData\\LocalLow\\Unity\\Web Player\\Cache\\FusionFall\\dongresources_5f04_5f04_2eresourceFile\\CustomAssetBundle-20b5bf4bae3cf400e8bf17c542dc05f6",
+        "id": 48
+      },
+      "position": [
+        -204.09375,
+        38.46298,
+        301.74659
+      ],
+      "materialCount": 1
+    },
+    {
+      "id": 6415,
+      "name": "",
+      "path": [],
+      "matrix": [
+        1.0,
+        -2e-07,
+        1e-07,
+        0.0,
+        -2e-07,
+        -1.0,
+        -0.0,
+        0.0,
+        1e-07,
+        0.0,
+        -1.0,
+        0.0,
+        -204.0937414,
+        38.7173157,
+        301.7380636,
+        1.0
+      ],
+      "meshRef": {
+        "asset": "C:\\Users\\jnpjo\\AppData\\LocalLow\\Unity\\Web Player\\Cache\\FusionFall\\dongresources_5f04_5f04_2eresourceFile\\CustomAssetBundle-20b5bf4bae3cf400e8bf17c542dc05f6",
+        "id": 50
+      },
+      "position": [
+        -204.09374,
+        38.71732,
+        301.73806
+      ],
+      "materialCount": 1
+    },
+    {
+      "id": 6511,
+      "name": "",
+      "path": [
+        "gear_13"
+      ],
+      "matrix": [
+        3e-07,
+        0.0,
+        1.0000001,
+        0.0,
+        1.0000001,
+        -1e-07,
+        -4e-07,
+        0.0,
+        0.0,
+        1.0000001,
+        -1e-07,
+        0.0,
+        -201.762949,
+        26.8738938,
+        328.5144998,
+        1.0
+      ],
+      "meshRef": {
+        "asset": "C:\\Users\\jnpjo\\AppData\\LocalLow\\Unity\\Web Player\\Cache\\FusionFall\\dongresources_5f04_5f04_2eresourceFile\\CustomAssetBundle-20b5bf4bae3cf400e8bf17c542dc05f6",
+        "id": 187
+      },
+      "position": [
+        -201.76295,
+        26.87389,
+        328.5145
+      ],
+      "materialCount": 1
+    },
+    {
+      "id": 13442,
+      "name": "Plane2",
+      "path": [
+        "Plane97_BillboardCamera",
+        "Plane2"
+      ],
+      "matrix": [
+        1.0000003,
+        0.0,
+        -2e-07,
+        0.0,
+        0.0,
+        -1.0000003,
+        0.0,
+        0.0,
+        1e-07,
+        0.0,
+        -1.0000003,
+        0.0,
+        -191.5197941,
+        -46.4373507,
+        301.9175824,
+        1.0
+      ],
+      "meshRef": {
+        "asset": "C:\\Users\\jnpjo\\AppData\\LocalLow\\Unity\\Web Player\\Cache\\FusionFall\\dongresources_5f04_5f04_2eresourceFile\\CustomAssetBundle-20b5bf4bae3cf400e8bf17c542dc05f6",
+        "id": 159
+      },
+      "position": [
+        -191.51979,
+        -46.43735,
+        301.91758
+      ],
+      "materialCount": 1
+    },
+    {
+      "id": 13448,
+      "name": "Plane3",
+      "path": [
+        "Plane98_BillboardCamera",
+        "Plane3"
+      ],
+      "matrix": [
+        1.0000003,
+        0.0,
+        -2e-07,
+        0.0,
+        0.0,
+        -1.0000003,
+        0.0,
+        0.0,
+        1e-07,
+        0.0,
+        -1.0000003,
+        0.0,
+        -195.2760042,
+        -46.4373507,
+        301.9175826,
+        1.0
+      ],
+      "meshRef": {
+        "asset": "C:\\Users\\jnpjo\\AppData\\LocalLow\\Unity\\Web Player\\Cache\\FusionFall\\dongresources_5f04_5f04_2eresourceFile\\CustomAssetBundle-20b5bf4bae3cf400e8bf17c542dc05f6",
+        "id": 160
+      },
+      "position": [
+        -195.276,
+        -46.43735,
+        301.91758
+      ],
+      "materialCount": 1
+    },
+    {
+      "id": 7717,
+      "name": "Plane86",
+      "path": [
+        "Plane86"
+      ],
+      "matrix": [
+        1.0000003,
+        0.0,
+        -2e-07,
+        0.0,
+        0.0,
+        -1.0000003,
+        0.0,
+        0.0,
+        1e-07,
+        0.0,
+        -1.0000003,
+        0.0,
+        -191.0009048,
+        -47.3510094,
+        302.2330014,
+        1.0
+      ],
+      "meshRef": {
+        "asset": "C:\\Users\\jnpjo\\AppData\\LocalLow\\Unity\\Web Player\\Cache\\FusionFall\\dongresources_5f04_5f04_2eresourceFile\\CustomAssetBundle-20b5bf4bae3cf400e8bf17c542dc05f6",
+        "id": 161
+      },
+      "position": [
+        -191.0009,
+        -47.35101,
+        302.233
+      ],
+      "materialCount": 1
+    },
+    {
+      "id": 7720,
+      "name": "Plane85",
+      "path": [
+        "Plane85"
+      ],
+      "matrix": [
+        1.0000003,
+        0.0,
+        -2e-07,
+        0.0,
+        0.0,
+        -1.0000003,
+        0.0,
+        0.0,
+        1e-07,
+        0.0,
+        -1.0000003,
+        0.0,
+        -191.0009048,
+        -47.3510094,
+        302.2330014,
+        1.0
+      ],
+      "meshRef": {
+        "asset": "C:\\Users\\jnpjo\\AppData\\LocalLow\\Unity\\Web Player\\Cache\\FusionFall\\dongresources_5f04_5f04_2eresourceFile\\CustomAssetBundle-20b5bf4bae3cf400e8bf17c542dc05f6",
+        "id": 162
+      },
+      "position": [
+        -191.0009,
+        -47.35101,
+        302.233
+      ],
+      "materialCount": 1
+    },
+    {
+      "id": 7729,
+      "name": "Plane95",
+      "path": [
+        "Plane95"
+      ],
+      "matrix": [
+        0.8433784,
+        0.0,
+        -2e-07,
+        0.0,
+        -0.0,
+        0.8433782,
+        0.0,
+        0.0,
+        2e-07,
+        -0.0,
+        0.8433784,
+        0.0,
+        -195.8889034,
+        -47.3510094,
+        302.2330016,
+        1.0
+      ],
+      "meshRef": {
+        "asset": "C:\\Users\\jnpjo\\AppData\\LocalLow\\Unity\\Web Player\\Cache\\FusionFall\\dongresources_5f04_5f04_2eresourceFile\\CustomAssetBundle-20b5bf4bae3cf400e8bf17c542dc05f6",
+        "id": 165
+      },
+      "position": [
+        -195.8889,
+        -47.35101,
+        302.233
+      ],
+      "materialCount": 1
+    },
+    {
+      "id": 7732,
+      "name": "Plane96",
+      "path": [
+        "Plane96"
+      ],
+      "matrix": [
+        0.8433784,
+        0.0,
+        -2e-07,
+        0.0,
+        -0.0,
+        0.8433782,
+        0.0,
+        0.0,
+        2e-07,
+        -0.0,
+        0.8433784,
+        0.0,
+        -195.8889034,
+        -47.3510094,
+        302.2330016,
+        1.0
+      ],
+      "meshRef": {
+        "asset": "C:\\Users\\jnpjo\\AppData\\LocalLow\\Unity\\Web Player\\Cache\\FusionFall\\dongresources_5f04_5f04_2eresourceFile\\CustomAssetBundle-20b5bf4bae3cf400e8bf17c542dc05f6",
+        "id": 166
+      },
+      "position": [
+        -195.8889,
+        -47.35101,
+        302.233
+      ],
+      "materialCount": 1
+    },
+    {
+      "id": 7747,
+      "name": "Plane106",
+      "path": [
+        "Plane106"
+      ],
+      "matrix": [
+        -0.0,
+        -2e-07,
+        -1.0000001,
+        0.0,
+        0.0,
+        -1.0,
+        2e-07,
+        0.0,
+        -1.0000001,
+        0.0,
+        0.0,
+        0.0,
+        -195.2592704,
+        -46.6506172,
+        300.115384,
+        1.0
+      ],
+      "meshRef": {
+        "asset": "C:\\Users\\jnpjo\\AppData\\LocalLow\\Unity\\Web Player\\Cache\\FusionFall\\dongresources_5f04_5f04_2eresourceFile\\CustomAssetBundle-20b5bf4bae3cf400e8bf17c542dc05f6",
+        "id": 173
+      },
+      "position": [
+        -195.25927,
+        -46.65062,
+        300.11538
+      ],
+      "materialCount": 1
+    },
+    {
+      "id": 7750,
+      "name": "Plane87",
+      "path": [
+        "Plane87"
+      ],
+      "matrix": [
+        -0.0,
+        -2e-07,
+        -1.0000001,
+        0.0,
+        0.0,
+        -1.0,
+        2e-07,
+        0.0,
+        -1.0000001,
+        0.0,
+        0.0,
+        0.0,
+        -195.2592704,
+        -46.8743631,
+        300.115384,
+        1.0
+      ],
+      "meshRef": {
+        "asset": "C:\\Users\\jnpjo\\AppData\\LocalLow\\Unity\\Web Player\\Cache\\FusionFall\\dongresources_5f04_5f04_2eresourceFile\\CustomAssetBundle-20b5bf4bae3cf400e8bf17c542dc05f6",
+        "id": 174
+      },
+      "position": [
+        -195.25927,
+        -46.87436,
+        300.11538
+      ],
+      "materialCount": 1
+    },
+    {
+      "id": 7753,
+      "name": "Plane103",
+      "path": [
+        "Plane103"
+      ],
+      "matrix": [
+        -0.0,
+        -2e-07,
+        -1.0000001,
+        0.0,
+        0.0,
+        -1.0,
+        2e-07,
+        0.0,
+        -1.0000001,
+        0.0,
+        0.0,
+        0.0,
+        -195.2592705,
+        -46.8748556,
+        300.124334,
+        1.0
+      ],
+      "meshRef": {
+        "asset": "C:\\Users\\jnpjo\\AppData\\LocalLow\\Unity\\Web Player\\Cache\\FusionFall\\dongresources_5f04_5f04_2eresourceFile\\CustomAssetBundle-20b5bf4bae3cf400e8bf17c542dc05f6",
+        "id": 175
+      },
+      "position": [
+        -195.25927,
+        -46.87486,
+        300.12433
+      ],
+      "materialCount": 1
+    },
+    {
+      "id": 7756,
+      "name": "Plane105",
+      "path": [
+        "Plane105"
+      ],
+      "matrix": [
+        -0.0,
+        -2e-07,
+        -1.0000001,
+        0.0,
+        0.0,
+        -1.0,
+        2e-07,
+        0.0,
+        -1.0000001,
+        0.0,
+        0.0,
+        0.0,
+        -195.2592705,
+        -46.6501247,
+        300.124334,
+        1.0
+      ],
+      "meshRef": {
+        "asset": "C:\\Users\\jnpjo\\AppData\\LocalLow\\Unity\\Web Player\\Cache\\FusionFall\\dongresources_5f04_5f04_2eresourceFile\\CustomAssetBundle-20b5bf4bae3cf400e8bf17c542dc05f6",
+        "id": 123
+      },
+      "position": [
+        -195.25927,
+        -46.65012,
+        300.12433
+      ],
+      "materialCount": 1
+    },
+    {
+      "id": 7759,
+      "name": "Plane107",
+      "path": [
+        "Plane107"
+      ],
+      "matrix": [
+        -0.0,
+        -2e-07,
+        -1.0000001,
+        0.0,
+        0.0,
+        -1.0,
+        2e-07,
+        0.0,
+        -1.0000001,
+        0.0,
+        0.0,
+        0.0,
+        -195.2592705,
+        -46.6501247,
+        301.9521411,
+        1.0
+      ],
+      "meshRef": {
+        "asset": "C:\\Users\\jnpjo\\AppData\\LocalLow\\Unity\\Web Player\\Cache\\FusionFall\\dongresources_5f04_5f04_2eresourceFile\\CustomAssetBundle-20b5bf4bae3cf400e8bf17c542dc05f6",
+        "id": 124
+      },
+      "position": [
+        -195.25927,
+        -46.65012,
+        301.95214
+      ],
+      "materialCount": 1
+    },
+    {
+      "id": 7762,
+      "name": "Plane90",
+      "path": [
+        "Plane90"
+      ],
+      "matrix": [
+        -0.0,
+        -2e-07,
+        -1.0000001,
+        0.0,
+        0.0,
+        -1.0,
+        2e-07,
+        0.0,
+        -1.0000001,
+        0.0,
+        0.0,
+        0.0,
+        -195.2592705,
+        -46.8748556,
+        301.9521411,
+        1.0
+      ],
+      "meshRef": {
+        "asset": "C:\\Users\\jnpjo\\AppData\\LocalLow\\Unity\\Web Player\\Cache\\FusionFall\\dongresources_5f04_5f04_2eresourceFile\\CustomAssetBundle-20b5bf4bae3cf400e8bf17c542dc05f6",
+        "id": 125
+      },
+      "position": [
+        -195.25927,
+        -46.87486,
+        301.95214
+      ],
+      "materialCount": 1
+    },
+    {
+      "id": 7765,
+      "name": "Plane108",
+      "path": [
+        "Plane108"
+      ],
+      "matrix": [
+        -0.0,
+        -2e-07,
+        -1.0000001,
+        0.0,
+        0.0,
+        -1.0,
+        2e-07,
+        0.0,
+        -1.0000001,
+        0.0,
+        0.0,
+        0.0,
+        -191.5264556,
+        -46.6501248,
+        301.952141,
+        1.0
+      ],
+      "meshRef": {
+        "asset": "C:\\Users\\jnpjo\\AppData\\LocalLow\\Unity\\Web Player\\Cache\\FusionFall\\dongresources_5f04_5f04_2eresourceFile\\CustomAssetBundle-20b5bf4bae3cf400e8bf17c542dc05f6",
+        "id": 126
+      },
+      "position": [
+        -191.52646,
+        -46.65012,
+        301.95214
+      ],
+      "materialCount": 1
+    },
+    {
+      "id": 7774,
+      "name": "Plane111",
+      "path": [
+        "Plane111"
+      ],
+      "matrix": [
+        -0.0,
+        -2e-07,
+        -1.0000001,
+        0.0,
+        0.0,
+        -1.0,
+        2e-07,
+        0.0,
+        -1.0000001,
+        0.0,
+        0.0,
+        0.0,
+        -191.5264556,
+        -46.6506172,
+        300.1153839,
+        1.0
+      ],
+      "meshRef": {
+        "asset": "C:\\Users\\jnpjo\\AppData\\LocalLow\\Unity\\Web Player\\Cache\\FusionFall\\dongresources_5f04_5f04_2eresourceFile\\CustomAssetBundle-20b5bf4bae3cf400e8bf17c542dc05f6",
+        "id": 129
+      },
+      "position": [
+        -191.52646,
+        -46.65062,
+        300.11538
+      ],
+      "materialCount": 1
+    },
+    {
+      "id": 7777,
+      "name": "Plane112",
+      "path": [
+        "Plane112"
+      ],
+      "matrix": [
+        -0.0,
+        -2e-07,
+        -1.0000001,
+        0.0,
+        0.0,
+        -1.0,
+        2e-07,
+        0.0,
+        -1.0000001,
+        0.0,
+        0.0,
+        0.0,
+        -191.5264556,
+        -46.8743631,
+        300.1153839,
+        1.0
+      ],
+      "meshRef": {
+        "asset": "C:\\Users\\jnpjo\\AppData\\LocalLow\\Unity\\Web Player\\Cache\\FusionFall\\dongresources_5f04_5f04_2eresourceFile\\CustomAssetBundle-20b5bf4bae3cf400e8bf17c542dc05f6",
+        "id": 130
+      },
+      "position": [
+        -191.52646,
+        -46.87436,
+        300.11538
+      ],
+      "materialCount": 1
+    },
+    {
+      "id": 7780,
+      "name": "Plane113",
+      "path": [
+        "Plane113"
+      ],
+      "matrix": [
+        -0.0,
+        -2e-07,
+        -1.0000001,
+        0.0,
+        0.0,
+        -1.0,
+        2e-07,
+        0.0,
+        -1.0000001,
+        0.0,
+        0.0,
+        0.0,
+        -191.5264557,
+        -46.8748556,
+        300.1243338,
+        1.0
+      ],
+      "meshRef": {
+        "asset": "C:\\Users\\jnpjo\\AppData\\LocalLow\\Unity\\Web Player\\Cache\\FusionFall\\dongresources_5f04_5f04_2eresourceFile\\CustomAssetBundle-20b5bf4bae3cf400e8bf17c542dc05f6",
+        "id": 131
+      },
+      "position": [
+        -191.52646,
+        -46.87486,
+        300.12433
+      ],
+      "materialCount": 1
+    },
+    {
+      "id": 7783,
+      "name": "Plane114",
+      "path": [
+        "Plane114"
+      ],
+      "matrix": [
+        -0.0,
+        -2e-07,
+        -1.0000001,
+        0.0,
+        0.0,
+        -1.0,
+        2e-07,
+        0.0,
+        -1.0000001,
+        0.0,
+        0.0,
+        0.0,
+        -191.5264557,
+        -46.6501248,
+        300.1243338,
+        1.0
+      ],
+      "meshRef": {
+        "asset": "C:\\Users\\jnpjo\\AppData\\LocalLow\\Unity\\Web Player\\Cache\\FusionFall\\dongresources_5f04_5f04_2eresourceFile\\CustomAssetBundle-20b5bf4bae3cf400e8bf17c542dc05f6",
+        "id": 132
+      },
+      "position": [
+        -191.52646,
+        -46.65012,
+        300.12433
+      ],
+      "materialCount": 1
+    },
+    {
+      "id": 7786,
+      "name": "Plane115",
+      "path": [
+        "Plane115"
+      ],
+      "matrix": [
+        -0.0,
+        -2e-07,
+        -1.0000001,
+        0.0,
+        0.0,
+        -1.0,
+        2e-07,
+        0.0,
+        -1.0000001,
+        0.0,
+        0.0,
+        0.0,
+        -191.5264556,
+        -46.8748556,
+        301.952141,
+        1.0
+      ],
+      "meshRef": {
+        "asset": "C:\\Users\\jnpjo\\AppData\\LocalLow\\Unity\\Web Player\\Cache\\FusionFall\\dongresources_5f04_5f04_2eresourceFile\\CustomAssetBundle-20b5bf4bae3cf400e8bf17c542dc05f6",
+        "id": 133
+      },
+      "position": [
+        -191.52646,
+        -46.87486,
+        301.95214
+      ],
+      "materialCount": 1
+    },
+    {
+      "id": 8215,
+      "name": "",
+      "path": [],
+      "matrix": [
+        -1.43,
+        1e-07,
+        -2e-07,
+        0.0,
+        1e-07,
+        1.4299284,
+        0.0142997,
+        0.0,
+        2e-07,
+        0.0142997,
+        -1.4299285,
+        0.0,
+        -183.8888686,
+        -27.0513901,
+        388.4603234,
+        1.0
+      ],
+      "meshRef": {
+        "asset": "C:\\Users\\jnpjo\\AppData\\LocalLow\\Unity\\Web Player\\Cache\\FusionFall\\world_5fshared_5fpart2_2eresourceFile\\CustomAssetBundle-eb3e0153c75d642be888dac9b6af516e",
+        "id": 931
+      },
+      "position": [
+        -183.88887,
+        -27.05139,
+        388.46032
+      ],
+      "materialCount": 1
+    },
+    {
+      "id": 8218,
+      "name": "Rectangle01",
+      "path": [
+        "Rectangle01"
+      ],
+      "matrix": [
+        0.0,
+        -1.4299284,
+        -0.0142998,
+        0.0,
+        1e-07,
+        0.0142998,
+        -1.4299284,
+        0.0,
+        1.4299999,
+        -0.0,
+        1e-07,
+        0.0,
+        -183.9290198,
+        -26.3526429,
+        385.9492073,
+        1.0
+      ],
+      "meshRef": {
+        "asset": "C:\\Users\\jnpjo\\AppData\\LocalLow\\Unity\\Web Player\\Cache\\FusionFall\\world_5fshared_5fpart2_2eresourceFile\\CustomAssetBundle-eb3e0153c75d642be888dac9b6af516e",
+        "id": 924
+      },
+      "position": [
+        -183.92902,
+        -26.35264,
+        385.94921
+      ],
+      "materialCount": 1
+    },
+    {
+      "id": 8221,
+      "name": "Plane01",
+      "path": [
+        "Plane01"
+      ],
+      "matrix": [
+        -1e-07,
+        1.4294612,
+        0.0392529,
+        0.0,
+        2e-07,
+        0.0392528,
+        -1.4294611,
+        0.0,
+        -1.43,
+        0.0,
+        -4e-07,
+        0.0,
+        -183.9130511,
+        -26.1587989,
+        386.2774611,
+        1.0
+      ],
+      "meshRef": {
+        "asset": "C:\\Users\\jnpjo\\AppData\\LocalLow\\Unity\\Web Player\\Cache\\FusionFall\\world_5fshared_5fpart2_2eresourceFile\\CustomAssetBundle-eb3e0153c75d642be888dac9b6af516e",
+        "id": 923
+      },
+      "position": [
+        -183.91305,
+        -26.1588,
+        386.27746
+      ],
+      "materialCount": 1
+    },
+    {
+      "id": 8224,
+      "name": "Plane02",
+      "path": [
+        "Plane02"
+      ],
+      "matrix": [
+        -1e-07,
+        1.4294612,
+        0.0392529,
+        0.0,
+        2e-07,
+        0.0392528,
+        -1.4294611,
+        0.0,
+        -1.43,
+        0.0,
+        -4e-07,
+        0.0,
+        -183.913051,
+        -26.1486413,
+        385.2617375,
+        1.0
+      ],
+      "meshRef": {
+        "asset": "C:\\Users\\jnpjo\\AppData\\LocalLow\\Unity\\Web Player\\Cache\\FusionFall\\world_5fshared_5fpart2_2eresourceFile\\CustomAssetBundle-eb3e0153c75d642be888dac9b6af516e",
+        "id": 922
+      },
+      "position": [
+        -183.91305,
+        -26.14864,
+        385.26174
+      ],
+      "materialCount": 1
+    },
+    {
+      "id": 8227,
+      "name": "Rectangle02",
+      "path": [
+        "Rectangle02"
+      ],
+      "matrix": [
+        0.0,
+        -1.4299284,
+        -0.0142998,
+        0.0,
+        1e-07,
+        0.0142998,
+        -1.4299284,
+        0.0,
+        1.4299999,
+        -0.0,
+        1e-07,
+        0.0,
+        -183.9290197,
+        -26.3424854,
+        384.9334835,
+        1.0
+      ],
+      "meshRef": {
+        "asset": "C:\\Users\\jnpjo\\AppData\\LocalLow\\Unity\\Web Player\\Cache\\FusionFall\\world_5fshared_5fpart2_2eresourceFile\\CustomAssetBundle-eb3e0153c75d642be888dac9b6af516e",
+        "id": 921
+      },
+      "position": [
+        -183.92902,
+        -26.34249,
+        384.93348
+      ],
+      "materialCount": 1
+    },
+    {
+      "id": 8230,
+      "name": "Plane03",
+      "path": [
+        "Plane03"
+      ],
+      "matrix": [
+        -1e-07,
+        1.4294612,
+        0.0392529,
+        0.0,
+        2e-07,
+        0.0392528,
+        -1.4294611,
+        0.0,
+        -1.43,
+        0.0,
+        -4e-07,
+        0.0,
+        -183.9130512,
+        -26.170165,
+        387.4140165,
+        1.0
+      ],
+      "meshRef": {
+        "asset": "C:\\Users\\jnpjo\\AppData\\LocalLow\\Unity\\Web Player\\Cache\\FusionFall\\world_5fshared_5fpart2_2eresourceFile\\CustomAssetBundle-eb3e0153c75d642be888dac9b6af516e",
+        "id": 946
+      },
+      "position": [
+        -183.91305,
+        -26.17016,
+        387.41402
+      ],
+      "materialCount": 1
+    },
+    {
+      "id": 8233,
+      "name": "Rectangle03",
+      "path": [
+        "Rectangle03"
+      ],
+      "matrix": [
+        0.0,
+        -1.4299284,
+        -0.0142998,
+        0.0,
+        1e-07,
+        0.0142998,
+        -1.4299284,
+        0.0,
+        1.4299999,
+        -0.0,
+        1e-07,
+        0.0,
+        -183.9290199,
+        -26.364009,
+        387.0857626,
+        1.0
+      ],
+      "meshRef": {
+        "asset": "C:\\Users\\jnpjo\\AppData\\LocalLow\\Unity\\Web Player\\Cache\\FusionFall\\world_5fshared_5fpart2_2eresourceFile\\CustomAssetBundle-eb3e0153c75d642be888dac9b6af516e",
+        "id": 945
+      },
+      "position": [
+        -183.92902,
+        -26.36401,
+        387.08576
+      ],
+      "materialCount": 1
+    }
+  ],
+  "authenticity": "Mesh positions, scales and rotations come from the original cached built map. Crop and normalization only; no authored prop arrangement."
+}

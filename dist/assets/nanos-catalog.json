@@ -1,0 +1,4102 @@
+{
+  "format": "fusionfall-nanos-catalog-v1",
+  "source": "Read-only local FusionFall cache, with original/Academy OpenFusion tabledata mappings.",
+  "sources": [
+    "https://github.com/OpenFusionProject/tabledata/blob/master/xdt.json",
+    "https://github.com/OpenFusionProject/tabledata/blob/master/xdt1013.json"
+  ],
+  "typeLegend": {
+    "A": "Adaptium",
+    "B": "Blastons",
+    "C": "Cosmix"
+  },
+  "nanos": [
+    {
+      "id": 17,
+      "slug": "fourarms",
+      "name": "Fourarms",
+      "asset": "nano-fourarms",
+      "type": "C",
+      "typeName": "Cosmix",
+      "originalStyleKnown": true,
+      "portrait": "assets/ui/nano-fourarms.webp",
+      "skills": [
+        {
+          "id": 49,
+          "tuneId": 49,
+          "name": "SEEING RED",
+          "category": "SLEEP - SELF AREA",
+          "kind": "sleep",
+          "targeting": "area",
+          "description": "Put enemies to sleep until they take damage.",
+          "cost": 35,
+          "cooldown": 15,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 50,
+          "tuneId": 50,
+          "name": "FOUR HAND GRAB",
+          "category": "SCAVENGE",
+          "kind": "energy",
+          "targeting": "self",
+          "description": "Recover resources through your Nano link.",
+          "cost": 15,
+          "cooldown": 22,
+          "originalPower": true,
+          "fpsAdaptation": true,
+          "subtype": "scavenge"
+        },
+        {
+          "id": 51,
+          "tuneId": 51,
+          "name": "OVERPOWER",
+          "category": "LEECH - POINT",
+          "kind": "drain",
+          "targeting": "point",
+          "description": "Damage enemies and recover some health.",
+          "cost": 45,
+          "cooldown": 16,
+          "originalPower": true,
+          "fpsAdaptation": true
+        }
+      ],
+      "sourceIds": {
+        "original": 17,
+        "academy": 32
+      },
+      "originalPowersKnown": true,
+      "originalIcon": "assets/ui-original/nanoicon-05.webp",
+      "sourceIconNumber": 5
+    },
+    {
+      "id": 35,
+      "slug": "aku",
+      "name": "Aku",
+      "asset": "nano-aku",
+      "type": "C",
+      "typeName": "Cosmix",
+      "originalStyleKnown": true,
+      "portrait": "assets/ui/nano-aku.webp",
+      "skills": [
+        {
+          "id": 103,
+          "tuneId": 103,
+          "name": "EVIL EYE",
+          "category": "STUN - CONE",
+          "kind": "stun",
+          "targeting": "cone",
+          "description": "Interrupt enemies and stun them briefly.",
+          "cost": 35,
+          "cooldown": 12,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 104,
+          "tuneId": 104,
+          "name": "ANCIENT TREASURE",
+          "category": "BONUS",
+          "kind": "energy",
+          "targeting": "self",
+          "description": "Recover resources through your Nano link.",
+          "cost": 15,
+          "cooldown": 22,
+          "originalPower": true,
+          "fpsAdaptation": true,
+          "subtype": "bonus"
+        },
+        {
+          "id": 105,
+          "tuneId": 105,
+          "name": "WIZARD STORM",
+          "category": "DAMAGE - CONE",
+          "kind": "damage",
+          "targeting": "cone",
+          "description": "Blast enemies with Nano-powered damage.",
+          "cost": 55,
+          "cooldown": 18,
+          "originalPower": true,
+          "fpsAdaptation": true
+        }
+      ],
+      "sourceIds": {
+        "original": 35,
+        "academy": 56
+      },
+      "originalPowersKnown": true,
+      "originalIcon": "assets/ui-original/nanoicon-13.webp",
+      "sourceIconNumber": 13
+    },
+    {
+      "id": 39,
+      "slug": "ben",
+      "name": "Ben",
+      "asset": "nano-ben",
+      "type": "C",
+      "typeName": "Cosmix",
+      "originalStyleKnown": true,
+      "portrait": "assets/ui/nano-ben.webp",
+      "skills": [
+        {
+          "id": "nano_ben-speed",
+          "name": "SPEED PROTOCOL",
+          "category": "SURVIVAL ADAPTATION",
+          "kind": "speed",
+          "targeting": "self",
+          "description": "Temporarily increase movement speed.",
+          "cost": 30,
+          "cooldown": 18,
+          "originalPower": false,
+          "fpsAdaptation": true,
+          "sourceNote": "Original power data is absent or contains placeholders; this is an explicitly named survival protocol."
+        },
+        {
+          "id": "nano_ben-shield",
+          "name": "SHIELD PROTOCOL",
+          "category": "SURVIVAL ADAPTATION",
+          "kind": "shield",
+          "targeting": "self",
+          "description": "Gain temporary protection against damage.",
+          "cost": 35,
+          "cooldown": 20,
+          "originalPower": false,
+          "fpsAdaptation": true,
+          "sourceNote": "Original power data is absent or contains placeholders; this is an explicitly named survival protocol."
+        },
+        {
+          "id": "nano_ben-damage",
+          "name": "DAMAGE PROTOCOL",
+          "category": "SURVIVAL ADAPTATION",
+          "kind": "damage",
+          "targeting": "area",
+          "description": "Blast enemies with Nano-powered damage.",
+          "cost": 55,
+          "cooldown": 18,
+          "originalPower": false,
+          "fpsAdaptation": true,
+          "sourceNote": "Original power data is absent or contains placeholders; this is an explicitly named survival protocol."
+        }
+      ],
+      "sourceIds": {
+        "original": 39,
+        "academy": null
+      },
+      "originalPowersKnown": false,
+      "originalIcon": "assets/ui-original/nanoicon-38.webp",
+      "sourceIconNumber": 38
+    },
+    {
+      "id": 11,
+      "slug": "billy",
+      "name": "Billy",
+      "asset": "nano-billy",
+      "type": "A",
+      "typeName": "Adaptium",
+      "originalStyleKnown": true,
+      "portrait": "assets/ui/nano-billy.webp",
+      "skills": [
+        {
+          "id": 31,
+          "tuneId": 31,
+          "name": "UNSTOPPABLE STUPID",
+          "category": "FREEDOM - SELF",
+          "kind": "cleanse",
+          "targeting": "self",
+          "description": "Remove harmful effects and gain brief protection.",
+          "cost": 25,
+          "cooldown": 15,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 32,
+          "tuneId": 32,
+          "name": "INNER FRAT BOY",
+          "category": "SLEEP - SELF AREA",
+          "kind": "sleep",
+          "targeting": "area",
+          "description": "Put enemies to sleep until they take damage.",
+          "cost": 35,
+          "cooldown": 15,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 33,
+          "tuneId": 33,
+          "name": "SNOT ROCKET",
+          "category": "DAMAGE - CONE",
+          "kind": "damage",
+          "targeting": "cone",
+          "description": "Blast enemies with Nano-powered damage.",
+          "cost": 55,
+          "cooldown": 18,
+          "originalPower": true,
+          "fpsAdaptation": true
+        }
+      ],
+      "sourceIds": {
+        "original": 11,
+        "academy": 22
+      },
+      "originalPowersKnown": true,
+      "originalIcon": "assets/ui-original/nanoicon-06.webp",
+      "sourceIconNumber": 6
+    },
+    {
+      "id": 14,
+      "slug": "bloo",
+      "name": "Bloo",
+      "asset": "nano-bloo",
+      "type": "A",
+      "typeName": "Adaptium",
+      "originalStyleKnown": true,
+      "portrait": "assets/ui/nano-bloo.webp",
+      "skills": [
+        {
+          "id": 40,
+          "tuneId": 40,
+          "name": "FINDERS KEEPERS",
+          "category": "TREASURE FINDER",
+          "kind": "energy",
+          "targeting": "self",
+          "description": "Recover resources through your Nano link.",
+          "cost": 15,
+          "cooldown": 22,
+          "originalPower": true,
+          "fpsAdaptation": true,
+          "subtype": "treasure"
+        },
+        {
+          "id": 41,
+          "tuneId": 41,
+          "name": "BLOO GLUE",
+          "category": "SNARE - CONE",
+          "kind": "snare",
+          "targeting": "cone",
+          "description": "Slow enemies to open an escape route.",
+          "cost": 30,
+          "cooldown": 12,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 42,
+          "tuneId": 42,
+          "name": "JUICEBOX BELCH",
+          "category": "STUN - CONE",
+          "kind": "stun",
+          "targeting": "cone",
+          "description": "Interrupt enemies and stun them briefly.",
+          "cost": 35,
+          "cooldown": 12,
+          "originalPower": true,
+          "fpsAdaptation": true
+        }
+      ],
+      "sourceIds": {
+        "original": 14,
+        "academy": 28
+      },
+      "originalPowersKnown": true,
+      "originalIcon": "assets/ui-original/nanoicon-14.webp",
+      "sourceIconNumber": 14
+    },
+    {
+      "id": 5,
+      "slug": "blossom",
+      "name": "Blossom",
+      "asset": "nano-blossom",
+      "type": "C",
+      "typeName": "Cosmix",
+      "originalStyleKnown": true,
+      "portrait": "assets/ui/nano-blossom.webp",
+      "skills": [
+        {
+          "id": 13,
+          "tuneId": 13,
+          "name": "ICE BREATH",
+          "category": "STUN - AREA",
+          "kind": "stun",
+          "targeting": "area",
+          "description": "Interrupt enemies and stun them briefly.",
+          "cost": 35,
+          "cooldown": 12,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 14,
+          "tuneId": 14,
+          "name": "LIBERTY BELLE",
+          "category": "ANTIDOTE",
+          "kind": "cleanse",
+          "targeting": "self",
+          "description": "Remove harmful effects and gain brief protection.",
+          "cost": 25,
+          "cooldown": 15,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 15,
+          "tuneId": 15,
+          "name": "EVERYTHING NICE",
+          "category": "FREEDOM - GROUP",
+          "kind": "cleanse",
+          "targeting": "group",
+          "description": "Remove harmful effects and gain brief protection.",
+          "cost": 25,
+          "cooldown": 15,
+          "originalPower": true,
+          "fpsAdaptation": true
+        }
+      ],
+      "sourceIds": {
+        "original": 5,
+        "academy": 12
+      },
+      "originalPowersKnown": true,
+      "originalIcon": "assets/ui-original/nanoicon-07.webp",
+      "sourceIconNumber": 7
+    },
+    {
+      "id": 15,
+      "slug": "bubbles",
+      "name": "Bubbles",
+      "asset": "nano-bubbles",
+      "type": "C",
+      "typeName": "Cosmix",
+      "originalStyleKnown": true,
+      "portrait": "assets/ui/nano-bubbles.webp",
+      "skills": [
+        {
+          "id": 43,
+          "tuneId": 43,
+          "name": "TORNADO TRAP",
+          "category": "SNARE -  TARGET AREA",
+          "kind": "snare",
+          "targeting": "area",
+          "description": "Slow enemies to open an escape route.",
+          "cost": 30,
+          "cooldown": 12,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 44,
+          "tuneId": 44,
+          "name": "BUNNY HOP",
+          "category": "JUMP - SELF",
+          "kind": "jump",
+          "targeting": "self",
+          "description": "Boost your jump and mobility briefly.",
+          "cost": 25,
+          "cooldown": 12,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 45,
+          "tuneId": 45,
+          "name": "LASER VISION",
+          "category": "DAMAGE - POINT",
+          "kind": "damage",
+          "targeting": "point",
+          "description": "Blast enemies with Nano-powered damage.",
+          "cost": 55,
+          "cooldown": 18,
+          "originalPower": true,
+          "fpsAdaptation": true
+        }
+      ],
+      "sourceIds": {
+        "original": 15,
+        "academy": 29
+      },
+      "originalPowersKnown": true,
+      "originalIcon": "assets/ui-original/nanoicon-35.webp",
+      "sourceIconNumber": 35
+    },
+    {
+      "id": 1,
+      "slug": "buttercup",
+      "name": "Buttercup",
+      "asset": "nano-buttercup",
+      "type": "B",
+      "typeName": "Blastons",
+      "originalStyleKnown": true,
+      "portrait": "assets/ui/nano-buttercup.webp",
+      "skills": [
+        {
+          "id": 1,
+          "tuneId": 1,
+          "name": "MISS FIRE",
+          "category": "STUN - CONE",
+          "kind": "stun",
+          "targeting": "cone",
+          "description": "Interrupt enemies and stun them briefly.",
+          "cost": 35,
+          "cooldown": 12,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 2,
+          "tuneId": 2,
+          "name": "RALLYING CRY",
+          "category": "HEALTH - GROUP",
+          "kind": "heal",
+          "targeting": "group",
+          "description": "Restore your health in a quick burst.",
+          "cost": 45,
+          "cooldown": 20,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 3,
+          "tuneId": 3,
+          "name": "BUTTERCUP BURST",
+          "category": "SCAVENGE",
+          "kind": "energy",
+          "targeting": "self",
+          "description": "Recover resources through your Nano link.",
+          "cost": 15,
+          "cooldown": 22,
+          "originalPower": true,
+          "fpsAdaptation": true,
+          "subtype": "scavenge"
+        }
+      ],
+      "sourceIds": {
+        "original": 1,
+        "academy": 26
+      },
+      "originalPowersKnown": true,
+      "originalIcon": "assets/ui-original/nanoicon-34.webp",
+      "sourceIconNumber": 34
+    },
+    {
+      "id": 38,
+      "slug": "cheese",
+      "name": "Cheese",
+      "asset": "nano-cheese",
+      "type": "B",
+      "typeName": "Blastons",
+      "originalStyleKnown": true,
+      "portrait": "assets/ui/nano-cheese.webp",
+      "skills": [
+        {
+          "id": 211,
+          "tuneId": 211,
+          "name": "HEAL!",
+          "category": "HEAL - GROUP",
+          "kind": "heal",
+          "targeting": "group",
+          "description": "Restore your health in a quick burst.",
+          "cost": 45,
+          "cooldown": 20,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 212,
+          "tuneId": 212,
+          "name": "I LIKE CANDY!",
+          "category": "SCAVENGE",
+          "kind": "energy",
+          "targeting": "self",
+          "description": "Recover resources through your Nano link.",
+          "cost": 15,
+          "cooldown": 22,
+          "originalPower": true,
+          "fpsAdaptation": true,
+          "subtype": "scavenge"
+        },
+        {
+          "id": 213,
+          "tuneId": 213,
+          "name": "GOOD HORSIE!",
+          "category": "RUN - SELF",
+          "kind": "speed",
+          "targeting": "self",
+          "description": "Temporarily increase movement speed.",
+          "cost": 30,
+          "cooldown": 18,
+          "originalPower": true,
+          "fpsAdaptation": true
+        }
+      ],
+      "sourceIds": {
+        "original": 38,
+        "academy": 19
+      },
+      "originalPowersKnown": true,
+      "originalIcon": "assets/ui-original/nanoicon-37.webp",
+      "sourceIconNumber": 37
+    },
+    {
+      "id": 1014,
+      "slug": "chowder",
+      "name": "Chowder",
+      "asset": "nano-chowder",
+      "type": "A",
+      "typeName": "Adaptium",
+      "originalStyleKnown": true,
+      "portrait": "assets/ui/nano-chowder.webp",
+      "skills": [
+        {
+          "id": 235,
+          "tuneId": 235,
+          "name": "SPIT TAKE",
+          "category": "SCAVENGE",
+          "kind": "energy",
+          "targeting": "self",
+          "description": "Recover resources through your Nano link.",
+          "cost": 15,
+          "cooldown": 22,
+          "originalPower": true,
+          "fpsAdaptation": true,
+          "subtype": "scavenge"
+        },
+        {
+          "id": 236,
+          "tuneId": 236,
+          "name": "I'M NOT YOUR BOYFRIEND",
+          "category": "FREEDOM - SELF",
+          "kind": "cleanse",
+          "targeting": "self",
+          "description": "Remove harmful effects and gain brief protection.",
+          "cost": 25,
+          "cooldown": 15,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 237,
+          "tuneId": 237,
+          "name": "BLORMED MILK",
+          "category": "SLEEP - SELF AREA",
+          "kind": "sleep",
+          "targeting": "area",
+          "description": "Put enemies to sleep until they take damage.",
+          "cost": 35,
+          "cooldown": 15,
+          "originalPower": true,
+          "fpsAdaptation": true
+        }
+      ],
+      "sourceIds": {
+        "original": null,
+        "academy": 14
+      },
+      "originalPowersKnown": true,
+      "originalIcon": null,
+      "sourceIconNumber": 52
+    },
+    {
+      "id": 26,
+      "slug": "coco",
+      "name": "Coco",
+      "asset": "nano-coco",
+      "type": "A",
+      "typeName": "Adaptium",
+      "originalStyleKnown": true,
+      "portrait": "assets/ui/nano-coco.webp",
+      "skills": [
+        {
+          "id": 76,
+          "tuneId": 76,
+          "name": "POWER SHELL",
+          "category": "GUARD",
+          "kind": "shield",
+          "targeting": "self",
+          "description": "Gain temporary protection against damage.",
+          "cost": 35,
+          "cooldown": 20,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 77,
+          "tuneId": 77,
+          "name": "BIRD BRAIN UNBOUND",
+          "category": "FREEDOM - GROUP",
+          "kind": "cleanse",
+          "targeting": "group",
+          "description": "Remove harmful effects and gain brief protection.",
+          "cost": 25,
+          "cooldown": 15,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 78,
+          "tuneId": 78,
+          "name": "EGG BOMB",
+          "category": "STUN - AREA",
+          "kind": "stun",
+          "targeting": "area",
+          "description": "Interrupt enemies and stun them briefly.",
+          "cost": 35,
+          "cooldown": 12,
+          "originalPower": true,
+          "fpsAdaptation": true
+        }
+      ],
+      "sourceIds": {
+        "original": 26,
+        "academy": 47
+      },
+      "originalPowersKnown": true,
+      "originalIcon": "assets/ui-original/nanoicon-15.webp",
+      "sourceIconNumber": 15
+    },
+    {
+      "id": 33,
+      "slug": "courage",
+      "name": "Courage",
+      "asset": "nano-courage",
+      "type": "A",
+      "typeName": "Adaptium",
+      "originalStyleKnown": true,
+      "portrait": "assets/ui/nano-courage.webp",
+      "skills": [
+        {
+          "id": 97,
+          "tuneId": 97,
+          "name": "HORRIFIC HOWL",
+          "category": "DRAIN - POINT",
+          "kind": "drain",
+          "targeting": "point",
+          "description": "Damage enemies and recover some health.",
+          "cost": 45,
+          "cooldown": 16,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 98,
+          "tuneId": 98,
+          "name": "SOFTSHOE SHIMMY",
+          "category": "HEALTH - SELF",
+          "kind": "heal",
+          "targeting": "self",
+          "description": "Restore your health in a quick burst.",
+          "cost": 45,
+          "cooldown": 20,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 99,
+          "tuneId": 99,
+          "name": "COWER POWER",
+          "category": "SCAVENGE",
+          "kind": "energy",
+          "targeting": "self",
+          "description": "Recover resources through your Nano link.",
+          "cost": 15,
+          "cooldown": 22,
+          "originalPower": true,
+          "fpsAdaptation": true,
+          "subtype": "scavenge"
+        }
+      ],
+      "sourceIds": {
+        "original": 33,
+        "academy": 54
+      },
+      "originalPowersKnown": true,
+      "originalIcon": "assets/ui-original/nanoicon-16.webp",
+      "sourceIconNumber": 16
+    },
+    {
+      "id": 7,
+      "slug": "deedee",
+      "name": "Dee Dee",
+      "asset": "nano-deedee",
+      "type": "B",
+      "typeName": "Blastons",
+      "originalStyleKnown": true,
+      "portrait": "assets/ui/nano-deedee.webp",
+      "skills": [
+        {
+          "id": 19,
+          "tuneId": 19,
+          "name": "DIVA DYNAMITE",
+          "category": "DAMAGE - POINT",
+          "kind": "damage",
+          "targeting": "point",
+          "description": "Blast enemies with Nano-powered damage.",
+          "cost": 55,
+          "cooldown": 18,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 20,
+          "tuneId": 20,
+          "name": "WAY OF THE DEE DEE",
+          "category": "REVIVE - GROUP",
+          "kind": "revive",
+          "targeting": "group",
+          "description": "Prepare an emergency self-revive.",
+          "cost": 65,
+          "cooldown": 40,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 21,
+          "tuneId": 21,
+          "name": "PONYPUFF PIROUETTE",
+          "category": "DAMAGE - AREA",
+          "kind": "damage",
+          "targeting": "area",
+          "description": "Blast enemies with Nano-powered damage.",
+          "cost": 55,
+          "cooldown": 18,
+          "originalPower": true,
+          "fpsAdaptation": true
+        }
+      ],
+      "sourceIds": {
+        "original": 7,
+        "academy": 15
+      },
+      "originalPowersKnown": true,
+      "originalIcon": "assets/ui-original/nanoicon-17.webp",
+      "sourceIconNumber": 17
+    },
+    {
+      "id": 16,
+      "slug": "demongo",
+      "name": "Demongo",
+      "asset": "nano-demongo",
+      "type": "A",
+      "typeName": "Adaptium",
+      "originalStyleKnown": true,
+      "portrait": "assets/ui/nano-demongo.webp",
+      "skills": [
+        {
+          "id": 46,
+          "tuneId": 46,
+          "name": "DEMON'S FIRE",
+          "category": "DAMAGE - AREA",
+          "kind": "damage",
+          "targeting": "area",
+          "description": "Blast enemies with Nano-powered damage.",
+          "cost": 55,
+          "cooldown": 18,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 47,
+          "tuneId": 47,
+          "name": "HERO'S STRENGTH",
+          "category": "SNARE - SELF AREA",
+          "kind": "snare",
+          "targeting": "area",
+          "description": "Slow enemies to open an escape route.",
+          "cost": 30,
+          "cooldown": 12,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 48,
+          "tuneId": 48,
+          "name": "WARRIOR'S RESOLVE",
+          "category": "REVIVE - SELF",
+          "kind": "revive",
+          "targeting": "self",
+          "description": "Prepare an emergency self-revive.",
+          "cost": 65,
+          "cooldown": 40,
+          "originalPower": true,
+          "fpsAdaptation": true
+        }
+      ],
+      "sourceIds": {
+        "original": 16,
+        "academy": 30
+      },
+      "originalPowersKnown": true,
+      "originalIcon": "assets/ui-original/nanoicon-18.webp",
+      "sourceIconNumber": 18
+    },
+    {
+      "id": 22,
+      "slug": "dexter",
+      "name": "Dexter",
+      "asset": "nano-dexter",
+      "type": "A",
+      "typeName": "Adaptium",
+      "originalStyleKnown": true,
+      "portrait": "assets/ui/nano-dexter.webp",
+      "skills": [
+        {
+          "id": 64,
+          "tuneId": 64,
+          "name": "GLIDE",
+          "category": "ROCKET - SELF",
+          "kind": "jump",
+          "targeting": "self",
+          "description": "Boost your jump and mobility briefly.",
+          "cost": 25,
+          "cooldown": 12,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 65,
+          "tuneId": 65,
+          "name": "INVISO-RAY",
+          "category": "SNEAK - GROUP",
+          "kind": "stealth",
+          "targeting": "group",
+          "description": "Become concealed from enemies briefly.",
+          "cost": 40,
+          "cooldown": 22,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 66,
+          "tuneId": 66,
+          "name": "TELEPORTER",
+          "category": "RECALL - SELF",
+          "kind": "recall",
+          "targeting": "self",
+          "description": "Recall to a safer position in the outpost.",
+          "cost": 45,
+          "cooldown": 24,
+          "originalPower": true,
+          "fpsAdaptation": true
+        }
+      ],
+      "sourceIds": {
+        "original": 22,
+        "academy": 43
+      },
+      "originalPowersKnown": true,
+      "originalIcon": "assets/ui-original/nanoicon-08.webp",
+      "sourceIconNumber": 8
+    },
+    {
+      "id": 32,
+      "slug": "ed",
+      "name": "Ed",
+      "asset": "nano-ed",
+      "type": "B",
+      "typeName": "Blastons",
+      "originalStyleKnown": true,
+      "portrait": "assets/ui/nano-ed.webp",
+      "skills": [
+        {
+          "id": 94,
+          "tuneId": 94,
+          "name": "PAGING DR. ED",
+          "category": "SLEEP - SELF AREA",
+          "kind": "sleep",
+          "targeting": "area",
+          "description": "Put enemies to sleep until they take damage.",
+          "cost": 35,
+          "cooldown": 15,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 95,
+          "tuneId": 95,
+          "name": "MONSTER TRACKER",
+          "category": "RADAR",
+          "kind": "energy",
+          "targeting": "self",
+          "description": "Recover resources through your Nano link.",
+          "cost": 15,
+          "cooldown": 22,
+          "originalPower": true,
+          "fpsAdaptation": true,
+          "subtype": "radar"
+        },
+        {
+          "id": 96,
+          "tuneId": 96,
+          "name": "GROUP HUG",
+          "category": "SNARE - SELF AREA",
+          "kind": "snare",
+          "targeting": "area",
+          "description": "Slow enemies to open an escape route.",
+          "cost": 30,
+          "cooldown": 12,
+          "originalPower": true,
+          "fpsAdaptation": true
+        }
+      ],
+      "sourceIds": {
+        "original": 32,
+        "academy": 53
+      },
+      "originalPowersKnown": true,
+      "originalIcon": "assets/ui-original/nanoicon-09.webp",
+      "sourceIconNumber": 9
+    },
+    {
+      "id": 9,
+      "slug": "edd",
+      "name": "Edd",
+      "asset": "nano-edd",
+      "type": "C",
+      "typeName": "Cosmix",
+      "originalStyleKnown": true,
+      "portrait": "assets/ui/nano-edd.webp",
+      "skills": [
+        {
+          "id": 25,
+          "tuneId": 25,
+          "name": "NARROW ESCAPE",
+          "category": "RECALL - SELF",
+          "kind": "recall",
+          "targeting": "self",
+          "description": "Recall to a safer position in the outpost.",
+          "cost": 45,
+          "cooldown": 24,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 26,
+          "tuneId": 26,
+          "name": "MEDDAL DETECTOR",
+          "category": "TREASURE FINDER",
+          "kind": "energy",
+          "targeting": "self",
+          "description": "Recover resources through your Nano link.",
+          "cost": 15,
+          "cooldown": 22,
+          "originalPower": true,
+          "fpsAdaptation": true,
+          "subtype": "treasure"
+        },
+        {
+          "id": 27,
+          "tuneId": 27,
+          "name": "SUGAR RUSH",
+          "category": "SNARE - SELF AREA",
+          "kind": "snare",
+          "targeting": "area",
+          "description": "Slow enemies to open an escape route.",
+          "cost": 30,
+          "cooldown": 12,
+          "originalPower": true,
+          "fpsAdaptation": true
+        }
+      ],
+      "sourceIds": {
+        "original": 9,
+        "academy": 20
+      },
+      "originalPowersKnown": true,
+      "originalIcon": "assets/ui-original/nanoicon-19.webp",
+      "sourceIconNumber": 19
+    },
+    {
+      "id": 3,
+      "slug": "eddy",
+      "name": "Eddy",
+      "asset": "nano-eddy",
+      "type": "C",
+      "typeName": "Cosmix",
+      "originalStyleKnown": true,
+      "portrait": "assets/ui/nano-eddy.webp",
+      "skills": [
+        {
+          "id": 7,
+          "tuneId": 7,
+          "name": "JAWBREAKER BREAK",
+          "category": "HEALTH - SELF",
+          "kind": "heal",
+          "targeting": "self",
+          "description": "Restore your health in a quick burst.",
+          "cost": 45,
+          "cooldown": 20,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 8,
+          "tuneId": 8,
+          "name": "SPEEDY GEDAWAY",
+          "category": "RUN - GROUP",
+          "kind": "speed",
+          "targeting": "group",
+          "description": "Temporarily increase movement speed.",
+          "cost": 30,
+          "cooldown": 18,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 9,
+          "tuneId": 9,
+          "name": "ENERGY SAVER",
+          "category": "GUARD",
+          "kind": "shield",
+          "targeting": "self",
+          "description": "Gain temporary protection against damage.",
+          "cost": 35,
+          "cooldown": 20,
+          "originalPower": true,
+          "fpsAdaptation": true
+        }
+      ],
+      "sourceIds": {
+        "original": 3,
+        "academy": 11
+      },
+      "originalPowersKnown": true,
+      "originalIcon": "assets/ui-original/nanoicon-20.webp",
+      "sourceIconNumber": 20
+    },
+    {
+      "id": 4,
+      "slug": "eduardo",
+      "name": "Eduardo",
+      "asset": "nano-eduardo",
+      "type": "A",
+      "typeName": "Adaptium",
+      "originalStyleKnown": true,
+      "portrait": "assets/ui/nano-eduardo.webp",
+      "skills": [
+        {
+          "id": 10,
+          "tuneId": 10,
+          "name": "MONSTER ROAR",
+          "category": "DRAIN - AREA",
+          "kind": "drain",
+          "targeting": "area",
+          "description": "Damage enemies and recover some health.",
+          "cost": 45,
+          "cooldown": 16,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 11,
+          "tuneId": 11,
+          "name": "WHO'S THERE?",
+          "category": "RADAR",
+          "kind": "energy",
+          "targeting": "self",
+          "description": "Recover resources through your Nano link.",
+          "cost": 15,
+          "cooldown": 22,
+          "originalPower": true,
+          "fpsAdaptation": true,
+          "subtype": "radar"
+        },
+        {
+          "id": 12,
+          "tuneId": 12,
+          "name": "PAPAS FRITAS",
+          "category": "HEALTH - SELF AREA",
+          "kind": "heal",
+          "targeting": "area",
+          "description": "Restore your health in a quick burst.",
+          "cost": 45,
+          "cooldown": 20,
+          "originalPower": true,
+          "fpsAdaptation": true
+        }
+      ],
+      "sourceIds": {
+        "original": 4,
+        "academy": 18
+      },
+      "originalPowersKnown": true,
+      "originalIcon": "assets/ui-original/nanoicon-01.webp",
+      "sourceIconNumber": 1
+    },
+    {
+      "id": 1031,
+      "slug": "flapjack",
+      "name": "Flapjack",
+      "asset": "nano-flapjack",
+      "type": "A",
+      "typeName": "Adaptium",
+      "originalStyleKnown": true,
+      "portrait": "assets/ui/nano-flapjack.webp",
+      "skills": [
+        {
+          "id": 223,
+          "tuneId": 223,
+          "name": "LOVE GNAT",
+          "category": "DRAIN - POINT",
+          "kind": "drain",
+          "targeting": "point",
+          "description": "Damage enemies and recover some health.",
+          "cost": 45,
+          "cooldown": 16,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 224,
+          "tuneId": 224,
+          "name": "ADVENTURER'S LULLABYE",
+          "category": "SLEEP - SELF AREA",
+          "kind": "sleep",
+          "targeting": "area",
+          "description": "Put enemies to sleep until they take damage.",
+          "cost": 35,
+          "cooldown": 15,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 225,
+          "tuneId": 225,
+          "name": "THE FOOT BURN",
+          "category": "RUN - GROUP",
+          "kind": "speed",
+          "targeting": "group",
+          "description": "Temporarily increase movement speed.",
+          "cost": 30,
+          "cooldown": 18,
+          "originalPower": true,
+          "fpsAdaptation": true
+        }
+      ],
+      "sourceIds": {
+        "original": null,
+        "academy": 31
+      },
+      "originalPowersKnown": true,
+      "originalIcon": null,
+      "sourceIconNumber": 47
+    },
+    {
+      "id": 2001,
+      "slug": "ghostfreak",
+      "name": "Ghostfreak",
+      "asset": "nano-ghostfreak",
+      "type": null,
+      "typeName": "Unassigned",
+      "originalStyleKnown": false,
+      "portrait": "assets/ui/nano-ghostfreak.webp",
+      "skills": [
+        {
+          "id": "nano_ghostfreak-stealth",
+          "name": "STEALTH PROTOCOL",
+          "category": "SURVIVAL ADAPTATION",
+          "kind": "stealth",
+          "targeting": "self",
+          "description": "Become concealed from enemies briefly.",
+          "cost": 40,
+          "cooldown": 22,
+          "originalPower": false,
+          "fpsAdaptation": true,
+          "sourceNote": "Original power data is absent or contains placeholders; this is an explicitly named survival protocol."
+        },
+        {
+          "id": "nano_ghostfreak-snare",
+          "name": "SNARE PROTOCOL",
+          "category": "SURVIVAL ADAPTATION",
+          "kind": "snare",
+          "targeting": "area",
+          "description": "Slow enemies to open an escape route.",
+          "cost": 30,
+          "cooldown": 12,
+          "originalPower": false,
+          "fpsAdaptation": true,
+          "sourceNote": "Original power data is absent or contains placeholders; this is an explicitly named survival protocol."
+        },
+        {
+          "id": "nano_ghostfreak-drain",
+          "name": "DRAIN PROTOCOL",
+          "category": "SURVIVAL ADAPTATION",
+          "kind": "drain",
+          "targeting": "area",
+          "description": "Damage enemies and recover some health.",
+          "cost": 45,
+          "cooldown": 16,
+          "originalPower": false,
+          "fpsAdaptation": true,
+          "sourceNote": "Original power data is absent or contains placeholders; this is an explicitly named survival protocol."
+        }
+      ],
+      "sourceIds": {
+        "original": null,
+        "academy": null
+      },
+      "originalPowersKnown": false,
+      "originalIcon": null,
+      "sourceIconNumber": null
+    },
+    {
+      "id": 21,
+      "slug": "grim",
+      "name": "Grim",
+      "asset": "nano-grim",
+      "type": "A",
+      "typeName": "Adaptium",
+      "originalStyleKnown": true,
+      "portrait": "assets/ui/nano-grim.webp",
+      "skills": [
+        {
+          "id": 61,
+          "tuneId": 61,
+          "name": "HEEBIE JEEBIE JOLT",
+          "category": "HEALTH - GROUP",
+          "kind": "heal",
+          "targeting": "group",
+          "description": "Restore your health in a quick burst.",
+          "cost": 45,
+          "cooldown": 20,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 62,
+          "tuneId": 62,
+          "name": "BAT OUT OF HECK",
+          "category": "RUN - GROUP",
+          "kind": "speed",
+          "targeting": "group",
+          "description": "Temporarily increase movement speed.",
+          "cost": 30,
+          "cooldown": 18,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 63,
+          "tuneId": 63,
+          "name": "SCYTHE OF RELIEF",
+          "category": "REVIVE - GROUP",
+          "kind": "revive",
+          "targeting": "group",
+          "description": "Prepare an emergency self-revive.",
+          "cost": 65,
+          "cooldown": 40,
+          "originalPower": true,
+          "fpsAdaptation": true
+        }
+      ],
+      "sourceIds": {
+        "original": 21,
+        "academy": 42
+      },
+      "originalPowersKnown": true,
+      "originalIcon": "assets/ui-original/nanoicon-10.webp",
+      "sourceIconNumber": 10
+    },
+    {
+      "id": 29,
+      "slug": "hex",
+      "name": "Hex",
+      "asset": "nano-hex",
+      "type": "B",
+      "typeName": "Blastons",
+      "originalStyleKnown": true,
+      "portrait": "assets/ui/nano-hex.webp",
+      "skills": [
+        {
+          "id": 85,
+          "tuneId": 85,
+          "name": "SLEEP CHARM",
+          "category": "SLEEP - AREA",
+          "kind": "sleep",
+          "targeting": "area",
+          "description": "Put enemies to sleep until they take damage.",
+          "cost": 35,
+          "cooldown": 15,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 86,
+          "tuneId": 86,
+          "name": "SUMMON WIND",
+          "category": "RUN - SELF",
+          "kind": "speed",
+          "targeting": "self",
+          "description": "Temporarily increase movement speed.",
+          "cost": 30,
+          "cooldown": 18,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 87,
+          "tuneId": 87,
+          "name": "VANISHING ACT",
+          "category": "RECALL - GROUP",
+          "kind": "recall",
+          "targeting": "group",
+          "description": "Recall to a safer position in the outpost.",
+          "cost": 45,
+          "cooldown": 24,
+          "originalPower": true,
+          "fpsAdaptation": true
+        }
+      ],
+      "sourceIds": {
+        "original": 29,
+        "academy": 50
+      },
+      "originalPowersKnown": true,
+      "originalIcon": "assets/ui-original/nanoicon-22.webp",
+      "sourceIconNumber": 22
+    },
+    {
+      "id": 13,
+      "slug": "him",
+      "name": "Him",
+      "asset": "nano-him",
+      "type": "B",
+      "typeName": "Blastons",
+      "originalStyleKnown": true,
+      "portrait": "assets/ui/nano-him.webp",
+      "skills": [
+        {
+          "id": 37,
+          "tuneId": 37,
+          "name": "EVIL LAUGH",
+          "category": "DRAIN - AREA",
+          "kind": "drain",
+          "targeting": "area",
+          "description": "Damage enemies and recover some health.",
+          "cost": 45,
+          "cooldown": 16,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 38,
+          "tuneId": 38,
+          "name": "MWA-HA-HA",
+          "category": "HEALTH - SELF AREA",
+          "kind": "heal",
+          "targeting": "area",
+          "description": "Restore your health in a quick burst.",
+          "cost": 45,
+          "cooldown": 20,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 39,
+          "tuneId": 39,
+          "name": "DEMONIC POSSESSION",
+          "category": "FREEDOM - SELF",
+          "kind": "cleanse",
+          "targeting": "self",
+          "description": "Remove harmful effects and gain brief protection.",
+          "cost": 25,
+          "cooldown": 15,
+          "originalPower": true,
+          "fpsAdaptation": true
+        }
+      ],
+      "sourceIds": {
+        "original": 13,
+        "academy": 27
+      },
+      "originalPowersKnown": true,
+      "originalIcon": "assets/ui-original/nanoicon-23.webp",
+      "sourceIconNumber": 23
+    },
+    {
+      "id": 36,
+      "slug": "humongousaur",
+      "name": "Humongosaur",
+      "asset": "nano-humongousaur",
+      "type": "C",
+      "typeName": "Cosmix",
+      "originalStyleKnown": true,
+      "portrait": "assets/ui/nano-humongousaur.webp",
+      "skills": [
+        {
+          "id": 106,
+          "tuneId": 106,
+          "name": "SAURIAN SNARE",
+          "category": "SNARE - CONE",
+          "kind": "snare",
+          "targeting": "cone",
+          "description": "Slow enemies to open an escape route.",
+          "cost": 30,
+          "cooldown": 12,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 107,
+          "tuneId": 107,
+          "name": "GIANT UNLEASHED",
+          "category": "FREEDOM - SELF",
+          "kind": "cleanse",
+          "targeting": "self",
+          "description": "Remove harmful effects and gain brief protection.",
+          "cost": 25,
+          "cooldown": 15,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 108,
+          "tuneId": 108,
+          "name": "GROUND QUAKE",
+          "category": "DAMAGE - AREA",
+          "kind": "damage",
+          "targeting": "area",
+          "description": "Blast enemies with Nano-powered damage.",
+          "cost": 55,
+          "cooldown": 18,
+          "originalPower": true,
+          "fpsAdaptation": true
+        }
+      ],
+      "sourceIds": {
+        "original": 36,
+        "academy": 57
+      },
+      "originalPowersKnown": true,
+      "originalIcon": "assets/ui-original/nanoicon-21.webp",
+      "sourceIconNumber": 21
+    },
+    {
+      "id": 37,
+      "slug": "johnnybravo",
+      "name": "Johnny Bravo",
+      "asset": "nano-johnnybravo",
+      "type": "A",
+      "typeName": "Adaptium",
+      "originalStyleKnown": true,
+      "portrait": "assets/ui/nano-johnnybravo.webp",
+      "skills": [
+        {
+          "id": 208,
+          "tuneId": 208,
+          "name": "AIN'T I PRETTY?",
+          "category": "STUN - AREA",
+          "kind": "stun",
+          "targeting": "area",
+          "description": "Interrupt enemies and stun them briefly.",
+          "cost": 35,
+          "cooldown": 12,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 209,
+          "tuneId": 209,
+          "name": "MOMMA'S CALLING",
+          "category": "RUN - SELF",
+          "kind": "speed",
+          "targeting": "self",
+          "description": "Temporarily increase movement speed.",
+          "cost": 30,
+          "cooldown": 18,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 210,
+          "tuneId": 210,
+          "name": "TOO PRETTY TO DIE",
+          "category": "REVIVE - SELF",
+          "kind": "revive",
+          "targeting": "self",
+          "description": "Prepare an emergency self-revive.",
+          "cost": 65,
+          "cooldown": 40,
+          "originalPower": true,
+          "fpsAdaptation": true
+        }
+      ],
+      "sourceIds": {
+        "original": 37,
+        "academy": 35
+      },
+      "originalPowersKnown": true,
+      "originalIcon": "assets/ui-original/nanoicon-36.webp",
+      "sourceIconNumber": 36
+    },
+    {
+      "id": 30,
+      "slug": "juniperlee",
+      "name": "Juniper Lee",
+      "asset": "nano-juniperlee",
+      "type": "A",
+      "typeName": "Adaptium",
+      "originalStyleKnown": true,
+      "portrait": "assets/ui/nano-juniperlee.webp",
+      "skills": [
+        {
+          "id": 88,
+          "tuneId": 88,
+          "name": "MYSTICAL BOOST",
+          "category": "JUMP - SELF",
+          "kind": "jump",
+          "targeting": "self",
+          "description": "Boost your jump and mobility briefly.",
+          "cost": 25,
+          "cooldown": 12,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 89,
+          "tuneId": 89,
+          "name": "TE-XUAN-ZAP",
+          "category": "LEECH - POINT",
+          "kind": "drain",
+          "targeting": "point",
+          "description": "Damage enemies and recover some health.",
+          "cost": 45,
+          "cooldown": 16,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 90,
+          "tuneId": 90,
+          "name": "MONSTER AMBUSH",
+          "category": "SNARE -  TARGET AREA",
+          "kind": "snare",
+          "targeting": "area",
+          "description": "Slow enemies to open an escape route.",
+          "cost": 30,
+          "cooldown": 12,
+          "originalPower": true,
+          "fpsAdaptation": true
+        }
+      ],
+      "sourceIds": {
+        "original": 30,
+        "academy": 51
+      },
+      "originalPowersKnown": true,
+      "originalIcon": "assets/ui-original/nanoicon-11.webp",
+      "sourceIconNumber": 11
+    },
+    {
+      "id": 27,
+      "slug": "mac",
+      "name": "Mac",
+      "asset": "nano-mac",
+      "type": "B",
+      "typeName": "Blastons",
+      "originalStyleKnown": true,
+      "portrait": "assets/ui/nano-mac.webp",
+      "skills": [
+        {
+          "id": 79,
+          "tuneId": 79,
+          "name": "FIZZY ROCKET",
+          "category": "ROCKET - SELF",
+          "kind": "jump",
+          "targeting": "self",
+          "description": "Boost your jump and mobility briefly.",
+          "cost": 25,
+          "cooldown": 12,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 80,
+          "tuneId": 80,
+          "name": "HIDE AND SNEAK",
+          "category": "SNEAK - SELF",
+          "kind": "stealth",
+          "targeting": "self",
+          "description": "Become concealed from enemies briefly.",
+          "cost": 40,
+          "cooldown": 22,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 81,
+          "tuneId": 81,
+          "name": "AFTER SCHOOL SPECIAL",
+          "category": "SLEEP - CONE",
+          "kind": "sleep",
+          "targeting": "cone",
+          "description": "Put enemies to sleep until they take damage.",
+          "cost": 35,
+          "cooldown": 15,
+          "originalPower": true,
+          "fpsAdaptation": true
+        }
+      ],
+      "sourceIds": {
+        "original": 27,
+        "academy": 48
+      },
+      "originalPowersKnown": true,
+      "originalIcon": "assets/ui-original/nanoicon-24.webp",
+      "sourceIconNumber": 24
+    },
+    {
+      "id": 20,
+      "slug": "mandark",
+      "name": "Mandark",
+      "asset": "nano-mandark",
+      "type": "B",
+      "typeName": "Blastons",
+      "originalStyleKnown": true,
+      "portrait": "assets/ui/nano-mandark.webp",
+      "skills": [
+        {
+          "id": 58,
+          "tuneId": 58,
+          "name": "BIO DOME",
+          "category": "ANTIDOTE",
+          "kind": "cleanse",
+          "targeting": "self",
+          "description": "Remove harmful effects and gain brief protection.",
+          "cost": 25,
+          "cooldown": 15,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 59,
+          "tuneId": 59,
+          "name": "MANDARKNESS",
+          "category": "STUN - AREA",
+          "kind": "stun",
+          "targeting": "area",
+          "description": "Interrupt enemies and stun them briefly.",
+          "cost": 35,
+          "cooldown": 12,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 60,
+          "tuneId": 60,
+          "name": "RETRO-THRUSTERS",
+          "category": "JUMP - GROUP",
+          "kind": "jump",
+          "targeting": "group",
+          "description": "Boost your jump and mobility briefly.",
+          "cost": 25,
+          "cooldown": 12,
+          "originalPower": true,
+          "fpsAdaptation": true
+        }
+      ],
+      "sourceIds": {
+        "original": 20,
+        "academy": 36
+      },
+      "originalPowersKnown": true,
+      "originalIcon": "assets/ui-original/nanoicon-04.webp",
+      "sourceIconNumber": 4
+    },
+    {
+      "id": 25,
+      "slug": "mandy",
+      "name": "Mandy",
+      "asset": "nano-mandy",
+      "type": "B",
+      "typeName": "Blastons",
+      "originalStyleKnown": true,
+      "portrait": "assets/ui/nano-mandy.webp",
+      "skills": [
+        {
+          "id": 73,
+          "tuneId": 73,
+          "name": "SEISMIC SLAP",
+          "category": "RUN - GROUP",
+          "kind": "speed",
+          "targeting": "group",
+          "description": "Temporarily increase movement speed.",
+          "cost": 30,
+          "cooldown": 18,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 74,
+          "tuneId": 74,
+          "name": "MORE FOR ME",
+          "category": "TREASURE FINDER",
+          "kind": "energy",
+          "targeting": "self",
+          "description": "Recover resources through your Nano link.",
+          "cost": 15,
+          "cooldown": 22,
+          "originalPower": true,
+          "fpsAdaptation": true,
+          "subtype": "treasure"
+        },
+        {
+          "id": 75,
+          "tuneId": 75,
+          "name": "DIMENSIONAL RIFT",
+          "category": "RECALL - SELF",
+          "kind": "recall",
+          "targeting": "self",
+          "description": "Recall to a safer position in the outpost.",
+          "cost": 45,
+          "cooldown": 24,
+          "originalPower": true,
+          "fpsAdaptation": true
+        }
+      ],
+      "sourceIds": {
+        "original": 25,
+        "academy": 46
+      },
+      "originalPowersKnown": true,
+      "originalIcon": "assets/ui-original/nanoicon-12.webp",
+      "sourceIconNumber": 12
+    },
+    {
+      "id": 10,
+      "slug": "megas",
+      "name": "Megas",
+      "asset": "nano-megas",
+      "type": "A",
+      "typeName": "Adaptium",
+      "originalStyleKnown": true,
+      "portrait": "assets/ui/nano-megas.webp",
+      "skills": [
+        {
+          "id": 28,
+          "tuneId": 28,
+          "name": "EIGHTBALL FIREBALL",
+          "category": "SLEEP - CONE",
+          "kind": "sleep",
+          "targeting": "cone",
+          "description": "Put enemies to sleep until they take damage.",
+          "cost": 35,
+          "cooldown": 15,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 29,
+          "tuneId": 29,
+          "name": "STEALTH MODE",
+          "category": "SNEAK - SELF",
+          "kind": "stealth",
+          "targeting": "self",
+          "description": "Become concealed from enemies briefly.",
+          "cost": 40,
+          "cooldown": 22,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 30,
+          "tuneId": 30,
+          "name": "GARDEN STATE SLAM",
+          "category": "SLEEP - AREA",
+          "kind": "sleep",
+          "targeting": "area",
+          "description": "Put enemies to sleep until they take damage.",
+          "cost": 35,
+          "cooldown": 15,
+          "originalPower": true,
+          "fpsAdaptation": true
+        }
+      ],
+      "sourceIds": {
+        "original": 10,
+        "academy": 21
+      },
+      "originalPowersKnown": true,
+      "originalIcon": "assets/ui-original/nanoicon-25.webp",
+      "sourceIconNumber": 25
+    },
+    {
+      "id": 19,
+      "slug": "mojojo",
+      "name": "Mojo Jojo",
+      "asset": "nano-mojojo",
+      "type": "B",
+      "typeName": "Blastons",
+      "originalStyleKnown": true,
+      "portrait": "assets/ui/nano-mojojo.webp",
+      "skills": [
+        {
+          "id": 55,
+          "tuneId": 55,
+          "name": "JOJO JUGGERNAUT",
+          "category": "FREEDOM - GROUP",
+          "kind": "cleanse",
+          "targeting": "group",
+          "description": "Remove harmful effects and gain brief protection.",
+          "cost": 25,
+          "cooldown": 15,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 56,
+          "tuneId": 56,
+          "name": "FREEZE RAY",
+          "category": "DRAIN - POINT",
+          "kind": "drain",
+          "targeting": "point",
+          "description": "Damage enemies and recover some health.",
+          "cost": 45,
+          "cooldown": 16,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 57,
+          "tuneId": 57,
+          "name": "BRAIN POWER",
+          "category": "GUARD",
+          "kind": "shield",
+          "targeting": "self",
+          "description": "Gain temporary protection against damage.",
+          "cost": 35,
+          "cooldown": 20,
+          "originalPower": true,
+          "fpsAdaptation": true
+        }
+      ],
+      "sourceIds": {
+        "original": 19,
+        "academy": 34
+      },
+      "originalPowersKnown": true,
+      "originalIcon": "assets/ui-original/nanoicon-02.webp",
+      "sourceIconNumber": 2
+    },
+    {
+      "id": 8,
+      "slug": "numbuhfive",
+      "name": "Numbuh Five",
+      "asset": "nano-numbuhfive",
+      "type": "B",
+      "typeName": "Blastons",
+      "originalStyleKnown": true,
+      "portrait": "assets/ui/nano-numbuhfive.webp",
+      "skills": [
+        {
+          "id": 22,
+          "tuneId": 22,
+          "name": "MEDIC!",
+          "category": "REVIVE - SELF",
+          "kind": "revive",
+          "targeting": "self",
+          "description": "Prepare an emergency self-revive.",
+          "cost": 65,
+          "cooldown": 40,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 23,
+          "tuneId": 23,
+          "name": "SECRET AGENT",
+          "category": "SNEAK - GROUP",
+          "kind": "stealth",
+          "targeting": "group",
+          "description": "Become concealed from enemies briefly.",
+          "cost": 40,
+          "cooldown": 22,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 24,
+          "tuneId": 24,
+          "name": "DROP KICK",
+          "category": "LEECH - POINT",
+          "kind": "drain",
+          "targeting": "point",
+          "description": "Damage enemies and recover some health.",
+          "cost": 45,
+          "cooldown": 16,
+          "originalPower": true,
+          "fpsAdaptation": true
+        }
+      ],
+      "sourceIds": {
+        "original": 8,
+        "academy": 16
+      },
+      "originalPowersKnown": true,
+      "originalIcon": "assets/ui-original/nanoicon-03.webp",
+      "sourceIconNumber": 3
+    },
+    {
+      "id": 31,
+      "slug": "numbuhfour",
+      "name": "Numbuh Four",
+      "asset": "nano-numbuhfour",
+      "type": "C",
+      "typeName": "Cosmix",
+      "originalStyleKnown": true,
+      "portrait": "assets/ui/nano-numbuhfour.webp",
+      "skills": [
+        {
+          "id": 91,
+          "tuneId": 91,
+          "name": "DON'T GIVE UP!",
+          "category": "REVIVE - GROUP",
+          "kind": "revive",
+          "targeting": "group",
+          "description": "Prepare an emergency self-revive.",
+          "cost": 65,
+          "cooldown": 40,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 92,
+          "tuneId": 92,
+          "name": "BATTLE BOOSTER",
+          "category": "HEALTH - SELF AREA",
+          "kind": "heal",
+          "targeting": "area",
+          "description": "Restore your health in a quick burst.",
+          "cost": 45,
+          "cooldown": 20,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 93,
+          "tuneId": 93,
+          "name": "SABOTAGE STRIKE",
+          "category": "DRAIN - AREA",
+          "kind": "drain",
+          "targeting": "area",
+          "description": "Damage enemies and recover some health.",
+          "cost": 45,
+          "cooldown": 16,
+          "originalPower": true,
+          "fpsAdaptation": true
+        }
+      ],
+      "sourceIds": {
+        "original": 31,
+        "academy": 52
+      },
+      "originalPowersKnown": true,
+      "originalIcon": "assets/ui-original/nanoicon-27.webp",
+      "sourceIconNumber": 27
+    },
+    {
+      "id": 18,
+      "slug": "numbuhone",
+      "name": "Numbuh One",
+      "asset": "nano-numbuhone",
+      "type": "B",
+      "typeName": "Blastons",
+      "originalStyleKnown": true,
+      "portrait": "assets/ui/nano-numbuhone.webp",
+      "skills": [
+        {
+          "id": 52,
+          "tuneId": 52,
+          "name": "SPITWAD VOLLEY",
+          "category": "DAMAGE - CONE",
+          "kind": "damage",
+          "targeting": "cone",
+          "description": "Blast enemies with Nano-powered damage.",
+          "cost": 55,
+          "cooldown": 18,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 53,
+          "tuneId": 53,
+          "name": "FIRST AID",
+          "category": "HEALTH - SELF",
+          "kind": "heal",
+          "targeting": "self",
+          "description": "Restore your health in a quick burst.",
+          "cost": 45,
+          "cooldown": 20,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 54,
+          "tuneId": 54,
+          "name": "BIG BUCKS",
+          "category": "BONUS",
+          "kind": "energy",
+          "targeting": "self",
+          "description": "Recover resources through your Nano link.",
+          "cost": 15,
+          "cooldown": 22,
+          "originalPower": true,
+          "fpsAdaptation": true,
+          "subtype": "bonus"
+        }
+      ],
+      "sourceIds": {
+        "original": 18,
+        "academy": 33
+      },
+      "originalPowersKnown": true,
+      "originalIcon": "assets/ui-original/nanoicon-26.webp",
+      "sourceIconNumber": 26
+    },
+    {
+      "id": 28,
+      "slug": "numbuhthree",
+      "name": "Numbuh Three",
+      "asset": "nano-numbuhthree",
+      "type": "C",
+      "typeName": "Cosmix",
+      "originalStyleKnown": true,
+      "portrait": "assets/ui/nano-numbuhthree.webp",
+      "skills": [
+        {
+          "id": 82,
+          "tuneId": 82,
+          "name": "SHARE THE LOVE",
+          "category": "HEALTH - GROUP",
+          "kind": "heal",
+          "targeting": "group",
+          "description": "Restore your health in a quick burst.",
+          "cost": 45,
+          "cooldown": 20,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 83,
+          "tuneId": 83,
+          "name": "SANBAN SNEAK",
+          "category": "SNEAK - GROUP",
+          "kind": "stealth",
+          "targeting": "group",
+          "description": "Become concealed from enemies briefly.",
+          "cost": 40,
+          "cooldown": 22,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 84,
+          "tuneId": 84,
+          "name": "RAINBOW REVIVAL",
+          "category": "REVIVE - SELF",
+          "kind": "revive",
+          "targeting": "self",
+          "description": "Prepare an emergency self-revive.",
+          "cost": 65,
+          "cooldown": 40,
+          "originalPower": true,
+          "fpsAdaptation": true
+        }
+      ],
+      "sourceIds": {
+        "original": 28,
+        "academy": 49
+      },
+      "originalPowersKnown": true,
+      "originalIcon": "assets/ui-original/nanoicon-29.webp",
+      "sourceIconNumber": 29
+    },
+    {
+      "id": 2,
+      "slug": "numbuhtwo",
+      "name": "Numbuh Two",
+      "asset": "nano-numbuhtwo",
+      "type": "A",
+      "typeName": "Adaptium",
+      "originalStyleKnown": true,
+      "portrait": "assets/ui/nano-numbuhtwo.webp",
+      "skills": [
+        {
+          "id": 4,
+          "tuneId": 4,
+          "name": "FAST FEET",
+          "category": "RUN - SELF",
+          "kind": "speed",
+          "targeting": "self",
+          "description": "Temporarily increase movement speed.",
+          "cost": 30,
+          "cooldown": 18,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 5,
+          "tuneId": 5,
+          "name": "NONSTOP FLIGHT",
+          "category": "RECALL - GROUP",
+          "kind": "recall",
+          "targeting": "group",
+          "description": "Recall to a safer position in the outpost.",
+          "cost": 45,
+          "cooldown": 24,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 6,
+          "tuneId": 6,
+          "name": "LUNCH MONEY",
+          "category": "BONUS",
+          "kind": "energy",
+          "targeting": "self",
+          "description": "Recover resources through your Nano link.",
+          "cost": 15,
+          "cooldown": 22,
+          "originalPower": true,
+          "fpsAdaptation": true,
+          "subtype": "bonus"
+        }
+      ],
+      "sourceIds": {
+        "original": 2,
+        "academy": 10
+      },
+      "originalPowersKnown": true,
+      "originalIcon": "assets/ui-original/nanoicon-28.webp",
+      "sourceIconNumber": 28
+    },
+    {
+      "id": 34,
+      "slug": "samuraijack",
+      "name": "Samurai Jack",
+      "asset": "nano-samuraijack",
+      "type": "A",
+      "typeName": "Adaptium",
+      "originalStyleKnown": true,
+      "portrait": "assets/ui/nano-samuraijack.webp",
+      "skills": [
+        {
+          "id": 100,
+          "tuneId": 100,
+          "name": "RISE OF THE SPIRIT",
+          "category": "JUMP - GROUP",
+          "kind": "jump",
+          "targeting": "group",
+          "description": "Boost your jump and mobility briefly.",
+          "cost": 25,
+          "cooldown": 12,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 101,
+          "tuneId": 101,
+          "name": "SAMURAI SLASH",
+          "category": "DAMAGE - POINT",
+          "kind": "damage",
+          "targeting": "point",
+          "description": "Blast enemies with Nano-powered damage.",
+          "cost": 55,
+          "cooldown": 18,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 102,
+          "tuneId": 102,
+          "name": "SACRED GUARDIAN",
+          "category": "ANTIDOTE",
+          "kind": "cleanse",
+          "targeting": "self",
+          "description": "Remove harmful effects and gain brief protection.",
+          "cost": 25,
+          "cooldown": 15,
+          "originalPower": true,
+          "fpsAdaptation": true
+        }
+      ],
+      "sourceIds": {
+        "original": 34,
+        "academy": 55
+      },
+      "originalPowersKnown": true,
+      "originalIcon": "assets/ui-original/nanoicon-00.webp",
+      "sourceIconNumber": 0
+    },
+    {
+      "id": 24,
+      "slug": "swampfire",
+      "name": "Swampfire",
+      "asset": "nano-swampfire",
+      "type": "C",
+      "typeName": "Cosmix",
+      "originalStyleKnown": true,
+      "portrait": "assets/ui/nano-swampfire.webp",
+      "skills": [
+        {
+          "id": 70,
+          "tuneId": 70,
+          "name": "HEAT STROKE",
+          "category": "SLEEP - AREA",
+          "kind": "sleep",
+          "targeting": "area",
+          "description": "Put enemies to sleep until they take damage.",
+          "cost": 35,
+          "cooldown": 15,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 71,
+          "tuneId": 71,
+          "name": "SWAMP GAS",
+          "category": "SLEEP - CONE",
+          "kind": "sleep",
+          "targeting": "cone",
+          "description": "Put enemies to sleep until they take damage.",
+          "cost": 35,
+          "cooldown": 15,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 72,
+          "tuneId": 72,
+          "name": "CREEPING VINE",
+          "category": "SNEAK - SELF",
+          "kind": "stealth",
+          "targeting": "self",
+          "description": "Become concealed from enemies briefly.",
+          "cost": 40,
+          "cooldown": 22,
+          "originalPower": true,
+          "fpsAdaptation": true
+        }
+      ],
+      "sourceIds": {
+        "original": 24,
+        "academy": 45
+      },
+      "originalPowersKnown": true,
+      "originalIcon": "assets/ui-original/nanoicon-30.webp",
+      "sourceIconNumber": 30
+    },
+    {
+      "id": 2002,
+      "slug": "upgrade",
+      "name": "Upgrade",
+      "asset": "nano-upgrade",
+      "type": null,
+      "typeName": "Unassigned",
+      "originalStyleKnown": false,
+      "portrait": "assets/ui/nano-upgrade.webp",
+      "skills": [
+        {
+          "id": "nano_upgrade-shield",
+          "name": "SHIELD PROTOCOL",
+          "category": "SURVIVAL ADAPTATION",
+          "kind": "shield",
+          "targeting": "self",
+          "description": "Gain temporary protection against damage.",
+          "cost": 35,
+          "cooldown": 20,
+          "originalPower": false,
+          "fpsAdaptation": true,
+          "sourceNote": "Original power data is absent or contains placeholders; this is an explicitly named survival protocol."
+        },
+        {
+          "id": "nano_upgrade-energy",
+          "name": "ENERGY PROTOCOL",
+          "category": "SURVIVAL ADAPTATION",
+          "kind": "energy",
+          "targeting": "self",
+          "description": "Recover resources through your Nano link.",
+          "cost": 15,
+          "cooldown": 22,
+          "originalPower": false,
+          "fpsAdaptation": true,
+          "sourceNote": "Original power data is absent or contains placeholders; this is an explicitly named survival protocol."
+        },
+        {
+          "id": "nano_upgrade-damage",
+          "name": "DAMAGE PROTOCOL",
+          "category": "SURVIVAL ADAPTATION",
+          "kind": "damage",
+          "targeting": "area",
+          "description": "Blast enemies with Nano-powered damage.",
+          "cost": 55,
+          "cooldown": 18,
+          "originalPower": false,
+          "fpsAdaptation": true,
+          "sourceNote": "Original power data is absent or contains placeholders; this is an explicitly named survival protocol."
+        }
+      ],
+      "sourceIds": {
+        "original": null,
+        "academy": null
+      },
+      "originalPowersKnown": false,
+      "originalIcon": null,
+      "sourceIconNumber": null
+    },
+    {
+      "id": 12,
+      "slug": "utonium",
+      "name": "Prof. Utonium",
+      "asset": "nano-utonium",
+      "type": "C",
+      "typeName": "Cosmix",
+      "originalStyleKnown": true,
+      "portrait": "assets/ui/nano-utonium.webp",
+      "skills": [
+        {
+          "id": 34,
+          "tuneId": 34,
+          "name": "PROF. PROTECTION",
+          "category": "DRAIN - POINT",
+          "kind": "drain",
+          "targeting": "point",
+          "description": "Damage enemies and recover some health.",
+          "cost": 45,
+          "cooldown": 16,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 35,
+          "tuneId": 35,
+          "name": "ROCKET PACK",
+          "category": "JUMP - GROUP",
+          "kind": "jump",
+          "targeting": "group",
+          "description": "Boost your jump and mobility briefly.",
+          "cost": 25,
+          "cooldown": 12,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 36,
+          "tuneId": 36,
+          "name": "UTONIUM ZOOM",
+          "category": "ROCKET - SELF",
+          "kind": "jump",
+          "targeting": "self",
+          "description": "Boost your jump and mobility briefly.",
+          "cost": 25,
+          "cooldown": 12,
+          "originalPower": true,
+          "fpsAdaptation": true
+        }
+      ],
+      "sourceIds": {
+        "original": 12,
+        "academy": 23
+      },
+      "originalPowersKnown": true,
+      "originalIcon": "assets/ui-original/nanoicon-31.webp",
+      "sourceIconNumber": 31
+    },
+    {
+      "id": 23,
+      "slug": "vilgax",
+      "name": "Vilgax",
+      "asset": "nano-vilgax",
+      "type": "C",
+      "typeName": "Cosmix",
+      "originalStyleKnown": true,
+      "portrait": "assets/ui/nano-vilgax.webp",
+      "skills": [
+        {
+          "id": 67,
+          "tuneId": 67,
+          "name": "SECURE PERIMETER",
+          "category": "RADAR",
+          "kind": "energy",
+          "targeting": "self",
+          "description": "Recover resources through your Nano link.",
+          "cost": 15,
+          "cooldown": 22,
+          "originalPower": true,
+          "fpsAdaptation": true,
+          "subtype": "radar"
+        },
+        {
+          "id": 68,
+          "tuneId": 68,
+          "name": "LIGHT SPEED",
+          "category": "RUN - SELF",
+          "kind": "speed",
+          "targeting": "self",
+          "description": "Temporarily increase movement speed.",
+          "cost": 30,
+          "cooldown": 18,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 69,
+          "tuneId": 69,
+          "name": "NULL VOID PASSAGE",
+          "category": "RECALL - GROUP",
+          "kind": "recall",
+          "targeting": "group",
+          "description": "Recall to a safer position in the outpost.",
+          "cost": 45,
+          "cooldown": 24,
+          "originalPower": true,
+          "fpsAdaptation": true
+        }
+      ],
+      "sourceIds": {
+        "original": 23,
+        "academy": 44
+      },
+      "originalPowersKnown": true,
+      "originalIcon": "assets/ui-original/nanoicon-32.webp",
+      "sourceIconNumber": 32
+    },
+    {
+      "id": 6,
+      "slug": "wilt",
+      "name": "Wilt",
+      "asset": "nano-wilt",
+      "type": "B",
+      "typeName": "Blastons",
+      "originalStyleKnown": true,
+      "portrait": "assets/ui/nano-wilt.webp",
+      "skills": [
+        {
+          "id": 16,
+          "tuneId": 16,
+          "name": "CRAZY AIR",
+          "category": "JUMP - SELF",
+          "kind": "jump",
+          "targeting": "self",
+          "description": "Boost your jump and mobility briefly.",
+          "cost": 25,
+          "cooldown": 12,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 17,
+          "tuneId": 17,
+          "name": "ZONE DEFENSE",
+          "category": "SNARE -  TARGET AREA",
+          "kind": "snare",
+          "targeting": "area",
+          "description": "Slow enemies to open an escape route.",
+          "cost": 30,
+          "cooldown": 12,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 18,
+          "tuneId": 18,
+          "name": "NOTHING BUT NET",
+          "category": "SNARE - CONE",
+          "kind": "snare",
+          "targeting": "cone",
+          "description": "Slow enemies to open an escape route.",
+          "cost": 30,
+          "cooldown": 12,
+          "originalPower": true,
+          "fpsAdaptation": true
+        }
+      ],
+      "sourceIds": {
+        "original": 6,
+        "academy": 13
+      },
+      "originalPowersKnown": true,
+      "originalIcon": "assets/ui-original/nanoicon-33.webp",
+      "sourceIconNumber": 33
+    },
+    {
+      "id": 1040,
+      "slug": "zaksaturday",
+      "name": "Zak Saturday",
+      "asset": "nano-zaksaturday",
+      "type": "B",
+      "typeName": "Blastons",
+      "originalStyleKnown": true,
+      "portrait": "assets/ui/nano-zaksaturday.webp",
+      "skills": [
+        {
+          "id": 241,
+          "tuneId": 241,
+          "name": "CRYPTID ASSAULT",
+          "category": "DAMAGE - POINT",
+          "kind": "damage",
+          "targeting": "point",
+          "description": "Blast enemies with Nano-powered damage.",
+          "cost": 55,
+          "cooldown": 18,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 242,
+          "tuneId": 242,
+          "name": "CLAW GRAPPLE",
+          "category": "SNARE - CONE",
+          "kind": "snare",
+          "targeting": "cone",
+          "description": "Slow enemies to open an escape route.",
+          "cost": 30,
+          "cooldown": 12,
+          "originalPower": true,
+          "fpsAdaptation": true
+        },
+        {
+          "id": 243,
+          "tuneId": 243,
+          "name": "MONSTER HUNTER",
+          "category": "RADAR",
+          "kind": "energy",
+          "targeting": "self",
+          "description": "Recover resources through your Nano link.",
+          "cost": 15,
+          "cooldown": 22,
+          "originalPower": true,
+          "fpsAdaptation": true,
+          "subtype": "radar"
+        }
+      ],
+      "sourceIds": {
+        "original": null,
+        "academy": 40
+      },
+      "originalPowersKnown": true,
+      "originalIcon": null,
+      "sourceIconNumber": 53
+    }
+  ],
+  "assets": {
+    "nano-fourarms": {
+      "url": "assets/models/nano-fourarms.json",
+      "source": "nano/nano_4arms.kfm",
+      "bounds": {
+        "min": [
+          -0.35644,
+          0.0,
+          -0.11283
+        ],
+        "max": [
+          0.35644,
+          0.45931,
+          0.11283
+        ],
+        "size": [
+          0.71287,
+          0.45931,
+          0.22566
+        ]
+      },
+      "parts": 5,
+      "triangles": 2224,
+      "bytes": 98151
+    },
+    "nano-aku": {
+      "url": "assets/models/nano-aku.json",
+      "source": "nano/nano_aku.kfm",
+      "bounds": {
+        "min": [
+          -0.23734,
+          0.0,
+          -0.14538
+        ],
+        "max": [
+          0.23734,
+          0.62193,
+          0.14538
+        ],
+        "size": [
+          0.47469,
+          0.62193,
+          0.29076
+        ]
+      },
+      "parts": 1,
+      "triangles": 2130,
+      "bytes": 102112
+    },
+    "nano-ben": {
+      "url": "assets/models/nano-ben.json",
+      "source": "nano/nano_ben.kfm",
+      "bounds": {
+        "min": [
+          -0.13831,
+          0.0,
+          -0.10663
+        ],
+        "max": [
+          0.13831,
+          0.38719,
+          0.10663
+        ],
+        "size": [
+          0.27663,
+          0.38719,
+          0.21327
+        ]
+      },
+      "parts": 3,
+      "triangles": 1796,
+      "bytes": 86197
+    },
+    "nano-billy": {
+      "url": "assets/models/nano-billy.json",
+      "source": "nano/nano_billy.kfm",
+      "bounds": {
+        "min": [
+          -0.16393,
+          0.0,
+          -0.18239
+        ],
+        "max": [
+          0.16393,
+          0.56229,
+          0.18239
+        ],
+        "size": [
+          0.32786,
+          0.56229,
+          0.36477
+        ]
+      },
+      "parts": 1,
+      "triangles": 1985,
+      "bytes": 84063
+    },
+    "nano-bloo": {
+      "url": "assets/models/nano-bloo.json",
+      "source": "nano/nano_bloo.kfm",
+      "bounds": {
+        "min": [
+          -0.09831,
+          0.0,
+          -0.10248
+        ],
+        "max": [
+          0.09831,
+          0.33055,
+          0.10248
+        ],
+        "size": [
+          0.19661,
+          0.33055,
+          0.20496
+        ]
+      },
+      "parts": 6,
+      "triangles": 1161,
+      "bytes": 47756
+    },
+    "nano-blossom": {
+      "url": "assets/models/nano-blossom.json",
+      "source": "nano/nano_blossom.kfm",
+      "bounds": {
+        "min": [
+          -0.16924,
+          0.0,
+          -0.13957
+        ],
+        "max": [
+          0.16924,
+          0.58887,
+          0.13957
+        ],
+        "size": [
+          0.33848,
+          0.58887,
+          0.27915
+        ]
+      },
+      "parts": 2,
+      "triangles": 2419,
+      "bytes": 106369
+    },
+    "nano-bubbles": {
+      "url": "assets/models/nano-bubbles.json",
+      "source": "nano/nano_bubbles.kfm",
+      "bounds": {
+        "min": [
+          -0.20262,
+          0.0,
+          -0.12797
+        ],
+        "max": [
+          0.20262,
+          0.46971,
+          0.12797
+        ],
+        "size": [
+          0.40525,
+          0.46971,
+          0.25595
+        ]
+      },
+      "parts": 2,
+      "triangles": 2370,
+      "bytes": 108602
+    },
+    "nano-buttercup": {
+      "url": "assets/models/nano-buttercup.json",
+      "source": "nano/nano_buttercup.kfm",
+      "bounds": {
+        "min": [
+          -0.16924,
+          0.0,
+          -0.13242
+        ],
+        "max": [
+          0.16924,
+          0.47749,
+          0.13242
+        ],
+        "size": [
+          0.33848,
+          0.47749,
+          0.26485
+        ]
+      },
+      "parts": 2,
+      "triangles": 2250,
+      "bytes": 105561
+    },
+    "nano-cheese": {
+      "url": "assets/models/nano-cheese.json",
+      "source": "nano/nano_cheese.kfm",
+      "bounds": {
+        "min": [
+          -0.10387,
+          0.0,
+          -0.11584
+        ],
+        "max": [
+          0.10387,
+          0.4094,
+          0.11584
+        ],
+        "size": [
+          0.20774,
+          0.4094,
+          0.23168
+        ]
+      },
+      "parts": 1,
+      "triangles": 1364,
+      "bytes": 65430
+    },
+    "nano-chowder": {
+      "url": "assets/models/nano-chowder.json",
+      "source": "nano/nano_chowder.kfm",
+      "bounds": {
+        "min": [
+          -0.19841,
+          0.0,
+          -0.16823
+        ],
+        "max": [
+          0.19841,
+          0.50511,
+          0.16823
+        ],
+        "size": [
+          0.39682,
+          0.50511,
+          0.33645
+        ]
+      },
+      "parts": 1,
+      "triangles": 2750,
+      "bytes": 126109
+    },
+    "nano-coco": {
+      "url": "assets/models/nano-coco.json",
+      "source": "nano/nano_coco.kfm",
+      "bounds": {
+        "min": [
+          -0.13599,
+          0.0,
+          -0.12278
+        ],
+        "max": [
+          0.13599,
+          0.40024,
+          0.12278
+        ],
+        "size": [
+          0.27198,
+          0.40024,
+          0.24557
+        ]
+      },
+      "parts": 1,
+      "triangles": 1359,
+      "bytes": 65768
+    },
+    "nano-courage": {
+      "url": "assets/models/nano-courage.json",
+      "source": "nano/nano_courage.kfm",
+      "bounds": {
+        "min": [
+          -0.16138,
+          0.0,
+          -0.17268
+        ],
+        "max": [
+          0.16138,
+          0.33669,
+          0.17268
+        ],
+        "size": [
+          0.32277,
+          0.33669,
+          0.34535
+        ]
+      },
+      "parts": 1,
+      "triangles": 1084,
+      "bytes": 47577
+    },
+    "nano-deedee": {
+      "url": "assets/models/nano-deedee.json",
+      "source": "nano/nano_deedee.kfm",
+      "bounds": {
+        "min": [
+          -0.23532,
+          0.0,
+          -0.14396
+        ],
+        "max": [
+          0.23532,
+          0.52811,
+          0.14396
+        ],
+        "size": [
+          0.47065,
+          0.52811,
+          0.28792
+        ]
+      },
+      "parts": 1,
+      "triangles": 1306,
+      "bytes": 86174
+    },
+    "nano-demongo": {
+      "url": "assets/models/nano-demongo.json",
+      "source": "nano/nano_demongo.kfm",
+      "bounds": {
+        "min": [
+          -0.38159,
+          0.0,
+          -0.17071
+        ],
+        "max": [
+          0.38159,
+          0.40559,
+          0.17071
+        ],
+        "size": [
+          0.76318,
+          0.40559,
+          0.34142
+        ]
+      },
+      "parts": 2,
+      "triangles": 1479,
+      "bytes": 69230
+    },
+    "nano-dexter": {
+      "url": "assets/models/nano-dexter.json",
+      "source": "nano/nano_dexter.kfm",
+      "bounds": {
+        "min": [
+          -0.17243,
+          0.0,
+          -0.1438
+        ],
+        "max": [
+          0.17243,
+          0.45721,
+          0.1438
+        ],
+        "size": [
+          0.34486,
+          0.45721,
+          0.28759
+        ]
+      },
+      "parts": 2,
+      "triangles": 2073,
+      "bytes": 96900
+    },
+    "nano-ed": {
+      "url": "assets/models/nano-ed.json",
+      "source": "nano/nano_ed.kfm",
+      "bounds": {
+        "min": [
+          -0.18948,
+          0.0,
+          -0.14111
+        ],
+        "max": [
+          0.18948,
+          0.51167,
+          0.14111
+        ],
+        "size": [
+          0.37896,
+          0.51167,
+          0.28223
+        ]
+      },
+      "parts": 1,
+      "triangles": 2339,
+      "bytes": 112955
+    },
+    "nano-edd": {
+      "url": "assets/models/nano-edd.json",
+      "source": "nano/nano_edd.kfm",
+      "bounds": {
+        "min": [
+          -0.16965,
+          0.0,
+          -0.18296
+        ],
+        "max": [
+          0.16965,
+          0.48146,
+          0.18296
+        ],
+        "size": [
+          0.33931,
+          0.48146,
+          0.36593
+        ]
+      },
+      "parts": 1,
+      "triangles": 1856,
+      "bytes": 91044
+    },
+    "nano-eddy": {
+      "url": "assets/models/nano-eddy.json",
+      "source": "nano/nano_eddy.kfm",
+      "bounds": {
+        "min": [
+          -0.20828,
+          0.0,
+          -0.12279
+        ],
+        "max": [
+          0.20828,
+          0.57168,
+          0.12279
+        ],
+        "size": [
+          0.41656,
+          0.57168,
+          0.24558
+        ]
+      },
+      "parts": 1,
+      "triangles": 1554,
+      "bytes": 77592
+    },
+    "nano-eduardo": {
+      "url": "assets/models/nano-eduardo.json",
+      "source": "nano/nano_eduardo.kfm",
+      "bounds": {
+        "min": [
+          -0.20365,
+          0.0,
+          -0.20056
+        ],
+        "max": [
+          0.20365,
+          0.51645,
+          0.20056
+        ],
+        "size": [
+          0.4073,
+          0.51645,
+          0.40113
+        ]
+      },
+      "parts": 4,
+      "triangles": 1492,
+      "bytes": 64255
+    },
+    "nano-flapjack": {
+      "url": "assets/models/nano-flapjack.json",
+      "source": "nano/nano_flapjack.kfm",
+      "bounds": {
+        "min": [
+          -0.14301,
+          0.0,
+          -0.12241
+        ],
+        "max": [
+          0.14301,
+          0.47133,
+          0.12241
+        ],
+        "size": [
+          0.28602,
+          0.47133,
+          0.24483
+        ]
+      },
+      "parts": 1,
+      "triangles": 1364,
+      "bytes": 90753
+    },
+    "nano-ghostfreak": {
+      "url": "assets/models/nano-ghostfreak.json",
+      "source": "nano/nano_ghostfreak.kfm",
+      "bounds": {
+        "min": [
+          -0.28607,
+          0.0,
+          -0.0792
+        ],
+        "max": [
+          0.28607,
+          0.55478,
+          0.0792
+        ],
+        "size": [
+          0.57213,
+          0.55478,
+          0.1584
+        ]
+      },
+      "parts": 1,
+      "triangles": 829,
+      "bytes": 37907
+    },
+    "nano-grim": {
+      "url": "assets/models/nano-grim.json",
+      "source": "nano/nano_grim.kfm",
+      "bounds": {
+        "min": [
+          -0.20732,
+          0.0,
+          -0.31191
+        ],
+        "max": [
+          0.20732,
+          0.54552,
+          0.31191
+        ],
+        "size": [
+          0.41464,
+          0.54552,
+          0.62383
+        ]
+      },
+      "parts": 6,
+      "triangles": 2136,
+      "bytes": 91744
+    },
+    "nano-hex": {
+      "url": "assets/models/nano-hex.json",
+      "source": "nano/nano_hex.kfm",
+      "bounds": {
+        "min": [
+          -0.23242,
+          0.0,
+          -0.15379
+        ],
+        "max": [
+          0.23242,
+          0.52957,
+          0.15379
+        ],
+        "size": [
+          0.46483,
+          0.52957,
+          0.30758
+        ]
+      },
+      "parts": 2,
+      "triangles": 1697,
+      "bytes": 83522
+    },
+    "nano-him": {
+      "url": "assets/models/nano-him.json",
+      "source": "nano/nano_him.kfm",
+      "bounds": {
+        "min": [
+          -0.19731,
+          0.0,
+          -0.17964
+        ],
+        "max": [
+          0.19731,
+          0.5418,
+          0.17964
+        ],
+        "size": [
+          0.39461,
+          0.5418,
+          0.35929
+        ]
+      },
+      "parts": 1,
+      "triangles": 1861,
+      "bytes": 76072
+    },
+    "nano-humongousaur": {
+      "url": "assets/models/nano-humongousaur.json",
+      "source": "nano/nano_humongousaur.kfm",
+      "bounds": {
+        "min": [
+          -0.38401,
+          0.0,
+          -0.34571
+        ],
+        "max": [
+          0.38401,
+          0.50868,
+          0.34571
+        ],
+        "size": [
+          0.76803,
+          0.50868,
+          0.69142
+        ]
+      },
+      "parts": 1,
+      "triangles": 1689,
+      "bytes": 71564
+    },
+    "nano-johnnybravo": {
+      "url": "assets/models/nano-johnnybravo.json",
+      "source": "nano/nano_johnnybravo.kfm",
+      "bounds": {
+        "min": [
+          -0.22416,
+          0.0,
+          -0.07937
+        ],
+        "max": [
+          0.22416,
+          0.48127,
+          0.07937
+        ],
+        "size": [
+          0.44832,
+          0.48127,
+          0.15874
+        ]
+      },
+      "parts": 1,
+      "triangles": 1870,
+      "bytes": 78225
+    },
+    "nano-juniperlee": {
+      "url": "assets/models/nano-juniperlee.json",
+      "source": "nano/nano_juniper_lee.kfm",
+      "bounds": {
+        "min": [
+          -0.18021,
+          0.0,
+          -0.12155
+        ],
+        "max": [
+          0.18021,
+          0.47076,
+          0.12155
+        ],
+        "size": [
+          0.36042,
+          0.47076,
+          0.24309
+        ]
+      },
+      "parts": 1,
+      "triangles": 2314,
+      "bytes": 107276
+    },
+    "nano-mac": {
+      "url": "assets/models/nano-mac.json",
+      "source": "nano/nano_mac.kfm",
+      "bounds": {
+        "min": [
+          -0.16905,
+          0.0,
+          -0.13558
+        ],
+        "max": [
+          0.16905,
+          0.53562,
+          0.13558
+        ],
+        "size": [
+          0.33809,
+          0.53562,
+          0.27116
+        ]
+      },
+      "parts": 1,
+      "triangles": 2012,
+      "bytes": 98383
+    },
+    "nano-mandark": {
+      "url": "assets/models/nano-mandark.json",
+      "source": "nano/nano_mandark.kfm",
+      "bounds": {
+        "min": [
+          -0.15745,
+          0.0,
+          -0.12537
+        ],
+        "max": [
+          0.15745,
+          0.55574,
+          0.12537
+        ],
+        "size": [
+          0.3149,
+          0.55574,
+          0.25074
+        ]
+      },
+      "parts": 1,
+      "triangles": 2012,
+      "bytes": 90168
+    },
+    "nano-mandy": {
+      "url": "assets/models/nano-mandy.json",
+      "source": "nano/nano_mandy.kfm",
+      "bounds": {
+        "min": [
+          -0.16212,
+          0.0,
+          -0.12677
+        ],
+        "max": [
+          0.16212,
+          0.47436,
+          0.12677
+        ],
+        "size": [
+          0.32423,
+          0.47436,
+          0.25353
+        ]
+      },
+      "parts": 1,
+      "triangles": 1991,
+      "bytes": 85288
+    },
+    "nano-megas": {
+      "url": "assets/models/nano-megas.json",
+      "source": "nano/nano_megas.kfm",
+      "bounds": {
+        "min": [
+          -0.24294,
+          0.0,
+          -0.13049
+        ],
+        "max": [
+          0.24294,
+          0.5863,
+          0.13049
+        ],
+        "size": [
+          0.48587,
+          0.5863,
+          0.26098
+        ]
+      },
+      "parts": 1,
+      "triangles": 2094,
+      "bytes": 115345
+    },
+    "nano-mojojo": {
+      "url": "assets/models/nano-mojojo.json",
+      "source": "nano/nano_mojojo.kfm",
+      "bounds": {
+        "min": [
+          -0.22345,
+          0.0,
+          -0.17718
+        ],
+        "max": [
+          0.22345,
+          0.61468,
+          0.17718
+        ],
+        "size": [
+          0.44689,
+          0.61468,
+          0.35437
+        ]
+      },
+      "parts": 1,
+      "triangles": 2293,
+      "bytes": 102692
+    },
+    "nano-numbuhfive": {
+      "url": "assets/models/nano-numbuhfive.json",
+      "source": "nano/nano_numbuhfive.kfm",
+      "bounds": {
+        "min": [
+          -0.17028,
+          0.0,
+          -0.35291
+        ],
+        "max": [
+          0.17028,
+          0.4578,
+          0.35291
+        ],
+        "size": [
+          0.34056,
+          0.4578,
+          0.70583
+        ]
+      },
+      "parts": 1,
+      "triangles": 2518,
+      "bytes": 114234
+    },
+    "nano-numbuhfour": {
+      "url": "assets/models/nano-numbuhfour.json",
+      "source": "nano/nano_numbuhfour.kfm",
+      "bounds": {
+        "min": [
+          -0.1694,
+          0.0,
+          -0.14726
+        ],
+        "max": [
+          0.1694,
+          0.43148,
+          0.14726
+        ],
+        "size": [
+          0.3388,
+          0.43148,
+          0.29451
+        ]
+      },
+      "parts": 1,
+      "triangles": 2215,
+      "bytes": 108040
+    },
+    "nano-numbuhone": {
+      "url": "assets/models/nano-numbuhone.json",
+      "source": "nano/nano_numbuhone.kfm",
+      "bounds": {
+        "min": [
+          -0.16905,
+          0.0,
+          -0.11921
+        ],
+        "max": [
+          0.16905,
+          0.45267,
+          0.11921
+        ],
+        "size": [
+          0.33809,
+          0.45267,
+          0.23842
+        ]
+      },
+      "parts": 1,
+      "triangles": 2199,
+      "bytes": 105636
+    },
+    "nano-numbuhthree": {
+      "url": "assets/models/nano-numbuhthree.json",
+      "source": "nano/nano_numbuhthree.kfm",
+      "bounds": {
+        "min": [
+          -0.22271,
+          0.0,
+          -0.17112
+        ],
+        "max": [
+          0.22271,
+          0.42635,
+          0.17112
+        ],
+        "size": [
+          0.44542,
+          0.42635,
+          0.34224
+        ]
+      },
+      "parts": 1,
+      "triangles": 1904,
+      "bytes": 91870
+    },
+    "nano-numbuhtwo": {
+      "url": "assets/models/nano-numbuhtwo.json",
+      "source": "nano/nano_numbuhtwo.kfm",
+      "bounds": {
+        "min": [
+          -0.26076,
+          0.0,
+          -0.13155
+        ],
+        "max": [
+          0.26076,
+          0.50122,
+          0.13155
+        ],
+        "size": [
+          0.52153,
+          0.50122,
+          0.2631
+        ]
+      },
+      "parts": 1,
+      "triangles": 2170,
+      "bytes": 109953
+    },
+    "nano-samuraijack": {
+      "url": "assets/models/nano-samuraijack.json",
+      "source": "nano/nano_samuraijack.kfm",
+      "bounds": {
+        "min": [
+          -0.19538,
+          0.0,
+          -0.19262
+        ],
+        "max": [
+          0.19538,
+          0.50088,
+          0.19262
+        ],
+        "size": [
+          0.39076,
+          0.50088,
+          0.38523
+        ]
+      },
+      "parts": 2,
+      "triangles": 1512,
+      "bytes": 70830
+    },
+    "nano-swampfire": {
+      "url": "assets/models/nano-swampfire.json",
+      "source": "nano/nano_swampfire.kfm",
+      "bounds": {
+        "min": [
+          -0.2178,
+          0.0,
+          -0.08499
+        ],
+        "max": [
+          0.2178,
+          0.52256,
+          0.08499
+        ],
+        "size": [
+          0.4356,
+          0.52256,
+          0.16997
+        ]
+      },
+      "parts": 1,
+      "triangles": 1987,
+      "bytes": 91515
+    },
+    "nano-upgrade": {
+      "url": "assets/models/nano-upgrade.json",
+      "source": "nano/nano_upgrade.kfm",
+      "bounds": {
+        "min": [
+          -0.35493,
+          0.0,
+          -0.10411
+        ],
+        "max": [
+          0.35493,
+          0.54804,
+          0.10411
+        ],
+        "size": [
+          0.70985,
+          0.54804,
+          0.20822
+        ]
+      },
+      "parts": 1,
+      "triangles": 1531,
+      "bytes": 70104
+    },
+    "nano-utonium": {
+      "url": "assets/models/nano-utonium.json",
+      "source": "nano/nano_utonium.kfm",
+      "bounds": {
+        "min": [
+          -0.20227,
+          0.0,
+          -0.14538
+        ],
+        "max": [
+          0.20227,
+          0.48909,
+          0.14538
+        ],
+        "size": [
+          0.40454,
+          0.48909,
+          0.29076
+        ]
+      },
+      "parts": 2,
+      "triangles": 1584,
+      "bytes": 76347
+    },
+    "nano-vilgax": {
+      "url": "assets/models/nano-vilgax.json",
+      "source": "nano/nano_vilgax.kfm",
+      "bounds": {
+        "min": [
+          -0.23047,
+          0.0,
+          -0.12149
+        ],
+        "max": [
+          0.23047,
+          0.51541,
+          0.12149
+        ],
+        "size": [
+          0.46095,
+          0.51541,
+          0.24299
+        ]
+      },
+      "parts": 1,
+      "triangles": 2075,
+      "bytes": 95074
+    },
+    "nano-wilt": {
+      "url": "assets/models/nano-wilt.json",
+      "source": "nano/nano_wilt.kfm",
+      "bounds": {
+        "min": [
+          -0.31235,
+          0.0,
+          -0.08517
+        ],
+        "max": [
+          0.31235,
+          0.61091,
+          0.08517
+        ],
+        "size": [
+          0.62471,
+          0.61091,
+          0.17034
+        ]
+      },
+      "parts": 1,
+      "triangles": 1691,
+      "bytes": 71650
+    },
+    "nano-zaksaturday": {
+      "url": "assets/models/nano-zaksaturday.json",
+      "source": "nano/nano_zaksaturday.kfm",
+      "bounds": {
+        "min": [
+          -0.17097,
+          0.0,
+          -0.13517
+        ],
+        "max": [
+          0.17097,
+          0.49824,
+          0.13517
+        ],
+        "size": [
+          0.34194,
+          0.49824,
+          0.27035
+        ]
+      },
+      "parts": 2,
+      "triangles": 2270,
+      "bytes": 111511
+    }
+  },
+  "textures": {
+    "a710e519dea2": {
+      "map": "assets/textures/a710e519dea2.webp",
+      "alpha": false,
+      "name": "nano_4arms",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "4a4af9924bf2": {
+      "map": "assets/textures/4a4af9924bf2.webp",
+      "alpha": false,
+      "name": "nano_aku",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "dafb8bed8701": {
+      "map": "assets/textures/dafb8bed8701.webp",
+      "alpha": false,
+      "name": "nano_ben",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "bd413a4b4633": {
+      "map": "assets/textures/bd413a4b4633.webp",
+      "alpha": false,
+      "name": "nano_ben_face",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "d9870c2f4325": {
+      "map": "assets/textures/d9870c2f4325.webp",
+      "alpha": false,
+      "name": "nano_billy",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "13cd0af0ed85": {
+      "map": "assets/textures/13cd0af0ed85.webp",
+      "alpha": false,
+      "name": "nano_bloo",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "2a2902e566d4": {
+      "map": "assets/textures/2a2902e566d4.webp",
+      "alpha": false,
+      "name": "nano_blossom",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "c2b37d0740b5": {
+      "map": "assets/textures/c2b37d0740b5.webp",
+      "alpha": false,
+      "name": "nano_blossom_face",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "eb320fda57dc": {
+      "map": "assets/textures/eb320fda57dc.webp",
+      "alpha": false,
+      "name": "nano_bubbles",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "84476c34644c": {
+      "map": "assets/textures/84476c34644c.webp",
+      "alpha": false,
+      "name": "nano_bubbles_face",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "8ef8e7e429fd": {
+      "map": "assets/textures/8ef8e7e429fd.webp",
+      "alpha": false,
+      "name": "nano_buttercup",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "dc175a11a26c": {
+      "map": "assets/textures/dc175a11a26c.webp",
+      "alpha": false,
+      "name": "nano_buttercup_face",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "65db2e85258e": {
+      "map": "assets/textures/65db2e85258e.webp",
+      "alpha": false,
+      "name": "nano_cheese",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "7886587ef04a": {
+      "map": "assets/textures/7886587ef04a.webp",
+      "alpha": false,
+      "name": "nano_chowder",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "76abf2c5c4ca": {
+      "map": "assets/textures/76abf2c5c4ca.webp",
+      "alpha": false,
+      "name": "nano_coco",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "ad8895658258": {
+      "map": "assets/textures/ad8895658258.webp",
+      "alpha": false,
+      "name": "nano_courage",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "aa269edaf205": {
+      "map": "assets/textures/aa269edaf205.webp",
+      "alpha": false,
+      "name": "nano_deedee",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "44dbb02849ed": {
+      "map": "assets/textures/44dbb02849ed.webp",
+      "alpha": false,
+      "name": "nano_demongo",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "06a167ed5590": {
+      "map": "assets/textures/06a167ed5590.webp",
+      "alpha": false,
+      "name": "nano_dexter",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "6025f153e51f": {
+      "map": "assets/textures/6025f153e51f.webp",
+      "alpha": false,
+      "name": "nano_dexter_face",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "59c7e18ebed5": {
+      "map": "assets/textures/59c7e18ebed5.webp",
+      "alpha": false,
+      "name": "nano_ed",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "0deac444234b": {
+      "map": "assets/textures/0deac444234b.webp",
+      "alpha": false,
+      "name": "nano_edd",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "ff54f4c6a9bd": {
+      "map": "assets/textures/ff54f4c6a9bd.webp",
+      "alpha": false,
+      "name": "nano_eddy",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "7443c4bde9bf": {
+      "map": "assets/textures/7443c4bde9bf.webp",
+      "alpha": false,
+      "name": "nano_eduardo",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "3135775c1c50": {
+      "map": "assets/textures/3135775c1c50.webp",
+      "alpha": false,
+      "name": "nano_eduardo_face",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "b0ef5b2eaa0c": {
+      "map": "assets/textures/b0ef5b2eaa0c.webp",
+      "alpha": false,
+      "name": "nano_flapjack",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "88b52ff0d941": {
+      "map": "assets/textures/88b52ff0d941.webp",
+      "alpha": false,
+      "name": "nano_ghostfreak",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "fda5b40efdc9": {
+      "map": "assets/textures/fda5b40efdc9.webp",
+      "alpha": false,
+      "name": "nano_grim",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "51401155d3dc": {
+      "map": "assets/textures/51401155d3dc.webp",
+      "alpha": false,
+      "name": "nano_hex",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "d960d14053b7": {
+      "map": "assets/textures/d960d14053b7.webp",
+      "alpha": false,
+      "name": "nano_him",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "4e8e48f445b1": {
+      "map": "assets/textures/4e8e48f445b1.webp",
+      "alpha": false,
+      "name": "nano_humongousaur",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "d512f19847cc": {
+      "map": "assets/textures/d512f19847cc.webp",
+      "alpha": false,
+      "name": "nano_johnnybravo",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "3db6f8dff325": {
+      "map": "assets/textures/3db6f8dff325.webp",
+      "alpha": false,
+      "name": "nano_juniper_lee",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "867bc0ec1061": {
+      "map": "assets/textures/867bc0ec1061.webp",
+      "alpha": false,
+      "name": "nano_mac",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "5dfeea5ad2df": {
+      "map": "assets/textures/5dfeea5ad2df.webp",
+      "alpha": false,
+      "name": "nano_mandark",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "5e8b394eee6f": {
+      "map": "assets/textures/5e8b394eee6f.webp",
+      "alpha": false,
+      "name": "nano_mandy",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "17dd027d1b75": {
+      "map": "assets/textures/17dd027d1b75.webp",
+      "alpha": false,
+      "name": "nano_megas",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "62f353d9a3b9": {
+      "map": "assets/textures/62f353d9a3b9.webp",
+      "alpha": false,
+      "name": "nano_mojojo",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "f5f3ea3db6f9": {
+      "map": "assets/textures/f5f3ea3db6f9.webp",
+      "alpha": false,
+      "name": "nano_numbuhfive",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "b9417a59e304": {
+      "map": "assets/textures/b9417a59e304.webp",
+      "alpha": false,
+      "name": "nano_numbuhfour",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "337c041af7b0": {
+      "map": "assets/textures/337c041af7b0.webp",
+      "alpha": false,
+      "name": "nano_numbuhone",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "196bbf7250f7": {
+      "map": "assets/textures/196bbf7250f7.webp",
+      "alpha": false,
+      "name": "nano_numbuhthree",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "ec0065938182": {
+      "map": "assets/textures/ec0065938182.webp",
+      "alpha": false,
+      "name": "nano_numbuhtwo",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "0fd9c55e7ebb": {
+      "map": "assets/textures/0fd9c55e7ebb.webp",
+      "alpha": false,
+      "name": "nano_samuraijack",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "52fef3d15065": {
+      "map": "assets/textures/52fef3d15065.webp",
+      "alpha": false,
+      "name": "nano_swampfire",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1b88c1ef88b7": {
+      "map": "assets/textures/1b88c1ef88b7.webp",
+      "alpha": false,
+      "name": "nano_upgrade",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "bc0a29bf677c": {
+      "map": "assets/textures/bc0a29bf677c.webp",
+      "alpha": false,
+      "name": "nano_utonium",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "43d6ce0fd084": {
+      "map": "assets/textures/43d6ce0fd084.webp",
+      "alpha": false,
+      "name": "nano_utonium_face",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "2502d3d9af0b": {
+      "map": "assets/textures/2502d3d9af0b.webp",
+      "alpha": false,
+      "name": "nano_vilgax",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "dc9c0df323d7": {
+      "map": "assets/textures/dc9c0df323d7.webp",
+      "alpha": false,
+      "name": "nano_wilt",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "faee591db140": {
+      "map": "assets/textures/faee591db140.webp",
+      "alpha": false,
+      "name": "nano_zaksaturday",
+      "size": [
+        256,
+        256
+      ]
+    }
+  },
+  "missing": []
+}

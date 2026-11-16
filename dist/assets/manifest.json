@@ -1,0 +1,7592 @@
+{
+  "format": "fusionfall-mesh-v1",
+  "source": "Local original FusionFall Unity Web Player cache; read-only extraction via UnityPackFF",
+  "assets": {
+    "nano-buttercup": {
+      "url": "assets/models/nano-buttercup.json",
+      "source": "nano/nano_buttercup.kfm",
+      "bounds": {
+        "min": [
+          -0.16924,
+          0.0,
+          -0.13242
+        ],
+        "max": [
+          0.16924,
+          0.47749,
+          0.13242
+        ],
+        "size": [
+          0.33848,
+          0.47749,
+          0.26485
+        ]
+      },
+      "parts": 2,
+      "triangles": 2250,
+      "bytes": 105561
+    },
+    "nano-eddy": {
+      "url": "assets/models/nano-eddy.json",
+      "source": "nano/nano_eddy.kfm",
+      "bounds": {
+        "min": [
+          -0.20828,
+          0.0,
+          -0.12279
+        ],
+        "max": [
+          0.20828,
+          0.57168,
+          0.12279
+        ],
+        "size": [
+          0.41656,
+          0.57168,
+          0.24558
+        ]
+      },
+      "parts": 1,
+      "triangles": 1554,
+      "bytes": 77592
+    },
+    "nano-deedee": {
+      "url": "assets/models/nano-deedee.json",
+      "source": "nano/nano_deedee.kfm",
+      "bounds": {
+        "min": [
+          -0.23532,
+          0.0,
+          -0.14396
+        ],
+        "max": [
+          0.23532,
+          0.52811,
+          0.14396
+        ],
+        "size": [
+          0.47065,
+          0.52811,
+          0.28792
+        ]
+      },
+      "parts": 1,
+      "triangles": 1306,
+      "bytes": 86174
+    },
+    "weapon-pistol": {
+      "url": "assets/models/weapon-pistol.json",
+      "source": "wear/pistol_b10.nif",
+      "bounds": {
+        "min": [
+          -0.08987,
+          0.0,
+          -0.1984
+        ],
+        "max": [
+          0.08987,
+          0.23729,
+          0.1984
+        ],
+        "size": [
+          0.17974,
+          0.23729,
+          0.3968
+        ]
+      },
+      "parts": 1,
+      "triangles": 607,
+      "bytes": 33871
+    },
+    "weapon-rifle": {
+      "url": "assets/models/weapon-rifle.json",
+      "source": "wear/rifle_microscopegun.nif",
+      "bounds": {
+        "min": [
+          -0.08608,
+          0.0,
+          -0.42591
+        ],
+        "max": [
+          0.08608,
+          0.41059,
+          0.42591
+        ],
+        "size": [
+          0.17217,
+          0.41059,
+          0.85182
+        ]
+      },
+      "parts": 1,
+      "triangles": 558,
+      "bytes": 36433
+    },
+    "weapon-shotgun": {
+      "url": "assets/models/weapon-shotgun.json",
+      "source": "wear/rifle_bruningshotgun.nif",
+      "bounds": {
+        "min": [
+          -0.0432,
+          0.0,
+          -0.39237
+        ],
+        "max": [
+          0.0432,
+          0.18504,
+          0.39237
+        ],
+        "size": [
+          0.08641,
+          0.18504,
+          0.78474
+        ]
+      },
+      "parts": 1,
+      "triangles": 414,
+      "bytes": 26291
+    },
+    "weapon-cannon": {
+      "url": "assets/models/weapon-cannon.json",
+      "source": "wear/thbazooka_bioplasmacannon.nif",
+      "bounds": {
+        "min": [
+          -0.06675,
+          0.0,
+          -0.49966
+        ],
+        "max": [
+          0.06675,
+          0.43544,
+          0.49966
+        ],
+        "size": [
+          0.13351,
+          0.43544,
+          0.99931
+        ]
+      },
+      "parts": 1,
+      "triangles": 808,
+      "bytes": 39435
+    },
+    "enemy-spawn": {
+      "url": "assets/models/enemy-spawn.json",
+      "source": "mob/mob_spawn.kfm",
+      "bounds": {
+        "min": [
+          -0.2328,
+          0.0,
+          -0.36344
+        ],
+        "max": [
+          0.2328,
+          0.61268,
+          0.36344
+        ],
+        "size": [
+          0.46559,
+          0.61268,
+          0.72688
+        ]
+      },
+      "parts": 2,
+      "triangles": 498,
+      "bytes": 19735
+    },
+    "enemy-gasspawn": {
+      "url": "assets/models/enemy-gasspawn.json",
+      "source": "mob/mob_gasspawn.kfm",
+      "bounds": {
+        "min": [
+          -0.41829,
+          0.0,
+          -0.85089
+        ],
+        "max": [
+          0.41829,
+          0.81877,
+          0.85089
+        ],
+        "size": [
+          0.83659,
+          0.81877,
+          1.70177
+        ]
+      },
+      "parts": 2,
+      "triangles": 1094,
+      "bytes": 47574
+    },
+    "enemy-robo": {
+      "url": "assets/models/enemy-robo.json",
+      "source": "mob/mob_robo.kfm",
+      "bounds": {
+        "min": [
+          -1.12238,
+          0.0,
+          -1.4609
+        ],
+        "max": [
+          1.12238,
+          2.94008,
+          1.4609
+        ],
+        "size": [
+          2.24476,
+          2.94008,
+          2.9218
+        ]
+      },
+      "parts": 2,
+      "triangles": 1817,
+      "bytes": 140444
+    },
+    "enemy-asphalt": {
+      "url": "assets/models/enemy-asphalt.json",
+      "source": "mob/mob_asphalt.kfm",
+      "bounds": {
+        "min": [
+          -2.36822,
+          0.0,
+          -2.73148
+        ],
+        "max": [
+          2.36822,
+          3.49718,
+          2.73148
+        ],
+        "size": [
+          4.73645,
+          3.49718,
+          5.46297
+        ]
+      },
+      "parts": 1,
+      "triangles": 3317,
+      "bytes": 187767
+    },
+    "building-lab": {
+      "url": "assets/models/building-lab.json",
+      "source": "map/technologysquare/dt_sdts_buildinga2_01.nif",
+      "bounds": {
+        "min": [
+          -11.00036,
+          0.0,
+          -13.96485
+        ],
+        "max": [
+          11.00036,
+          31.62257,
+          13.96485
+        ],
+        "size": [
+          22.00073,
+          31.62257,
+          27.9297
+        ]
+      },
+      "parts": 2,
+      "triangles": 1277,
+      "bytes": 71708
+    },
+    "building-store": {
+      "url": "assets/models/building-store.json",
+      "source": "map/sunkenmall/dt_mtsm_store01.nif",
+      "bounds": {
+        "min": [
+          -4.19242,
+          0.0,
+          -3.09414
+        ],
+        "max": [
+          4.19242,
+          5.11259,
+          3.09414
+        ],
+        "size": [
+          8.38484,
+          5.11259,
+          6.18828
+        ]
+      },
+      "parts": 3,
+      "triangles": 810,
+      "bytes": 55641
+    },
+    "generator": {
+      "url": "assets/models/generator.json",
+      "source": "map/ep/ep_fusion_engien.nif",
+      "bounds": {
+        "min": [
+          -0.33708,
+          0.0,
+          -0.32575
+        ],
+        "max": [
+          0.33708,
+          0.3208,
+          0.32575
+        ],
+        "size": [
+          0.67417,
+          0.3208,
+          0.65149
+        ]
+      },
+      "parts": 2,
+      "triangles": 509,
+      "bytes": 31214
+    },
+    "crate": {
+      "url": "assets/models/crate.json",
+      "source": "map/questitem/quest_item_crates_02.nif",
+      "bounds": {
+        "min": [
+          -0.35796,
+          0.0,
+          -0.23964
+        ],
+        "max": [
+          0.35796,
+          0.42485,
+          0.23964
+        ],
+        "size": [
+          0.71593,
+          0.42485,
+          0.47927
+        ]
+      },
+      "parts": 1,
+      "triangles": 24,
+      "bytes": 2162
+    },
+    "console": {
+      "url": "assets/models/console.json",
+      "source": "map/questitem/quest_item_computer_consoles.nif",
+      "bounds": {
+        "min": [
+          -0.59979,
+          0.0,
+          -0.31167
+        ],
+        "max": [
+          0.59979,
+          1.90749,
+          0.31167
+        ],
+        "size": [
+          1.19959,
+          1.90749,
+          0.62334
+        ]
+      },
+      "parts": 2,
+      "triangles": 867,
+      "bytes": 50885
+    },
+    "streetlight": {
+      "url": "assets/models/streetlight.json",
+      "source": "map/dtetc/dt_etc_streetlight.nif",
+      "bounds": {
+        "min": [
+          -0.24314,
+          0.0,
+          -0.9559
+        ],
+        "max": [
+          0.24314,
+          5.84742,
+          0.9559
+        ],
+        "size": [
+          0.48628,
+          5.84742,
+          1.91181
+        ]
+      },
+      "parts": 4,
+      "triangles": 366,
+      "bytes": 21332
+    },
+    "tree": {
+      "url": "assets/models/tree.json",
+      "source": "map/dtetc/dt_tree_04.nif",
+      "bounds": {
+        "min": [
+          -0.34876,
+          0.0,
+          -0.30204
+        ],
+        "max": [
+          0.34876,
+          1.02205,
+          0.30204
+        ],
+        "size": [
+          0.69753,
+          1.02205,
+          0.60408
+        ]
+      },
+      "parts": 1,
+      "triangles": 267,
+      "bytes": 13736
+    },
+    "barrel": {
+      "url": "assets/models/barrel.json",
+      "source": "map/salvageyard/sb_slsy_etc_oilcask_00.nif",
+      "bounds": {
+        "min": [
+          -0.74253,
+          0.0,
+          -1.501
+        ],
+        "max": [
+          0.74253,
+          2.08499,
+          1.501
+        ],
+        "size": [
+          1.48506,
+          2.08499,
+          3.002
+        ]
+      },
+      "parts": 2,
+      "triangles": 299,
+      "bytes": 16788
+    },
+    "fence": {
+      "url": "assets/models/fence.json",
+      "source": "map/etc/dt_mtsm_fence_a_5.nif",
+      "bounds": {
+        "min": [
+          -6.09677,
+          0.0,
+          -0.07437
+        ],
+        "max": [
+          6.09677,
+          1.19999,
+          0.07437
+        ],
+        "size": [
+          12.19355,
+          1.19999,
+          0.14873
+        ]
+      },
+      "parts": 1,
+      "triangles": 161,
+      "bytes": 11402
+    },
+    "car": {
+      "url": "assets/models/car.json",
+      "source": "map/dtetc/dt_etc_passengercar_a_01.nif",
+      "bounds": {
+        "min": [
+          -1.73551,
+          0.0,
+          -2.89828
+        ],
+        "max": [
+          1.73551,
+          1.85841,
+          2.89828
+        ],
+        "size": [
+          3.47101,
+          1.85841,
+          5.79655
+        ]
+      },
+      "parts": 1,
+      "triangles": 819,
+      "bytes": 41523
+    },
+    "bench": {
+      "url": "assets/models/bench.json",
+      "source": "map/dtetc/dt_etc_bench_01.nif",
+      "bounds": {
+        "min": [
+          -0.64549,
+          0.0,
+          -0.32354
+        ],
+        "max": [
+          0.64549,
+          0.42465,
+          0.32354
+        ],
+        "size": [
+          1.29098,
+          0.42465,
+          0.64708
+        ]
+      },
+      "parts": 1,
+      "triangles": 126,
+      "bytes": 9069
+    },
+    "checkpoint": {
+      "url": "assets/models/checkpoint.json",
+      "source": "map/nuclearplant/sb_otnp_checkpoint_01.nif",
+      "bounds": {
+        "min": [
+          -2.95724,
+          0.0,
+          -2.65233
+        ],
+        "max": [
+          2.95724,
+          6.29742,
+          2.65233
+        ],
+        "size": [
+          5.91448,
+          6.29742,
+          5.30465
+        ]
+      },
+      "parts": 2,
+      "triangles": 895,
+      "bytes": 58837
+    },
+    "vending": {
+      "url": "assets/models/vending.json",
+      "source": "map/cityhall/dt_cpch_vendingmachine01.nif",
+      "bounds": {
+        "min": [
+          -0.65912,
+          0.0,
+          -0.51005
+        ],
+        "max": [
+          0.65912,
+          2.03205,
+          0.51005
+        ],
+        "size": [
+          1.31823,
+          2.03205,
+          1.02011
+        ]
+      },
+      "parts": 5,
+      "triangles": 530,
+      "bytes": 37986
+    },
+    "planter": {
+      "url": "assets/models/planter.json",
+      "source": "map/dexter/sb_sbdx_flowerbed01.nif",
+      "bounds": {
+        "min": [
+          -1.49148,
+          0.0,
+          -0.87475
+        ],
+        "max": [
+          1.49148,
+          0.81294,
+          0.87475
+        ],
+        "size": [
+          2.98296,
+          0.81294,
+          1.7495
+        ]
+      },
+      "parts": 2,
+      "triangles": 350,
+      "bytes": 24904
+    },
+    "antenna": {
+      "url": "assets/models/antenna.json",
+      "source": "map/wharf/dt_obwh_antenna.nif",
+      "bounds": {
+        "min": [
+          -1.70146,
+          0.0,
+          -1.6729
+        ],
+        "max": [
+          1.70146,
+          3.54834,
+          1.6729
+        ],
+        "size": [
+          3.40292,
+          3.54834,
+          3.3458
+        ]
+      },
+      "parts": 2,
+      "triangles": 834,
+      "bytes": 57499
+    },
+    "town-building-1": {
+      "url": "assets/models/town-building-1.json",
+      "source": "map/dtetc/dt_mtdb_buil01.nif",
+      "bounds": {
+        "min": [
+          -10.1,
+          0.0,
+          -15.74051
+        ],
+        "max": [
+          10.1,
+          66.00896,
+          15.74051
+        ],
+        "size": [
+          20.19999,
+          66.00896,
+          31.48101
+        ]
+      },
+      "parts": 2,
+      "triangles": 2789,
+      "bytes": 205546
+    },
+    "town-building-2": {
+      "url": "assets/models/town-building-2.json",
+      "source": "map/dtetc/dt_mtdb_buil02.nif",
+      "bounds": {
+        "min": [
+          -15.10233,
+          0.0,
+          -25.49419
+        ],
+        "max": [
+          15.10233,
+          89.9405,
+          25.49419
+        ],
+        "size": [
+          30.20466,
+          89.9405,
+          50.98838
+        ]
+      },
+      "parts": 2,
+      "triangles": 3765,
+      "bytes": 277704
+    },
+    "town-building-3": {
+      "url": "assets/models/town-building-3.json",
+      "source": "map/dtetc/dt_mtdb_buil03.nif",
+      "bounds": {
+        "min": [
+          -18.88103,
+          0.0,
+          -27.80766
+        ],
+        "max": [
+          18.88103,
+          112.29098,
+          27.80766
+        ],
+        "size": [
+          37.76206,
+          112.29098,
+          55.61533
+        ]
+      },
+      "parts": 2,
+      "triangles": 3872,
+      "bytes": 284982
+    },
+    "town-building-4": {
+      "url": "assets/models/town-building-4.json",
+      "source": "map/dtetc/dt_mtdb_buil04.nif",
+      "bounds": {
+        "min": [
+          -25.63688,
+          0.0,
+          -37.57677
+        ],
+        "max": [
+          25.63688,
+          104.54538,
+          37.57677
+        ],
+        "size": [
+          51.27376,
+          104.54538,
+          75.15354
+        ]
+      },
+      "parts": 1,
+      "triangles": 10077,
+      "bytes": 724840
+    },
+    "town-bank": {
+      "url": "assets/models/town-bank.json",
+      "source": "map/dtetc/dt_mtdb_bank.nif",
+      "bounds": {
+        "min": [
+          -36.06503,
+          0.0,
+          -35.48748
+        ],
+        "max": [
+          36.06503,
+          21.72997,
+          35.48748
+        ],
+        "size": [
+          72.13007,
+          21.72997,
+          70.97495
+        ]
+      },
+      "parts": 5,
+      "triangles": 2626,
+      "bytes": 186923
+    },
+    "town-firestation": {
+      "url": "assets/models/town-firestation.json",
+      "source": "map/dtetc/dt_mtdb_firestation.nif",
+      "bounds": {
+        "min": [
+          -33.67577,
+          0.0,
+          -18.64536
+        ],
+        "max": [
+          33.67577,
+          33.48091,
+          18.64536
+        ],
+        "size": [
+          67.35155,
+          33.48091,
+          37.29072
+        ]
+      },
+      "parts": 6,
+      "triangles": 2856,
+      "bytes": 213553
+    },
+    "town-fountain": {
+      "url": "assets/models/town-fountain.json",
+      "source": "map/dtetc/dt_mtdb_fountain_01.nif",
+      "bounds": {
+        "min": [
+          -15.31518,
+          0.0,
+          -13.25385
+        ],
+        "max": [
+          15.31518,
+          16.57715,
+          13.25385
+        ],
+        "size": [
+          30.63036,
+          16.57715,
+          26.50769
+        ]
+      },
+      "parts": 6,
+      "triangles": 1556,
+      "bytes": 100784
+    },
+    "town-fountain-small": {
+      "url": "assets/models/town-fountain-small.json",
+      "source": "map/dtetc/dt_mtdb_fountain_02.nif",
+      "bounds": {
+        "min": [
+          -11.90324,
+          0.0,
+          -17.80771
+        ],
+        "max": [
+          11.90324,
+          11.59336,
+          17.80771
+        ],
+        "size": [
+          23.80648,
+          11.59336,
+          35.61542
+        ]
+      },
+      "parts": 15,
+      "triangles": 2788,
+      "bytes": 197686
+    },
+    "town-burger": {
+      "url": "assets/models/town-burger.json",
+      "source": "map/dexter/sb_sbdx_burgerfrenzy.nif",
+      "bounds": {
+        "min": [
+          -13.28259,
+          0.0,
+          -12.617
+        ],
+        "max": [
+          13.28259,
+          12.23561,
+          12.617
+        ],
+        "size": [
+          26.56517,
+          12.23561,
+          25.234
+        ]
+      },
+      "parts": 2,
+      "triangles": 4197,
+      "bytes": 300332
+    },
+    "town-candy": {
+      "url": "assets/models/town-candy.json",
+      "source": "map/dexter/sb_sbdx_jellyscandy.nif",
+      "bounds": {
+        "min": [
+          -13.96305,
+          0.0,
+          -16.7337
+        ],
+        "max": [
+          13.96305,
+          30.81867,
+          16.7337
+        ],
+        "size": [
+          27.92609,
+          30.81867,
+          33.4674
+        ]
+      },
+      "parts": 4,
+      "triangles": 4383,
+      "bytes": 304113
+    },
+    "town-park": {
+      "url": "assets/models/town-park.json",
+      "source": "map/technologysquare/dt_sdts_park_01.nif",
+      "bounds": {
+        "min": [
+          -27.31841,
+          0.0,
+          -14.99998
+        ],
+        "max": [
+          27.31841,
+          27.54954,
+          14.99998
+        ],
+        "size": [
+          54.63682,
+          27.54954,
+          29.99997
+        ]
+      },
+      "parts": 4,
+      "triangles": 823,
+      "bytes": 60116
+    },
+    "town-monorail": {
+      "url": "assets/models/town-monorail.json",
+      "source": "map/technologysquare/dt_sdts_monorail_01.nif",
+      "bounds": {
+        "min": [
+          -22.28535,
+          0.0,
+          -3.4181
+        ],
+        "max": [
+          22.28535,
+          4.51897,
+          3.4181
+        ],
+        "size": [
+          44.57069,
+          4.51897,
+          6.8362
+        ]
+      },
+      "parts": 4,
+      "triangles": 389,
+      "bytes": 25868
+    },
+    "town-monorail-bend": {
+      "url": "assets/models/town-monorail-bend.json",
+      "source": "map/technologysquare/dt_sdts_monorail_bend_01.nif",
+      "bounds": {
+        "min": [
+          -17.52478,
+          0.0,
+          -17.52475
+        ],
+        "max": [
+          17.52478,
+          4.51902,
+          17.52475
+        ],
+        "size": [
+          35.04957,
+          4.51902,
+          35.0495
+        ]
+      },
+      "parts": 5,
+      "triangles": 881,
+      "bytes": 58603
+    },
+    "town-busstop": {
+      "url": "assets/models/town-busstop.json",
+      "source": "map/dtetc/dt_etc_busstop01.nif",
+      "bounds": {
+        "min": [
+          -2.43045,
+          0.0,
+          -0.79198
+        ],
+        "max": [
+          2.43045,
+          2.45386,
+          0.79198
+        ],
+        "size": [
+          4.8609,
+          2.45386,
+          1.58396
+        ]
+      },
+      "parts": 3,
+      "triangles": 384,
+      "bytes": 29342
+    },
+    "town-trash": {
+      "url": "assets/models/town-trash.json",
+      "source": "map/dtetc/dt_etc_dustbin_01.nif",
+      "bounds": {
+        "min": [
+          -0.33333,
+          0.0,
+          -0.28867
+        ],
+        "max": [
+          0.33333,
+          0.30278,
+          0.28867
+        ],
+        "size": [
+          0.66665,
+          0.30278,
+          0.57734
+        ]
+      },
+      "parts": 1,
+      "triangles": 147,
+      "bytes": 11457
+    },
+    "town-pickup": {
+      "url": "assets/models/town-pickup.json",
+      "source": "map/dtetc/dt_etc_pickupcar_a_01.nif",
+      "bounds": {
+        "min": [
+          -1.82709,
+          0.0,
+          -3.06368
+        ],
+        "max": [
+          1.82709,
+          1.68084,
+          3.06368
+        ],
+        "size": [
+          3.65419,
+          1.68084,
+          6.12735
+        ]
+      },
+      "parts": 1,
+      "triangles": 1094,
+      "bytes": 66398
+    },
+    "town-firetruck": {
+      "url": "assets/models/town-firetruck.json",
+      "source": "map/dtetc/dt_etc_firecar_c_00.nif",
+      "bounds": {
+        "min": [
+          -2.08941,
+          0.0,
+          -7.48279
+        ],
+        "max": [
+          2.08941,
+          4.90697,
+          7.48279
+        ],
+        "size": [
+          4.17882,
+          4.90697,
+          14.96557
+        ]
+      },
+      "parts": 2,
+      "triangles": 2800,
+      "bytes": 180332
+    },
+    "town-trees": {
+      "url": "assets/models/town-trees.json",
+      "source": "map/dtetc/dt_tree_12.nif",
+      "bounds": {
+        "min": [
+          -0.34876,
+          0.0,
+          -0.30204
+        ],
+        "max": [
+          0.34876,
+          0.95129,
+          0.30204
+        ],
+        "size": [
+          0.69753,
+          0.95129,
+          0.60408
+        ]
+      },
+      "parts": 1,
+      "triangles": 254,
+      "bytes": 14650
+    },
+    "town-planter": {
+      "url": "assets/models/town-planter.json",
+      "source": "map/dexter/sb_sbdx_flowerbed04.nif",
+      "bounds": {
+        "min": [
+          -1.51,
+          0.0,
+          -0.71045
+        ],
+        "max": [
+          1.51,
+          0.78004,
+          0.71045
+        ],
+        "size": [
+          3.01999,
+          0.78004,
+          1.42091
+        ]
+      },
+      "parts": 2,
+      "triangles": 264,
+      "bytes": 19107
+    },
+    "yard-garage": {
+      "url": "assets/models/yard-garage.json",
+      "source": "map/nuclearplant/sb_otnp_garagetruck.nif",
+      "bounds": {
+        "min": [
+          -2.45887,
+          0.0,
+          -5.96313
+        ],
+        "max": [
+          2.45887,
+          5.32144,
+          5.96313
+        ],
+        "size": [
+          4.91774,
+          5.32144,
+          11.92627
+        ]
+      },
+      "parts": 3,
+      "triangles": 4696,
+      "bytes": 302666
+    },
+    "yard-cylinder": {
+      "url": "assets/models/yard-cylinder.json",
+      "source": "map/nuclearplant/sb_otnp_etc_cylinder_02.nif",
+      "bounds": {
+        "min": [
+          -0.42802,
+          0.0,
+          -0.42802
+        ],
+        "max": [
+          0.42802,
+          1.31663,
+          0.42802
+        ],
+        "size": [
+          0.85604,
+          1.31663,
+          0.85604
+        ]
+      },
+      "parts": 1,
+      "triangles": 262,
+      "bytes": 14824
+    },
+    "yard-preservatory": {
+      "url": "assets/models/yard-preservatory.json",
+      "source": "map/nuclearplant/sb_otnp_preservatory_01.nif",
+      "bounds": {
+        "min": [
+          -34.75819,
+          0.0,
+          -34.75818
+        ],
+        "max": [
+          34.75819,
+          6.1374,
+          34.75818
+        ],
+        "size": [
+          69.51637,
+          6.1374,
+          69.51637
+        ]
+      },
+      "parts": 1,
+      "triangles": 1108,
+      "bytes": 84861
+    },
+    "yard-fence": {
+      "url": "assets/models/yard-fence.json",
+      "source": "map/nuclearplant/sb_otnp_fence_50.nif",
+      "bounds": {
+        "min": [
+          -24.84003,
+          0.0,
+          -0.11577
+        ],
+        "max": [
+          24.84003,
+          4.16887,
+          0.11577
+        ],
+        "size": [
+          49.68006,
+          4.16887,
+          0.23154
+        ]
+      },
+      "parts": 4,
+      "triangles": 797,
+      "bytes": 53877
+    },
+    "nano-fourarms": {
+      "url": "assets/models/nano-fourarms.json",
+      "source": "nano/nano_4arms.kfm",
+      "bounds": {
+        "min": [
+          -0.35644,
+          0.0,
+          -0.11283
+        ],
+        "max": [
+          0.35644,
+          0.45931,
+          0.11283
+        ],
+        "size": [
+          0.71287,
+          0.45931,
+          0.22566
+        ]
+      },
+      "parts": 5,
+      "triangles": 2224,
+      "bytes": 98151
+    },
+    "nano-aku": {
+      "url": "assets/models/nano-aku.json",
+      "source": "nano/nano_aku.kfm",
+      "bounds": {
+        "min": [
+          -0.23734,
+          0.0,
+          -0.14538
+        ],
+        "max": [
+          0.23734,
+          0.62193,
+          0.14538
+        ],
+        "size": [
+          0.47469,
+          0.62193,
+          0.29076
+        ]
+      },
+      "parts": 1,
+      "triangles": 2130,
+      "bytes": 102112
+    },
+    "nano-ben": {
+      "url": "assets/models/nano-ben.json",
+      "source": "nano/nano_ben.kfm",
+      "bounds": {
+        "min": [
+          -0.13831,
+          0.0,
+          -0.10663
+        ],
+        "max": [
+          0.13831,
+          0.38719,
+          0.10663
+        ],
+        "size": [
+          0.27663,
+          0.38719,
+          0.21327
+        ]
+      },
+      "parts": 3,
+      "triangles": 1796,
+      "bytes": 86197
+    },
+    "nano-billy": {
+      "url": "assets/models/nano-billy.json",
+      "source": "nano/nano_billy.kfm",
+      "bounds": {
+        "min": [
+          -0.16393,
+          0.0,
+          -0.18239
+        ],
+        "max": [
+          0.16393,
+          0.56229,
+          0.18239
+        ],
+        "size": [
+          0.32786,
+          0.56229,
+          0.36477
+        ]
+      },
+      "parts": 1,
+      "triangles": 1985,
+      "bytes": 84063
+    },
+    "nano-bloo": {
+      "url": "assets/models/nano-bloo.json",
+      "source": "nano/nano_bloo.kfm",
+      "bounds": {
+        "min": [
+          -0.09831,
+          0.0,
+          -0.10248
+        ],
+        "max": [
+          0.09831,
+          0.33055,
+          0.10248
+        ],
+        "size": [
+          0.19661,
+          0.33055,
+          0.20496
+        ]
+      },
+      "parts": 6,
+      "triangles": 1161,
+      "bytes": 47756
+    },
+    "nano-blossom": {
+      "url": "assets/models/nano-blossom.json",
+      "source": "nano/nano_blossom.kfm",
+      "bounds": {
+        "min": [
+          -0.16924,
+          0.0,
+          -0.13957
+        ],
+        "max": [
+          0.16924,
+          0.58887,
+          0.13957
+        ],
+        "size": [
+          0.33848,
+          0.58887,
+          0.27915
+        ]
+      },
+      "parts": 2,
+      "triangles": 2419,
+      "bytes": 106369
+    },
+    "nano-bubbles": {
+      "url": "assets/models/nano-bubbles.json",
+      "source": "nano/nano_bubbles.kfm",
+      "bounds": {
+        "min": [
+          -0.20262,
+          0.0,
+          -0.12797
+        ],
+        "max": [
+          0.20262,
+          0.46971,
+          0.12797
+        ],
+        "size": [
+          0.40525,
+          0.46971,
+          0.25595
+        ]
+      },
+      "parts": 2,
+      "triangles": 2370,
+      "bytes": 108602
+    },
+    "nano-cheese": {
+      "url": "assets/models/nano-cheese.json",
+      "source": "nano/nano_cheese.kfm",
+      "bounds": {
+        "min": [
+          -0.10387,
+          0.0,
+          -0.11584
+        ],
+        "max": [
+          0.10387,
+          0.4094,
+          0.11584
+        ],
+        "size": [
+          0.20774,
+          0.4094,
+          0.23168
+        ]
+      },
+      "parts": 1,
+      "triangles": 1364,
+      "bytes": 65430
+    },
+    "nano-chowder": {
+      "url": "assets/models/nano-chowder.json",
+      "source": "nano/nano_chowder.kfm",
+      "bounds": {
+        "min": [
+          -0.19841,
+          0.0,
+          -0.16823
+        ],
+        "max": [
+          0.19841,
+          0.50511,
+          0.16823
+        ],
+        "size": [
+          0.39682,
+          0.50511,
+          0.33645
+        ]
+      },
+      "parts": 1,
+      "triangles": 2750,
+      "bytes": 126109
+    },
+    "nano-coco": {
+      "url": "assets/models/nano-coco.json",
+      "source": "nano/nano_coco.kfm",
+      "bounds": {
+        "min": [
+          -0.13599,
+          0.0,
+          -0.12278
+        ],
+        "max": [
+          0.13599,
+          0.40024,
+          0.12278
+        ],
+        "size": [
+          0.27198,
+          0.40024,
+          0.24557
+        ]
+      },
+      "parts": 1,
+      "triangles": 1359,
+      "bytes": 65768
+    },
+    "nano-courage": {
+      "url": "assets/models/nano-courage.json",
+      "source": "nano/nano_courage.kfm",
+      "bounds": {
+        "min": [
+          -0.16138,
+          0.0,
+          -0.17268
+        ],
+        "max": [
+          0.16138,
+          0.33669,
+          0.17268
+        ],
+        "size": [
+          0.32277,
+          0.33669,
+          0.34535
+        ]
+      },
+      "parts": 1,
+      "triangles": 1084,
+      "bytes": 47577
+    },
+    "nano-demongo": {
+      "url": "assets/models/nano-demongo.json",
+      "source": "nano/nano_demongo.kfm",
+      "bounds": {
+        "min": [
+          -0.38159,
+          0.0,
+          -0.17071
+        ],
+        "max": [
+          0.38159,
+          0.40559,
+          0.17071
+        ],
+        "size": [
+          0.76318,
+          0.40559,
+          0.34142
+        ]
+      },
+      "parts": 2,
+      "triangles": 1479,
+      "bytes": 69230
+    },
+    "nano-dexter": {
+      "url": "assets/models/nano-dexter.json",
+      "source": "nano/nano_dexter.kfm",
+      "bounds": {
+        "min": [
+          -0.17243,
+          0.0,
+          -0.1438
+        ],
+        "max": [
+          0.17243,
+          0.45721,
+          0.1438
+        ],
+        "size": [
+          0.34486,
+          0.45721,
+          0.28759
+        ]
+      },
+      "parts": 2,
+      "triangles": 2073,
+      "bytes": 96900
+    },
+    "nano-ed": {
+      "url": "assets/models/nano-ed.json",
+      "source": "nano/nano_ed.kfm",
+      "bounds": {
+        "min": [
+          -0.18948,
+          0.0,
+          -0.14111
+        ],
+        "max": [
+          0.18948,
+          0.51167,
+          0.14111
+        ],
+        "size": [
+          0.37896,
+          0.51167,
+          0.28223
+        ]
+      },
+      "parts": 1,
+      "triangles": 2339,
+      "bytes": 112955
+    },
+    "nano-edd": {
+      "url": "assets/models/nano-edd.json",
+      "source": "nano/nano_edd.kfm",
+      "bounds": {
+        "min": [
+          -0.16965,
+          0.0,
+          -0.18296
+        ],
+        "max": [
+          0.16965,
+          0.48146,
+          0.18296
+        ],
+        "size": [
+          0.33931,
+          0.48146,
+          0.36593
+        ]
+      },
+      "parts": 1,
+      "triangles": 1856,
+      "bytes": 91044
+    },
+    "nano-eduardo": {
+      "url": "assets/models/nano-eduardo.json",
+      "source": "nano/nano_eduardo.kfm",
+      "bounds": {
+        "min": [
+          -0.20365,
+          0.0,
+          -0.20056
+        ],
+        "max": [
+          0.20365,
+          0.51645,
+          0.20056
+        ],
+        "size": [
+          0.4073,
+          0.51645,
+          0.40113
+        ]
+      },
+      "parts": 4,
+      "triangles": 1492,
+      "bytes": 64255
+    },
+    "nano-flapjack": {
+      "url": "assets/models/nano-flapjack.json",
+      "source": "nano/nano_flapjack.kfm",
+      "bounds": {
+        "min": [
+          -0.14301,
+          0.0,
+          -0.12241
+        ],
+        "max": [
+          0.14301,
+          0.47133,
+          0.12241
+        ],
+        "size": [
+          0.28602,
+          0.47133,
+          0.24483
+        ]
+      },
+      "parts": 1,
+      "triangles": 1364,
+      "bytes": 90753
+    },
+    "nano-ghostfreak": {
+      "url": "assets/models/nano-ghostfreak.json",
+      "source": "nano/nano_ghostfreak.kfm",
+      "bounds": {
+        "min": [
+          -0.28607,
+          0.0,
+          -0.0792
+        ],
+        "max": [
+          0.28607,
+          0.55478,
+          0.0792
+        ],
+        "size": [
+          0.57213,
+          0.55478,
+          0.1584
+        ]
+      },
+      "parts": 1,
+      "triangles": 829,
+      "bytes": 37907
+    },
+    "nano-grim": {
+      "url": "assets/models/nano-grim.json",
+      "source": "nano/nano_grim.kfm",
+      "bounds": {
+        "min": [
+          -0.20732,
+          0.0,
+          -0.31191
+        ],
+        "max": [
+          0.20732,
+          0.54552,
+          0.31191
+        ],
+        "size": [
+          0.41464,
+          0.54552,
+          0.62383
+        ]
+      },
+      "parts": 6,
+      "triangles": 2136,
+      "bytes": 91744
+    },
+    "nano-hex": {
+      "url": "assets/models/nano-hex.json",
+      "source": "nano/nano_hex.kfm",
+      "bounds": {
+        "min": [
+          -0.23242,
+          0.0,
+          -0.15379
+        ],
+        "max": [
+          0.23242,
+          0.52957,
+          0.15379
+        ],
+        "size": [
+          0.46483,
+          0.52957,
+          0.30758
+        ]
+      },
+      "parts": 2,
+      "triangles": 1697,
+      "bytes": 83522
+    },
+    "nano-him": {
+      "url": "assets/models/nano-him.json",
+      "source": "nano/nano_him.kfm",
+      "bounds": {
+        "min": [
+          -0.19731,
+          0.0,
+          -0.17964
+        ],
+        "max": [
+          0.19731,
+          0.5418,
+          0.17964
+        ],
+        "size": [
+          0.39461,
+          0.5418,
+          0.35929
+        ]
+      },
+      "parts": 1,
+      "triangles": 1861,
+      "bytes": 76072
+    },
+    "nano-humongousaur": {
+      "url": "assets/models/nano-humongousaur.json",
+      "source": "nano/nano_humongousaur.kfm",
+      "bounds": {
+        "min": [
+          -0.38401,
+          0.0,
+          -0.34571
+        ],
+        "max": [
+          0.38401,
+          0.50868,
+          0.34571
+        ],
+        "size": [
+          0.76803,
+          0.50868,
+          0.69142
+        ]
+      },
+      "parts": 1,
+      "triangles": 1689,
+      "bytes": 71564
+    },
+    "nano-johnnybravo": {
+      "url": "assets/models/nano-johnnybravo.json",
+      "source": "nano/nano_johnnybravo.kfm",
+      "bounds": {
+        "min": [
+          -0.22416,
+          0.0,
+          -0.07937
+        ],
+        "max": [
+          0.22416,
+          0.48127,
+          0.07937
+        ],
+        "size": [
+          0.44832,
+          0.48127,
+          0.15874
+        ]
+      },
+      "parts": 1,
+      "triangles": 1870,
+      "bytes": 78225
+    },
+    "nano-juniperlee": {
+      "url": "assets/models/nano-juniperlee.json",
+      "source": "nano/nano_juniper_lee.kfm",
+      "bounds": {
+        "min": [
+          -0.18021,
+          0.0,
+          -0.12155
+        ],
+        "max": [
+          0.18021,
+          0.47076,
+          0.12155
+        ],
+        "size": [
+          0.36042,
+          0.47076,
+          0.24309
+        ]
+      },
+      "parts": 1,
+      "triangles": 2314,
+      "bytes": 107276
+    },
+    "nano-mac": {
+      "url": "assets/models/nano-mac.json",
+      "source": "nano/nano_mac.kfm",
+      "bounds": {
+        "min": [
+          -0.16905,
+          0.0,
+          -0.13558
+        ],
+        "max": [
+          0.16905,
+          0.53562,
+          0.13558
+        ],
+        "size": [
+          0.33809,
+          0.53562,
+          0.27116
+        ]
+      },
+      "parts": 1,
+      "triangles": 2012,
+      "bytes": 98383
+    },
+    "nano-mandark": {
+      "url": "assets/models/nano-mandark.json",
+      "source": "nano/nano_mandark.kfm",
+      "bounds": {
+        "min": [
+          -0.15745,
+          0.0,
+          -0.12537
+        ],
+        "max": [
+          0.15745,
+          0.55574,
+          0.12537
+        ],
+        "size": [
+          0.3149,
+          0.55574,
+          0.25074
+        ]
+      },
+      "parts": 1,
+      "triangles": 2012,
+      "bytes": 90168
+    },
+    "nano-mandy": {
+      "url": "assets/models/nano-mandy.json",
+      "source": "nano/nano_mandy.kfm",
+      "bounds": {
+        "min": [
+          -0.16212,
+          0.0,
+          -0.12677
+        ],
+        "max": [
+          0.16212,
+          0.47436,
+          0.12677
+        ],
+        "size": [
+          0.32423,
+          0.47436,
+          0.25353
+        ]
+      },
+      "parts": 1,
+      "triangles": 1991,
+      "bytes": 85288
+    },
+    "nano-megas": {
+      "url": "assets/models/nano-megas.json",
+      "source": "nano/nano_megas.kfm",
+      "bounds": {
+        "min": [
+          -0.24294,
+          0.0,
+          -0.13049
+        ],
+        "max": [
+          0.24294,
+          0.5863,
+          0.13049
+        ],
+        "size": [
+          0.48587,
+          0.5863,
+          0.26098
+        ]
+      },
+      "parts": 1,
+      "triangles": 2094,
+      "bytes": 115345
+    },
+    "nano-mojojo": {
+      "url": "assets/models/nano-mojojo.json",
+      "source": "nano/nano_mojojo.kfm",
+      "bounds": {
+        "min": [
+          -0.22345,
+          0.0,
+          -0.17718
+        ],
+        "max": [
+          0.22345,
+          0.61468,
+          0.17718
+        ],
+        "size": [
+          0.44689,
+          0.61468,
+          0.35437
+        ]
+      },
+      "parts": 1,
+      "triangles": 2293,
+      "bytes": 102692
+    },
+    "nano-numbuhfive": {
+      "url": "assets/models/nano-numbuhfive.json",
+      "source": "nano/nano_numbuhfive.kfm",
+      "bounds": {
+        "min": [
+          -0.17028,
+          0.0,
+          -0.35291
+        ],
+        "max": [
+          0.17028,
+          0.4578,
+          0.35291
+        ],
+        "size": [
+          0.34056,
+          0.4578,
+          0.70583
+        ]
+      },
+      "parts": 1,
+      "triangles": 2518,
+      "bytes": 114234
+    },
+    "nano-numbuhfour": {
+      "url": "assets/models/nano-numbuhfour.json",
+      "source": "nano/nano_numbuhfour.kfm",
+      "bounds": {
+        "min": [
+          -0.1694,
+          0.0,
+          -0.14726
+        ],
+        "max": [
+          0.1694,
+          0.43148,
+          0.14726
+        ],
+        "size": [
+          0.3388,
+          0.43148,
+          0.29451
+        ]
+      },
+      "parts": 1,
+      "triangles": 2215,
+      "bytes": 108040
+    },
+    "nano-numbuhone": {
+      "url": "assets/models/nano-numbuhone.json",
+      "source": "nano/nano_numbuhone.kfm",
+      "bounds": {
+        "min": [
+          -0.16905,
+          0.0,
+          -0.11921
+        ],
+        "max": [
+          0.16905,
+          0.45267,
+          0.11921
+        ],
+        "size": [
+          0.33809,
+          0.45267,
+          0.23842
+        ]
+      },
+      "parts": 1,
+      "triangles": 2199,
+      "bytes": 105636
+    },
+    "nano-numbuhthree": {
+      "url": "assets/models/nano-numbuhthree.json",
+      "source": "nano/nano_numbuhthree.kfm",
+      "bounds": {
+        "min": [
+          -0.22271,
+          0.0,
+          -0.17112
+        ],
+        "max": [
+          0.22271,
+          0.42635,
+          0.17112
+        ],
+        "size": [
+          0.44542,
+          0.42635,
+          0.34224
+        ]
+      },
+      "parts": 1,
+      "triangles": 1904,
+      "bytes": 91870
+    },
+    "nano-numbuhtwo": {
+      "url": "assets/models/nano-numbuhtwo.json",
+      "source": "nano/nano_numbuhtwo.kfm",
+      "bounds": {
+        "min": [
+          -0.26076,
+          0.0,
+          -0.13155
+        ],
+        "max": [
+          0.26076,
+          0.50122,
+          0.13155
+        ],
+        "size": [
+          0.52153,
+          0.50122,
+          0.2631
+        ]
+      },
+      "parts": 1,
+      "triangles": 2170,
+      "bytes": 109953
+    },
+    "nano-samuraijack": {
+      "url": "assets/models/nano-samuraijack.json",
+      "source": "nano/nano_samuraijack.kfm",
+      "bounds": {
+        "min": [
+          -0.19538,
+          0.0,
+          -0.19262
+        ],
+        "max": [
+          0.19538,
+          0.50088,
+          0.19262
+        ],
+        "size": [
+          0.39076,
+          0.50088,
+          0.38523
+        ]
+      },
+      "parts": 2,
+      "triangles": 1512,
+      "bytes": 70830
+    },
+    "nano-swampfire": {
+      "url": "assets/models/nano-swampfire.json",
+      "source": "nano/nano_swampfire.kfm",
+      "bounds": {
+        "min": [
+          -0.2178,
+          0.0,
+          -0.08499
+        ],
+        "max": [
+          0.2178,
+          0.52256,
+          0.08499
+        ],
+        "size": [
+          0.4356,
+          0.52256,
+          0.16997
+        ]
+      },
+      "parts": 1,
+      "triangles": 1987,
+      "bytes": 91515
+    },
+    "nano-upgrade": {
+      "url": "assets/models/nano-upgrade.json",
+      "source": "nano/nano_upgrade.kfm",
+      "bounds": {
+        "min": [
+          -0.35493,
+          0.0,
+          -0.10411
+        ],
+        "max": [
+          0.35493,
+          0.54804,
+          0.10411
+        ],
+        "size": [
+          0.70985,
+          0.54804,
+          0.20822
+        ]
+      },
+      "parts": 1,
+      "triangles": 1531,
+      "bytes": 70104
+    },
+    "nano-utonium": {
+      "url": "assets/models/nano-utonium.json",
+      "source": "nano/nano_utonium.kfm",
+      "bounds": {
+        "min": [
+          -0.20227,
+          0.0,
+          -0.14538
+        ],
+        "max": [
+          0.20227,
+          0.48909,
+          0.14538
+        ],
+        "size": [
+          0.40454,
+          0.48909,
+          0.29076
+        ]
+      },
+      "parts": 2,
+      "triangles": 1584,
+      "bytes": 76347
+    },
+    "nano-vilgax": {
+      "url": "assets/models/nano-vilgax.json",
+      "source": "nano/nano_vilgax.kfm",
+      "bounds": {
+        "min": [
+          -0.23047,
+          0.0,
+          -0.12149
+        ],
+        "max": [
+          0.23047,
+          0.51541,
+          0.12149
+        ],
+        "size": [
+          0.46095,
+          0.51541,
+          0.24299
+        ]
+      },
+      "parts": 1,
+      "triangles": 2075,
+      "bytes": 95074
+    },
+    "nano-wilt": {
+      "url": "assets/models/nano-wilt.json",
+      "source": "nano/nano_wilt.kfm",
+      "bounds": {
+        "min": [
+          -0.31235,
+          0.0,
+          -0.08517
+        ],
+        "max": [
+          0.31235,
+          0.61091,
+          0.08517
+        ],
+        "size": [
+          0.62471,
+          0.61091,
+          0.17034
+        ]
+      },
+      "parts": 1,
+      "triangles": 1691,
+      "bytes": 71650
+    },
+    "nano-zaksaturday": {
+      "url": "assets/models/nano-zaksaturday.json",
+      "source": "nano/nano_zaksaturday.kfm",
+      "bounds": {
+        "min": [
+          -0.17097,
+          0.0,
+          -0.13517
+        ],
+        "max": [
+          0.17097,
+          0.49824,
+          0.13517
+        ],
+        "size": [
+          0.34194,
+          0.49824,
+          0.27035
+        ]
+      },
+      "parts": 2,
+      "triangles": 2270,
+      "bytes": 111511
+    },
+    "enemy-spidertoad": {
+      "url": "assets/models/enemy-spidertoad.json",
+      "source": "mob/mob_swampycannibalfrog.kfm",
+      "bounds": {
+        "min": [
+          -3.03956,
+          0.0,
+          -2.24769
+        ],
+        "max": [
+          3.03956,
+          2.69066,
+          2.24769
+        ],
+        "size": [
+          6.07912,
+          2.69066,
+          4.49538
+        ]
+      },
+      "parts": 2,
+      "triangles": 4120,
+      "bytes": 220455
+    },
+    "enemy-skeeter": {
+      "url": "assets/models/enemy-skeeter.json",
+      "source": "mob/mob_greenhellmosquito.kfm",
+      "bounds": {
+        "min": [
+          -2.82959,
+          0.0,
+          -1.27585
+        ],
+        "max": [
+          2.82959,
+          2.22126,
+          1.27585
+        ],
+        "size": [
+          5.65918,
+          2.22126,
+          2.55171
+        ]
+      },
+      "parts": 2,
+      "triangles": 3603,
+      "bytes": 168564
+    },
+    "enemy-growth": {
+      "url": "assets/models/enemy-growth.json",
+      "source": "mob/mob_crazyguardianent.kfm",
+      "bounds": {
+        "min": [
+          -7.891,
+          0.0,
+          -5.81572
+        ],
+        "max": [
+          7.891,
+          16.45811,
+          5.81572
+        ],
+        "size": [
+          15.78201,
+          16.45811,
+          11.63143
+        ]
+      },
+      "parts": 1,
+      "triangles": 4085,
+      "bytes": 188756
+    },
+    "enemy-stalker": {
+      "url": "assets/models/enemy-stalker.json",
+      "source": "mob/mob_beastman.kfm",
+      "bounds": {
+        "min": [
+          -2.56281,
+          0.0,
+          -1.09032
+        ],
+        "max": [
+          2.56281,
+          3.16778,
+          1.09032
+        ],
+        "size": [
+          5.12563,
+          3.16778,
+          2.18065
+        ]
+      },
+      "parts": 2,
+      "triangles": 5777,
+      "bytes": 268649
+    },
+    "enemy-dreadhead": {
+      "url": "assets/models/enemy-dreadhead.json",
+      "source": "mob/mob_tirefinger.kfm",
+      "bounds": {
+        "min": [
+          -1.42396,
+          0.0,
+          -0.42106
+        ],
+        "max": [
+          1.42396,
+          1.79738,
+          0.42106
+        ],
+        "size": [
+          2.84791,
+          1.79738,
+          0.84212
+        ]
+      },
+      "parts": 2,
+      "triangles": 2910,
+      "bytes": 145951
+    },
+    "enemy-shocktangler": {
+      "url": "assets/models/enemy-shocktangler.json",
+      "source": "mob/mob_cable.kfm",
+      "bounds": {
+        "min": [
+          -1.30263,
+          0.0,
+          -2.82107
+        ],
+        "max": [
+          1.30263,
+          3.3038,
+          2.82107
+        ],
+        "size": [
+          2.60526,
+          3.3038,
+          5.64215
+        ]
+      },
+      "parts": 2,
+      "triangles": 3177,
+      "bytes": 180001
+    },
+    "enemy-streetgrinder": {
+      "url": "assets/models/enemy-streetgrinder.json",
+      "source": "mob/mob_cleaner.kfm",
+      "bounds": {
+        "min": [
+          -1.09383,
+          0.0,
+          -0.38967
+        ],
+        "max": [
+          1.09383,
+          1.59594,
+          0.38967
+        ],
+        "size": [
+          2.18766,
+          1.59594,
+          0.77935
+        ]
+      },
+      "parts": 2,
+      "triangles": 1981,
+      "bytes": 102417
+    },
+    "enemy-unisickle": {
+      "url": "assets/models/enemy-unisickle.json",
+      "source": "mob/mob_sawbike.kfm",
+      "bounds": {
+        "min": [
+          -0.61158,
+          0.0,
+          -0.49141
+        ],
+        "max": [
+          0.61158,
+          2.15542,
+          0.49141
+        ],
+        "size": [
+          1.22315,
+          2.15542,
+          0.98282
+        ]
+      },
+      "parts": 1,
+      "triangles": 3474,
+      "bytes": 174280
+    },
+    "forest-cabin": {
+      "url": "assets/models/forest-cabin.json",
+      "source": "map/campkidney/wd_bwck_house_01.nif",
+      "bounds": {
+        "min": [
+          -4.425,
+          0.0,
+          -3.75
+        ],
+        "max": [
+          4.425,
+          6.97501,
+          3.75
+        ],
+        "size": [
+          8.85,
+          6.97501,
+          7.5
+        ]
+      },
+      "parts": 3,
+      "triangles": 608,
+      "bytes": 46114
+    },
+    "forest-cabin-small": {
+      "url": "assets/models/forest-cabin-small.json",
+      "source": "map/campkidney/wd_bwck_house_02.nif",
+      "bounds": {
+        "min": [
+          -4.89708,
+          0.0,
+          -5.61914
+        ],
+        "max": [
+          4.89708,
+          9.4163,
+          5.61914
+        ],
+        "size": [
+          9.79415,
+          9.4163,
+          11.23829
+        ]
+      },
+      "parts": 2,
+      "triangles": 966,
+      "bytes": 60670
+    },
+    "forest-tent": {
+      "url": "assets/models/forest-tent.json",
+      "source": "map/campkidney/wd_bwck_tent_01.nif",
+      "bounds": {
+        "min": [
+          -3.17513,
+          0.0,
+          -3.01428
+        ],
+        "max": [
+          3.17513,
+          2.24853,
+          3.01428
+        ],
+        "size": [
+          6.35025,
+          2.24853,
+          6.02855
+        ]
+      },
+      "parts": 1,
+      "triangles": 324,
+      "bytes": 19865
+    },
+    "forest-campfire": {
+      "url": "assets/models/forest-campfire.json",
+      "source": "map/campkidney/wd_bwck_campfire_01.nif",
+      "bounds": {
+        "min": [
+          -0.47804,
+          0.0,
+          -0.42122
+        ],
+        "max": [
+          0.47804,
+          1.18612,
+          0.42122
+        ],
+        "size": [
+          0.95608,
+          1.18612,
+          0.84245
+        ]
+      },
+      "parts": 1,
+      "triangles": 209,
+      "bytes": 16722
+    },
+    "forest-log-bench": {
+      "url": "assets/models/forest-log-bench.json",
+      "source": "map/campkidney/wd_bwck_bench_01.nif",
+      "bounds": {
+        "min": [
+          -1.15114,
+          0.0,
+          -0.52924
+        ],
+        "max": [
+          1.15114,
+          1.25046,
+          0.52924
+        ],
+        "size": [
+          2.30227,
+          1.25046,
+          1.05847
+        ]
+      },
+      "parts": 1,
+      "triangles": 184,
+      "bytes": 11947
+    },
+    "forest-picnic-table": {
+      "url": "assets/models/forest-picnic-table.json",
+      "source": "map/campkidney/wd_bwck_table_01.nif",
+      "bounds": {
+        "min": [
+          -1.80874,
+          0.0,
+          -1.26513
+        ],
+        "max": [
+          1.80874,
+          1.09018,
+          1.26513
+        ],
+        "size": [
+          3.61748,
+          1.09018,
+          2.53027
+        ]
+      },
+      "parts": 1,
+      "triangles": 218,
+      "bytes": 10810
+    },
+    "forest-sign": {
+      "url": "assets/models/forest-sign.json",
+      "source": "map/campkidney/wd_bwck_sign_02.nif",
+      "bounds": {
+        "min": [
+          -0.51663,
+          0.0,
+          -0.11368
+        ],
+        "max": [
+          0.51663,
+          2.92638,
+          0.11368
+        ],
+        "size": [
+          1.03327,
+          2.92638,
+          0.22736
+        ]
+      },
+      "parts": 1,
+      "triangles": 88,
+      "bytes": 5131
+    },
+    "forest-bridge": {
+      "url": "assets/models/forest-bridge.json",
+      "source": "map/leakeylake/wd_bwll_bridge_01.nif",
+      "bounds": {
+        "min": [
+          -1.5018,
+          0.0,
+          -2.99657
+        ],
+        "max": [
+          1.5018,
+          2.7377,
+          2.99657
+        ],
+        "size": [
+          3.0036,
+          2.7377,
+          5.99313
+        ]
+      },
+      "parts": 1,
+      "triangles": 751,
+      "bytes": 49967
+    },
+    "forest-tree-creek": {
+      "url": "assets/models/forest-tree-creek.json",
+      "source": "map/leakeylake/wd_bwll_ctree_01.nif",
+      "bounds": {
+        "min": [
+          -3.36877,
+          0.0,
+          -3.35769
+        ],
+        "max": [
+          3.36877,
+          10.14988,
+          3.35769
+        ],
+        "size": [
+          6.73754,
+          10.14988,
+          6.71537
+        ]
+      },
+      "parts": 2,
+      "triangles": 412,
+      "bytes": 19201
+    },
+    "forest-tree-twisted": {
+      "url": "assets/models/forest-tree-twisted.json",
+      "source": "map/twistedforest/wd_jutf_tree_01.nif",
+      "bounds": {
+        "min": [
+          -6.65213,
+          0.0,
+          -5.69501
+        ],
+        "max": [
+          6.65213,
+          12.78563,
+          5.69501
+        ],
+        "size": [
+          13.30425,
+          12.78563,
+          11.39002
+        ]
+      },
+      "parts": 4,
+      "triangles": 729,
+      "bytes": 33302
+    },
+    "forest-plant": {
+      "url": "assets/models/forest-plant.json",
+      "source": "map/twistedforest/wd_jutf_plant 01.nif",
+      "bounds": {
+        "min": [
+          -0.68033,
+          0.0,
+          -0.65552
+        ],
+        "max": [
+          0.68033,
+          2.60195,
+          0.65552
+        ],
+        "size": [
+          1.36066,
+          2.60195,
+          1.31104
+        ]
+      },
+      "parts": 1,
+      "triangles": 1127,
+      "bytes": 55647
+    },
+    "forest-watchtower": {
+      "url": "assets/models/forest-watchtower.json",
+      "source": "map/darktree/wd_dldt_watchtower_01.nif",
+      "bounds": {
+        "min": [
+          -2.83403,
+          0.0,
+          -2.4848
+        ],
+        "max": [
+          2.83403,
+          12.53629,
+          2.4848
+        ],
+        "size": [
+          5.66806,
+          12.53629,
+          4.9696
+        ]
+      },
+      "parts": 2,
+      "triangles": 1135,
+      "bytes": 80077
+    },
+    "waste-forklift": {
+      "url": "assets/models/waste-forklift.json",
+      "source": "map/salvageyard/sb_slsy_forklift.nif",
+      "bounds": {
+        "min": [
+          -1.21731,
+          0.0,
+          -3.09895
+        ],
+        "max": [
+          1.21731,
+          3.13831,
+          3.09895
+        ],
+        "size": [
+          2.43461,
+          3.13831,
+          6.1979
+        ]
+      },
+      "parts": 2,
+      "triangles": 1833,
+      "bytes": 109244
+    },
+    "waste-press": {
+      "url": "assets/models/waste-press.json",
+      "source": "map/salvageyard/sb_slsy_press_01.nif",
+      "bounds": {
+        "min": [
+          -9.59365,
+          0.0,
+          -3.71432
+        ],
+        "max": [
+          9.59365,
+          9.4786,
+          3.71432
+        ],
+        "size": [
+          19.18729,
+          9.4786,
+          7.42863
+        ]
+      },
+      "parts": 1,
+      "triangles": 1171,
+      "bytes": 83178
+    },
+    "waste-crane": {
+      "url": "assets/models/waste-crane.json",
+      "source": "map/salvageyard/sb_slsy_railcrane01.nif",
+      "bounds": {
+        "min": [
+          -2.34333,
+          0.0,
+          -2.50185
+        ],
+        "max": [
+          2.34333,
+          4.37097,
+          2.50185
+        ],
+        "size": [
+          4.68666,
+          4.37097,
+          5.00369
+        ]
+      },
+      "parts": 3,
+      "triangles": 5653,
+      "bytes": 387079
+    },
+    "waste-scrapcar": {
+      "url": "assets/models/waste-scrapcar.json",
+      "source": "map/salvageyard/sb_slsy_car_a_00.nif",
+      "bounds": {
+        "min": [
+          -1.20437,
+          0.0,
+          -2.57823
+        ],
+        "max": [
+          1.20437,
+          1.45234,
+          2.57823
+        ],
+        "size": [
+          2.40874,
+          1.45234,
+          5.15646
+        ]
+      },
+      "parts": 3,
+      "triangles": 1672,
+      "bytes": 118279
+    },
+    "waste-metal-tree": {
+      "url": "assets/models/waste-metal-tree.json",
+      "source": "map/salvageyard/sb_slsy_metaltree_a_00.nif",
+      "bounds": {
+        "min": [
+          -0.35436,
+          0.0,
+          -0.27973
+        ],
+        "max": [
+          0.35436,
+          1.14739,
+          0.27973
+        ],
+        "size": [
+          0.70872,
+          1.14739,
+          0.55946
+        ]
+      },
+      "parts": 1,
+      "triangles": 106,
+      "bytes": 6684
+    },
+    "waste-tire-stack": {
+      "url": "assets/models/waste-tire-stack.json",
+      "source": "map/salvageyard/sb_slsy_etc_tier_00.nif",
+      "bounds": {
+        "min": [
+          -0.54106,
+          0.0,
+          -0.53619
+        ],
+        "max": [
+          0.54106,
+          1.66148,
+          0.53619
+        ],
+        "size": [
+          1.08213,
+          1.66148,
+          1.07237
+        ]
+      },
+      "parts": 1,
+      "triangles": 289,
+      "bytes": 15574
+    },
+    "waste-drum": {
+      "url": "assets/models/waste-drum.json",
+      "source": "map/salvageyard/sb_slsy_etc_drum_a_00.nif",
+      "bounds": {
+        "min": [
+          -0.31336,
+          0.0,
+          -0.31663
+        ],
+        "max": [
+          0.31336,
+          1.11035,
+          0.31663
+        ],
+        "size": [
+          0.62672,
+          1.11035,
+          0.63327
+        ]
+      },
+      "parts": 1,
+      "triangles": 70,
+      "bytes": 4148
+    },
+    "waste-bridge": {
+      "url": "assets/models/waste-bridge.json",
+      "source": "map/salvageyard/sb_slsy_bridge_a_00.nif",
+      "bounds": {
+        "min": [
+          -5.56243,
+          0.0,
+          -0.88836
+        ],
+        "max": [
+          5.56243,
+          3.11661,
+          0.88836
+        ],
+        "size": [
+          11.12486,
+          3.11661,
+          1.77671
+        ]
+      },
+      "parts": 2,
+      "triangles": 396,
+      "bytes": 25364
+    },
+    "waste-cabinet": {
+      "url": "assets/models/waste-cabinet.json",
+      "source": "map/salvageyard/sb_slsy_etc_cabinet_00.nif",
+      "bounds": {
+        "min": [
+          -0.35,
+          0.0,
+          -0.35
+        ],
+        "max": [
+          0.35,
+          1.5577,
+          0.35
+        ],
+        "size": [
+          0.7,
+          1.5577,
+          0.7
+        ]
+      },
+      "parts": 1,
+      "triangles": 32,
+      "bytes": 2311
+    },
+    "waste-tv": {
+      "url": "assets/models/waste-tv.json",
+      "source": "map/salvageyard/sb_slsy_etc_tv_a_00.nif",
+      "bounds": {
+        "min": [
+          -0.40439,
+          0.0,
+          -0.5
+        ],
+        "max": [
+          0.40439,
+          0.59944,
+          0.5
+        ],
+        "size": [
+          0.80878,
+          0.59944,
+          1.0
+        ]
+      },
+      "parts": 1,
+      "triangles": 44,
+      "bytes": 3516
+    },
+    "waste-burnt-tree": {
+      "url": "assets/models/waste-burnt-tree.json",
+      "source": "map/ep/ep_dlfw_burning_trees01.nif",
+      "bounds": {
+        "min": [
+          -1.56002,
+          0.0,
+          -1.28592
+        ],
+        "max": [
+          1.56002,
+          0.86707,
+          1.28592
+        ],
+        "size": [
+          3.12005,
+          0.86707,
+          2.57183
+        ]
+      },
+      "parts": 1,
+      "triangles": 516,
+      "bytes": 25936
+    },
+    "waste-rock": {
+      "url": "assets/models/waste-rock.json",
+      "source": "map/devilscanyon/wd_wldc_stone_a_01.nif",
+      "bounds": {
+        "min": [
+          -0.92315,
+          0.0,
+          -1.40157
+        ],
+        "max": [
+          0.92315,
+          3.30266,
+          1.40157
+        ],
+        "size": [
+          1.84631,
+          3.30266,
+          2.80315
+        ]
+      },
+      "parts": 1,
+      "triangles": 345,
+      "bytes": 22809
+    },
+    "enemy-packarachnid": {
+      "url": "assets/models/enemy-packarachnid.json",
+      "source": "mob/mob_redwolfheadspider.kfm",
+      "bounds": {
+        "min": [
+          -2.03764,
+          0.0,
+          -2.49258
+        ],
+        "max": [
+          2.03764,
+          2.84628,
+          2.49258
+        ],
+        "size": [
+          4.07529,
+          2.84628,
+          4.98517
+        ]
+      },
+      "parts": 1,
+      "triangles": 3230,
+      "bytes": 155657
+    },
+    "enemy-scraptyrant": {
+      "url": "assets/models/enemy-scraptyrant.json",
+      "source": "mob/mob_junkcar.kfm",
+      "bounds": {
+        "min": [
+          -1.61625,
+          0.0,
+          -1.54492
+        ],
+        "max": [
+          1.61625,
+          2.31778,
+          1.54492
+        ],
+        "size": [
+          3.2325,
+          2.31778,
+          3.08985
+        ]
+      },
+      "parts": 1,
+      "triangles": 2249,
+      "bytes": 136657
+    },
+    "enemy-crashloader": {
+      "url": "assets/models/enemy-crashloader.json",
+      "source": "mob/mob_crasher.kfm",
+      "bounds": {
+        "min": [
+          -1.46881,
+          0.0,
+          -1.07431
+        ],
+        "max": [
+          1.46881,
+          3.05964,
+          1.07431
+        ],
+        "size": [
+          2.93763,
+          3.05964,
+          2.14863
+        ]
+      },
+      "parts": 1,
+      "triangles": 3465,
+      "bytes": 222689
+    },
+    "enemy-junkasaurus": {
+      "url": "assets/models/enemy-junkasaurus.json",
+      "source": "mob/mob_junkdinosaur.kfm",
+      "bounds": {
+        "min": [
+          -0.99434,
+          0.0,
+          -1.98144
+        ],
+        "max": [
+          0.99434,
+          2.72427,
+          1.98144
+        ],
+        "size": [
+          1.98868,
+          2.72427,
+          3.96289
+        ]
+      },
+      "parts": 3,
+      "triangles": 4171,
+      "bytes": 233322
+    },
+    "hero-dexter": {
+      "url": "assets/models/hero-dexter.json",
+      "source": "mob/npc_dexter.kfm",
+      "bounds": {
+        "min": [
+          -0.51345,
+          0.0,
+          -0.16635
+        ],
+        "max": [
+          0.51345,
+          1.32922,
+          0.16635
+        ],
+        "size": [
+          1.0269,
+          1.32922,
+          0.3327
+        ]
+      },
+      "parts": 2,
+      "triangles": 3677,
+      "bytes": 170688
+    },
+    "hero-samuraijack": {
+      "url": "assets/models/hero-samuraijack.json",
+      "source": "mob/npc_samuraijack.kfm",
+      "bounds": {
+        "min": [
+          -0.71342,
+          0.0,
+          -0.41737
+        ],
+        "max": [
+          0.71342,
+          1.8607,
+          0.41737
+        ],
+        "size": [
+          1.42685,
+          1.8607,
+          0.83475
+        ]
+      },
+      "parts": 3,
+      "triangles": 2639,
+      "bytes": 128038
+    },
+    "hero-buttercup": {
+      "url": "assets/models/hero-buttercup.json",
+      "source": "mob/npc_buttercup.kfm",
+      "bounds": {
+        "min": [
+          -0.47579,
+          0.0,
+          -0.14323
+        ],
+        "max": [
+          0.47579,
+          1.32291,
+          0.14323
+        ],
+        "size": [
+          0.95158,
+          1.32291,
+          0.28646
+        ]
+      },
+      "parts": 1,
+      "triangles": 3693,
+      "bytes": 179856
+    },
+    "hero-blossom": {
+      "url": "assets/models/hero-blossom.json",
+      "source": "mob/npc_blossom.kfm",
+      "bounds": {
+        "min": [
+          -0.43618,
+          0.0,
+          -0.27715
+        ],
+        "max": [
+          0.43618,
+          1.34138,
+          0.27715
+        ],
+        "size": [
+          0.87236,
+          1.34138,
+          0.5543
+        ]
+      },
+      "parts": 1,
+      "triangles": 4051,
+      "bytes": 191149
+    },
+    "hero-eddy": {
+      "url": "assets/models/hero-eddy.json",
+      "source": "mob/npc_eddy.kfm",
+      "bounds": {
+        "min": [
+          -0.54373,
+          0.0,
+          -0.25664
+        ],
+        "max": [
+          0.54373,
+          1.29686,
+          0.25664
+        ],
+        "size": [
+          1.08746,
+          1.29686,
+          0.51327
+        ]
+      },
+      "parts": 1,
+      "triangles": 3208,
+      "bytes": 153535
+    },
+    "hero-numbuhfive": {
+      "url": "assets/models/hero-numbuhfive.json",
+      "source": "mob/npc_numbuhfive.kfm",
+      "bounds": {
+        "min": [
+          -0.47475,
+          0.0,
+          -0.69892
+        ],
+        "max": [
+          0.47475,
+          1.35679,
+          0.69892
+        ],
+        "size": [
+          0.9495,
+          1.35679,
+          1.39784
+        ]
+      },
+      "parts": 1,
+      "triangles": 3263,
+      "bytes": 144689
+    },
+    "hero-numbuhtwo": {
+      "url": "assets/models/hero-numbuhtwo.json",
+      "source": "mob/npc_numbuhtwo.kfm",
+      "bounds": {
+        "min": [
+          -0.64712,
+          0.0,
+          -0.21466
+        ],
+        "max": [
+          0.64712,
+          1.32182,
+          0.21466
+        ],
+        "size": [
+          1.29423,
+          1.32182,
+          0.42933
+        ]
+      },
+      "parts": 1,
+      "triangles": 1774,
+      "bytes": 128549
+    },
+    "hero-grim": {
+      "url": "assets/models/hero-grim.json",
+      "source": "mob/npc_grim.kfm",
+      "bounds": {
+        "min": [
+          -1.13226,
+          0.0,
+          -0.62721
+        ],
+        "max": [
+          1.13226,
+          2.44904,
+          0.62721
+        ],
+        "size": [
+          2.26452,
+          2.44904,
+          1.25442
+        ]
+      },
+      "parts": 2,
+      "triangles": 4051,
+      "bytes": 202536
+    },
+    "hero-mac": {
+      "url": "assets/models/hero-mac.json",
+      "source": "mob/npc_mac.kfm",
+      "bounds": {
+        "min": [
+          -0.44836,
+          0.0,
+          -0.19186
+        ],
+        "max": [
+          0.44836,
+          1.26651,
+          0.19186
+        ],
+        "size": [
+          0.89672,
+          1.26651,
+          0.38372
+        ]
+      },
+      "parts": 2,
+      "triangles": 2589,
+      "bytes": 121630
+    },
+    "hero-mandark": {
+      "url": "assets/models/hero-mandark.json",
+      "source": "mob/npc_mandark.kfm",
+      "bounds": {
+        "min": [
+          -0.6548,
+          0.0,
+          -0.42071
+        ],
+        "max": [
+          0.6548,
+          1.78349,
+          0.42071
+        ],
+        "size": [
+          1.30961,
+          1.78349,
+          0.84142
+        ]
+      },
+      "parts": 2,
+      "triangles": 4440,
+      "bytes": 208497
+    },
+    "accessory-chowder-hat": {
+      "url": "assets/models/accessory-chowder-hat.json",
+      "source": "wear/hat_chowderhat.nif",
+      "bounds": {
+        "min": [
+          -0.19198,
+          0.0,
+          -0.13055
+        ],
+        "max": [
+          0.19198,
+          0.23519,
+          0.13055
+        ],
+        "size": [
+          0.38395,
+          0.23519,
+          0.26111
+        ]
+      },
+      "parts": 1,
+      "triangles": 521,
+      "bytes": 23297
+    },
+    "accessory-pirate-hat": {
+      "url": "assets/models/accessory-pirate-hat.json",
+      "source": "wear/hat_pirate.nif",
+      "bounds": {
+        "min": [
+          -0.16714,
+          0.0,
+          -0.15285
+        ],
+        "max": [
+          0.16714,
+          0.17047,
+          0.15285
+        ],
+        "size": [
+          0.33429,
+          0.17047,
+          0.3057
+        ]
+      },
+      "parts": 1,
+      "triangles": 531,
+      "bytes": 21617
+    },
+    "accessory-wizard-hat": {
+      "url": "assets/models/accessory-wizard-hat.json",
+      "source": "wear/hat_wizard.nif",
+      "bounds": {
+        "min": [
+          -0.1364,
+          0.0,
+          -0.13833
+        ],
+        "max": [
+          0.1364,
+          0.39612,
+          0.13833
+        ],
+        "size": [
+          0.27279,
+          0.39612,
+          0.27665
+        ]
+      },
+      "parts": 1,
+      "triangles": 189,
+      "bytes": 9329
+    },
+    "accessory-construction-hat": {
+      "url": "assets/models/accessory-construction-hat.json",
+      "source": "wear/hat_constructionhelmet.nif",
+      "bounds": {
+        "min": [
+          -0.12491,
+          0.0,
+          -0.15196
+        ],
+        "max": [
+          0.12491,
+          0.15802,
+          0.15196
+        ],
+        "size": [
+          0.24982,
+          0.15802,
+          0.30392
+        ]
+      },
+      "parts": 1,
+      "triangles": 359,
+      "bytes": 16033
+    },
+    "accessory-artist-beret": {
+      "url": "assets/models/accessory-artist-beret.json",
+      "source": "wear/hat_artisticberet.nif",
+      "bounds": {
+        "min": [
+          -0.11533,
+          0.0,
+          -0.14719
+        ],
+        "max": [
+          0.11533,
+          0.18645,
+          0.14719
+        ],
+        "size": [
+          0.23066,
+          0.18645,
+          0.29437
+        ]
+      },
+      "parts": 1,
+      "triangles": 328,
+      "bytes": 14870
+    },
+    "accessory-monkey-crown": {
+      "url": "assets/models/accessory-monkey-crown.json",
+      "source": "wear/hat_monkeykingscrown.nif",
+      "bounds": {
+        "min": [
+          -0.10955,
+          0.0,
+          -0.13366
+        ],
+        "max": [
+          0.10955,
+          0.06248,
+          0.13366
+        ],
+        "size": [
+          0.21911,
+          0.06248,
+          0.26731
+        ]
+      },
+      "parts": 1,
+      "triangles": 162,
+      "bytes": 7030
+    },
+    "accessory-devil-wings": {
+      "url": "assets/models/accessory-devil-wings.json",
+      "source": "wear/back_devilswing.nif",
+      "bounds": {
+        "min": [
+          -0.54763,
+          0.0,
+          -0.11146
+        ],
+        "max": [
+          0.54763,
+          0.40133,
+          0.11146
+        ],
+        "size": [
+          1.09526,
+          0.40133,
+          0.22293
+        ]
+      },
+      "parts": 1,
+      "triangles": 1458,
+      "bytes": 52715
+    },
+    "accessory-octi-backpack": {
+      "url": "assets/models/accessory-octi-backpack.json",
+      "source": "wear/back_octibackpack.nif",
+      "bounds": {
+        "min": [
+          -0.19828,
+          0.0,
+          -0.21196
+        ],
+        "max": [
+          0.19828,
+          0.55907,
+          0.21196
+        ],
+        "size": [
+          0.39657,
+          0.55907,
+          0.42393
+        ]
+      },
+      "parts": 1,
+      "triangles": 622,
+      "bytes": 27456
+    },
+    "accessory-bounty-pack": {
+      "url": "assets/models/accessory-bounty-pack.json",
+      "source": "wear/back_plumber.nif",
+      "bounds": {
+        "min": [
+          -0.53038,
+          0.0,
+          -0.07793
+        ],
+        "max": [
+          0.53038,
+          0.84964,
+          0.07793
+        ],
+        "size": [
+          1.06075,
+          0.84964,
+          0.15585
+        ]
+      },
+      "parts": 1,
+      "triangles": 677,
+      "bytes": 31949
+    },
+    "accessory-rocket-pack": {
+      "url": "assets/models/accessory-rocket-pack.json",
+      "source": "wear/back_rocket.nif",
+      "bounds": {
+        "min": [
+          -0.0963,
+          0.0,
+          -0.08857
+        ],
+        "max": [
+          0.0963,
+          0.50042,
+          0.08857
+        ],
+        "size": [
+          0.1926,
+          0.50042,
+          0.17715
+        ]
+      },
+      "parts": 1,
+      "triangles": 322,
+      "bytes": 16702
+    },
+    "accessory-pencil-back": {
+      "url": "assets/models/accessory-pencil-back.json",
+      "source": "wear/back_pencilscabbard.nif",
+      "bounds": {
+        "min": [
+          -0.15767,
+          0.0,
+          -0.06968
+        ],
+        "max": [
+          0.15767,
+          0.65539,
+          0.06968
+        ],
+        "size": [
+          0.31534,
+          0.65539,
+          0.13937
+        ]
+      },
+      "parts": 1,
+      "triangles": 57,
+      "bytes": 3613
+    },
+    "accessory-bigchill-wings": {
+      "url": "assets/models/accessory-bigchill-wings.json",
+      "source": "wear/back_bigchillwings.nif",
+      "bounds": {
+        "min": [
+          -1.31724,
+          0.0,
+          -0.31245
+        ],
+        "max": [
+          1.31724,
+          1.06847,
+          0.31245
+        ],
+        "size": [
+          2.63448,
+          1.06847,
+          0.62491
+        ]
+      },
+      "parts": 1,
+      "triangles": 1155,
+      "bytes": 64931
+    },
+    "weapon-spitwad": {
+      "url": "assets/models/weapon-spitwad.json",
+      "source": "wear/rifle_snipercn01.nif",
+      "bounds": {
+        "min": [
+          -0.11308,
+          0.0,
+          -0.38639
+        ],
+        "max": [
+          0.11308,
+          0.44544,
+          0.38639
+        ],
+        "size": [
+          0.22615,
+          0.44544,
+          0.77279
+        ]
+      },
+      "parts": 1,
+      "triangles": 575,
+      "bytes": 32201
+    },
+    "weapon-rotation": {
+      "url": "assets/models/weapon-rotation.json",
+      "source": "wear/rifle_rotation.nif",
+      "bounds": {
+        "min": [
+          -0.13647,
+          0.0,
+          -0.34449
+        ],
+        "max": [
+          0.13647,
+          0.31326,
+          0.34449
+        ],
+        "size": [
+          0.27294,
+          0.31326,
+          0.68898
+        ]
+      },
+      "parts": 1,
+      "triangles": 610,
+      "bytes": 39803
+    },
+    "weapon-heatblaster": {
+      "url": "assets/models/weapon-heatblaster.json",
+      "source": "wear/pistol_heatblastor.nif",
+      "bounds": {
+        "min": [
+          -0.05306,
+          0.0,
+          -0.20415
+        ],
+        "max": [
+          0.05306,
+          0.14443,
+          0.20415
+        ],
+        "size": [
+          0.10612,
+          0.14443,
+          0.4083
+        ]
+      },
+      "parts": 1,
+      "triangles": 616,
+      "bytes": 29761
+    },
+    "weapon-scattergun": {
+      "url": "assets/models/weapon-scattergun.json",
+      "source": "wear/rifle_verticalshotgun.nif",
+      "bounds": {
+        "min": [
+          -0.08087,
+          0.0,
+          -0.41493
+        ],
+        "max": [
+          0.08087,
+          0.2405,
+          0.41493
+        ],
+        "size": [
+          0.16175,
+          0.2405,
+          0.82987
+        ]
+      },
+      "parts": 1,
+      "triangles": 291,
+      "bytes": 19495
+    },
+    "weapon-marshmallow": {
+      "url": "assets/models/weapon-marshmallow.json",
+      "source": "wear/thbazooka_marshmallowlauncher.nif",
+      "bounds": {
+        "min": [
+          -0.11546,
+          0.0,
+          -0.4051
+        ],
+        "max": [
+          0.11546,
+          0.44952,
+          0.4051
+        ],
+        "size": [
+          0.23093,
+          0.44952,
+          0.8102
+        ]
+      },
+      "parts": 2,
+      "triangles": 988,
+      "bytes": 55918
+    },
+    "weapon-bracer": {
+      "url": "assets/models/weapon-bracer.json",
+      "source": "wear/pistol_bracerblaster.nif",
+      "bounds": {
+        "min": [
+          -0.06978,
+          0.0,
+          -0.16175
+        ],
+        "max": [
+          0.06978,
+          0.14186,
+          0.16175
+        ],
+        "size": [
+          0.13956,
+          0.14186,
+          0.3235
+        ]
+      },
+      "parts": 1,
+      "triangles": 548,
+      "bytes": 31401
+    },
+    "hero-bubbles": {
+      "url": "assets/models/hero-bubbles.json",
+      "source": "mob/npc_bubbles.kfm",
+      "bounds": {
+        "min": [
+          -0.43351,
+          0.0,
+          -0.19314
+        ],
+        "max": [
+          0.43351,
+          1.19056,
+          0.19314
+        ],
+        "size": [
+          0.86702,
+          1.19056,
+          0.38629
+        ]
+      },
+      "parts": 1,
+      "triangles": 3209,
+      "bytes": 149624
+    },
+    "hero-deedee": {
+      "url": "assets/models/hero-deedee.json",
+      "source": "mob/npc_deedee.kfm",
+      "bounds": {
+        "min": [
+          -0.51483,
+          0.0,
+          -0.15995
+        ],
+        "max": [
+          0.51483,
+          1.44701,
+          0.15995
+        ],
+        "size": [
+          1.02967,
+          1.44701,
+          0.31991
+        ]
+      },
+      "parts": 1,
+      "triangles": 2173,
+      "bytes": 141453
+    },
+    "hero-ed": {
+      "url": "assets/models/hero-ed.json",
+      "source": "mob/npc_ed.kfm",
+      "bounds": {
+        "min": [
+          -0.64427,
+          0.0,
+          -0.16257
+        ],
+        "max": [
+          0.64427,
+          1.41778,
+          0.16257
+        ],
+        "size": [
+          1.28855,
+          1.41778,
+          0.32515
+        ]
+      },
+      "parts": 1,
+      "triangles": 3274,
+      "bytes": 148672
+    },
+    "hero-edd": {
+      "url": "assets/models/hero-edd.json",
+      "source": "mob/npc_edd.kfm",
+      "bounds": {
+        "min": [
+          -0.52408,
+          0.0,
+          -0.21172
+        ],
+        "max": [
+          0.52408,
+          1.35351,
+          0.21172
+        ],
+        "size": [
+          1.04817,
+          1.35351,
+          0.42345
+        ]
+      },
+      "parts": 1,
+      "triangles": 3396,
+      "bytes": 166617
+    },
+    "hero-billy": {
+      "url": "assets/models/hero-billy.json",
+      "source": "mob/npc_billy.kfm",
+      "bounds": {
+        "min": [
+          -0.5179,
+          0.0,
+          -0.20665
+        ],
+        "max": [
+          0.5179,
+          1.38048,
+          0.20665
+        ],
+        "size": [
+          1.0358,
+          1.38048,
+          0.4133
+        ]
+      },
+      "parts": 1,
+      "triangles": 2646,
+      "bytes": 111505
+    },
+    "hero-mandy": {
+      "url": "assets/models/hero-mandy.json",
+      "source": "mob/npc_mandy.kfm",
+      "bounds": {
+        "min": [
+          -0.44893,
+          0.0,
+          -0.1727
+        ],
+        "max": [
+          0.44893,
+          1.26055,
+          0.1727
+        ],
+        "size": [
+          0.89786,
+          1.26055,
+          0.3454
+        ]
+      },
+      "parts": 1,
+      "triangles": 3261,
+      "bytes": 147193
+    },
+    "hero-numbuhone": {
+      "url": "assets/models/hero-numbuhone.json",
+      "source": "mob/npc_numbuhone.kfm",
+      "bounds": {
+        "min": [
+          -0.54895,
+          0.0,
+          -0.15858
+        ],
+        "max": [
+          0.54895,
+          1.33109,
+          0.15858
+        ],
+        "size": [
+          1.0979,
+          1.33109,
+          0.31716
+        ]
+      },
+      "parts": 1,
+      "triangles": 1860,
+      "bytes": 135907
+    },
+    "hero-numbuhthree": {
+      "url": "assets/models/hero-numbuhthree.json",
+      "source": "mob/npc_numbuhthree.kfm",
+      "bounds": {
+        "min": [
+          -0.62419,
+          0.0,
+          -0.19406
+        ],
+        "max": [
+          0.62419,
+          1.34361,
+          0.19406
+        ],
+        "size": [
+          1.24838,
+          1.34361,
+          0.38812
+        ]
+      },
+      "parts": 1,
+      "triangles": 2117,
+      "bytes": 89119
+    },
+    "hero-numbuhfour": {
+      "url": "assets/models/hero-numbuhfour.json",
+      "source": "mob/npc_numbuhfour.kfm",
+      "bounds": {
+        "min": [
+          -0.52128,
+          0.0,
+          -0.25004
+        ],
+        "max": [
+          0.52128,
+          1.288,
+          0.25004
+        ],
+        "size": [
+          1.04257,
+          1.288,
+          0.50008
+        ]
+      },
+      "parts": 1,
+      "triangles": 2331,
+      "bytes": 101190
+    },
+    "hero-eduardo": {
+      "url": "assets/models/hero-eduardo.json",
+      "source": "mob/npc_eduardo.kfm",
+      "bounds": {
+        "min": [
+          -0.99134,
+          0.0,
+          -0.72959
+        ],
+        "max": [
+          0.99134,
+          1.88136,
+          0.72959
+        ],
+        "size": [
+          1.98267,
+          1.88136,
+          1.45918
+        ]
+      },
+      "parts": 1,
+      "triangles": 2536,
+      "bytes": 107733
+    },
+    "hero-wilt": {
+      "url": "assets/models/hero-wilt.json",
+      "source": "mob/npc_wilt.kfm",
+      "bounds": {
+        "min": [
+          -0.9773,
+          0.0,
+          -0.26938
+        ],
+        "max": [
+          0.9773,
+          2.30431,
+          0.26938
+        ],
+        "size": [
+          1.95459,
+          2.30431,
+          0.53876
+        ]
+      },
+      "parts": 1,
+      "triangles": 1832,
+      "bytes": 77267
+    },
+    "hero-bloo": {
+      "url": "assets/models/hero-bloo.json",
+      "source": "mob/npc_blooexpressions.kfm",
+      "bounds": {
+        "min": [
+          -0.60254,
+          0.0,
+          -0.26633
+        ],
+        "max": [
+          0.60254,
+          1.0204,
+          0.26633
+        ],
+        "size": [
+          1.20508,
+          1.0204,
+          0.53266
+        ]
+      },
+      "parts": 1,
+      "triangles": 1288,
+      "bytes": 53682
+    },
+    "hero-gwen": {
+      "url": "assets/models/hero-gwen.json",
+      "source": "mob/npc_gwen.kfm",
+      "bounds": {
+        "min": [
+          -0.54365,
+          0.0,
+          -0.15262
+        ],
+        "max": [
+          0.54365,
+          1.55057,
+          0.15262
+        ],
+        "size": [
+          1.0873,
+          1.55057,
+          0.30524
+        ]
+      },
+      "parts": 1,
+      "triangles": 3378,
+      "bytes": 151876
+    },
+    "hero-mojojojo": {
+      "url": "assets/models/hero-mojojojo.json",
+      "source": "mob/npc_mojojojo.kfm",
+      "bounds": {
+        "min": [
+          -0.66855,
+          0.0,
+          -0.86217
+        ],
+        "max": [
+          0.66855,
+          1.17808,
+          0.86217
+        ],
+        "size": [
+          1.33709,
+          1.17808,
+          1.72433
+        ]
+      },
+      "parts": 1,
+      "triangles": 1791,
+      "bytes": 123176
+    },
+    "accessory-bean-scout-hat": {
+      "url": "assets/models/accessory-bean-scout-hat.json",
+      "source": "wear/hat_beanscouthat.nif",
+      "bounds": {
+        "min": [
+          -0.08127,
+          0.0,
+          -0.04314
+        ],
+        "max": [
+          0.08127,
+          0.21633,
+          0.04314
+        ],
+        "size": [
+          0.16254,
+          0.21633,
+          0.08627
+        ]
+      },
+      "parts": 1,
+      "triangles": 340,
+      "bytes": 14898
+    },
+    "accessory-samurai-helmet": {
+      "url": "assets/models/accessory-samurai-helmet.json",
+      "source": "wear/helmet_sjarmor.nif",
+      "bounds": {
+        "min": [
+          -0.12991,
+          0.0,
+          -0.21753
+        ],
+        "max": [
+          0.12991,
+          0.32397,
+          0.21753
+        ],
+        "size": [
+          0.25983,
+          0.32397,
+          0.43506
+        ]
+      },
+      "parts": 1,
+      "triangles": 571,
+      "bytes": 32374
+    },
+    "accessory-xlr8-helmet": {
+      "url": "assets/models/accessory-xlr8-helmet.json",
+      "source": "wear/helmet_b10xlr8speedhelmet.nif",
+      "bounds": {
+        "min": [
+          -0.12379,
+          0.0,
+          -0.17075
+        ],
+        "max": [
+          0.12379,
+          0.33476,
+          0.17075
+        ],
+        "size": [
+          0.24759,
+          0.33476,
+          0.3415
+        ]
+      },
+      "parts": 2,
+      "triangles": 650,
+      "bytes": 34143
+    },
+    "accessory-flight-helmet": {
+      "url": "assets/models/accessory-flight-helmet.json",
+      "source": "wear/hat_numbuhtow.nif",
+      "bounds": {
+        "min": [
+          -0.12088,
+          0.0,
+          -0.13077
+        ],
+        "max": [
+          0.12088,
+          0.26416,
+          0.13077
+        ],
+        "size": [
+          0.24176,
+          0.26416,
+          0.26154
+        ]
+      },
+      "parts": 1,
+      "triangles": 280,
+      "bytes": 21333
+    },
+    "accessory-angel-wings": {
+      "url": "assets/models/accessory-angel-wings.json",
+      "source": "wear/back_angelswing.nif",
+      "bounds": {
+        "min": [
+          -0.5555,
+          0.0,
+          -0.1351
+        ],
+        "max": [
+          0.5555,
+          0.41235,
+          0.1351
+        ],
+        "size": [
+          1.11099,
+          0.41235,
+          0.2702
+        ]
+      },
+      "parts": 1,
+      "triangles": 774,
+      "bytes": 30858
+    },
+    "accessory-samurai-scabbard": {
+      "url": "assets/models/accessory-samurai-scabbard.json",
+      "source": "wear/back_scabbards_02.nif",
+      "bounds": {
+        "min": [
+          -0.14949,
+          0.0,
+          -0.04982
+        ],
+        "max": [
+          0.14949,
+          0.64307,
+          0.04982
+        ],
+        "size": [
+          0.29898,
+          0.64307,
+          0.09964
+        ]
+      },
+      "parts": 1,
+      "triangles": 380,
+      "bytes": 20188
+    },
+    "accessory-dexstar-pack": {
+      "url": "assets/models/accessory-dexstar-pack.json",
+      "source": "wear/back_dexstar.nif",
+      "bounds": {
+        "min": [
+          -0.46585,
+          0.0,
+          -0.04995
+        ],
+        "max": [
+          0.46585,
+          0.41512,
+          0.04995
+        ],
+        "size": [
+          0.9317,
+          0.41512,
+          0.09989
+        ]
+      },
+      "parts": 1,
+      "triangles": 341,
+      "bytes": 18612
+    },
+    "accessory-fosters-skatepack": {
+      "url": "assets/models/accessory-fosters-skatepack.json",
+      "source": "wear/back_bloo.nif",
+      "bounds": {
+        "min": [
+          -0.14667,
+          0.0,
+          -0.14446
+        ],
+        "max": [
+          0.14667,
+          0.52483,
+          0.14446
+        ],
+        "size": [
+          0.29333,
+          0.52483,
+          0.28891
+        ]
+      },
+      "parts": 1,
+      "triangles": 627,
+      "bytes": 37856
+    },
+    "weapon-sword": {
+      "url": "assets/models/weapon-sword.json",
+      "source": "wear/sword_sjkatana.nif",
+      "bounds": {
+        "min": [
+          -0.0562,
+          0.0,
+          -0.07739
+        ],
+        "max": [
+          0.0562,
+          1.03585,
+          0.07739
+        ],
+        "size": [
+          0.1124,
+          1.03585,
+          0.15477
+        ]
+      },
+      "parts": 1,
+      "triangles": 325,
+      "bytes": 16072
+    },
+    "weapon-hammer": {
+      "url": "assets/models/weapon-hammer.json",
+      "source": "wear/sword_gavel.nif",
+      "bounds": {
+        "min": [
+          -0.11582,
+          0.0,
+          -0.27223
+        ],
+        "max": [
+          0.11582,
+          0.76204,
+          0.27223
+        ],
+        "size": [
+          0.23165,
+          0.76204,
+          0.54445
+        ]
+      },
+      "parts": 1,
+      "triangles": 1096,
+      "bytes": 60004
+    },
+    "weapon-bat": {
+      "url": "assets/models/weapon-bat.json",
+      "source": "wear/sword_baseballbat.nif",
+      "bounds": {
+        "min": [
+          -0.05758,
+          0.0,
+          -0.05758
+        ],
+        "max": [
+          0.05758,
+          1.02735,
+          0.05758
+        ],
+        "size": [
+          0.11515,
+          1.02735,
+          0.11515
+        ]
+      },
+      "parts": 1,
+      "triangles": 542,
+      "bytes": 27748
+    }
+  },
+  "textures": {
+    "fa4d9fa0d8ac": {
+      "map": "assets/textures/fa4d9fa0d8ac.webp",
+      "alpha": false,
+      "name": "nano_buttercup",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "a47116b29faa": {
+      "map": "assets/textures/a47116b29faa.webp",
+      "alpha": false,
+      "name": "nano_eddy",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "a4f5316798d9": {
+      "map": "assets/textures/a4f5316798d9.webp",
+      "alpha": false,
+      "name": "nano_deedee",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "56406aaf5be4": {
+      "map": "assets/textures/56406aaf5be4.webp",
+      "alpha": false,
+      "name": "pistol_b10",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "aa760340598c": {
+      "map": "assets/textures/aa760340598c.webp",
+      "alpha": false,
+      "name": "thbazooka_bioplasmacannon",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "4ff99665ce7d": {
+      "map": "assets/textures/4ff99665ce7d.webp",
+      "alpha": false,
+      "name": "mob_spawn",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "c7f7add315f9": {
+      "map": "assets/textures/c7f7add315f9.webp",
+      "alpha": false,
+      "name": "mob_gasspawn",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "6adb7bd2ae03": {
+      "map": "assets/textures/6adb7bd2ae03.webp",
+      "alpha": false,
+      "name": "mob_robo",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "54336937a5d9": {
+      "map": "assets/textures/54336937a5d9.webp",
+      "alpha": false,
+      "name": "mob_asphalt",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "289a4de60443": {
+      "map": "assets/textures/289a4de60443.webp",
+      "alpha": false,
+      "name": "DT_SDTS_buildingA2_01_01.dds",
+      "size": [
+        512,
+        512
+      ]
+    },
+    "41beca585e08": {
+      "map": "assets/textures/41beca585e08.webp",
+      "alpha": false,
+      "name": "DT_SDTS_buildingA2_01_02.dds",
+      "size": [
+        512,
+        512
+      ]
+    },
+    "19a4ad4204fd": {
+      "map": "assets/textures/19a4ad4204fd.webp",
+      "alpha": false,
+      "name": "SunkenMall_store01_1_OPT_AA.dds",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "bb16baac3ccc": {
+      "map": "assets/textures/bb16baac3ccc.webp",
+      "alpha": true,
+      "name": "fusionengien.dds",
+      "size": [
+        512,
+        512
+      ]
+    },
+    "b6c6ab64998c": {
+      "map": "assets/textures/b6c6ab64998c.webp",
+      "alpha": false,
+      "name": "item_box_02.DDS",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "05d972dcd852": {
+      "map": "assets/textures/05d972dcd852.webp",
+      "alpha": false,
+      "name": "quest_com_consoles_AA.dds",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "4c65b3d8e71a": {
+      "map": "assets/textures/4c65b3d8e71a.webp",
+      "alpha": false,
+      "name": "quest_com_consoles_BB.dds",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "b48c4d4f1c2a": {
+      "map": "assets/textures/b48c4d4f1c2a.webp",
+      "alpha": false,
+      "name": "SB_OTBM_ETC_ROADSIGNAL01.dds",
+      "size": [
+        512,
+        512
+      ]
+    },
+    "dca6a00ea139": {
+      "map": "assets/textures/dca6a00ea139.webp",
+      "alpha": true,
+      "name": "explosion.dds",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "c182033d3a9d": {
+      "map": "assets/textures/c182033d3a9d.webp",
+      "alpha": false,
+      "name": "SB_OTBM_ETC_BUSSTOP11.dds",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "fb99a338de7a": {
+      "map": "assets/textures/fb99a338de7a.webp",
+      "alpha": false,
+      "name": "DT_tree_01.dds",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "ca8e16e5d87e": {
+      "map": "assets/textures/ca8e16e5d87e.webp",
+      "alpha": false,
+      "name": "sb_slsy_etc_oilcask_00.dds",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "a41cc548890d": {
+      "map": "assets/textures/a41cc548890d.webp",
+      "alpha": false,
+      "name": "sb_slsy_etc_cabinet_n.dds",
+      "size": [
+        128,
+        256
+      ]
+    },
+    "4c34e9409487": {
+      "map": "assets/textures/4c34e9409487.webp",
+      "alpha": false,
+      "name": "dt_mtsm_fence_b.DDS",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "bcc172ebddc5": {
+      "map": "assets/textures/bcc172ebddc5.webp",
+      "alpha": false,
+      "name": "DT_passengercar_a_01.dds",
+      "size": [
+        512,
+        512
+      ]
+    },
+    "406200afef70": {
+      "map": "assets/textures/406200afef70.webp",
+      "alpha": false,
+      "name": "dt_bench_se_01.dds",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "5a802e9989fe": {
+      "map": "assets/textures/5a802e9989fe.webp",
+      "alpha": false,
+      "name": "SB_OTNP_checkpoint_02.DDS",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "780977e96b23": {
+      "map": "assets/textures/780977e96b23.webp",
+      "alpha": false,
+      "name": "SB_OTNP_checkpoint_01.dds",
+      "size": [
+        512,
+        512
+      ]
+    },
+    "6934bf1b303c": {
+      "map": "assets/textures/6934bf1b303c.webp",
+      "alpha": true,
+      "name": "DT_CPCH_ven01.dds",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "fc26c0f0efd0": {
+      "map": "assets/textures/fc26c0f0efd0.webp",
+      "alpha": false,
+      "name": "DT_CPCH_ven01_e1.dds",
+      "size": [
+        32,
+        128
+      ]
+    },
+    "2f5f5e9ef6e1": {
+      "map": "assets/textures/2f5f5e9ef6e1.webp",
+      "alpha": true,
+      "name": "DT_CPCH_ven01_e2.dds",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "edb2f6c341d5": {
+      "map": "assets/textures/edb2f6c341d5.webp",
+      "alpha": false,
+      "name": "SB_SBDX_FLOWER02.DDS",
+      "size": [
+        128,
+        256
+      ]
+    },
+    "fc1cda3b146b": {
+      "map": "assets/textures/fc1cda3b146b.webp",
+      "alpha": true,
+      "name": "SB_SBDX_FLOWER01.DDS",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "6a045945913c": {
+      "map": "assets/textures/6a045945913c.webp",
+      "alpha": false,
+      "name": "DT_OBWH_antenna-1.dds",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "28cb56281204": {
+      "map": "assets/textures/28cb56281204.webp",
+      "alpha": false,
+      "name": "DT_OBWH_antenna-2.dds",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "8ef8e7e429fd": {
+      "map": "assets/textures/8ef8e7e429fd.webp",
+      "alpha": false,
+      "name": "nano_buttercup",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "dc175a11a26c": {
+      "map": "assets/textures/dc175a11a26c.webp",
+      "alpha": false,
+      "name": "nano_buttercup_face",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "ff54f4c6a9bd": {
+      "map": "assets/textures/ff54f4c6a9bd.webp",
+      "alpha": false,
+      "name": "nano_eddy",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "aa269edaf205": {
+      "map": "assets/textures/aa269edaf205.webp",
+      "alpha": false,
+      "name": "nano_deedee",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "badd44c023af": {
+      "map": "assets/textures/badd44c023af.webp",
+      "alpha": false,
+      "name": "pistol_b10",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "b24383cbd2ac": {
+      "map": "assets/textures/b24383cbd2ac.webp",
+      "alpha": false,
+      "name": "rifle_ppganubislaser",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "43c134378f00": {
+      "map": "assets/textures/43c134378f00.webp",
+      "alpha": false,
+      "name": "rifle_burningshotgun",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "cbd18cd8999e": {
+      "map": "assets/textures/cbd18cd8999e.webp",
+      "alpha": false,
+      "name": "thbazooka_bioplasmacannon",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "aa2f90b08326": {
+      "map": "assets/textures/aa2f90b08326.webp",
+      "alpha": false,
+      "name": "spawn11_green",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "19f25dc59044": {
+      "map": "assets/textures/19f25dc59044.webp",
+      "alpha": false,
+      "name": "mob_gasspawn",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "7812f7492322": {
+      "map": "assets/textures/7812f7492322.webp",
+      "alpha": false,
+      "name": "mob_robo",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "d45fb031332b": {
+      "map": "assets/textures/d45fb031332b.webp",
+      "alpha": false,
+      "name": "mob_asphalt",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "44a3c77e9f4a": {
+      "map": "assets/textures/44a3c77e9f4a.webp",
+      "alpha": false,
+      "name": "Tile_Road_Basic_02",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "5407488bb541": {
+      "map": "assets/textures/5407488bb541.webp",
+      "alpha": false,
+      "name": "Tile_Road_dt_2D",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "55ecaba99e96": {
+      "map": "assets/textures/55ecaba99e96.webp",
+      "alpha": false,
+      "name": "Tile_grass_01",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "66450e6c1255": {
+      "map": "assets/textures/66450e6c1255.webp",
+      "alpha": false,
+      "name": "Tile_Grass_Stone_01",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "0980a5484cc2": {
+      "map": "assets/textures/0980a5484cc2.webp",
+      "alpha": false,
+      "name": "DT_MTDB_Buil01_union_02.dds",
+      "size": [
+        512,
+        512
+      ]
+    },
+    "e87d05a7056a": {
+      "map": "assets/textures/e87d05a7056a.webp",
+      "alpha": false,
+      "name": "DT_MTDB_Buil01_union_01.dds",
+      "size": [
+        512,
+        256
+      ]
+    },
+    "130a7c11014e": {
+      "map": "assets/textures/130a7c11014e.webp",
+      "alpha": false,
+      "name": "DT_MTDB_Buil03_2.dds",
+      "size": [
+        512,
+        512
+      ]
+    },
+    "20e43983aa61": {
+      "map": "assets/textures/20e43983aa61.webp",
+      "alpha": false,
+      "name": "DT_MTDB_Buil02_OPT_00.dds",
+      "size": [
+        512,
+        512
+      ]
+    },
+    "9b47efee236c": {
+      "map": "assets/textures/9b47efee236c.webp",
+      "alpha": false,
+      "name": "DT_MTDB_Buil03_1.dds",
+      "size": [
+        512,
+        512
+      ]
+    },
+    "20b92b44b213": {
+      "map": "assets/textures/20b92b44b213.webp",
+      "alpha": false,
+      "name": "DT_MTDB_Buil04_OPT_00.dds",
+      "size": [
+        512,
+        512
+      ]
+    },
+    "0f7d44cb4244": {
+      "map": "assets/textures/0f7d44cb4244.webp",
+      "alpha": false,
+      "name": "DT_MTDB_bank_01.dds",
+      "size": [
+        512,
+        256
+      ]
+    },
+    "dece46c9bbcc": {
+      "map": "assets/textures/dece46c9bbcc.webp",
+      "alpha": false,
+      "name": "DT_MTDB_bank_02.dds",
+      "size": [
+        512,
+        512
+      ]
+    },
+    "324f6522437a": {
+      "map": "assets/textures/324f6522437a.webp",
+      "alpha": false,
+      "name": "DT_MTDB_bank_03.dds",
+      "size": [
+        512,
+        512
+      ]
+    },
+    "06470acfa23b": {
+      "map": "assets/textures/06470acfa23b.webp",
+      "alpha": false,
+      "name": "DT_MTDB_bank_04.dds",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "77bc206995be": {
+      "map": "assets/textures/77bc206995be.webp",
+      "alpha": true,
+      "name": "DT_MTDB_bank_05.dds",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "c29d3cfb05b3": {
+      "map": "assets/textures/c29d3cfb05b3.webp",
+      "alpha": false,
+      "name": "DT_MTDB_OPT_AA.dds",
+      "size": [
+        512,
+        512
+      ]
+    },
+    "bc350a518b22": {
+      "map": "assets/textures/bc350a518b22.webp",
+      "alpha": false,
+      "name": "DT_MTDB_EF_01.dds",
+      "size": [
+        256,
+        64
+      ]
+    },
+    "cb3050901460": {
+      "map": "assets/textures/cb3050901460.webp",
+      "alpha": true,
+      "name": "DT_MTDB_EF_02.dds",
+      "size": [
+        128,
+        64
+      ]
+    },
+    "880734e12640": {
+      "map": "assets/textures/880734e12640.webp",
+      "alpha": true,
+      "name": "DT_MTDB_glass_wall.dds",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "18c405fe7a53": {
+      "map": "assets/textures/18c405fe7a53.webp",
+      "alpha": false,
+      "name": "DT_fountain01_01.dds",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "9623f27943de": {
+      "map": "assets/textures/9623f27943de.webp",
+      "alpha": false,
+      "name": "DT_fountain01_02.dds",
+      "size": [
+        128,
+        256
+      ]
+    },
+    "e37bf4dcedc5": {
+      "map": "assets/textures/e37bf4dcedc5.webp",
+      "alpha": true,
+      "name": "DT_fountain01_03.dds",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "0a573d5250f8": {
+      "map": "assets/textures/0a573d5250f8.webp",
+      "alpha": true,
+      "name": "DT_fountain01_05.dds",
+      "size": [
+        32,
+        128
+      ]
+    },
+    "fb42206be05a": {
+      "map": "assets/textures/fb42206be05a.webp",
+      "alpha": false,
+      "name": "DT_MTDB_center.dds",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "2121aea98d48": {
+      "map": "assets/textures/2121aea98d48.webp",
+      "alpha": false,
+      "name": "DT_MTDB_outline.dds",
+      "size": [
+        512,
+        512
+      ]
+    },
+    "593ac0b4836b": {
+      "map": "assets/textures/593ac0b4836b.webp",
+      "alpha": false,
+      "name": "DT_MTDB_marble.dds",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "90bf176d3e30": {
+      "map": "assets/textures/90bf176d3e30.webp",
+      "alpha": false,
+      "name": "DT_MTDB_water_in_tile_01.dds",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "4bbdd68f6cae": {
+      "map": "assets/textures/4bbdd68f6cae.webp",
+      "alpha": true,
+      "name": "DT_MTDB_waterfall.dds",
+      "size": [
+        128,
+        256
+      ]
+    },
+    "02472d97c41a": {
+      "map": "assets/textures/02472d97c41a.webp",
+      "alpha": true,
+      "name": "DT_MTDB_water2.dds",
+      "size": [
+        128,
+        256
+      ]
+    },
+    "2e8a42d038d4": {
+      "map": "assets/textures/2e8a42d038d4.webp",
+      "alpha": true,
+      "name": "DT_MTDB_c.dds",
+      "size": [
+        512,
+        256
+      ]
+    },
+    "70026269a73d": {
+      "map": "assets/textures/70026269a73d.webp",
+      "alpha": true,
+      "name": "DT_MTDB_center_light.dds",
+      "size": [
+        64,
+        256
+      ]
+    },
+    "9d37a8adc1bc": {
+      "map": "assets/textures/9d37a8adc1bc.webp",
+      "alpha": true,
+      "name": "DT_MTDB_waterfall_side.dds",
+      "size": [
+        64,
+        256
+      ]
+    },
+    "5c7716d0f08e": {
+      "map": "assets/textures/5c7716d0f08e.webp",
+      "alpha": false,
+      "name": "SB_SBDX_DEXTER_BurgerFrenzy_2.DDS",
+      "size": [
+        512,
+        512
+      ]
+    },
+    "fd317d4b5bac": {
+      "map": "assets/textures/fd317d4b5bac.webp",
+      "alpha": false,
+      "name": "SB_SBDX_DEXTER_BurgerFrenzy_1.DDS",
+      "size": [
+        512,
+        512
+      ]
+    },
+    "f053cb540e2e": {
+      "map": "assets/textures/f053cb540e2e.webp",
+      "alpha": false,
+      "name": "SB_SBDX_jellyscandy_2.DDS",
+      "size": [
+        512,
+        512
+      ]
+    },
+    "70bc1b652c56": {
+      "map": "assets/textures/70bc1b652c56.webp",
+      "alpha": true,
+      "name": "SB_SBDX_jellyscandy_3.DDS",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "6225c490fd0a": {
+      "map": "assets/textures/6225c490fd0a.webp",
+      "alpha": false,
+      "name": "SB_SBDX_jellyscandy_1.DDS",
+      "size": [
+        512,
+        512
+      ]
+    },
+    "93e4cb43db92": {
+      "map": "assets/textures/93e4cb43db92.webp",
+      "alpha": true,
+      "name": "SB_SBDX_jellyscandy_4.DDS",
+      "size": [
+        128,
+        64
+      ]
+    },
+    "564003e2247a": {
+      "map": "assets/textures/564003e2247a.webp",
+      "alpha": true,
+      "name": "Tech_Park_02.dds",
+      "size": [
+        512,
+        512
+      ]
+    },
+    "3d392aeb46ab": {
+      "map": "assets/textures/3d392aeb46ab.webp",
+      "alpha": false,
+      "name": "Tech_Park_01.dds",
+      "size": [
+        512,
+        512
+      ]
+    },
+    "1a2cfc6d4f96": {
+      "map": "assets/textures/1a2cfc6d4f96.webp",
+      "alpha": true,
+      "name": "fluid_02.dds",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "4bb4b697c949": {
+      "map": "assets/textures/4bb4b697c949.webp",
+      "alpha": false,
+      "name": "DT_SDTS_monorail_01.dds",
+      "size": [
+        512,
+        256
+      ]
+    },
+    "85a15032936c": {
+      "map": "assets/textures/85a15032936c.webp",
+      "alpha": false,
+      "name": "DT_SDTS_monorail_ag_01.dds",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "f70269b8b52a": {
+      "map": "assets/textures/f70269b8b52a.webp",
+      "alpha": false,
+      "name": "DT_ETC_BUSSTOP01.dds",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "f4cc54def79f": {
+      "map": "assets/textures/f4cc54def79f.webp",
+      "alpha": true,
+      "name": "SB_ETC_BUSSTOP02.DDS",
+      "size": [
+        32,
+        32
+      ]
+    },
+    "8518a4f0e587": {
+      "map": "assets/textures/8518a4f0e587.webp",
+      "alpha": false,
+      "name": "DT_ETC_BUSSTOP02.DDS",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "0041268a755f": {
+      "map": "assets/textures/0041268a755f.webp",
+      "alpha": false,
+      "name": "dt_bench_se_01.dds",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "349d07bd9eea": {
+      "map": "assets/textures/349d07bd9eea.webp",
+      "alpha": false,
+      "name": "DT_pickupcar_01.dds",
+      "size": [
+        512,
+        512
+      ]
+    },
+    "589549845a53": {
+      "map": "assets/textures/589549845a53.webp",
+      "alpha": false,
+      "name": "DT_firecar_map_01.dds",
+      "size": [
+        512,
+        512
+      ]
+    },
+    "9c68414e046d": {
+      "map": "assets/textures/9c68414e046d.webp",
+      "alpha": true,
+      "name": "DT_firecar_map_04.dds",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "0bffa05af7de": {
+      "map": "assets/textures/0bffa05af7de.webp",
+      "alpha": false,
+      "name": "DT_tree_01.dds",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "af14f72938eb": {
+      "map": "assets/textures/af14f72938eb.webp",
+      "alpha": false,
+      "name": "sb_slsy_garagetruck1_3.dds",
+      "size": [
+        512,
+        512
+      ]
+    },
+    "16ee1e5d107a": {
+      "map": "assets/textures/16ee1e5d107a.webp",
+      "alpha": false,
+      "name": "sb_slsy_garagetruck1_2.dds",
+      "size": [
+        512,
+        512
+      ]
+    },
+    "1ee0f422063e": {
+      "map": "assets/textures/1ee0f422063e.webp",
+      "alpha": false,
+      "name": "SB_SLSY_TRUCK.dds",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "f29a6592eeb6": {
+      "map": "assets/textures/f29a6592eeb6.webp",
+      "alpha": false,
+      "name": "SB_OTNP_wall_03.DDS",
+      "size": [
+        128,
+        256
+      ]
+    },
+    "7c81191ff8b8": {
+      "map": "assets/textures/7c81191ff8b8.webp",
+      "alpha": false,
+      "name": "SB_OTNP_wall_4.DDS",
+      "size": [
+        128,
+        256
+      ]
+    },
+    "5f9f7ec79e80": {
+      "map": "assets/textures/5f9f7ec79e80.webp",
+      "alpha": false,
+      "name": "SB_OTCD_FENCE_02E.dds",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "86a0755a9b98": {
+      "map": "assets/textures/86a0755a9b98.webp",
+      "alpha": false,
+      "name": "SB_OTCD_FENCE_01E.dds",
+      "size": [
+        16,
+        16
+      ]
+    },
+    "d6cbbe475444": {
+      "map": "assets/textures/d6cbbe475444.webp",
+      "alpha": false,
+      "name": "SB_OTNP_Fence_01.dds",
+      "size": [
+        128,
+        256
+      ]
+    },
+    "66a79f240e3a": {
+      "map": "assets/textures/66a79f240e3a.webp",
+      "alpha": true,
+      "name": "SB_OTCD_FENCE04.DDS",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "a710e519dea2": {
+      "map": "assets/textures/a710e519dea2.webp",
+      "alpha": false,
+      "name": "nano_4arms",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "4a4af9924bf2": {
+      "map": "assets/textures/4a4af9924bf2.webp",
+      "alpha": false,
+      "name": "nano_aku",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "dafb8bed8701": {
+      "map": "assets/textures/dafb8bed8701.webp",
+      "alpha": false,
+      "name": "nano_ben",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "bd413a4b4633": {
+      "map": "assets/textures/bd413a4b4633.webp",
+      "alpha": false,
+      "name": "nano_ben_face",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "d9870c2f4325": {
+      "map": "assets/textures/d9870c2f4325.webp",
+      "alpha": false,
+      "name": "nano_billy",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "13cd0af0ed85": {
+      "map": "assets/textures/13cd0af0ed85.webp",
+      "alpha": false,
+      "name": "nano_bloo",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "2a2902e566d4": {
+      "map": "assets/textures/2a2902e566d4.webp",
+      "alpha": false,
+      "name": "nano_blossom",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "c2b37d0740b5": {
+      "map": "assets/textures/c2b37d0740b5.webp",
+      "alpha": false,
+      "name": "nano_blossom_face",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "eb320fda57dc": {
+      "map": "assets/textures/eb320fda57dc.webp",
+      "alpha": false,
+      "name": "nano_bubbles",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "84476c34644c": {
+      "map": "assets/textures/84476c34644c.webp",
+      "alpha": false,
+      "name": "nano_bubbles_face",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "65db2e85258e": {
+      "map": "assets/textures/65db2e85258e.webp",
+      "alpha": false,
+      "name": "nano_cheese",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "7886587ef04a": {
+      "map": "assets/textures/7886587ef04a.webp",
+      "alpha": false,
+      "name": "nano_chowder",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "76abf2c5c4ca": {
+      "map": "assets/textures/76abf2c5c4ca.webp",
+      "alpha": false,
+      "name": "nano_coco",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "ad8895658258": {
+      "map": "assets/textures/ad8895658258.webp",
+      "alpha": false,
+      "name": "nano_courage",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "44dbb02849ed": {
+      "map": "assets/textures/44dbb02849ed.webp",
+      "alpha": false,
+      "name": "nano_demongo",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "06a167ed5590": {
+      "map": "assets/textures/06a167ed5590.webp",
+      "alpha": false,
+      "name": "nano_dexter",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "6025f153e51f": {
+      "map": "assets/textures/6025f153e51f.webp",
+      "alpha": false,
+      "name": "nano_dexter_face",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "59c7e18ebed5": {
+      "map": "assets/textures/59c7e18ebed5.webp",
+      "alpha": false,
+      "name": "nano_ed",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "0deac444234b": {
+      "map": "assets/textures/0deac444234b.webp",
+      "alpha": false,
+      "name": "nano_edd",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "7443c4bde9bf": {
+      "map": "assets/textures/7443c4bde9bf.webp",
+      "alpha": false,
+      "name": "nano_eduardo",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "3135775c1c50": {
+      "map": "assets/textures/3135775c1c50.webp",
+      "alpha": false,
+      "name": "nano_eduardo_face",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "b0ef5b2eaa0c": {
+      "map": "assets/textures/b0ef5b2eaa0c.webp",
+      "alpha": false,
+      "name": "nano_flapjack",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "88b52ff0d941": {
+      "map": "assets/textures/88b52ff0d941.webp",
+      "alpha": false,
+      "name": "nano_ghostfreak",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "fda5b40efdc9": {
+      "map": "assets/textures/fda5b40efdc9.webp",
+      "alpha": false,
+      "name": "nano_grim",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "51401155d3dc": {
+      "map": "assets/textures/51401155d3dc.webp",
+      "alpha": false,
+      "name": "nano_hex",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "d960d14053b7": {
+      "map": "assets/textures/d960d14053b7.webp",
+      "alpha": false,
+      "name": "nano_him",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "4e8e48f445b1": {
+      "map": "assets/textures/4e8e48f445b1.webp",
+      "alpha": false,
+      "name": "nano_humongousaur",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "d512f19847cc": {
+      "map": "assets/textures/d512f19847cc.webp",
+      "alpha": false,
+      "name": "nano_johnnybravo",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "3db6f8dff325": {
+      "map": "assets/textures/3db6f8dff325.webp",
+      "alpha": false,
+      "name": "nano_juniper_lee",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "867bc0ec1061": {
+      "map": "assets/textures/867bc0ec1061.webp",
+      "alpha": false,
+      "name": "nano_mac",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "5dfeea5ad2df": {
+      "map": "assets/textures/5dfeea5ad2df.webp",
+      "alpha": false,
+      "name": "nano_mandark",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "5e8b394eee6f": {
+      "map": "assets/textures/5e8b394eee6f.webp",
+      "alpha": false,
+      "name": "nano_mandy",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "17dd027d1b75": {
+      "map": "assets/textures/17dd027d1b75.webp",
+      "alpha": false,
+      "name": "nano_megas",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "62f353d9a3b9": {
+      "map": "assets/textures/62f353d9a3b9.webp",
+      "alpha": false,
+      "name": "nano_mojojo",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "f5f3ea3db6f9": {
+      "map": "assets/textures/f5f3ea3db6f9.webp",
+      "alpha": false,
+      "name": "nano_numbuhfive",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "b9417a59e304": {
+      "map": "assets/textures/b9417a59e304.webp",
+      "alpha": false,
+      "name": "nano_numbuhfour",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "337c041af7b0": {
+      "map": "assets/textures/337c041af7b0.webp",
+      "alpha": false,
+      "name": "nano_numbuhone",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "196bbf7250f7": {
+      "map": "assets/textures/196bbf7250f7.webp",
+      "alpha": false,
+      "name": "nano_numbuhthree",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "ec0065938182": {
+      "map": "assets/textures/ec0065938182.webp",
+      "alpha": false,
+      "name": "nano_numbuhtwo",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "0fd9c55e7ebb": {
+      "map": "assets/textures/0fd9c55e7ebb.webp",
+      "alpha": false,
+      "name": "nano_samuraijack",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "52fef3d15065": {
+      "map": "assets/textures/52fef3d15065.webp",
+      "alpha": false,
+      "name": "nano_swampfire",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1b88c1ef88b7": {
+      "map": "assets/textures/1b88c1ef88b7.webp",
+      "alpha": false,
+      "name": "nano_upgrade",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "bc0a29bf677c": {
+      "map": "assets/textures/bc0a29bf677c.webp",
+      "alpha": false,
+      "name": "nano_utonium",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "43d6ce0fd084": {
+      "map": "assets/textures/43d6ce0fd084.webp",
+      "alpha": false,
+      "name": "nano_utonium_face",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "2502d3d9af0b": {
+      "map": "assets/textures/2502d3d9af0b.webp",
+      "alpha": false,
+      "name": "nano_vilgax",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "dc9c0df323d7": {
+      "map": "assets/textures/dc9c0df323d7.webp",
+      "alpha": false,
+      "name": "nano_wilt",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "faee591db140": {
+      "map": "assets/textures/faee591db140.webp",
+      "alpha": false,
+      "name": "nano_zaksaturday",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "abe3f5456b74": {
+      "map": "assets/textures/abe3f5456b74.webp",
+      "alpha": false,
+      "name": "mob_swampycannibalfrog",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "113c1cf3bb95": {
+      "map": "assets/textures/113c1cf3bb95.webp",
+      "alpha": false,
+      "name": "mob_greenhellmosquito",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "c58da7e1eef7": {
+      "map": "assets/textures/c58da7e1eef7.webp",
+      "alpha": false,
+      "name": "mob_crazyguardianent",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "d4517bcee3aa": {
+      "map": "assets/textures/d4517bcee3aa.webp",
+      "alpha": false,
+      "name": "mob_beastman",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "114041d9f981": {
+      "map": "assets/textures/114041d9f981.webp",
+      "alpha": false,
+      "name": "mob_tirefinger",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "a8e7f0731aa6": {
+      "map": "assets/textures/a8e7f0731aa6.webp",
+      "alpha": false,
+      "name": "mob_cable",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "395c2d9d2a69": {
+      "map": "assets/textures/395c2d9d2a69.webp",
+      "alpha": false,
+      "name": "mob_cleaner",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "5ec5ce57be78": {
+      "map": "assets/textures/5ec5ce57be78.webp",
+      "alpha": false,
+      "name": "mob_sawbike",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "b8b40ddd9cba": {
+      "map": "assets/textures/b8b40ddd9cba.webp",
+      "alpha": false,
+      "name": "wd_bwck_wall_05_A1.dds",
+      "size": [
+        512,
+        512
+      ]
+    },
+    "0f4dd3759e24": {
+      "map": "assets/textures/0f4dd3759e24.webp",
+      "alpha": false,
+      "name": "wd_bwck_wall_10_A2.dds",
+      "size": [
+        512,
+        256
+      ]
+    },
+    "46605bf96cc8": {
+      "map": "assets/textures/46605bf96cc8.webp",
+      "alpha": false,
+      "name": "wd_bwck_wall_05_A3.DDS",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "fec5ae1d9f0d": {
+      "map": "assets/textures/fec5ae1d9f0d.webp",
+      "alpha": false,
+      "name": "wd_bwck_wall_06_A1.DDS",
+      "size": [
+        128,
+        256
+      ]
+    },
+    "7ac361099665": {
+      "map": "assets/textures/7ac361099665.webp",
+      "alpha": false,
+      "name": "wd_bwck_wall_10_A1.dds",
+      "size": [
+        32,
+        128
+      ]
+    },
+    "cc6265325dc5": {
+      "map": "assets/textures/cc6265325dc5.webp",
+      "alpha": false,
+      "name": "wd_bwck_wall_09_A1.DDS",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "a124403cde4a": {
+      "map": "assets/textures/a124403cde4a.webp",
+      "alpha": false,
+      "name": "wd_bwck_wall_07_A1.dds",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "4e87dd02c3ef": {
+      "map": "assets/textures/4e87dd02c3ef.webp",
+      "alpha": false,
+      "name": "wd_bwck_wall_08_A1.dds",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "0a0a6db873a6": {
+      "map": "assets/textures/0a0a6db873a6.webp",
+      "alpha": false,
+      "name": "WD_BWLL_BRIDGE_01.DDS",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "44b5b99466bb": {
+      "map": "assets/textures/44b5b99466bb.webp",
+      "alpha": false,
+      "name": "WD_BWLL_Ctree_02.dds",
+      "size": [
+        128,
+        256
+      ]
+    },
+    "802fbdef6f56": {
+      "map": "assets/textures/802fbdef6f56.webp",
+      "alpha": true,
+      "name": "WD_BWLL_Ctree_05.dds",
+      "size": [
+        256,
+        128
+      ]
+    },
+    "2b2b76680014": {
+      "map": "assets/textures/2b2b76680014.webp",
+      "alpha": false,
+      "name": "WD_JUTF_tree03.dds",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "10830d92a810": {
+      "map": "assets/textures/10830d92a810.webp",
+      "alpha": false,
+      "name": "WD_JUTF_tree05.dds",
+      "size": [
+        32,
+        32
+      ]
+    },
+    "5e68f636d9d3": {
+      "map": "assets/textures/5e68f636d9d3.webp",
+      "alpha": true,
+      "name": "WD_JUTF_leaf01.dds",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "bb61650851a9": {
+      "map": "assets/textures/bb61650851a9.webp",
+      "alpha": true,
+      "name": "WD_JUTF_vine02.dds",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "d0687662d025": {
+      "map": "assets/textures/d0687662d025.webp",
+      "alpha": true,
+      "name": "WD_JUTF_plant 01.DDS",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "ee86c3489587": {
+      "map": "assets/textures/ee86c3489587.webp",
+      "alpha": false,
+      "name": "WD_DLDT_watchtower.dds",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "5ae51cd5db3f": {
+      "map": "assets/textures/5ae51cd5db3f.webp",
+      "alpha": true,
+      "name": "WD_DLDT_watchtower_03.dds",
+      "size": [
+        128,
+        256
+      ]
+    },
+    "a5fc5fe968f2": {
+      "map": "assets/textures/a5fc5fe968f2.webp",
+      "alpha": false,
+      "name": "SB_SLSY_FORKLIFT01.DDS",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "bb99683a0760": {
+      "map": "assets/textures/bb99683a0760.webp",
+      "alpha": false,
+      "name": "SB_SLSY_FORKLIFT2.DDS",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "7329b079b5fe": {
+      "map": "assets/textures/7329b079b5fe.webp",
+      "alpha": false,
+      "name": "SB_SLSY_Press_n01.dds",
+      "size": [
+        512,
+        512
+      ]
+    },
+    "0bf59695bbf5": {
+      "map": "assets/textures/0bf59695bbf5.webp",
+      "alpha": false,
+      "name": "SB_SLSY_RAILCRANE1_1.dds",
+      "size": [
+        512,
+        512
+      ]
+    },
+    "f087d14f50c2": {
+      "map": "assets/textures/f087d14f50c2.webp",
+      "alpha": false,
+      "name": "SB_SLSY_RAILCRANE1_2.dds",
+      "size": [
+        512,
+        512
+      ]
+    },
+    "2ad4c96c4d03": {
+      "map": "assets/textures/2ad4c96c4d03.webp",
+      "alpha": false,
+      "name": "SB_SLSY_RAILCRANE1_3.DDS",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "6c93a690a130": {
+      "map": "assets/textures/6c93a690a130.webp",
+      "alpha": true,
+      "name": "sb_slsy_car_a.dds",
+      "size": [
+        512,
+        512
+      ]
+    },
+    "2163a9778054": {
+      "map": "assets/textures/2163a9778054.webp",
+      "alpha": false,
+      "name": "sb_slsy_car01.dds",
+      "size": [
+        256,
+        128
+      ]
+    },
+    "1c3aeb419be6": {
+      "map": "assets/textures/1c3aeb419be6.webp",
+      "alpha": false,
+      "name": "sb_slsy_car02.dds",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "b2f2f4ed221b": {
+      "map": "assets/textures/b2f2f4ed221b.webp",
+      "alpha": false,
+      "name": "SB_SLSY_METALTREE.dds",
+      "size": [
+        256,
+        128
+      ]
+    },
+    "13c28674556a": {
+      "map": "assets/textures/13c28674556a.webp",
+      "alpha": false,
+      "name": "sb_slsy_etc_tier.dds",
+      "size": [
+        128,
+        256
+      ]
+    },
+    "8cda822668b8": {
+      "map": "assets/textures/8cda822668b8.webp",
+      "alpha": false,
+      "name": "sb_slsy_etc_drum_a.dds",
+      "size": [
+        256,
+        128
+      ]
+    },
+    "1640f5cbfbf7": {
+      "map": "assets/textures/1640f5cbfbf7.webp",
+      "alpha": true,
+      "name": "sb_slsy_bridge01_n.dds",
+      "size": [
+        512,
+        256
+      ]
+    },
+    "06cc30a70cb3": {
+      "map": "assets/textures/06cc30a70cb3.webp",
+      "alpha": false,
+      "name": "SB_SLSY_BRIDGE.dds",
+      "size": [
+        256,
+        128
+      ]
+    },
+    "479010711d2f": {
+      "map": "assets/textures/479010711d2f.webp",
+      "alpha": false,
+      "name": "sb_slsy_etc_cabinet.dds",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "3d357dceb573": {
+      "map": "assets/textures/3d357dceb573.webp",
+      "alpha": false,
+      "name": "sb_slsy_etc_tv_01.dds",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "37817603f3eb": {
+      "map": "assets/textures/37817603f3eb.webp",
+      "alpha": false,
+      "name": "WD_DLFL_burnin_trees_01.dds",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "c9ac4ba38c1b": {
+      "map": "assets/textures/c9ac4ba38c1b.webp",
+      "alpha": false,
+      "name": "WD_WLDC_tile_02.dds",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "283cfdbff2cd": {
+      "map": "assets/textures/283cfdbff2cd.webp",
+      "alpha": false,
+      "name": "WD_grass_tile_01",
+      "size": [
+        256,
+        256
+      ],
+      "source": "map/tile_01/wd_grass_tile_01.dds"
+    },
+    "b79d10e8b74c": {
+      "map": "assets/textures/b79d10e8b74c.webp",
+      "alpha": false,
+      "name": "WD_grass_tile_04",
+      "size": [
+        256,
+        256
+      ],
+      "source": "map/tile_01/wd_grass_tile_04.dds"
+    },
+    "b00cdb2a3116": {
+      "map": "assets/textures/b00cdb2a3116.webp",
+      "alpha": false,
+      "name": "WD_stoneTile_02",
+      "size": [
+        256,
+        256
+      ],
+      "source": "map/tile_01/wd_stonetile_02.dds"
+    },
+    "46c97fc7bcfc": {
+      "map": "assets/textures/46c97fc7bcfc.webp",
+      "alpha": false,
+      "name": "Tile_rock_01",
+      "size": [
+        256,
+        256
+      ],
+      "source": "map/tile_01/tile_rock_01.dds"
+    },
+    "a16245dcef5d": {
+      "map": "assets/textures/a16245dcef5d.webp",
+      "alpha": false,
+      "name": "mob_redwolfheadspider",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "294a38ffea7a": {
+      "map": "assets/textures/294a38ffea7a.webp",
+      "alpha": false,
+      "name": "mob_junkcar",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "d5765df1ced0": {
+      "map": "assets/textures/d5765df1ced0.webp",
+      "alpha": false,
+      "name": "mob_crasher",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "43a0b3ad4d7f": {
+      "map": "assets/textures/43a0b3ad4d7f.webp",
+      "alpha": false,
+      "name": "mob_junkdinosaur",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "5f3ecbd5e729": {
+      "map": "assets/textures/5f3ecbd5e729.webp",
+      "alpha": false,
+      "name": "npc_dexter",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "3a4d94a5e705": {
+      "map": "assets/textures/3a4d94a5e705.webp",
+      "alpha": false,
+      "name": "npc_samuraijack",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "14c58fa8c0d0": {
+      "map": "assets/textures/14c58fa8c0d0.webp",
+      "alpha": false,
+      "name": "npc_buttercup",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "5e77897acf78": {
+      "map": "assets/textures/5e77897acf78.webp",
+      "alpha": false,
+      "name": "npc_blossom",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "28f4a310b03e": {
+      "map": "assets/textures/28f4a310b03e.webp",
+      "alpha": false,
+      "name": "npc_eddy",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "ec27af8db28e": {
+      "map": "assets/textures/ec27af8db28e.webp",
+      "alpha": false,
+      "name": "npc_numbuhfive",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "bcf69816f0e2": {
+      "map": "assets/textures/bcf69816f0e2.webp",
+      "alpha": false,
+      "name": "npc_numbuhtwo",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "050e9899a547": {
+      "map": "assets/textures/050e9899a547.webp",
+      "alpha": false,
+      "name": "npc_grim",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "03880b7da535": {
+      "map": "assets/textures/03880b7da535.webp",
+      "alpha": false,
+      "name": "npc_mac",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1037330621a8": {
+      "map": "assets/textures/1037330621a8.webp",
+      "alpha": false,
+      "name": "npc_mandark",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "b72e984da0f2": {
+      "map": "assets/textures/b72e984da0f2.webp",
+      "alpha": false,
+      "name": "hat_chowderhat",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "8cf37a631a0a": {
+      "map": "assets/textures/8cf37a631a0a.webp",
+      "alpha": false,
+      "name": "helmet_skull",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "4a11ef0bf451": {
+      "map": "assets/textures/4a11ef0bf451.webp",
+      "alpha": false,
+      "name": "hat_wizard",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "3cfc581639d4": {
+      "map": "assets/textures/3cfc581639d4.webp",
+      "alpha": false,
+      "name": "hat_constructionhelmet",
+      "size": [
+        256,
+        128
+      ]
+    },
+    "3016a503c49a": {
+      "map": "assets/textures/3016a503c49a.webp",
+      "alpha": false,
+      "name": "hat_artisticberet",
+      "size": [
+        256,
+        128
+      ]
+    },
+    "2e433dbe4cd8": {
+      "map": "assets/textures/2e433dbe4cd8.webp",
+      "alpha": false,
+      "name": "glass_orlandoblooface",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "8795824761f8": {
+      "map": "assets/textures/8795824761f8.webp",
+      "alpha": false,
+      "name": "back_angelswing_a",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "81836b962fca": {
+      "map": "assets/textures/81836b962fca.webp",
+      "alpha": false,
+      "name": "back_octibackpack",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "23c3a193e6eb": {
+      "map": "assets/textures/23c3a193e6eb.webp",
+      "alpha": false,
+      "name": "back_rocket",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "7754486312dc": {
+      "map": "assets/textures/7754486312dc.webp",
+      "alpha": false,
+      "name": "back_pencilscabbard",
+      "size": [
+        128,
+        256
+      ]
+    },
+    "33b1d45282ce": {
+      "map": "assets/textures/33b1d45282ce.webp",
+      "alpha": false,
+      "name": "back_bigchillwings",
+      "size": [
+        256,
+        128
+      ]
+    },
+    "bf8fbc61e7d0": {
+      "map": "assets/textures/bf8fbc61e7d0.webp",
+      "alpha": false,
+      "name": "rifle_snipercn01",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "d112743c73fc": {
+      "map": "assets/textures/d112743c73fc.webp",
+      "alpha": false,
+      "name": "rifle_griparmorshotgun",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "092ee09d54ba": {
+      "map": "assets/textures/092ee09d54ba.webp",
+      "alpha": false,
+      "name": "pistol_heatblastor",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "599759bf8e07": {
+      "map": "assets/textures/599759bf8e07.webp",
+      "alpha": false,
+      "name": "rifle_verticalshotgun",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "29f871b77a77": {
+      "map": "assets/textures/29f871b77a77.webp",
+      "alpha": false,
+      "name": "thbazooka_marshmallowlauncher",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "4eb3d03d0a5a": {
+      "map": "assets/textures/4eb3d03d0a5a.webp",
+      "alpha": false,
+      "name": "pistol_bracerblaster",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "acac81d252af": {
+      "map": "assets/textures/acac81d252af.webp",
+      "alpha": false,
+      "name": "npc_bubbles",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "f73aae9d6cfa": {
+      "map": "assets/textures/f73aae9d6cfa.webp",
+      "alpha": false,
+      "name": "npc_deedee",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "eb42a791c1bd": {
+      "map": "assets/textures/eb42a791c1bd.webp",
+      "alpha": false,
+      "name": "npc_ed",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "86eacfa14e55": {
+      "map": "assets/textures/86eacfa14e55.webp",
+      "alpha": false,
+      "name": "npc_edd",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "9bb9506a4af7": {
+      "map": "assets/textures/9bb9506a4af7.webp",
+      "alpha": false,
+      "name": "npc_billy",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "eb9c1221c75a": {
+      "map": "assets/textures/eb9c1221c75a.webp",
+      "alpha": false,
+      "name": "npc_mandy",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "e2fe3b5b41ea": {
+      "map": "assets/textures/e2fe3b5b41ea.webp",
+      "alpha": false,
+      "name": "npc_numbuhone",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "448235b5094a": {
+      "map": "assets/textures/448235b5094a.webp",
+      "alpha": false,
+      "name": "npc_numbuhthree",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "351102109228": {
+      "map": "assets/textures/351102109228.webp",
+      "alpha": false,
+      "name": "npc_numbuhfour",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "68501ce0078d": {
+      "map": "assets/textures/68501ce0078d.webp",
+      "alpha": false,
+      "name": "npc_eduardo",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "6dcfe5fd576e": {
+      "map": "assets/textures/6dcfe5fd576e.webp",
+      "alpha": false,
+      "name": "npc_wilt",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "3d3c1d189151": {
+      "map": "assets/textures/3d3c1d189151.webp",
+      "alpha": false,
+      "name": "npc_Blooexpressions",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "0283c644b01e": {
+      "map": "assets/textures/0283c644b01e.webp",
+      "alpha": false,
+      "name": "npc_gwen",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "b43f3196d950": {
+      "map": "assets/textures/b43f3196d950.webp",
+      "alpha": false,
+      "name": "npc_mojojojo",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "2bfc6e3c6e46": {
+      "map": "assets/textures/2bfc6e3c6e46.webp",
+      "alpha": false,
+      "name": "hat_beanscouthat",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "c1b183fbc057": {
+      "map": "assets/textures/c1b183fbc057.webp",
+      "alpha": false,
+      "name": "helmet_b10xlr8speedhelmet",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "6bbac8c7cd51": {
+      "map": "assets/textures/6bbac8c7cd51.webp",
+      "alpha": false,
+      "name": "NPC_Numbuh Two",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "19584e0ff568": {
+      "map": "assets/textures/19584e0ff568.webp",
+      "alpha": false,
+      "name": "back_angelswing",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "6f01f12b91a8": {
+      "map": "assets/textures/6f01f12b91a8.webp",
+      "alpha": false,
+      "name": "back_scabbards",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "67aff78f8e05": {
+      "map": "assets/textures/67aff78f8e05.webp",
+      "alpha": false,
+      "name": "back_dexstar",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "14c2ed3e9376": {
+      "map": "assets/textures/14c2ed3e9376.webp",
+      "alpha": false,
+      "name": "back_bloo",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "15a636a35bd9": {
+      "map": "assets/textures/15a636a35bd9.webp",
+      "alpha": false,
+      "name": "sword_sjkatana",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "72f5634e29fd": {
+      "map": "assets/textures/72f5634e29fd.webp",
+      "alpha": false,
+      "name": "sword_drumstick",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "e057979637fb": {
+      "map": "assets/textures/e057979637fb.webp",
+      "alpha": false,
+      "name": "sword_baseballbat",
+      "size": [
+        256,
+        256
+      ]
+    }
+  },
+  "surfaces": {
+    "road": {
+      "map": "assets/textures/44a3c77e9f4a.webp",
+      "alpha": false,
+      "name": "Tile_Road_Basic_02",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "concrete": {
+      "map": "assets/textures/5407488bb541.webp",
+      "alpha": false,
+      "name": "Tile_Road_dt_2D",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "grass": {
+      "map": "assets/textures/55ecaba99e96.webp",
+      "alpha": false,
+      "name": "Tile_grass_01",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "ground": {
+      "map": "assets/textures/66450e6c1255.webp",
+      "alpha": false,
+      "name": "Tile_Grass_Stone_01",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "wild-grass": {
+      "map": "assets/textures/283cfdbff2cd.webp",
+      "alpha": false,
+      "name": "WD_grass_tile_01",
+      "size": [
+        256,
+        256
+      ],
+      "source": "map/tile_01/wd_grass_tile_01.dds"
+    },
+    "wild-ground": {
+      "map": "assets/textures/b79d10e8b74c.webp",
+      "alpha": false,
+      "name": "WD_grass_tile_04",
+      "size": [
+        256,
+        256
+      ],
+      "source": "map/tile_01/wd_grass_tile_04.dds"
+    },
+    "wild-stone": {
+      "map": "assets/textures/b00cdb2a3116.webp",
+      "alpha": false,
+      "name": "WD_stoneTile_02",
+      "size": [
+        256,
+        256
+      ],
+      "source": "map/tile_01/wd_stonetile_02.dds"
+    },
+    "waste-rock": {
+      "map": "assets/textures/46c97fc7bcfc.webp",
+      "alpha": false,
+      "name": "Tile_rock_01",
+      "size": [
+        256,
+        256
+      ],
+      "source": "map/tile_01/tile_rock_01.dds"
+    }
+  },
+  "audio": {
+    "pistol": {
+      "url": "assets/audio/pistol.ogg",
+      "source": "sound/laserltuser-01.wav",
+      "bytes": 6958
+    },
+    "rifle": {
+      "url": "assets/audio/rifle.ogg",
+      "source": "sound/laserhvyuser-02.wav",
+      "bytes": 6686
+    },
+    "shotgun": {
+      "url": "assets/audio/shotgun.ogg",
+      "source": "sound/shellhvyuser-01.wav",
+      "bytes": 6754
+    },
+    "cannon": {
+      "url": "assets/audio/cannon.ogg",
+      "source": "sound/slimehvyuser-01.wav",
+      "bytes": 7389
+    },
+    "nano": {
+      "url": "assets/audio/nano.ogg",
+      "source": "sound/nano ability 03.wav",
+      "bytes": 15420
+    },
+    "pickup": {
+      "url": "assets/audio/pickup.ogg",
+      "source": "sound/pickup_pickup1.wav",
+      "bytes": 17092
+    },
+    "kill": {
+      "url": "assets/audio/kill.ogg",
+      "source": "sound/rewardfusion_root_generic.wav",
+      "bytes": 10801
+    },
+    "equip": {
+      "url": "assets/audio/equip.ogg",
+      "source": "ui sound/weapon_equipped.wav",
+      "bytes": 5359
+    },
+    "nano-equip": {
+      "url": "assets/audio/nano-equip.ogg",
+      "source": "ui sound/nano_equipped.wav",
+      "bytes": 6426
+    },
+    "impact": {
+      "url": "assets/audio/impact.ogg",
+      "source": "sound/02 rifle impact.wav",
+      "bytes": 7480
+    },
+    "nano-buttercup": {
+      "url": "assets/audio/nano-buttercup.ogg",
+      "source": "sound/stun_root_generic.wav",
+      "bytes": 11755
+    },
+    "nano-eddy": {
+      "url": "assets/audio/nano-eddy.ogg",
+      "source": "sound/heal_root_generic.wav",
+      "bytes": 13336
+    },
+    "nano-deedee": {
+      "url": "assets/audio/nano-deedee.ogg",
+      "source": "sound/damage_deedee_ponypuffpirouette.wav",
+      "bytes": 10151
+    },
+    "voice-buttercup": {
+      "url": "assets/audio/voice-buttercup.ogg",
+      "source": "sound/btrcup_nanpwrmf01_01.wav",
+      "bytes": 9814
+    },
+    "voice-eddy": {
+      "url": "assets/audio/voice-eddy.ogg",
+      "source": "sound/eddy_nanpwrjb01.wav",
+      "bytes": 9504
+    },
+    "voice-deedee": {
+      "url": "assets/audio/voice-deedee.ogg",
+      "source": "sound/deedee_nanpwrpony01.wav",
+      "bytes": 10439
+    }
+  },
+  "animations": {
+    "enemy-asphalt": {
+      "url": "assets/animations/enemy-asphalt.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "enemy-gasspawn": {
+      "url": "assets/animations/enemy-gasspawn.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "enemy-robo": {
+      "url": "assets/animations/enemy-robo.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "enemy-spawn": {
+      "url": "assets/animations/enemy-spawn.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "nano-aku": {
+      "url": "assets/animations/nano-aku.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "nano-ben": {
+      "url": "assets/animations/nano-ben.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "nano-billy": {
+      "url": "assets/animations/nano-billy.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "nano-bloo": {
+      "url": "assets/animations/nano-bloo.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "nano-blossom": {
+      "url": "assets/animations/nano-blossom.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "nano-bubbles": {
+      "url": "assets/animations/nano-bubbles.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "nano-buttercup": {
+      "url": "assets/animations/nano-buttercup.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "nano-cheese": {
+      "url": "assets/animations/nano-cheese.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "nano-chowder": {
+      "url": "assets/animations/nano-chowder.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "nano-coco": {
+      "url": "assets/animations/nano-coco.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "nano-courage": {
+      "url": "assets/animations/nano-courage.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "nano-deedee": {
+      "url": "assets/animations/nano-deedee.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "nano-demongo": {
+      "url": "assets/animations/nano-demongo.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "nano-dexter": {
+      "url": "assets/animations/nano-dexter.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "nano-ed": {
+      "url": "assets/animations/nano-ed.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "nano-edd": {
+      "url": "assets/animations/nano-edd.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "nano-eddy": {
+      "url": "assets/animations/nano-eddy.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "nano-eduardo": {
+      "url": "assets/animations/nano-eduardo.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "nano-flapjack": {
+      "url": "assets/animations/nano-flapjack.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "nano-fourarms": {
+      "url": "assets/animations/nano-fourarms.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "nano-ghostfreak": {
+      "url": "assets/animations/nano-ghostfreak.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "nano-grim": {
+      "url": "assets/animations/nano-grim.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "nano-hex": {
+      "url": "assets/animations/nano-hex.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "nano-him": {
+      "url": "assets/animations/nano-him.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "nano-humongousaur": {
+      "url": "assets/animations/nano-humongousaur.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "nano-johnnybravo": {
+      "url": "assets/animations/nano-johnnybravo.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "nano-juniperlee": {
+      "url": "assets/animations/nano-juniperlee.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "nano-mac": {
+      "url": "assets/animations/nano-mac.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "nano-mandark": {
+      "url": "assets/animations/nano-mandark.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "nano-mandy": {
+      "url": "assets/animations/nano-mandy.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "nano-megas": {
+      "url": "assets/animations/nano-megas.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "nano-mojojo": {
+      "url": "assets/animations/nano-mojojo.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "nano-numbuhfive": {
+      "url": "assets/animations/nano-numbuhfive.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "nano-numbuhfour": {
+      "url": "assets/animations/nano-numbuhfour.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "nano-numbuhone": {
+      "url": "assets/animations/nano-numbuhone.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "nano-numbuhthree": {
+      "url": "assets/animations/nano-numbuhthree.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "nano-numbuhtwo": {
+      "url": "assets/animations/nano-numbuhtwo.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "nano-samuraijack": {
+      "url": "assets/animations/nano-samuraijack.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "nano-swampfire": {
+      "url": "assets/animations/nano-swampfire.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "nano-upgrade": {
+      "url": "assets/animations/nano-upgrade.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "nano-utonium": {
+      "url": "assets/animations/nano-utonium.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "nano-vilgax": {
+      "url": "assets/animations/nano-vilgax.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "nano-wilt": {
+      "url": "assets/animations/nano-wilt.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "nano-zaksaturday": {
+      "url": "assets/animations/nano-zaksaturday.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "enemy-spidertoad": {
+      "url": "assets/animations/enemy-spidertoad.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves",
+      "bones": 110,
+      "clips": [
+        "melee1",
+        "stand1",
+        "walk",
+        "run",
+        "ready",
+        "wound",
+        "death",
+        "stand2",
+        "skill0",
+        "melee1upper",
+        "skill1"
+      ],
+      "bytes": 575110
+    },
+    "enemy-skeeter": {
+      "url": "assets/animations/enemy-skeeter.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves",
+      "bones": 89,
+      "clips": [
+        "walk",
+        "stand1",
+        "stand2",
+        "run",
+        "ready",
+        "wound",
+        "melee1",
+        "death",
+        "skill0",
+        "skill1"
+      ],
+      "bytes": 409753
+    },
+    "enemy-growth": {
+      "url": "assets/animations/enemy-growth.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves",
+      "bones": 94,
+      "clips": [
+        "death",
+        "skill0",
+        "melee1",
+        "run",
+        "stand1",
+        "stand2",
+        "walk",
+        "wound",
+        "melee1upper"
+      ],
+      "bytes": 313214
+    },
+    "enemy-stalker": {
+      "url": "assets/animations/enemy-stalker.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves",
+      "bones": 105,
+      "clips": [
+        "stand1",
+        "stand2",
+        "ready",
+        "walk",
+        "run",
+        "melee1",
+        "wound",
+        "death",
+        "melee1upper",
+        "skill0"
+      ],
+      "bytes": 537994
+    },
+    "enemy-dreadhead": {
+      "url": "assets/animations/enemy-dreadhead.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves",
+      "bones": 77,
+      "clips": [
+        "death",
+        "ready",
+        "run",
+        "stand1",
+        "stand2",
+        "walk",
+        "wound",
+        "melee1",
+        "skill0",
+        "melee1upper"
+      ],
+      "bytes": 348223
+    },
+    "enemy-shocktangler": {
+      "url": "assets/animations/enemy-shocktangler.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves",
+      "bones": 55,
+      "clips": [
+        "stand1",
+        "stand2",
+        "ready",
+        "walk",
+        "run",
+        "death",
+        "wound",
+        "melee1",
+        "skill0",
+        "melee1upper"
+      ],
+      "bytes": 335787
+    },
+    "enemy-streetgrinder": {
+      "url": "assets/animations/enemy-streetgrinder.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves",
+      "bones": 45,
+      "clips": [
+        "death",
+        "melee1",
+        "ready",
+        "run",
+        "stand1",
+        "stand2",
+        "walk",
+        "wound",
+        "skill1",
+        "skill0"
+      ],
+      "bytes": 147305
+    },
+    "enemy-unisickle": {
+      "url": "assets/animations/enemy-unisickle.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves",
+      "bones": 66,
+      "clips": [
+        "stand1",
+        "ready",
+        "run",
+        "stand2",
+        "walk",
+        "wound",
+        "melee1",
+        "death",
+        "skill1",
+        "skill0",
+        "melee1upper"
+      ],
+      "bytes": 213554
+    },
+    "enemy-packarachnid": {
+      "url": "assets/animations/enemy-packarachnid.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves",
+      "bones": 86,
+      "clips": [
+        "stand1",
+        "stand2",
+        "walk",
+        "wound",
+        "death",
+        "melee1",
+        "ready",
+        "run",
+        "skill0",
+        "melee1upper",
+        "skill1"
+      ],
+      "bytes": 386254
+    },
+    "enemy-scraptyrant": {
+      "url": "assets/animations/enemy-scraptyrant.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves",
+      "bones": 80,
+      "clips": [
+        "ready",
+        "run",
+        "stand1",
+        "walk",
+        "skill0",
+        "melee1",
+        "stand2",
+        "wound",
+        "death",
+        "melee1upper"
+      ],
+      "bytes": 192391
+    },
+    "enemy-crashloader": {
+      "url": "assets/animations/enemy-crashloader.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves",
+      "bones": 57,
+      "clips": [
+        "stand2",
+        "stand1",
+        "walk",
+        "run",
+        "ready",
+        "melee1",
+        "wound",
+        "death",
+        "melee1upper",
+        "skill0",
+        "skill1"
+      ],
+      "bytes": 337298
+    },
+    "enemy-junkasaurus": {
+      "url": "assets/animations/enemy-junkasaurus.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves",
+      "bones": 64,
+      "clips": [
+        "stand2",
+        "stand1",
+        "walk",
+        "run",
+        "ready",
+        "melee1",
+        "wound",
+        "death",
+        "skill0",
+        "melee1upper",
+        "skill1"
+      ],
+      "bytes": 342543
+    },
+    "hero-dexter": {
+      "url": "assets/animations/hero-dexter.json",
+      "source": "Original full-size NPC skeleton and AnimationClip curves",
+      "clips": [
+        "nif-default",
+        "stand2",
+        "stand3",
+        "walk",
+        "run",
+        "stand1",
+        "inven",
+        "melee1",
+        "melee2",
+        "melee1upper",
+        "ready",
+        "melee2upper",
+        "point",
+        "talk",
+        "talkexclamation",
+        "update",
+        "busyrun",
+        "event1",
+        "event2",
+        "observe",
+        "stun",
+        "nano"
+      ],
+      "bones": 68
+    },
+    "hero-samuraijack": {
+      "url": "assets/animations/hero-samuraijack.json",
+      "source": "Original full-size NPC skeleton and AnimationClip curves",
+      "clips": [
+        "nif-default",
+        "run",
+        "stand1",
+        "stand2",
+        "stand3",
+        "walk",
+        "death",
+        "dodge",
+        "melee1event",
+        "dodgeupper",
+        "melee1",
+        "worry",
+        "melee1upper",
+        "melee2",
+        "ready",
+        "wound",
+        "turn",
+        "woundupper"
+      ],
+      "bones": 80
+    },
+    "hero-buttercup": {
+      "url": "assets/animations/hero-buttercup.json",
+      "source": "Original full-size NPC skeleton and AnimationClip curves",
+      "clips": [
+        "nif-default",
+        "stand1",
+        "stand2",
+        "stand3",
+        "walk",
+        "run",
+        "melee1",
+        "melee2",
+        "melee1upper",
+        "melee2upper",
+        "death"
+      ],
+      "bones": 69
+    },
+    "hero-blossom": {
+      "url": "assets/animations/hero-blossom.json",
+      "source": "Original full-size NPC skeleton and AnimationClip curves",
+      "clips": [
+        "death",
+        "run",
+        "stand1",
+        "stand2",
+        "walk",
+        "stand3",
+        "melee1",
+        "melee1upper",
+        "melee2",
+        "ready"
+      ],
+      "bones": 107
+    },
+    "hero-eddy": {
+      "url": "assets/animations/hero-eddy.json",
+      "source": "Original full-size NPC skeleton and AnimationClip curves",
+      "clips": [
+        "stand1",
+        "stand2",
+        "stand3",
+        "walk",
+        "run",
+        "ready",
+        "melee1",
+        "melee2",
+        "stand4",
+        "melee1upper",
+        "melee2upper",
+        "corruptak_readyspell",
+        "corruptak",
+        "wound",
+        "woundupper",
+        "dodge",
+        "dodgeupper",
+        "death"
+      ],
+      "bones": 66
+    },
+    "hero-numbuhfive": {
+      "url": "assets/animations/hero-numbuhfive.json",
+      "source": "Original full-size NPC skeleton and AnimationClip curves",
+      "clips": [
+        "stand2",
+        "stand3",
+        "walk",
+        "run",
+        "stand1"
+      ],
+      "bones": 74
+    },
+    "hero-numbuhtwo": {
+      "url": "assets/animations/hero-numbuhtwo.json",
+      "source": "Original full-size NPC skeleton and AnimationClip curves",
+      "clips": [
+        "nif-default",
+        "run",
+        "stand1",
+        "stand2",
+        "stand3",
+        "walk",
+        "admiration",
+        "call",
+        "think",
+        "worry",
+        "talk"
+      ],
+      "bones": 61
+    },
+    "hero-grim": {
+      "url": "assets/animations/hero-grim.json",
+      "source": "Original full-size NPC skeleton and AnimationClip curves",
+      "clips": [
+        "corruptak",
+        "corruptak_readyspell",
+        "death",
+        "skill0",
+        "megatak_readyspell",
+        "melee1",
+        "melee2",
+        "ready",
+        "run",
+        "stand1",
+        "stand2",
+        "stand3",
+        "walk"
+      ],
+      "bones": 100
+    },
+    "hero-mac": {
+      "url": "assets/animations/hero-mac.json",
+      "source": "Original full-size NPC skeleton and AnimationClip curves",
+      "clips": [
+        "nif-default",
+        "stand1",
+        "stand2",
+        "stand3",
+        "walk",
+        "run"
+      ],
+      "bones": 47
+    },
+    "hero-mandark": {
+      "url": "assets/animations/hero-mandark.json",
+      "source": "Original full-size NPC skeleton and AnimationClip curves",
+      "clips": [
+        "nif-default",
+        "ready",
+        "run",
+        "stand1",
+        "stand2",
+        "stand3",
+        "walk",
+        "dodge",
+        "wound",
+        "melee1",
+        "death",
+        "melee2"
+      ],
+      "bones": 103
+    },
+    "hero-bubbles": {
+      "url": "assets/animations/hero-bubbles.json",
+      "source": "Original full-size NPC skeleton and AnimationClip curves",
+      "clips": [
+        "run",
+        "stand1",
+        "stand2",
+        "stand3",
+        "walk"
+      ],
+      "bones": 92
+    },
+    "hero-deedee": {
+      "url": "assets/animations/hero-deedee.json",
+      "source": "Original full-size NPC skeleton and AnimationClip curves",
+      "clips": [
+        "run",
+        "walk",
+        "stand2",
+        "stand3",
+        "stand1",
+        "event1"
+      ],
+      "bones": 75
+    },
+    "hero-ed": {
+      "url": "assets/animations/hero-ed.json",
+      "source": "Original full-size NPC skeleton and AnimationClip curves",
+      "clips": [
+        "nif-default",
+        "dodge",
+        "run",
+        "stand1",
+        "stand2",
+        "stand3",
+        "walk",
+        "dodgeupper",
+        "melee1",
+        "melee1upper",
+        "melee2",
+        "melee2upper",
+        "ready",
+        "wound",
+        "woundupper"
+      ],
+      "bones": 65
+    },
+    "hero-edd": {
+      "url": "assets/animations/hero-edd.json",
+      "source": "Original full-size NPC skeleton and AnimationClip curves",
+      "clips": [
+        "nif-default",
+        "walk",
+        "stand1",
+        "run",
+        "stand2",
+        "stand3"
+      ],
+      "bones": 67
+    },
+    "hero-billy": {
+      "url": "assets/animations/hero-billy.json",
+      "source": "Original full-size NPC skeleton and AnimationClip curves",
+      "clips": [
+        "nif-default",
+        "walk",
+        "stand1",
+        "run",
+        "stand2",
+        "stand3",
+        "melee2",
+        "melee2upper",
+        "ready",
+        "death",
+        "melee1",
+        "melee1upper"
+      ],
+      "bones": 63
+    },
+    "hero-mandy": {
+      "url": "assets/animations/hero-mandy.json",
+      "source": "Original full-size NPC skeleton and AnimationClip curves",
+      "clips": [
+        "run",
+        "stand1",
+        "stand2",
+        "stand3",
+        "walk"
+      ],
+      "bones": 64
+    },
+    "hero-numbuhone": {
+      "url": "assets/animations/hero-numbuhone.json",
+      "source": "Original full-size NPC skeleton and AnimationClip curves",
+      "clips": [
+        "stand1",
+        "stand2",
+        "stand3",
+        "walk",
+        "run"
+      ],
+      "bones": 68
+    },
+    "hero-numbuhthree": {
+      "url": "assets/animations/hero-numbuhthree.json",
+      "source": "Original full-size NPC skeleton and AnimationClip curves",
+      "clips": [
+        "nif-default",
+        "run",
+        "stand1",
+        "stand2",
+        "stand3",
+        "walk"
+      ],
+      "bones": 44
+    },
+    "hero-numbuhfour": {
+      "url": "assets/animations/hero-numbuhfour.json",
+      "source": "Original full-size NPC skeleton and AnimationClip curves",
+      "clips": [
+        "nif-default",
+        "run",
+        "stand1",
+        "stand2",
+        "stand3",
+        "walk"
+      ],
+      "bones": 48
+    },
+    "hero-eduardo": {
+      "url": "assets/animations/hero-eduardo.json",
+      "source": "Original full-size NPC skeleton and AnimationClip curves",
+      "clips": [
+        "stand1",
+        "stand2",
+        "stand3",
+        "walk",
+        "run",
+        "dodge",
+        "melee1",
+        "melee2",
+        "ready",
+        "wound",
+        "death"
+      ],
+      "bones": 42
+    },
+    "hero-wilt": {
+      "url": "assets/animations/hero-wilt.json",
+      "source": "Original full-size NPC skeleton and AnimationClip curves",
+      "clips": [
+        "stand1",
+        "stand2",
+        "stand3",
+        "walk",
+        "run",
+        "ready",
+        "melee1"
+      ],
+      "bones": 59
+    },
+    "hero-bloo": {
+      "url": "assets/animations/hero-bloo.json",
+      "source": "Original full-size NPC skeleton and AnimationClip curves",
+      "clips": [
+        "stand1",
+        "stand2",
+        "stand3",
+        "walk",
+        "run"
+      ],
+      "bones": 68
+    },
+    "hero-gwen": {
+      "url": "assets/animations/hero-gwen.json",
+      "source": "Original full-size NPC skeleton and AnimationClip curves",
+      "clips": [
+        "corruptak",
+        "corruptak_readyspell",
+        "megatak_readyspell",
+        "melee1",
+        "melee2",
+        "ready",
+        "run",
+        "stand1",
+        "stand2",
+        "stand3",
+        "walk",
+        "death"
+      ],
+      "bones": 66
+    },
+    "hero-mojojojo": {
+      "url": "assets/animations/hero-mojojojo.json",
+      "source": "Original full-size NPC skeleton and AnimationClip curves",
+      "clips": [
+        "run",
+        "stand1",
+        "walk",
+        "stand2",
+        "stand3",
+        "ready",
+        "wound",
+        "dodge",
+        "melee1",
+        "death",
+        "melee2"
+      ],
+      "bones": 92
+    }
+  }
+}

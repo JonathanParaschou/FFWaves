@@ -1,0 +1,17 @@
+{
+  "name": "fusionfall-last-signal",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "check": "node --check dist/game.js && node --check dist/world.js && node --check dist/simulation.js && node --check dist/assets.js && node --check dist/animation.js && node --check dist/environment.js && node --check dist/companions.js && node --check dist/nanos.js && node --check dist/loadout.js && node --check dist/layout.js && node --check dist/viewmodel.js && node --check dist/first-person-arms.js && node --check dist/settings.js && node --check dist/maps.js && node --check dist/map-menu.js && node --check dist/outpost-kit.js && node --check dist/movement.js && node --check dist/rounds.js && node --check dist/weapons.js && node --check dist/avatars.js && node --check dist/hero-menu.js && node --check dist/weapon-stations.js && node --check dist/map-details.js && node --check server.mjs && node --check server/coop-room.mjs && node --check server/combat.mjs && node --check dist/lan-client.js && node --check dist/lan-ui.js && node --check dist/remote-players.js && node --check dist/map-plan.js && node --check dist/map-spaces.js && node --check dist/field-kit.js && node --check dist/deployment-hub.js && node --check dist/combat-effects.js",
+    "test": "node --test tests/simulation.test.mjs tests/nanos.test.mjs tests/animation.test.mjs tests/companions.test.mjs tests/assets.test.mjs tests/fps-feel.test.mjs tests/maps.test.mjs tests/maps-scene.test.mjs tests/operative.test.mjs tests/lan.test.mjs tests/field-kit.test.mjs"
+  },
+  "dependencies": {
+    "ws": "8.23.0"
+  },
+  "engines": {
+    "node": "24.x"
+  }
+}

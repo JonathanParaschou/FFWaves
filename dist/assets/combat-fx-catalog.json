@@ -1,0 +1,673 @@
+{
+  "format": "fusionfall-combat-fx-v1",
+  "source": "Original FusionFall Unity Web Player cache opened read-only",
+  "pixelProcessing": "Unity vertical orientation converted; original RGBA preserved in lossless PNG.",
+  "ownership": "Original art remains the property of its original rights holders.",
+  "textures": {
+    "muzzle-shot": {
+      "url": "assets/fx-original/muzzle-shot.png",
+      "source": "textures/shot_e01.dds.asset",
+      "bundle": "world_5fshared_5fpart3_2eresourceFile",
+      "size": [
+        128,
+        128
+      ],
+      "alphaRange": [
+        0,
+        251
+      ],
+      "hasTransparency": true,
+      "recommendedBlending": "additive",
+      "cornerRGBA": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "muzzle-scatter": {
+      "url": "assets/fx-original/muzzle-scatter.png",
+      "source": "textures/shotgun_e01.dds.asset",
+      "bundle": "world_5fshared_5fpart4_2eresourceFile",
+      "size": [
+        128,
+        128
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "hasTransparency": true,
+      "recommendedBlending": "additive",
+      "cornerRGBA": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          1,
+          2,
+          0
+        ]
+      ]
+    },
+    "laser": {
+      "url": "assets/fx-original/laser.png",
+      "source": "textures/laser.dds.asset",
+      "bundle": "world_5fshared_5fpart2_2eresourceFile",
+      "size": [
+        32,
+        32
+      ],
+      "alphaRange": [
+        255,
+        255
+      ],
+      "hasTransparency": false,
+      "recommendedBlending": "additive",
+      "cornerRGBA": [
+        [
+          24,
+          125,
+          189,
+          255
+        ],
+        [
+          24,
+          125,
+          189,
+          255
+        ],
+        [
+          82,
+          219,
+          231,
+          255
+        ],
+        [
+          82,
+          219,
+          231,
+          255
+        ]
+      ],
+      "note": "Blue horizontal scanline strip; suitable on a stretched beam quad with additive blending."
+    },
+    "impact-burst": {
+      "url": "assets/fx-original/impact-burst.png",
+      "source": "effect/attack_hit_01.dds",
+      "bundle": "dongresources_5f04_5f04_2eresourceFile",
+      "size": [
+        128,
+        128
+      ],
+      "alphaRange": [
+        255,
+        255
+      ],
+      "hasTransparency": false,
+      "recommendedBlending": "additive",
+      "cornerRGBA": [
+        [
+          0,
+          0,
+          0,
+          255
+        ],
+        [
+          0,
+          0,
+          0,
+          255
+        ],
+        [
+          0,
+          0,
+          0,
+          255
+        ],
+        [
+          0,
+          0,
+          0,
+          255
+        ]
+      ]
+    },
+    "impact-star": {
+      "url": "assets/fx-original/impact-star.png",
+      "source": "textures/attack_hit_18.dds.asset",
+      "bundle": "world_5fshared_5fpart1_2eresourceFile",
+      "size": [
+        128,
+        128
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "hasTransparency": true,
+      "recommendedBlending": "additive",
+      "cornerRGBA": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "impact-ring": {
+      "url": "assets/fx-original/impact-ring.png",
+      "source": "textures/attack_hit_19.dds.asset",
+      "bundle": "world_5fshared_5fpart1_2eresourceFile",
+      "size": [
+        128,
+        128
+      ],
+      "alphaRange": [
+        9,
+        255
+      ],
+      "hasTransparency": true,
+      "recommendedBlending": "additive",
+      "cornerRGBA": [
+        [
+          0,
+          0,
+          0,
+          10
+        ],
+        [
+          0,
+          0,
+          0,
+          9
+        ],
+        [
+          0,
+          0,
+          0,
+          10
+        ],
+        [
+          0,
+          0,
+          0,
+          10
+        ]
+      ]
+    },
+    "projectile": {
+      "url": "assets/fx-original/projectile.png",
+      "source": "effect/projectile_01.dds",
+      "bundle": "dongresources_5f04_5f04_2eresourceFile",
+      "size": [
+        128,
+        128
+      ],
+      "alphaRange": [
+        0,
+        219
+      ],
+      "hasTransparency": true,
+      "recommendedBlending": "additive",
+      "cornerRGBA": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "mega-projectile": {
+      "url": "assets/fx-original/mega-projectile.png",
+      "source": "effect/mgaattack_projectile.dds",
+      "bundle": "world_5fshared_5fpart3_2eresourceFile",
+      "size": [
+        128,
+        128
+      ],
+      "alphaRange": [
+        0,
+        233
+      ],
+      "hasTransparency": true,
+      "recommendedBlending": "additive",
+      "cornerRGBA": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "energy-bolt": {
+      "url": "assets/fx-original/energy-bolt.png",
+      "source": "effect/skill_atack_01.dds",
+      "bundle": "world_5fshared_5fpart3_2eresourceFile",
+      "size": [
+        128,
+        128
+      ],
+      "alphaRange": [
+        255,
+        255
+      ],
+      "hasTransparency": false,
+      "recommendedBlending": "additive",
+      "cornerRGBA": [
+        [
+          0,
+          0,
+          0,
+          255
+        ],
+        [
+          0,
+          0,
+          0,
+          255
+        ],
+        [
+          0,
+          0,
+          0,
+          255
+        ],
+        [
+          0,
+          0,
+          0,
+          255
+        ]
+      ]
+    },
+    "energy-ring": {
+      "url": "assets/fx-original/energy-ring.png",
+      "source": "effect/skill_atack_02.dds",
+      "bundle": "world_5fshared_5fpart3_2eresourceFile",
+      "size": [
+        128,
+        128
+      ],
+      "alphaRange": [
+        255,
+        255
+      ],
+      "hasTransparency": false,
+      "recommendedBlending": "additive",
+      "cornerRGBA": [
+        [
+          0,
+          0,
+          0,
+          255
+        ],
+        [
+          0,
+          0,
+          0,
+          255
+        ],
+        [
+          0,
+          0,
+          0,
+          255
+        ],
+        [
+          0,
+          0,
+          0,
+          255
+        ]
+      ]
+    },
+    "energy-plasma": {
+      "url": "assets/fx-original/energy-plasma.png",
+      "source": "effect/skill_atack_03.dds",
+      "bundle": "world_5fshared_5fpart3_2eresourceFile",
+      "size": [
+        128,
+        128
+      ],
+      "alphaRange": [
+        255,
+        255
+      ],
+      "hasTransparency": false,
+      "recommendedBlending": "additive",
+      "cornerRGBA": [
+        [
+          0,
+          0,
+          0,
+          255
+        ],
+        [
+          0,
+          0,
+          0,
+          255
+        ],
+        [
+          0,
+          0,
+          0,
+          255
+        ],
+        [
+          0,
+          0,
+          0,
+          255
+        ]
+      ]
+    },
+    "smoke": {
+      "url": "assets/fx-original/smoke.png",
+      "source": "effect/smoke_11.dds",
+      "bundle": "world_5fshared_5fpart3_2eresourceFile",
+      "size": [
+        256,
+        256
+      ],
+      "alphaRange": [
+        0,
+        0
+      ],
+      "hasTransparency": true,
+      "recommendedBlending": "rgb-only-additive-shader",
+      "cornerRGBA": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "note": "Original alpha is zero everywhere. SpriteMaterial with alpha multiplication will be invisible; shader must derive opacity from RGB."
+    },
+    "dust": {
+      "url": "assets/fx-original/dust.png",
+      "source": "effect/green_dust_01.dds",
+      "bundle": "world_5fshared_5fpart4_2eresourceFile",
+      "size": [
+        64,
+        64
+      ],
+      "alphaRange": [
+        0,
+        219
+      ],
+      "hasTransparency": true,
+      "recommendedBlending": "additive",
+      "cornerRGBA": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "spark": {
+      "url": "assets/fx-original/spark.png",
+      "source": "effect/point_002.dds",
+      "bundle": "world_5fshared_5fpart2_2eresourceFile",
+      "size": [
+        256,
+        256
+      ],
+      "alphaRange": [
+        0,
+        182
+      ],
+      "hasTransparency": true,
+      "recommendedBlending": "additive",
+      "cornerRGBA": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "note": "Original point_002 is a circular shield/bubble rim; use for an energy projectile halo, not linear sparks."
+    },
+    "nano-fire": {
+      "url": "assets/fx-original/nano-fire.png",
+      "source": "effect/nano_fire_stm.dds",
+      "bundle": "world_5fshared_5fpart2_2eresourceFile",
+      "size": [
+        128,
+        128
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "hasTransparency": true,
+      "recommendedBlending": "additive",
+      "cornerRGBA": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "flame": {
+      "url": "assets/fx-original/flame.png",
+      "source": "effect/campfire.dds",
+      "bundle": "world_5fshared_5fpart3_2eresourceFile",
+      "size": [
+        256,
+        512
+      ],
+      "alphaRange": [
+        255,
+        255
+      ],
+      "hasTransparency": false,
+      "recommendedBlending": "additive",
+      "cornerRGBA": [
+        [
+          0,
+          0,
+          0,
+          255
+        ],
+        [
+          0,
+          0,
+          0,
+          255
+        ],
+        [
+          0,
+          0,
+          0,
+          255
+        ],
+        [
+          0,
+          0,
+          0,
+          255
+        ]
+      ],
+      "atlas": {
+        "columns": 6,
+        "rows": 4,
+        "frames": 24
+      },
+      "note": "Original campfire flipbook has six columns and four rows, visually inspected. Use cell UVs; do not display the whole atlas as a single flame."
+    }
+  }
+}

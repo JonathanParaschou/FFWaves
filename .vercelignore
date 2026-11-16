@@ -1,0 +1,14 @@
+.git/
+.openai/
+.tools/
+node_modules/
+qa/
+tools/
+docs/
+dist/assets/map-sections/map-04-04-placements.json
+*.log
+*.tar.gz
+.env*
+__pycache__/
+*.pyc
+*.zip

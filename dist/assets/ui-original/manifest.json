@@ -1,0 +1,2051 @@
+{
+  "source": "Original FusionFall cached icon/help assets",
+  "references": {
+    "mini-map": {
+      "url": "assets/ui-original/mini-map.webp",
+      "source": "help/mini-map.jpg",
+      "size": [
+        350,
+        262
+      ]
+    },
+    "nano_com": {
+      "url": "assets/ui-original/nano_com.webp",
+      "source": "help/nano_com.jpg",
+      "size": [
+        350,
+        262
+      ]
+    },
+    "nano_stamina": {
+      "url": "assets/ui-original/nano_stamina.webp",
+      "source": "help/nano_stamina.jpg",
+      "size": [
+        350,
+        262
+      ]
+    },
+    "nano_wheel": {
+      "url": "assets/ui-original/nano_wheel.webp",
+      "source": "help/nano_wheel.jpg",
+      "size": [
+        350,
+        262
+      ]
+    },
+    "nanocom": {
+      "url": "assets/ui-original/nanocom.webp",
+      "source": "help/nanocom.jpg",
+      "size": [
+        350,
+        262
+      ]
+    },
+    "rest_100": {
+      "url": "assets/ui-original/rest_100.webp",
+      "source": "help/rest_100.jpg",
+      "size": [
+        350,
+        262
+      ]
+    },
+    "scores": {
+      "url": "assets/ui-original/scores.webp",
+      "source": "help/scores.jpg",
+      "size": [
+        350,
+        262
+      ]
+    },
+    "mob_hp": {
+      "url": "assets/ui-original/mob_hp.webp",
+      "source": "help/mob_hp.jpg",
+      "size": [
+        350,
+        262
+      ]
+    },
+    "menu_chat": {
+      "url": "assets/ui-original/menu_chat.webp",
+      "source": "help/menu_chat.jpg",
+      "size": [
+        350,
+        262
+      ]
+    },
+    "satellite_map": {
+      "url": "assets/ui-original/satellite_map.webp",
+      "source": "help/satellite_map.jpg",
+      "size": [
+        350,
+        262
+      ]
+    },
+    "character_screen": {
+      "url": "assets/ui-original/character_screen.webp",
+      "source": "help/character_screen.jpg",
+      "size": [
+        350,
+        262
+      ]
+    },
+    "power_selection": {
+      "url": "assets/ui-original/power_selection.webp",
+      "source": "help/power_selection.jpg",
+      "size": [
+        350,
+        262
+      ]
+    },
+    "powers1": {
+      "url": "assets/ui-original/powers1.webp",
+      "source": "help/powers1.jpg",
+      "size": [
+        248,
+        156
+      ]
+    },
+    "powers2": {
+      "url": "assets/ui-original/powers2.webp",
+      "source": "help/powers2.jpg",
+      "size": [
+        248,
+        156
+      ]
+    },
+    "shortcuts": {
+      "url": "assets/ui-original/shortcuts.webp",
+      "source": "help/shortcuts.jpg",
+      "size": [
+        350,
+        262
+      ]
+    },
+    "vendor_screen": {
+      "url": "assets/ui-original/vendor_screen.webp",
+      "source": "help/vendor_screen.jpg",
+      "size": [
+        350,
+        262
+      ]
+    },
+    "mission_journal": {
+      "url": "assets/ui-original/mission_journal.webp",
+      "source": "help/mission_journal.jpg",
+      "size": [
+        350,
+        262
+      ]
+    },
+    "nano_tune": {
+      "url": "assets/ui-original/nano_tune.webp",
+      "source": "help/nano_tune.jpg",
+      "size": [
+        350,
+        262
+      ]
+    },
+    "selection": {
+      "url": "assets/ui-original/selection.webp",
+      "source": "help/selection.jpg",
+      "size": [
+        350,
+        262
+      ]
+    },
+    "login": {
+      "url": "assets/ui-original/login.webp",
+      "source": "help/login.jpg",
+      "size": [
+        350,
+        262
+      ]
+    },
+    "characterselection": {
+      "url": "assets/ui-original/characterselection.webp",
+      "source": "help/characterselection.jpg",
+      "size": [
+        350,
+        262
+      ]
+    }
+  },
+  "textures": {},
+  "cleanSprites": {
+    "nano-whell": {
+      "url": "assets/ui-original/nano-whell.webp",
+      "name": "nano_whell",
+      "source": "sharedassets0.assets/Texture2D:11",
+      "size": [
+        227,
+        37
+      ]
+    },
+    "ccrightbg": {
+      "url": "assets/ui-original/ccrightbg.webp",
+      "name": "CCRightBG",
+      "source": "sharedassets0.assets/Texture2D:25",
+      "size": [
+        554,
+        650
+      ]
+    },
+    "topbutton-over": {
+      "url": "assets/ui-original/topbutton-over.webp",
+      "name": "topButton - Over",
+      "source": "sharedassets0.assets/Texture2D:30",
+      "size": [
+        256,
+        32
+      ]
+    },
+    "leftbox": {
+      "url": "assets/ui-original/leftbox.webp",
+      "name": "leftbox",
+      "source": "sharedassets0.assets/Texture2D:34",
+      "size": [
+        60,
+        49
+      ]
+    },
+    "quitback": {
+      "url": "assets/ui-original/quitback.webp",
+      "name": "QuitBack",
+      "source": "sharedassets0.assets/Texture2D:44",
+      "size": [
+        206,
+        241
+      ]
+    },
+    "slotbox": {
+      "url": "assets/ui-original/slotbox.webp",
+      "name": "slotbox",
+      "source": "sharedassets0.assets/Texture2D:47",
+      "size": [
+        62,
+        62
+      ]
+    },
+    "infohpback": {
+      "url": "assets/ui-original/infohpback.webp",
+      "name": "infoHpBack",
+      "source": "sharedassets0.assets/Texture2D:49",
+      "size": [
+        312,
+        10
+      ]
+    },
+    "nano-info": {
+      "url": "assets/ui-original/nano-info.webp",
+      "name": "nano_info",
+      "source": "sharedassets0.assets/Texture2D:51",
+      "size": [
+        154,
+        29
+      ]
+    },
+    "backbar": {
+      "url": "assets/ui-original/backbar.webp",
+      "name": "backbar",
+      "source": "sharedassets0.assets/Texture2D:63",
+      "size": [
+        486,
+        13
+      ]
+    },
+    "login-screen-bg-16x10": {
+      "url": "assets/ui-original/login-screen-bg-16x10.webp",
+      "name": "login_screen_bg_16x10",
+      "source": "sharedassets0.assets/Texture2D:82",
+      "size": [
+        1020,
+        638
+      ]
+    },
+    "holo-line": {
+      "url": "assets/ui-original/holo-line.webp",
+      "name": "holo_Line",
+      "source": "sharedassets0.assets/Texture2D:91",
+      "size": [
+        32,
+        512
+      ]
+    },
+    "nanotab": {
+      "url": "assets/ui-original/nanotab.webp",
+      "name": "nanotab",
+      "source": "sharedassets0.assets/Texture2D:103",
+      "size": [
+        129,
+        29
+      ]
+    },
+    "login-screen-button-bg": {
+      "url": "assets/ui-original/login-screen-button-bg.webp",
+      "name": "login_screen_button_bg",
+      "source": "sharedassets0.assets/Texture2D:106",
+      "size": [
+        375,
+        244
+      ]
+    },
+    "cur-frame": {
+      "url": "assets/ui-original/cur-frame.webp",
+      "name": "cur frame",
+      "source": "sharedassets0.assets/Texture2D:109",
+      "size": [
+        58,
+        51
+      ]
+    },
+    "close": {
+      "url": "assets/ui-original/close.webp",
+      "name": "close",
+      "source": "sharedassets0.assets/Texture2D:110",
+      "size": [
+        32,
+        33
+      ]
+    },
+    "cancelbtnnormal": {
+      "url": "assets/ui-original/cancelbtnnormal.webp",
+      "name": "CancelBtnNormal",
+      "source": "sharedassets0.assets/Texture2D:116",
+      "size": [
+        152,
+        27
+      ]
+    },
+    "line-minimap": {
+      "url": "assets/ui-original/line-minimap.webp",
+      "name": "line_minimap",
+      "source": "sharedassets0.assets/Texture2D:133",
+      "size": [
+        148,
+        148
+      ]
+    },
+    "moneybar": {
+      "url": "assets/ui-original/moneybar.webp",
+      "name": "moneybar",
+      "source": "sharedassets0.assets/Texture2D:136",
+      "size": [
+        303,
+        20
+      ]
+    },
+    "nanocom-message-nano": {
+      "url": "assets/ui-original/nanocom-message-nano.webp",
+      "name": "nanocom_message_nano",
+      "source": "sharedassets0.assets/Texture2D:144",
+      "size": [
+        372,
+        122
+      ]
+    },
+    "cscharbuttonempty": {
+      "url": "assets/ui-original/cscharbuttonempty.webp",
+      "name": "CSCharButtonEmpty",
+      "source": "sharedassets0.assets/Texture2D:154",
+      "size": [
+        413,
+        67
+      ]
+    },
+    "cscharbuttonover": {
+      "url": "assets/ui-original/cscharbuttonover.webp",
+      "name": "CSCharButtonOver",
+      "source": "sharedassets0.assets/Texture2D:155",
+      "size": [
+        413,
+        67
+      ]
+    },
+    "shop-background-2": {
+      "url": "assets/ui-original/shop-background-2.webp",
+      "name": "Shop background-2",
+      "source": "sharedassets0.assets/Texture2D:169",
+      "size": [
+        586,
+        650
+      ]
+    },
+    "nano-win": {
+      "url": "assets/ui-original/nano-win.webp",
+      "name": "nano_win",
+      "source": "sharedassets0.assets/Texture2D:170",
+      "size": [
+        20,
+        16
+      ]
+    },
+    "chat-tab-normal": {
+      "url": "assets/ui-original/chat-tab-normal.webp",
+      "name": "chat_tab_normal",
+      "source": "sharedassets0.assets/Texture2D:175",
+      "size": [
+        65,
+        24
+      ]
+    },
+    "buff-icon-back": {
+      "url": "assets/ui-original/buff-icon-back.webp",
+      "name": "buff_icon_back",
+      "source": "sharedassets0.assets/Texture2D:176",
+      "size": [
+        21,
+        21
+      ]
+    },
+    "menuchatbutton-sel": {
+      "url": "assets/ui-original/menuchatbutton-sel.webp",
+      "name": "menuChatButton_Sel",
+      "source": "sharedassets0.assets/Texture2D:177",
+      "size": [
+        37,
+        18
+      ]
+    },
+    "hp-bar": {
+      "url": "assets/ui-original/hp-bar.webp",
+      "name": "HP_BAR",
+      "source": "sharedassets0.assets/Texture2D:179",
+      "size": [
+        186,
+        4
+      ]
+    },
+    "itembar": {
+      "url": "assets/ui-original/itembar.webp",
+      "name": "itembar",
+      "source": "sharedassets0.assets/Texture2D:182",
+      "size": [
+        433,
+        75
+      ]
+    },
+    "green-button-over": {
+      "url": "assets/ui-original/green-button-over.webp",
+      "name": "green_button_over",
+      "source": "sharedassets0.assets/Texture2D:183",
+      "size": [
+        20,
+        25
+      ]
+    },
+    "cnlogo": {
+      "url": "assets/ui-original/cnlogo.webp",
+      "name": "CNLogo",
+      "source": "sharedassets0.assets/Texture2D:187",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "red-button-over": {
+      "url": "assets/ui-original/red-button-over.webp",
+      "name": "red_button_over",
+      "source": "sharedassets0.assets/Texture2D:201",
+      "size": [
+        20,
+        25
+      ]
+    },
+    "combitarosicon": {
+      "url": "assets/ui-original/combitarosicon.webp",
+      "name": "CombiTarosIcon",
+      "source": "sharedassets0.assets/Texture2D:205",
+      "size": [
+        23,
+        24
+      ]
+    },
+    "new-minimap-back": {
+      "url": "assets/ui-original/new-minimap-back.webp",
+      "name": "new minimap_back",
+      "source": "sharedassets0.assets/Texture2D:216",
+      "size": [
+        175,
+        173
+      ]
+    },
+    "line-main01": {
+      "url": "assets/ui-original/line-main01.webp",
+      "name": "line_main01",
+      "source": "sharedassets0.assets/Texture2D:217",
+      "size": [
+        16,
+        4
+      ]
+    },
+    "setting-back3": {
+      "url": "assets/ui-original/setting-back3.webp",
+      "name": "setting_back3",
+      "source": "sharedassets0.assets/Texture2D:218",
+      "size": [
+        45,
+        36
+      ]
+    },
+    "shiny-back": {
+      "url": "assets/ui-original/shiny-back.webp",
+      "name": "shiny_back",
+      "source": "sharedassets0.assets/Texture2D:222",
+      "size": [
+        178,
+        135
+      ]
+    },
+    "cscharbuttonsubscription": {
+      "url": "assets/ui-original/cscharbuttonsubscription.webp",
+      "name": "CSCharButtonSubscription",
+      "source": "sharedassets0.assets/Texture2D:235",
+      "size": [
+        413,
+        68
+      ]
+    },
+    "nano-banner": {
+      "url": "assets/ui-original/nano-banner.webp",
+      "name": "nano_banner",
+      "source": "sharedassets0.assets/Texture2D:236",
+      "size": [
+        549,
+        74
+      ]
+    },
+    "mission-back": {
+      "url": "assets/ui-original/mission-back.webp",
+      "name": "mission_back",
+      "source": "sharedassets0.assets/Texture2D:244",
+      "size": [
+        70,
+        29
+      ]
+    },
+    "cancelnormal": {
+      "url": "assets/ui-original/cancelnormal.webp",
+      "name": "CancelNormal",
+      "source": "sharedassets0.assets/Texture2D:247",
+      "size": [
+        112,
+        26
+      ]
+    },
+    "slotboxempty": {
+      "url": "assets/ui-original/slotboxempty.webp",
+      "name": "slotboxempty",
+      "source": "sharedassets0.assets/Texture2D:261",
+      "size": [
+        62,
+        62
+      ]
+    },
+    "nanomachinehelpbutton": {
+      "url": "assets/ui-original/nanomachinehelpbutton.webp",
+      "name": "NanoMachineHelpButton",
+      "source": "sharedassets0.assets/Texture2D:267",
+      "size": [
+        32,
+        32
+      ]
+    },
+    "nano-power": {
+      "url": "assets/ui-original/nano-power.webp",
+      "name": "nano_power",
+      "source": "sharedassets0.assets/Texture2D:278",
+      "size": [
+        22,
+        74
+      ]
+    },
+    "nano-st-bar": {
+      "url": "assets/ui-original/nano-st-bar.webp",
+      "name": "nano_st_bar",
+      "source": "sharedassets0.assets/Texture2D:279",
+      "size": [
+        42,
+        6
+      ]
+    },
+    "nanocom-message": {
+      "url": "assets/ui-original/nanocom-message.webp",
+      "name": "nanocom_message",
+      "source": "sharedassets0.assets/Texture2D:282",
+      "size": [
+        271,
+        119
+      ]
+    },
+    "ff-closebutton-hover": {
+      "url": "assets/ui-original/ff-closebutton-hover.webp",
+      "name": "ff-closebutton-hover",
+      "source": "sharedassets0.assets/Texture2D:283",
+      "size": [
+        28,
+        28
+      ]
+    },
+    "buybtnnormal": {
+      "url": "assets/ui-original/buybtnnormal.webp",
+      "name": "BuyBtnNormal",
+      "source": "sharedassets0.assets/Texture2D:284",
+      "size": [
+        162,
+        44
+      ]
+    },
+    "helpbuttonnormal": {
+      "url": "assets/ui-original/helpbuttonnormal.webp",
+      "name": "HelpButtonNormal",
+      "source": "sharedassets0.assets/Texture2D:290",
+      "size": [
+        46,
+        11
+      ]
+    },
+    "back": {
+      "url": "assets/ui-original/back.webp",
+      "name": "back",
+      "source": "sharedassets0.assets/Texture2D:296",
+      "size": [
+        8,
+        8
+      ]
+    },
+    "greenbutton": {
+      "url": "assets/ui-original/greenbutton.webp",
+      "name": "GreenButton",
+      "source": "sharedassets0.assets/Texture2D:298",
+      "size": [
+        64,
+        16
+      ]
+    },
+    "red-button-normal": {
+      "url": "assets/ui-original/red-button-normal.webp",
+      "name": "red_button_normal",
+      "source": "sharedassets0.assets/Texture2D:309",
+      "size": [
+        20,
+        25
+      ]
+    },
+    "nanopopupnextnano-1": {
+      "url": "assets/ui-original/nanopopupnextnano-1.webp",
+      "name": "NanoPopUpNextNano 1",
+      "source": "sharedassets0.assets/Texture2D:310",
+      "size": [
+        357,
+        460
+      ]
+    },
+    "categories-tab-normal": {
+      "url": "assets/ui-original/categories-tab-normal.webp",
+      "name": "Categories Tab - Normal",
+      "source": "sharedassets0.assets/Texture2D:314",
+      "size": [
+        256,
+        32
+      ]
+    },
+    "nano-lose": {
+      "url": "assets/ui-original/nano-lose.webp",
+      "name": "nano_lose",
+      "source": "sharedassets0.assets/Texture2D:315",
+      "size": [
+        15,
+        16
+      ]
+    },
+    "nanocom-message-etc": {
+      "url": "assets/ui-original/nanocom-message-etc.webp",
+      "name": "nanocom_message_etc",
+      "source": "sharedassets0.assets/Texture2D:319",
+      "size": [
+        326,
+        119
+      ]
+    },
+    "ccnametabbuttonnormal": {
+      "url": "assets/ui-original/ccnametabbuttonnormal.webp",
+      "name": "CCNameTabButtonNormal",
+      "source": "sharedassets0.assets/Texture2D:327",
+      "size": [
+        77,
+        28
+      ]
+    },
+    "nanotabover": {
+      "url": "assets/ui-original/nanotabover.webp",
+      "name": "nanotabover",
+      "source": "sharedassets0.assets/Texture2D:328",
+      "size": [
+        129,
+        29
+      ]
+    },
+    "ff-closebutton-normal": {
+      "url": "assets/ui-original/ff-closebutton-normal.webp",
+      "name": "ff-closebutton-normal",
+      "source": "sharedassets0.assets/Texture2D:330",
+      "size": [
+        28,
+        28
+      ]
+    },
+    "character-info": {
+      "url": "assets/ui-original/character-info.webp",
+      "name": "character_info",
+      "source": "sharedassets0.assets/Texture2D:331",
+      "size": [
+        255,
+        66
+      ]
+    },
+    "vendorlistbackbar": {
+      "url": "assets/ui-original/vendorlistbackbar.webp",
+      "name": "vendorlistbackbar",
+      "source": "sharedassets0.assets/Texture2D:334",
+      "size": [
+        486,
+        13
+      ]
+    },
+    "equipmentback": {
+      "url": "assets/ui-original/equipmentback.webp",
+      "name": "equipmentback",
+      "source": "sharedassets0.assets/Texture2D:336",
+      "size": [
+        32,
+        654
+      ]
+    },
+    "blue-button-over": {
+      "url": "assets/ui-original/blue-button-over.webp",
+      "name": "blue_button_over",
+      "source": "sharedassets0.assets/Texture2D:339",
+      "size": [
+        20,
+        25
+      ]
+    },
+    "exit-button": {
+      "url": "assets/ui-original/exit-button.webp",
+      "name": "exit_button",
+      "source": "sharedassets0.assets/Texture2D:343",
+      "size": [
+        26,
+        26
+      ]
+    },
+    "ff-button-hover": {
+      "url": "assets/ui-original/ff-button-hover.webp",
+      "name": "ff-button-hover",
+      "source": "sharedassets0.assets/Texture2D:350",
+      "size": [
+        11,
+        26
+      ]
+    },
+    "bankslotback": {
+      "url": "assets/ui-original/bankslotback.webp",
+      "name": "bankslotback",
+      "source": "sharedassets0.assets/Texture2D:351",
+      "size": [
+        157,
+        93
+      ]
+    },
+    "comptress-frame": {
+      "url": "assets/ui-original/comptress-frame.webp",
+      "name": "comptress frame",
+      "source": "sharedassets0.assets/Texture2D:352",
+      "size": [
+        29,
+        110
+      ]
+    },
+    "nanogumballred": {
+      "url": "assets/ui-original/nanogumballred.webp",
+      "name": "NanoGumballRed",
+      "source": "sharedassets0.assets/Texture2D:353",
+      "size": [
+        71,
+        104
+      ]
+    },
+    "nanogumballblue": {
+      "url": "assets/ui-original/nanogumballblue.webp",
+      "name": "NanoGumballBlue",
+      "source": "sharedassets0.assets/Texture2D:356",
+      "size": [
+        71,
+        104
+      ]
+    },
+    "chattab-normal": {
+      "url": "assets/ui-original/chattab-normal.webp",
+      "name": "chatTab_normal",
+      "source": "sharedassets0.assets/Texture2D:360",
+      "size": [
+        134,
+        14
+      ]
+    },
+    "ff-textfield-normal": {
+      "url": "assets/ui-original/ff-textfield-normal.webp",
+      "name": "ff-textfield-normal",
+      "source": "sharedassets0.assets/Texture2D:370",
+      "size": [
+        5,
+        25
+      ]
+    },
+    "line-main": {
+      "url": "assets/ui-original/line-main.webp",
+      "name": "line_main",
+      "source": "sharedassets0.assets/Texture2D:377",
+      "size": [
+        16,
+        512
+      ]
+    },
+    "nano": {
+      "url": "assets/ui-original/nano.webp",
+      "name": "nano",
+      "source": "sharedassets0.assets/Texture2D:394",
+      "size": [
+        21,
+        18
+      ]
+    },
+    "emailback": {
+      "url": "assets/ui-original/emailback.webp",
+      "name": "emailback",
+      "source": "sharedassets0.assets/Texture2D:397",
+      "size": [
+        31,
+        653
+      ]
+    },
+    "scroll-bar": {
+      "url": "assets/ui-original/scroll-bar.webp",
+      "name": "scroll_bar",
+      "source": "sharedassets0.assets/Texture2D:404",
+      "size": [
+        18,
+        32
+      ]
+    },
+    "nanodlg": {
+      "url": "assets/ui-original/nanodlg.webp",
+      "name": "nanodlg",
+      "source": "sharedassets0.assets/Texture2D:407",
+      "size": [
+        126,
+        83
+      ]
+    },
+    "combat": {
+      "url": "assets/ui-original/combat.webp",
+      "name": "combat",
+      "source": "sharedassets0.assets/Texture2D:414",
+      "size": [
+        256,
+        128
+      ]
+    },
+    "nanotabcurrent": {
+      "url": "assets/ui-original/nanotabcurrent.webp",
+      "name": "nanotabCurrent",
+      "source": "sharedassets0.assets/Texture2D:421",
+      "size": [
+        256,
+        32
+      ]
+    },
+    "combiwndbg": {
+      "url": "assets/ui-original/combiwndbg.webp",
+      "name": "CombiWndBG",
+      "source": "sharedassets0.assets/Texture2D:428",
+      "size": [
+        584,
+        650
+      ]
+    },
+    "userstback": {
+      "url": "assets/ui-original/userstback.webp",
+      "name": "userstback",
+      "source": "sharedassets0.assets/Texture2D:438",
+      "size": [
+        21,
+        20
+      ]
+    },
+    "exp-bonus-back": {
+      "url": "assets/ui-original/exp-bonus-back.webp",
+      "name": "exp_bonus_back",
+      "source": "sharedassets0.assets/Texture2D:443",
+      "size": [
+        8,
+        3
+      ]
+    },
+    "ff-button-normal": {
+      "url": "assets/ui-original/ff-button-normal.webp",
+      "name": "ff-button-normal",
+      "source": "sharedassets0.assets/Texture2D:452",
+      "size": [
+        11,
+        26
+      ]
+    },
+    "nanocom-minimap-a": {
+      "url": "assets/ui-original/nanocom-minimap-a.webp",
+      "name": "nanocom_minimap_a",
+      "source": "sharedassets0.assets/Texture2D:454",
+      "size": [
+        148,
+        148
+      ]
+    },
+    "select-back": {
+      "url": "assets/ui-original/select-back.webp",
+      "name": "select_back",
+      "source": "sharedassets0.assets/Texture2D:456",
+      "size": [
+        344,
+        147
+      ]
+    },
+    "bluebutton": {
+      "url": "assets/ui-original/bluebutton.webp",
+      "name": "BlueButton",
+      "source": "sharedassets0.assets/Texture2D:461",
+      "size": [
+        120,
+        16
+      ]
+    },
+    "current-mission": {
+      "url": "assets/ui-original/current-mission.webp",
+      "name": "current_mission",
+      "source": "sharedassets0.assets/Texture2D:462",
+      "size": [
+        126,
+        19
+      ]
+    },
+    "greenbuttonactive": {
+      "url": "assets/ui-original/greenbuttonactive.webp",
+      "name": "GreenButtonActive",
+      "source": "sharedassets0.assets/Texture2D:463",
+      "size": [
+        64,
+        16
+      ]
+    },
+    "map-back": {
+      "url": "assets/ui-original/map-back.webp",
+      "name": "map_back",
+      "source": "sharedassets0.assets/Texture2D:469",
+      "size": [
+        40,
+        653
+      ]
+    },
+    "cscharbuttonnormal": {
+      "url": "assets/ui-original/cscharbuttonnormal.webp",
+      "name": "CSCharButtonNormal",
+      "source": "sharedassets0.assets/Texture2D:471",
+      "size": [
+        413,
+        67
+      ]
+    },
+    "userfaceback": {
+      "url": "assets/ui-original/userfaceback.webp",
+      "name": "userfaceback",
+      "source": "sharedassets0.assets/Texture2D:482",
+      "size": [
+        70,
+        37
+      ]
+    },
+    "title-bar": {
+      "url": "assets/ui-original/title-bar.webp",
+      "name": "title bar",
+      "source": "sharedassets0.assets/Texture2D:486",
+      "size": [
+        256,
+        16
+      ]
+    },
+    "continuebtnnormal": {
+      "url": "assets/ui-original/continuebtnnormal.webp",
+      "name": "ContinueBtnNormal",
+      "source": "sharedassets0.assets/Texture2D:495",
+      "size": [
+        152,
+        27
+      ]
+    },
+    "group-nano-hpframe": {
+      "url": "assets/ui-original/group-nano-hpframe.webp",
+      "name": "group_nano_hpframe",
+      "source": "sharedassets0.assets/Texture2D:506",
+      "size": [
+        111,
+        6
+      ]
+    },
+    "sel-bar": {
+      "url": "assets/ui-original/sel-bar.webp",
+      "name": "sel_bar",
+      "source": "sharedassets0.assets/Texture2D:511",
+      "size": [
+        68,
+        19
+      ]
+    },
+    "close-normal": {
+      "url": "assets/ui-original/close-normal.webp",
+      "name": "close_normal",
+      "source": "sharedassets0.assets/Texture2D:514",
+      "size": [
+        23,
+        23
+      ]
+    },
+    "nanomachinebg2": {
+      "url": "assets/ui-original/nanomachinebg2.webp",
+      "name": "NanoMachineBG2",
+      "source": "sharedassets0.assets/Texture2D:540",
+      "size": [
+        60,
+        652
+      ]
+    },
+    "diskback": {
+      "url": "assets/ui-original/diskback.webp",
+      "name": "DiskBack",
+      "source": "sharedassets0.assets/Texture2D:546",
+      "size": [
+        69,
+        24
+      ]
+    },
+    "boostinvinfobackground": {
+      "url": "assets/ui-original/boostinvinfobackground.webp",
+      "name": "BoostInvInfoBackground",
+      "source": "sharedassets0.assets/Texture2D:549",
+      "size": [
+        310,
+        455
+      ]
+    },
+    "nanopopupfmbar": {
+      "url": "assets/ui-original/nanopopupfmbar.webp",
+      "name": "NanoPopupFMBar",
+      "source": "sharedassets0.assets/Texture2D:552",
+      "size": [
+        15,
+        5
+      ]
+    },
+    "left-back": {
+      "url": "assets/ui-original/left-back.webp",
+      "name": "left_back",
+      "source": "sharedassets0.assets/Texture2D:557",
+      "size": [
+        100,
+        654
+      ]
+    },
+    "nanopopupnextnano": {
+      "url": "assets/ui-original/nanopopupnextnano.webp",
+      "name": "NanoPopUpNextNano",
+      "source": "sharedassets0.assets/Texture2D:559",
+      "size": [
+        357,
+        460
+      ]
+    },
+    "nano-draw": {
+      "url": "assets/ui-original/nano-draw.webp",
+      "name": "nano_draw",
+      "source": "sharedassets0.assets/Texture2D:563",
+      "size": [
+        17,
+        12
+      ]
+    },
+    "title-bar-with-icon": {
+      "url": "assets/ui-original/title-bar-with-icon.webp",
+      "name": "title bar with Icon",
+      "source": "sharedassets0.assets/Texture2D:571",
+      "size": [
+        512,
+        32
+      ]
+    },
+    "inventory-background": {
+      "url": "assets/ui-original/inventory-background.webp",
+      "name": "Inventory Background",
+      "source": "sharedassets0.assets/Texture2D:572",
+      "size": [
+        381,
+        633
+      ]
+    },
+    "nanocom-message-npc": {
+      "url": "assets/ui-original/nanocom-message-npc.webp",
+      "name": "nanocom_message_npc",
+      "source": "sharedassets0.assets/Texture2D:576",
+      "size": [
+        321,
+        119
+      ]
+    },
+    "exp-back": {
+      "url": "assets/ui-original/exp-back.webp",
+      "name": "exp_back",
+      "source": "sharedassets0.assets/Texture2D:577",
+      "size": [
+        39,
+        7
+      ]
+    },
+    "world-left": {
+      "url": "assets/ui-original/world-left.webp",
+      "name": "world_left",
+      "source": "sharedassets0.assets/Texture2D:579",
+      "size": [
+        57,
+        612
+      ]
+    },
+    "button": {
+      "url": "assets/ui-original/button.webp",
+      "name": "button",
+      "source": "sharedassets0.assets/Texture2D:581",
+      "size": [
+        132,
+        34
+      ]
+    },
+    "nanopopupequippedbg": {
+      "url": "assets/ui-original/nanopopupequippedbg.webp",
+      "name": "NanoPopUpEquippedBG",
+      "source": "sharedassets0.assets/Texture2D:588",
+      "size": [
+        360,
+        633
+      ]
+    },
+    "line-main00": {
+      "url": "assets/ui-original/line-main00.webp",
+      "name": "line_main00",
+      "source": "sharedassets0.assets/Texture2D:598",
+      "size": [
+        16,
+        64
+      ]
+    },
+    "launchbar": {
+      "url": "assets/ui-original/launchbar.webp",
+      "name": "launchbar",
+      "source": "sharedassets0.assets/Texture2D:601",
+      "size": [
+        87,
+        31
+      ]
+    },
+    "fusionmeter-back-right": {
+      "url": "assets/ui-original/fusionmeter-back-right.webp",
+      "name": "fusionmeter_back_right",
+      "source": "sharedassets0.assets/Texture2D:605",
+      "size": [
+        176,
+        176
+      ]
+    },
+    "chatnullback": {
+      "url": "assets/ui-original/chatnullback.webp",
+      "name": "chatNullBack",
+      "source": "sharedassets0.assets/Texture2D:606",
+      "size": [
+        344,
+        47
+      ]
+    },
+    "quickslot-main": {
+      "url": "assets/ui-original/quickslot-main.webp",
+      "name": "quickslot_main",
+      "source": "sharedassets0.assets/Texture2D:610",
+      "size": [
+        290,
+        39
+      ]
+    },
+    "topbutton-normal": {
+      "url": "assets/ui-original/topbutton-normal.webp",
+      "name": "topButton - Normal",
+      "source": "sharedassets0.assets/Texture2D:623",
+      "size": [
+        256,
+        32
+      ]
+    },
+    "csenterbutton": {
+      "url": "assets/ui-original/csenterbutton.webp",
+      "name": "CSEnterButton",
+      "source": "sharedassets0.assets/Texture2D:625",
+      "size": [
+        325,
+        57
+      ]
+    },
+    "topbutton-pressed": {
+      "url": "assets/ui-original/topbutton-pressed.webp",
+      "name": "topButton - Pressed",
+      "source": "sharedassets0.assets/Texture2D:631",
+      "size": [
+        256,
+        32
+      ]
+    },
+    "fusionmeter-back-left": {
+      "url": "assets/ui-original/fusionmeter-back-left.webp",
+      "name": "fusionmeter_back_left",
+      "source": "sharedassets0.assets/Texture2D:649",
+      "size": [
+        176,
+        176
+      ]
+    },
+    "nanotabover-652": {
+      "url": "assets/ui-original/nanotabover-652.webp",
+      "name": "nanotabover",
+      "source": "sharedassets0.assets/Texture2D:652",
+      "size": [
+        129,
+        20
+      ]
+    },
+    "nrnanoicon": {
+      "url": "assets/ui-original/nrnanoicon.webp",
+      "name": "nrnanoicon",
+      "source": "sharedassets0.assets/Texture2D:658",
+      "size": [
+        24,
+        24
+      ]
+    },
+    "nanopopupitembar": {
+      "url": "assets/ui-original/nanopopupitembar.webp",
+      "name": "NanoPopupItemBar",
+      "source": "sharedassets0.assets/Texture2D:670",
+      "size": [
+        13,
+        4
+      ]
+    },
+    "chat-back": {
+      "url": "assets/ui-original/chat-back.webp",
+      "name": "chat_back",
+      "source": "sharedassets0.assets/Texture2D:674",
+      "size": [
+        23,
+        20
+      ]
+    },
+    "vendorlistback": {
+      "url": "assets/ui-original/vendorlistback.webp",
+      "name": "vendorlistback",
+      "source": "sharedassets0.assets/Texture2D:678",
+      "size": [
+        486,
+        84
+      ]
+    },
+    "bluebuttonactive": {
+      "url": "assets/ui-original/bluebuttonactive.webp",
+      "name": "BlueButtonActive",
+      "source": "sharedassets0.assets/Texture2D:683",
+      "size": [
+        120,
+        16
+      ]
+    },
+    "nanopopup": {
+      "url": "assets/ui-original/nanopopup.webp",
+      "name": "NanoPopUp",
+      "source": "sharedassets0.assets/Texture2D:690",
+      "size": [
+        360,
+        620
+      ]
+    },
+    "yellowback": {
+      "url": "assets/ui-original/yellowback.webp",
+      "name": "yellowback",
+      "source": "sharedassets0.assets/Texture2D:693",
+      "size": [
+        59,
+        61
+      ]
+    },
+    "blue-button-normal": {
+      "url": "assets/ui-original/blue-button-normal.webp",
+      "name": "blue_button_normal",
+      "source": "sharedassets0.assets/Texture2D:702",
+      "size": [
+        20,
+        25
+      ]
+    },
+    "ff-closebutton-active": {
+      "url": "assets/ui-original/ff-closebutton-active.webp",
+      "name": "ff-closebutton-active",
+      "source": "sharedassets0.assets/Texture2D:704",
+      "size": [
+        28,
+        28
+      ]
+    },
+    "epraceitembar": {
+      "url": "assets/ui-original/epraceitembar.webp",
+      "name": "EPRaceItemBar",
+      "source": "sharedassets0.assets/Texture2D:708",
+      "size": [
+        367,
+        76
+      ]
+    },
+    "nanotab-722": {
+      "url": "assets/ui-original/nanotab-722.webp",
+      "name": "nanotab",
+      "source": "sharedassets0.assets/Texture2D:722",
+      "size": [
+        129,
+        20
+      ]
+    },
+    "ff-button-active": {
+      "url": "assets/ui-original/ff-button-active.webp",
+      "name": "ff-button-active",
+      "source": "sharedassets0.assets/Texture2D:724",
+      "size": [
+        13,
+        31
+      ]
+    },
+    "fm-bar": {
+      "url": "assets/ui-original/fm-bar.webp",
+      "name": "FM_BAR",
+      "source": "sharedassets0.assets/Texture2D:728",
+      "size": [
+        186,
+        4
+      ]
+    },
+    "map-icon-24": {
+      "url": "assets/ui-original/map-icon-24.webp",
+      "name": "map_icon_24",
+      "source": "sharedassets0.assets/Texture2D:738",
+      "size": [
+        16,
+        16
+      ]
+    },
+    "green-button-normal": {
+      "url": "assets/ui-original/green-button-normal.webp",
+      "name": "green_button_normal",
+      "source": "sharedassets0.assets/Texture2D:740",
+      "size": [
+        20,
+        25
+      ]
+    },
+    "us-continue": {
+      "url": "assets/ui-original/us-continue.webp",
+      "name": "us_continue",
+      "source": "sharedassets0.assets/Texture2D:748",
+      "size": [
+        288,
+        85
+      ]
+    },
+    "whitebarlinefade": {
+      "url": "assets/ui-original/whitebarlinefade.webp",
+      "name": "WhiteBarLineFade",
+      "source": "sharedassets0.assets/Texture2D:751",
+      "size": [
+        256,
+        32
+      ]
+    },
+    "exp-bar": {
+      "url": "assets/ui-original/exp-bar.webp",
+      "name": "exp_bar",
+      "source": "sharedassets0.assets/Texture2D:755",
+      "size": [
+        8,
+        3
+      ]
+    }
+  },
+  "sourceMainBundle": "https://cdn.dexlabs.systems/ff/big/beta-20111013/main.unity3d",
+  "fonts": [
+    {
+      "name": "FusionFall Jefferies Bitmap",
+      "url": "assets/ui-original/jefferies-original.ttf",
+      "source": "Original JEFFE___40 bitmap font glyphs from sharedassets0.assets/Font:1056",
+      "conversion": "Thresholded original glyph masks into vector pixel contours; ASCII and punctuation; original bitmap design, not original outline TTF."
+    }
+  ],
+  "nanoIcons": {
+    "nanoicon-00": {
+      "url": "assets/ui-original/nanoicon-00.webp",
+      "source": "icons/nanoicon_00.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoicon-01": {
+      "url": "assets/ui-original/nanoicon-01.webp",
+      "source": "icons/nanoicon_01.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoicon-02": {
+      "url": "assets/ui-original/nanoicon-02.webp",
+      "source": "icons/nanoicon_02.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoicon-03": {
+      "url": "assets/ui-original/nanoicon-03.webp",
+      "source": "icons/nanoicon_03.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoicon-04": {
+      "url": "assets/ui-original/nanoicon-04.webp",
+      "source": "icons/nanoicon_04.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoicon-05": {
+      "url": "assets/ui-original/nanoicon-05.webp",
+      "source": "icons/nanoicon_05.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoicon-06": {
+      "url": "assets/ui-original/nanoicon-06.webp",
+      "source": "icons/nanoicon_06.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoicon-07": {
+      "url": "assets/ui-original/nanoicon-07.webp",
+      "source": "icons/nanoicon_07.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoicon-08": {
+      "url": "assets/ui-original/nanoicon-08.webp",
+      "source": "icons/nanoicon_08.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoicon-09": {
+      "url": "assets/ui-original/nanoicon-09.webp",
+      "source": "icons/nanoicon_09.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoicon-10": {
+      "url": "assets/ui-original/nanoicon-10.webp",
+      "source": "icons/nanoicon_10.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoicon-11": {
+      "url": "assets/ui-original/nanoicon-11.webp",
+      "source": "icons/nanoicon_11.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoicon-12": {
+      "url": "assets/ui-original/nanoicon-12.webp",
+      "source": "icons/nanoicon_12.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoicon-13": {
+      "url": "assets/ui-original/nanoicon-13.webp",
+      "source": "icons/nanoicon_13.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoicon-14": {
+      "url": "assets/ui-original/nanoicon-14.webp",
+      "source": "icons/nanoicon_14.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoicon-15": {
+      "url": "assets/ui-original/nanoicon-15.webp",
+      "source": "icons/nanoicon_15.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoicon-16": {
+      "url": "assets/ui-original/nanoicon-16.webp",
+      "source": "icons/nanoicon_16.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoicon-17": {
+      "url": "assets/ui-original/nanoicon-17.webp",
+      "source": "icons/nanoicon_17.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoicon-18": {
+      "url": "assets/ui-original/nanoicon-18.webp",
+      "source": "icons/nanoicon_18.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoicon-19": {
+      "url": "assets/ui-original/nanoicon-19.webp",
+      "source": "icons/nanoicon_19.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoicon-20": {
+      "url": "assets/ui-original/nanoicon-20.webp",
+      "source": "icons/nanoicon_20.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoicon-21": {
+      "url": "assets/ui-original/nanoicon-21.webp",
+      "source": "icons/nanoicon_21.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoicon-22": {
+      "url": "assets/ui-original/nanoicon-22.webp",
+      "source": "icons/nanoicon_22.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoicon-23": {
+      "url": "assets/ui-original/nanoicon-23.webp",
+      "source": "icons/nanoicon_23.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoicon-24": {
+      "url": "assets/ui-original/nanoicon-24.webp",
+      "source": "icons/nanoicon_24.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoicon-25": {
+      "url": "assets/ui-original/nanoicon-25.webp",
+      "source": "icons/nanoicon_25.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoicon-26": {
+      "url": "assets/ui-original/nanoicon-26.webp",
+      "source": "icons/nanoicon_26.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoicon-27": {
+      "url": "assets/ui-original/nanoicon-27.webp",
+      "source": "icons/nanoicon_27.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoicon-28": {
+      "url": "assets/ui-original/nanoicon-28.webp",
+      "source": "icons/nanoicon_28.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoicon-29": {
+      "url": "assets/ui-original/nanoicon-29.webp",
+      "source": "icons/nanoicon_29.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoicon-30": {
+      "url": "assets/ui-original/nanoicon-30.webp",
+      "source": "icons/nanoicon_30.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoicon-31": {
+      "url": "assets/ui-original/nanoicon-31.webp",
+      "source": "icons/nanoicon_31.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoicon-32": {
+      "url": "assets/ui-original/nanoicon-32.webp",
+      "source": "icons/nanoicon_32.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoicon-33": {
+      "url": "assets/ui-original/nanoicon-33.webp",
+      "source": "icons/nanoicon_33.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoicon-34": {
+      "url": "assets/ui-original/nanoicon-34.webp",
+      "source": "icons/nanoicon_34.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoicon-35": {
+      "url": "assets/ui-original/nanoicon-35.webp",
+      "source": "icons/nanoicon_35.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoicon-36": {
+      "url": "assets/ui-original/nanoicon-36.webp",
+      "source": "icons/nanoicon_36.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoicon-37": {
+      "url": "assets/ui-original/nanoicon-37.webp",
+      "source": "icons/nanoicon_37.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoicon-38": {
+      "url": "assets/ui-original/nanoicon-38.webp",
+      "source": "icons/nanoicon_38.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoicon-39": {
+      "url": "assets/ui-original/nanoicon-39.webp",
+      "source": "icons/nanoicon_39.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoready-00": {
+      "url": "assets/ui-original/nanoready-00.webp",
+      "source": "icons/nanoready_00.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoready-01": {
+      "url": "assets/ui-original/nanoready-01.webp",
+      "source": "icons/nanoready_01.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoready-02": {
+      "url": "assets/ui-original/nanoready-02.webp",
+      "source": "icons/nanoready_02.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoready-03": {
+      "url": "assets/ui-original/nanoready-03.webp",
+      "source": "icons/nanoready_03.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoready-04": {
+      "url": "assets/ui-original/nanoready-04.webp",
+      "source": "icons/nanoready_04.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoready-05": {
+      "url": "assets/ui-original/nanoready-05.webp",
+      "source": "icons/nanoready_05.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoready-06": {
+      "url": "assets/ui-original/nanoready-06.webp",
+      "source": "icons/nanoready_06.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoready-07": {
+      "url": "assets/ui-original/nanoready-07.webp",
+      "source": "icons/nanoready_07.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoready-08": {
+      "url": "assets/ui-original/nanoready-08.webp",
+      "source": "icons/nanoready_08.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoready-09": {
+      "url": "assets/ui-original/nanoready-09.webp",
+      "source": "icons/nanoready_09.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoready-10": {
+      "url": "assets/ui-original/nanoready-10.webp",
+      "source": "icons/nanoready_10.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoready-11": {
+      "url": "assets/ui-original/nanoready-11.webp",
+      "source": "icons/nanoready_11.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoready-12": {
+      "url": "assets/ui-original/nanoready-12.webp",
+      "source": "icons/nanoready_12.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoready-13": {
+      "url": "assets/ui-original/nanoready-13.webp",
+      "source": "icons/nanoready_13.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoready-14": {
+      "url": "assets/ui-original/nanoready-14.webp",
+      "source": "icons/nanoready_14.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoready-15": {
+      "url": "assets/ui-original/nanoready-15.webp",
+      "source": "icons/nanoready_15.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoready-16": {
+      "url": "assets/ui-original/nanoready-16.webp",
+      "source": "icons/nanoready_16.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoready-17": {
+      "url": "assets/ui-original/nanoready-17.webp",
+      "source": "icons/nanoready_17.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoready-18": {
+      "url": "assets/ui-original/nanoready-18.webp",
+      "source": "icons/nanoready_18.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoready-19": {
+      "url": "assets/ui-original/nanoready-19.webp",
+      "source": "icons/nanoready_19.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoready-20": {
+      "url": "assets/ui-original/nanoready-20.webp",
+      "source": "icons/nanoready_20.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoready-21": {
+      "url": "assets/ui-original/nanoready-21.webp",
+      "source": "icons/nanoready_21.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoready-22": {
+      "url": "assets/ui-original/nanoready-22.webp",
+      "source": "icons/nanoready_22.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoready-23": {
+      "url": "assets/ui-original/nanoready-23.webp",
+      "source": "icons/nanoready_23.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoready-24": {
+      "url": "assets/ui-original/nanoready-24.webp",
+      "source": "icons/nanoready_24.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoready-25": {
+      "url": "assets/ui-original/nanoready-25.webp",
+      "source": "icons/nanoready_25.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoready-26": {
+      "url": "assets/ui-original/nanoready-26.webp",
+      "source": "icons/nanoready_26.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoready-27": {
+      "url": "assets/ui-original/nanoready-27.webp",
+      "source": "icons/nanoready_27.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoready-28": {
+      "url": "assets/ui-original/nanoready-28.webp",
+      "source": "icons/nanoready_28.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoready-29": {
+      "url": "assets/ui-original/nanoready-29.webp",
+      "source": "icons/nanoready_29.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoready-30": {
+      "url": "assets/ui-original/nanoready-30.webp",
+      "source": "icons/nanoready_30.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoready-31": {
+      "url": "assets/ui-original/nanoready-31.webp",
+      "source": "icons/nanoready_31.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoready-32": {
+      "url": "assets/ui-original/nanoready-32.webp",
+      "source": "icons/nanoready_32.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoready-33": {
+      "url": "assets/ui-original/nanoready-33.webp",
+      "source": "icons/nanoready_33.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoready-34": {
+      "url": "assets/ui-original/nanoready-34.webp",
+      "source": "icons/nanoready_34.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoready-35": {
+      "url": "assets/ui-original/nanoready-35.webp",
+      "source": "icons/nanoready_35.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoready-36": {
+      "url": "assets/ui-original/nanoready-36.webp",
+      "source": "icons/nanoready_36.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoready-37": {
+      "url": "assets/ui-original/nanoready-37.webp",
+      "source": "icons/nanoready_37.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoready-38": {
+      "url": "assets/ui-original/nanoready-38.webp",
+      "source": "icons/nanoready_38.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "nanoready-39": {
+      "url": "assets/ui-original/nanoready-39.webp",
+      "source": "icons/nanoready_39.png",
+      "size": [
+        64,
+        64
+      ]
+    }
+  }
+}

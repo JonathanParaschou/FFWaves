@@ -1,0 +1,14 @@
+import {groundHeight} from '../dist/layout.js';
+import {ENEMY_TYPES} from '../dist/simulation.js';
+const point=(origin,dir,t)=>({x:origin.x+dir.x*t,y:origin.y+dir.y*t,z:origin.z+dir.z*t});
+function intersectBox(origin,dir,b,range){let near=0,far=range;for(const axis of ['x','y','z']){const lo=b['min'+axis.toUpperCase()],hi=b['max'+axis.toUpperCase()],d=dir[axis];if(Math.abs(d)<1e-9){if(origin[axis]<lo||origin[axis]>hi)return null;continue}let a=(lo-origin[axis])/d,c=(hi-origin[axis])/d;if(a>c)[a,c]=[c,a];near=Math.max(near,a);far=Math.min(far,c);if(near>far)return null}return near>=0&&near<=range?near:null}
+export function worldRay(layout,origin,dir,range){let nearest=range;for(const o of layout.obstacles){const hit=intersectBox(origin,dir,{...o,minY:o.base,maxY:o.base+o.height},nearest);if(hit!==null)nearest=hit}for(let t=.15;t<nearest;t+=.25){const p=point(origin,dir,t);if(layout.blockedAtHeight(p.x,p.y,p.z,.01)){nearest=t;break}}return nearest}
+export function fireAuthoritative(sim,input,playerId,random=Math.random){
+ const shot=sim.fire();if(!shot)return null;const p=sim.player,origin={x:p.x,y:groundHeight(p.x,p.z)+p.y+p.eyeHeight,z:p.z},cp=Math.cos(input.pitch||0),direction={x:-Math.sin(input.yaw||0)*cp,y:Math.sin(input.pitch||0),z:-Math.cos(input.yaw||0)*cp},ends=[];let splash=null;
+ for(let i=0;i<shot.pellets;i++){const spread=shot.spread*(input.ads?.28:1),dir={x:direction.x+(random()-.5)*spread,y:direction.y+(random()-.5)*spread,z:direction.z+(random()-.5)*spread},length=Math.hypot(dir.x,dir.y,dir.z);dir.x/=length;dir.y/=length;dir.z/=length;let nearest=worldRay(sim.layout,origin,dir,shot.range),enemy=null;
+  for(const e of sim.enemies){if(e.dead)continue;const cfg=ENEMY_TYPES[e.type],base=groundHeight(e.x,e.z)+(cfg.hover||0),radius=e.radius*.9,hit=intersectBox(origin,dir,{minX:e.x-radius,maxX:e.x+radius,minZ:e.z-radius,maxZ:e.z+radius,minY:base+.04,maxY:base+e.height},nearest);if(hit!==null&&hit<nearest){nearest=hit;enemy=e}}
+  const end=point(origin,dir,nearest);if(i<3)ends.push({...end,impact:!!enemy||nearest<shot.range});if(enemy){const critical=end.y-groundHeight(enemy.x,enemy.z)>(ENEMY_TYPES[enemy.type].hover||0)+enemy.height*.66,falloff=shot.pellets>1?Math.max(.25,1-nearest/shot.range*.7):1;sim.damageEnemy(enemy,shot.damage*falloff,critical)}if(shot.splash)splash=end;
+ }
+ if(splash)for(const e of sim.enemies){if(e.dead)continue;const d=Math.hypot(e.x-splash.x,e.z-splash.z,groundHeight(e.x,e.z)+e.height*.4-splash.y);if(d<shot.splash&&sim.layout.clearSight({x:splash.x,z:splash.z,y:Math.max(0,splash.y-groundHeight(splash.x,splash.z))},e,.05))sim.damageEnemy(e,shot.damage*(1-d/shot.splash*.6),false,'splash')}
+ return {playerId,weapon:p.weapons[p.weaponIndex].id,color:shot.color,origin,ends};
+}

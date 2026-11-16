@@ -1,0 +1,16 @@
+node_modules/
+.tools/
+.venv/
+tools/vendor/
+tools/raw/
+docs/*fast.json
+docs/*reference.json
+*.tar.gz
+*.log
+qa/
+
+__pycache__/
+*.py[cod]
+
+.vercel/
+*.zip

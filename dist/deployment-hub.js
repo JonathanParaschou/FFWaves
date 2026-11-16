@@ -1,0 +1,14 @@
+import {WEAPONS,MELEE_WEAPONS} from './weapons.js';
+import {HEROES,loadOperative} from './avatars.js';
+import {STARTER_GUNS,saveFieldKit} from './field-kit.js';
+const $=id=>document.getElementById(id);
+export function initDeploymentHub(sim,heroMenu){
+ let tab='operative';
+ const buttons=[...document.querySelectorAll('[data-hub-tab]')];
+ function showTab(id){tab=id;for(const b of buttons){const selected=b.dataset.hubTab===id;b.classList.toggle('selected',selected);b.setAttribute('aria-selected',String(selected));b.tabIndex=selected?0:-1;$('pane-'+b.dataset.hubTab).classList.toggle('hidden',!selected)}if(id!=='nanos')heroMenu.setWeapon(sim.fieldKit.gun)}
+ for(const b of buttons){b.onclick=()=>showTab(b.dataset.hubTab);b.onkeydown=e=>{const delta={ArrowLeft:-1,ArrowRight:1}[e.code];if(!delta)return;e.preventDefault();const next=buttons[(buttons.indexOf(b)+delta+buttons.length)%buttons.length];showTab(next.dataset.hubTab);next.focus()}}
+ function choose(key,id){if(!sim.setFieldKit({...sim.fieldKit,[key]:id}))return;saveFieldKit(sim.fieldKit);heroMenu.setWeapon(id);refresh();$(key==='gun'?'starter-options':'melee-options').querySelector('.selected')?.focus()}
+ function card(cfg,id,key){const b=document.createElement('button');b.className='kit-card'+(sim.fieldKit[key]===id?' selected':'');b.setAttribute('aria-pressed',String(sim.fieldKit[key]===id));const image=document.createElement('img');image.src=cfg.portrait||`assets/ui/weapon-${id}.webp`;image.alt='';const name=document.createElement('strong');name.textContent=cfg.name;const detail=document.createElement('small');detail.textContent=key==='gun'?`${cfg.mag} rounds / ${cfg.type}`:`${cfg.damage} damage / ${cfg.reach}m / ${cfg.cooldown}s recovery`;const state=document.createElement('em');state.textContent=sim.fieldKit[key]===id?'EQUIPPED':'SELECT';b.append(image,name,detail,state);b.onclick=()=>choose(key,id);return b}
+ function refresh(){const starter=$('starter-options'),melee=$('melee-options');starter.replaceChildren(...STARTER_GUNS.map(id=>card(WEAPONS[id],id,'gun')));melee.replaceChildren(...Object.entries(MELEE_WEAPONS).filter(([,w])=>w.asset).map(([id,w])=>card(w,id,'melee')));const hero=HEROES.find(h=>h.id===loadOperative().hero)||HEROES[0],summary=$('hub-summary'),portrait=document.createElement('img'),text=document.createElement('div'),title=document.createElement('strong'),detail=document.createElement('small'),nanos=document.createElement('div');portrait.src=hero.portrait;portrait.alt=hero.name;title.textContent=hero.name;detail.textContent=`${WEAPONS[sim.fieldKit.gun].name} / ${MELEE_WEAPONS[sim.fieldKit.melee].name}`;text.append(title,detail);nanos.className='hub-summary-nanos';for(const n of sim.squad){const img=document.createElement('img');img.src=n.originalIcon||n.portrait;img.alt=n.name;img.title=n.name+' / '+n.power;nanos.append(img)}summary.replaceChildren(portrait,text,nanos)}
+ showTab(tab);refresh();return {refresh,showTab};
+}

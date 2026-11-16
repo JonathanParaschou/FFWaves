@@ -1,0 +1,2260 @@
+{
+  "format": "fusionfall-biome-kit-v1",
+  "source": "Read-only local original FusionFall Unity Web Player cache",
+  "sources": [
+    "https://github.com/OpenFusionProject/tabledata/blob/master/xdt.json",
+    "https://github.com/dongresource/UnityPackFF",
+    "https://github.com/OpenFusionProject/tabledata/blob/master/mobs.json"
+  ],
+  "placementNote": "These are source-authentic art assets arranged into new survival maps. Map prop paths prove their original region. Enemy habitat associations below are authored thematic placements inferred from original names/models, not verified original spawn locations.",
+  "biomes": {
+    "camp-kidney": {
+      "name": "Camp Kidney",
+      "evidence": "Original assets under map/campkidney; neighboring-wildland pieces from map/leakeylake, map/twistedforest and map/darktree are reused for the authored creek/forest survival layout.",
+      "enemies": [
+        "enemy-spidertoad",
+        "enemy-skeeter",
+        "enemy-growth",
+        "enemy-stalker",
+        "enemy-packarachnid"
+      ],
+      "props": [
+        "forest-cabin",
+        "forest-cabin-small",
+        "forest-tent",
+        "forest-campfire",
+        "forest-log-bench",
+        "forest-picnic-table",
+        "forest-sign",
+        "forest-bridge",
+        "forest-tree-creek",
+        "forest-tree-twisted",
+        "forest-plant",
+        "forest-watchtower"
+      ]
+    },
+    "salvage-yard": {
+      "name": "Salvage Yard",
+      "evidence": "Original machinery, scrap, bridges and structures under map/salvageyard; extra burned trees and canyon rock are supporting authored wasteland set dressing.",
+      "enemies": [
+        "enemy-dreadhead",
+        "enemy-shocktangler",
+        "enemy-streetgrinder",
+        "enemy-unisickle",
+        "enemy-scraptyrant",
+        "enemy-crashloader",
+        "enemy-junkasaurus"
+      ],
+      "props": [
+        "waste-forklift",
+        "waste-press",
+        "waste-crane",
+        "waste-scrapcar",
+        "waste-metal-tree",
+        "waste-tire-stack",
+        "waste-drum",
+        "waste-bridge",
+        "waste-cabinet",
+        "waste-tv",
+        "waste-burnt-tree",
+        "waste-rock"
+      ]
+    }
+  },
+  "enemies": {
+    "enemy-spidertoad": {
+      "name": "Spider Toad",
+      "npcId": 175,
+      "source": "mob/mob_swampycannibalfrog.kfm",
+      "bodyTexture": "mob_swampycannibalfrog",
+      "secondaryTexture": "spawn11_green",
+      "biome": "camp-kidney",
+      "suggestedHeight": 2.0,
+      "habitat": "swamp/creek creature",
+      "associationEvidence": {
+        "kind": "authored-theme-inference",
+        "source": "https://github.com/OpenFusionProject/tabledata/blob/master/xdt.json",
+        "details": "Original NPC 175 is named Spider Toad; its original model is mob_swampycannibalfrog. The survival biome assignment is inferred from that art/name and is not a claim about original spawn coordinates."
+      },
+      "animation": "assets/animations/enemy-spidertoad.json",
+      "originalRegionNative": false,
+      "placementStatus": "authored themed guest; original region not asserted",
+      "portrait": "assets/ui/enemy-spidertoad.webp"
+    },
+    "enemy-skeeter": {
+      "name": "Wild Skeeter",
+      "npcId": 126,
+      "source": "mob/mob_greenhellmosquito.kfm",
+      "bodyTexture": "mob_greenhellmosquito",
+      "secondaryTexture": "spawn11_green",
+      "biome": "camp-kidney",
+      "suggestedHeight": 1.6,
+      "habitat": "flying woodland insect",
+      "associationEvidence": {
+        "kind": "authored-theme-inference",
+        "source": "https://github.com/OpenFusionProject/tabledata/blob/master/xdt.json",
+        "details": "Original NPC 126 is named Wild Skeeter; its original model is mob_greenhellmosquito. The survival biome assignment is inferred from that art/name and is not a claim about original spawn coordinates."
+      },
+      "animation": "assets/animations/enemy-skeeter.json",
+      "originalRegionNative": false,
+      "placementStatus": "authored themed guest; original region not asserted",
+      "portrait": "assets/ui/enemy-skeeter.webp"
+    },
+    "enemy-growth": {
+      "name": "Ghoulish Growth",
+      "npcId": 160,
+      "source": "mob/mob_crazyguardianent.kfm",
+      "bodyTexture": "mob_crazyguardianent",
+      "secondaryTexture": "null",
+      "biome": "camp-kidney",
+      "suggestedHeight": 3.9,
+      "habitat": "hostile living tree",
+      "associationEvidence": {
+        "kind": "authored-theme-inference",
+        "source": "https://github.com/OpenFusionProject/tabledata/blob/master/xdt.json",
+        "details": "Original NPC 160 is named Ghoulish Growth; its original model is mob_crazyguardianent. The survival biome assignment is inferred from that art/name and is not a claim about original spawn coordinates."
+      },
+      "animation": "assets/animations/enemy-growth.json",
+      "originalRegionNative": false,
+      "placementStatus": "authored themed guest; original region not asserted",
+      "portrait": "assets/ui/enemy-growth.webp"
+    },
+    "enemy-stalker": {
+      "name": "Canyon Stalker",
+      "npcId": 206,
+      "source": "mob/mob_beastman.kfm",
+      "bodyTexture": "mob_beastman",
+      "secondaryTexture": "mob_beastman",
+      "biome": "camp-kidney",
+      "suggestedHeight": 2.0,
+      "habitat": "wildland humanoid predator",
+      "associationEvidence": {
+        "kind": "authored-theme-inference",
+        "source": "https://github.com/OpenFusionProject/tabledata/blob/master/xdt.json",
+        "details": "Original NPC 206 is named Canyon Stalker; its original model is mob_beastman. The survival biome assignment is inferred from that art/name and is not a claim about original spawn coordinates."
+      },
+      "animation": "assets/animations/enemy-stalker.json",
+      "originalRegionNative": false,
+      "placementStatus": "authored themed guest; original region not asserted",
+      "portrait": "assets/ui/enemy-stalker.webp"
+    },
+    "enemy-dreadhead": {
+      "name": "Dread Head",
+      "npcId": 74,
+      "source": "mob/mob_tirefinger.kfm",
+      "bodyTexture": "mob_tirefinger",
+      "secondaryTexture": "spawn11_green",
+      "biome": "salvage-yard",
+      "suggestedHeight": 2.3,
+      "habitat": "salvaged-tire creature",
+      "associationEvidence": {
+        "kind": "authored-theme-inference",
+        "source": "https://github.com/OpenFusionProject/tabledata/blob/master/xdt.json",
+        "details": "Original NPC 74 is named Dread Head; its original model is mob_tirefinger. The survival biome assignment is inferred from that art/name and is not a claim about original spawn coordinates."
+      },
+      "animation": "assets/animations/enemy-dreadhead.json",
+      "originalRegionNative": false,
+      "placementStatus": "authored themed guest; original region not asserted",
+      "portrait": "assets/ui/enemy-dreadhead.webp"
+    },
+    "enemy-shocktangler": {
+      "name": "Shocktangler",
+      "npcId": 87,
+      "source": "mob/mob_cable.kfm",
+      "bodyTexture": "mob_cable",
+      "secondaryTexture": "spawn11_green",
+      "biome": "salvage-yard",
+      "suggestedHeight": 2.5,
+      "habitat": "industrial cable creature",
+      "associationEvidence": {
+        "kind": "authored-theme-inference",
+        "source": "https://github.com/OpenFusionProject/tabledata/blob/master/xdt.json",
+        "details": "Original NPC 87 is named Shocktangler; its original model is mob_cable. The survival biome assignment is inferred from that art/name and is not a claim about original spawn coordinates."
+      },
+      "animation": "assets/animations/enemy-shocktangler.json",
+      "originalRegionNative": false,
+      "placementStatus": "authored themed guest; original region not asserted",
+      "portrait": "assets/ui/enemy-shocktangler.webp"
+    },
+    "enemy-streetgrinder": {
+      "name": "Streetgrinder",
+      "npcId": 141,
+      "source": "mob/mob_cleaner.kfm",
+      "bodyTexture": "mob_cleaner",
+      "secondaryTexture": "spawn11_green",
+      "biome": "salvage-yard",
+      "suggestedHeight": 2.8,
+      "habitat": "hostile industrial sweeper",
+      "associationEvidence": {
+        "kind": "authored-theme-inference",
+        "source": "https://github.com/OpenFusionProject/tabledata/blob/master/xdt.json",
+        "details": "Original NPC 141 is named Streetgrinder; its original model is mob_cleaner. The survival biome assignment is inferred from that art/name and is not a claim about original spawn coordinates."
+      },
+      "animation": "assets/animations/enemy-streetgrinder.json",
+      "originalRegionNative": false,
+      "placementStatus": "authored themed guest; original region not asserted",
+      "portrait": "assets/ui/enemy-streetgrinder.webp"
+    },
+    "enemy-unisickle": {
+      "name": "Unisickle",
+      "npcId": 147,
+      "source": "mob/mob_sawbike.kfm",
+      "bodyTexture": "mob_sawbike",
+      "secondaryTexture": "null",
+      "biome": "salvage-yard",
+      "suggestedHeight": 2.0,
+      "habitat": "motorized saw-wheel creature",
+      "associationEvidence": {
+        "kind": "authored-theme-inference",
+        "source": "https://github.com/OpenFusionProject/tabledata/blob/master/xdt.json",
+        "details": "Original NPC 147 is named Unisickle; its original model is mob_sawbike. The survival biome assignment is inferred from that art/name and is not a claim about original spawn coordinates."
+      },
+      "animation": "assets/animations/enemy-unisickle.json",
+      "originalRegionNative": false,
+      "placementStatus": "authored themed guest; original region not asserted",
+      "portrait": "assets/ui/enemy-unisickle.webp"
+    },
+    "enemy-packarachnid": {
+      "name": "Pack Arachnid",
+      "npcId": 326,
+      "source": "mob/mob_redwolfheadspider.kfm",
+      "bodyTexture": "mob_redwolfheadspider",
+      "secondaryTexture": "null",
+      "biome": "camp-kidney",
+      "suggestedHeight": 1.7,
+      "habitat": "source-verified Camp Kidney arachnid",
+      "associationEvidence": {
+        "kind": "primary-mission-and-spawn-data",
+        "npcId": 326,
+        "missionStringIndices": [
+          11803
+        ],
+        "location": "Camp Kidney",
+        "method": "Original mission text explicitly names Pack Arachnids in Camp Kidney.",
+        "source": "https://github.com/OpenFusionProject/tabledata/blob/master/xdt.json",
+        "spawnSource": "https://github.com/OpenFusionProject/tabledata/blob/master/mobs.json"
+      },
+      "animation": "assets/animations/enemy-packarachnid.json",
+      "originalRegionNative": true,
+      "nativeEvidence": {
+        "npcId": 326,
+        "missionStringIndices": [
+          11803
+        ],
+        "location": "Camp Kidney",
+        "method": "Original mission text explicitly names Pack Arachnids in Camp Kidney.",
+        "source": "https://github.com/OpenFusionProject/tabledata/blob/master/xdt.json",
+        "spawnSource": "https://github.com/OpenFusionProject/tabledata/blob/master/mobs.json"
+      },
+      "portrait": "assets/ui/enemy-packarachnid.webp"
+    },
+    "enemy-scraptyrant": {
+      "name": "Scrap Tyrant",
+      "npcId": 309,
+      "source": "mob/mob_junkcar.kfm",
+      "bodyTexture": "mob_junkcar",
+      "secondaryTexture": "null",
+      "biome": "salvage-yard",
+      "suggestedHeight": 2.7,
+      "habitat": "source-verified salvage creature",
+      "associationEvidence": {
+        "kind": "primary-mission-and-spawn-data",
+        "npcId": 309,
+        "missionStringIndices": [
+          4715,
+          4716
+        ],
+        "location": "Salvage Yard / Goat's Junk Yard",
+        "method": "Original mission text explicitly links Scrap Tyrants to the salvage yard.",
+        "source": "https://github.com/OpenFusionProject/tabledata/blob/master/xdt.json",
+        "spawnSource": "https://github.com/OpenFusionProject/tabledata/blob/master/mobs.json"
+      },
+      "animation": "assets/animations/enemy-scraptyrant.json",
+      "originalRegionNative": true,
+      "nativeEvidence": {
+        "npcId": 309,
+        "missionStringIndices": [
+          4715,
+          4716
+        ],
+        "location": "Salvage Yard / Goat's Junk Yard",
+        "method": "Original mission text explicitly links Scrap Tyrants to the salvage yard.",
+        "source": "https://github.com/OpenFusionProject/tabledata/blob/master/xdt.json",
+        "spawnSource": "https://github.com/OpenFusionProject/tabledata/blob/master/mobs.json"
+      },
+      "portrait": "assets/ui/enemy-scraptyrant.webp"
+    },
+    "enemy-crashloader": {
+      "name": "Crash Loader",
+      "npcId": 107,
+      "source": "mob/mob_crasher.kfm",
+      "bodyTexture": "mob_crasher",
+      "secondaryTexture": "null",
+      "biome": "salvage-yard",
+      "suggestedHeight": 2.7,
+      "habitat": "source-verified salvage machinery creature",
+      "associationEvidence": {
+        "kind": "primary-mission-and-spawn-data",
+        "npcId": 107,
+        "missionStringIndices": [
+          348,
+          349,
+          350
+        ],
+        "location": "Salvage Yard / Goat's Junk Yard",
+        "method": "Linked original mission strings describe defending the salvage yard from Crash Loaders and protecting Goat's Junk Yard.",
+        "source": "https://github.com/OpenFusionProject/tabledata/blob/master/xdt.json",
+        "spawnSource": "https://github.com/OpenFusionProject/tabledata/blob/master/mobs.json"
+      },
+      "animation": "assets/animations/enemy-crashloader.json",
+      "originalRegionNative": true,
+      "nativeEvidence": {
+        "npcId": 107,
+        "missionStringIndices": [
+          348,
+          349,
+          350
+        ],
+        "location": "Salvage Yard / Goat's Junk Yard",
+        "method": "Linked original mission strings describe defending the salvage yard from Crash Loaders and protecting Goat's Junk Yard.",
+        "source": "https://github.com/OpenFusionProject/tabledata/blob/master/xdt.json",
+        "spawnSource": "https://github.com/OpenFusionProject/tabledata/blob/master/mobs.json"
+      },
+      "portrait": "assets/ui/enemy-crashloader.webp"
+    },
+    "enemy-junkasaurus": {
+      "name": "Junkasaurus Wrecks",
+      "npcId": 114,
+      "source": "mob/mob_junkdinosaur.kfm",
+      "bodyTexture": "mob_junkdinosaur",
+      "secondaryTexture": "null",
+      "biome": "salvage-yard",
+      "suggestedHeight": 3.2,
+      "habitat": "source-spawn-verified junkyard dinosaur",
+      "associationEvidence": {
+        "kind": "primary-mission-and-spawn-data",
+        "npcId": 114,
+        "missionStringIndices": [
+          4309,
+          4311,
+          4312,
+          4317
+        ],
+        "location": "Goat's Junk Yard area",
+        "method": "Linked original mission strings identify defending Megas in the junk yard, Junkasaurus Wrecks patrolling outside it, and related enemies inside its infected zone. Main-world spawn rows and the map09_06 prefab provide supporting spatial evidence.",
+        "source": "https://github.com/OpenFusionProject/tabledata/blob/master/xdt.json",
+        "spawnSource": "https://github.com/OpenFusionProject/tabledata/blob/master/mobs.json"
+      },
+      "animation": "assets/animations/enemy-junkasaurus.json",
+      "originalRegionNative": true,
+      "nativeEvidence": {
+        "npcId": 114,
+        "missionStringIndices": [
+          4309,
+          4311,
+          4312,
+          4317
+        ],
+        "location": "Goat's Junk Yard area",
+        "method": "Linked original mission strings identify defending Megas in the junk yard, Junkasaurus Wrecks patrolling outside it, and related enemies inside its infected zone. Main-world spawn rows and the map09_06 prefab provide supporting spatial evidence.",
+        "source": "https://github.com/OpenFusionProject/tabledata/blob/master/xdt.json",
+        "spawnSource": "https://github.com/OpenFusionProject/tabledata/blob/master/mobs.json"
+      },
+      "portrait": "assets/ui/enemy-junkasaurus.webp"
+    }
+  },
+  "props": {
+    "forest-cabin": {
+      "name": "Camp Kidney cabin",
+      "biome": "camp-kidney",
+      "source": "map/campkidney/wd_bwck_house_01.nif",
+      "associationEvidence": {
+        "kind": "original-asset-region-path",
+        "regionFolder": "campkidney",
+        "details": "Original region is identified by the asset path. Reuse in this survival biome is authored."
+      }
+    },
+    "forest-cabin-small": {
+      "name": "Camp Kidney utility cabin",
+      "biome": "camp-kidney",
+      "source": "map/campkidney/wd_bwck_house_02.nif",
+      "associationEvidence": {
+        "kind": "original-asset-region-path",
+        "regionFolder": "campkidney",
+        "details": "Original region is identified by the asset path. Reuse in this survival biome is authored."
+      }
+    },
+    "forest-tent": {
+      "name": "Camp Kidney tent",
+      "biome": "camp-kidney",
+      "source": "map/campkidney/wd_bwck_tent_01.nif",
+      "associationEvidence": {
+        "kind": "original-asset-region-path",
+        "regionFolder": "campkidney",
+        "details": "Original region is identified by the asset path. Reuse in this survival biome is authored."
+      }
+    },
+    "forest-campfire": {
+      "name": "Camp Kidney fire ring",
+      "biome": "camp-kidney",
+      "source": "map/campkidney/wd_bwck_campfire_01.nif",
+      "associationEvidence": {
+        "kind": "original-asset-region-path",
+        "regionFolder": "campkidney",
+        "details": "Original region is identified by the asset path. Reuse in this survival biome is authored."
+      }
+    },
+    "forest-log-bench": {
+      "name": "Camp Kidney bench",
+      "biome": "camp-kidney",
+      "source": "map/campkidney/wd_bwck_bench_01.nif",
+      "associationEvidence": {
+        "kind": "original-asset-region-path",
+        "regionFolder": "campkidney",
+        "details": "Original region is identified by the asset path. Reuse in this survival biome is authored."
+      }
+    },
+    "forest-picnic-table": {
+      "name": "Camp Kidney picnic table",
+      "biome": "camp-kidney",
+      "source": "map/campkidney/wd_bwck_table_01.nif",
+      "associationEvidence": {
+        "kind": "original-asset-region-path",
+        "regionFolder": "campkidney",
+        "details": "Original region is identified by the asset path. Reuse in this survival biome is authored."
+      }
+    },
+    "forest-sign": {
+      "name": "Camp Kidney sign",
+      "biome": "camp-kidney",
+      "source": "map/campkidney/wd_bwck_sign_02.nif",
+      "associationEvidence": {
+        "kind": "original-asset-region-path",
+        "regionFolder": "campkidney",
+        "details": "Original region is identified by the asset path. Reuse in this survival biome is authored."
+      }
+    },
+    "forest-bridge": {
+      "name": "Leakey Lake wooden bridge",
+      "biome": "camp-kidney",
+      "source": "map/leakeylake/wd_bwll_bridge_01.nif",
+      "associationEvidence": {
+        "kind": "original-asset-region-path",
+        "regionFolder": "leakeylake",
+        "details": "Original region is identified by the asset path. Reuse in this survival biome is authored."
+      }
+    },
+    "forest-tree-creek": {
+      "name": "Leakey Lake tree",
+      "biome": "camp-kidney",
+      "source": "map/leakeylake/wd_bwll_ctree_01.nif",
+      "associationEvidence": {
+        "kind": "original-asset-region-path",
+        "regionFolder": "leakeylake",
+        "details": "Original region is identified by the asset path. Reuse in this survival biome is authored."
+      }
+    },
+    "forest-tree-twisted": {
+      "name": "Twisted Forest tree",
+      "biome": "camp-kidney",
+      "source": "map/twistedforest/wd_jutf_tree_01.nif",
+      "associationEvidence": {
+        "kind": "original-asset-region-path",
+        "regionFolder": "twistedforest",
+        "details": "Original region is identified by the asset path. Reuse in this survival biome is authored."
+      }
+    },
+    "forest-plant": {
+      "name": "Twisted Forest undergrowth",
+      "biome": "camp-kidney",
+      "source": "map/twistedforest/wd_jutf_plant 01.nif",
+      "associationEvidence": {
+        "kind": "original-asset-region-path",
+        "regionFolder": "twistedforest",
+        "details": "Original region is identified by the asset path. Reuse in this survival biome is authored."
+      }
+    },
+    "forest-watchtower": {
+      "name": "Dark Tree watchtower",
+      "biome": "camp-kidney",
+      "source": "map/darktree/wd_dldt_watchtower_01.nif",
+      "associationEvidence": {
+        "kind": "original-asset-region-path",
+        "regionFolder": "darktree",
+        "details": "Original region is identified by the asset path. Reuse in this survival biome is authored."
+      }
+    },
+    "waste-forklift": {
+      "name": "Salvage Yard forklift",
+      "biome": "salvage-yard",
+      "source": "map/salvageyard/sb_slsy_forklift.nif",
+      "associationEvidence": {
+        "kind": "original-asset-region-path",
+        "regionFolder": "salvageyard",
+        "details": "Original region is identified by the asset path. Reuse in this survival biome is authored."
+      }
+    },
+    "waste-press": {
+      "name": "Salvage Yard car press",
+      "biome": "salvage-yard",
+      "source": "map/salvageyard/sb_slsy_press_01.nif",
+      "associationEvidence": {
+        "kind": "original-asset-region-path",
+        "regionFolder": "salvageyard",
+        "details": "Original region is identified by the asset path. Reuse in this survival biome is authored."
+      }
+    },
+    "waste-crane": {
+      "name": "Salvage Yard rail crane",
+      "biome": "salvage-yard",
+      "source": "map/salvageyard/sb_slsy_railcrane01.nif",
+      "associationEvidence": {
+        "kind": "original-asset-region-path",
+        "regionFolder": "salvageyard",
+        "details": "Original region is identified by the asset path. Reuse in this survival biome is authored."
+      }
+    },
+    "waste-scrapcar": {
+      "name": "Salvage Yard scrapped car",
+      "biome": "salvage-yard",
+      "source": "map/salvageyard/sb_slsy_car_a_00.nif",
+      "associationEvidence": {
+        "kind": "original-asset-region-path",
+        "regionFolder": "salvageyard",
+        "details": "Original region is identified by the asset path. Reuse in this survival biome is authored."
+      }
+    },
+    "waste-metal-tree": {
+      "name": "Salvage Yard metal structure",
+      "biome": "salvage-yard",
+      "source": "map/salvageyard/sb_slsy_metaltree_a_00.nif",
+      "associationEvidence": {
+        "kind": "original-asset-region-path",
+        "regionFolder": "salvageyard",
+        "details": "Original region is identified by the asset path. Reuse in this survival biome is authored."
+      }
+    },
+    "waste-tire-stack": {
+      "name": "Salvage Yard tire stack",
+      "biome": "salvage-yard",
+      "source": "map/salvageyard/sb_slsy_etc_tier_00.nif",
+      "associationEvidence": {
+        "kind": "original-asset-region-path",
+        "regionFolder": "salvageyard",
+        "details": "Original region is identified by the asset path. Reuse in this survival biome is authored."
+      }
+    },
+    "waste-drum": {
+      "name": "Salvage Yard drum",
+      "biome": "salvage-yard",
+      "source": "map/salvageyard/sb_slsy_etc_drum_a_00.nif",
+      "associationEvidence": {
+        "kind": "original-asset-region-path",
+        "regionFolder": "salvageyard",
+        "details": "Original region is identified by the asset path. Reuse in this survival biome is authored."
+      }
+    },
+    "waste-bridge": {
+      "name": "Salvage Yard metal bridge",
+      "biome": "salvage-yard",
+      "source": "map/salvageyard/sb_slsy_bridge_a_00.nif",
+      "associationEvidence": {
+        "kind": "original-asset-region-path",
+        "regionFolder": "salvageyard",
+        "details": "Original region is identified by the asset path. Reuse in this survival biome is authored."
+      }
+    },
+    "waste-cabinet": {
+      "name": "Salvage Yard cabinet",
+      "biome": "salvage-yard",
+      "source": "map/salvageyard/sb_slsy_etc_cabinet_00.nif",
+      "associationEvidence": {
+        "kind": "original-asset-region-path",
+        "regionFolder": "salvageyard",
+        "details": "Original region is identified by the asset path. Reuse in this survival biome is authored."
+      }
+    },
+    "waste-tv": {
+      "name": "Salvage Yard discarded television",
+      "biome": "salvage-yard",
+      "source": "map/salvageyard/sb_slsy_etc_tv_a_00.nif",
+      "associationEvidence": {
+        "kind": "original-asset-region-path",
+        "regionFolder": "salvageyard",
+        "details": "Original region is identified by the asset path. Reuse in this survival biome is authored."
+      }
+    },
+    "waste-burnt-tree": {
+      "name": "Darklands burnt trees",
+      "biome": "salvage-yard",
+      "source": "map/ep/ep_dlfw_burning_trees01.nif",
+      "associationEvidence": {
+        "kind": "original-asset-region-path",
+        "regionFolder": "ep",
+        "details": "Original region is identified by the asset path. Reuse in this survival biome is authored."
+      }
+    },
+    "waste-rock": {
+      "name": "Devils Canyon rock",
+      "biome": "salvage-yard",
+      "source": "map/devilscanyon/wd_wldc_stone_a_01.nif",
+      "associationEvidence": {
+        "kind": "original-asset-region-path",
+        "regionFolder": "devilscanyon",
+        "details": "Original region is identified by the asset path. Reuse in this survival biome is authored."
+      }
+    }
+  },
+  "assets": {
+    "enemy-spidertoad": {
+      "url": "assets/models/enemy-spidertoad.json",
+      "source": "mob/mob_swampycannibalfrog.kfm",
+      "bounds": {
+        "min": [
+          -3.03956,
+          0.0,
+          -2.24769
+        ],
+        "max": [
+          3.03956,
+          2.69066,
+          2.24769
+        ],
+        "size": [
+          6.07912,
+          2.69066,
+          4.49538
+        ]
+      },
+      "parts": 2,
+      "triangles": 4120,
+      "bytes": 220455
+    },
+    "enemy-skeeter": {
+      "url": "assets/models/enemy-skeeter.json",
+      "source": "mob/mob_greenhellmosquito.kfm",
+      "bounds": {
+        "min": [
+          -2.82959,
+          0.0,
+          -1.27585
+        ],
+        "max": [
+          2.82959,
+          2.22126,
+          1.27585
+        ],
+        "size": [
+          5.65918,
+          2.22126,
+          2.55171
+        ]
+      },
+      "parts": 2,
+      "triangles": 3603,
+      "bytes": 168564
+    },
+    "enemy-growth": {
+      "url": "assets/models/enemy-growth.json",
+      "source": "mob/mob_crazyguardianent.kfm",
+      "bounds": {
+        "min": [
+          -7.891,
+          0.0,
+          -5.81572
+        ],
+        "max": [
+          7.891,
+          16.45811,
+          5.81572
+        ],
+        "size": [
+          15.78201,
+          16.45811,
+          11.63143
+        ]
+      },
+      "parts": 1,
+      "triangles": 4085,
+      "bytes": 188756
+    },
+    "enemy-stalker": {
+      "url": "assets/models/enemy-stalker.json",
+      "source": "mob/mob_beastman.kfm",
+      "bounds": {
+        "min": [
+          -2.56281,
+          0.0,
+          -1.09032
+        ],
+        "max": [
+          2.56281,
+          3.16778,
+          1.09032
+        ],
+        "size": [
+          5.12563,
+          3.16778,
+          2.18065
+        ]
+      },
+      "parts": 2,
+      "triangles": 5777,
+      "bytes": 268649
+    },
+    "enemy-dreadhead": {
+      "url": "assets/models/enemy-dreadhead.json",
+      "source": "mob/mob_tirefinger.kfm",
+      "bounds": {
+        "min": [
+          -1.42396,
+          0.0,
+          -0.42106
+        ],
+        "max": [
+          1.42396,
+          1.79738,
+          0.42106
+        ],
+        "size": [
+          2.84791,
+          1.79738,
+          0.84212
+        ]
+      },
+      "parts": 2,
+      "triangles": 2910,
+      "bytes": 145951
+    },
+    "enemy-shocktangler": {
+      "url": "assets/models/enemy-shocktangler.json",
+      "source": "mob/mob_cable.kfm",
+      "bounds": {
+        "min": [
+          -1.30263,
+          0.0,
+          -2.82107
+        ],
+        "max": [
+          1.30263,
+          3.3038,
+          2.82107
+        ],
+        "size": [
+          2.60526,
+          3.3038,
+          5.64215
+        ]
+      },
+      "parts": 2,
+      "triangles": 3177,
+      "bytes": 180001
+    },
+    "enemy-streetgrinder": {
+      "url": "assets/models/enemy-streetgrinder.json",
+      "source": "mob/mob_cleaner.kfm",
+      "bounds": {
+        "min": [
+          -1.09383,
+          0.0,
+          -0.38967
+        ],
+        "max": [
+          1.09383,
+          1.59594,
+          0.38967
+        ],
+        "size": [
+          2.18766,
+          1.59594,
+          0.77935
+        ]
+      },
+      "parts": 2,
+      "triangles": 1981,
+      "bytes": 102417
+    },
+    "enemy-unisickle": {
+      "url": "assets/models/enemy-unisickle.json",
+      "source": "mob/mob_sawbike.kfm",
+      "bounds": {
+        "min": [
+          -0.61158,
+          0.0,
+          -0.49141
+        ],
+        "max": [
+          0.61158,
+          2.15542,
+          0.49141
+        ],
+        "size": [
+          1.22315,
+          2.15542,
+          0.98282
+        ]
+      },
+      "parts": 1,
+      "triangles": 3474,
+      "bytes": 174280
+    },
+    "enemy-packarachnid": {
+      "url": "assets/models/enemy-packarachnid.json",
+      "source": "mob/mob_redwolfheadspider.kfm",
+      "bounds": {
+        "min": [
+          -2.03764,
+          0.0,
+          -2.49258
+        ],
+        "max": [
+          2.03764,
+          2.84628,
+          2.49258
+        ],
+        "size": [
+          4.07529,
+          2.84628,
+          4.98517
+        ]
+      },
+      "parts": 1,
+      "triangles": 3230,
+      "bytes": 155657
+    },
+    "enemy-scraptyrant": {
+      "url": "assets/models/enemy-scraptyrant.json",
+      "source": "mob/mob_junkcar.kfm",
+      "bounds": {
+        "min": [
+          -1.61625,
+          0.0,
+          -1.54492
+        ],
+        "max": [
+          1.61625,
+          2.31778,
+          1.54492
+        ],
+        "size": [
+          3.2325,
+          2.31778,
+          3.08985
+        ]
+      },
+      "parts": 1,
+      "triangles": 2249,
+      "bytes": 136657
+    },
+    "enemy-crashloader": {
+      "url": "assets/models/enemy-crashloader.json",
+      "source": "mob/mob_crasher.kfm",
+      "bounds": {
+        "min": [
+          -1.46881,
+          0.0,
+          -1.07431
+        ],
+        "max": [
+          1.46881,
+          3.05964,
+          1.07431
+        ],
+        "size": [
+          2.93763,
+          3.05964,
+          2.14863
+        ]
+      },
+      "parts": 1,
+      "triangles": 3465,
+      "bytes": 222689
+    },
+    "enemy-junkasaurus": {
+      "url": "assets/models/enemy-junkasaurus.json",
+      "source": "mob/mob_junkdinosaur.kfm",
+      "bounds": {
+        "min": [
+          -0.99434,
+          0.0,
+          -1.98144
+        ],
+        "max": [
+          0.99434,
+          2.72427,
+          1.98144
+        ],
+        "size": [
+          1.98868,
+          2.72427,
+          3.96289
+        ]
+      },
+      "parts": 3,
+      "triangles": 4171,
+      "bytes": 233322
+    },
+    "forest-cabin": {
+      "url": "assets/models/forest-cabin.json",
+      "source": "map/campkidney/wd_bwck_house_01.nif",
+      "bounds": {
+        "min": [
+          -4.425,
+          0.0,
+          -3.75
+        ],
+        "max": [
+          4.425,
+          6.97501,
+          3.75
+        ],
+        "size": [
+          8.85,
+          6.97501,
+          7.5
+        ]
+      },
+      "parts": 3,
+      "triangles": 608,
+      "bytes": 46114
+    },
+    "forest-cabin-small": {
+      "url": "assets/models/forest-cabin-small.json",
+      "source": "map/campkidney/wd_bwck_house_02.nif",
+      "bounds": {
+        "min": [
+          -4.89708,
+          0.0,
+          -5.61914
+        ],
+        "max": [
+          4.89708,
+          9.4163,
+          5.61914
+        ],
+        "size": [
+          9.79415,
+          9.4163,
+          11.23829
+        ]
+      },
+      "parts": 2,
+      "triangles": 966,
+      "bytes": 60670
+    },
+    "forest-tent": {
+      "url": "assets/models/forest-tent.json",
+      "source": "map/campkidney/wd_bwck_tent_01.nif",
+      "bounds": {
+        "min": [
+          -3.17513,
+          0.0,
+          -3.01428
+        ],
+        "max": [
+          3.17513,
+          2.24853,
+          3.01428
+        ],
+        "size": [
+          6.35025,
+          2.24853,
+          6.02855
+        ]
+      },
+      "parts": 1,
+      "triangles": 324,
+      "bytes": 19865
+    },
+    "forest-campfire": {
+      "url": "assets/models/forest-campfire.json",
+      "source": "map/campkidney/wd_bwck_campfire_01.nif",
+      "bounds": {
+        "min": [
+          -0.47804,
+          0.0,
+          -0.42122
+        ],
+        "max": [
+          0.47804,
+          1.18612,
+          0.42122
+        ],
+        "size": [
+          0.95608,
+          1.18612,
+          0.84245
+        ]
+      },
+      "parts": 1,
+      "triangles": 209,
+      "bytes": 16722
+    },
+    "forest-log-bench": {
+      "url": "assets/models/forest-log-bench.json",
+      "source": "map/campkidney/wd_bwck_bench_01.nif",
+      "bounds": {
+        "min": [
+          -1.15114,
+          0.0,
+          -0.52924
+        ],
+        "max": [
+          1.15114,
+          1.25046,
+          0.52924
+        ],
+        "size": [
+          2.30227,
+          1.25046,
+          1.05847
+        ]
+      },
+      "parts": 1,
+      "triangles": 184,
+      "bytes": 11947
+    },
+    "forest-picnic-table": {
+      "url": "assets/models/forest-picnic-table.json",
+      "source": "map/campkidney/wd_bwck_table_01.nif",
+      "bounds": {
+        "min": [
+          -1.80874,
+          0.0,
+          -1.26513
+        ],
+        "max": [
+          1.80874,
+          1.09018,
+          1.26513
+        ],
+        "size": [
+          3.61748,
+          1.09018,
+          2.53027
+        ]
+      },
+      "parts": 1,
+      "triangles": 218,
+      "bytes": 10810
+    },
+    "forest-sign": {
+      "url": "assets/models/forest-sign.json",
+      "source": "map/campkidney/wd_bwck_sign_02.nif",
+      "bounds": {
+        "min": [
+          -0.51663,
+          0.0,
+          -0.11368
+        ],
+        "max": [
+          0.51663,
+          2.92638,
+          0.11368
+        ],
+        "size": [
+          1.03327,
+          2.92638,
+          0.22736
+        ]
+      },
+      "parts": 1,
+      "triangles": 88,
+      "bytes": 5131
+    },
+    "forest-bridge": {
+      "url": "assets/models/forest-bridge.json",
+      "source": "map/leakeylake/wd_bwll_bridge_01.nif",
+      "bounds": {
+        "min": [
+          -1.5018,
+          0.0,
+          -2.99657
+        ],
+        "max": [
+          1.5018,
+          2.7377,
+          2.99657
+        ],
+        "size": [
+          3.0036,
+          2.7377,
+          5.99313
+        ]
+      },
+      "parts": 1,
+      "triangles": 751,
+      "bytes": 49967
+    },
+    "forest-tree-creek": {
+      "url": "assets/models/forest-tree-creek.json",
+      "source": "map/leakeylake/wd_bwll_ctree_01.nif",
+      "bounds": {
+        "min": [
+          -3.36877,
+          0.0,
+          -3.35769
+        ],
+        "max": [
+          3.36877,
+          10.14988,
+          3.35769
+        ],
+        "size": [
+          6.73754,
+          10.14988,
+          6.71537
+        ]
+      },
+      "parts": 2,
+      "triangles": 412,
+      "bytes": 19201
+    },
+    "forest-tree-twisted": {
+      "url": "assets/models/forest-tree-twisted.json",
+      "source": "map/twistedforest/wd_jutf_tree_01.nif",
+      "bounds": {
+        "min": [
+          -6.65213,
+          0.0,
+          -5.69501
+        ],
+        "max": [
+          6.65213,
+          12.78563,
+          5.69501
+        ],
+        "size": [
+          13.30425,
+          12.78563,
+          11.39002
+        ]
+      },
+      "parts": 4,
+      "triangles": 729,
+      "bytes": 33302
+    },
+    "forest-plant": {
+      "url": "assets/models/forest-plant.json",
+      "source": "map/twistedforest/wd_jutf_plant 01.nif",
+      "bounds": {
+        "min": [
+          -0.68033,
+          0.0,
+          -0.65552
+        ],
+        "max": [
+          0.68033,
+          2.60195,
+          0.65552
+        ],
+        "size": [
+          1.36066,
+          2.60195,
+          1.31104
+        ]
+      },
+      "parts": 1,
+      "triangles": 1127,
+      "bytes": 55647
+    },
+    "forest-watchtower": {
+      "url": "assets/models/forest-watchtower.json",
+      "source": "map/darktree/wd_dldt_watchtower_01.nif",
+      "bounds": {
+        "min": [
+          -2.83403,
+          0.0,
+          -2.4848
+        ],
+        "max": [
+          2.83403,
+          12.53629,
+          2.4848
+        ],
+        "size": [
+          5.66806,
+          12.53629,
+          4.9696
+        ]
+      },
+      "parts": 2,
+      "triangles": 1135,
+      "bytes": 80077
+    },
+    "waste-forklift": {
+      "url": "assets/models/waste-forklift.json",
+      "source": "map/salvageyard/sb_slsy_forklift.nif",
+      "bounds": {
+        "min": [
+          -1.21731,
+          0.0,
+          -3.09895
+        ],
+        "max": [
+          1.21731,
+          3.13831,
+          3.09895
+        ],
+        "size": [
+          2.43461,
+          3.13831,
+          6.1979
+        ]
+      },
+      "parts": 2,
+      "triangles": 1833,
+      "bytes": 109244
+    },
+    "waste-press": {
+      "url": "assets/models/waste-press.json",
+      "source": "map/salvageyard/sb_slsy_press_01.nif",
+      "bounds": {
+        "min": [
+          -9.59365,
+          0.0,
+          -3.71432
+        ],
+        "max": [
+          9.59365,
+          9.4786,
+          3.71432
+        ],
+        "size": [
+          19.18729,
+          9.4786,
+          7.42863
+        ]
+      },
+      "parts": 1,
+      "triangles": 1171,
+      "bytes": 83178
+    },
+    "waste-crane": {
+      "url": "assets/models/waste-crane.json",
+      "source": "map/salvageyard/sb_slsy_railcrane01.nif",
+      "bounds": {
+        "min": [
+          -2.34333,
+          0.0,
+          -2.50185
+        ],
+        "max": [
+          2.34333,
+          4.37097,
+          2.50185
+        ],
+        "size": [
+          4.68666,
+          4.37097,
+          5.00369
+        ]
+      },
+      "parts": 3,
+      "triangles": 5653,
+      "bytes": 387079
+    },
+    "waste-scrapcar": {
+      "url": "assets/models/waste-scrapcar.json",
+      "source": "map/salvageyard/sb_slsy_car_a_00.nif",
+      "bounds": {
+        "min": [
+          -1.20437,
+          0.0,
+          -2.57823
+        ],
+        "max": [
+          1.20437,
+          1.45234,
+          2.57823
+        ],
+        "size": [
+          2.40874,
+          1.45234,
+          5.15646
+        ]
+      },
+      "parts": 3,
+      "triangles": 1672,
+      "bytes": 118279
+    },
+    "waste-metal-tree": {
+      "url": "assets/models/waste-metal-tree.json",
+      "source": "map/salvageyard/sb_slsy_metaltree_a_00.nif",
+      "bounds": {
+        "min": [
+          -0.35436,
+          0.0,
+          -0.27973
+        ],
+        "max": [
+          0.35436,
+          1.14739,
+          0.27973
+        ],
+        "size": [
+          0.70872,
+          1.14739,
+          0.55946
+        ]
+      },
+      "parts": 1,
+      "triangles": 106,
+      "bytes": 6684
+    },
+    "waste-tire-stack": {
+      "url": "assets/models/waste-tire-stack.json",
+      "source": "map/salvageyard/sb_slsy_etc_tier_00.nif",
+      "bounds": {
+        "min": [
+          -0.54106,
+          0.0,
+          -0.53619
+        ],
+        "max": [
+          0.54106,
+          1.66148,
+          0.53619
+        ],
+        "size": [
+          1.08213,
+          1.66148,
+          1.07237
+        ]
+      },
+      "parts": 1,
+      "triangles": 289,
+      "bytes": 15574
+    },
+    "waste-drum": {
+      "url": "assets/models/waste-drum.json",
+      "source": "map/salvageyard/sb_slsy_etc_drum_a_00.nif",
+      "bounds": {
+        "min": [
+          -0.31336,
+          0.0,
+          -0.31663
+        ],
+        "max": [
+          0.31336,
+          1.11035,
+          0.31663
+        ],
+        "size": [
+          0.62672,
+          1.11035,
+          0.63327
+        ]
+      },
+      "parts": 1,
+      "triangles": 70,
+      "bytes": 4148
+    },
+    "waste-bridge": {
+      "url": "assets/models/waste-bridge.json",
+      "source": "map/salvageyard/sb_slsy_bridge_a_00.nif",
+      "bounds": {
+        "min": [
+          -5.56243,
+          0.0,
+          -0.88836
+        ],
+        "max": [
+          5.56243,
+          3.11661,
+          0.88836
+        ],
+        "size": [
+          11.12486,
+          3.11661,
+          1.77671
+        ]
+      },
+      "parts": 2,
+      "triangles": 396,
+      "bytes": 25364
+    },
+    "waste-cabinet": {
+      "url": "assets/models/waste-cabinet.json",
+      "source": "map/salvageyard/sb_slsy_etc_cabinet_00.nif",
+      "bounds": {
+        "min": [
+          -0.35,
+          0.0,
+          -0.35
+        ],
+        "max": [
+          0.35,
+          1.5577,
+          0.35
+        ],
+        "size": [
+          0.7,
+          1.5577,
+          0.7
+        ]
+      },
+      "parts": 1,
+      "triangles": 32,
+      "bytes": 2311
+    },
+    "waste-tv": {
+      "url": "assets/models/waste-tv.json",
+      "source": "map/salvageyard/sb_slsy_etc_tv_a_00.nif",
+      "bounds": {
+        "min": [
+          -0.40439,
+          0.0,
+          -0.5
+        ],
+        "max": [
+          0.40439,
+          0.59944,
+          0.5
+        ],
+        "size": [
+          0.80878,
+          0.59944,
+          1.0
+        ]
+      },
+      "parts": 1,
+      "triangles": 44,
+      "bytes": 3516
+    },
+    "waste-burnt-tree": {
+      "url": "assets/models/waste-burnt-tree.json",
+      "source": "map/ep/ep_dlfw_burning_trees01.nif",
+      "bounds": {
+        "min": [
+          -1.56002,
+          0.0,
+          -1.28592
+        ],
+        "max": [
+          1.56002,
+          0.86707,
+          1.28592
+        ],
+        "size": [
+          3.12005,
+          0.86707,
+          2.57183
+        ]
+      },
+      "parts": 1,
+      "triangles": 516,
+      "bytes": 25936
+    },
+    "waste-rock": {
+      "url": "assets/models/waste-rock.json",
+      "source": "map/devilscanyon/wd_wldc_stone_a_01.nif",
+      "bounds": {
+        "min": [
+          -0.92315,
+          0.0,
+          -1.40157
+        ],
+        "max": [
+          0.92315,
+          3.30266,
+          1.40157
+        ],
+        "size": [
+          1.84631,
+          3.30266,
+          2.80315
+        ]
+      },
+      "parts": 1,
+      "triangles": 345,
+      "bytes": 22809
+    }
+  },
+  "textures": {
+    "aa2f90b08326": {
+      "map": "assets/textures/aa2f90b08326.webp",
+      "alpha": false,
+      "name": "spawn11_green",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "abe3f5456b74": {
+      "map": "assets/textures/abe3f5456b74.webp",
+      "alpha": false,
+      "name": "mob_swampycannibalfrog",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "113c1cf3bb95": {
+      "map": "assets/textures/113c1cf3bb95.webp",
+      "alpha": false,
+      "name": "mob_greenhellmosquito",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "c58da7e1eef7": {
+      "map": "assets/textures/c58da7e1eef7.webp",
+      "alpha": false,
+      "name": "mob_crazyguardianent",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "d4517bcee3aa": {
+      "map": "assets/textures/d4517bcee3aa.webp",
+      "alpha": false,
+      "name": "mob_beastman",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "114041d9f981": {
+      "map": "assets/textures/114041d9f981.webp",
+      "alpha": false,
+      "name": "mob_tirefinger",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "a8e7f0731aa6": {
+      "map": "assets/textures/a8e7f0731aa6.webp",
+      "alpha": false,
+      "name": "mob_cable",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "395c2d9d2a69": {
+      "map": "assets/textures/395c2d9d2a69.webp",
+      "alpha": false,
+      "name": "mob_cleaner",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "5ec5ce57be78": {
+      "map": "assets/textures/5ec5ce57be78.webp",
+      "alpha": false,
+      "name": "mob_sawbike",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "b8b40ddd9cba": {
+      "map": "assets/textures/b8b40ddd9cba.webp",
+      "alpha": false,
+      "name": "wd_bwck_wall_05_A1.dds",
+      "size": [
+        512,
+        512
+      ]
+    },
+    "0f4dd3759e24": {
+      "map": "assets/textures/0f4dd3759e24.webp",
+      "alpha": false,
+      "name": "wd_bwck_wall_10_A2.dds",
+      "size": [
+        512,
+        256
+      ]
+    },
+    "46605bf96cc8": {
+      "map": "assets/textures/46605bf96cc8.webp",
+      "alpha": false,
+      "name": "wd_bwck_wall_05_A3.DDS",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "fec5ae1d9f0d": {
+      "map": "assets/textures/fec5ae1d9f0d.webp",
+      "alpha": false,
+      "name": "wd_bwck_wall_06_A1.DDS",
+      "size": [
+        128,
+        256
+      ]
+    },
+    "7ac361099665": {
+      "map": "assets/textures/7ac361099665.webp",
+      "alpha": false,
+      "name": "wd_bwck_wall_10_A1.dds",
+      "size": [
+        32,
+        128
+      ]
+    },
+    "cc6265325dc5": {
+      "map": "assets/textures/cc6265325dc5.webp",
+      "alpha": false,
+      "name": "wd_bwck_wall_09_A1.DDS",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "a124403cde4a": {
+      "map": "assets/textures/a124403cde4a.webp",
+      "alpha": false,
+      "name": "wd_bwck_wall_07_A1.dds",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "4e87dd02c3ef": {
+      "map": "assets/textures/4e87dd02c3ef.webp",
+      "alpha": false,
+      "name": "wd_bwck_wall_08_A1.dds",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "0a0a6db873a6": {
+      "map": "assets/textures/0a0a6db873a6.webp",
+      "alpha": false,
+      "name": "WD_BWLL_BRIDGE_01.DDS",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "44b5b99466bb": {
+      "map": "assets/textures/44b5b99466bb.webp",
+      "alpha": false,
+      "name": "WD_BWLL_Ctree_02.dds",
+      "size": [
+        128,
+        256
+      ]
+    },
+    "802fbdef6f56": {
+      "map": "assets/textures/802fbdef6f56.webp",
+      "alpha": true,
+      "name": "WD_BWLL_Ctree_05.dds",
+      "size": [
+        256,
+        128
+      ]
+    },
+    "2b2b76680014": {
+      "map": "assets/textures/2b2b76680014.webp",
+      "alpha": false,
+      "name": "WD_JUTF_tree03.dds",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "10830d92a810": {
+      "map": "assets/textures/10830d92a810.webp",
+      "alpha": false,
+      "name": "WD_JUTF_tree05.dds",
+      "size": [
+        32,
+        32
+      ]
+    },
+    "5e68f636d9d3": {
+      "map": "assets/textures/5e68f636d9d3.webp",
+      "alpha": true,
+      "name": "WD_JUTF_leaf01.dds",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "bb61650851a9": {
+      "map": "assets/textures/bb61650851a9.webp",
+      "alpha": true,
+      "name": "WD_JUTF_vine02.dds",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "d0687662d025": {
+      "map": "assets/textures/d0687662d025.webp",
+      "alpha": true,
+      "name": "WD_JUTF_plant 01.DDS",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "ee86c3489587": {
+      "map": "assets/textures/ee86c3489587.webp",
+      "alpha": false,
+      "name": "WD_DLDT_watchtower.dds",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "5ae51cd5db3f": {
+      "map": "assets/textures/5ae51cd5db3f.webp",
+      "alpha": true,
+      "name": "WD_DLDT_watchtower_03.dds",
+      "size": [
+        128,
+        256
+      ]
+    },
+    "a5fc5fe968f2": {
+      "map": "assets/textures/a5fc5fe968f2.webp",
+      "alpha": false,
+      "name": "SB_SLSY_FORKLIFT01.DDS",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "bb99683a0760": {
+      "map": "assets/textures/bb99683a0760.webp",
+      "alpha": false,
+      "name": "SB_SLSY_FORKLIFT2.DDS",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "7329b079b5fe": {
+      "map": "assets/textures/7329b079b5fe.webp",
+      "alpha": false,
+      "name": "SB_SLSY_Press_n01.dds",
+      "size": [
+        512,
+        512
+      ]
+    },
+    "0bf59695bbf5": {
+      "map": "assets/textures/0bf59695bbf5.webp",
+      "alpha": false,
+      "name": "SB_SLSY_RAILCRANE1_1.dds",
+      "size": [
+        512,
+        512
+      ]
+    },
+    "f087d14f50c2": {
+      "map": "assets/textures/f087d14f50c2.webp",
+      "alpha": false,
+      "name": "SB_SLSY_RAILCRANE1_2.dds",
+      "size": [
+        512,
+        512
+      ]
+    },
+    "2ad4c96c4d03": {
+      "map": "assets/textures/2ad4c96c4d03.webp",
+      "alpha": false,
+      "name": "SB_SLSY_RAILCRANE1_3.DDS",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "6c93a690a130": {
+      "map": "assets/textures/6c93a690a130.webp",
+      "alpha": true,
+      "name": "sb_slsy_car_a.dds",
+      "size": [
+        512,
+        512
+      ]
+    },
+    "2163a9778054": {
+      "map": "assets/textures/2163a9778054.webp",
+      "alpha": false,
+      "name": "sb_slsy_car01.dds",
+      "size": [
+        256,
+        128
+      ]
+    },
+    "1c3aeb419be6": {
+      "map": "assets/textures/1c3aeb419be6.webp",
+      "alpha": false,
+      "name": "sb_slsy_car02.dds",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "b2f2f4ed221b": {
+      "map": "assets/textures/b2f2f4ed221b.webp",
+      "alpha": false,
+      "name": "SB_SLSY_METALTREE.dds",
+      "size": [
+        256,
+        128
+      ]
+    },
+    "13c28674556a": {
+      "map": "assets/textures/13c28674556a.webp",
+      "alpha": false,
+      "name": "sb_slsy_etc_tier.dds",
+      "size": [
+        128,
+        256
+      ]
+    },
+    "8cda822668b8": {
+      "map": "assets/textures/8cda822668b8.webp",
+      "alpha": false,
+      "name": "sb_slsy_etc_drum_a.dds",
+      "size": [
+        256,
+        128
+      ]
+    },
+    "1640f5cbfbf7": {
+      "map": "assets/textures/1640f5cbfbf7.webp",
+      "alpha": true,
+      "name": "sb_slsy_bridge01_n.dds",
+      "size": [
+        512,
+        256
+      ]
+    },
+    "06cc30a70cb3": {
+      "map": "assets/textures/06cc30a70cb3.webp",
+      "alpha": false,
+      "name": "SB_SLSY_BRIDGE.dds",
+      "size": [
+        256,
+        128
+      ]
+    },
+    "479010711d2f": {
+      "map": "assets/textures/479010711d2f.webp",
+      "alpha": false,
+      "name": "sb_slsy_etc_cabinet.dds",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "3d357dceb573": {
+      "map": "assets/textures/3d357dceb573.webp",
+      "alpha": false,
+      "name": "sb_slsy_etc_tv_01.dds",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "37817603f3eb": {
+      "map": "assets/textures/37817603f3eb.webp",
+      "alpha": false,
+      "name": "WD_DLFL_burnin_trees_01.dds",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "c9ac4ba38c1b": {
+      "map": "assets/textures/c9ac4ba38c1b.webp",
+      "alpha": false,
+      "name": "WD_WLDC_tile_02.dds",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "283cfdbff2cd": {
+      "map": "assets/textures/283cfdbff2cd.webp",
+      "alpha": false,
+      "name": "WD_grass_tile_01",
+      "size": [
+        256,
+        256
+      ],
+      "source": "map/tile_01/wd_grass_tile_01.dds"
+    },
+    "b79d10e8b74c": {
+      "map": "assets/textures/b79d10e8b74c.webp",
+      "alpha": false,
+      "name": "WD_grass_tile_04",
+      "size": [
+        256,
+        256
+      ],
+      "source": "map/tile_01/wd_grass_tile_04.dds"
+    },
+    "b00cdb2a3116": {
+      "map": "assets/textures/b00cdb2a3116.webp",
+      "alpha": false,
+      "name": "WD_stoneTile_02",
+      "size": [
+        256,
+        256
+      ],
+      "source": "map/tile_01/wd_stonetile_02.dds"
+    },
+    "46c97fc7bcfc": {
+      "map": "assets/textures/46c97fc7bcfc.webp",
+      "alpha": false,
+      "name": "Tile_rock_01",
+      "size": [
+        256,
+        256
+      ],
+      "source": "map/tile_01/tile_rock_01.dds"
+    },
+    "a16245dcef5d": {
+      "map": "assets/textures/a16245dcef5d.webp",
+      "alpha": false,
+      "name": "mob_redwolfheadspider",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "294a38ffea7a": {
+      "map": "assets/textures/294a38ffea7a.webp",
+      "alpha": false,
+      "name": "mob_junkcar",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "d5765df1ced0": {
+      "map": "assets/textures/d5765df1ced0.webp",
+      "alpha": false,
+      "name": "mob_crasher",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "43a0b3ad4d7f": {
+      "map": "assets/textures/43a0b3ad4d7f.webp",
+      "alpha": false,
+      "name": "mob_junkdinosaur",
+      "size": [
+        256,
+        256
+      ]
+    }
+  },
+  "surfaces": {
+    "wild-grass": {
+      "map": "assets/textures/283cfdbff2cd.webp",
+      "alpha": false,
+      "name": "WD_grass_tile_01",
+      "size": [
+        256,
+        256
+      ],
+      "source": "map/tile_01/wd_grass_tile_01.dds"
+    },
+    "wild-ground": {
+      "map": "assets/textures/b79d10e8b74c.webp",
+      "alpha": false,
+      "name": "WD_grass_tile_04",
+      "size": [
+        256,
+        256
+      ],
+      "source": "map/tile_01/wd_grass_tile_04.dds"
+    },
+    "wild-stone": {
+      "map": "assets/textures/b00cdb2a3116.webp",
+      "alpha": false,
+      "name": "WD_stoneTile_02",
+      "size": [
+        256,
+        256
+      ],
+      "source": "map/tile_01/wd_stonetile_02.dds"
+    },
+    "waste-rock": {
+      "map": "assets/textures/46c97fc7bcfc.webp",
+      "alpha": false,
+      "name": "Tile_rock_01",
+      "size": [
+        256,
+        256
+      ],
+      "source": "map/tile_01/tile_rock_01.dds"
+    }
+  },
+  "animations": {
+    "enemy-spidertoad": {
+      "url": "assets/animations/enemy-spidertoad.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves",
+      "bones": 110,
+      "clips": [
+        "melee1",
+        "stand1",
+        "walk",
+        "run",
+        "ready",
+        "wound",
+        "death",
+        "stand2",
+        "skill0",
+        "melee1upper",
+        "skill1"
+      ],
+      "bytes": 575110
+    },
+    "enemy-skeeter": {
+      "url": "assets/animations/enemy-skeeter.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves",
+      "bones": 89,
+      "clips": [
+        "walk",
+        "stand1",
+        "stand2",
+        "run",
+        "ready",
+        "wound",
+        "melee1",
+        "death",
+        "skill0",
+        "skill1"
+      ],
+      "bytes": 409753
+    },
+    "enemy-growth": {
+      "url": "assets/animations/enemy-growth.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves",
+      "bones": 94,
+      "clips": [
+        "death",
+        "skill0",
+        "melee1",
+        "run",
+        "stand1",
+        "stand2",
+        "walk",
+        "wound",
+        "melee1upper"
+      ],
+      "bytes": 313214
+    },
+    "enemy-stalker": {
+      "url": "assets/animations/enemy-stalker.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves",
+      "bones": 105,
+      "clips": [
+        "stand1",
+        "stand2",
+        "ready",
+        "walk",
+        "run",
+        "melee1",
+        "wound",
+        "death",
+        "melee1upper",
+        "skill0"
+      ],
+      "bytes": 537994
+    },
+    "enemy-dreadhead": {
+      "url": "assets/animations/enemy-dreadhead.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves",
+      "bones": 77,
+      "clips": [
+        "death",
+        "ready",
+        "run",
+        "stand1",
+        "stand2",
+        "walk",
+        "wound",
+        "melee1",
+        "skill0",
+        "melee1upper"
+      ],
+      "bytes": 348223
+    },
+    "enemy-shocktangler": {
+      "url": "assets/animations/enemy-shocktangler.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves",
+      "bones": 55,
+      "clips": [
+        "stand1",
+        "stand2",
+        "ready",
+        "walk",
+        "run",
+        "death",
+        "wound",
+        "melee1",
+        "skill0",
+        "melee1upper"
+      ],
+      "bytes": 335787
+    },
+    "enemy-streetgrinder": {
+      "url": "assets/animations/enemy-streetgrinder.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves",
+      "bones": 45,
+      "clips": [
+        "death",
+        "melee1",
+        "ready",
+        "run",
+        "stand1",
+        "stand2",
+        "walk",
+        "wound",
+        "skill1",
+        "skill0"
+      ],
+      "bytes": 147305
+    },
+    "enemy-unisickle": {
+      "url": "assets/animations/enemy-unisickle.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves",
+      "bones": 66,
+      "clips": [
+        "stand1",
+        "ready",
+        "run",
+        "stand2",
+        "walk",
+        "wound",
+        "melee1",
+        "death",
+        "skill1",
+        "skill0",
+        "melee1upper"
+      ],
+      "bytes": 213554
+    },
+    "enemy-packarachnid": {
+      "url": "assets/animations/enemy-packarachnid.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves",
+      "bones": 86,
+      "clips": [
+        "stand1",
+        "stand2",
+        "walk",
+        "wound",
+        "death",
+        "melee1",
+        "ready",
+        "run",
+        "skill0",
+        "melee1upper",
+        "skill1"
+      ],
+      "bytes": 386254
+    },
+    "enemy-scraptyrant": {
+      "url": "assets/animations/enemy-scraptyrant.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves",
+      "bones": 80,
+      "clips": [
+        "ready",
+        "run",
+        "stand1",
+        "walk",
+        "skill0",
+        "melee1",
+        "stand2",
+        "wound",
+        "death",
+        "melee1upper"
+      ],
+      "bytes": 192391
+    },
+    "enemy-crashloader": {
+      "url": "assets/animations/enemy-crashloader.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves",
+      "bones": 57,
+      "clips": [
+        "stand2",
+        "stand1",
+        "walk",
+        "run",
+        "ready",
+        "melee1",
+        "wound",
+        "death",
+        "melee1upper",
+        "skill0",
+        "skill1"
+      ],
+      "bytes": 337298
+    },
+    "enemy-junkasaurus": {
+      "url": "assets/animations/enemy-junkasaurus.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves",
+      "bones": 64,
+      "clips": [
+        "stand2",
+        "stand1",
+        "walk",
+        "run",
+        "ready",
+        "melee1",
+        "wound",
+        "death",
+        "skill0",
+        "melee1upper",
+        "skill1"
+      ],
+      "bytes": 342543
+    }
+  },
+  "failures": [],
+  "nativeAliases": {
+    "wild-stinger": {
+      "name": "Wild Stinger",
+      "npcId": 133,
+      "asset": "enemy-skeeter",
+      "biome": "camp-kidney",
+      "originalRegionNative": true,
+      "sameOriginalMeshAndSkins": true,
+      "source": "https://github.com/OpenFusionProject/tabledata/blob/master/xdt.json",
+      "missionStringIndices": [
+        11768,
+        11770,
+        11771
+      ],
+      "method": "Original mission text places Wild Stingers and their collected stingers at Camp Kidney. NPC133 uses exactly the model/body/secondary texture already exported as enemy-skeeter."
+    }
+  },
+  "nativePools": {
+    "camp-kidney": [
+      "wild-stinger",
+      "enemy-packarachnid"
+    ],
+    "salvage-yard": [
+      "enemy-scraptyrant",
+      "enemy-crashloader",
+      "enemy-junkasaurus"
+    ]
+  },
+  "habitatCorrections": {
+    "enemy-skeeter": "Wild Skeeter is a real dataset name; use source-verified Wild Stinger alias for explicit Camp Kidney native identity.",
+    "enemy-spidertoad": "Spider Toad main-world spawns are chiefly around Pimpleback Mountains; neighboring frog variants occur around Really Twisted Forest.",
+    "enemy-growth": "Ghoulish Growth occurs around the Jungle Outpost / Mount Blackhead; a few source spawn rows are close to Camp Kidney, but this does not prove an exact region boundary.",
+    "enemy-stalker": "Canyon Stalker main-world spawns cluster around Devil's Bluff, not Camp Kidney.",
+    "enemy-dreadhead": "Dread Head is a genuine XDT name. Nearby original main-world junkyard spawns use the Tread Head variant of the same tire model.",
+    "enemy-shocktangler": "Shocktangler mission text explicitly names Sector V; main-world cable-model spawns also occur near Goat's Junk Yard. Retained as a themed guest unless exact spawn boundary evidence is added.",
+    "enemy-streetgrinder": "Original main-world spawns cluster around City Station / City Point, not Salvage Yard.",
+    "enemy-unisickle": "Original main-world spawns cluster around Downtown locations (Townsville Park / City Hall / City Station / Habitat Homes), not Salvage Yard."
+  }
+}
