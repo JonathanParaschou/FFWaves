@@ -1,39 +1,41 @@
-# Online parties
+# Online multiplayer on Vercel
 
-The repo now includes an actual authoritative WebSocket room service, not a LAN-only UI. A host creates a private four-player party, shares an eight-character invite/link, and chooses when to deploy. Each code admits one player, expires after ten minutes, and rotates after a successful join. Generate a new code to revoke an old invite. Codes are server-generated when the host requests one; they are not user passwords or accounts.
+Vercel is the default public host. The same deployment serves the game, `/api/matchmaking`, and the WebSocket endpoint at `/online`. No Render service, server IP, `MATCHMAKING_URL`, or cross-origin allowlist is required for this mode.
 
-Rooms isolate players, maps, waves, inventory, enemies, damage and broadcasts. The server owns simulation at 60 Hz and sends snapshots at 20 Hz. A disconnected member has 20 seconds to reconnect with their session token, without another invite. Host privileges transfer to a connected teammate. Leave ends that member's reconnect permission. Closing the final seat destroys the room and invite. The service limits room count, connections, join attempts and message rates. It never lists private rooms publicly.
+## One-time Vercel setup
 
-## Simplest deployment: serve everything from Render
+1. Push this checkout, including `api/`, `server/`, `dist/`, `vercel.json`, `package.json`, and `package-lock.json`.
+2. In your Vercel project's **Storage** tab, connect a Redis integration (for example Upstash). Ensure the project receives its native TCP/TLS connection string as **`REDIS_URL`** in the environments you use: Production, and Preview if needed. Use the integration's `redis://` / `rediss://` URL, not its REST API URL. Keep this server-side secret in Vercel; never place it in client configuration or Git.
+3. If you previously set `MATCHMAKING_URL` for Render, remove it so the client uses the same Vercel site. Redeploy after connecting storage/changing environment variables.
+4. Open `https://YOUR-GAME/api/matchmaking`. A healthy deployment returns JSON with `ok: true`, `protocol: 1`, `online: true`, and `provider: "vercel"`.
+5. Open **Multiplayer > Online**, create a party, and share its invitation link/code. Friends use that same game URL.
 
-1. Push this checkout, including `render.yaml`, `server/`, `server.mjs`, `dist/`, tests and documentation.
-2. On Render choose **New > Blueprint**, connect this GitHub repo and apply `render.yaml`.
-3. Leave `ALLOWED_ORIGINS` empty when playing on the Render URL. If Render asks for a value, use the game site's exact origin. There are no required API keys.
-4. Open the resulting HTTPS service URL. It hosts the game and matchmaking together. Multiplayer works without editing client files or entering a server IP.
+Fluid compute, function duration and rewrites are included in `vercel.json`. Vercel supports WebSockets, but connections can land on different instances and close at the function duration limit. Redis is required to share and preserve room state. Official references: https://vercel.com/docs/functions/websockets and https://vercel.com/kb/guide/real-time-presence-hono-react .
 
-The included free-service configuration is for trying it out. Free services can sleep when idle; first connection can take time. A running, single-instance service is needed for uninterrupted matches. No service has been provisioned by this code change. Render supports inbound public WebSockets on the same service port: https://render.com/docs/websocket . Blueprint configuration: https://render.com/docs/blueprint-spec .
+## Rooms and invitations
 
-## Keep Vercel as the game URL
+A private party holds four players. The host requests an eight-character random code. Each code admits one guest, expires after ten minutes, and rotates after a successful join. **Generate new code** revokes an existing invite. Only the current host receives the next invitation. Rooms are not publicly listed. These are private party invitations, not ranked public matchmaking or user accounts.
 
-Deploy the server above first, then:
+Disconnects reserve a player's seat for 20 seconds. The browser automatically reconnects with its existing session token, without consuming another invitation. Function restarts may take a few seconds to detect; stale connection generations cannot disconnect the replacement session. Host privileges move to a connected teammate. Leaving ends membership; the last member leaving destroys the room and invitation.
 
-1. In Vercel's project environment variables, set `MATCHMAKING_URL` to the Render origin, e.g. `https://your-service.onrender.com` (no path). It is a public endpoint, not a secret.
-2. On the Render service, set `ALLOWED_ORIGINS` to the exact Vercel origin, e.g. `https://your-game.vercel.app`. Separate additional trusted origins with commas; preview deployments need their own exact origins. No wildcard access is enabled.
-3. Redeploy both projects. Vercel's build writes `dist/net-config.json`; the client discovers the server there. Friends open the Vercel URL or the host's invite link.
+## Shared authoritative simulation
 
-A static Vercel upload by itself does not provision this game's shared room process. Vercel now supports WebSockets in Functions, but this repo intentionally uses one persistent authoritative process so all party members reach the same room state. It does not claim instance coordination or persistence across function workers.
+`api/online.js` exports a Node WebSocket server as a Vercel Function. Instances send room operations through `RedisRoomStore`; a per-room lock and atomic Lua commit serialize writes, invitations, capacity updates, checkpoint saves, and notifications. Lock ownership is checked again at commit, preventing an expired writer from replacing newer state. Control request receipts make retries idempotent.
 
-## Local checks and other hosts
+Each operation restores the authoritative checkpoint, advances accumulated wall-clock time in fixed 60 Hz steps, applies controls, and saves the complete match again. Snapshots are published at approximately 20 Hz and relayed to every function holding a party member's socket. Inputs are coalesced per player between flushes. Long outages pause/cap catch-up rather than teleporting the simulation. Rooms retain inventories, enemies, gates, floor contexts, waves and reload state across instance changes. Clients do not submit damage or currency.
 
-`npm ci --ignore-scripts`, `npm run build`, then `npm start`. Open `http://localhost:4180`, select **Multiplayer > Online**, and create a party. Another browser/session can join with the code. **Local Network** retains the original single LAN party locally. The Render configuration disables that public legacy lobby (`ENABLE_LAN=false`); online rooms remain enabled. `Dockerfile` also packages the server and client; expose the chosen `PORT` behind HTTPS for public play.
+All live match operations pass through Redis, not an in-memory function singleton. Production and preview branches use separate key namespaces. Active room state expires after 30 minutes without updates; idle disconnected memberships are pruned. The default room limit is eight (`MAX_ROOMS`), not a measured performance guarantee. Real-time state has sustained Redis command/bandwidth usage; check your integration's quotas and usage when testing.
 
-`npm test` includes real WebSocket clients exercising room creation/joining, one-use invites, simultaneous maps, start/snapshots, reconnection, host migration, full rooms, expiry, origin rules and invalid joins. This verifies the local service; public internet latency and provider deployment still need verification after deployment.
+## Verification and limits
 
-Rooms and reconnect tokens live in memory. Use exactly one server instance; no horizontal autoscaling. Restarts/deploys end active rooms. Default capacity is eight concurrent parties (`MAX_ROOMS`), not a performance guarantee. Empty rooms are removed after their reconnect reservations expire, and lobbies expire after 30 idle minutes. No port forwarding is needed when using a publicly hosted service.
+`npm run build` prepares public client configuration and runs the checks. Tests exercise checkpoint fidelity, atomic Lua commits through a Redis mock, two independent actual WebSocket gateways sharing that mock, single-use codes, room isolation, stale connection rejection, capacity and migration. They do not establish deployed Redis latency or Vercel performance.
 
+Set `FFWAVES_TEST_REDIS_URL` to a dedicated test Redis connection to run the optional real Redis integration test. It writes to a unique test namespace with expiring data. That test is skipped when no test service is configured. Production integration and public multiplayer must still be verified after connecting your Vercel project to Redis. No external service was provisioned automatically.
 
-## If the game says online is not configured
+The checkpoint schema is versioned. A future incompatible simulation update needs migration/versioning rather than assuming old checkpoints remain compatible. Function-instance transitions preserve compatible state; a Redis outage temporarily interrupts online play. Solo play does not need Redis.
 
-Pushing the code deploys the static game on Vercel; it does not create the Render service. First deploy the Blueprint above, then copy that service's HTTPS origin into Vercel's `MATCHMAKING_URL` environment variable. Set Render's `ALLOWED_ORIGINS` to the exact URL you use to open the game. Redeploy Vercel after changing the variable, because the client configuration is written at build time. The value must be enabled for the Vercel environment you are playing in (Production or Preview).
+## Local LAN and optional separate hosting
 
-To verify deployment, open `https://YOUR-GAME/net-config.json` and check that `matchmakingUrl` contains your room service origin. Then open `https://YOUR-SERVER/api/matchmaking`; it should return JSON containing `ok: true`, `protocol: 1`, and `online: true`. A blank URL on a static game host means configuration is missing. A configured server returning 403 needs its origin allowlist updated; a 5xx response indicates a service startup or availability problem. Browser network failures can also be caused by CORS; the game cannot distinguish those from an unreachable server, so it reports both possibilities.
+`npm ci --ignore-scripts`, `npm run build`, then `npm start` retains the local Node host at `http://localhost:4180`. Its **Online** option uses local private rooms and its **Local Network** option uses the original LAN lobby, both without Redis. For local testing of the Vercel gateway use the tests or `vercel dev` with a development Redis connection.
+
+The included Render Blueprint/Dockerfile remain optional alternatives. If you deliberately choose a separate host, set `MATCHMAKING_URL` in Vercel to its HTTPS origin and `ALLOWED_ORIGINS` on that host to the exact Vercel origin. The Render configuration disables its public legacy LAN lobby (`ENABLE_LAN=false`). This optional mode uses the separate process's existing in-memory room service and ends rooms on restart.

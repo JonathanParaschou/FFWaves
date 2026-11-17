@@ -33,7 +33,7 @@ body and accessories in third person.
 | Install command | `npm ci --ignore-scripts` |
 | Build command | `npm run build` |
 | Output directory | `dist` |
-| Environment variables | None for solo; `MATCHMAKING_URL` for online |
+| Environment variables | `REDIS_URL` from Vercel Storage for online; none for solo |
 
 The build checks the source and runs the automated tests, then publishes the game
 and all its assets. No game build tool, database or API key is required.
@@ -47,9 +47,9 @@ https://docs.github.com/en/repositories/working-with-files/managing-files/adding
 
 Online private four-player rooms are included. Choose **Multiplayer > Online**, create a party and share its one-use invite. Codes expire after ten minutes and rotate after each successful join. Players can reconnect for 20 seconds. Each party has its own authoritative match and map.
 
-Push this repo and deploy the included `render.yaml` as a Render Blueprint to serve both the game and multiplayer. To keep the Vercel game URL, set `MATCHMAKING_URL` in Vercel and `ALLOWED_ORIGINS` on the room server, then redeploy. Full instructions and lifecycle limits are in [ONLINE-MULTIPLAYER.md](ONLINE-MULTIPLAYER.md). A static client upload alone does not provision the shared game service.
+Vercel serves both the game and online room endpoints. Connect Redis through the Vercel project's **Storage** tab, ensure `REDIS_URL` is available, then redeploy. No Render service or `MATCHMAKING_URL` is needed. Include `api/` when pushing. Full setup, persistence, limits and verification are in [ONLINE-MULTIPLAYER.md](ONLINE-MULTIPLAYER.md).
 
-`npm start` also retains local LAN co-op at the host's printed network address. `npm run build` prepares the client configuration and runs all checks. `Dockerfile` provides another hosting option.
+`npm start` retains local private parties and LAN co-op without Redis. `npm run build` prepares client configuration and runs checks. Render/Docker hosting remains an optional alternative.
 
 ## Controls
 

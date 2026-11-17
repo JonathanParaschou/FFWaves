@@ -11,7 +11,7 @@ README = (ROOT / 'README.md').read_text(encoding='utf-8')
 
 def main():
     files = {}
-    for folder in ('dist', 'server', 'tests', 'docs'):
+    for folder in ('dist', 'server', 'api', 'tests', 'docs'):
         for source in (ROOT / folder).rglob('*'):
             if source.is_file():
                 relative = source.relative_to(ROOT).as_posix()

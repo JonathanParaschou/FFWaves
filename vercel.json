@@ -31,5 +31,22 @@
         }
       ]
     }
+  ],
+  "fluid": true,
+  "functions": {
+    "api/online.js": {
+      "maxDuration": 300,
+      "includeFiles": "{server/**,dist/**}"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/online",
+      "destination": "/api/online"
+    },
+    {
+      "source": "/api/matchmaking",
+      "destination": "/api/online"
+    }
   ]
 }

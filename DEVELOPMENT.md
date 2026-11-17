@@ -104,9 +104,9 @@ Sector V now includes an actual placed city-section crop recovered from Map_04_0
 
 `vercel.json` publishes the current `dist/` game as a static site. The build runs syntax checks and the automated suite. `.vercelignore` omits extraction caches, research, local environment files and the unused original placement archive. Public assets are about 50 MB; no raw cache is uploaded.
 
-Deploy with `npx vercel@65.16.0 --prod` from this directory after authenticating to the intended Vercel account. Existing Vercel projects can be linked with `vercel link`; the local link is ignored by Git. The deployment includes solo gameplay, all characters, maps, weapons, Nanos and customization. The hosted LAN dialog explains how to use the local multiplayer build.
+Deploy with `npx vercel@65.16.0 --prod` from this directory after authenticating to the intended Vercel account. Existing Vercel projects can be linked with `vercel link`; the local link is ignored by Git. The deployment includes solo gameplay, all characters, maps, weapons, Nanos and customization. The multiplayer dialog uses the included Vercel Function and shared Redis rooms; local LAN remains available through the Node host.
 
-LAN multiplayer continues with `npm start` and the host computer's local IP. Vercel supports WebSockets, but this game's in-memory party cannot be moved unchanged into independently scaled, time-limited Function instances. Online multiplayer uses the included dedicated room service; configure the Vercel endpoint as documented in ONLINE-MULTIPLAYER.md.
+LAN multiplayer continues with `npm start` and the host computer's local IP. Vercel online multiplayer uses the included Function and Redis-backed checkpoints, rather than an in-memory singleton; connect Redis as documented in ONLINE-MULTIPLAYER.md.
 
 ## Measured bunker rebuild
 
@@ -133,4 +133,13 @@ Nanos retain the single active companion and clear ADS lane. Per-Nano float cade
 
 The online service and client live in this checkout. `server/matchmaker.mjs` owns ephemeral room IDs, cryptographic single-use eight-character invitations, ten-minute expiry and room capacity. `server.mjs` routes `/online` connections into per-room authoritative simulations while preserving `/lan` locally. Every synchronous room operation scopes the shared legacy map exports with `inRoom`, including ticks, actions and snapshots; cross-map regression tests run concurrent parties. Public discovery lists service capabilities only. Invitations are sent only to the current host, rotate after each join, and are invalidated when the room ends. Reconnects use room identity plus a per-tab cryptographic token.
 
-`npm run build` generates public endpoint discovery from `MATCHMAKING_URL`, checks syntax and runs tests. Render serves game and rooms on one HTTPS origin; a Vercel client can point at that same service with an exact origin allowlist. `render.yaml` pins one instance because room state is held in memory. See [ONLINE-MULTIPLAYER.md](ONLINE-MULTIPLAYER.md) for setup, resource limits, restart behavior and verification boundaries. This change does not deploy or provision an external service.
+`npm run build` prepares client discovery, checks syntax and runs tests. Vercel uses the same-origin Function by default; `MATCHMAKING_URL` is only an optional override for separate hosting. The optional Render mode pins one instance for its in-memory rooms. See [ONLINE-MULTIPLAYER.md](ONLINE-MULTIPLAYER.md) for setup and verification boundaries. No external service is provisioned automatically.
+
+
+## Vercel-native rooms (supersedes the separate-host default)
+
+The Vercel configuration now includes a same-origin Function at `api/online.js`; `vercel.json` routes both matchmaking discovery and `/online` WebSockets there with Fluid compute enabled. It uses server-only `REDIS_URL` from a Vercel Storage integration. No external Node/Render deployment is required. Previous dedicated-server notes apply only to optional separate hosting.
+
+`server/room-checkpoint.mjs` saves/restores full simulation and membership state without serializing event handlers, geometry or flow caches. `server/redis-room-store.mjs` uses per-room locking, a fenced atomic Lua commit, expiring invitation/session indexes, and room-scoped pub/sub. `server/vercel-rooms.mjs` restores, advances fixed steps and applies validated commands under that transaction. `server/vercel-gateway.mjs` batches/coalesces client input and relays committed events between instances. `LanClient` automatically reconnects online sessions, preserving the room identity and per-tab token. Connection generations and control receipts reject stale disconnects and duplicate controls.
+
+Unit/architecture tests use a Redis mock executing the commit Lua and real local WebSocket connections across two independent gateways. A dedicated real Redis integration is optional via `FFWAVES_TEST_REDIS_URL`; it skips without a configured test instance. Live Vercel/Redis operation remains unverified here. See ONLINE-MULTIPLAYER.md for the one-time Storage connection and deployment checks.
