@@ -15,7 +15,7 @@ export class LoadoutMenu {
   sim.setLoadout(validateLoadout(saved));this.resetDraft();this.render();this.sync();
   $('nano-collection').addEventListener('keydown',e=>{const buttons=[...$('nano-collection').querySelectorAll('[data-nano-id]')],index=buttons.indexOf(document.activeElement);if(index<0)return;const columns=getComputedStyle($('nano-collection')).gridTemplateColumns.split(' ').length;const delta={ArrowRight:1,ArrowLeft:-1,ArrowDown:columns,ArrowUp:-columns}[e.code];let next;if(delta!==undefined)next=Math.max(0,Math.min(buttons.length-1,index+delta));else if(e.code==='Home')next=0;else if(e.code==='End')next=buttons.length-1;else return;e.preventDefault();this.choose(buttons[next].dataset.nanoId)});
   $('nano-search').addEventListener('input',e=>{this.search=e.target.value.toLowerCase().trim();this.renderCollection()});
-  for(const b of document.querySelectorAll('[data-filter]'))b.onclick=()=>{this.filter=b.dataset.filter;document.querySelectorAll('[data-filter]').forEach(el=>el.classList.toggle('active',el===b));this.renderCollection()};
+  for(const b of document.querySelectorAll('[data-filter]'))b.onclick=()=>{this.filter=b.dataset.filter;document.querySelectorAll('[data-filter]').forEach(el=>{el.classList.toggle('active',el===b);el.setAttribute('aria-pressed',String(el===b))});this.renderCollection()};
  }
  resetDraft(){const current=this.sim.loadout[this.slot];this.inspected=current.id;this.skillId=current.skillId}
  sync(){try{localStorage.setItem('fusionfall-nano-loadout',JSON.stringify(this.sim.loadout))}catch{}this.world.setSquad(this.sim.squad).catch(e=>this.onChange(e.message))}

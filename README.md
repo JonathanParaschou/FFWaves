@@ -5,7 +5,7 @@ A browser wave-survival FPS with 24 original FusionFall heroes, 20 accessories,
 Dexlabs Bunker, a measured Nacht reconstruction; four earlier maps remain as
 optional legacy prototypes.
 
-Choose **Deployment > Dexlabs Bunker**. Its architecture comes directly from
+Open **Play**, choose Solo or Private co-op, and use the selected arena card to choose **Dexlabs Bunker**. Its architecture comes directly from
 NZ:P's published Nacht source, preserving both floors, the two staircases,
 openings, three barriers and original weapon anchors. FusionFall materials,
 weapons, Nanos and survival services supply the adaptation.
@@ -60,3 +60,10 @@ Tab map; Escape menu.
 
 See [DEVELOPMENT.md](DEVELOPMENT.md) for the full game documentation and
 [ASSETS.md](ASSETS.md) for original art provenance and ownership.
+
+
+## Main menu
+
+Play opens directly into the lobby. Choose Solo, Private co-op or Local network, review the selected arena and equipped kit, then use the primary action. Operative, Weapons and Nanos are separate tabs. Unapplied operative previews offer Apply, Discard or Keep editing before leaving. Network modes display service availability and the actual party roster; only a host can choose the arena and deploy a party.
+
+See [menu design notes](docs/MENU-DESIGN.md) for references, interaction decisions and verification limits.

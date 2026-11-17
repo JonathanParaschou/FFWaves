@@ -150,3 +150,10 @@ Unit/architecture tests use a Redis mock executing the commit Lua and real local
 `dist/original-music.js` lazily loads the recovered original music catalog and the selected recording after a user gesture. Main Theme plays in menus; each map has a specific original regional track. Looping preserves the song across waves; menu/map changes crossfade over 0.8 seconds. Stale asynchronous loads cannot replace a newer selection, failed requests retry with a delay, and at most two decoded recordings are cached. The first menu interaction starts audio, while the sound button keeps its explicit enable/mute behavior. Existing volume, pause, visibility and voice ducking remain in `Soundscape`; generated score oscillators are removed.
 
 Soundtrack tests verify all six source hashes and Ogg/Vorbis headers, authored map coverage, continuous playback, crossfade/mute/pause behavior, failure backoff and asynchronous selection races. Live listening in the deployed browser remains unverified here. Rebuild/redeploy Vercel to publish these local changes.
+
+
+## Play-first main menu
+
+The main menu now opens on Play, with mode/arena selection, the actual character preview and party overview in a stable lobby layout. Operative, Weapons and Nanos have dedicated tabs, a persistent equipped summary, and a context-dependent primary action. Service checks are requested only for network modes. Unapplied operative changes get an explicit apply/discard/stay decision; Nano browsing remains a preview until Equip. The same modal manager handles focus containment, Escape and focus return across the existing dialogs.
+
+The CSS is rebuilt in deployment-hub.css. No new bitmap assets or font services are required. The live map backdrop, original model preview and original soundtrack remain in use. Tests exercise navigation, save guards, mode availability and party permissions against the actual DOM controller; browser rendering remains unverified because browser access was unavailable. See [MENU-DESIGN.md](docs/MENU-DESIGN.md) for references, decisions and validation limits.
