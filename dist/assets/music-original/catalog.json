@@ -1,0 +1,74 @@
+{
+  "version": 1,
+  "source": "Original FusionFall Unity Web Player cache, read-only",
+  "processing": "Unmodified original Ogg/Vorbis bytes; no resampling or transcoding.",
+  "ownership": "Original recordings remain the property of their original rights holders.",
+  "tracks": {
+    "main-theme": {
+      "title": "Main Theme",
+      "url": "assets/music-original/main-theme.ogg",
+      "source": "bgm/00 main theme.ogg",
+      "bundle": "lobbymusic_2eresourceFile",
+      "file": "CustomAssetBundle-ea18f90c57bb14624902c8501d46a1c8",
+      "bytes": 1053424,
+      "sha256": "2d1255ea1c6a3e78f82c84354df16ef76cd48bea3e7f3922dc969dceff58b2f3",
+      "duration": 184.463,
+      "sampleRate": 44100
+    },
+    "tech-center": {
+      "title": "Tech Center",
+      "url": "assets/music-original/tech-center.ogg",
+      "source": "bgm/06 tech center.ogg",
+      "bundle": "pastmusic_2eresourceFile",
+      "file": "CustomAssetBundle-b40cc6bb657354e0f9aa12b34378c651",
+      "bytes": 404244,
+      "sha256": "54212decf3b25aa66aa601e7a01aeffe91a4335aaf7d35255a13bc5002c21a55",
+      "duration": 70.367,
+      "sampleRate": 44100
+    },
+    "suburbia": {
+      "title": "Suburbia",
+      "url": "assets/music-original/suburbia.ogg",
+      "source": "bgm/02 suburbia.ogg",
+      "bundle": "pastmusic_2eresourceFile",
+      "file": "CustomAssetBundle-b40cc6bb657354e0f9aa12b34378c651",
+      "bytes": 448913,
+      "sha256": "e92fd023dabbad49990a4c7a641341996b53b1b08a9428ebe2ee559bef2edf4c",
+      "duration": 78.24,
+      "sampleRate": 44100
+    },
+    "woods": {
+      "title": "Woods",
+      "url": "assets/music-original/woods.ogg",
+      "source": "bgm/08 woods.ogg",
+      "bundle": "pastmusic_2eresourceFile",
+      "file": "CustomAssetBundle-b40cc6bb657354e0f9aa12b34378c651",
+      "bytes": 392952,
+      "sha256": "68ebb5643e4ed025d84d6a9750dcd3b731f953724ffdfec2f34595a373aff22a",
+      "duration": 68.495,
+      "sampleRate": 44100
+    },
+    "reactor-works": {
+      "title": "Reactor Works",
+      "url": "assets/music-original/reactor-works.ogg",
+      "source": "bgm/08 reactor works.ogg",
+      "bundle": "pastmusic_2eresourceFile",
+      "file": "CustomAssetBundle-b40cc6bb657354e0f9aa12b34378c651",
+      "bytes": 376278,
+      "sha256": "0900aa7b7f01a985d9891c652f4c2bbbe7154f36bef4fc4eda3ce6a9362c68dd",
+      "duration": 65.663,
+      "sampleRate": 44100
+    },
+    "midtown": {
+      "title": "Midtown",
+      "url": "assets/music-original/midtown.ogg",
+      "source": "bgm/05 midtown.ogg",
+      "bundle": "pastmusic_2eresourceFile",
+      "file": "CustomAssetBundle-b40cc6bb657354e0f9aa12b34378c651",
+      "bytes": 388150,
+      "sha256": "6fe7a7e168933b6bbcac4984bd79cdaf9bf6f4389cbc60c2dbf972c9ff7e6269",
+      "duration": 67.583,
+      "sampleRate": 44100
+    }
+  }
+}

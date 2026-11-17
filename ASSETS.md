@@ -114,8 +114,15 @@ All added visible source art in this pass comes from the existing FusionFall cac
 
 ## Soundtrack, character audio and source-derived FPS arms
 
-The adaptive 112 BPM electronic score in `dist/soundscape.js` is newly composed for this game, synthesized locally with pads, bass, melody and percussion. It requires no streaming service. Breath sounds are authored filtered-noise envelopes, rather than recovered character dialogue. Combat adds percussion and upper arpeggios; intermissions reduce the arrangement. Voices duck the music, with independent saved music/effects/voice controls.
+The earlier adaptive electronic score has been replaced by original FusionFall recordings; see the soundtrack section below. It requires no streaming service. Breath sounds are authored filtered-noise envelopes, rather than recovered character dialogue. The original regional tracks now provide the score, without added synthesized instruments. Voices duck the music, with independent saved music/effects/voice controls.
 
 `tools/extract-personality-audio.py` adds 281 unmodified original clips from the existing read-only FusionFall cache: summon and power variants for 39 Nanos, hero/avatar hurt variants, and three Samurai Jack exertion grunts. The five Nanos without matching cached recordings remain animated without invented dialogue. Generic avatar hurt recordings cover heroes without a matching named hurt clip. Original ownership applies; each file is recorded with its source path and byte size in the audio manifest.
 
 `dist/hero-arms.js` extracts the selected hero's actual textured arm/hand triangles by skin-weight ancestry. Original ready-pose geometry is baked and adapted to the authored FPS joint intervals and weapon grips, with sleeve boundary vertices constrained to those intervals. Source models, textures and full-body rigs remain unchanged. All 24 hero selections are checked. Wilt retains his source model's missing hand. This is an FPS adaptation of the existing hero assets, not newly recovered original first-person animations. Idle/cast Nano clips now also support summon, observation, celebration and concern gestures, selected only when the original clip exists.
+
+
+## Original FusionFall soundtrack
+
+The generated score has been replaced by six unmodified original Ogg/Vorbis recordings from `lobbymusic_2eresourceFile` and `pastmusic_2eresourceFile` in the existing local FusionFall cache. `tools/extract-original-music.py` copies the original bytes without transcoding. `dist/assets/music-original/catalog.json` records source paths, bundles, SHA-256 checksums, sample rates, durations and ownership for Main Theme, Tech Center, Suburbia, Woods, Reactor Works and Midtown. Original ownership remains with the original rights holders.
+
+The menu uses Main Theme. Map associations are authored adaptations: Dexlabs Bunker uses Tech Center, Sector V uses Suburbia, Camp Kidney uses Woods, Salvage Yard uses Reactor Works, and Original City uses Midtown. These choices do not claim that the adapted maps used those songs in the original game. Tracks are loaded on demand with at most two decoded buffers cached, looped, and crossfaded when switching maps/menu. The procedural music oscillators have been removed. Player breathing remains procedural; recovered voice and effect recordings are unchanged.
