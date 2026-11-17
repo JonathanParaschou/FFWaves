@@ -4,6 +4,7 @@ import {WebSocket} from 'ws';
 import {createLanServer} from '../server.mjs';
 import {inRoom} from '../server/matchmaker.mjs';
 import {LanClient} from '../dist/lan-client.js';
+import {discoverOnlineService} from '../dist/online-service.js';
 async function fixture(t,options={}){
  const app=await createLanServer({port:0,host:'127.0.0.1',autoTick:false,...options}),port=await app.listen(),clients=[];
  t.after(async()=>{clients.forEach(c=>c.ws.terminate());await app.close()});
@@ -40,4 +41,20 @@ test('browser client uses public endpoint, saves room identity and reconnects wi
 });
 test('live server clock advances separate rooms and disabled public LAN stays closed',async t=>{
  const {client,port}=await fixture(t,{autoTick:true,enableLan:false});const a=await client('clock-host-session-01'),b=await client('clock-host-session-02');await a.join('create',{map:'dexlabs-bunker'});await b.join('create',{map:'camp-kidney'});a.send({type:'start'});b.send({type:'start'});const first=await a.next(p=>p.type==='state'&&p.tick>=6),second=await b.next(p=>p.type==='state'&&p.tick>=6);assert.equal(first.map,'dexlabs-bunker');assert.equal(second.map,'camp-kidney');assert.ok(first.elapsed>0&&second.elapsed>0);assert.notEqual(first.matchId,second.matchId);assert.equal((await fetch(`http://127.0.0.1:${port}/api/lan`)).status,404);
+});
+test('discovery identifies missing static-host configuration, blocked origins and unavailable servers',async()=>{
+ const origin='https://game.example',remote='https://rooms.example';
+ const probe=(config,response)=>discoverOnlineService({origin,fetchImpl:async url=>{if(url.endsWith('/net-config.json'))return Response.json(config);if(response instanceof Error)throw response;return response;}});
+ await assert.rejects(probe({matchmakingUrl:''},new Response('Not found',{status:404})),/has not been connected/);
+ await assert.rejects(probe({matchmakingUrl:''},new Response('<html>Game</html>')),/has not been connected/);
+ await assert.rejects(probe({matchmakingUrl:remote},new Response('',{status:403})),/has not allowed connections/);
+ await assert.rejects(probe({matchmakingUrl:remote},new Response('',{status:503})),/starting or temporarily unavailable/);
+ await assert.rejects(probe({matchmakingUrl:remote},new TypeError('Failed to fetch')),/offline.*blocking/);
+ await assert.rejects(probe({matchmakingUrl:remote},new DOMException('Timeout','TimeoutError')),/waking up/);
+ await assert.rejects(probe({matchmakingUrl:remote},new Response('<html/>')),/webpage instead/);
+ await assert.rejects(probe({matchmakingUrl:'http://rooms.example'},Response.json({})),/secure HTTPS/);
+});
+test('discovery supports the full local server and an explicitly configured remote service',async t=>{
+ const {port}=await fixture(t);const local=await discoverOnlineService({origin:`http://127.0.0.1:${port}`});assert.equal(local.info.online,true);
+ const urls=[];const remote=await discoverOnlineService({origin:'https://game.example',fetchImpl:async url=>{urls.push(url);return url.endsWith('net-config.json')?Response.json({matchmakingUrl:'https://rooms.example'}):Response.json({ok:true,protocol:1,online:true,maxPlayers:4})}});assert.equal(remote.endpoint,'https://rooms.example');assert.deepEqual(urls,['https://game.example/net-config.json','https://rooms.example/api/matchmaking']);
 });

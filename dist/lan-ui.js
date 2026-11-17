@@ -1,3 +1,4 @@
+import {discoverOnlineService} from './online-service.js';
 import {MAPS} from './maps.js';
 const $=id=>document.getElementById(id);
 export function initLanUI(client,getProfile){
@@ -23,15 +24,15 @@ export function initLanUI(client,getProfile){
   $('lan-start').classList.toggle('hidden',!joined||!host||lobby.phase==='playing'||!client.connected);$('lan-start').textContent=lobby.phase==='result'?'START NEW RUN':'DEPLOY PARTY';$('lan-leave').classList.toggle('hidden',!joined);$('lan-edit').classList.toggle('hidden',!joined||lobby.phase==='playing');
   if(!error)$('lan-status').textContent=joined?(lobby.phase==='playing'?'Match in progress.':host?'Share an invite, then deploy when everyone is ready.':'Your host will start the match.'):online?'Create a private party or enter a code from your host.':'Host or join the party on this local server.';
  }
- async function refresh(){busy=true;error='';available=false;status('Connecting to the party service?');render();try{
-  if(online){const config=await fetch('net-config.json',{cache:'no-store'}).then(r=>r.ok?r.json():{});endpoint=new URL(config.matchmakingUrl||location.origin).origin;if(location.protocol==='https:'&&!endpoint.startsWith('https:'))throw Error('Online service must use HTTPS.');}
-  else endpoint=location.origin;
-  const response=await fetch(endpoint+(online?'/api/matchmaking':'/api/lan'),{cache:'no-store',signal:AbortSignal.timeout(60000)});if(!response.ok)throw Error(online?'Online service is not configured for this host. See ONLINE-MULTIPLAYER.md in the repo.':'Open the host computer?s local game link to play LAN.');info=await response.json();if(info.protocol!==1)throw Error('Game versions differ. Refresh the page.');available=true;error='';
+ async function refresh(){busy=true;error='';available=false;status('Connecting to the party service...');render();try{
+  if(online){const service=await discoverOnlineService({origin:location.origin,signal:AbortSignal.timeout(60000)});endpoint=service.endpoint;info=service.info;}
+  else{endpoint=location.origin;const response=await fetch(endpoint+'/api/lan',{cache:'no-store',signal:AbortSignal.timeout(10000)});if(!response.ok)throw Error("Open the host computer's local game link to play LAN.");info=await response.json();if(info.protocol!==1)throw Error('Game versions differ. Refresh this page.');}
+  available=true;error='';
   if(!online){const preferred=info.addresses.find(a=>/ethernet|wi-fi/i.test(a.name))||info.addresses[0];$('lan-address').value=(location.hostname==='localhost'?preferred?.url||location.origin:location.origin)+'/?lan=1'}
  }catch(e){status(e.message)}finally{busy=false;render()}}
  async function open(){if(client.joined)online=client.online;error='';$('lan-panel').classList.remove('hidden');if(client.joined){available=true;render()}else await refresh();$('lan-name').focus()}
  function close(){$('lan-panel').classList.add('hidden');$('lan-button').focus()}
- async function connect(mode){if(busy)return;busy=true;error='';status('Joining party?');render();try{const name=$('lan-name').value.trim()||'Operative';try{localStorage.setItem('fusionfall-lan-name',name)}catch{}let roomId=client.roomId;if(online&&!client.joined&&mode==='join'&&!$('join-code').value.trim()){try{const saved=JSON.parse(sessionStorage.getItem('fusionfall-online-room'));if(saved?.endpoint===endpoint)roomId=saved.roomId}catch{}}if(online&&(client.joined||roomId)&&mode==='join')mode='reconnect';await client.connect(mode,{...getProfile(),name},getProfile().map,{online,endpoint,code:$('join-code').value,roomId});$('join-code').value='';error='';}catch(e){status(e.message)}finally{busy=false;render()}}
+ async function connect(mode){if(busy)return;busy=true;error='';status('Joining party...');render();try{const name=$('lan-name').value.trim()||'Operative';try{localStorage.setItem('fusionfall-lan-name',name)}catch{}let roomId=client.roomId;if(online&&!client.joined&&mode==='join'&&!$('join-code').value.trim()){try{const saved=JSON.parse(sessionStorage.getItem('fusionfall-online-room'));if(saved?.endpoint===endpoint)roomId=saved.roomId}catch{}}if(online&&(client.joined||roomId)&&mode==='join')mode='reconnect';await client.connect(mode,{...getProfile(),name},getProfile().map,{online,endpoint,code:$('join-code').value,roomId});$('join-code').value='';error='';}catch(e){status(e.message)}finally{busy=false;render()}}
  $('lan-button').onclick=open;$('lan-refresh').onclick=refresh;$('lan-close').onclick=close;$('lan-create').onclick=()=>connect('create');$('lan-join').onclick=()=>connect('join');$('lan-new-code').onclick=()=>{error='';client.invite()};$('join-code').onkeydown=e=>{if(e.key==='Enter'){e.preventDefault();connect('join')}};
  $('lan-start').onclick=()=>{client.updateProfile({...getProfile(),name:$('lan-name').value.trim()||'Operative'});client.start()};$('lan-map').onchange=()=>client.chooseMap($('lan-map').value);$('lan-edit').onclick=close;
  $('net-online').onclick=()=>{online=true;refresh()};$('net-lan').onclick=()=>{online=false;refresh()};

@@ -30,3 +30,10 @@ A static Vercel upload by itself does not provision this game's shared room proc
 `npm test` includes real WebSocket clients exercising room creation/joining, one-use invites, simultaneous maps, start/snapshots, reconnection, host migration, full rooms, expiry, origin rules and invalid joins. This verifies the local service; public internet latency and provider deployment still need verification after deployment.
 
 Rooms and reconnect tokens live in memory. Use exactly one server instance; no horizontal autoscaling. Restarts/deploys end active rooms. Default capacity is eight concurrent parties (`MAX_ROOMS`), not a performance guarantee. Empty rooms are removed after their reconnect reservations expire, and lobbies expire after 30 idle minutes. No port forwarding is needed when using a publicly hosted service.
+
+
+## If the game says online is not configured
+
+Pushing the code deploys the static game on Vercel; it does not create the Render service. First deploy the Blueprint above, then copy that service's HTTPS origin into Vercel's `MATCHMAKING_URL` environment variable. Set Render's `ALLOWED_ORIGINS` to the exact URL you use to open the game. Redeploy Vercel after changing the variable, because the client configuration is written at build time. The value must be enabled for the Vercel environment you are playing in (Production or Preview).
+
+To verify deployment, open `https://YOUR-GAME/net-config.json` and check that `matchmakingUrl` contains your room service origin. Then open `https://YOUR-SERVER/api/matchmaking`; it should return JSON containing `ok: true`, `protocol: 1`, and `online: true`. A blank URL on a static game host means configuration is missing. A configured server returning 403 needs its origin allowlist updated; a 5xx response indicates a service startup or availability problem. Browser network failures can also be caused by CORS; the game cannot distinguish those from an unreachable server, so it reports both possibilities.

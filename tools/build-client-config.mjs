@@ -3,3 +3,5 @@ const value=process.env.MATCHMAKING_URL||'';
 if(value){const u=new URL(value);if(u.protocol!=='https:'||u.username||u.password||u.search||u.hash||u.pathname!=='/')throw Error('MATCHMAKING_URL must be an HTTPS origin, e.g. https://ffwaves-online.onrender.com');}
 await writeFile(new URL('../dist/net-config.json',import.meta.url),JSON.stringify({matchmakingUrl:value?new URL(value).origin:''})+'\n');
 console.log('Multiplayer client: '+(value||'same-origin server'));
+
+if(process.env.VERCEL&&!value)console.warn('ONLINE MULTIPLAYER IS UNCONFIGURED: set MATCHMAKING_URL to your deployed room service HTTPS origin and redeploy. Solo play remains available.');
