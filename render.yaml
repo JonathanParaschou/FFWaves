@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: ffwaves-online
+    runtime: node
+    plan: free
+    numInstances: 1
+    buildCommand: npm ci --ignore-scripts && npm run build
+    startCommand: npm start
+    healthCheckPath: /healthz
+    envVars:
+      - key: NODE_VERSION
+        value: "24"
+      - key: MAX_ROOMS
+        value: "8"
+      - key: ENABLE_LAN
+        value: "false"
+      - key: ALLOWED_ORIGINS
+        sync: false

@@ -23,6 +23,6 @@ export function updateMovement(p,input,layout,dt,events={}){
   else if(Math.hypot(p.x-beforeX,p.z-beforeZ)<speed*dt*.25||!grounded){p.stance='stand';p.slideTimer=0;p.slideCooldown=.2}
  }else{const speed=(p.stance==='crouch'?2.65:sprinting?8.1:5.25)*buff;if(len>0)layout.move(p,nx*speed*dt,nz*speed*dt,.42,true)}
  p.moveSpeed=Math.hypot(p.x-beforeX,p.z-beforeZ)/Math.max(dt,.001);p.isSprinting=sprinting&&p.moveSpeed>.25&&p.stance==='stand';p.sprintAge=p.isSprinting?p.sprintAge+dt:0;p.sprint=Math.max(0,Math.min(1,p.sprint+(p.isSprinting?-dt*.23:p.stance==='slide'?0:dt*.32)));
- p.vy-=18*dt;p.y=Math.max(0,p.y+p.vy*dt);if(p.y===0)p.vy=0;
+ p.vy-=18*dt;p.y=Math.max(0,p.y+p.vy*dt);if(p.y===0)p.vy=0;layout.resolveVertical?.(p);
  p.eyeHeight=damp(p.eyeHeight,p.stance==='slide'?.78:p.stance==='crouch'?1.08:1.68,15,dt);p.crouchBlend=damp(p.crouchBlend,p.stance==='crouch'?1:0,12,dt);p.slideBlend=damp(p.slideBlend,p.stance==='slide'?1:0,16,dt);
 }

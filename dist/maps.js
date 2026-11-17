@@ -1,3 +1,6 @@
+import {REFERENCE_MAP} from './reference-map.js';
+import nativeData from './assets/native-city/navigation.js';
+import {createNativeMap} from './native-map.js';
 import * as OUTPOST from './outpost-kit.js';
 import {planMap,finishPlan} from './map-plan.js';
 const bounds={minX:-52,maxX:52,minZ:-48,maxZ:44};
@@ -92,5 +95,5 @@ function equipMap(map){
  map.fixtureColliders=map.stations.filter(s=>s.kind==='mystery').map(s=>({x:s.x,z:s.z-2.2,w:1.8,d:.8,h:.85}));
  return map;
 }
-export const MAPS=[urban,forest,waste].map(planMap).map(finish).map(equipMap).map(finishPlan);
+export const MAPS=[urban,forest,waste].map(planMap).map(finish).map(equipMap).map(finishPlan).concat(createNativeMap(nativeData,{id:'original-city',source:nativeData.source})).concat(REFERENCE_MAP);
 export const mapById=id=>MAPS.find(m=>m.id===id)||MAPS[0];

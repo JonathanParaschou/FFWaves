@@ -1,3 +1,5 @@
+import {buildReferenceEnvironment} from './reference-environment.js';
+import {buildNativeEnvironment} from './native-environment.js';
 import * as THREE from './vendor/three.module.js';
 import {buildMapSpaces,routeCurve} from './map-spaces.js';
 import {addMapDetails} from './map-details.js';
@@ -5,6 +7,8 @@ import {buildWeaponStation} from './weapon-stations.js';
 import { activeMap,heightAt } from './layout.js';
 const TAU=Math.PI*2;
 export function buildEnvironment(scene,assets,glow,map=activeMap){
+ if(map.reference)return buildReferenceEnvironment(scene,assets,glow,map);
+ if(map.native)return buildNativeEnvironment(scene,assets,glow,map);
  const hitObjects=[],stations=[],gateMeshes=new Map(),pools=[],animated=[],ownedGeometry=new Set(),ownedMaterial=new Set(),ownedTextures=new Set(),weaponStations=[];
  const h=(x,z)=>heightAt(map,x,z),forest=map.id==='camp-kidney',waste=map.id==='salvage-yard';
  function material(color,mapName,tileX=1,tileZ=1){const texture=mapName?assets.surface(mapName,tileX,tileZ):null;if(texture)ownedTextures.add(texture);const m=new THREE.MeshStandardMaterial({color,map:texture,roughness:.88});ownedMaterial.add(m);return m}

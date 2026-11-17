@@ -1,0 +1,15 @@
+// A horizontal architectural section: exact source polygons, not decorative map icons.
+export function sectionPolygon(brush,faces,height){const points=[];for(const face of faces){if(face.brushId!==brush.id)continue;for(let i=0;i<face.vertices.length;i++){const a=face.vertices[i],b=face.vertices[(i+1)%face.vertices.length];if((a[1]-height)*(b[1]-height)>0||Math.abs(b[1]-a[1])<1e-7)continue;const t=(height-a[1])/(b[1]-a[1]);if(t<0||t>1)continue;const p=[a[0]+(b[0]-a[0])*t,a[2]+(b[2]-a[2])*t];if(!points.some(q=>Math.hypot(q[0]-p[0],q[1]-p[1])<.001))points.push(p)}}if(points.length<3)return [];const x=points.reduce((s,p)=>s+p[0],0)/points.length,z=points.reduce((s,p)=>s+p[1],0)/points.length;return points.sort((a,b)=>Math.atan2(a[1]-z,a[0]-x)-Math.atan2(b[1]-z,b[0]-x))}
+const sections=new WeakMap();
+export function referenceSections(map,level=0){let levels=sections.get(map);if(!levels){levels=new Map();sections.set(map,levels)}if(levels.has(level))return levels.get(level);const data=map.reference.data,byBrush=new Map();for(const f of data.faces){if(!byBrush.has(f.brushId))byBrush.set(f.brushId,[]);byBrush.get(f.brushId).push(f)}const result=data.brushes.filter(b=>b.solid&&b.min[1]<level+1&&b.max[1]>level+1).map(b=>({brush:b,polygon:sectionPolygon(b,byBrush.get(b.id)||[],level+1)})).filter(s=>s.polygon.length);levels.set(level,result);return result}
+export function drawReferencePlan(ctx,map,x,y,w,h,{level=0,navigation=true,stations=true,checkpoints=false,route=[],layout}={}){
+ if(!map.reference)return;const b=map.bounds,sx=w/(b.maxX-b.minX),sz=h/(b.maxZ-b.minZ),xx=v=>x+(v-b.minX)*sx,zz=v=>y+(v-b.minZ)*sz;
+ ctx.save();ctx.beginPath();ctx.rect(x,y,w,h);ctx.clip();ctx.fillStyle='#11202b';ctx.fillRect(x,y,w,h);
+ if(navigation){ctx.fillStyle=level>1?'#416779':'#375c61';const cell=map.reference.data.nav.cell;for(const p of map.reference.data.nav.nodes)if(Math.abs(p.y-level)<.7)ctx.fillRect(xx(p.x-cell/2),zz(p.z-cell/2),cell*sx+.3,cell*sz+.3)}
+ for(const {brush,polygon}of referenceSections(map,level)){if(brush.movable&&layout?.unlocked['door-'+brush.entityId])continue;ctx.beginPath();polygon.forEach((p,i)=>i?ctx.lineTo(xx(p[0]),zz(p[1])):ctx.moveTo(xx(p[0]),zz(p[1])));ctx.closePath();ctx.fillStyle=brush.movable?'#d7a364':'#a3b3b7';ctx.fill();ctx.strokeStyle=brush.movable?'#ffe0a1':'#647d88';ctx.lineWidth=.65;ctx.stroke()}
+ if(route.length){ctx.strokeStyle='#b5ee8a';ctx.lineWidth=2;ctx.beginPath();route.forEach((p,i)=>i?ctx.lineTo(xx(p.x),zz(p.z)):ctx.moveTo(xx(p.x),zz(p.z)));ctx.stroke()}
+ if(stations)for(const p of map.stations){if(Math.abs(p.floorY-level)>.8)continue;ctx.fillStyle=p.addedService?'#86e6e7':p.kind==='gate'?'#ffc984':'#c2a8f0';ctx.beginPath();ctx.arc(xx(p.x),zz(p.z),2.5,0,Math.PI*2);ctx.fill()}
+ ctx.fillStyle='#b6ee8d';ctx.beginPath();ctx.arc(xx(map.start.x),zz(map.start.z),3,0,Math.PI*2);ctx.fill();
+ if(checkpoints){ctx.font='bold 11px Arial';ctx.textAlign='center';for(const [i,p]of map.checkpoints.entries()){if(Math.abs(p.position[1]-1.68-level)>.8)continue;ctx.fillStyle='#fff2b3';ctx.fillText(String(i+1),xx(p.position[0]),zz(p.position[2])-5)}}
+ ctx.restore();
+}

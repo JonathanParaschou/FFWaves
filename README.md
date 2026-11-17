@@ -1,7 +1,21 @@
 # FusionFall: Last Signal
 
 A browser wave-survival FPS with 24 original FusionFall heroes, 20 accessories,
-44 Nanos, three survival maps, ten guns, three melee weapons and original effects.
+44 Nanos, ten guns, three melee weapons and original effects. The main map is now
+Dexlabs Bunker, a measured Nacht reconstruction; four earlier maps remain as
+optional legacy prototypes.
+
+Choose **Deployment > Dexlabs Bunker**. Its architecture comes directly from
+NZ:P's published Nacht source, preserving both floors, the two staircases,
+openings, three barriers and original weapon anchors. FusionFall materials,
+weapons, Nanos and survival services supply the adaptation.
+
+Open `/map-reader.html` on the running server for floor sections, clearance,
+progression routes, source overlays and eye-level checkpoints. See the
+[map-reading workflow](docs/MAP-READING-WORKFLOW.md).
+
+First person shows hands and weapons. Press **F5** or **H** for your full hero
+body and accessories in third person.
 
 ## Deploy from GitHub to Vercel
 
@@ -17,9 +31,9 @@ A browser wave-survival FPS with 24 original FusionFall heroes, 20 accessories,
 | --- | --- |
 | Node.js | 24.x |
 | Install command | `npm ci --ignore-scripts` |
-| Build command | `npm run check && npm test` |
+| Build command | `npm run build` |
 | Output directory | `dist` |
-| Environment variables | None required |
+| Environment variables | None for solo; `MATCHMAKING_URL` for online |
 
 The build checks the source and runs the automated tests, then publishes the game
 and all its assets. No game build tool, database or API key is required.
@@ -31,20 +45,11 @@ https://docs.github.com/en/repositories/working-with-files/managing-files/adding
 
 ## Multiplayer
 
-The Vercel edition supports **solo play**. The LAN dialog explains that LAN
-co-op uses a local host. To run it locally with Node.js 24:
+Online private four-player rooms are included. Choose **Multiplayer > Online**, create a party and share its one-use invite. Codes expire after ten minutes and rotate after each successful join. Players can reconnect for 20 seconds. Each party has its own authoritative match and map.
 
-```sh
-npm ci --ignore-scripts
-npm start
-```
+Push this repo and deploy the included `render.yaml` as a Render Blueprint to serve both the game and multiplayer. To keep the Vercel game URL, set `MATCHMAKING_URL` in Vercel and `ALLOWED_ORIGINS` on the room server, then redeploy. Full instructions and lifecycle limits are in [ONLINE-MULTIPLAYER.md](ONLINE-MULTIPLAYER.md). A static client upload alone does not provision the shared game service.
 
-Open `http://localhost:4180`. Other players on the same network use the host's
-printed LAN address. This package includes the complete local four-player server.
-
-Internet co-op is not configured in this static deployment. Vercel supports
-WebSockets, but reliable shared matches also require state/coordination across
-its function instances or a dedicated game server.
+`npm start` also retains local LAN co-op at the host's printed network address. `npm run build` prepares the client configuration and runs all checks. `Dockerfile` provides another hosting option.
 
 ## Controls
 

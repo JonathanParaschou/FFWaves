@@ -1,6 +1,16 @@
 # Map design and source references
 
-These are authored survival arenas using original FusionFall art. Each combines open circulation space, tighter cover routes, two-door interiors, climbable upper surfaces and supplies that require leaving a comfortable holding position.
+The main rebuild is **Dexlabs Bunker**, derived directly from a pinned NZ:P Nacht source map. The source packet preserves geometry, measured floor plans, barriers, room graph and camera checkpoints. Read the [map-reading workflow](docs/MAP-READING-WORKFLOW.md) and use `/map-reader.html` for structural review. Runtime rendering, collision, floor layers and navigation all share source geometry.
+
+The four older maps below are **legacy prototypes**. They are hidden by default in deployment selection; they are not the basis for the rebuild.
+
+Sector V, Camp Kidney and Salvage Yard are authored survival arenas using original FusionFall art. Each combines open circulation space, tighter cover routes, two-door interiors, climbable upper surfaces and supplies that require leaving a comfortable holding position. Original City is a fourth map recovered from the original game scene.
+
+## Original City: recovered original region
+
+This 128×128 metre playable crop preserves original Map_04_04 terrain, street floors, buildings, props and source scale. Scenery is not rearranged into a new arena. Rendering extends beyond the playable crop, keeping intersecting meshes intact. Original mesh floors supplement terrain heights so players stand on source sidewalks and plazas rather than their underlying depressions. A connected outdoor navigation mask uses source collider bounds and terrain gradients; this is conservative collision, not the original Unity controller or a promise that every original interior is accessible.
+
+Six street entrances supply enemies. Thirteen added survival fixtures distribute ammunition, wall guns, armor, power, the supply box, the forge, Nano recharge and extraction across clear original surfaces. The source region starts open; power still gates the forge and extraction requires wave 10. Geometry ray checks compare rendered source floors with navigation heights at all gameplay positions, while flow-field checks verify supply and spawn reachability. See [source and reproduction details](docs/NATIVE-CITY-RECOVERY.md).
 
 ## Specific Call of Duty references
 

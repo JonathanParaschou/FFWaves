@@ -6767,6 +6767,1411 @@
       "url": "assets/audio/voice-deedee.ogg",
       "source": "sound/deedee_nanpwrpony01.wav",
       "bytes": 10439
+    },
+    "summon-17-0": {
+      "url": "assets/audio/summon-17-0.ogg",
+      "source": "sound/fourarms_nansummon01.wav",
+      "bytes": 11214
+    },
+    "summon-17-1": {
+      "url": "assets/audio/summon-17-1.ogg",
+      "source": "sound/fourarms_nansummon02.wav",
+      "bytes": 11287
+    },
+    "summon-17-2": {
+      "url": "assets/audio/summon-17-2.ogg",
+      "source": "sound/fourarms_nansummon03.wav",
+      "bytes": 8564
+    },
+    "power-17-0": {
+      "url": "assets/audio/power-17-0.ogg",
+      "source": "sound/fourarms_nanpwrfhb01.wav",
+      "bytes": 11435
+    },
+    "power-17-1": {
+      "url": "assets/audio/power-17-1.ogg",
+      "source": "sound/fourarms_nanpwrfhb02.wav",
+      "bytes": 8763
+    },
+    "power-17-2": {
+      "url": "assets/audio/power-17-2.ogg",
+      "source": "sound/fourarms_nanpwrfhb03.wav",
+      "bytes": 11028
+    },
+    "summon-35-0": {
+      "url": "assets/audio/summon-35-0.ogg",
+      "source": "sound/aku_nansummon01.wav",
+      "bytes": 10022
+    },
+    "summon-35-1": {
+      "url": "assets/audio/summon-35-1.ogg",
+      "source": "sound/aku_nansummon02.wav",
+      "bytes": 17872
+    },
+    "summon-35-2": {
+      "url": "assets/audio/summon-35-2.ogg",
+      "source": "sound/aku_nansummon03.wav",
+      "bytes": 13266
+    },
+    "power-35-0": {
+      "url": "assets/audio/power-35-0.ogg",
+      "source": "sound/aku_nanpwrat01.wav",
+      "bytes": 15418
+    },
+    "power-35-1": {
+      "url": "assets/audio/power-35-1.ogg",
+      "source": "sound/aku_nanpwrat02.wav",
+      "bytes": 24243
+    },
+    "power-35-2": {
+      "url": "assets/audio/power-35-2.ogg",
+      "source": "sound/aku_nanpwrat03.wav",
+      "bytes": 17676
+    },
+    "summon-39-0": {
+      "url": "assets/audio/summon-39-0.ogg",
+      "source": "sound/ben_nansummon01.wav",
+      "bytes": 5860
+    },
+    "summon-39-1": {
+      "url": "assets/audio/summon-39-1.ogg",
+      "source": "sound/ben_nansummon02.wav",
+      "bytes": 7153
+    },
+    "summon-39-2": {
+      "url": "assets/audio/summon-39-2.ogg",
+      "source": "sound/ben_nansummon03.wav",
+      "bytes": 7668
+    },
+    "power-39-0": {
+      "url": "assets/audio/power-39-0.ogg",
+      "source": "sound/ben_nanpwrjump01.wav",
+      "bytes": 5403
+    },
+    "power-39-1": {
+      "url": "assets/audio/power-39-1.ogg",
+      "source": "sound/ben_nanpwrjump02.wav",
+      "bytes": 8456
+    },
+    "power-39-2": {
+      "url": "assets/audio/power-39-2.ogg",
+      "source": "sound/ben_nanpwrjump03.wav",
+      "bytes": 7129
+    },
+    "summon-11-0": {
+      "url": "assets/audio/summon-11-0.ogg",
+      "source": "sound/billy_nansummon01.wav",
+      "bytes": 5927
+    },
+    "summon-11-1": {
+      "url": "assets/audio/summon-11-1.ogg",
+      "source": "sound/billy_nansummon02.wav",
+      "bytes": 10917
+    },
+    "summon-11-2": {
+      "url": "assets/audio/summon-11-2.ogg",
+      "source": "sound/billy_nansummon03.wav",
+      "bytes": 8882
+    },
+    "power-11-0": {
+      "url": "assets/audio/power-11-0.ogg",
+      "source": "sound/billy_nanpwrfrat01.wav",
+      "bytes": 11549
+    },
+    "power-11-1": {
+      "url": "assets/audio/power-11-1.ogg",
+      "source": "sound/billy_nanpwrfrat02.wav",
+      "bytes": 8534
+    },
+    "power-11-2": {
+      "url": "assets/audio/power-11-2.ogg",
+      "source": "sound/billy_nanpwrfrat03.wav",
+      "bytes": 12898
+    },
+    "summon-14-0": {
+      "url": "assets/audio/summon-14-0.ogg",
+      "source": "sound/bloo_nansummon01.wav",
+      "bytes": 6324
+    },
+    "summon-14-1": {
+      "url": "assets/audio/summon-14-1.ogg",
+      "source": "sound/bloo_nansummon02.wav",
+      "bytes": 6207
+    },
+    "summon-14-2": {
+      "url": "assets/audio/summon-14-2.ogg",
+      "source": "sound/bloo_nansummon03.wav",
+      "bytes": 8265
+    },
+    "power-14-0": {
+      "url": "assets/audio/power-14-0.ogg",
+      "source": "sound/bloo_nanpwrbg01.wav",
+      "bytes": 10021
+    },
+    "power-14-1": {
+      "url": "assets/audio/power-14-1.ogg",
+      "source": "sound/bloo_nanpwrbg02.wav",
+      "bytes": 13392
+    },
+    "power-14-2": {
+      "url": "assets/audio/power-14-2.ogg",
+      "source": "sound/bloo_nanpwrbg03.wav",
+      "bytes": 8578
+    },
+    "summon-5-0": {
+      "url": "assets/audio/summon-5-0.ogg",
+      "source": "sound/blossom_nansummon01.wav",
+      "bytes": 6524
+    },
+    "summon-5-1": {
+      "url": "assets/audio/summon-5-1.ogg",
+      "source": "sound/blossom_nansummon02.wav",
+      "bytes": 6305
+    },
+    "summon-5-2": {
+      "url": "assets/audio/summon-5-2.ogg",
+      "source": "sound/blossom_nansummon03.wav",
+      "bytes": 5396
+    },
+    "power-5-0": {
+      "url": "assets/audio/power-5-0.ogg",
+      "source": "sound/blossom_nanpwrice01.wav",
+      "bytes": 6784
+    },
+    "power-5-1": {
+      "url": "assets/audio/power-5-1.ogg",
+      "source": "sound/blossom_nanpwrice02.wav",
+      "bytes": 6505
+    },
+    "power-5-2": {
+      "url": "assets/audio/power-5-2.ogg",
+      "source": "sound/blossom_nanpwrice03.wav",
+      "bytes": 10675
+    },
+    "summon-15-0": {
+      "url": "assets/audio/summon-15-0.ogg",
+      "source": "sound/bubbles_nansummon01.wav",
+      "bytes": 8393
+    },
+    "summon-15-1": {
+      "url": "assets/audio/summon-15-1.ogg",
+      "source": "sound/bubbles_nansummon02.wav",
+      "bytes": 6617
+    },
+    "summon-15-2": {
+      "url": "assets/audio/summon-15-2.ogg",
+      "source": "sound/bubbles_nansummon03.wav",
+      "bytes": 6810
+    },
+    "power-15-0": {
+      "url": "assets/audio/power-15-0.ogg",
+      "source": "sound/bubbles_nanpwrbh01.wav",
+      "bytes": 9504
+    },
+    "power-15-1": {
+      "url": "assets/audio/power-15-1.ogg",
+      "source": "sound/bubbles_nanpwrbh02.wav",
+      "bytes": 9379
+    },
+    "power-15-2": {
+      "url": "assets/audio/power-15-2.ogg",
+      "source": "sound/bubbles_nanpwrbh03.wav",
+      "bytes": 12101
+    },
+    "summon-1-0": {
+      "url": "assets/audio/summon-1-0.ogg",
+      "source": "sound/btrcup_nansummon01_01.wav",
+      "bytes": 6744
+    },
+    "summon-1-1": {
+      "url": "assets/audio/summon-1-1.ogg",
+      "source": "sound/btrcup_nansummon01_02.wav",
+      "bytes": 8168
+    },
+    "summon-1-2": {
+      "url": "assets/audio/summon-1-2.ogg",
+      "source": "sound/btrcup_nansummon01_03.wav",
+      "bytes": 7275
+    },
+    "power-1-0": {
+      "url": "assets/audio/power-1-0.ogg",
+      "source": "sound/btrcup_nanpwrbb01.wav",
+      "bytes": 9143
+    },
+    "power-1-1": {
+      "url": "assets/audio/power-1-1.ogg",
+      "source": "sound/btrcup_nanpwrbb02.wav",
+      "bytes": 9402
+    },
+    "power-1-2": {
+      "url": "assets/audio/power-1-2.ogg",
+      "source": "sound/btrcup_nanpwrbb03.wav",
+      "bytes": 9754
+    },
+    "summon-38-0": {
+      "url": "assets/audio/summon-38-0.ogg",
+      "source": "sound/cheese_nansummon01.wav",
+      "bytes": 9891
+    },
+    "summon-38-1": {
+      "url": "assets/audio/summon-38-1.ogg",
+      "source": "sound/cheese_nansummon02.wav",
+      "bytes": 14832
+    },
+    "summon-38-2": {
+      "url": "assets/audio/summon-38-2.ogg",
+      "source": "sound/cheese_nansummon03.wav",
+      "bytes": 11314
+    },
+    "power-38-0": {
+      "url": "assets/audio/power-38-0.ogg",
+      "source": "sound/cheese_nanpwrh01.wav",
+      "bytes": 7661
+    },
+    "power-38-1": {
+      "url": "assets/audio/power-38-1.ogg",
+      "source": "sound/cheese_nanpwrh02.wav",
+      "bytes": 13639
+    },
+    "power-38-2": {
+      "url": "assets/audio/power-38-2.ogg",
+      "source": "sound/cheese_nanpwrh03.wav",
+      "bytes": 10500
+    },
+    "summon-26-0": {
+      "url": "assets/audio/summon-26-0.ogg",
+      "source": "sound/coco_nansummon.wav",
+      "bytes": 6456
+    },
+    "power-26-0": {
+      "url": "assets/audio/power-26-0.ogg",
+      "source": "sound/coco_nanpwrbbu01.wav",
+      "bytes": 10015
+    },
+    "power-26-1": {
+      "url": "assets/audio/power-26-1.ogg",
+      "source": "sound/coco_nanpwrbbu02.wav",
+      "bytes": 6919
+    },
+    "power-26-2": {
+      "url": "assets/audio/power-26-2.ogg",
+      "source": "sound/coco_nanpwrbbu03.wav",
+      "bytes": 14058
+    },
+    "summon-33-0": {
+      "url": "assets/audio/summon-33-0.ogg",
+      "source": "sound/courage_nansummon01.wav",
+      "bytes": 8560
+    },
+    "summon-33-1": {
+      "url": "assets/audio/summon-33-1.ogg",
+      "source": "sound/courage_nansummon02.wav",
+      "bytes": 9543
+    },
+    "summon-33-2": {
+      "url": "assets/audio/summon-33-2.ogg",
+      "source": "sound/courage_nansummon03.wav",
+      "bytes": 7486
+    },
+    "power-33-0": {
+      "url": "assets/audio/power-33-0.ogg",
+      "source": "sound/courage_nanpwrcp01.wav",
+      "bytes": 13652
+    },
+    "power-33-1": {
+      "url": "assets/audio/power-33-1.ogg",
+      "source": "sound/courage_nanpwrcp02.wav",
+      "bytes": 10095
+    },
+    "power-33-2": {
+      "url": "assets/audio/power-33-2.ogg",
+      "source": "sound/courage_nanpwrcp03.wav",
+      "bytes": 11294
+    },
+    "summon-7-0": {
+      "url": "assets/audio/summon-7-0.ogg",
+      "source": "sound/deedee_nansummon01.wav",
+      "bytes": 7112
+    },
+    "summon-7-1": {
+      "url": "assets/audio/summon-7-1.ogg",
+      "source": "sound/deedee_nansummon02.wav",
+      "bytes": 7100
+    },
+    "summon-7-2": {
+      "url": "assets/audio/summon-7-2.ogg",
+      "source": "sound/deedee_nansummon03.wav",
+      "bytes": 8800
+    },
+    "power-7-0": {
+      "url": "assets/audio/power-7-0.ogg",
+      "source": "sound/deedee_nanpwrdiva01.wav",
+      "bytes": 9795
+    },
+    "power-7-1": {
+      "url": "assets/audio/power-7-1.ogg",
+      "source": "sound/deedee_nanpwrdiva02.wav",
+      "bytes": 7119
+    },
+    "power-7-2": {
+      "url": "assets/audio/power-7-2.ogg",
+      "source": "sound/deedee_nanpwrdiva03.wav",
+      "bytes": 8192
+    },
+    "summon-16-0": {
+      "url": "assets/audio/summon-16-0.ogg",
+      "source": "sound/demongo_nansummon01.wav",
+      "bytes": 10934
+    },
+    "summon-16-1": {
+      "url": "assets/audio/summon-16-1.ogg",
+      "source": "sound/demongo_nansummon02.wav",
+      "bytes": 15157
+    },
+    "summon-16-2": {
+      "url": "assets/audio/summon-16-2.ogg",
+      "source": "sound/demongo_nansummon03.wav",
+      "bytes": 15974
+    },
+    "power-16-0": {
+      "url": "assets/audio/power-16-0.ogg",
+      "source": "sound/demongo_nanpwrdf01.wav",
+      "bytes": 14937
+    },
+    "power-16-1": {
+      "url": "assets/audio/power-16-1.ogg",
+      "source": "sound/demongo_nanpwrdf02.wav",
+      "bytes": 17033
+    },
+    "power-16-2": {
+      "url": "assets/audio/power-16-2.ogg",
+      "source": "sound/demongo_nanpwrdf03.wav",
+      "bytes": 22420
+    },
+    "summon-22-0": {
+      "url": "assets/audio/summon-22-0.ogg",
+      "source": "sound/dexter_nansummon01.wav",
+      "bytes": 8150
+    },
+    "summon-22-1": {
+      "url": "assets/audio/summon-22-1.ogg",
+      "source": "sound/dexter_nansummon02.wav",
+      "bytes": 10273
+    },
+    "summon-22-2": {
+      "url": "assets/audio/summon-22-2.ogg",
+      "source": "sound/dexter_nansummon03.wav",
+      "bytes": 8145
+    },
+    "power-22-0": {
+      "url": "assets/audio/power-22-0.ogg",
+      "source": "sound/dexter_nanpwrglide01.wav",
+      "bytes": 6660
+    },
+    "power-22-1": {
+      "url": "assets/audio/power-22-1.ogg",
+      "source": "sound/dexter_nanpwrglide02.wav",
+      "bytes": 7465
+    },
+    "power-22-2": {
+      "url": "assets/audio/power-22-2.ogg",
+      "source": "sound/dexter_nanpwrglide03.wav",
+      "bytes": 7209
+    },
+    "summon-32-0": {
+      "url": "assets/audio/summon-32-0.ogg",
+      "source": "sound/ed_nansummon01.wav",
+      "bytes": 6299
+    },
+    "summon-32-1": {
+      "url": "assets/audio/summon-32-1.ogg",
+      "source": "sound/ed_nansummon02.wav",
+      "bytes": 13033
+    },
+    "summon-32-2": {
+      "url": "assets/audio/summon-32-2.ogg",
+      "source": "sound/ed_nansummon03.wav",
+      "bytes": 13459
+    },
+    "power-32-0": {
+      "url": "assets/audio/power-32-0.ogg",
+      "source": "sound/ed_nanpwrgh01.wav",
+      "bytes": 11130
+    },
+    "power-32-1": {
+      "url": "assets/audio/power-32-1.ogg",
+      "source": "sound/ed_nanpwrgh02.wav",
+      "bytes": 16024
+    },
+    "power-32-2": {
+      "url": "assets/audio/power-32-2.ogg",
+      "source": "sound/ed_nanpwrgh03.wav",
+      "bytes": 11436
+    },
+    "summon-9-0": {
+      "url": "assets/audio/summon-9-0.ogg",
+      "source": "sound/edd_nansummon01.wav",
+      "bytes": 6104
+    },
+    "summon-9-1": {
+      "url": "assets/audio/summon-9-1.ogg",
+      "source": "sound/edd_nansummon02.wav",
+      "bytes": 7843
+    },
+    "summon-9-2": {
+      "url": "assets/audio/summon-9-2.ogg",
+      "source": "sound/edd_nansummon03.wav",
+      "bytes": 9270
+    },
+    "power-9-0": {
+      "url": "assets/audio/power-9-0.ogg",
+      "source": "sound/edd_nanpwrmd01.wav",
+      "bytes": 11603
+    },
+    "power-9-1": {
+      "url": "assets/audio/power-9-1.ogg",
+      "source": "sound/edd_nanpwrmd02.wav",
+      "bytes": 10947
+    },
+    "power-9-2": {
+      "url": "assets/audio/power-9-2.ogg",
+      "source": "sound/edd_nanpwrmd03.wav",
+      "bytes": 10210
+    },
+    "summon-3-0": {
+      "url": "assets/audio/summon-3-0.ogg",
+      "source": "sound/eddy_nansummon01.wav",
+      "bytes": 6404
+    },
+    "summon-3-1": {
+      "url": "assets/audio/summon-3-1.ogg",
+      "source": "sound/eddy_nansummon02.wav",
+      "bytes": 7577
+    },
+    "summon-3-2": {
+      "url": "assets/audio/summon-3-2.ogg",
+      "source": "sound/eddy_nansummon03.wav",
+      "bytes": 6267
+    },
+    "power-3-0": {
+      "url": "assets/audio/power-3-0.ogg",
+      "source": "sound/eddy_nanpwres01.wav",
+      "bytes": 9702
+    },
+    "power-3-1": {
+      "url": "assets/audio/power-3-1.ogg",
+      "source": "sound/eddy_nanpwres02.wav",
+      "bytes": 11220
+    },
+    "power-3-2": {
+      "url": "assets/audio/power-3-2.ogg",
+      "source": "sound/eddy_nanpwres03.wav",
+      "bytes": 9911
+    },
+    "summon-4-0": {
+      "url": "assets/audio/summon-4-0.ogg",
+      "source": "sound/eduardo_nansummon01.wav",
+      "bytes": 9551
+    },
+    "summon-4-1": {
+      "url": "assets/audio/summon-4-1.ogg",
+      "source": "sound/eduardo_nansummon02.wav",
+      "bytes": 12273
+    },
+    "summon-4-2": {
+      "url": "assets/audio/summon-4-2.ogg",
+      "source": "sound/eduardo_nansummon03.wav",
+      "bytes": 9927
+    },
+    "power-4-0": {
+      "url": "assets/audio/power-4-0.ogg",
+      "source": "sound/eduardo_nanpwrmr01.wav",
+      "bytes": 12108
+    },
+    "power-4-1": {
+      "url": "assets/audio/power-4-1.ogg",
+      "source": "sound/eduardo_nanpwrmr02.wav",
+      "bytes": 11237
+    },
+    "power-4-2": {
+      "url": "assets/audio/power-4-2.ogg",
+      "source": "sound/eduardo_nanpwrmr03.wav",
+      "bytes": 9381
+    },
+    "summon-21-0": {
+      "url": "assets/audio/summon-21-0.ogg",
+      "source": "sound/grim_nansummon01.wav",
+      "bytes": 7760
+    },
+    "summon-21-1": {
+      "url": "assets/audio/summon-21-1.ogg",
+      "source": "sound/grim_nansummon02.wav",
+      "bytes": 7908
+    },
+    "summon-21-2": {
+      "url": "assets/audio/summon-21-2.ogg",
+      "source": "sound/grim_nansummon03.wav",
+      "bytes": 11466
+    },
+    "power-21-0": {
+      "url": "assets/audio/power-21-0.ogg",
+      "source": "sound/grim_nanpwrheck01.wav",
+      "bytes": 10105
+    },
+    "power-21-1": {
+      "url": "assets/audio/power-21-1.ogg",
+      "source": "sound/grim_nanpwrheck02.wav",
+      "bytes": 9435
+    },
+    "power-21-2": {
+      "url": "assets/audio/power-21-2.ogg",
+      "source": "sound/grim_nanpwrheck03.wav",
+      "bytes": 9363
+    },
+    "summon-29-0": {
+      "url": "assets/audio/summon-29-0.ogg",
+      "source": "sound/hex_nansummon01.wav",
+      "bytes": 7404
+    },
+    "summon-29-1": {
+      "url": "assets/audio/summon-29-1.ogg",
+      "source": "sound/hex_nansummon02.wav",
+      "bytes": 10424
+    },
+    "summon-29-2": {
+      "url": "assets/audio/summon-29-2.ogg",
+      "source": "sound/hex_nansummon03.wav",
+      "bytes": 14222
+    },
+    "power-29-0": {
+      "url": "assets/audio/power-29-0.ogg",
+      "source": "sound/hex_nanpwrsc01.wav",
+      "bytes": 11304
+    },
+    "power-29-1": {
+      "url": "assets/audio/power-29-1.ogg",
+      "source": "sound/hex_nanpwrsc02.wav",
+      "bytes": 12378
+    },
+    "power-29-2": {
+      "url": "assets/audio/power-29-2.ogg",
+      "source": "sound/hex_nanpwrsc03.wav",
+      "bytes": 15678
+    },
+    "summon-13-0": {
+      "url": "assets/audio/summon-13-0.ogg",
+      "source": "sound/him_nansummon01.wav",
+      "bytes": 10255
+    },
+    "summon-13-1": {
+      "url": "assets/audio/summon-13-1.ogg",
+      "source": "sound/him_nansummon02.wav",
+      "bytes": 10445
+    },
+    "summon-13-2": {
+      "url": "assets/audio/summon-13-2.ogg",
+      "source": "sound/him_nansummon03.wav",
+      "bytes": 12581
+    },
+    "power-13-0": {
+      "url": "assets/audio/power-13-0.ogg",
+      "source": "sound/him_nanpwrdp01.wav",
+      "bytes": 13667
+    },
+    "power-13-1": {
+      "url": "assets/audio/power-13-1.ogg",
+      "source": "sound/him_nanpwrdp02.wav",
+      "bytes": 15254
+    },
+    "power-13-2": {
+      "url": "assets/audio/power-13-2.ogg",
+      "source": "sound/him_nanpwrdp03.wav",
+      "bytes": 16329
+    },
+    "summon-36-0": {
+      "url": "assets/audio/summon-36-0.ogg",
+      "source": "sound/humongo_nansummon01.wav",
+      "bytes": 11684
+    },
+    "summon-36-1": {
+      "url": "assets/audio/summon-36-1.ogg",
+      "source": "sound/humongo_nansummon02.wav",
+      "bytes": 13535
+    },
+    "summon-36-2": {
+      "url": "assets/audio/summon-36-2.ogg",
+      "source": "sound/humongo_nansummon03.wav",
+      "bytes": 12869
+    },
+    "power-36-0": {
+      "url": "assets/audio/power-36-0.ogg",
+      "source": "sound/humongo_nanpwrgq01.wav",
+      "bytes": 12253
+    },
+    "power-36-1": {
+      "url": "assets/audio/power-36-1.ogg",
+      "source": "sound/humongo_nanpwrgq02.wav",
+      "bytes": 11242
+    },
+    "power-36-2": {
+      "url": "assets/audio/power-36-2.ogg",
+      "source": "sound/humongo_nanpwrgq03.wav",
+      "bytes": 18279
+    },
+    "summon-37-0": {
+      "url": "assets/audio/summon-37-0.ogg",
+      "source": "sound/jbravo_nansummon01.wav",
+      "bytes": 8722
+    },
+    "summon-37-1": {
+      "url": "assets/audio/summon-37-1.ogg",
+      "source": "sound/jbravo_nansummon02.wav",
+      "bytes": 10105
+    },
+    "summon-37-2": {
+      "url": "assets/audio/summon-37-2.ogg",
+      "source": "sound/jbravo_nansummon03.wav",
+      "bytes": 11963
+    },
+    "power-37-0": {
+      "url": "assets/audio/power-37-0.ogg",
+      "source": "sound/jbravo_nanpwrstn01.wav",
+      "bytes": 7622
+    },
+    "power-37-1": {
+      "url": "assets/audio/power-37-1.ogg",
+      "source": "sound/jbravo_nanpwrstn02.wav",
+      "bytes": 11493
+    },
+    "power-37-2": {
+      "url": "assets/audio/power-37-2.ogg",
+      "source": "sound/jbravo_nanpwrstn03.wav",
+      "bytes": 9056
+    },
+    "summon-30-0": {
+      "url": "assets/audio/summon-30-0.ogg",
+      "source": "sound/juniper_nansummon01.wav",
+      "bytes": 9558
+    },
+    "summon-30-1": {
+      "url": "assets/audio/summon-30-1.ogg",
+      "source": "sound/juniper_nansummon02.wav",
+      "bytes": 12634
+    },
+    "summon-30-2": {
+      "url": "assets/audio/summon-30-2.ogg",
+      "source": "sound/juniper_nansummon03.wav",
+      "bytes": 7872
+    },
+    "power-30-0": {
+      "url": "assets/audio/power-30-0.ogg",
+      "source": "sound/juniper_nanpwrma01.wav",
+      "bytes": 13936
+    },
+    "power-30-1": {
+      "url": "assets/audio/power-30-1.ogg",
+      "source": "sound/juniper_nanpwrma02.wav",
+      "bytes": 10575
+    },
+    "power-30-2": {
+      "url": "assets/audio/power-30-2.ogg",
+      "source": "sound/juniper_nanpwrma03.wav",
+      "bytes": 11358
+    },
+    "summon-27-0": {
+      "url": "assets/audio/summon-27-0.ogg",
+      "source": "sound/mac_nansummon01.wav",
+      "bytes": 8685
+    },
+    "summon-27-1": {
+      "url": "assets/audio/summon-27-1.ogg",
+      "source": "sound/mac_nansummon02.wav",
+      "bytes": 11296
+    },
+    "summon-27-2": {
+      "url": "assets/audio/summon-27-2.ogg",
+      "source": "sound/mac_nansummon03.wav",
+      "bytes": 10229
+    },
+    "power-27-0": {
+      "url": "assets/audio/power-27-0.ogg",
+      "source": "sound/mac_nanpwrfr01.wav",
+      "bytes": 11506
+    },
+    "power-27-1": {
+      "url": "assets/audio/power-27-1.ogg",
+      "source": "sound/mac_nanpwrfr02.wav",
+      "bytes": 8692
+    },
+    "power-27-2": {
+      "url": "assets/audio/power-27-2.ogg",
+      "source": "sound/mac_nanpwrfr03.wav",
+      "bytes": 9855
+    },
+    "summon-20-0": {
+      "url": "assets/audio/summon-20-0.ogg",
+      "source": "sound/mandark_nansummon01.wav",
+      "bytes": 7708
+    },
+    "summon-20-1": {
+      "url": "assets/audio/summon-20-1.ogg",
+      "source": "sound/mandark_nansummon02.wav",
+      "bytes": 7214
+    },
+    "summon-20-2": {
+      "url": "assets/audio/summon-20-2.ogg",
+      "source": "sound/mandark_nansummon03.wav",
+      "bytes": 10588
+    },
+    "power-20-0": {
+      "url": "assets/audio/power-20-0.ogg",
+      "source": "sound/mandark_nanpwrbd01.wav",
+      "bytes": 9619
+    },
+    "power-20-1": {
+      "url": "assets/audio/power-20-1.ogg",
+      "source": "sound/mandark_nanpwrbd02.wav",
+      "bytes": 9702
+    },
+    "power-20-2": {
+      "url": "assets/audio/power-20-2.ogg",
+      "source": "sound/mandark_nanpwrbd03.wav",
+      "bytes": 10784
+    },
+    "summon-25-0": {
+      "url": "assets/audio/summon-25-0.ogg",
+      "source": "sound/mandy_nansummon01.wav",
+      "bytes": 7284
+    },
+    "summon-25-1": {
+      "url": "assets/audio/summon-25-1.ogg",
+      "source": "sound/mandy_nansummon02.wav",
+      "bytes": 8753
+    },
+    "summon-25-2": {
+      "url": "assets/audio/summon-25-2.ogg",
+      "source": "sound/mandy_nansummon03.wav",
+      "bytes": 10034
+    },
+    "power-25-0": {
+      "url": "assets/audio/power-25-0.ogg",
+      "source": "sound/mandy_nanpwrdr01.wav",
+      "bytes": 11742
+    },
+    "power-25-1": {
+      "url": "assets/audio/power-25-1.ogg",
+      "source": "sound/mandy_nanpwrdr02.wav",
+      "bytes": 8691
+    },
+    "power-25-2": {
+      "url": "assets/audio/power-25-2.ogg",
+      "source": "sound/mandy_nanpwrdr03.wav",
+      "bytes": 12298
+    },
+    "summon-10-0": {
+      "url": "assets/audio/summon-10-0.ogg",
+      "source": "sound/megas_nansummon01.wav",
+      "bytes": 7709
+    },
+    "power-10-0": {
+      "url": "assets/audio/power-10-0.ogg",
+      "source": "sound/megas_nanpwref01.wav",
+      "bytes": 10739
+    },
+    "power-10-1": {
+      "url": "assets/audio/power-10-1.ogg",
+      "source": "sound/megas_nanpwrgss01.wav",
+      "bytes": 9056
+    },
+    "power-10-2": {
+      "url": "assets/audio/power-10-2.ogg",
+      "source": "sound/megas_nanpwrsm01.wav",
+      "bytes": 13091
+    },
+    "summon-19-0": {
+      "url": "assets/audio/summon-19-0.ogg",
+      "source": "sound/mojo_nansummon01.wav",
+      "bytes": 8804
+    },
+    "summon-19-1": {
+      "url": "assets/audio/summon-19-1.ogg",
+      "source": "sound/mojo_nansummon02.wav",
+      "bytes": 11619
+    },
+    "summon-19-2": {
+      "url": "assets/audio/summon-19-2.ogg",
+      "source": "sound/mojo_nansummon03.wav",
+      "bytes": 7955
+    },
+    "power-19-0": {
+      "url": "assets/audio/power-19-0.ogg",
+      "source": "sound/mojo_nanpwrbp01.wav",
+      "bytes": 9570
+    },
+    "power-19-1": {
+      "url": "assets/audio/power-19-1.ogg",
+      "source": "sound/mojo_nanpwrbp02.wav",
+      "bytes": 13241
+    },
+    "power-19-2": {
+      "url": "assets/audio/power-19-2.ogg",
+      "source": "sound/mojo_nanpwrbp03.wav",
+      "bytes": 7604
+    },
+    "summon-8-0": {
+      "url": "assets/audio/summon-8-0.ogg",
+      "source": "sound/numfive_nansummon01.wav",
+      "bytes": 8632
+    },
+    "summon-8-1": {
+      "url": "assets/audio/summon-8-1.ogg",
+      "source": "sound/numfive_nansummon02.wav",
+      "bytes": 6662
+    },
+    "summon-8-2": {
+      "url": "assets/audio/summon-8-2.ogg",
+      "source": "sound/numfive_nansummon03.wav",
+      "bytes": 5997
+    },
+    "power-8-0": {
+      "url": "assets/audio/power-8-0.ogg",
+      "source": "sound/numfive_nanpwragent01.wav",
+      "bytes": 12362
+    },
+    "power-8-1": {
+      "url": "assets/audio/power-8-1.ogg",
+      "source": "sound/numfive_nanpwragent02.wav",
+      "bytes": 10093
+    },
+    "power-8-2": {
+      "url": "assets/audio/power-8-2.ogg",
+      "source": "sound/numfive_nanpwragent03.wav",
+      "bytes": 7668
+    },
+    "summon-31-0": {
+      "url": "assets/audio/summon-31-0.ogg",
+      "source": "sound/numfour_nansummon01.wav",
+      "bytes": 9085
+    },
+    "summon-31-1": {
+      "url": "assets/audio/summon-31-1.ogg",
+      "source": "sound/numfour_nansummon02.wav",
+      "bytes": 8061
+    },
+    "summon-31-2": {
+      "url": "assets/audio/summon-31-2.ogg",
+      "source": "sound/numfour_nansummon03.wav",
+      "bytes": 8003
+    },
+    "power-31-0": {
+      "url": "assets/audio/power-31-0.ogg",
+      "source": "sound/numfour_nanpwrbb01.wav",
+      "bytes": 11978
+    },
+    "power-31-1": {
+      "url": "assets/audio/power-31-1.ogg",
+      "source": "sound/numfour_nanpwrbb02.wav",
+      "bytes": 7657
+    },
+    "power-31-2": {
+      "url": "assets/audio/power-31-2.ogg",
+      "source": "sound/numfour_nanpwrbb03.wav",
+      "bytes": 7726
+    },
+    "summon-18-0": {
+      "url": "assets/audio/summon-18-0.ogg",
+      "source": "sound/numone_nansummon01.wav",
+      "bytes": 7892
+    },
+    "summon-18-1": {
+      "url": "assets/audio/summon-18-1.ogg",
+      "source": "sound/numone_nansummon02.wav",
+      "bytes": 10722
+    },
+    "summon-18-2": {
+      "url": "assets/audio/summon-18-2.ogg",
+      "source": "sound/numone_nansummon03.wav",
+      "bytes": 8856
+    },
+    "power-18-0": {
+      "url": "assets/audio/power-18-0.ogg",
+      "source": "sound/numone_nanpwrbb01.wav",
+      "bytes": 8709
+    },
+    "power-18-1": {
+      "url": "assets/audio/power-18-1.ogg",
+      "source": "sound/numone_nanpwrbb02.wav",
+      "bytes": 8789
+    },
+    "power-18-2": {
+      "url": "assets/audio/power-18-2.ogg",
+      "source": "sound/numone_nanpwrbb03.wav",
+      "bytes": 7590
+    },
+    "summon-28-0": {
+      "url": "assets/audio/summon-28-0.ogg",
+      "source": "sound/numthree_nansummon01.wav",
+      "bytes": 9840
+    },
+    "summon-28-1": {
+      "url": "assets/audio/summon-28-1.ogg",
+      "source": "sound/numthree_nansummon02.wav",
+      "bytes": 13528
+    },
+    "summon-28-2": {
+      "url": "assets/audio/summon-28-2.ogg",
+      "source": "sound/numthree_nansummon03.wav",
+      "bytes": 8071
+    },
+    "power-28-0": {
+      "url": "assets/audio/power-28-0.ogg",
+      "source": "sound/numthree_nanpwrrr01.wav",
+      "bytes": 21635
+    },
+    "power-28-1": {
+      "url": "assets/audio/power-28-1.ogg",
+      "source": "sound/numthree_nanpwrrr02.wav",
+      "bytes": 10503
+    },
+    "power-28-2": {
+      "url": "assets/audio/power-28-2.ogg",
+      "source": "sound/numthree_nanpwrrr03.wav",
+      "bytes": 9784
+    },
+    "summon-2-0": {
+      "url": "assets/audio/summon-2-0.ogg",
+      "source": "sound/numtwo_nansummon01.wav",
+      "bytes": 7850
+    },
+    "summon-2-1": {
+      "url": "assets/audio/summon-2-1.ogg",
+      "source": "sound/numtwo_nansummon02.wav",
+      "bytes": 10046
+    },
+    "summon-2-2": {
+      "url": "assets/audio/summon-2-2.ogg",
+      "source": "sound/numtwo_nansummon03.wav",
+      "bytes": 7998
+    },
+    "power-2-0": {
+      "url": "assets/audio/power-2-0.ogg",
+      "source": "sound/numtwo_nanpwrff01.wav",
+      "bytes": 7051
+    },
+    "power-2-1": {
+      "url": "assets/audio/power-2-1.ogg",
+      "source": "sound/numtwo_nanpwrff02.wav",
+      "bytes": 8121
+    },
+    "power-2-2": {
+      "url": "assets/audio/power-2-2.ogg",
+      "source": "sound/numtwo_nanpwrff03.wav",
+      "bytes": 8877
+    },
+    "summon-34-0": {
+      "url": "assets/audio/summon-34-0.ogg",
+      "source": "sound/sjack_nansummon01.wav",
+      "bytes": 8000
+    },
+    "summon-34-1": {
+      "url": "assets/audio/summon-34-1.ogg",
+      "source": "sound/sjack_nansummon02.wav",
+      "bytes": 7520
+    },
+    "summon-34-2": {
+      "url": "assets/audio/summon-34-2.ogg",
+      "source": "sound/sjack_nansummon03.wav",
+      "bytes": 7618
+    },
+    "power-34-0": {
+      "url": "assets/audio/power-34-0.ogg",
+      "source": "sound/sjack_nanpwrrs01.wav",
+      "bytes": 9161
+    },
+    "power-34-1": {
+      "url": "assets/audio/power-34-1.ogg",
+      "source": "sound/sjack_nanpwrrs02.wav",
+      "bytes": 9396
+    },
+    "power-34-2": {
+      "url": "assets/audio/power-34-2.ogg",
+      "source": "sound/sjack_nanpwrrs03.wav",
+      "bytes": 9847
+    },
+    "summon-24-0": {
+      "url": "assets/audio/summon-24-0.ogg",
+      "source": "sound/swampfire_nansummon01.wav",
+      "bytes": 12185
+    },
+    "summon-24-1": {
+      "url": "assets/audio/summon-24-1.ogg",
+      "source": "sound/swampfire_nansummon02.wav",
+      "bytes": 8927
+    },
+    "summon-24-2": {
+      "url": "assets/audio/summon-24-2.ogg",
+      "source": "sound/swampfire_nansummon03.wav",
+      "bytes": 10885
+    },
+    "power-24-0": {
+      "url": "assets/audio/power-24-0.ogg",
+      "source": "sound/swampfire_nanpwrcv01.wav",
+      "bytes": 14838
+    },
+    "power-24-1": {
+      "url": "assets/audio/power-24-1.ogg",
+      "source": "sound/swampfire_nanpwrcv02.wav",
+      "bytes": 10907
+    },
+    "power-24-2": {
+      "url": "assets/audio/power-24-2.ogg",
+      "source": "sound/swampfire_nanpwrcv03.wav",
+      "bytes": 15084
+    },
+    "summon-12-0": {
+      "url": "assets/audio/summon-12-0.ogg",
+      "source": "sound/utonium_nansummon01.wav",
+      "bytes": 10561
+    },
+    "summon-12-1": {
+      "url": "assets/audio/summon-12-1.ogg",
+      "source": "sound/utonium_nansummon02.wav",
+      "bytes": 6482
+    },
+    "summon-12-2": {
+      "url": "assets/audio/summon-12-2.ogg",
+      "source": "sound/utonium_nansummon03.wav",
+      "bytes": 6688
+    },
+    "power-12-0": {
+      "url": "assets/audio/power-12-0.ogg",
+      "source": "sound/utonium_nanpwrpp01.wav",
+      "bytes": 10988
+    },
+    "power-12-1": {
+      "url": "assets/audio/power-12-1.ogg",
+      "source": "sound/utonium_nanpwrpp02.wav",
+      "bytes": 6925
+    },
+    "power-12-2": {
+      "url": "assets/audio/power-12-2.ogg",
+      "source": "sound/utonium_nanpwrpp03.wav",
+      "bytes": 8927
+    },
+    "summon-23-0": {
+      "url": "assets/audio/summon-23-0.ogg",
+      "source": "sound/vilgax_nansummon01.wav",
+      "bytes": 12008
+    },
+    "summon-23-1": {
+      "url": "assets/audio/summon-23-1.ogg",
+      "source": "sound/vilgax_nansummon02.wav",
+      "bytes": 11677
+    },
+    "summon-23-2": {
+      "url": "assets/audio/summon-23-2.ogg",
+      "source": "sound/vilgax_nansummon03.wav",
+      "bytes": 14118
+    },
+    "power-23-0": {
+      "url": "assets/audio/power-23-0.ogg",
+      "source": "sound/vilgax_nanpwrls01.wav",
+      "bytes": 11855
+    },
+    "power-23-1": {
+      "url": "assets/audio/power-23-1.ogg",
+      "source": "sound/vilgax_nanpwrls02.wav",
+      "bytes": 10998
+    },
+    "power-23-2": {
+      "url": "assets/audio/power-23-2.ogg",
+      "source": "sound/vilgax_nanpwrls03.wav",
+      "bytes": 10219
+    },
+    "summon-6-0": {
+      "url": "assets/audio/summon-6-0.ogg",
+      "source": "sound/wilt_nansummon01.wav",
+      "bytes": 5776
+    },
+    "summon-6-1": {
+      "url": "assets/audio/summon-6-1.ogg",
+      "source": "sound/wilt_nansummon02.wav",
+      "bytes": 5793
+    },
+    "summon-6-2": {
+      "url": "assets/audio/summon-6-2.ogg",
+      "source": "sound/wilt_nansummon03.wav",
+      "bytes": 7212
+    },
+    "power-6-0": {
+      "url": "assets/audio/power-6-0.ogg",
+      "source": "sound/wilt_nanpwrca01.wav",
+      "bytes": 8972
+    },
+    "power-6-1": {
+      "url": "assets/audio/power-6-1.ogg",
+      "source": "sound/wilt_nanpwrca02.wav",
+      "bytes": 7796
+    },
+    "power-6-2": {
+      "url": "assets/audio/power-6-2.ogg",
+      "source": "sound/wilt_nanpwrca03.wav",
+      "bytes": 8850
+    },
+    "hurt-dexter-0": {
+      "url": "assets/audio/hurt-dexter-0.ogg",
+      "source": "sound/dexter_hurt_1.wav",
+      "bytes": 8530
+    },
+    "hurt-dexter-1": {
+      "url": "assets/audio/hurt-dexter-1.ogg",
+      "source": "sound/dexter_hurt_2.wav",
+      "bytes": 6083
+    },
+    "hurt-samuraijack-0": {
+      "url": "assets/audio/hurt-samuraijack-0.ogg",
+      "source": "sound/m_avatar_hurt01.wav",
+      "bytes": 5248
+    },
+    "hurt-samuraijack-1": {
+      "url": "assets/audio/hurt-samuraijack-1.ogg",
+      "source": "sound/m_avatar_hurt02.wav",
+      "bytes": 5671
+    },
+    "hurt-buttercup-0": {
+      "url": "assets/audio/hurt-buttercup-0.ogg",
+      "source": "sound/f_avatar_hurt01.wav",
+      "bytes": 5743
+    },
+    "hurt-buttercup-1": {
+      "url": "assets/audio/hurt-buttercup-1.ogg",
+      "source": "sound/f_avatar_hurt02.wav",
+      "bytes": 4956
+    },
+    "hurt-blossom-0": {
+      "url": "assets/audio/hurt-blossom-0.ogg",
+      "source": "sound/blossom_hurt_1.wav",
+      "bytes": 5388
+    },
+    "hurt-blossom-1": {
+      "url": "assets/audio/hurt-blossom-1.ogg",
+      "source": "sound/blossom_hurt_2.wav",
+      "bytes": 4988
+    },
+    "hurt-eddy-0": {
+      "url": "assets/audio/hurt-eddy-0.ogg",
+      "source": "sound/m_avatar_hurt01.wav",
+      "bytes": 5248
+    },
+    "hurt-eddy-1": {
+      "url": "assets/audio/hurt-eddy-1.ogg",
+      "source": "sound/m_avatar_hurt02.wav",
+      "bytes": 5671
+    },
+    "hurt-numbuhfive-0": {
+      "url": "assets/audio/hurt-numbuhfive-0.ogg",
+      "source": "sound/f_avatar_hurt01.wav",
+      "bytes": 5743
+    },
+    "hurt-numbuhfive-1": {
+      "url": "assets/audio/hurt-numbuhfive-1.ogg",
+      "source": "sound/f_avatar_hurt02.wav",
+      "bytes": 4956
+    },
+    "hurt-numbuhtwo-0": {
+      "url": "assets/audio/hurt-numbuhtwo-0.ogg",
+      "source": "sound/m_avatar_hurt01.wav",
+      "bytes": 5248
+    },
+    "hurt-numbuhtwo-1": {
+      "url": "assets/audio/hurt-numbuhtwo-1.ogg",
+      "source": "sound/m_avatar_hurt02.wav",
+      "bytes": 5671
+    },
+    "hurt-grim-0": {
+      "url": "assets/audio/hurt-grim-0.ogg",
+      "source": "sound/grim_hurt_1.wav",
+      "bytes": 5883
+    },
+    "hurt-grim-1": {
+      "url": "assets/audio/hurt-grim-1.ogg",
+      "source": "sound/grim_hurt_2.wav",
+      "bytes": 6652
+    },
+    "hurt-mac-0": {
+      "url": "assets/audio/hurt-mac-0.ogg",
+      "source": "sound/m_avatar_hurt01.wav",
+      "bytes": 5248
+    },
+    "hurt-mac-1": {
+      "url": "assets/audio/hurt-mac-1.ogg",
+      "source": "sound/m_avatar_hurt02.wav",
+      "bytes": 5671
+    },
+    "hurt-mandark-0": {
+      "url": "assets/audio/hurt-mandark-0.ogg",
+      "source": "sound/mandark_hurt_1.wav",
+      "bytes": 7760
+    },
+    "hurt-mandark-1": {
+      "url": "assets/audio/hurt-mandark-1.ogg",
+      "source": "sound/mandark_hurt_2.wav",
+      "bytes": 9552
+    },
+    "hurt-bubbles-0": {
+      "url": "assets/audio/hurt-bubbles-0.ogg",
+      "source": "sound/f_avatar_hurt01.wav",
+      "bytes": 5743
+    },
+    "hurt-bubbles-1": {
+      "url": "assets/audio/hurt-bubbles-1.ogg",
+      "source": "sound/f_avatar_hurt02.wav",
+      "bytes": 4956
+    },
+    "hurt-deedee-0": {
+      "url": "assets/audio/hurt-deedee-0.ogg",
+      "source": "sound/f_avatar_hurt01.wav",
+      "bytes": 5743
+    },
+    "hurt-deedee-1": {
+      "url": "assets/audio/hurt-deedee-1.ogg",
+      "source": "sound/f_avatar_hurt02.wav",
+      "bytes": 4956
+    },
+    "hurt-ed-0": {
+      "url": "assets/audio/hurt-ed-0.ogg",
+      "source": "sound/m_avatar_hurt01.wav",
+      "bytes": 5248
+    },
+    "hurt-ed-1": {
+      "url": "assets/audio/hurt-ed-1.ogg",
+      "source": "sound/m_avatar_hurt02.wav",
+      "bytes": 5671
+    },
+    "hurt-edd-0": {
+      "url": "assets/audio/hurt-edd-0.ogg",
+      "source": "sound/m_avatar_hurt01.wav",
+      "bytes": 5248
+    },
+    "hurt-edd-1": {
+      "url": "assets/audio/hurt-edd-1.ogg",
+      "source": "sound/m_avatar_hurt02.wav",
+      "bytes": 5671
+    },
+    "hurt-billy-0": {
+      "url": "assets/audio/hurt-billy-0.ogg",
+      "source": "sound/billy_hurt_1.wav",
+      "bytes": 8074
+    },
+    "hurt-billy-1": {
+      "url": "assets/audio/hurt-billy-1.ogg",
+      "source": "sound/billy_hurt_2.wav",
+      "bytes": 8854
+    },
+    "hurt-mandy-0": {
+      "url": "assets/audio/hurt-mandy-0.ogg",
+      "source": "sound/f_avatar_hurt01.wav",
+      "bytes": 5743
+    },
+    "hurt-mandy-1": {
+      "url": "assets/audio/hurt-mandy-1.ogg",
+      "source": "sound/f_avatar_hurt02.wav",
+      "bytes": 4956
+    },
+    "hurt-numbuhone-0": {
+      "url": "assets/audio/hurt-numbuhone-0.ogg",
+      "source": "sound/m_avatar_hurt01.wav",
+      "bytes": 5248
+    },
+    "hurt-numbuhone-1": {
+      "url": "assets/audio/hurt-numbuhone-1.ogg",
+      "source": "sound/m_avatar_hurt02.wav",
+      "bytes": 5671
+    },
+    "hurt-numbuhthree-0": {
+      "url": "assets/audio/hurt-numbuhthree-0.ogg",
+      "source": "sound/f_avatar_hurt01.wav",
+      "bytes": 5743
+    },
+    "hurt-numbuhthree-1": {
+      "url": "assets/audio/hurt-numbuhthree-1.ogg",
+      "source": "sound/f_avatar_hurt02.wav",
+      "bytes": 4956
+    },
+    "hurt-numbuhfour-0": {
+      "url": "assets/audio/hurt-numbuhfour-0.ogg",
+      "source": "sound/m_avatar_hurt01.wav",
+      "bytes": 5248
+    },
+    "hurt-numbuhfour-1": {
+      "url": "assets/audio/hurt-numbuhfour-1.ogg",
+      "source": "sound/m_avatar_hurt02.wav",
+      "bytes": 5671
+    },
+    "hurt-eduardo-0": {
+      "url": "assets/audio/hurt-eduardo-0.ogg",
+      "source": "sound/eduardo_hurt1_1.wav",
+      "bytes": 7795
+    },
+    "hurt-eduardo-1": {
+      "url": "assets/audio/hurt-eduardo-1.ogg",
+      "source": "sound/eduardo_hurt1_2.wav",
+      "bytes": 10136
+    },
+    "hurt-wilt-0": {
+      "url": "assets/audio/hurt-wilt-0.ogg",
+      "source": "sound/m_avatar_hurt01.wav",
+      "bytes": 5248
+    },
+    "hurt-wilt-1": {
+      "url": "assets/audio/hurt-wilt-1.ogg",
+      "source": "sound/m_avatar_hurt02.wav",
+      "bytes": 5671
+    },
+    "hurt-bloo-0": {
+      "url": "assets/audio/hurt-bloo-0.ogg",
+      "source": "sound/m_avatar_hurt01.wav",
+      "bytes": 5248
+    },
+    "hurt-bloo-1": {
+      "url": "assets/audio/hurt-bloo-1.ogg",
+      "source": "sound/m_avatar_hurt02.wav",
+      "bytes": 5671
+    },
+    "hurt-gwen-0": {
+      "url": "assets/audio/hurt-gwen-0.ogg",
+      "source": "sound/f_avatar_hurt01.wav",
+      "bytes": 5743
+    },
+    "hurt-gwen-1": {
+      "url": "assets/audio/hurt-gwen-1.ogg",
+      "source": "sound/f_avatar_hurt02.wav",
+      "bytes": 4956
+    },
+    "hurt-mojojojo-0": {
+      "url": "assets/audio/hurt-mojojojo-0.ogg",
+      "source": "sound/m_avatar_hurt01.wav",
+      "bytes": 5248
+    },
+    "hurt-mojojojo-1": {
+      "url": "assets/audio/hurt-mojojojo-1.ogg",
+      "source": "sound/m_avatar_hurt02.wav",
+      "bytes": 5671
+    },
+    "exert-0": {
+      "url": "assets/audio/exert-0.ogg",
+      "source": "sound/samjack_attackgrunt1.wav",
+      "bytes": 5789
+    },
+    "exert-1": {
+      "url": "assets/audio/exert-1.ogg",
+      "source": "sound/samjack_attackgrunt2.wav",
+      "bytes": 5084
+    },
+    "exert-2": {
+      "url": "assets/audio/exert-2.ogg",
+      "source": "sound/samjack_attackgrunt3.wav",
+      "bytes": 5052
     }
   },
   "animations": {

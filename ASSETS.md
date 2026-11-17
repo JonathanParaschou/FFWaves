@@ -1,5 +1,9 @@
 # FusionFall asset provenance
 
+## Source-based bunker reconstruction
+
+Dexlabs Bunker uses structural geometry from [NZ:P's published Nacht recreation](https://github.com/nzp-team/assets/blob/e147b116b2ade3920193a5b8839f6cc7e46da4a4/source/maps/ndu/ndu.map), credited to NZ:P Team under CC BY-SA 4.0. The original MAP, attribution, license and pinned revision are in [docs/reference/NZP-Nacht](docs/reference/NZP-Nacht/README.md). Source and derived geometry in `dist/assets/reference-bunker/` retain that license. Changes include coordinate conversion, triangulation, browser navigation, FusionFall material/prop substitutions and added survival services. No original CoD textures, models or audio are imported for this map. This is the published community reconstruction, not original Treyarch source.
+
 The visible FusionFall models and textures in `dist/assets/` were extracted from the user's existing FusionFall Unity Web Player cache. The original art is from Cartoon Network Universe: FusionFall, by Cartoon Network and Grigon Entertainment. The cache was opened read-only; no installed game data was changed.
 
 Each model's original asset path appears in `dist/assets/manifest.json` and the model JSON `source` field. The initial curated set has been expanded to 179 models and 256 texture entries, including all 44 cached Nanos, 23 additional town/industrial props, four ground surfaces, model portraits, and original Nano icons.
@@ -96,4 +100,22 @@ The current hero catalog contains 24 full NPC heroes, 20 source accessories and 
 
 `tools/recover-map-section.py` recovers original cached Map_04_04 placements and a bounded city crop (59 mesh parts, 15,461 triangles, 28 original textures). The crop is loaded through its own catalog and used as an out-of-bounds skyline landmark in Sector V. Relative placement is preserved; terrain/navigation is not claimed to be a playable original-map port. See [FUSIONFALL-SOURCE-RECOVERY.md](docs/FUSIONFALL-SOURCE-RECOVERY.md).
 
+`tools/export-native-city.py` additionally recovers a separate playable 128×128 metre region from that original scene. **Original City** includes 188 parts and 108,538 triangles, with 67 original texture entries, original terrain splat/lightmap composition, source street floors and original placed scenery at game scale. Source MeshCollider bounds and terrain gradients define conservative outdoor collision/navigation. Supply equipment and enemy spawn positions are authored survival additions. See [NATIVE-CITY-RECOVERY.md](docs/NATIVE-CITY-RECOVERY.md).
+
 All added visible source art in this pass comes from the existing FusionFall cache. No unrelated external art pack was needed. Original ownership remains unchanged.
+
+
+## Bunker prop retargeting and first-person presentation
+
+`reference-dressing.js` retargets source furniture footprints and source point anchors to the existing original cabinet, crate, drum, TV, generator and exterior-tree assets. Original cabinet/fence textures are used for source surface substitutions. Source architectural vertices are unchanged. Slim conduits, light housings and contact-shade geometry are new browser-authored dressing; the source navigation clearance rejects obstructing decorative placements. Outdoor trees inside the bunker envelope are omitted, and original model-center heights are converted to actual support heights.
+
+`weapon-presentation.js` places the original ten gun meshes around new trigger/support anchors fitted to their normalized bounds. First-person closed gloves and reload motions are authored for the FPS adaptation; they are not recovered original player animations. Full-scene software review renders use the same material and geometry construction as the browser.
+
+
+## Soundtrack, character audio and source-derived FPS arms
+
+The adaptive 112 BPM electronic score in `dist/soundscape.js` is newly composed for this game, synthesized locally with pads, bass, melody and percussion. It requires no streaming service. Breath sounds are authored filtered-noise envelopes, rather than recovered character dialogue. Combat adds percussion and upper arpeggios; intermissions reduce the arrangement. Voices duck the music, with independent saved music/effects/voice controls.
+
+`tools/extract-personality-audio.py` adds 281 unmodified original clips from the existing read-only FusionFall cache: summon and power variants for 39 Nanos, hero/avatar hurt variants, and three Samurai Jack exertion grunts. The five Nanos without matching cached recordings remain animated without invented dialogue. Generic avatar hurt recordings cover heroes without a matching named hurt clip. Original ownership applies; each file is recorded with its source path and byte size in the audio manifest.
+
+`dist/hero-arms.js` extracts the selected hero's actual textured arm/hand triangles by skin-weight ancestry. Original ready-pose geometry is baked and adapted to the authored FPS joint intervals and weapon grips, with sleeve boundary vertices constrained to those intervals. Source models, textures and full-body rigs remain unchanged. All 24 hero selections are checked. Wilt retains his source model's missing hand. This is an FPS adaptation of the existing hero assets, not newly recovered original first-person animations. Idle/cast Nano clips now also support summon, observation, celebration and concern gestures, selected only when the original clip exists.

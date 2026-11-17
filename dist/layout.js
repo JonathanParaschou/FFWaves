@@ -1,18 +1,21 @@
+import {referenceHeight} from './reference-geometry.js';
+import {ReferenceLayout,ReferenceFlowField} from './reference-layout.js';
+import {sampleNativeHeight,nativeBlocked} from './native-terrain.js';
 import { MAPS,mapById } from './maps.js';
 export { MAPS };
 export let activeMap=MAPS[0],BOUNDS=activeMap.bounds,BUILDINGS=activeMap.buildings,COVER=activeMap.cover,DIVIDERS=activeMap.dividers,GATES=activeMap.gates,STATIONS=activeMap.stations,SPAWNS=activeMap.spawns;
 export function setActiveMap(id){activeMap=mapById(id);BOUNDS=activeMap.bounds;BUILDINGS=activeMap.buildings;COVER=activeMap.cover;DIVIDERS=activeMap.dividers;GATES=activeMap.gates;STATIONS=activeMap.stations;SPAWNS=activeMap.spawns;return activeMap}
-export function heightAt(map,x,z){let h=0;for(const p of map.platforms)if(Math.abs(x-p.x)<=p.w/2&&Math.abs(z-p.z)<=p.d/2)h=Math.max(h,p.h);for(const r of map.ramps)if(Math.abs(x-r.x)<=r.w/2&&Math.abs(z-r.z)<=r.d/2){const t=r.axis==='x'?(x-r.x+r.w/2)/r.w:(z-r.z+r.d/2)/r.d;h=Math.max(h,r.from+(r.to-r.from)*t)}return h}
-export const groundHeight=(x,z)=>heightAt(activeMap,x,z);
+export function heightAt(map,x,z,level){if(map.reference)return referenceHeight(map.reference.data,x,z,level);if(map.native?.terrain)return sampleNativeHeight(map.native.terrain,x,z);let h=0;for(const p of map.platforms)if(Math.abs(x-p.x)<=p.w/2&&Math.abs(z-p.z)<=p.d/2)h=Math.max(h,p.h);for(const r of map.ramps)if(Math.abs(x-r.x)<=r.w/2&&Math.abs(z-r.z)<=r.d/2){const t=r.axis==='x'?(x-r.x+r.w/2)/r.w:(z-r.z+r.d/2)/r.d;h=Math.max(h,r.from+(r.to-r.from)*t)}return h}
+export const groundHeight=(x,z,level)=>heightAt(activeMap,x,z,level);
 export const distance=(a,b)=>Math.hypot(a.x-b.x,a.z-b.z);
 export function zoneAt(x,z,map=activeMap){return z<map.north?2:x>map.split?1:0}
 const rect=o=>({minX:o.x-o.w/2,maxX:o.x+o.w/2,minZ:o.z-o.d/2,maxZ:o.z+o.d/2});
 export class OutpostLayout {
- constructor(map=activeMap){this.map=map;this.bounds=map.bounds;this.unlocked={yard:false,garden:false};this.revision=0;this.static=[...map.buildings,...map.cover,...map.dividers,...map.walls,...map.trunks,...map.fixtureColliders,...map.architecture,...map.overhead].map(o=>({...rect(o),height:o.h,base:heightAt(map,o.x,o.z)+(o.baseOffset||0),overhead:!!o.overhead,id:o.id||o.asset}));this.refresh()}
+ constructor(map=activeMap){if(map.reference)return new ReferenceLayout(map);this.map=map;this.bounds=map.bounds;this.unlocked={yard:!!map.openLayout,garden:!!map.openLayout};this.revision=0;this.static=[...map.buildings,...map.cover,...map.dividers,...map.walls,...map.trunks,...map.fixtureColliders,...map.architecture,...map.overhead].map(o=>({...rect(o),height:o.h,base:Number.isFinite(o.base)?o.base:heightAt(map,o.x,o.z)+(o.baseOffset||0),overhead:!!o.overhead,id:o.id||o.asset}));this.refresh()}
  height(x,z){return heightAt(this.map,x,z)}
  refresh(){this.obstacles=[...this.static,...this.map.gates.filter(g=>!this.unlocked[g.unlock]).map(g=>({...rect(g),height:g.h,base:this.height(g.x,g.z),id:g.id}))];this.revision++}
  unlock(key){if(!this.unlocked[key]){this.unlocked[key]=true;this.refresh()}}
- terrainBlocked(x,z,pad=0){const deck=this.map.platforms.find(p=>p.w>=100),edge=deck.z+deck.d/2;if(z<this.map.north&&z>edge+.01){const ramps=this.map.ramps.filter(r=>r.z<this.map.north);return !ramps.some(r=>x>r.x-r.w/2+pad&&x<r.x+r.w/2-pad)}return false}
+ terrainBlocked(x,z,pad=0){if(this.map.native?.terrain)return nativeBlocked(this.map.native.terrain,x,z,pad);const deck=this.map.platforms.find(p=>p.w>=100),edge=deck.z+deck.d/2;if(z<this.map.north&&z>edge+.01){const ramps=this.map.ramps.filter(r=>r.z<this.map.north);return !ramps.some(r=>x>r.x-r.w/2+pad&&x<r.x+r.w/2-pad)}return false}
  blocked(x,z,pad=.65){if(this.terrainBlocked(x,z,pad))return true;const b=this.bounds;if(x<b.minX+pad||x>b.maxX-pad||z<b.minZ+pad||z>b.maxZ-pad)return true;return this.obstacles.some(b=>!b.overhead&&x>b.minX-pad&&x<b.maxX+pad&&z>b.minZ-pad&&z<b.maxZ+pad)}
  canStep(a,x,z,pad=.4,drop=false){if(this.blocked(x,z,pad))return false;const delta=this.height(x,z)-this.height(a.x,a.z);return delta<=.5+(drop?(a.y||0):0)&&(drop||delta>=-.5)}
  move(entity,dx,dz,radius=.4,drop=false){const steps=Math.max(1,Math.ceil(Math.hypot(dx,dz)/.24));for(let i=0;i<steps;i++){const h=this.height(entity.x,entity.z),x=entity.x+dx/steps,z=entity.z+dz/steps;if(this.canStep(entity,x,entity.z,radius,drop))entity.x=x;if(this.canStep(entity,entity.x,z,radius,drop))entity.z=z;const change=this.height(entity.x,entity.z)-h;if(drop&&(entity.y>0||change<-.5))entity.y=Math.max(0,(entity.y||0)-change)}}
@@ -22,7 +25,7 @@ export class OutpostLayout {
  clearSight(a,b,pad=.05){const steps=Math.ceil(distance(a,b)/.5),ay=this.height(a.x,a.z)+(a.y||0)+(a.height||1.7)*.65,by=this.height(b.x,b.z)+(b.y||0)+(b.height||1.7)*.65;for(let i=1;i<steps;i++){const t=i/steps,x=a.x+(b.x-a.x)*t,z=a.z+(b.z-a.z)*t,y=ay+(by-ay)*t;if(this.height(x,z)>y)return false;for(const o of this.obstacles)if(x>o.minX-pad&&x<o.maxX+pad&&z>o.minZ-pad&&z<o.maxZ+pad&&y<o.base+o.height&&y>o.base-.1)return false}return true}
 }
 export class FlowField {
- constructor(layout){this.layout=layout;this.bounds=layout.bounds;this.cell=1.65;this.w=Math.ceil((this.bounds.maxX-this.bounds.minX)/this.cell);this.h=Math.ceil((this.bounds.maxZ-this.bounds.minZ)/this.cell);this.field=new Int32Array(this.w*this.h);this.block=new Uint8Array(this.w*this.h);this.heights=new Float32Array(this.w*this.h);this.links=new Uint8Array(this.w*this.h);this.revision=-1;this.target=-1}
+ constructor(layout){if(layout.map.reference)return new ReferenceFlowField(layout);this.layout=layout;this.bounds=layout.bounds;this.cell=1.65;this.w=Math.ceil((this.bounds.maxX-this.bounds.minX)/this.cell);this.h=Math.ceil((this.bounds.maxZ-this.bounds.minZ)/this.cell);this.field=new Int32Array(this.w*this.h);this.block=new Uint8Array(this.w*this.h);this.heights=new Float32Array(this.w*this.h);this.links=new Uint8Array(this.w*this.h);this.revision=-1;this.target=-1}
  index(x,z){const b=this.bounds;return Math.max(0,Math.min(this.h-1,Math.floor((z-b.minZ)/this.cell)))*this.w+Math.max(0,Math.min(this.w-1,Math.floor((x-b.minX)/this.cell)))}
  center(i){return {x:this.bounds.minX+(i%this.w+.5)*this.cell,z:this.bounds.minZ+(Math.floor(i/this.w)+.5)*this.cell}}
  edge(a,b){if(this.block[b])return false;const delta=b-a;if(delta===1)return !!(this.links[a]&1);if(delta===-1)return !!(this.links[a]&2);if(delta===this.w)return !!(this.links[a]&4);if(delta===-this.w)return !!(this.links[a]&8);return Math.abs(this.heights[a]-this.heights[b])<=1.05}

@@ -22,7 +22,7 @@ Windows already has a Private-network allowance for this machine's Node version.
 
 ## Hero, movement and weapon progression
 
-Use **Operative** to choose among **24 full-size heroes**, including the Powerpuff Girls, Ed/Edd/Eddy, the five Kids Next Door, Billy, Mandy, Grim, Dexter, Dee Dee, Mandark, Mac, Bloo, Wilt, Eduardo, Gwen, Samurai Jack and Mojo Jojo. Equip one of **20 original head/back accessories**. The preview supports rotation and idle/run/crouch/slide poses, with the chosen weapon and a single Nano. Look down to see your body, or press **F5** (or **H**) for the third-person camera.
+Use **Operative** to choose among **24 full-size heroes**, including the Powerpuff Girls, Ed/Edd/Eddy, the five Kids Next Door, Billy, Mandy, Grim, Dexter, Dee Dee, Mandark, Mac, Bloo, Wilt, Eduardo, Gwen, Samurai Jack and Mojo Jojo. Equip one of **20 original head/back accessories**. The preview supports rotation and idle/run/crouch/slide poses, with the chosen weapon and a single Nano. First person shows hands and weapons, with the body hidden to avoid cropped legs and camera intersections. Press **F5** (or **H**) to see the full body and accessories in third person.
 
 Press **V** to strike with the selected **Samurai Katana**, **King Hammer**, or **Aluminum Endsville Slugger**. Their reach, damage, windup and recovery differ; melee respects cover, cancels reloads and prevents simultaneous firing. First- and third-person models show the selected original weapon. The field kit deploys with a Null Void Pistol, Bracer Blaster or Heatblaster. Wall guns and the supply box remain the source of stronger firearms.
 
@@ -70,7 +70,7 @@ Only the selected Nano accompanies the player. Keys **1 / 2 / 3** instantly swap
 
 Each gun has its own effect profile using original FusionFall muzzle, projectile and impact textures. Ballistic, scatter, energy and explosive shots differ in color, size, travel and impact. These are visual trails for authoritative hitscan combat; this update does not introduce ballistic projectile physics.
 
-New procedural first-person sleeves and gloved hands follow the original weapon models. Walking, sprinting, recoil, weapon swaps and landing blend smoothly. Reloads have distinct lower, remove-cell, insert-cell and ready phases synchronized to ammunition completion. The camera stays stable by default. Settings offer three sight designs/colors, weapon movement strength, optional camera motion, field of view, sensitivity and floating damage numbers. Settings and squad selections save locally. See [FPS-UX.md](FPS-UX.md) for the research and applied design decisions.
+New procedural first-person sleeves and gloved hands follow the original weapon models. Walking, sprinting, recoil, weapon swaps and landing blend smoothly. Reloads have distinct lower, remove-cell, insert-cell and ready phases synchronized to ammunition completion. The camera stays stable by default. Settings offer three sight designs/colors, weapon movement strength, optional camera motion, field of view, sensitivity, HUD scale and floating damage numbers. Settings and squad selections save locally. See [FPS-UX.md](FPS-UX.md) for the research and applied design decisions.
 
 Powers spend shared energy and have separate cooldowns. Health regenerates six seconds after taking damage. One emergency Nano revive is available per run. Best wave is saved locally.
 
@@ -92,11 +92,13 @@ Powers spend shared energy and have separate cooldowns. Health regenerates six s
 
 ## Source assets and verification
 
-See [ASSETS.md](ASSETS.md) for provenance, format, and reproducible extraction. The current runtime contains 179 individual models, 256 texture entries, 84 rigs / 602 original clips, an additional placed city scene with 59 mesh parts / 28 textures, and 16 recovered combat-effect textures, the complete 44-Nano roster, original UI sprites, and 16 original OGG sounds. Original art/audio retain their original ownership. Three.js r170 is bundled under MIT. The UI uses system fonts and requires no web-font service. Play requires a desktop keyboard/mouse.
+See [ASSETS.md](ASSETS.md) for provenance, format, and reproducible extraction. The current runtime contains 179 individual models, 256 texture entries, 84 rigs / 602 original clips, an additional placed city scene with 59 mesh parts / 28 textures, and 16 recovered combat-effect textures, the complete 44-Nano roster, original UI sprites, and 297 original audio entries. Original art/audio retain their original ownership. Three.js r170 is bundled under MIT. The UI uses system fonts and requires no web-font service. Play requires a desktop keyboard/mouse.
 
 `npm run check` validates all game module syntax. `npm test` covers gameplay, all 132 powers, loadout validation, single-companion switching, reload timing, first-person animation, settings, every original rig through Three.js skin deformation, asset references, and map navigation. Live browser visual QA remains unavailable because the browser access host is unavailable. The local HTTP server continues at http://localhost:4180 so the user can refresh and play.
 
 Sector V now includes an actual placed city-section crop recovered from Map_04_04 as a distant skyline landmark. It preserves the original relative mesh placement; it is not a playable port of that map. Rotated frontage no longer protrudes into the arena, duplicate distant buildings were removed, and upper benches/planters now clear Relay Hall. See [source recovery notes](docs/FUSIONFALL-SOURCE-RECOVERY.md).
+
+**Original City** is a separate, playable 128×128 metre source region recovered from Map_04_04, including its original TerrainData, street meshes, buildings and props at source transforms. It uses source-derived height samples and conservative source collider bounds, with a connected outdoor navigation mask. Survival fixtures, spawns and wave rules are added. Power, wall guns, the supply box, upgrades and extraction work in solo and LAN. Select it from **Deployment**. See [playable map recovery](docs/NATIVE-CITY-RECOVERY.md) for the source, coordinate conversion and collision limitations.
 
 ## Vercel deployment
 
@@ -104,4 +106,31 @@ Sector V now includes an actual placed city-section crop recovered from Map_04_0
 
 Deploy with `npx vercel@65.16.0 --prod` from this directory after authenticating to the intended Vercel account. Existing Vercel projects can be linked with `vercel link`; the local link is ignored by Git. The deployment includes solo gameplay, all characters, maps, weapons, Nanos and customization. The hosted LAN dialog explains how to use the local multiplayer build.
 
-LAN multiplayer continues with `npm start` and the host computer's local IP. Vercel supports WebSockets, but this game's in-memory party cannot be moved unchanged into independently scaled, time-limited Function instances. Internet multiplayer requires shared match coordination/state or a dedicated game-server service. This Vercel configuration does not claim online co-op.
+LAN multiplayer continues with `npm start` and the host computer's local IP. Vercel supports WebSockets, but this game's in-memory party cannot be moved unchanged into independently scaled, time-limited Function instances. Online multiplayer uses the included dedicated room service; configure the Vercel endpoint as documented in ONLINE-MULTIPLAYER.md.
+
+## Measured bunker rebuild
+
+Dexlabs Bunker is the default deployment, reconstructed from the published NZ:P Nacht source. The game retains both overlapping floors, two working staircases, three independent original barriers and original weapon anchors. Per-entity `floorY` keeps lower and upper rooms separate in movement, combat, rendering and LAN snapshots. Source architectural sections, route traces and camera checkpoints are available at `/map-reader.html`. See [the map-reading workflow](docs/MAP-READING-WORKFLOW.md). Earlier maps are accessible through Show earlier map prototypes.
+
+
+## Bunker presentation and prop pass
+
+The bunker now replaces plain source furniture shells with original textured FusionFall storage, grounds point-model replacements on real surfaces and rejects indoor outdoor-tree anchors. Wall conduit runs, source-positioned light housings, overhead monitors, working equipment, floor seams and subtle contact shade add detail. Standing-clearance checks keep decorative props out of the original walking space, and source cover footprints remain unchanged. Opaque source brush backs are culled; chain-link surfaces use original alpha-masked fence art.
+
+All ten first-person weapons have individual size and grip profiles. Closed gloved hands follow those anchors, reload support offsets remain relative to the grip, and the weapon rear stays clear of the camera. Large projectile sprites are reduced and leave the visible muzzle. HUD size is automatic on large displays and adjustable in Settings.
+
+`npm run review:scene` exports the actual runtime scene through `AssetLibrary.registerModel`, then creates labeled software reviews including props and weapons. These views use approximate lighting; live WebGL output and performance still require a browser review.
+
+
+## Audio and companion personality
+
+Music starts with the first gameplay/audio gesture to satisfy browser autoplay restrictions. An original audio-clock-scheduled score adds combat layers as waves increase, ducks for dialogue, and fades on pause or hidden tabs. Settings has independent Music, Sound effects, and Voices & breathing sliders, including zero volume. Sprint exertion builds over two seconds and breathing recovers over four; low health also triggers breathing. Original hero/avatar hurt variants and melee exertion replace the injury beep. Nano summon/power voices have a shared cooldown to prevent switch-spam chatter.
+
+Nanos retain the single active companion and clear ADS lane. Per-Nano float cadence, bank, gaze, source gestures, and cooldown-limited kill/injury reactions add personality. First-person hands and sleeves now use the selected hero's actual textured triangles. `npm test` exercises all hero extractions, vocal headers/provenance, audio scheduling and pause behavior; `npm run review:scene` includes the current source-derived arms. Live audio mix, WebGL and performance still need verification in the user's browser.
+
+
+## Online private parties
+
+The online service and client live in this checkout. `server/matchmaker.mjs` owns ephemeral room IDs, cryptographic single-use eight-character invitations, ten-minute expiry and room capacity. `server.mjs` routes `/online` connections into per-room authoritative simulations while preserving `/lan` locally. Every synchronous room operation scopes the shared legacy map exports with `inRoom`, including ticks, actions and snapshots; cross-map regression tests run concurrent parties. Public discovery lists service capabilities only. Invitations are sent only to the current host, rotate after each join, and are invalidated when the room ends. Reconnects use room identity plus a per-tab cryptographic token.
+
+`npm run build` generates public endpoint discovery from `MATCHMAKING_URL`, checks syntax and runs tests. Render serves game and rooms on one HTTPS origin; a Vercel client can point at that same service with an exact origin allowlist. `render.yaml` pins one instance because room state is held in memory. See [ONLINE-MULTIPLAYER.md](ONLINE-MULTIPLAYER.md) for setup, resource limits, restart behavior and verification boundaries. This change does not deploy or provision an external service.

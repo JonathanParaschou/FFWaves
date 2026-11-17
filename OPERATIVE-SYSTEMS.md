@@ -2,7 +2,7 @@
 
 ## Heroes and accessories
 
-The Operative menu offers ten original full-size NPC hero bodies and twelve original head/back accessories. They are separate from Nano models. Select a hero, choose a head item and back item, inspect the animated preview, then commit with **Use This Operative**. Cancel preserves the previous selection. The character uses original walk/run/idle clips, with authored bone posing for crouch, slide and firearm readiness. First-person arms match the selected outfit; the original body appears when looking down. H toggles a third-person camera that pulls inward near walls. Accessories appear in third person and in the preview.
+The Operative menu offers 24 original full-size NPC hero bodies and 20 original head/back accessories. They are separate from Nano models. Select a hero, choose a head item and back item, inspect the animated preview, then commit with **Use This Operative**. Cancel preserves the previous selection. The character uses original walk/run/idle clips, with authored bone posing for crouch, slide and firearm readiness. First-person arms match the selected outfit; the full body is hidden in first person to prevent cropped legs and camera intersections. F5 or H toggles a third-person camera that pulls inward near walls. Accessories appear in third person and in the preview.
 
 The head/back items follow original skeleton sockets with authored fitting offsets. Their fit and the new player movement are adaptations rather than recovered original player-controller animations. Gear is cosmetic; Nano selections continue to determine abilities.
 
@@ -48,7 +48,7 @@ Map detailing adds physical weapon displays, supply-box animation, room beams an
 
 ## Verification limits
 
-Automated checks cover movement transitions, collision, slide cancellation, box timing/pickup/expiry, wall purchases, rarity/forge preservation, wave caps, all ten hero rigs and accessory transforms, first-person arm masking, Nano screen position, wall-rack visibility rays, and existing map/animation/gameplay behavior. Skinned pose previews were rendered from actual animated vertices. Browser access remains unavailable, so live WebGL rendering, frame rate and final play feel remain unverified.
+Automated checks cover movement transitions, collision, slide cancellation, box timing/pickup/expiry, wall purchases, rarity/forge preservation, wave caps, all 24 hero rigs and accessory transforms, full-body visibility when switching camera modes, Nano screen position, wall-rack visibility rays, and existing map/animation/gameplay behavior. Skinned pose previews were rendered from actual animated vertices. Browser access remains unavailable, so live WebGL rendering, frame rate and final play feel remain unverified.
 
 ## Field kit and deployment hub update
 
