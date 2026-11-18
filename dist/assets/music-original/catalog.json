@@ -13,7 +13,15 @@
       "bytes": 1053424,
       "sha256": "2d1255ea1c6a3e78f82c84354df16ef76cd48bea3e7f3922dc969dceff58b2f3",
       "duration": 184.463,
-      "sampleRate": 44100
+      "sampleRate": 44100,
+      "playback": {
+        "url": "assets/music-original/main-theme.mp3",
+        "mime": "audio/mpeg",
+        "bytes": 2952045,
+        "sha256": "b02048337eaf6b9fef961f5b290694bc10b777adb6a1f5f2abcc538c23df1bee",
+        "gain": 1.75256,
+        "rmsDb": -18.59
+      }
     },
     "tech-center": {
       "title": "Tech Center",
@@ -24,7 +32,15 @@
       "bytes": 404244,
       "sha256": "54212decf3b25aa66aa601e7a01aeffe91a4335aaf7d35255a13bc5002c21a55",
       "duration": 70.367,
-      "sampleRate": 44100
+      "sampleRate": 44100,
+      "playback": {
+        "url": "assets/music-original/tech-center.mp3",
+        "mime": "audio/mpeg",
+        "bytes": 1126400,
+        "sha256": "6154bfe8327de6fe548e5fb1269ee082076e7370cb6a8e12e1484a07a85a2332",
+        "gain": 2.1894,
+        "rmsDb": -20.04
+      }
     },
     "suburbia": {
       "title": "Suburbia",
@@ -35,7 +51,15 @@
       "bytes": 448913,
       "sha256": "e92fd023dabbad49990a4c7a641341996b53b1b08a9428ebe2ee559bef2edf4c",
       "duration": 78.24,
-      "sampleRate": 44100
+      "sampleRate": 44100,
+      "playback": {
+        "url": "assets/music-original/suburbia.mp3",
+        "mime": "audio/mpeg",
+        "bytes": 1252623,
+        "sha256": "c6e0450136f16dd13414727c305e69f15878842681af76d3b23ce5f117c25550",
+        "gain": 2.47646,
+        "rmsDb": -21.73
+      }
     },
     "woods": {
       "title": "Woods",
@@ -46,7 +70,15 @@
       "bytes": 392952,
       "sha256": "68ebb5643e4ed025d84d6a9750dcd3b731f953724ffdfec2f34595a373aff22a",
       "duration": 68.495,
-      "sampleRate": 44100
+      "sampleRate": 44100,
+      "playback": {
+        "url": "assets/music-original/woods.mp3",
+        "mime": "audio/mpeg",
+        "bytes": 1096724,
+        "sha256": "3012b6511d896887cb07878628b978091af55247e43e997b53481e1bcc4e3928",
+        "gain": 2.29843,
+        "rmsDb": -22.94
+      }
     },
     "reactor-works": {
       "title": "Reactor Works",
@@ -57,7 +89,15 @@
       "bytes": 376278,
       "sha256": "0900aa7b7f01a985d9891c652f4c2bbbe7154f36bef4fc4eda3ce6a9362c68dd",
       "duration": 65.663,
-      "sampleRate": 44100
+      "sampleRate": 44100,
+      "playback": {
+        "url": "assets/music-original/reactor-works.mp3",
+        "mime": "audio/mpeg",
+        "bytes": 1051167,
+        "sha256": "7eab3afccc60fc5b656ea9ed27fcc5d4938902e7da04c5fd89b08b71deaf3d19",
+        "gain": 2.28638,
+        "rmsDb": -23.02
+      }
     },
     "midtown": {
       "title": "Midtown",
@@ -68,7 +108,16 @@
       "bytes": 388150,
       "sha256": "6fe7a7e168933b6bbcac4984bd79cdaf9bf6f4389cbc60c2dbf972c9ff7e6269",
       "duration": 67.583,
-      "sampleRate": 44100
+      "sampleRate": 44100,
+      "playback": {
+        "url": "assets/music-original/midtown.mp3",
+        "mime": "audio/mpeg",
+        "bytes": 1082096,
+        "sha256": "724922962a99095d53cb56e44b56c10b18ee481e0835fb1ff1d87f8d5557eb0e",
+        "gain": 2.53215,
+        "rmsDb": -20.43
+      }
     }
-  }
+  },
+  "playbackProcessing": "Original recordings decoded, peak-limited RMS gain applied, LAME MP3 128 kbps. Original Ogg bytes preserved."
 }

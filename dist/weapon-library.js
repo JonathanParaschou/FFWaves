@@ -1,0 +1,22 @@
+import {WEAPONS} from './weapons.js';
+import {STARTER_GUNS} from './field-kit.js';
+import {STATIONS} from './layout.js';
+export function weaponClass(w){if(w.archetype==='cannon')return 'Heavy';if(/SNIPER|MARKSMAN/.test(w.type))return 'Precision';if(w.type==='LMG')return 'Support';if(w.type==='SMG')return 'SMGs';if(w.archetype==='shotgun')return 'Scatterguns';if(w.archetype==='pistol')return 'Sidearms';if(/ENERGY/.test(w.type))return 'Energy';return 'Rifles'}
+export function acquisition(id){return {starter:STARTER_GUNS.includes(id),wall:STATIONS.some(s=>s.kind==='wall'&&s.weapon===id)}}
+export function initWeaponLibrary(sim,{onPreview=()=>{},onEquip=()=>{}}={}){
+ const $=id=>document.getElementById(id),list=$('weapon-library'),search=$('weapon-search'),filter=$('weapon-class');
+ let selected=sim.fieldKit.gun,visible=[];
+ const classes=[...new Set(Object.values(WEAPONS).map(weaponClass))].sort();
+ for(const name of classes){const option=document.createElement('option');option.value=name;option.textContent=name;filter.append(option)}
+ function detail(){const w=WEAPONS[selected],a=acquisition(selected);$('weapon-detail-image').src=w.portrait||`assets/ui/weapon-${selected}.webp`;$('weapon-detail-name').textContent=w.name;$('weapon-detail-class').textContent=w.type;$('weapon-detail-stats').replaceChildren();for(const [label,value]of [['Damage',w.pellets>1?`${w.damage} x ${w.pellets}`:String(w.damage)],['Magazine',String(w.mag)],['Reload',w.reload.toFixed(2)+'s'],['Range',w.range+'m'],['Rate',Math.round(60/w.interval)+' RPM']]){const row=document.createElement('div'),dt=document.createElement('dt'),dd=document.createElement('dd');dt.textContent=label;dd.textContent=value;row.append(dt,dd);$('weapon-detail-stats').append(row)}
+  $('weapon-acquisition').textContent=a.starter?'Available in your starting kit.':a.wall?'Available on a wall rack and in the supply box.':'Roll the supply box in the field: 950 taros, then take the revealed gun with F.';
+  const equip=$('weapon-equip');equip.classList.toggle('hidden',!a.starter);equip.disabled=sim.fieldKit.gun===selected;equip.textContent=sim.fieldKit.gun===selected?'EQUIPPED':'EQUIP SIDEARM';equip.onclick=()=>onEquip(selected);
+ }
+ function select(id,{preview=true}={}){if(!WEAPONS[id])return;selected=id;for(const b of list.children){const active=b.dataset.weapon===id;b.classList.toggle('selected',active);b.setAttribute('aria-pressed',String(active));b.tabIndex=active?0:-1}if(![...list.children].some(b=>b.tabIndex===0)&&list.firstElementChild)list.firstElementChild.tabIndex=0;detail();if(preview)onPreview(id)}
+ function render(){const query=search.value.trim().toLowerCase(),kind=filter.value||'all';visible=Object.entries(WEAPONS).filter(([id,w])=>(kind==='all'||weaponClass(w)===kind)&&(!query||(w.name+' '+w.type).toLowerCase().includes(query))).sort(([a,wa],[b,wb])=>Number(STARTER_GUNS.includes(b))-Number(STARTER_GUNS.includes(a))||wa.name.localeCompare(wb.name));list.replaceChildren();
+  for(const [id,w]of visible){const button=document.createElement('button'),image=document.createElement('img'),name=document.createElement('strong'),info=document.createElement('small'),source=document.createElement('span');button.className='arsenal-card';button.dataset.weapon=id;button.setAttribute('aria-label',w.name+', '+weaponClass(w));image.src=w.portrait||`assets/ui/weapon-${id}.webp`;image.alt='';image.loading='lazy';name.textContent=w.name;info.textContent=weaponClass(w)+' / '+w.mag+' rounds';source.textContent=STARTER_GUNS.includes(id)?sim.fieldKit.gun===id?'EQUIPPED':'STARTER':acquisition(id).wall?'WALL / BOX':'SUPPLY BOX';button.append(image,name,info,source);button.onclick=()=>select(id);button.onkeydown=e=>{const index=visible.findIndex(([key])=>key===id),delta={ArrowLeft:-1,ArrowRight:1,ArrowUp:-2,ArrowDown:2}[e.key];let next;if(delta)next=Math.max(0,Math.min(visible.length-1,index+delta));else if(e.key==='Home')next=0;else if(e.key==='End')next=visible.length-1;else return;e.preventDefault();select(visible[next][0]);list.children[next]?.focus()};list.append(button)}
+  $('weapon-count').textContent=visible.length+' / '+Object.keys(WEAPONS).length+' firearms';$('weapon-empty').classList.toggle('hidden',visible.length>0);select(selected,{preview:false});
+ }
+ search.addEventListener('input',render);filter.addEventListener('change',render);render();
+ return {refresh:render,select,get selected(){return selected}};
+}

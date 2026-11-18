@@ -126,3 +126,16 @@ The earlier adaptive electronic score has been replaced by original FusionFall r
 The generated score has been replaced by six unmodified original Ogg/Vorbis recordings from `lobbymusic_2eresourceFile` and `pastmusic_2eresourceFile` in the existing local FusionFall cache. `tools/extract-original-music.py` copies the original bytes without transcoding. `dist/assets/music-original/catalog.json` records source paths, bundles, SHA-256 checksums, sample rates, durations and ownership for Main Theme, Tech Center, Suburbia, Woods, Reactor Works and Midtown. Original ownership remains with the original rights holders.
 
 The menu uses Main Theme. Map associations are authored adaptations: Dexlabs Bunker uses Tech Center, Sector V uses Suburbia, Camp Kidney uses Woods, Salvage Yard uses Reactor Works, and Original City uses Midtown. These choices do not claim that the adapted maps used those songs in the original game. Tracks are loaded on demand with at most two decoded buffers cached, looped, and crossfaded when switching maps/menu. The procedural music oscillators have been removed. Player breathing remains procedural; recovered voice and effect recordings are unchanged.
+
+
+## Forty-firearm arsenal
+
+`tools/extract-weapon-roster.py` adds 30 original models and their original table-selected skins to the ten existing firearms. `dist/assets/weapon-roster.json` retains item IDs, mesh paths, texture names, firing-sound associations and the SHA-256 of the cached original XDT source. `dist/weapon-roster.js` shares the authored FPS balance between the browser and authoritative multiplayer. Forty distinct source paths and forty distinct geometry fingerprints are checked; recolors do not inflate this count. Seventeen original firing-sound families now serve the roster. Original names, shapes, skins and sounds are retained; damage, magazines, reloads, ADS, recoil and first-person hand fitting are adaptations.
+
+`python tools/review-runtime-scene.py --weapons-only` reviews all forty actual guns with original textured hero hands. It generates the full atlas plus `docs/arsenal-review.jpg`. The images use approximate software lighting and do not establish live WebGL quality.
+
+## Native browser soundtrack playback
+
+The preserved original Ogg files remain unmodified. `python tools/prepare-browser-music.py` uses development-only NumPy, SoundFile and lameenc to create peak-limited, normalized 128 kbps MP3 playback copies. Run it after re-extracting original music. Catalog metadata records output hashes, gains and measured decoded RMS. These files require no Python or codec library on Vercel.
+
+Music now uses an HTML media player directly, independently of the effects/voice Web Audio graph. Playback begins from trusted input, settings expose native playback controls and a real track clock, and autoplay/network errors can be retried with Play Music. `/audio-check.html` auditions the same files without the 3D engine. The local host supplies audio/mpeg and byte ranges for seeking; Vercel serves the checked-in static MP3s.

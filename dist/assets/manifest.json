@@ -4297,6 +4297,726 @@
       "parts": 1,
       "triangles": 542,
       "bytes": 27748
+    },
+    "weapon-beamer": {
+      "url": "assets/models/weapon-beamer.json",
+      "source": "wear/pistol_ak1beamgun.nif",
+      "bounds": {
+        "min": [
+          -0.09531,
+          0.0,
+          -0.20598
+        ],
+        "max": [
+          0.09531,
+          0.25737,
+          0.20598
+        ],
+        "size": [
+          0.19062,
+          0.25737,
+          0.41196
+        ]
+      },
+      "parts": 1,
+      "triangles": 863,
+      "bytes": 43285
+    },
+    "weapon-bean-cannon": {
+      "url": "assets/models/weapon-bean-cannon.json",
+      "source": "wear/pistol_beangun.nif",
+      "bounds": {
+        "min": [
+          -0.09254,
+          0.0,
+          -0.17166
+        ],
+        "max": [
+          0.09254,
+          0.26388,
+          0.17166
+        ],
+        "size": [
+          0.18508,
+          0.26388,
+          0.34331
+        ]
+      },
+      "parts": 1,
+      "triangles": 546,
+      "bytes": 32189
+    },
+    "weapon-blue-wing": {
+      "url": "assets/models/weapon-blue-wing.json",
+      "source": "wear/pistol_bluewinggun.nif",
+      "bounds": {
+        "min": [
+          -0.12479,
+          0.0,
+          -0.25399
+        ],
+        "max": [
+          0.12479,
+          0.2886,
+          0.25399
+        ],
+        "size": [
+          0.24958,
+          0.2886,
+          0.50798
+        ]
+      },
+      "parts": 1,
+      "triangles": 438,
+      "bytes": 24364
+    },
+    "weapon-crayon": {
+      "url": "assets/models/weapon-crayon.json",
+      "source": "wear/pistol_crayon.nif",
+      "bounds": {
+        "min": [
+          -0.10493,
+          0.0,
+          -0.22393
+        ],
+        "max": [
+          0.10493,
+          0.21297,
+          0.22393
+        ],
+        "size": [
+          0.20985,
+          0.21297,
+          0.44787
+        ]
+      },
+      "parts": 1,
+      "triangles": 872,
+      "bytes": 53713
+    },
+    "weapon-crystal": {
+      "url": "assets/models/weapon-crystal.json",
+      "source": "wear/pistol_cristalpistol.nif",
+      "bounds": {
+        "min": [
+          -0.10524,
+          0.0,
+          -0.24408
+        ],
+        "max": [
+          0.10524,
+          0.28299,
+          0.24408
+        ],
+        "size": [
+          0.21049,
+          0.28299,
+          0.48816
+        ]
+      },
+      "parts": 1,
+      "triangles": 813,
+      "bytes": 45193
+    },
+    "weapon-pop-gun": {
+      "url": "assets/models/weapon-pop-gun.json",
+      "source": "wear/pistol_icebargun.nif",
+      "bounds": {
+        "min": [
+          -0.03548,
+          0.0,
+          -0.18691
+        ],
+        "max": [
+          0.03548,
+          0.20665,
+          0.18691
+        ],
+        "size": [
+          0.07095,
+          0.20665,
+          0.37382
+        ]
+      },
+      "parts": 1,
+      "triangles": 625,
+      "bytes": 37742
+    },
+    "weapon-zip-zapper": {
+      "url": "assets/models/weapon-zip-zapper.json",
+      "source": "wear/pistol_raygun.nif",
+      "bounds": {
+        "min": [
+          -0.13156,
+          0.0,
+          -0.26011
+        ],
+        "max": [
+          0.13156,
+          0.28529,
+          0.26011
+        ],
+        "size": [
+          0.26311,
+          0.28529,
+          0.52021
+        ]
+      },
+      "parts": 1,
+      "triangles": 531,
+      "bytes": 28012
+    },
+    "weapon-toxic-heater": {
+      "url": "assets/models/weapon-toxic-heater.json",
+      "source": "wear/pistol_poisongun.nif",
+      "bounds": {
+        "min": [
+          -0.05113,
+          0.0,
+          -0.20105
+        ],
+        "max": [
+          0.05113,
+          0.23279,
+          0.20105
+        ],
+        "size": [
+          0.10227,
+          0.23279,
+          0.4021
+        ]
+      },
+      "parts": 1,
+      "triangles": 599,
+      "bytes": 30925
+    },
+    "weapon-cyber-auto": {
+      "url": "assets/models/weapon-cyber-auto.json",
+      "source": "wear/rifle_cyberautorifle.nif",
+      "bounds": {
+        "min": [
+          -0.08644,
+          0.0,
+          -0.4632
+        ],
+        "max": [
+          0.08644,
+          0.29648,
+          0.4632
+        ],
+        "size": [
+          0.17288,
+          0.29648,
+          0.92639
+        ]
+      },
+      "parts": 1,
+      "triangles": 356,
+      "bytes": 31178
+    },
+    "weapon-shuttlegun": {
+      "url": "assets/models/weapon-shuttlegun.json",
+      "source": "wear/rifle_shuttlegun.nif",
+      "bounds": {
+        "min": [
+          -0.20036,
+          0.0,
+          -0.3107
+        ],
+        "max": [
+          0.20036,
+          0.22272,
+          0.3107
+        ],
+        "size": [
+          0.40073,
+          0.22272,
+          0.6214
+        ]
+      },
+      "parts": 1,
+      "triangles": 470,
+      "bytes": 29849
+    },
+    "weapon-scampp": {
+      "url": "assets/models/weapon-scampp.json",
+      "source": "wear/rifle_phlazer.nif",
+      "bounds": {
+        "min": [
+          -0.09982,
+          0.0,
+          -0.47792
+        ],
+        "max": [
+          0.09982,
+          0.37735,
+          0.47792
+        ],
+        "size": [
+          0.19964,
+          0.37735,
+          0.95583
+        ]
+      },
+      "parts": 1,
+      "triangles": 625,
+      "bytes": 36755
+    },
+    "weapon-piston": {
+      "url": "assets/models/weapon-piston.json",
+      "source": "wear/rifle_railponitgun.nif",
+      "bounds": {
+        "min": [
+          -0.07261,
+          0.0,
+          -0.39404
+        ],
+        "max": [
+          0.07261,
+          0.23634,
+          0.39404
+        ],
+        "size": [
+          0.14522,
+          0.23634,
+          0.78808
+        ]
+      },
+      "parts": 1,
+      "triangles": 389,
+      "bytes": 25672
+    },
+    "weapon-anubis": {
+      "url": "assets/models/weapon-anubis.json",
+      "source": "wear/rifle_ppganubislaser.nif",
+      "bounds": {
+        "min": [
+          -0.09339,
+          0.0,
+          -0.42411
+        ],
+        "max": [
+          0.09339,
+          0.32856,
+          0.42411
+        ],
+        "size": [
+          0.18678,
+          0.32856,
+          0.84822
+        ]
+      },
+      "parts": 2,
+      "triangles": 614,
+      "bytes": 31456
+    },
+    "weapon-ripper": {
+      "url": "assets/models/weapon-ripper.json",
+      "source": "wear/rifle_rightangle.nif",
+      "bounds": {
+        "min": [
+          -0.11154,
+          0.0,
+          -0.35306
+        ],
+        "max": [
+          0.11154,
+          0.29776,
+          0.35306
+        ],
+        "size": [
+          0.22308,
+          0.29776,
+          0.70613
+        ]
+      },
+      "parts": 1,
+      "triangles": 360,
+      "bytes": 24360
+    },
+    "weapon-lightning": {
+      "url": "assets/models/weapon-lightning.json",
+      "source": "wear/rifle_electricgun.nif",
+      "bounds": {
+        "min": [
+          -0.05602,
+          0.0,
+          -0.40015
+        ],
+        "max": [
+          0.05602,
+          0.26194,
+          0.40015
+        ],
+        "size": [
+          0.11205,
+          0.26194,
+          0.8003
+        ]
+      },
+      "parts": 1,
+      "triangles": 403,
+      "bytes": 26905
+    },
+    "weapon-firespike": {
+      "url": "assets/models/weapon-firespike.json",
+      "source": "wear/rifle_firespikerifle.nif",
+      "bounds": {
+        "min": [
+          -0.05007,
+          0.0,
+          -0.48058
+        ],
+        "max": [
+          0.05007,
+          0.34494,
+          0.48058
+        ],
+        "size": [
+          0.10014,
+          0.34494,
+          0.96117
+        ]
+      },
+      "parts": 1,
+      "triangles": 373,
+      "bytes": 18460
+    },
+    "weapon-airbrush": {
+      "url": "assets/models/weapon-airbrush.json",
+      "source": "wear/rifle_paintballshooter.nif",
+      "bounds": {
+        "min": [
+          -0.10818,
+          0.0,
+          -0.35626
+        ],
+        "max": [
+          0.10818,
+          0.45353,
+          0.35626
+        ],
+        "size": [
+          0.21635,
+          0.45353,
+          0.71252
+        ]
+      },
+      "parts": 1,
+      "triangles": 539,
+      "bytes": 29961
+    },
+    "weapon-super-scope": {
+      "url": "assets/models/weapon-super-scope.json",
+      "source": "wear/rifle_bigscope.nif",
+      "bounds": {
+        "min": [
+          -0.06261,
+          0.0,
+          -0.44584
+        ],
+        "max": [
+          0.06261,
+          0.33182,
+          0.44584
+        ],
+        "size": [
+          0.12522,
+          0.33182,
+          0.89169
+        ]
+      },
+      "parts": 1,
+      "triangles": 537,
+      "bytes": 31452
+    },
+    "weapon-recon": {
+      "url": "assets/models/weapon-recon.json",
+      "source": "wear/rifle_shortsniper.nif",
+      "bounds": {
+        "min": [
+          -0.04178,
+          0.0,
+          -0.2521
+        ],
+        "max": [
+          0.04178,
+          0.24334,
+          0.2521
+        ],
+        "size": [
+          0.08356,
+          0.24334,
+          0.5042
+        ]
+      },
+      "parts": 1,
+      "triangles": 537,
+      "bytes": 22931
+    },
+    "weapon-needlenose": {
+      "url": "assets/models/weapon-needlenose.json",
+      "source": "wear/rifle_wingsniper.nif",
+      "bounds": {
+        "min": [
+          -0.05135,
+          0.0,
+          -0.51416
+        ],
+        "max": [
+          0.05135,
+          0.33525,
+          0.51416
+        ],
+        "size": [
+          0.1027,
+          0.33525,
+          1.02832
+        ]
+      },
+      "parts": 1,
+      "triangles": 362,
+      "bytes": 24634
+    },
+    "weapon-galvanized": {
+      "url": "assets/models/weapon-galvanized.json",
+      "source": "wear/rifle_steeltubesniper.nif",
+      "bounds": {
+        "min": [
+          -0.05711,
+          0.0,
+          -0.45832
+        ],
+        "max": [
+          0.05711,
+          0.28905,
+          0.45832
+        ],
+        "size": [
+          0.11422,
+          0.28905,
+          0.91664
+        ]
+      },
+      "parts": 1,
+      "triangles": 448,
+      "bytes": 26197
+    },
+    "weapon-bunsen": {
+      "url": "assets/models/weapon-bunsen.json",
+      "source": "wear/rifle_snipercn02.nif",
+      "bounds": {
+        "min": [
+          -0.13463,
+          0.0,
+          -0.42707
+        ],
+        "max": [
+          0.13463,
+          0.37778,
+          0.42707
+        ],
+        "size": [
+          0.26927,
+          0.37778,
+          0.85414
+        ]
+      },
+      "parts": 1,
+      "triangles": 515,
+      "bytes": 30357
+    },
+    "weapon-cheezooka": {
+      "url": "assets/models/weapon-cheezooka.json",
+      "source": "wear/rifle_cheezookashotgun.nif",
+      "bounds": {
+        "min": [
+          -0.12918,
+          0.0,
+          -0.40775
+        ],
+        "max": [
+          0.12918,
+          0.5462,
+          0.40775
+        ],
+        "size": [
+          0.25835,
+          0.5462,
+          0.8155
+        ]
+      },
+      "parts": 2,
+      "triangles": 815,
+      "bytes": 48353
+    },
+    "weapon-cheese-spreader": {
+      "url": "assets/models/weapon-cheese-spreader.json",
+      "source": "wear/pistol_cheesegun.nif",
+      "bounds": {
+        "min": [
+          -0.11665,
+          0.0,
+          -0.24312
+        ],
+        "max": [
+          0.11665,
+          0.27827,
+          0.24312
+        ],
+        "size": [
+          0.2333,
+          0.27827,
+          0.48623
+        ]
+      },
+      "parts": 1,
+      "triangles": 368,
+      "bytes": 16222
+    },
+    "weapon-snotgun": {
+      "url": "assets/models/weapon-snotgun.json",
+      "source": "wear/pistol_kndshotgun.nif",
+      "bounds": {
+        "min": [
+          -0.13416,
+          0.0,
+          -0.1867
+        ],
+        "max": [
+          0.13416,
+          0.3361,
+          0.1867
+        ],
+        "size": [
+          0.26832,
+          0.3361,
+          0.3734
+        ]
+      },
+      "parts": 1,
+      "triangles": 417,
+      "bytes": 21620
+    },
+    "weapon-sharkbite": {
+      "url": "assets/models/weapon-sharkbite.json",
+      "source": "wear/rifle_sharkshotgun.nif",
+      "bounds": {
+        "min": [
+          -0.07586,
+          0.0,
+          -0.30677
+        ],
+        "max": [
+          0.07586,
+          0.3427,
+          0.30677
+        ],
+        "size": [
+          0.15172,
+          0.3427,
+          0.61355
+        ]
+      },
+      "parts": 1,
+      "triangles": 376,
+      "bytes": 21858
+    },
+    "weapon-gatling-gum": {
+      "url": "assets/models/weapon-gatling-gum.json",
+      "source": "wear/rifle_autogatlingun.nif",
+      "bounds": {
+        "min": [
+          -0.1606,
+          0.0,
+          -0.55137
+        ],
+        "max": [
+          0.1606,
+          0.60109,
+          0.55137
+        ],
+        "size": [
+          0.3212,
+          0.60109,
+          1.10274
+        ]
+      },
+      "parts": 3,
+      "triangles": 988,
+      "bytes": 52367
+    },
+    "weapon-thumper": {
+      "url": "assets/models/weapon-thumper.json",
+      "source": "wear/rifle_kndthumper.nif",
+      "bounds": {
+        "min": [
+          -0.09108,
+          0.0,
+          -0.46555
+        ],
+        "max": [
+          0.09108,
+          0.24331,
+          0.46555
+        ],
+        "size": [
+          0.18216,
+          0.24331,
+          0.93111
+        ]
+      },
+      "parts": 1,
+      "triangles": 769,
+      "bytes": 36267
+    },
+    "weapon-chill-caster": {
+      "url": "assets/models/weapon-chill-caster.json",
+      "source": "wear/rifle_bigchillcaster.nif",
+      "bounds": {
+        "min": [
+          -0.23909,
+          0.0,
+          -0.41716
+        ],
+        "max": [
+          0.23909,
+          0.45014,
+          0.41716
+        ],
+        "size": [
+          0.47819,
+          0.45014,
+          0.83432
+        ]
+      },
+      "parts": 1,
+      "triangles": 430,
+      "bytes": 22561
+    },
+    "weapon-atomic-engine": {
+      "url": "assets/models/weapon-atomic-engine.json",
+      "source": "wear/rifle_jetengineshotgun.nif",
+      "bounds": {
+        "min": [
+          -0.12811,
+          0.0,
+          -0.34111
+        ],
+        "max": [
+          0.12811,
+          0.27443,
+          0.34111
+        ],
+        "size": [
+          0.25621,
+          0.27443,
+          0.68222
+        ]
+      },
+      "parts": 2,
+      "triangles": 555,
+      "bytes": 31553
     }
   },
   "textures": {
@@ -6607,6 +7327,501 @@
         256,
         256
       ]
+    },
+    "c2aa06ab87e5": {
+      "map": "assets/textures/c2aa06ab87e5.webp",
+      "alpha": false,
+      "name": "pistol_ak1beamgun",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "fce0fa5b8f2d": {
+      "map": "assets/textures/fce0fa5b8f2d.webp",
+      "alpha": false,
+      "name": "pistol_ak1beamgun",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "acb9961a70d3": {
+      "map": "assets/textures/acb9961a70d3.webp",
+      "alpha": false,
+      "name": "pistol_beangun",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "fc8e471aa9b4": {
+      "map": "assets/textures/fc8e471aa9b4.webp",
+      "alpha": false,
+      "name": "pistol_beangun",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "0e495fb5673b": {
+      "map": "assets/textures/0e495fb5673b.webp",
+      "alpha": false,
+      "name": "pistol_crayon",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "0adb803a3d2d": {
+      "map": "assets/textures/0adb803a3d2d.webp",
+      "alpha": false,
+      "name": "pistol_crayon",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "3fc291a99578": {
+      "map": "assets/textures/3fc291a99578.webp",
+      "alpha": false,
+      "name": "pistol_cristalpistol",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "13b111f52fbe": {
+      "map": "assets/textures/13b111f52fbe.webp",
+      "alpha": false,
+      "name": "pistol_cristalpistol",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "7554b2bc2dde": {
+      "map": "assets/textures/7554b2bc2dde.webp",
+      "alpha": false,
+      "name": "pistol_icebargun",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "4a82d7ce6d38": {
+      "map": "assets/textures/4a82d7ce6d38.webp",
+      "alpha": false,
+      "name": "pistol_icebargun",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "672a038a6c01": {
+      "map": "assets/textures/672a038a6c01.webp",
+      "alpha": false,
+      "name": "pistol_raygun",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "cf67a4b613c5": {
+      "map": "assets/textures/cf67a4b613c5.webp",
+      "alpha": false,
+      "name": "pistol_raygun",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "fcec0c35d892": {
+      "map": "assets/textures/fcec0c35d892.webp",
+      "alpha": false,
+      "name": "pistol_poisongun",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "75e965c1c1b7": {
+      "map": "assets/textures/75e965c1c1b7.webp",
+      "alpha": false,
+      "name": "pistol_poisongun",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "7257404c5579": {
+      "map": "assets/textures/7257404c5579.webp",
+      "alpha": false,
+      "name": "rifle_cyberautorifle",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "c54b9ca4d0bc": {
+      "map": "assets/textures/c54b9ca4d0bc.webp",
+      "alpha": false,
+      "name": "rifle_cyberautorifle",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "386f0d4ed838": {
+      "map": "assets/textures/386f0d4ed838.webp",
+      "alpha": false,
+      "name": "rifle_shuttlegun",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "2b68fcc32d28": {
+      "map": "assets/textures/2b68fcc32d28.webp",
+      "alpha": false,
+      "name": "rifle_shuttlegun",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "53a4cbb87e95": {
+      "map": "assets/textures/53a4cbb87e95.webp",
+      "alpha": false,
+      "name": "rifle_phlazer",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "68bb4ad638a9": {
+      "map": "assets/textures/68bb4ad638a9.webp",
+      "alpha": false,
+      "name": "rifle_phlazer",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "6654df03f665": {
+      "map": "assets/textures/6654df03f665.webp",
+      "alpha": false,
+      "name": "rifle_planebowgun",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "b895e5582dfb": {
+      "map": "assets/textures/b895e5582dfb.webp",
+      "alpha": false,
+      "name": "rifle_ppganubislaser",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "0b8b76964940": {
+      "map": "assets/textures/0b8b76964940.webp",
+      "alpha": true,
+      "name": "rifle_ppganubislaser_glass.dds",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "1e96ce1f3983": {
+      "map": "assets/textures/1e96ce1f3983.webp",
+      "alpha": false,
+      "name": "rifle_rightangle",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "21d61df574bf": {
+      "map": "assets/textures/21d61df574bf.webp",
+      "alpha": false,
+      "name": "rifle_rightangle",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "acff9357a093": {
+      "map": "assets/textures/acff9357a093.webp",
+      "alpha": false,
+      "name": "rifle_electricgun",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "303e5d296fc3": {
+      "map": "assets/textures/303e5d296fc3.webp",
+      "alpha": false,
+      "name": "rifle_electricgun",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "d817d86405c3": {
+      "map": "assets/textures/d817d86405c3.webp",
+      "alpha": false,
+      "name": "rifle_firespikerifle",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "36740c01c0f3": {
+      "map": "assets/textures/36740c01c0f3.webp",
+      "alpha": false,
+      "name": "rifle_firespikerifle",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "c1c64646357e": {
+      "map": "assets/textures/c1c64646357e.webp",
+      "alpha": false,
+      "name": "rifle_spaceshotgun",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "324129f97e1f": {
+      "map": "assets/textures/324129f97e1f.webp",
+      "alpha": false,
+      "name": "rifie_kinggun",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "6bfe1147687a": {
+      "map": "assets/textures/6bfe1147687a.webp",
+      "alpha": false,
+      "name": "rifle_shortsniper",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "2c80cd8da30a": {
+      "map": "assets/textures/2c80cd8da30a.webp",
+      "alpha": false,
+      "name": "rifle_shortsniper",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "7fb80dc05d75": {
+      "map": "assets/textures/7fb80dc05d75.webp",
+      "alpha": false,
+      "name": "rifle_wingsniper",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "eb4fc929b375": {
+      "map": "assets/textures/eb4fc929b375.webp",
+      "alpha": false,
+      "name": "rifle_wingsniper",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "20e38aa72af0": {
+      "map": "assets/textures/20e38aa72af0.webp",
+      "alpha": false,
+      "name": "rifle_jetengineshotgun",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "5ccf1c59e792": {
+      "map": "assets/textures/5ccf1c59e792.webp",
+      "alpha": false,
+      "name": "rifle_snipercn02",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "9eeafcf38b34": {
+      "map": "assets/textures/9eeafcf38b34.webp",
+      "alpha": false,
+      "name": "rifle_snipercn02",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "d16e514992b5": {
+      "map": "assets/textures/d16e514992b5.webp",
+      "alpha": false,
+      "name": "rifle_cheezookashotgun",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "320d76f4a5de": {
+      "map": "assets/textures/320d76f4a5de.webp",
+      "alpha": true,
+      "name": "rifle_cheezookashotgun_glass.dds",
+      "size": [
+        16,
+        16
+      ]
+    },
+    "bf77a0f87815": {
+      "map": "assets/textures/bf77a0f87815.webp",
+      "alpha": false,
+      "name": "rifle_cheezookashotgun",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "d1a60b9e7899": {
+      "map": "assets/textures/d1a60b9e7899.webp",
+      "alpha": false,
+      "name": "pistol_cheesegun",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "f5457fc2cd71": {
+      "map": "assets/textures/f5457fc2cd71.webp",
+      "alpha": false,
+      "name": "pistol_cheesegun",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "e2e0a7e42cfe": {
+      "map": "assets/textures/e2e0a7e42cfe.webp",
+      "alpha": false,
+      "name": "pistol_kndshotgun",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "48bf814e4d16": {
+      "map": "assets/textures/48bf814e4d16.webp",
+      "alpha": false,
+      "name": "pistol_kndshotgun",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "6456d595fcfe": {
+      "map": "assets/textures/6456d595fcfe.webp",
+      "alpha": false,
+      "name": "rifle_sharkshotgun",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "0879093a641f": {
+      "map": "assets/textures/0879093a641f.webp",
+      "alpha": false,
+      "name": "rifle_sharkshotgun",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1cba95064e76": {
+      "map": "assets/textures/1cba95064e76.webp",
+      "alpha": false,
+      "name": "rifle_autogatlingun",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "aa42ef3c0f15": {
+      "map": "assets/textures/aa42ef3c0f15.webp",
+      "alpha": true,
+      "name": "rifle_autogatlingun_glass.dds",
+      "size": [
+        32,
+        32
+      ]
+    },
+    "9354a3eacc1e": {
+      "map": "assets/textures/9354a3eacc1e.webp",
+      "alpha": false,
+      "name": "rifle_autogatlingun",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "e7e300611fce": {
+      "map": "assets/textures/e7e300611fce.webp",
+      "alpha": false,
+      "name": "rifle_kndthumper",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "b7b36ab21005": {
+      "map": "assets/textures/b7b36ab21005.webp",
+      "alpha": false,
+      "name": "rifle_kndthumper",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "cbe6543f1c6a": {
+      "map": "assets/textures/cbe6543f1c6a.webp",
+      "alpha": false,
+      "name": "rifle_swampfiretorch",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "cad76de7245c": {
+      "map": "assets/textures/cad76de7245c.webp",
+      "alpha": false,
+      "name": "rifle_jetengineshotgun",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "4770db2dc35c": {
+      "map": "assets/textures/4770db2dc35c.webp",
+      "alpha": true,
+      "name": "rifle_jetengineshotgun_glass.dds",
+      "size": [
+        256,
+        256
+      ]
     }
   },
   "surfaces": {
@@ -8172,6 +9387,125 @@
       "url": "assets/audio/exert-2.ogg",
       "source": "sound/samjack_attackgrunt3.wav",
       "bytes": 5052
+    },
+    "weapon-fire-electricuser-04": {
+      "url": "assets/audio/weapon-fire-electricuser-04.ogg",
+      "source": "sound/electricuser-04.wav",
+      "bundle": "characterselection_2eresourceFile",
+      "bytes": 9651,
+      "sourceSoundId": 7
+    },
+    "weapon-fire-laserltuser-01": {
+      "url": "assets/audio/weapon-fire-laserltuser-01.ogg",
+      "source": "sound/laserltuser-01.wav",
+      "bundle": "characterselection_2eresourceFile",
+      "bytes": 6958,
+      "sourceSoundId": 4
+    },
+    "weapon-fire-sonicuser-02": {
+      "url": "assets/audio/weapon-fire-sonicuser-02.ogg",
+      "source": "sound/sonicuser-02.wav",
+      "bundle": "characterselection_2eresourceFile",
+      "bytes": 9292,
+      "sourceSoundId": 5
+    },
+    "weapon-fire-iceuser-04": {
+      "url": "assets/audio/weapon-fire-iceuser-04.ogg",
+      "source": "sound/iceuser-04.wav",
+      "bundle": "characterselection_2eresourceFile",
+      "bytes": 7221,
+      "sourceSoundId": 6
+    },
+    "weapon-fire-fireuser-02": {
+      "url": "assets/audio/weapon-fire-fireuser-02.ogg",
+      "source": "sound/fireuser-02.wav",
+      "bundle": "characterselection_2eresourceFile",
+      "bytes": 7861,
+      "sourceSoundId": 8
+    },
+    "weapon-fire-laserhvyuser-02": {
+      "url": "assets/audio/weapon-fire-laserhvyuser-02.ogg",
+      "source": "sound/laserhvyuser-02.wav",
+      "bundle": "characterselection_2eresourceFile",
+      "bytes": 6686,
+      "sourceSoundId": 11
+    },
+    "weapon-fire-shellltuser-03": {
+      "url": "assets/audio/weapon-fire-shellltuser-03.ogg",
+      "source": "sound/shellltuser-03.wav",
+      "bundle": "characterselection_2eresourceFile",
+      "bytes": 6036,
+      "sourceSoundId": 10
+    },
+    "weapon-fire-sonicuser-01": {
+      "url": "assets/audio/weapon-fire-sonicuser-01.ogg",
+      "source": "sound/sonicuser-01.wav",
+      "bundle": "characterselection_2eresourceFile",
+      "bytes": 8404,
+      "sourceSoundId": 21
+    },
+    "weapon-fire-slimehvyuser-02": {
+      "url": "assets/audio/weapon-fire-slimehvyuser-02.ogg",
+      "source": "sound/slimehvyuser-02.wav",
+      "bundle": "characterselection_2eresourceFile",
+      "bytes": 7222,
+      "sourceSoundId": 25
+    },
+    "weapon-fire-electricuser-02": {
+      "url": "assets/audio/weapon-fire-electricuser-02.ogg",
+      "source": "sound/electricuser-02.wav",
+      "bundle": "characterselection_2eresourceFile",
+      "bytes": 9604,
+      "sourceSoundId": 13
+    },
+    "weapon-fire-electricuser-01": {
+      "url": "assets/audio/weapon-fire-electricuser-01.ogg",
+      "source": "sound/electricuser-01.wav",
+      "bundle": "characterselection_2eresourceFile",
+      "bytes": 9706,
+      "sourceSoundId": 23
+    },
+    "weapon-fire-shellhvyuser-01": {
+      "url": "assets/audio/weapon-fire-shellhvyuser-01.ogg",
+      "source": "sound/shellhvyuser-01.wav",
+      "bundle": "characterselection_2eresourceFile",
+      "bytes": 6754,
+      "sourceSoundId": 26
+    },
+    "weapon-fire-fireuser-03": {
+      "url": "assets/audio/weapon-fire-fireuser-03.ogg",
+      "source": "sound/fireuser-03.wav",
+      "bundle": "characterselection_2eresourceFile",
+      "bytes": 7124,
+      "sourceSoundId": 24
+    },
+    "weapon-fire-slimeltuser-05": {
+      "url": "assets/audio/weapon-fire-slimeltuser-05.ogg",
+      "source": "sound/slimeltuser-05.wav",
+      "bundle": "characterselection_2eresourceFile",
+      "bytes": 6279,
+      "sourceSoundId": 19
+    },
+    "weapon-fire-iceuser-03": {
+      "url": "assets/audio/weapon-fire-iceuser-03.ogg",
+      "source": "sound/iceuser-03.wav",
+      "bundle": "characterselection_2eresourceFile",
+      "bytes": 7956,
+      "sourceSoundId": 22
+    },
+    "weapon-fire-laserhvyuser-04": {
+      "url": "assets/audio/weapon-fire-laserhvyuser-04.ogg",
+      "source": "sound/laserhvyuser-04.wav",
+      "bundle": "characterselection_2eresourceFile",
+      "bytes": 8510,
+      "sourceSoundId": 20
+    },
+    "weapon-fire-slimeltuser-01": {
+      "url": "assets/audio/weapon-fire-slimeltuser-01.ogg",
+      "source": "sound/slimeltuser-01.wav",
+      "bundle": "characterselection_2eresourceFile",
+      "bytes": 7891,
+      "sourceSoundId": 15
     }
   },
   "animations": {

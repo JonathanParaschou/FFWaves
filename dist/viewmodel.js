@@ -13,7 +13,7 @@ export function reloadPose(progress,weapon='rifle'){
 export class ViewModelMotion {
  constructor(){this.reset()}
  reset(){this.move=0;this.run=0;this.aim=0;this.phase=0;this.recoil=0;this.recoilVelocity=0;this.swayX=0;this.swayY=0;this.melee=0;this.landing=0;this.lastAirborne=false;this.swap=0}
- fire(weapon){this.recoilVelocity+=weapon==='shotgun'?2.8:weapon==='cannon'?3.2:1.55}
+ fire(weapon,strength=1){this.recoilVelocity+=(weapon==='shotgun'?2.8:weapon==='cannon'?3.2:1.55)*strength}
  strike(){this.melee=1}
  switchWeapon(){this.swap=1}
  update(dt,{weapon='pistol',moving=false,sprinting=false,aiming=false,reloadTimer=0,reloadTotal=1,lookX=0,lookY=0,airborne=false,motion=1,weaponTop=.4,crouch=0,slide=0,presentation}={}){

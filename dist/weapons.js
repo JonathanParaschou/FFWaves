@@ -1,3 +1,4 @@
+import {EXPANDED_WEAPONS,WEAPON_SOUNDS} from './weapon-roster.js';
 export const RARITIES=[{name:'STANDARD',color:'#c1cdd5',damage:1},{name:'UNCOMMON',color:'#9cdb87',damage:1.25},{name:'RARE',color:'#79bdff',damage:1.55},{name:'EPIC',color:'#d49bfa',damage:1.95},{name:'LEGENDARY',color:'#ffc579',damage:2.4}];
 export const WEAPONS={
  pistol:{name:'Null Void Pistol',type:'SIDEARM',archetype:'pistol',asset:'weapon-pistol',mag:12,reserve:108,damage:31,pellets:1,interval:.23,reload:1.35,spread:.012,range:70,cost:250,color:'#b4e8ff'},
@@ -15,7 +16,11 @@ const additions={
 };
 export const MELEE_WEAPONS={fists:{id:'fists',name:'Emergency strike',damage:75,reach:3.3,cooldown:1,windup:.17,duration:.48,arc:.2,style:'club',color:'#c9eeff'}};
 const meleeStats={blade:{damage:110,reach:3.4,cooldown:.85,windup:.16,duration:.52,arc:.1,color:'#a9efff'},heavy:{damage:190,reach:3,cooldown:1.35,windup:.3,duration:.78,arc:.25,color:'#ffc77c'},club:{damage:80,reach:3.1,cooldown:.58,windup:.12,duration:.4,arc:.1,color:'#d7e5ff'}};
-export function configureWeapons(records=[]){for(const r of records){if(additions[r.id])WEAPONS[r.id]={...r,...additions[r.id]};else if(r.archetype==='melee')MELEE_WEAPONS[r.id]={...r,...meleeStats[r.style]}}return WEAPONS}
+export function configureWeapons(records=[]){for(const r of records){if(additions[r.id])WEAPONS[r.id]={...WEAPONS[r.id],...r,...additions[r.id]};else if(r.archetype==='melee')MELEE_WEAPONS[r.id]={...r,...meleeStats[r.style]}}return WEAPONS}
 export function rollWeapon(round,owned=[],random=Math.random){const pool=Object.entries(WEAPONS).filter(([id])=>!owned.includes(id));const eligible=pool.length?pool:Object.entries(WEAPONS);const weighted=eligible.flatMap(([id,w])=>Array.from({length:w.archetype==='cannon'?Math.min(4,1+Math.floor(round/10)):4},()=>id));const id=weighted[Math.min(weighted.length-1,Math.floor(random()*weighted.length))];const chance=random(),boost=Math.min(.45,round*.013);const rarity=chance<.025+boost*.25?4:chance<.12+boost*.6?3:chance<.35+boost?2:chance<.72+boost*.5?1:0;return {id,rarity}}
 
 const names={spitwad:['Spitwad Sniper Rifle','rifle'],rotation:['Rotation Rifle','rifle'],heatblaster:['Heatblaster','pistol'],scattergun:['Vertical Scattergun','shotgun'],marshmallow:['Marshmallow Launcher','cannon'],bracer:['Bracer Blaster','pistol']};configureWeapons(Object.entries(names).map(([id,[name,archetype]])=>({id,name,archetype,asset:'weapon-'+id,portrait:'assets/ui/weapon-'+id+'.webp'})));
+
+Object.assign(WEAPONS,EXPANDED_WEAPONS);
+
+for(const [id,sound]of Object.entries(WEAPON_SOUNDS))WEAPONS[id].sound=sound;

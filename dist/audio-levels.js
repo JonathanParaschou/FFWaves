@@ -13,7 +13,7 @@ export function recordingGain(buffer,target=.112){
 // Retry on later gestures too: a suspended/interrupted context is not unlocked forever.
 export function installAudioUnlock(audio,target=document){
  let pending=null;
- const unlock=event=>{if(event?.target?.closest?.('#audio')||audio.userMuted||pending)return;if(!audio.ctx||audio.ctx.state!=='running'){pending=Promise.resolve(audio.start()).finally(()=>pending=null)}};
+ const unlock=event=>{if(event?.target?.closest?.('#audio,#music-player,#music-test')||audio.userMuted||pending)return;if(!audio.ctx||audio.ctx.state!=='running'){pending=Promise.resolve(audio.start()).finally(()=>pending=null)}else audio.unlockMusic?.()};
  target.addEventListener('pointerdown',unlock);
  target.addEventListener('keydown',unlock);
  return ()=>{target.removeEventListener('pointerdown',unlock);target.removeEventListener('keydown',unlock)};

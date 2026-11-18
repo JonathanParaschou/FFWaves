@@ -7,9 +7,9 @@ export class Soundscape{
  }
  breath(strength){const c=this.ctx,t=c.currentTime;for(const [offset,length,volume,freq]of [[0,.42,.20,850],[.55,.55,.30,1100]]){const s=c.createBufferSource(),f=c.createBiquadFilter(),g=c.createGain();s.buffer=this.noise;f.type='bandpass';f.frequency.value=freq;f.Q.value=.8;g.gain.setValueAtTime(.001,t+offset);g.gain.linearRampToValueAtTime(volume*strength,t+offset+length*.35);g.gain.exponentialRampToValueAtTime(.001,t+offset+length);s.connect(f).connect(g).connect(this.voice);s.start(t+offset);s.stop(t+offset+length);s.onended=()=>{s.disconnect();f.disconnect();g.disconnect()}}}
  duck(){this.duckUntil=this.ctx.currentTime+2.5}
- update(dt,{phase='menu',player=null,intermission=0,wave=0,hidden=false,mapId='sector-v'}={},settings=this.settings){this.settings=settings;const c=this.ctx,playing=phase==='playing'&&!hidden,paused=phase==='paused'||hidden;this.voice.gain.setTargetAtTime(paused?0:settings.voiceVolume??.8,c.currentTime,.08);this.music.gain.setTargetAtTime((paused?0:settings.musicVolume??.65)*(c.currentTime<this.duckUntil?.38:1),c.currentTime,.15);
+ update(dt,{phase='menu',player=null,intermission=0,wave=0,hidden=false,mapId='sector-v',enabled=true}={},settings=this.settings){this.settings=settings;const c=this.ctx,playing=phase==='playing'&&!hidden,paused=phase==='paused'||hidden;this.voice.gain.setTargetAtTime(paused?0:settings.voiceVolume??.8,c.currentTime,.08);this.music.gain.setTargetAtTime((paused?0:settings.musicVolume??.65)*(c.currentTime<this.duckUntil?.38:1),c.currentTime,.15);
   this.exertion+=(exertionTarget(player,playing)-this.exertion)*(1-Math.exp(-dt/(playing&&player?.isSprinting?2:4)));
   if(playing&&this.exertion>.12&&c.currentTime>this.breathAt){this.breath(Math.min(.9,this.exertion));this.breathAt=c.currentTime+2.6-this.exertion*1.2}
-  this.recordings.update(phase,mapId,{paused,volume:settings.musicVolume??.65});
+  this.recordings.update(phase,mapId,{paused:hidden,enabled,volume:(settings.musicVolume??.65)*(c.currentTime<this.duckUntil?.38:1)*(phase==='paused'?.7:1)});
  }
 }

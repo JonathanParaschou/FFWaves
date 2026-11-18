@@ -1,7 +1,7 @@
 # FusionFall: Last Signal
 
 A browser wave-survival FPS with 24 original FusionFall heroes, 20 accessories,
-44 Nanos, ten guns, three melee weapons and original effects. The main map is now
+44 Nanos, forty guns, three melee weapons and original effects. The main map is now
 Dexlabs Bunker, a measured Nacht reconstruction; four earlier maps remain as
 optional legacy prototypes.
 
@@ -67,3 +67,8 @@ See [DEVELOPMENT.md](DEVELOPMENT.md) for the full game documentation and
 Play opens directly into the lobby. Choose Solo, Private co-op or Local network, review the selected arena and equipped kit, then use the primary action. Operative, Weapons and Nanos are separate tabs. Unapplied operative previews offer Apply, Discard or Keep editing before leaving. Network modes display service availability and the actual party roster; only a host can choose the arena and deploy a party.
 
 See [menu design notes](docs/MENU-DESIGN.md) for references, interaction decisions and verification limits.
+
+
+The Weapons screen includes the full 40-firearm library, class filters and acquisition details. Six sidearms can be equipped in the starting kit; all forty guns can roll from the supply box.
+
+Original FusionFall music uses the browser's native player. Click once to enable sound, or open Settings and press **Play Music**. Settings shows the playing track and clock. For a direct soundtrack test without loading the game, open `/audio-check.html`. See [the arsenal and music notes](docs/ARSENAL-AND-MUSIC.md) for source provenance and validation.

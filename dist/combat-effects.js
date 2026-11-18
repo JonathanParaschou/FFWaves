@@ -1,3 +1,4 @@
+import {WEAPONS} from './weapons.js';
 import * as THREE from './vendor/three.module.js';
 const profiles={
  pistol:{muzzle:'muzzle-shot',bullet:'projectile',impact:'impact-star',color:'#ffd7a1',size:.13,speed:420,flash:.28},
@@ -11,7 +12,7 @@ const profiles={
  marshmallow:{muzzle:'impact-burst',bullet:'mega-projectile',impact:'impact-ring',color:'#ffd5f4',size:.36,speed:180,flash:.42},
  bracer:{muzzle:'energy-ring',bullet:'energy-bolt',impact:'impact-ring',color:'#95eaff',size:.24,speed:360,flash:.35}
 };
-export function combatProfile(id){return profiles[id]||profiles.pistol}
+export function combatProfile(id){return WEAPONS[id]?.fx||profiles[id]||profiles.pistol}
 export function clipMuzzle(point,eye,layout){
  const delta=point.clone().sub(eye),length=delta.length();if(length<.001||!layout?.raycast)return point;
  const distance=layout.raycast(eye,delta.clone().normalize(),length);
@@ -27,11 +28,11 @@ export class CombatEffects{
   for(const [i,end]of packet.ends.entries()){
    const target=new THREE.Vector3(end.x,end.y,end.z),distance=origin.distanceTo(target);
    // Damage stays hitscan. Presentation lasts across several rendered frames, even indoors.
-   const energy=!['pistol','rifle','shotgun','spitwad','scattergun'].includes(packet.weapon);
+   const energy=p.energy??!['projectile','laser'].includes(p.bullet);
    const duration=Math.max(energy?.14:.10,Math.min(.48,distance/(p.speed/5)));
    const trail=new THREE.Mesh(new THREE.CylinderGeometry(1,1,1,6),new THREE.MeshBasicMaterial({map:this.texture(p.bullet),color:p.color,transparent:true,opacity:.7,depthWrite:false,toneMapped:false,blending:THREE.AdditiveBlending}));
    trail.visible=false;trail.frustumCulled=false;this.scene.add(trail);
-   this.sprite(p.bullet,p.color,p.size,origin,duration,{origin:origin.clone(),target,impact:end.impact,profile:p,projectile:true,trail,energy,blast:['cannon','heatblaster','marshmallow'].includes(packet.weapon),delay:i*.002});
+   this.sprite(p.bullet,p.color,p.size,origin,duration,{origin:origin.clone(),target,impact:end.impact,profile:p,projectile:true,trail,energy,blast:p.blast??['cannon','heatblaster','marshmallow'].includes(packet.weapon),delay:i*.002});
    if(i===0&&energy)this.sprite(p.muzzle,p.color,.25,origin,.08);
   }
  }

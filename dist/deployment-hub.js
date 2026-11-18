@@ -1,3 +1,4 @@
+import {initWeaponLibrary} from './weapon-library.js';
 import {WEAPONS,MELEE_WEAPONS} from './weapons.js';
 import {HEROES,loadOperative} from './avatars.js';
 import {STARTER_GUNS,saveFieldKit} from './field-kit.js';
@@ -7,27 +8,29 @@ import {discoverOnlineService} from './online-service.js';
 import {MENU_SECTIONS,PLAY_MODES,primaryAction} from './menu-state.js';
 const $=id=>document.getElementById(id);
 export function initDeploymentHub(sim,heroMenu,actions={}){
+ let arsenal=null,previewWeapon=sim.fieldKit.gun;
  let section='play',mode='solo',client=null,busy=false,pending=null,service={state:'idle',text:'Solo session'},probeGeneration=0,busyTimer;
  const buttons=[...document.querySelectorAll('[data-hub-tab]')];
  const party=()=>client?.joined?{joined:true,connected:client.connected,host:client.isHost,phase:client.lobby?.phase}:null;
  function action(){return primaryAction({section,mode,party:party(),busy,availability:service.state})}
  function paintAction(){const a=action();$('deploy').querySelector('span').textContent=a.label;$('deploy').disabled=a.disabled;$('deploy-context-title').textContent=section==='play'?client?.joined?'Party deployment':PLAY_MODES[mode].title+' / '+activeMap.name:'Loadout preparation';$('deploy-context-detail').textContent=a.detail;$('menu-screen-hint').textContent=section==='play'?'Choose a mode and arena, then start your run.':'Changes marked as preview need to be equipped.';}
- function paintPreview(){const dirty=!!heroMenu.isDirty;$('preview-equipment-state').textContent=dirty?'PREVIEW / NOT EQUIPPED':section==='nanos'?'NANO PREVIEW':'EQUIPPED';$('preview-equipment-state').dataset.dirty=String(dirty)}
+ function paintPreview(){const dirty=!!heroMenu.isDirty;$('preview-equipment-state').textContent=dirty?'PREVIEW / NOT EQUIPPED':section==='weapons'&&previewWeapon!==sim.fieldKit.gun?'WEAPON PREVIEW':section==='nanos'?'NANO PREVIEW':'EQUIPPED';$('preview-equipment-state').dataset.dirty=String(dirty)}
  function guard(operation){if(!heroMenu.isDirty){operation();return}pending=operation;$('unsaved-status').textContent='';$('unsaved-menu').classList.remove('hidden');$('unsaved-apply').focus()}
  function closeGuard(){pending=null;$('unsaved-menu').classList.add('hidden')}
  function activate(id){if(!MENU_SECTIONS.includes(id))return;const previous=section;section=id;$('menu').dataset.section=id;
   for(const b of buttons){const selected=b.dataset.hubTab===id;b.classList.toggle('selected',selected);b.setAttribute('aria-selected',String(selected));b.tabIndex=selected?0:-1;const panel=$('pane-'+b.dataset.hubTab);panel.classList.toggle('hidden',!selected);panel.setAttribute('aria-hidden',String(!selected))}
-  if(id!=='nanos')heroMenu.setWeapon(sim.fieldKit.gun);if(id!=='operative')heroMenu.setMotion?.('idle');actions.onSectionChange?.(id,previous);paintAction();paintPreview();
+  if(id!=='nanos'){heroMenu.setWeapon(sim.fieldKit.gun);previewWeapon=sim.fieldKit.gun;if(id==='weapons'){arsenal?.refresh();arsenal?.select(sim.fieldKit.gun,{preview:false})}}if(id!=='operative')heroMenu.setMotion?.('idle');actions.onSectionChange?.(id,previous);paintAction();paintPreview();
  }
  function showTab(id){if(id!==section)guard(()=>activate(id))}
  for(const b of buttons){b.onclick=()=>showTab(b.dataset.hubTab);b.onkeydown=e=>{const index=buttons.indexOf(b),delta={ArrowLeft:-1,ArrowRight:1}[e.code];let next;if(delta)next=(index+delta+buttons.length)%buttons.length;else if(e.code==='Home')next=0;else if(e.code==='End')next=buttons.length-1;else return;e.preventDefault();showTab(buttons[next].dataset.hubTab);if(!pending)buttons[next].focus()}}
  $('unsaved-cancel').onclick=closeGuard;
  $('unsaved-discard').onclick=async()=>{await heroMenu.discard();const next=pending;closeGuard();refresh();next?.()};
  $('unsaved-apply').onclick=async()=>{$('unsaved-status').textContent='Applying your operative...';for(const id of ['unsaved-apply','unsaved-discard','unsaved-cancel'])$(id).disabled=true;try{if(await heroMenu.apply()){const next=pending;closeGuard();refresh();next?.()}else $('unsaved-status').textContent='Could not apply the operative. Keep editing and try again.'}finally{for(const id of ['unsaved-apply','unsaved-discard','unsaved-cancel'])$(id).disabled=false}};
- function choose(key,id){if(!sim.setFieldKit({...sim.fieldKit,[key]:id}))return;saveFieldKit(sim.fieldKit);heroMenu.setWeapon(id);refresh();$(key==='gun'?'starter-options':'melee-options').querySelector('.selected')?.focus()}
+ function choose(key,id){if(!sim.setFieldKit({...sim.fieldKit,[key]:id}))return;saveFieldKit(sim.fieldKit);heroMenu.setWeapon(id);if(key==='gun'){previewWeapon=id;arsenal?.select(id,{preview:false})}refresh();(()=>{const selected=$(key==='gun'?'starter-options':'melee-options').querySelector('.selected');if(key==='melee'||selected?.closest('details')?.open)selected?.focus();else $('weapon-search').focus()})()}
  function card(cfg,id,key){const b=document.createElement('button');b.className='kit-card'+(sim.fieldKit[key]===id?' selected':'');b.setAttribute('aria-pressed',String(sim.fieldKit[key]===id));const image=document.createElement('img');image.src=cfg.portrait||`assets/ui/weapon-${id}.webp`;image.alt='';const name=document.createElement('strong');name.textContent=cfg.name;const detail=document.createElement('small');detail.textContent=key==='gun'?`${cfg.mag} rounds / ${cfg.type}`:`${cfg.damage} damage / ${cfg.reach}m reach`;const state=document.createElement('em');state.textContent=sim.fieldKit[key]===id?'EQUIPPED':'EQUIP';b.append(image,name,detail,state);b.onclick=()=>choose(key,id);return b}
  function summaryItem(label,name,image,tab){const b=document.createElement('button');b.className='summary-item';b.setAttribute('aria-label','Edit '+label.toLowerCase()+': '+name);if(image){const img=document.createElement('img');img.src=image;img.alt='';b.append(img)}const text=document.createElement('span'),small=document.createElement('small'),strong=document.createElement('strong');small.textContent=label;strong.textContent=name;text.append(small,strong);b.append(text);b.onclick=()=>showTab(tab);return b}
  function refresh(){
+  arsenal?.refresh();
   $('starter-options').replaceChildren(...STARTER_GUNS.map(id=>card(WEAPONS[id],id,'gun')));$('melee-options').replaceChildren(...Object.entries(MELEE_WEAPONS).filter(([,w])=>w.asset).map(([id,w])=>card(w,id,'melee')));
   const hero=HEROES.find(h=>h.id===loadOperative().hero)||HEROES[0],gun=WEAPONS[sim.fieldKit.gun],summary=$('hub-summary');summary.replaceChildren(summaryItem('OPERATIVE',hero.name,hero.portrait,'operative'),summaryItem('FIELD KIT',gun.name,gun.portrait||`assets/ui/weapon-${sim.fieldKit.gun}.webp`,'weapons'));
   const nanos=summaryItem('NANO SQUAD',sim.squad.map(n=>n.name).join(', '),null,'nanos'),icons=document.createElement('span');icons.className='hub-summary-nanos';for(const n of sim.squad){const img=document.createElement('img');img.src=n.originalIcon||n.portrait;img.alt=n.name;icons.append(img)}nanos.querySelector('strong').replaceWith(icons);summary.append(nanos);$('menu-profile-image').src=hero.portrait;refreshMission();refreshParty();paintPreview();
@@ -49,5 +52,6 @@ export function initDeploymentHub(sim,heroMenu,actions={}){
  $('deploy').onclick=launch;
  heroMenu.subscribe?.(paintPreview);
  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&sim.phase==='menu'&&section!=='play'&&!document.querySelector('.modal:not(.hidden)')){e.preventDefault();e.stopPropagation();showTab('play')}});
+ arsenal=initWeaponLibrary(sim,{onPreview:id=>{previewWeapon=id;heroMenu.setWeapon(id);paintPreview()},onEquip:id=>choose('gun',id)});
  activate('play');refresh();return {refresh,showTab,refreshMission,refreshParty,setMode,launch,setBusy,setPartyClient(value){client=value;refreshParty()},dispose(){clearTimeout(busyTimer)},get section(){return section},get mode(){return mode}};
 }

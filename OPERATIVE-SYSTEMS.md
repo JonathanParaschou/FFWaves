@@ -20,11 +20,11 @@ The head/back items follow original skeleton sockets with authored fitting offse
 
 [Activision's Zombies deep dive](https://www.callofduty.com/blog/2025/09/call-of-duty-black-ops-7-zombies-deep-dive) describes physical wall buys, discounted wall ammunition, timed Mystery Box reveals and better weapon rarity as rounds progress. Those principles replace the previous catalogue shop.
 
-Every map has five mounted racks with their actual original gun model. The first purchase grants that rack's weapon; later purchases replenish that gun at 35% of its base price. Wall rarity advances every ten rounds to a maximum of Epic. A higher rarity purchase preserves existing forge upgrades. Full ammunition does not incur another refill charge.
+The bunker has eight mounted racks; legacy maps have five with their actual original gun model. The first purchase grants that rack's weapon; later purchases replenish that gun at 35% of its base price. Wall rarity advances every ten rounds to a maximum of Epic. A higher rarity purchase preserves existing forge upgrades. Full ammunition does not incur another refill charge.
 
 The supply box costs 950 in-game taros. It cycles through gun models for 3.1s and reveals a predetermined random offer. The player has 12s to press F and take it. Walking away does not equip it. Offers expire without replacing a carried gun. Rolls avoid currently owned guns, and five rarity levels multiply damage separately from forge tier.
 
-The ten guns include the four existing weapons plus Spitwad Sniper Rifle, Rotation Rifle, Heatblaster, Vertical Scattergun, Marshmallow Launcher and Bracer Blaster. Their names/meshes/skins are original; FPS statistics and rarity behavior are adaptations.
+The forty guns include the previous ten plus thirty source-backed additions across sidearms, SMGs, assault and energy rifles, precision rifles, scatterguns, support guns and launchers. Their names/meshes/skins are original; FPS statistics and rarity behavior are adaptations.
 
 ## Wave tuning
 
@@ -52,11 +52,11 @@ Automated checks cover movement transitions, collision, slide cancellation, box 
 
 ## Field kit and deployment hub update
 
-The initial screen now centers the operative preview, with Operative, Field Kit and Nano Squad tabs. The expanded source roster has 24 heroes and 20 accessories. Field Kit validates three starter sidearms and the katana/hammer/bat; selections persist locally and join the LAN profile. New matches initialize the server player's actual starter weapon and melee ID from that validated profile. Stronger wall guns and supply-box rolls retain the existing two-firearm inventory.
+The initial screen now centers the operative preview, with Operative, Field Kit and Nano Squad tabs. The expanded source roster has 24 heroes and 20 accessories. Field Kit validates six starter sidearms and the katana/hammer/bat; selections persist locally and join the LAN profile. New matches initialize the server player's actual starter weapon and melee ID from that validated profile. Stronger wall guns and supply-box rolls retain the existing two-firearm inventory.
 
 Melee starts a visible windup before server/solo damage. Sword: 110 damage / 3.4m / 0.85s recovery. Hammer: 190 / 3m / 1.35s. Bat: 80 / 3.1m / 0.58s. Arcs, line of sight, floors, stun, cooldown and firing lockout apply. Hits are awarded after the windup, rather than instantly when V is pressed. Gameplay timing is an FPS adaptation around original weapon art.
 
-Gun effects have ten profiles using recovered FusionFall textures; muzzle maps, projectile sprites, additive impacts and splash presentation vary per gun. Combat remains authoritative hitscan, with visual travel trails. Melee models use their original +Y blade axis, not the +Z gun-muzzle convention.
+Gun effects cover all forty guns using recovered FusionFall textures; muzzle maps, projectile sprites, additive impacts and splash presentation vary per gun. Combat remains authoritative hitscan, with visual travel trails. Melee models use their original +Y blade axis, not the +Z gun-muzzle convention.
 
 ## Player-scale calibration
 

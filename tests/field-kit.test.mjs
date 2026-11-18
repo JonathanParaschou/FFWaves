@@ -14,7 +14,7 @@ function ticks(sim,n){for(let i=0;i<n;i++)sim.update(1/60,{x:0,z:0})}
 test('field kit validates gear, deploys each starter and preserves the two-gun progression pool',()=>{
  assert.deepEqual(validateFieldKit({gun:'cannon',melee:'invalid'}),{gun:'pistol',melee:'sword'});assert.equal(sanitizeProfile({kit:{gun:'cannon'}}).kit.gun,'pistol');
  for(const gun of STARTER_GUNS){const sim=run({gun,melee:'hammer'});assert.equal(sim.equipped.id,gun);assert.equal(sim.player.meleeId,'hammer');assert.equal(sim.player.weapons.length,1);assert.equal(sim.setFieldKit({gun:'rifle'}),false);sim.phase='menu';sim.start();assert.equal(sim.player.weapons[0].id,gun)}
- assert.equal(Object.keys(WEAPONS).length,10);for(let i=0;i<100;i++)assert.ok(!['sword','bat','hammer'].includes(rollWeapon(10,[],()=>i/100).id));
+ assert.equal(Object.keys(WEAPONS).length,40);for(let i=0;i<100;i++)assert.ok(!['sword','bat','hammer'].includes(rollWeapon(10,[],()=>i/100).id));
 });
 
 test('three melee weapons have timed strikes, different recovery, directional hits and firing lockout',()=>{
@@ -27,5 +27,5 @@ test('melee respects cover and pausing; reload is cancelled when a strike starts
 
 test('all gun effects use existing original RGBA textures, animate, and release their resources',async()=>{
  const fxCatalog=JSON.parse(await readFile('dist/assets/combat-fx-catalog.json','utf8')),textures=new Map();for(const record of Object.values(fxCatalog.textures)){const bytes=await readFile('dist/'+record.url);assert.equal(bytes.toString('ascii',1,4),'PNG');assert.ok((await stat('dist/'+record.url)).size>100);textures.set(record.url,new THREE.Texture())}
- const scene=new THREE.Scene(),fx=new CombatEffects(scene,{combatFxCatalog:fxCatalog,textures}),profiles=new Set();for(const id of Object.keys(WEAPONS)){const p=combatProfile(id);for(const key of ['muzzle','bullet','impact'])assert.ok(fxCatalog.textures[p[key]],id+' '+key);profiles.add(JSON.stringify(p));fx.shot({weapon:id,origin:{x:0,y:1,z:0},ends:[{x:0,y:1,z:-5,impact:true}]})}assert.equal(profiles.size,10);assert.ok(scene.children.every(o=>o.material.map));for(let i=0;i<100;i++)fx.update(.016);assert.equal(scene.children.length,0);fx.clear();
+ const scene=new THREE.Scene(),fx=new CombatEffects(scene,{combatFxCatalog:fxCatalog,textures}),profiles=new Set();for(const id of Object.keys(WEAPONS)){const p=combatProfile(id);for(const key of ['muzzle','bullet','impact'])assert.ok(fxCatalog.textures[p[key]],id+' '+key);profiles.add(JSON.stringify(p));fx.shot({weapon:id,origin:{x:0,y:1,z:0},ends:[{x:0,y:1,z:-5,impact:true}]})}assert.ok(profiles.size>=17);assert.ok(scene.children.every(o=>o.material.map));for(let i=0;i<100;i++)fx.update(.016);assert.equal(scene.children.length,0);fx.clear();
 });

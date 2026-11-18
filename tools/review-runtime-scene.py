@@ -104,5 +104,9 @@ def main():
         im=render(scene,scene['camera'],id.upper()+' / FIRST PERSON',background='#344650');im.save(ROOT/f'qa/viewmodel-{id}.png');images.append(im)
     sheet=Image.new('RGB',(W*2,H*math.ceil(len(images)/2)));
     for i,im in enumerate(images):sheet.paste(im,((i%2)*W,(i//2)*H))
-    sheet.save(ROOT/'qa/viewmodel-review.jpg',quality=90);print('Runtime room and ten-weapon reviews saved (software lighting; live WebGL unverified).',flush=True)
+    sheet.save(ROOT/'qa/viewmodel-review.jpg',quality=90)
+    atlas=Image.new('RGB',(W*2,math.ceil(len(images)/4)*H//2), '#10212d')
+    for i,im in enumerate(images):atlas.paste(im.resize((W//2,H//2)),((i%4)*W//2,(i//4)*H//2))
+    atlas.save(ROOT/'qa/arsenal-contact.jpg',quality=90)
+    atlas.save(ROOT/'docs/arsenal-review.jpg',quality=90);print('Runtime room and full-arsenal reviews saved (software lighting; live WebGL unverified).',flush=True)
 if __name__=='__main__':main()
