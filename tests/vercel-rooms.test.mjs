@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {randomUUID} from 'node:crypto';
+import {once} from 'node:events';
 import MockRedis from 'ioredis-mock';
 import {WebSocket} from 'ws';
 import {RedisRoomStore} from '../server/redis-room-store.mjs';
@@ -35,10 +36,40 @@ async function crossGateway(t,real=false){const namespace='test-'+randomUUID(),a
 test('two actual WebSocket gateways share the Lua-backed mock store and advance one match',async t=>crossGateway(t));
 test('real Redis integration across two Vercel gateways',{skip:!process.env.FFWAVES_TEST_REDIS_URL},async t=>crossGateway(t,true));
 test('Vercel discovery reports the missing Redis connection explicitly',async t=>{const g=await createVercelGateway();await new Promise(r=>g.server.listen(0,'127.0.0.1',r));t.after(()=>g.close());const r=await fetch(`http://127.0.0.1:${g.server.address().port}/api/matchmaking`);assert.equal(r.status,503);assert.equal((await r.json()).code,'STORAGE_NOT_CONFIGURED')});
-test('browser reconnects automatically to a replacement function while preserving its match',async t=>{
- const namespace=randomUUID(),a=store(t,namespace),b=store(t,namespace),ga=await createVercelGateway({store:a}),gb=await createVercelGateway({store:b});await Promise.all([ga,gb].map(g=>new Promise(r=>g.server.listen(0,'127.0.0.1',r))));const created=await new VercelRooms(a).create('autoreconnect-host-01',{name:'Host'},'dexlabs-bunker');globalThis.WebSocket=WebSocket;globalThis.location={protocol:'http:',origin:'http://game.example',host:'game.example'};const storage=new Map();globalThis.sessionStorage={getItem:k=>storage.get(k),setItem:(k,v)=>storage.set(k,v),removeItem:k=>storage.delete(k)};const browser=new LanClient();let closed=false;t.after(async()=>{clearInterval(browser.pingTimer);browser.leave();if(!closed)await ga.close();await gb.close();delete globalThis.location;delete globalThis.sessionStorage});
- await browser.connect('join',{name:'Guest'},'dexlabs-bunker',{online:true,endpoint:`http://127.0.0.1:${ga.server.address().port}`,code:created.lobby.invite.code});const identity=browser.id;
- await new VercelRooms(a).flush(created.lobby.roomId,[{id:'start',memberId:created.id,connectionId:created.connectionId,packet:{type:'start'}}]);await new Promise(r=>setTimeout(r,80));const match=browser.matchId;
- await ga.close();closed=true;browser.connectionOptions.endpoint=`http://127.0.0.1:${gb.server.address().port}`;
- const deadline=Date.now()+4000;while((!browser.connected||!browser.running)&&Date.now()<deadline)await new Promise(r=>setTimeout(r,30));assert.equal(browser.connected,true);assert.equal(browser.id,identity);assert.equal(browser.matchId,match);assert.ok(browser.socket.url.includes(':'+gb.server.address().port));
+test('browser reconnects automatically to a replacement function while preserving its match',{timeout:10000},async t=>{
+ const namespace=randomUUID(),a=store(t,namespace),b=store(t,namespace);
+ const ga=await createVercelGateway({store:a}),gb=await createVercelGateway({store:b});
+ await Promise.all([ga,gb].map(g=>new Promise(r=>g.server.listen(0,'127.0.0.1',r))));
+ const created=await new VercelRooms(a).create('autoreconnect-host-01',{name:'Host'},'dexlabs-bunker');
+ const initial=Promise.withResolvers(),restored=Promise.withResolvers(),disconnected=Promise.withResolvers();
+ const originalGlobals=new Map(['WebSocket','location','sessionStorage'].map(key=>[key,Object.getOwnPropertyDescriptor(globalThis,key)]));
+ globalThis.WebSocket=WebSocket;
+ globalThis.location={protocol:'http:',origin:'http://game.example',host:'game.example'};
+ const storage=new Map();globalThis.sessionStorage={getItem:k=>storage.get(k),setItem:(k,v)=>storage.set(k,v),removeItem:k=>storage.delete(k)};
+ let matches=0,closed=false;
+ const browser=new LanClient({onMatch(packet){(++matches===1?initial:restored).resolve(packet)},onDisconnect(){disconnected.resolve()}});
+ t.after(async()=>{
+  clearInterval(browser.pingTimer);browser.leave();
+  try{if(!closed)await ga.close();await gb.close()}
+  finally{for(const [key,descriptor]of originalGlobals)if(descriptor)Object.defineProperty(globalThis,key,descriptor);else delete globalThis[key]}
+ });
+ await browser.connect('join',{name:'Guest'},'dexlabs-bunker',{online:true,endpoint:`http://127.0.0.1:${ga.server.address().port}`,code:created.lobby.invite.code});
+ const identity=browser.id;
+ await new VercelRooms(a).flush(created.lobby.roomId,[{id:'start',memberId:created.id,connectionId:created.connectionId,packet:{type:'start'}}]);
+ const match=(await initial.promise).matchId,previousSocket=browser.socket;
+ const replacement=`http://127.0.0.1:${gb.server.address().port}`;
+ // Server shutdown can resolve before the client's close event is delivered.
+ // Select the replacement first, then await actual client lifecycle events.
+ browser.connectionOptions.endpoint=replacement;
+ const socketClosed=once(previousSocket,'close');
+ await ga.close();closed=true;
+ await socketClosed;await disconnected.promise;
+ const resumed=await restored.promise;
+ assert.notEqual(browser.socket,previousSocket);
+ assert.equal(new URL(browser.socket.url).origin,replacement.replace('http:','ws:'));
+ assert.equal(browser.socket.readyState,WebSocket.OPEN);
+ assert.equal(browser.connected,true);assert.equal(browser.joined,true);assert.equal(browser.running,true);
+ assert.equal(browser.id,identity);assert.equal(browser.roomId,created.lobby.roomId);
+ assert.equal(browser.matchId,match);assert.equal(resumed.matchId,match);
+ assert.ok(resumed.players.some(p=>p.id===identity&&p.connected),'the replacement restores the same player');
 });
