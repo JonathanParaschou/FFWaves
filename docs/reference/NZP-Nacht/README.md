@@ -105,3 +105,9 @@ barricades; a new supply fixture must not occupy a door or stair landing.
 
 These geometric guarantees establish agreement with the published source. They
 do not establish final browser visual composition, frame rate or combat feel.
+
+## Supply-box clearance correction
+
+The source mystery-box entity 3 is retained as `sourceAnchor` (-4.2, 0.2, -8). The wider FusionFall presentation previously intersected the angled solid brush 216. Its fixture is now at (-2.8, 0, -8), rotated 90 degrees to run along the west wall, with its own correspondingly rotated collision footprint and a clear interaction approach. This is an intentional equipment adaptation; no source shell vertices or stair dimensions changed. The idle blue beacon and minimap question mark expose its location in the Help Room. It costs 950 taros to roll, reveals after 3.1 s, and requires pickup within 12 s.
+
+Run `python tools/review-supply-box.py` to compare the real idle, rolling and ready geometry from the same interaction approach. The [supply-box review](supply-box-review.jpg) uses approximate software shading; the question-mark sprite and live GPU composition remain unverified.

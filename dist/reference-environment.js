@@ -20,5 +20,5 @@ export function buildReferenceEnvironment(scene,assets,glow,map){
  const dressing=buildReferenceDressing(scene,assets,map,original);props.push(...dressing.props);for(const p of dressing.props)if(p.userData.dressing?.role==='source-cover')p.traverse(o=>{if(o.isMesh)hitObjects.push(o)});
  // Source light positions provide room-scale pools of light, rather than a uniformly lit stage.
  for(const id of [194,199,201,270,274,277,321,334,357,358,361]){const e=map.reference.data.entities.find(e=>e.id===id);if(!e?.origin)continue;const warm=e.properties.classname==='light',light=new THREE.PointLight(warm?lighting.warm:lighting.cool,warm?lighting.warmIntensity:lighting.coolIntensity,lighting.range,2);light.position.fromArray(e.origin);scene.add(light)}
- return {hitObjects,stations,gateMeshes,pools,label,props,original,dressing,update(dt,time,sim){for(const f of fixtures)f.update(sim?.box,time,sim?.wave||0)},dispose(){dressing.dispose();for(const f of fixtures)f.dispose();for(const resource of owned)resource.dispose();scene.clear()}};
+ return {hitObjects,stations,gateMeshes,pools,label,props,original,dressing,update(dt,time,sim){for(const f of fixtures)f.update(sim?.box,time,sim?.wave||0,dt)},dispose(){dressing.dispose();for(const f of fixtures)f.dispose();for(const resource of owned)resource.dispose();scene.clear()}};
 }

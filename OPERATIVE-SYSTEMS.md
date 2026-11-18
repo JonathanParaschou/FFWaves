@@ -12,7 +12,7 @@ The head/back items follow original skeleton sockets with authored fitting offse
 
 - C toggles crouch; crouch speed is 2.65 units/s, with a smoothly lowered eye position.
 - Sprinting for at least 0.12s enables a slide. C starts it while moving on the ground.
-- A slide lasts up to 0.9s, decelerating from 10.8 to 4.8 units/s with limited steering. It spends stamina, stops against obstacles and allows shooting/ADS.
+- A slide lasts up to 0.8s, decelerating from 8 to 4 metres/s with limited steering. It spends stamina, stops against obstacles and allows shooting/ADS.
 - C immediately cancels into standing/running. Space cancels into a jump. A short cooldown and stamina cost govern chaining; holding jump does not add repeated impulses.
 - Weapon motion and mandatory stance-height changes stay separate from optional camera bob/shake.
 
@@ -57,3 +57,9 @@ The initial screen now centers the operative preview, with Operative, Field Kit 
 Melee starts a visible windup before server/solo damage. Sword: 110 damage / 3.4m / 0.85s recovery. Hammer: 190 / 3m / 1.35s. Bat: 80 / 3.1m / 0.58s. Arcs, line of sight, floors, stun, cooldown and firing lockout apply. Hits are awarded after the windup, rather than instantly when V is pressed. Gameplay timing is an FPS adaptation around original weapon art.
 
 Gun effects have ten profiles using recovered FusionFall textures; muzzle maps, projectile sprites, additive impacts and splash presentation vary per gun. Combat remains authoritative hitscan, with visual travel trails. Melee models use their original +Y blade axis, not the +Z gun-muzzle convention.
+
+## Player-scale calibration
+
+The shared solo/server movement profile lives in `dist/player-scale.js`: a 1.8 m hull, 1.68 m eye, 0.35 m collision radius, 4 m/s walk, 6 m/s sprint, 2.7 m/s aim and 2.1 m/s crouch. Locomotion accelerates over roughly 0.1 s. Gravity is 22 m/s squared; the normal jump apex is approximately 0.66 m. The bunker retains 3.2 m ground-floor clearance and a 3.6 m upper-floor elevation. These are authored tuning values, not claimed measurements of COD physics.
+
+FOV settings now mean horizontal coverage at 16:9 (95 degrees by default), converted to Three.js vertical FOV. Ultrawide retains that vertical coverage. Old default settings migrate once; explicit music mute remains respected.

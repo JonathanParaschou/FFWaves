@@ -6,7 +6,7 @@ The active rebuild is **Dexlabs Bunker**. Its structural reference is the publis
 
 `docs/reference/NZP-Nacht/ndu.map` is the reference, rather than a remembered impression or a loose collection of props. `tools/export-reference-map.py` intersects its convex brush planes to recover real face polygons. The same polygons supply rendered architecture, exact convex collision, floor sampling, bullet/visibility rays, and architectural sections in the map reader. Movable barriers remain separate source entities.
 
-The source standing hull is 72 units high. A uniform conversion of .025 metres per source unit makes it 1.8 metres, with no independent stretching of rooms to fit an arbitrary arena. The coordinate conversion is recorded alongside the export. Structural vertices, stair treads, angled rubble, window bays, posts and openings retain their source positions. FusionFall materials replace surface presentation. Original wall-gun and box anchors are retained; added survival services are identified separately.
+The source standing hull is 72 units high. A uniform conversion of .025 metres per source unit makes it 1.8 metres, with no independent stretching of rooms to fit an arbitrary arena. The coordinate conversion is recorded alongside the export. Structural vertices, stair treads, angled rubble, window bays, posts and openings retain their source positions. FusionFall materials replace surface presentation. Original wall-gun anchors and box source metadata are retained; the box fixture moves 1.4 m inward and turns along the wall to clear source brush 216; added survival services are identified separately.
 
 ## Read the plan in layers
 
