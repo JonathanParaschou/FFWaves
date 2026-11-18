@@ -157,3 +157,28 @@ Soundtrack tests verify all six source hashes and Ogg/Vorbis headers, authored m
 The main menu now opens on Play, with mode/arena selection, the actual character preview and party overview in a stable lobby layout. Operative, Weapons and Nanos have dedicated tabs, a persistent equipped summary, and a context-dependent primary action. Service checks are requested only for network modes. Unapplied operative changes get an explicit apply/discard/stay decision; Nano browsing remains a preview until Equip. The same modal manager handles focus containment, Escape and focus return across the existing dialogs.
 
 The CSS is rebuilt in deployment-hub.css. No new bitmap assets or font services are required. The live map backdrop, original model preview and original soundtrack remain in use. Tests exercise navigation, save guards, mode availability and party permissions against the actual DOM controller; browser rendering remains unverified because browser access was unavailable. See [MENU-DESIGN.md](docs/MENU-DESIGN.md) for references, decisions and validation limits.
+
+## Audited bunker environment kit
+
+`tools/audit-environment-library.py` reads every available cached bundle without
+mutating it. `tools/extract-bunker-kit.py --review` renders semantic candidates;
+`--publish` exports the selected subset and regenerates shared original bounds.
+These are optional developer extraction tools; build, server and Vercel need
+only the checked-in models, textures and pure JS plan. Read
+[FUSIONFALL-BUNKER-ART.md](docs/FUSIONFALL-BUNKER-ART.md) before further dressing.
+
+`bunker-dressing-plan.js` supplies all new physical equipment to rendering,
+collision, actor support, navigation and map sections. Keep tabletop collision
+pieces aligned with actual model dimensions. `reference-fixtures.js` caches
+station/equipment colliders and support surfaces per immutable map. Existing
+source furniture keeps its original convex collision. Repeated static source
+meshes share instanced batches, while original hydrated meshes remain available
+for bullet picking and review metadata.
+
+Use `python tools/review-reference-geometry.py --rooms-only` for the nine-view
+room sheet; omit the flag to also review all forty viewmodels. Keep the six
+baseline cameras stable. `tests/bunker-art.test.mjs` verifies the original kit,
+source anchors, sampled shell clearance, physical/visual extents, jump/drop
+behavior and scene-relative instance transforms. The full build passes 149 tests
+with the optional real-Redis test skipped when unconfigured. This does not
+establish live browser lighting, frame rate or combat feel.

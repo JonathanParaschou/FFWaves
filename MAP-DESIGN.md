@@ -2,6 +2,8 @@
 
 The main rebuild is **Dexlabs Bunker**, derived directly from a pinned NZ:P Nacht source map. The source packet preserves geometry, measured floor plans, barriers, room graph and camera checkpoints. Read the [map-reading workflow](docs/MAP-READING-WORKFLOW.md) and use `/map-reader.html` for structural review. Runtime rendering, collision, floor layers and navigation all share source geometry.
 
+The [DexTech research-annex art pass](docs/FUSIONFALL-BUNKER-ART.md) audits all 181 available cached bundles and curates 18 original environment assets from 39 visual candidates. Intake, containment and observation now have coordinated equipment, storage, utility detail and exterior campus landmarks. New equipment footprints are intentional adaptations with shared collision, support surfaces, navigation masking and review cameras; the source shell, three gates and both staircases remain unchanged.
+
 The four older maps below are **legacy prototypes**. They are hidden by default in deployment selection; they are not the basis for the rebuild.
 
 Sector V, Camp Kidney and Salvage Yard are authored survival arenas using original FusionFall art. Each combines open circulation space, tighter cover routes, two-door interiors, climbable upper surfaces and supplies that require leaving a comfortable holding position. Original City is a fourth map recovered from the original game scene.

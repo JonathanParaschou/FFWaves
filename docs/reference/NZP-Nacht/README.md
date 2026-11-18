@@ -111,3 +111,20 @@ do not establish final browser visual composition, frame rate or combat feel.
 The source mystery-box entity 3 is retained as `sourceAnchor` (-4.2, 0.2, -8). The wider FusionFall presentation previously intersected the angled solid brush 216. Its fixture is now at (-2.8, 0, -8), rotated 90 degrees to run along the west wall, with its own correspondingly rotated collision footprint and a clear interaction approach. This is an intentional equipment adaptation; no source shell vertices or stair dimensions changed. The idle blue beacon and minimap question mark expose its location in the Help Room. It costs 950 taros to roll, reveals after 3.1 s, and requires pickup within 12 s.
 
 Run `python tools/review-supply-box.py` to compare the real idle, rolling and ready geometry from the same interaction approach. The [supply-box review](supply-box-review.jpg) uses approximate software shading; the question-mark sprite and live GPU composition remain unverified.
+
+## Research-annex equipment additions
+
+The [art-pass record](../../FUSIONFALL-BUNKER-ART.md) documents the full available
+FusionFall cache inventory, 39 reviewed candidates and 18 curated original models.
+Source furniture shells are replaced within the same eleven brush footprints.
+Six source-linked equipment bays add explicit physical footprints near room
+anchors 199, 262, 277, 321, 361 and 334; cooling equipment is associated with 274.
+Exterior DexTech silhouettes sit beyond the playable shell. These are intentional
+survival-theme adaptations, not original reference-map scenery. No shell vertex,
+stair tread or independent door relationship changes.
+
+The same equipment plan supplies rendered extents, collision, actor support and
+navigation masks to solo and multiplayer. The original six camera checkpoints
+remain, with three supplementary workcell views in the regenerated
+[runtime review](runtime-room-review.jpg). Browser lighting, performance and
+combat feel remain unverified when browser access is unavailable.

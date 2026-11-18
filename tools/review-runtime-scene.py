@@ -94,11 +94,12 @@ def main():
     if '--weapons-only' not in sys.argv:
         for view in data['views']:
             im=render(data['environment'],view,view['name'].upper());im.save(ROOT/f'qa/{view["id"]}.png');images.append(im);print(view['name'],flush=True)
-        sheet=Image.new('RGB',(W*2,H*3));
+        sheet=Image.new('RGB',(W*2,H*math.ceil(len(images)/2)));
         for i,im in enumerate(images):sheet.paste(im,((i%2)*W,(i//2)*H))
         sheet.save(ROOT/f'qa/runtime-room-review{suffix}.jpg',quality=90);
         if not closed:
             sheet.save(ROOT/'docs/reference/NZP-Nacht/runtime-room-review.jpg',quality=90);sheet.save(ROOT/'docs/reference/NZP-Nacht/eye-review.jpg',quality=90)
+    if '--rooms-only' in sys.argv:return
     images=[]
     for id,scene in data['weapons'].items():
         im=render(scene,scene['camera'],id.upper()+' / FIRST PERSON',background='#344650');im.save(ROOT/f'qa/viewmodel-{id}.png');images.append(im)

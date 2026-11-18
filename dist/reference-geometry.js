@@ -1,3 +1,4 @@
+import {referenceFixtures} from './reference-fixtures.js';
 // The source brush model is shared by collision, floor selection, LOS and the map reader.
 const indexes=new WeakMap(),bucketSize=2;
 const key=(x,z)=>Math.floor(x/bucketSize)+','+Math.floor(z/bucketSize);
@@ -22,3 +23,8 @@ export function referenceHeight(data,x,z,level){
 export function containsBrush(brush,x,y,z,radius=0,halfHeight=0,skin=0){return brush.planes.every(([nx,ny,nz,d])=>nx*x+ny*y+nz*z<=d+radius*Math.hypot(nx,nz)+Math.abs(ny)*halfHeight-skin+1e-6)}
 export function nearbyBrushes(data,x,z,radius=0){const result=new Set(),i=index(data);for(const dx of [-radius,0,radius])for(const dz of [-radius,0,radius])for(const b of i.brushes.get(key(x+dx,z+dz))||[])result.add(b);return result}
 export function brushRay(brush,origin,dir,range){let enter=0,leave=range;for(const [nx,ny,nz,d]of brush.planes){const at=nx*origin.x+ny*origin.y+nz*origin.z-d,rate=nx*dir.x+ny*dir.y+nz*dir.z;if(Math.abs(rate)<1e-9){if(at>0)return null;continue}const t=-at/rate;if(rate<0)enter=Math.max(enter,t);else leave=Math.min(leave,t);if(enter>leave)return null}return leave<0||enter>range?null:Math.max(0,enter)}
+
+// Added equipment uses the same measured tops for rendering, actors and authority.
+export function dressedReferenceHeight(map,x,z,level){const base=referenceHeight(map.reference.data,x,z,level);let result=base;for(const surface of referenceFixtures(map).surfaces){const dx=Math.max(surface.min[0]-x,0,x-surface.max[0]),dz=Math.max(surface.min[2]-z,0,z-surface.max[2]);if(Math.abs(surface.floorY-base)<.4&&dx*dx+dz*dz<.35*.35)result=Math.max(result,surface.max[1])}return result}
+
+export function fixtureBlocksNode(box,p,pad=.35){return p.x>box.min[0]-pad&&p.x<box.max[0]+pad&&p.z>box.min[2]-pad&&p.z<box.max[2]+pad&&box.max[1]>p.y+.45&&box.min[1]<p.y+1.8}

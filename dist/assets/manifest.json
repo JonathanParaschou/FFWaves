@@ -5017,6 +5017,438 @@
       "parts": 2,
       "triangles": 555,
       "bytes": 31553
+    },
+    "lab-cargo-case": {
+      "url": "assets/models/lab-cargo-case.json",
+      "source": "map/questitem/quest_item_crates_01.nif",
+      "bounds": {
+        "min": [
+          -0.47916,
+          0.0,
+          -0.34728
+        ],
+        "max": [
+          0.47916,
+          0.58482,
+          0.34728
+        ],
+        "size": [
+          0.95833,
+          0.58482,
+          0.69456
+        ]
+      },
+      "parts": 1,
+      "triangles": 88,
+      "bytes": 6839
+    },
+    "lab-beacon": {
+      "url": "assets/models/lab-beacon.json",
+      "source": "map/questitem/quest_item_floating_beacon.nif",
+      "bounds": {
+        "min": [
+          -0.05636,
+          0.0,
+          -0.05786
+        ],
+        "max": [
+          0.05636,
+          0.39946,
+          0.05786
+        ],
+        "size": [
+          0.11272,
+          0.39946,
+          0.11573
+        ]
+      },
+      "parts": 2,
+      "triangles": 169,
+      "bytes": 11383
+    },
+    "lab-cabinet": {
+      "url": "assets/models/lab-cabinet.json",
+      "source": "map/questitem/quest_item_cabinets_01.nif",
+      "bounds": {
+        "min": [
+          -0.31912,
+          0.0,
+          -0.46173
+        ],
+        "max": [
+          0.31912,
+          1.48809,
+          0.46173
+        ],
+        "size": [
+          0.63824,
+          1.48809,
+          0.92346
+        ]
+      },
+      "parts": 1,
+      "triangles": 150,
+      "bytes": 10691
+    },
+    "lab-field-device-b": {
+      "url": "assets/models/lab-field-device-b.json",
+      "source": "map/questitem/quest_item_k_ecom_b2.nif",
+      "bounds": {
+        "min": [
+          -0.78934,
+          0.0,
+          -0.34191
+        ],
+        "max": [
+          0.78934,
+          0.64439,
+          0.34191
+        ],
+        "size": [
+          1.57869,
+          0.64439,
+          0.68381
+        ]
+      },
+      "parts": 1,
+      "triangles": 874,
+      "bytes": 47639
+    },
+    "lab-robot-arm": {
+      "url": "assets/models/lab-robot-arm.json",
+      "source": "map/fuseslair/wd_dlfl_war_obj_robot_arm.nif",
+      "bounds": {
+        "min": [
+          -0.36162,
+          0.0,
+          -0.60649
+        ],
+        "max": [
+          0.36162,
+          0.27927,
+          0.60649
+        ],
+        "size": [
+          0.72324,
+          0.27927,
+          1.21298
+        ]
+      },
+      "parts": 1,
+      "triangles": 407,
+      "bytes": 24458
+    },
+    "lab-cylinder-bank": {
+      "url": "assets/models/lab-cylinder-bank.json",
+      "source": "map/nuclearplant/sb_otnp_etc_cylinder_02.nif",
+      "bounds": {
+        "min": [
+          -0.42802,
+          0.0,
+          -0.42802
+        ],
+        "max": [
+          0.42802,
+          1.31663,
+          0.42802
+        ],
+        "size": [
+          0.85604,
+          1.31663,
+          0.85604
+        ]
+      },
+      "parts": 1,
+      "triangles": 262,
+      "bytes": 14828
+    },
+    "lab-toolbox": {
+      "url": "assets/models/lab-toolbox.json",
+      "source": "map/questitem/quest_item_box.nif",
+      "bounds": {
+        "min": [
+          -0.2907,
+          0.0,
+          -0.23768
+        ],
+        "max": [
+          0.2907,
+          0.43007,
+          0.23768
+        ],
+        "size": [
+          0.58141,
+          0.43007,
+          0.47535
+        ]
+      },
+      "parts": 1,
+      "triangles": 24,
+      "bytes": 2146
+    },
+    "lab-field-device": {
+      "url": "assets/models/lab-field-device.json",
+      "source": "map/questitem/quest_item_k_ecom.nif",
+      "bounds": {
+        "min": [
+          -0.97708,
+          0.0,
+          -0.97717
+        ],
+        "max": [
+          0.97708,
+          2.79681,
+          0.97717
+        ],
+        "size": [
+          1.95415,
+          2.79681,
+          1.95434
+        ]
+      },
+      "parts": 5,
+      "triangles": 1045,
+      "bytes": 58999
+    },
+    "lab-dextech-hq": {
+      "url": "assets/models/lab-dextech-hq.json",
+      "source": "map/technologysquare/dt_sdts_dextech_headquarters_01.nif",
+      "bounds": {
+        "min": [
+          -43.00193,
+          0.0,
+          -29.77339
+        ],
+        "max": [
+          43.00193,
+          76.64282,
+          29.77339
+        ],
+        "size": [
+          86.00386,
+          76.64282,
+          59.54678
+        ]
+      },
+      "parts": 9,
+      "triangles": 9448,
+      "bytes": 692236
+    },
+    "lab-pump": {
+      "url": "assets/models/lab-pump.json",
+      "source": "map/darkengine/dt_sdde_aroundobj_03_01.nif",
+      "bounds": {
+        "min": [
+          -0.69141,
+          0.0,
+          -0.74149
+        ],
+        "max": [
+          0.69141,
+          2.39412,
+          0.74149
+        ],
+        "size": [
+          1.38282,
+          2.39412,
+          1.48299
+        ]
+      },
+      "parts": 1,
+      "triangles": 381,
+      "bytes": 28555
+    },
+    "lab-dextech-sign": {
+      "url": "assets/models/lab-dextech-sign.json",
+      "source": "map/technologysquare/dt_sdts_dexter_sign_board.nif",
+      "bounds": {
+        "min": [
+          -0.84176,
+          0.0,
+          -0.12896
+        ],
+        "max": [
+          0.84176,
+          2.39779,
+          0.12896
+        ],
+        "size": [
+          1.68352,
+          2.39779,
+          0.25792
+        ]
+      },
+      "parts": 16,
+      "triangles": 421,
+      "bytes": 33772
+    },
+    "lab-cabinet-low": {
+      "url": "assets/models/lab-cabinet-low.json",
+      "source": "map/questitem/quest_item_cabinets_02.nif",
+      "bounds": {
+        "min": [
+          -0.82368,
+          0.0,
+          -0.31829
+        ],
+        "max": [
+          0.82368,
+          0.76141,
+          0.31829
+        ],
+        "size": [
+          1.64735,
+          0.76141,
+          0.63658
+        ]
+      },
+      "parts": 1,
+      "triangles": 75,
+      "bytes": 4945
+    },
+    "lab-comms-dish": {
+      "url": "assets/models/lab-comms-dish.json",
+      "source": "map/questitem/quest_item_communications_dish.nif",
+      "bounds": {
+        "min": [
+          -3.2903,
+          0.0,
+          -3.84814
+        ],
+        "max": [
+          3.2903,
+          9.73464,
+          3.84814
+        ],
+        "size": [
+          6.5806,
+          9.73464,
+          7.69627
+        ]
+      },
+      "parts": 1,
+      "triangles": 588,
+      "bytes": 38666
+    },
+    "lab-metal-chair": {
+      "url": "assets/models/lab-metal-chair.json",
+      "source": "map/dtetc/dt_mtdb_chair_a01.nif",
+      "bounds": {
+        "min": [
+          -0.23678,
+          0.0,
+          -0.25968
+        ],
+        "max": [
+          0.23678,
+          0.86918,
+          0.25968
+        ],
+        "size": [
+          0.47357,
+          0.86918,
+          0.51935
+        ]
+      },
+      "parts": 1,
+      "triangles": 180,
+      "bytes": 14370
+    },
+    "lab-table": {
+      "url": "assets/models/lab-table.json",
+      "source": "map/dtetc/dt_etc_table_01.nif",
+      "bounds": {
+        "min": [
+          -0.96845,
+          0.0,
+          -0.38745
+        ],
+        "max": [
+          0.96845,
+          0.62798,
+          0.38745
+        ],
+        "size": [
+          1.9369,
+          0.62798,
+          0.7749
+        ]
+      },
+      "parts": 1,
+      "triangles": 106,
+      "bytes": 8068
+    },
+    "lab-bubble-machine": {
+      "url": "assets/models/lab-bubble-machine.json",
+      "source": "map/ep/ep_bubblemachine_00.nif",
+      "bounds": {
+        "min": [
+          -3.96851,
+          0.0,
+          -3.43158
+        ],
+        "max": [
+          3.96851,
+          2.90627,
+          3.43158
+        ],
+        "size": [
+          7.93702,
+          2.90627,
+          6.86316
+        ]
+      },
+      "parts": 1,
+      "triangles": 1922,
+      "bytes": 138759
+    },
+    "lab-tech-building": {
+      "url": "assets/models/lab-tech-building.json",
+      "source": "map/technologysquare/dt_sdts_tech_building01.nif",
+      "bounds": {
+        "min": [
+          -21.71188,
+          0.0,
+          -29.2924
+        ],
+        "max": [
+          21.71188,
+          65.22342,
+          29.2924
+        ],
+        "size": [
+          43.42375,
+          65.22342,
+          58.5848
+        ]
+      },
+      "parts": 4,
+      "triangles": 4903,
+      "bytes": 323729
+    },
+    "lab-research-head": {
+      "url": "assets/models/lab-research-head.json",
+      "source": "map/questitem/qust_itemt_headoflarry3000.nif",
+      "bounds": {
+        "min": [
+          -0.12458,
+          0.0,
+          -0.08717
+        ],
+        "max": [
+          0.12458,
+          0.5273,
+          0.08717
+        ],
+        "size": [
+          0.24917,
+          0.5273,
+          0.17433
+        ]
+      },
+      "parts": 4,
+      "triangles": 485,
+      "bytes": 26498
     }
   },
   "textures": {
@@ -7820,6 +8252,357 @@
       "name": "rifle_jetengineshotgun_glass.dds",
       "size": [
         256,
+        256
+      ]
+    },
+    "02b489a3b7e5": {
+      "map": "assets/textures/02b489a3b7e5.webp",
+      "alpha": false,
+      "name": "item_postal_boxes.DDS",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1ae62e88fc38": {
+      "map": "assets/textures/1ae62e88fc38.webp",
+      "alpha": false,
+      "name": "item_cabinets_01.DDS",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "418e2bd12c7f": {
+      "map": "assets/textures/418e2bd12c7f.webp",
+      "alpha": false,
+      "name": "item_box_03.DDS",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "35af27d18f3d": {
+      "map": "assets/textures/35af27d18f3d.webp",
+      "alpha": false,
+      "name": "item_box_paper_01.DDS",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "da1419ae6d8d": {
+      "map": "assets/textures/da1419ae6d8d.webp",
+      "alpha": false,
+      "name": "quest_commu_dish.dds",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "e3f4b8d7c1b6": {
+      "map": "assets/textures/e3f4b8d7c1b6.webp",
+      "alpha": true,
+      "name": "item_floating.DDS",
+      "size": [
+        64,
+        128
+      ]
+    },
+    "276f7132a745": {
+      "map": "assets/textures/276f7132a745.webp",
+      "alpha": false,
+      "name": "DT_OBWH_office_ef_01.DDS",
+      "size": [
+        32,
+        32
+      ]
+    },
+    "5eda8949a830": {
+      "map": "assets/textures/5eda8949a830.webp",
+      "alpha": false,
+      "name": "ecom_a.dds",
+      "size": [
+        512,
+        256
+      ]
+    },
+    "8fdfba6c760e": {
+      "map": "assets/textures/8fdfba6c760e.webp",
+      "alpha": false,
+      "name": "ecom_a2.dds",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "b144cf2f5a92": {
+      "map": "assets/textures/b144cf2f5a92.webp",
+      "alpha": true,
+      "name": "ecom_a1.dds",
+      "size": [
+        128,
+        64
+      ]
+    },
+    "2f2873de6383": {
+      "map": "assets/textures/2f2873de6383.webp",
+      "alpha": false,
+      "name": "e_com_b2b.dds",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "9e6630bdf286": {
+      "map": "assets/textures/9e6630bdf286.webp",
+      "alpha": false,
+      "name": "dt_bench_A05.DDS",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "3fdec5a60305": {
+      "map": "assets/textures/3fdec5a60305.webp",
+      "alpha": true,
+      "name": "skill_heal_04.dds",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "cd63d18f4d2b": {
+      "map": "assets/textures/cd63d18f4d2b.webp",
+      "alpha": true,
+      "name": "attack_hit_19.dds",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "38f132c56100": {
+      "map": "assets/textures/38f132c56100.webp",
+      "alpha": false,
+      "name": "questob_headoflarry3000.dds",
+      "size": [
+        128,
+        256
+      ]
+    },
+    "ff24fb78e04a": {
+      "map": "assets/textures/ff24fb78e04a.webp",
+      "alpha": false,
+      "name": "dt_bench_se_03.DDS",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "33073582916c": {
+      "map": "assets/textures/33073582916c.webp",
+      "alpha": false,
+      "name": "EP_bubblemachine_01_AA.dds",
+      "size": [
+        512,
+        512
+      ]
+    },
+    "a5cfa75993a3": {
+      "map": "assets/textures/a5cfa75993a3.webp",
+      "alpha": false,
+      "name": "DT_SDDE_aroundobj_03.dds",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "bdb0b04cb172": {
+      "map": "assets/textures/bdb0b04cb172.webp",
+      "alpha": false,
+      "name": "SB_OTNP_wall_03.DDS",
+      "size": [
+        128,
+        256
+      ]
+    },
+    "5d3b0c15e128": {
+      "map": "assets/textures/5d3b0c15e128.webp",
+      "alpha": true,
+      "name": "DexterLab_board_effect.dds",
+      "size": [
+        256,
+        128
+      ]
+    },
+    "919242f98f7d": {
+      "map": "assets/textures/919242f98f7d.webp",
+      "alpha": true,
+      "name": "DexterLab_board_new_bs_02.dds",
+      "size": [
+        128,
+        64
+      ]
+    },
+    "5ee9753a53f0": {
+      "map": "assets/textures/5ee9753a53f0.webp",
+      "alpha": true,
+      "name": "DexterLab_board_new_bs_03.dds",
+      "size": [
+        128,
+        64
+      ]
+    },
+    "d83e93d14fca": {
+      "map": "assets/textures/d83e93d14fca.webp",
+      "alpha": false,
+      "name": "DexterLab_board_new_bs_01.dds",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "3600904fd66d": {
+      "map": "assets/textures/3600904fd66d.webp",
+      "alpha": true,
+      "name": "DexterLab_board_new_bs_05.dds",
+      "size": [
+        32,
+        16
+      ]
+    },
+    "2a8e4d65ed5c": {
+      "map": "assets/textures/2a8e4d65ed5c.webp",
+      "alpha": true,
+      "name": "DexterLab_board_new_bs_back.dds",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "4b6da7f8a21d": {
+      "map": "assets/textures/4b6da7f8a21d.webp",
+      "alpha": false,
+      "name": "DexterLab_board.dds",
+      "size": [
+        256,
+        128
+      ]
+    },
+    "c15a9c001905": {
+      "map": "assets/textures/c15a9c001905.webp",
+      "alpha": false,
+      "name": "DT_SDTS_dextech_headquarters_union_03.dds",
+      "size": [
+        512,
+        512
+      ]
+    },
+    "cde65c91ee3f": {
+      "map": "assets/textures/cde65c91ee3f.webp",
+      "alpha": true,
+      "name": "water.dds",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "d717119fe27d": {
+      "map": "assets/textures/d717119fe27d.webp",
+      "alpha": false,
+      "name": "DT_SDTS_dextech_headquarters_union_01.dds",
+      "size": [
+        512,
+        512
+      ]
+    },
+    "23c610ab525c": {
+      "map": "assets/textures/23c610ab525c.webp",
+      "alpha": false,
+      "name": "DT_SDTS_dextech_headquarters_union_04.dds",
+      "size": [
+        512,
+        256
+      ]
+    },
+    "df17e22d9c8d": {
+      "map": "assets/textures/df17e22d9c8d.webp",
+      "alpha": false,
+      "name": "DT_SDTS_dextech_headquarters_union_02.dds",
+      "size": [
+        512,
+        512
+      ]
+    },
+    "a3adb187e2c2": {
+      "map": "assets/textures/a3adb187e2c2.webp",
+      "alpha": false,
+      "name": "DT_SDTS_dextech_headquarters_union_05.dds",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "a390ac08857a": {
+      "map": "assets/textures/a390ac08857a.webp",
+      "alpha": false,
+      "name": "DT_SDTS_dextech_headquarters_union_06.dds",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "14426322062d": {
+      "map": "assets/textures/14426322062d.webp",
+      "alpha": false,
+      "name": "DT_SDTS_dextech_headquarters_logo.dds",
+      "size": [
+        256,
+        64
+      ]
+    },
+    "47a309278fce": {
+      "map": "assets/textures/47a309278fce.webp",
+      "alpha": false,
+      "name": "DT_SDTS_tech_building01_01.dds",
+      "size": [
+        512,
+        512
+      ]
+    },
+    "6ac82224da3d": {
+      "map": "assets/textures/6ac82224da3d.webp",
+      "alpha": false,
+      "name": "DT_SDTS_tech_building01_02.dds",
+      "size": [
+        512,
+        512
+      ]
+    },
+    "cdef7644c1f0": {
+      "map": "assets/textures/cdef7644c1f0.webp",
+      "alpha": false,
+      "name": "DT_SDTS_tech_building01_04.dds",
+      "size": [
+        512,
+        256
+      ]
+    },
+    "acab4588d445": {
+      "map": "assets/textures/acab4588d445.webp",
+      "alpha": true,
+      "name": "DT_SDTS_tech_building01_03.dds",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "ea5eb1a6f48c": {
+      "map": "assets/textures/ea5eb1a6f48c.webp",
+      "alpha": false,
+      "name": "WD_DLFL_war_obj_robot_arm.dds",
+      "size": [
+        128,
         256
       ]
     }

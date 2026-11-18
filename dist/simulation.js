@@ -1,3 +1,4 @@
+import {bunkerRoomAt} from './bunker-dressing-plan.js';
 import { OutpostLayout, FlowField, SPAWNS, STATIONS, distance, zoneAt, groundHeight,activeMap,setActiveMap } from './layout.js';
 import { NANOS, defaultLoadout, validateLoadout, resolveSquad } from './nanos.js';
 export { NANOS } from './nanos.js';
@@ -122,5 +123,5 @@ export class Survival {
   pickup(drop){if(drop.type==='health'){this.player.hp=Math.min(this.player.maxHp,this.player.hp+35);this.events.message?.('HEALTH RECOVERED +35')}else{for(const w of this.player.weapons)w.reserve=Math.min(WEAPONS[w.id].reserve,w.reserve+Math.round(WEAPONS[w.id].reserve*.4));this.events.message?.('AMMUNITION RECOVERED')}this.events.pickup?.(drop)}
   finish(victory){if(this.phase==='result')return;this.phase='result';this.events.finish?.({victory,wave:this.wave,kills:this.player.kills,credits:this.player.totalCredits,time:this.elapsed})}
   get remaining(){return this.spawnQueue.length+this.enemies.filter(e=>!e.dead).length}
-  get zone(){return activeMap.zones[zoneAt(this.player.x,this.player.z)]}
+  get zone(){return activeMap.reference?bunkerRoomAt(this.player).name:activeMap.zones[zoneAt(this.player.x,this.player.z)]}
 }

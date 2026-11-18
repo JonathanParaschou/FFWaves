@@ -5,8 +5,9 @@ export function referenceSections(map,level=0){let levels=sections.get(map);if(!
 export function drawReferencePlan(ctx,map,x,y,w,h,{level=0,navigation=true,stations=true,checkpoints=false,route=[],layout}={}){
  if(!map.reference)return;const b=map.bounds,sx=w/(b.maxX-b.minX),sz=h/(b.maxZ-b.minZ),xx=v=>x+(v-b.minX)*sx,zz=v=>y+(v-b.minZ)*sz;
  ctx.save();ctx.beginPath();ctx.rect(x,y,w,h);ctx.clip();ctx.fillStyle='#11202b';ctx.fillRect(x,y,w,h);
- if(navigation){ctx.fillStyle=level>1?'#416779':'#375c61';const cell=map.reference.data.nav.cell;for(const p of map.reference.data.nav.nodes)if(Math.abs(p.y-level)<.7)ctx.fillRect(xx(p.x-cell/2),zz(p.z-cell/2),cell*sx+.3,cell*sz+.3)}
+ if(navigation){ctx.fillStyle=level>1?'#416779':'#375c61';const cell=map.reference.data.nav.cell;for(const [i,p]of map.reference.data.nav.nodes.entries())if(!layout?.navBlocked[i]&&Math.abs(p.y-level)<.7)ctx.fillRect(xx(p.x-cell/2),zz(p.z-cell/2),cell*sx+.3,cell*sz+.3)}
  for(const {brush,polygon}of referenceSections(map,level)){if(brush.movable&&layout?.unlocked['door-'+brush.entityId])continue;ctx.beginPath();polygon.forEach((p,i)=>i?ctx.lineTo(xx(p[0]),zz(p[1])):ctx.moveTo(xx(p[0]),zz(p[1])));ctx.closePath();ctx.fillStyle=brush.movable?'#d7a364':'#a3b3b7';ctx.fill();ctx.strokeStyle=brush.movable?'#ffe0a1':'#647d88';ctx.lineWidth=.65;ctx.stroke()}
+ for(const box of map.dressing?.colliders||[]){if(box.max[1]<level+.45||box.min[1]>level+1.8)continue;ctx.fillStyle='#617d88';ctx.fillRect(xx(box.min[0]),zz(box.min[2]),(box.max[0]-box.min[0])*sx,(box.max[2]-box.min[2])*sz)}
  if(route.length){ctx.strokeStyle='#b5ee8a';ctx.lineWidth=2;ctx.beginPath();route.forEach((p,i)=>i?ctx.lineTo(xx(p.x),zz(p.z)):ctx.moveTo(xx(p.x),zz(p.z)));ctx.stroke()}
  if(stations)for(const p of map.stations){if(Math.abs(p.floorY-level)>.8)continue;ctx.fillStyle=p.addedService?'#86e6e7':p.kind==='gate'?'#ffc984':'#c2a8f0';ctx.beginPath();ctx.arc(xx(p.x),zz(p.z),2.5,0,Math.PI*2);ctx.fill()}
  ctx.fillStyle='#b6ee8d';ctx.beginPath();ctx.arc(xx(map.start.x),zz(map.start.z),3,0,Math.PI*2);ctx.fill();

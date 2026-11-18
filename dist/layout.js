@@ -1,11 +1,11 @@
-import {referenceHeight} from './reference-geometry.js';
+import {dressedReferenceHeight} from './reference-geometry.js';
 import {ReferenceLayout,ReferenceFlowField} from './reference-layout.js';
 import {sampleNativeHeight,nativeBlocked} from './native-terrain.js';
 import { MAPS,mapById } from './maps.js';
 export { MAPS };
 export let activeMap=MAPS[0],BOUNDS=activeMap.bounds,BUILDINGS=activeMap.buildings,COVER=activeMap.cover,DIVIDERS=activeMap.dividers,GATES=activeMap.gates,STATIONS=activeMap.stations,SPAWNS=activeMap.spawns;
 export function setActiveMap(id){activeMap=mapById(id);BOUNDS=activeMap.bounds;BUILDINGS=activeMap.buildings;COVER=activeMap.cover;DIVIDERS=activeMap.dividers;GATES=activeMap.gates;STATIONS=activeMap.stations;SPAWNS=activeMap.spawns;return activeMap}
-export function heightAt(map,x,z,level){if(map.reference)return referenceHeight(map.reference.data,x,z,level);if(map.native?.terrain)return sampleNativeHeight(map.native.terrain,x,z);let h=0;for(const p of map.platforms)if(Math.abs(x-p.x)<=p.w/2&&Math.abs(z-p.z)<=p.d/2)h=Math.max(h,p.h);for(const r of map.ramps)if(Math.abs(x-r.x)<=r.w/2&&Math.abs(z-r.z)<=r.d/2){const t=r.axis==='x'?(x-r.x+r.w/2)/r.w:(z-r.z+r.d/2)/r.d;h=Math.max(h,r.from+(r.to-r.from)*t)}return h}
+export function heightAt(map,x,z,level){if(map.reference)return dressedReferenceHeight(map,x,z,level);if(map.native?.terrain)return sampleNativeHeight(map.native.terrain,x,z);let h=0;for(const p of map.platforms)if(Math.abs(x-p.x)<=p.w/2&&Math.abs(z-p.z)<=p.d/2)h=Math.max(h,p.h);for(const r of map.ramps)if(Math.abs(x-r.x)<=r.w/2&&Math.abs(z-r.z)<=r.d/2){const t=r.axis==='x'?(x-r.x+r.w/2)/r.w:(z-r.z+r.d/2)/r.d;h=Math.max(h,r.from+(r.to-r.from)*t)}return h}
 export const groundHeight=(x,z,level)=>heightAt(activeMap,x,z,level);
 export const distance=(a,b)=>Math.hypot(a.x-b.x,a.z-b.z);
 export function zoneAt(x,z,map=activeMap){return z<map.north?2:x>map.split?1:0}

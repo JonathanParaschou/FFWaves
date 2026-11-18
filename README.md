@@ -10,6 +10,11 @@ NZ:P's published Nacht source, preserving both floors, the two staircases,
 openings, three barriers and original weapon anchors. FusionFall materials,
 weapons, Nanos and survival services supply the adaptation.
 
+The bunker now has coordinated intake, containment and observation equipment,
+original DexTech campus scenery, and shared physical workcells. See the
+[asset audit and map art review](docs/FUSIONFALL-BUNKER-ART.md) for the original
+model selections, intentional additions and current verification limits.
+
 Open `/map-reader.html` on the running server for floor sections, clearance,
 progression routes, source overlays and eye-level checkpoints. See the
 [map-reading workflow](docs/MAP-READING-WORKFLOW.md).

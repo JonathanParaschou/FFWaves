@@ -16,7 +16,7 @@ Open `/map-reader.html` on the local server. Its sections are generated from act
 2. **Traversal:** turn on walking clearance. Each sample includes a floor height, standing clearance and links checked through source collision. The map has 16,521 samples and 6,196 columns containing overlapping floor layers. Two floors must never collapse into a single height map.
 3. **Progression:** close all three barriers. The source graph is a triangle: Spawn Hall to Help Room via door 2; Spawn Hall to Upper via stairs 110; Help Room to Upper via stairs 111. Each is purchased independently. Open them and trace routes from spawn by clicking the plan.
 4. **Sightlines:** use the six source-derived eye-level checkpoints. Review what a player sees before entering a doorway, how pillars divide a room, and where upper floors obscure lower rooms. The magenta source overlay checks structural silhouettes against the FusionFall presentation.
-5. **Equipment:** purple marks a retained source anchor; cyan marks a new survival service. Props are retargeted only at existing source entity origins. Decorative substitutions that occupy the measured walking corridor are omitted. Random scattering and invented frontage are excluded from the rebuild.
+5. **Equipment:** purple marks a retained source anchor; cyan marks a new survival service. Original furniture replacements retain source footprints. Additional source-linked workcells have explicit shared collision, support surfaces and navigation masks; their footprints appear in the plan. Decorative substitutions that occupy remaining standing clearance are omitted. Random scattering is excluded. See the [research-annex art pass](FUSIONFALL-BUNKER-ART.md) for intentional equipment additions.
 
 The reader's cutaway, source overlay and route trace are review tools, separate from the combat UI. The game's minimap follows the player's current floor.
 
@@ -45,7 +45,7 @@ Browser access was unavailable during this implementation. The measured plans an
 
 Choose one pinned reference with usable geometry or a dimensioned floor plan. Preserve its room graph and measurements in a source packet. Build the shell, collision, floor layers and stair routes first; compare source sections and eye-level views before placing equipment. Surface and prop substitutions must keep the shell intact. Record intentional changes. Do not derive another biome by swapping props over the same generic three-sector template.
 
-[Inspected runtime scene review](reference/NZP-Nacht/eye-review.jpg) now includes actual hydrated materials, furniture replacements, decorative props, fixtures, and contact shade. A ten-weapon viewmodel atlas is also generated in `qa/viewmodel-review.jpg`. The old shell-only review missed raised prop origins and camera-relative weapon framing; the complete scene is now the default review. Lighting and GPU shadows remain approximate in these software images.
+[Inspected runtime scene review](reference/NZP-Nacht/eye-review.jpg) includes actual hydrated materials, furniture replacements, authored equipment bays, fixtures, and contact shade. Six baseline views and three supplemental workcell views are retained. A forty-weapon viewmodel atlas is also generated in `qa/viewmodel-review.jpg`. The old shell-only review missed raised prop origins and camera-relative weapon framing; the complete scene is now the default review. Lighting and GPU shadows remain approximate in these software images.
 
 
 ## Asset integration constraints

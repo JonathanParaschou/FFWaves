@@ -1,0 +1,982 @@
+{
+  "source": "Original FusionFall cache, read-only extraction from the complete local bundle inventory",
+  "inventory": {
+    "scope": "Every CustomAssetBundle file actually present in the local FusionFall cache; unavailable cache directories are not recovered assets.",
+    "cacheFolders": 351,
+    "bundlesPresent": 181,
+    "bundlesIndexed": 181,
+    "failures": [],
+    "containerEntries": 91508,
+    "uniqueMapModels": 1503,
+    "regions": {
+      "amusementpark": 33,
+      "arboretum": 24,
+      "bandshell": 14,
+      "beach": 23,
+      "billynmandy": 12,
+      "campkidney": 20,
+      "catacombs": 29,
+      "charlesdarwin": 14,
+      "cityhall": 16,
+      "cityst": 2,
+      "constructionsite": 6,
+      "culdesac": 24,
+      "darkengine": 12,
+      "darktree": 36,
+      "devilscanyon": 26,
+      "dexter": 18,
+      "dinosaurvalley": 7,
+      "dtetc": 109,
+      "ep": 173,
+      "etc": 278,
+      "firetarpit": 16,
+      "fissure": 30,
+      "forster": 13,
+      "fuseslair": 59,
+      "giantwaterfall": 25,
+      "graveyard": 40,
+      "hauntedmines": 26,
+      "housingdevelopment": 55,
+      "knd": 35,
+      "leakeylake": 27,
+      "mojosvolcano": 10,
+      "monkeymountain": 15,
+      "mosterisland": 1,
+      "nowhere": 12,
+      "nuclearplant": 19,
+      "powerpuffgirl": 24,
+      "questitem": 39,
+      "ruins": 25,
+      "salvageyard": 42,
+      "spaceport": 6,
+      "sunkenmall": 12,
+      "technologysquare": 12,
+      "trailerpark": 16,
+      "treetopvillage": 8,
+      "twistedforest": 19,
+      "wharf": 41
+    }
+  },
+  "assets": {
+    "lab-cabinet": {
+      "id": "lab-cabinet",
+      "source": "map/questitem/quest_item_cabinets_01.nif",
+      "bounds": {
+        "min": [
+          -0.31912,
+          0.0,
+          -0.46173
+        ],
+        "max": [
+          0.31912,
+          1.48809,
+          0.46173
+        ],
+        "size": [
+          0.63824,
+          1.48809,
+          0.92346
+        ]
+      },
+      "parts": 1,
+      "triangles": 150
+    },
+    "lab-cabinet-low": {
+      "id": "lab-cabinet-low",
+      "source": "map/questitem/quest_item_cabinets_02.nif",
+      "bounds": {
+        "min": [
+          -0.82368,
+          0.0,
+          -0.31829
+        ],
+        "max": [
+          0.82368,
+          0.76141,
+          0.31829
+        ],
+        "size": [
+          1.64735,
+          0.76141,
+          0.63658
+        ]
+      },
+      "parts": 1,
+      "triangles": 75
+    },
+    "lab-cargo-case": {
+      "id": "lab-cargo-case",
+      "source": "map/questitem/quest_item_crates_01.nif",
+      "bounds": {
+        "min": [
+          -0.47916,
+          0.0,
+          -0.34728
+        ],
+        "max": [
+          0.47916,
+          0.58482,
+          0.34728
+        ],
+        "size": [
+          0.95833,
+          0.58482,
+          0.69456
+        ]
+      },
+      "parts": 1,
+      "triangles": 88
+    },
+    "lab-toolbox": {
+      "id": "lab-toolbox",
+      "source": "map/questitem/quest_item_box.nif",
+      "bounds": {
+        "min": [
+          -0.2907,
+          0.0,
+          -0.23768
+        ],
+        "max": [
+          0.2907,
+          0.43007,
+          0.23768
+        ],
+        "size": [
+          0.58141,
+          0.43007,
+          0.47535
+        ]
+      },
+      "parts": 1,
+      "triangles": 24
+    },
+    "lab-comms-dish": {
+      "id": "lab-comms-dish",
+      "source": "map/questitem/quest_item_communications_dish.nif",
+      "bounds": {
+        "min": [
+          -3.2903,
+          0.0,
+          -3.84814
+        ],
+        "max": [
+          3.2903,
+          9.73464,
+          3.84814
+        ],
+        "size": [
+          6.5806,
+          9.73464,
+          7.69627
+        ]
+      },
+      "parts": 1,
+      "triangles": 588
+    },
+    "lab-beacon": {
+      "id": "lab-beacon",
+      "source": "map/questitem/quest_item_floating_beacon.nif",
+      "bounds": {
+        "min": [
+          -0.05636,
+          0.0,
+          -0.05786
+        ],
+        "max": [
+          0.05636,
+          0.39946,
+          0.05786
+        ],
+        "size": [
+          0.11272,
+          0.39946,
+          0.11573
+        ]
+      },
+      "parts": 2,
+      "triangles": 169
+    },
+    "lab-field-device": {
+      "id": "lab-field-device",
+      "source": "map/questitem/quest_item_k_ecom.nif",
+      "bounds": {
+        "min": [
+          -0.97708,
+          0.0,
+          -0.97717
+        ],
+        "max": [
+          0.97708,
+          2.79681,
+          0.97717
+        ],
+        "size": [
+          1.95415,
+          2.79681,
+          1.95434
+        ]
+      },
+      "parts": 5,
+      "triangles": 1045
+    },
+    "lab-field-device-b": {
+      "id": "lab-field-device-b",
+      "source": "map/questitem/quest_item_k_ecom_b2.nif",
+      "bounds": {
+        "min": [
+          -0.78934,
+          0.0,
+          -0.34191
+        ],
+        "max": [
+          0.78934,
+          0.64439,
+          0.34191
+        ],
+        "size": [
+          1.57869,
+          0.64439,
+          0.68381
+        ]
+      },
+      "parts": 1,
+      "triangles": 874
+    },
+    "lab-metal-chair": {
+      "id": "lab-metal-chair",
+      "source": "map/dtetc/dt_mtdb_chair_a01.nif",
+      "bounds": {
+        "min": [
+          -0.23678,
+          0.0,
+          -0.25968
+        ],
+        "max": [
+          0.23678,
+          0.86918,
+          0.25968
+        ],
+        "size": [
+          0.47357,
+          0.86918,
+          0.51935
+        ]
+      },
+      "parts": 1,
+      "triangles": 180
+    },
+    "lab-research-head": {
+      "id": "lab-research-head",
+      "source": "map/questitem/qust_itemt_headoflarry3000.nif",
+      "bounds": {
+        "min": [
+          -0.12458,
+          0.0,
+          -0.08717
+        ],
+        "max": [
+          0.12458,
+          0.5273,
+          0.08717
+        ],
+        "size": [
+          0.24917,
+          0.5273,
+          0.17433
+        ]
+      },
+      "parts": 4,
+      "triangles": 485
+    },
+    "lab-table": {
+      "id": "lab-table",
+      "source": "map/dtetc/dt_etc_table_01.nif",
+      "bounds": {
+        "min": [
+          -0.96845,
+          0.0,
+          -0.38745
+        ],
+        "max": [
+          0.96845,
+          0.62798,
+          0.38745
+        ],
+        "size": [
+          1.9369,
+          0.62798,
+          0.7749
+        ]
+      },
+      "parts": 1,
+      "triangles": 106
+    },
+    "lab-bubble-machine": {
+      "id": "lab-bubble-machine",
+      "source": "map/ep/ep_bubblemachine_00.nif",
+      "bounds": {
+        "min": [
+          -3.96851,
+          0.0,
+          -3.43158
+        ],
+        "max": [
+          3.96851,
+          2.90627,
+          3.43158
+        ],
+        "size": [
+          7.93702,
+          2.90627,
+          6.86316
+        ]
+      },
+      "parts": 1,
+      "triangles": 1922
+    },
+    "lab-pump": {
+      "id": "lab-pump",
+      "source": "map/darkengine/dt_sdde_aroundobj_03_01.nif",
+      "bounds": {
+        "min": [
+          -0.69141,
+          0.0,
+          -0.74149
+        ],
+        "max": [
+          0.69141,
+          2.39412,
+          0.74149
+        ],
+        "size": [
+          1.38282,
+          2.39412,
+          1.48299
+        ]
+      },
+      "parts": 1,
+      "triangles": 381
+    },
+    "lab-cylinder-bank": {
+      "id": "lab-cylinder-bank",
+      "source": "map/nuclearplant/sb_otnp_etc_cylinder_02.nif",
+      "bounds": {
+        "min": [
+          -0.42802,
+          0.0,
+          -0.42802
+        ],
+        "max": [
+          0.42802,
+          1.31663,
+          0.42802
+        ],
+        "size": [
+          0.85604,
+          1.31663,
+          0.85604
+        ]
+      },
+      "parts": 1,
+      "triangles": 262
+    },
+    "lab-dextech-sign": {
+      "id": "lab-dextech-sign",
+      "source": "map/technologysquare/dt_sdts_dexter_sign_board.nif",
+      "bounds": {
+        "min": [
+          -0.84176,
+          0.0,
+          -0.12896
+        ],
+        "max": [
+          0.84176,
+          2.39779,
+          0.12896
+        ],
+        "size": [
+          1.68352,
+          2.39779,
+          0.25792
+        ]
+      },
+      "parts": 16,
+      "triangles": 421
+    },
+    "lab-dextech-hq": {
+      "id": "lab-dextech-hq",
+      "source": "map/technologysquare/dt_sdts_dextech_headquarters_01.nif",
+      "bounds": {
+        "min": [
+          -43.00193,
+          0.0,
+          -29.77339
+        ],
+        "max": [
+          43.00193,
+          76.64282,
+          29.77339
+        ],
+        "size": [
+          86.00386,
+          76.64282,
+          59.54678
+        ]
+      },
+      "parts": 9,
+      "triangles": 9448
+    },
+    "lab-tech-building": {
+      "id": "lab-tech-building",
+      "source": "map/technologysquare/dt_sdts_tech_building01.nif",
+      "bounds": {
+        "min": [
+          -21.71188,
+          0.0,
+          -29.2924
+        ],
+        "max": [
+          21.71188,
+          65.22342,
+          29.2924
+        ],
+        "size": [
+          43.42375,
+          65.22342,
+          58.5848
+        ]
+      },
+      "parts": 4,
+      "triangles": 4903
+    },
+    "lab-robot-arm": {
+      "id": "lab-robot-arm",
+      "source": "map/fuseslair/wd_dlfl_war_obj_robot_arm.nif",
+      "bounds": {
+        "min": [
+          -0.36162,
+          0.0,
+          -0.60649
+        ],
+        "max": [
+          0.36162,
+          0.27927,
+          0.60649
+        ],
+        "size": [
+          0.72324,
+          0.27927,
+          1.21298
+        ]
+      },
+      "parts": 1,
+      "triangles": 407
+    }
+  },
+  "rejectedCandidates": {
+    "lab-chest": {
+      "id": "lab-chest",
+      "source": "map/questitem/quest_item_chests.nif",
+      "bounds": {
+        "min": [
+          -0.43449,
+          0.0,
+          -0.24124
+        ],
+        "max": [
+          0.43449,
+          0.61773,
+          0.24124
+        ],
+        "size": [
+          0.86898,
+          0.61773,
+          0.48247
+        ]
+      },
+      "parts": 1,
+      "triangles": 74,
+      "reason": "Pirate-style treasure chest does not fit a research workcell."
+    },
+    "lab-handcart": {
+      "id": "lab-handcart",
+      "source": "map/etc/etc_handcart_01.nif",
+      "bounds": {
+        "min": [
+          -1.57204,
+          0.0,
+          -0.80446
+        ],
+        "max": [
+          1.57204,
+          1.15805,
+          0.80446
+        ],
+        "size": [
+          3.14408,
+          1.15805,
+          1.60891
+        ]
+      },
+      "parts": 2,
+      "triangles": 366,
+      "reason": "Rustic wooden farm cart does not fit indoor laboratory servicing."
+    },
+    "lab-chair": {
+      "id": "lab-chair",
+      "source": "map/etc/etc_chair_01.nif",
+      "bounds": {
+        "min": [
+          -0.38637,
+          0.0,
+          -0.31612
+        ],
+        "max": [
+          0.38637,
+          1.23248,
+          0.31612
+        ],
+        "size": [
+          0.77273,
+          1.23248,
+          0.63225
+        ]
+      },
+      "parts": 1,
+      "triangles": 212,
+      "reason": "Heavy wooden domestic chair; use the smaller metal folding chair."
+    },
+    "lab-chair-b": {
+      "id": "lab-chair-b",
+      "source": "map/etc/etc_chair_02.nif",
+      "bounds": {
+        "min": [
+          -0.31288,
+          0.0,
+          -0.31612
+        ],
+        "max": [
+          0.31288,
+          0.64601,
+          0.31612
+        ],
+        "size": [
+          0.62577,
+          0.64601,
+          0.63224
+        ]
+      },
+      "parts": 1,
+      "triangles": 131,
+      "reason": "Wooden stool does not match the selected metal workbench."
+    },
+    "lab-office-chair": {
+      "id": "lab-office-chair",
+      "source": "map/cityhall/dt_cpch_chair.nif",
+      "bounds": {
+        "min": [
+          -0.83877,
+          0.0,
+          -0.29146
+        ],
+        "max": [
+          0.83877,
+          0.9488,
+          0.29146
+        ],
+        "size": [
+          1.67755,
+          0.9488,
+          0.58293
+        ]
+      },
+      "parts": 1,
+      "triangles": 186,
+      "reason": "Actual mesh is an outdoor wooden bench, despite the candidate name."
+    },
+    "lab-control-panel": {
+      "id": "lab-control-panel",
+      "source": "map/dinosaurvalley/wd_dldv_panel_01.nif",
+      "bounds": {
+        "min": [
+          -0.64723,
+          0.0,
+          -0.48528
+        ],
+        "max": [
+          0.64723,
+          2.1362,
+          0.48528
+        ],
+        "size": [
+          1.29447,
+          2.1362,
+          0.97057
+        ]
+      },
+      "parts": 2,
+      "triangles": 172,
+      "reason": "Actual mesh is a freestanding paper map board, not an electronic console."
+    },
+    "lab-table-b": {
+      "id": "lab-table-b",
+      "source": "map/dtetc/dt_etc_table_02.nif",
+      "bounds": {
+        "min": [
+          -1.10902,
+          0.0,
+          -0.47597
+        ],
+        "max": [
+          1.10902,
+          0.53404,
+          0.47597
+        ],
+        "size": [
+          2.21803,
+          0.53404,
+          0.95194
+        ]
+      },
+      "parts": 1,
+      "triangles": 397,
+      "reason": "Low coffee-table form lacks the workbench storage and maintenance role."
+    },
+    "lab-bubble-module": {
+      "id": "lab-bubble-module",
+      "source": "map/ep/ep_bubblemachine_00_1.nif",
+      "bounds": {
+        "min": [
+          -1.36504,
+          0.0,
+          -1.36167
+        ],
+        "max": [
+          1.36504,
+          2.77038,
+          1.36167
+        ],
+        "size": [
+          2.73009,
+          2.77038,
+          2.72335
+        ]
+      },
+      "parts": 1,
+      "triangles": 261,
+      "reason": "No useful visible surface in the extracted standalone mesh."
+    },
+    "lab-fissure-engine": {
+      "id": "lab-fissure-engine",
+      "source": "map/ep/ep_cpfi_fissure_engine_01.nif",
+      "bounds": {
+        "min": [
+          -1.35539,
+          0.0,
+          -1.31718
+        ],
+        "max": [
+          1.35539,
+          2.74969,
+          1.31718
+        ],
+        "size": [
+          2.71078,
+          2.74969,
+          2.63436
+        ]
+      },
+      "parts": 1,
+      "triangles": 920,
+      "reason": "Organic green fissure asset conflicts with clean DexTech equipment."
+    },
+    "lab-gas-tank": {
+      "id": "lab-gas-tank",
+      "source": "map/darkengine/dt_sdde_gastank_01.nif",
+      "bounds": {
+        "min": [
+          -18.22408,
+          0.0,
+          -27.80563
+        ],
+        "max": [
+          18.22408,
+          28.68292,
+          27.80563
+        ],
+        "size": [
+          36.44815,
+          28.68292,
+          55.61126
+        ]
+      },
+      "parts": 5,
+      "triangles": 4834,
+      "reason": "36-metre industrial installation; shrinking it into a room would destroy scale cues."
+    },
+    "lab-machine-bank": {
+      "id": "lab-machine-bank",
+      "source": "map/darkengine/dt_sdde_aroundobj_01_01.nif",
+      "bounds": {
+        "min": [
+          -1.57434,
+          0.0,
+          -3.38445
+        ],
+        "max": [
+          1.57434,
+          2.81384,
+          3.38445
+        ],
+        "size": [
+          3.14868,
+          2.81384,
+          6.76891
+        ]
+      },
+      "parts": 1,
+      "triangles": 71,
+      "reason": "Large outdoor industrial block has no clear servicing role in the retained bays."
+    },
+    "lab-transformer": {
+      "id": "lab-transformer",
+      "source": "map/darkengine/dt_sdde_aroundobj_02_01.nif",
+      "bounds": {
+        "min": [
+          -0.34641,
+          0.0,
+          -0.4
+        ],
+        "max": [
+          0.34641,
+          1.35,
+          0.4
+        ],
+        "size": [
+          0.69282,
+          1.35,
+          0.8
+        ]
+      },
+      "parts": 1,
+      "triangles": 37,
+      "reason": "Actual mesh is a rusty drum; adds outdoor salvage clutter."
+    },
+    "lab-pipe-straight": {
+      "id": "lab-pipe-straight",
+      "source": "map/ep/ep_pipe_b_01.nif",
+      "bounds": {
+        "min": [
+          -1.63649,
+          0.0,
+          -3.63742
+        ],
+        "max": [
+          1.63649,
+          3.76348,
+          3.63742
+        ],
+        "size": [
+          3.27298,
+          3.76348,
+          7.27484
+        ]
+      },
+      "parts": 1,
+      "triangles": 386,
+      "reason": "Original texture is moss-covered outdoor pipework; incompatible with the indoor lab palette."
+    },
+    "lab-pipe-elbow": {
+      "id": "lab-pipe-elbow",
+      "source": "map/ep/ep_pipe_b_02.nif",
+      "bounds": {
+        "min": [
+          -1.15249,
+          0.0,
+          -0.41152
+        ],
+        "max": [
+          1.15249,
+          7.33752,
+          0.41152
+        ],
+        "size": [
+          2.30497,
+          7.33752,
+          0.82305
+        ]
+      },
+      "parts": 1,
+      "triangles": 190,
+      "reason": "Original texture is moss-covered outdoor pipework; incompatible with the indoor lab palette."
+    },
+    "lab-pipe-branch": {
+      "id": "lab-pipe-branch",
+      "source": "map/ep/ep_pipe_b_03.nif",
+      "bounds": {
+        "min": [
+          -1.178,
+          0.0,
+          -2.95831
+        ],
+        "max": [
+          1.178,
+          3.76006,
+          2.95831
+        ],
+        "size": [
+          2.35599,
+          3.76006,
+          5.91662
+        ]
+      },
+      "parts": 1,
+      "triangles": 257,
+      "reason": "Original texture is moss-covered outdoor pipework; incompatible with the indoor lab palette."
+    },
+    "lab-pipe-red": {
+      "id": "lab-pipe-red",
+      "source": "map/ep/ep_pipe_r_01.nif",
+      "bounds": {
+        "min": [
+          -1.63649,
+          0.0,
+          -3.63742
+        ],
+        "max": [
+          1.63649,
+          3.766,
+          3.63742
+        ],
+        "size": [
+          3.27298,
+          3.766,
+          7.27484
+        ]
+      },
+      "parts": 1,
+      "triangles": 386,
+      "reason": "Original texture is moss-covered outdoor pipework; incompatible with the indoor lab palette."
+    },
+    "lab-pipe-yellow": {
+      "id": "lab-pipe-yellow",
+      "source": "map/ep/ep_pipe_y_01.nif",
+      "bounds": {
+        "min": [
+          -1.63649,
+          0.0,
+          -3.63742
+        ],
+        "max": [
+          1.63649,
+          3.766,
+          3.63742
+        ],
+        "size": [
+          3.27298,
+          3.766,
+          7.27484
+        ]
+      },
+      "parts": 1,
+      "triangles": 386,
+      "reason": "Original texture is moss-covered outdoor pipework; incompatible with the indoor lab palette."
+    },
+    "lab-duct": {
+      "id": "lab-duct",
+      "source": "map/ep/ep_obj_pipe_02.nif",
+      "bounds": {
+        "min": [
+          -1.15249,
+          0.0,
+          -0.41152
+        ],
+        "max": [
+          1.15249,
+          7.33752,
+          0.41152
+        ],
+        "size": [
+          2.30497,
+          7.33752,
+          0.82305
+        ]
+      },
+      "parts": 1,
+      "triangles": 193,
+      "reason": "Original texture is moss-covered outdoor pipework; incompatible with the indoor lab palette."
+    },
+    "lab-worklight": {
+      "id": "lab-worklight",
+      "source": "map/nuclearplant/sb_otnp_etc_light.nif",
+      "bounds": {
+        "min": [
+          -1.11242,
+          0.0,
+          -1.3833
+        ],
+        "max": [
+          1.11242,
+          12.7012,
+          1.3833
+        ],
+        "size": [
+          2.22485,
+          12.7012,
+          2.76659
+        ]
+      },
+      "parts": 1,
+      "triangles": 199,
+      "reason": "12-metre outdoor mast is inappropriate for the retained ceiling height."
+    },
+    "lab-dexter-robot": {
+      "id": "lab-dexter-robot",
+      "source": "map/fuseslair/wd_dlfl_dexter_robot_01.nif",
+      "bounds": {
+        "min": [
+          -0.84594,
+          0.0,
+          -1.03111
+        ],
+        "max": [
+          0.84594,
+          3.34064,
+          1.03111
+        ],
+        "size": [
+          1.69188,
+          3.34064,
+          2.06221
+        ]
+      },
+      "parts": 1,
+      "triangles": 2890,
+      "reason": "Static humanoid robot can be misread as a combatant."
+    },
+    "lab-maintenance-robot": {
+      "id": "lab-maintenance-robot",
+      "source": "map/constructionsite/dt_mtct_saferobot_01.nif",
+      "bounds": {
+        "min": [
+          -0.34789,
+          0.0,
+          -0.52582
+        ],
+        "max": [
+          0.34789,
+          1.75665,
+          0.52582
+        ],
+        "size": [
+          0.69578,
+          1.75665,
+          1.05163
+        ]
+      },
+      "parts": 1,
+      "triangles": 2327,
+      "reason": "Static humanoid robot can be misread as a combatant."
+    }
+  }
+}
