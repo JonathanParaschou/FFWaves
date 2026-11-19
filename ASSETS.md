@@ -157,3 +157,28 @@ firearm clips. Existing first-person presentation remains unchanged.
 for Numbuh Four's before/after comparison, movement states and the full hero
 roster. The checked-in images are offline visual reviews with approximate
 lighting; they do not establish live browser performance.
+
+## Forty original enemy models
+
+`tools/expand-enemy-roster.py` audits all 1,033 hostile rows in the cached XDT
+snapshot and groups them into 619 name/mesh/skin identities. The complete
+available library index contains 123 monster model paths. `enemy-library.json`
+preserves the full hostile snapshot, table hash, NPC IDs and cached-model status.
+`enemy-roster.json` selects forty distinct source models: the previous sixteen
+plus twenty-four new models, with their original table-selected skins and source
+rigs. No recolors are counted as new models. Existing aliases for Heavy Hunter
+and Asphalt Freak Father now use their actual original table names.
+
+The cache is read-only. Source art ownership is unchanged. Combat roles, wave
+windows and dimensions are authored FPS adaptations. The new assets bring the
+checked model inventory to 251 models / 433 mesh parts / 420,780 triangles, with
+108 original rigs / 141 skinned parts / 997 clips. Rig export keeps the source
+curves; `enemy-actor.js` measures an animated idle to ground/center/scale visible
+bodies consistently with gameplay dimensions. It does not alter cached models.
+
+The [enemy-system record](docs/ENEMY-ROSTER.md) and `/bestiary.html` cover selection,
+progression and the full original table. `tools/review-enemies.py` renders eighty
+actual skinned movement/attack poses into `docs/enemy-roster-review.jpg`. Original
+combat textures supply ranged halos and charge effects; cores and tails are
+simple runtime geometry. First-person weapons, hero hands and the soundtrack
+are preserved.

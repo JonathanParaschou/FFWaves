@@ -19,6 +19,11 @@ Open `/map-reader.html` on the running server for floor sections, clearance,
 progression routes, source overlays and eye-level checkpoints. See the
 [map-reading workflow](docs/MAP-READING-WORKFLOW.md).
 
+Enemies now block movement, ranged attacks have visible charged projectiles, and
+the forty-model roster changes as waves progress. Open the Field Manual's
+**Enemy field guide** or `/bestiary.html` to inspect the selection and search the
+complete cached source-table roster. See [enemy systems and provenance](docs/ENEMY-ROSTER.md).
+
 First person shows hands and weapons. Press **F5** or **H** for your full hero
 body and accessories in third person.
 

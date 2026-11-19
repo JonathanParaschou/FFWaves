@@ -1,0 +1,8532 @@
+{
+  "source": "Original XDT NPC table, m_iTeam == 2; duplicate encounter/stat rows grouped by name, mesh and skins",
+  "tableSha256": "ccb0dd412fa7dd5ad9b59e519c42e0820fe83a79668ebf06509c4feab9f38500",
+  "hostileRows": 1033,
+  "uniqueIdentities": 619,
+  "cachedEnemyModelPaths": 123,
+  "entries": [
+    {
+      "name": "7AI Mob",
+      "source": "mob/mob_tirefinger.kfm",
+      "bodyTexture": "mob_tirefinger",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1014
+      ],
+      "sourceLevels": [
+        1
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Air Drone",
+      "source": "mob/mob_honet.kfm",
+      "bodyTexture": "mob_honet",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        61,
+        255,
+        1149
+      ],
+      "sourceLevels": [
+        2
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Air Drone Enforcer",
+      "source": "mob/mob_honet.kfm",
+      "bodyTexture": "mob_honet",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        449,
+        1153
+      ],
+      "sourceLevels": [
+        2
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Alpha Ape",
+      "source": "mob/mob_liongorilla.kfm",
+      "bodyTexture": "mob_liongorilla",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        621
+      ],
+      "sourceLevels": [
+        27
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Alpha Arachnid",
+      "source": "mob/mob_redwolfheadspider.kfm",
+      "bodyTexture": "mob_redwolfheadspider",
+      "secondaryTexture": "null",
+      "npcIds": [
+        184,
+        378
+      ],
+      "sourceLevels": [
+        18
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Alpha Cavern Wolf",
+      "source": "mob/mob_camptiger.kfm",
+      "bodyTexture": "mob_camptiger",
+      "secondaryTexture": "null",
+      "npcIds": [
+        574
+      ],
+      "sourceLevels": [
+        18
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Alpha Hydra",
+      "source": "mob/mob_firehydrant.kfm",
+      "bodyTexture": "mob_firehydrant",
+      "secondaryTexture": "mob_firehydrant",
+      "npcIds": [
+        458,
+        1156
+      ],
+      "sourceLevels": [
+        3
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Amped Frilled Killer",
+      "source": "mob/mob_diropu.kfm",
+      "bodyTexture": "mob_dilropu",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2098
+      ],
+      "sourceLevels": [
+        28
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Ancient Wooly Behemoth",
+      "source": "mob/mob_mammoth.kfm",
+      "bodyTexture": "mob_mammoth",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2113
+      ],
+      "sourceLevels": [
+        31
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Arch Welder",
+      "source": "mob/mob_welder.kfm",
+      "bodyTexture": "mob_welder",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        177,
+        371
+      ],
+      "sourceLevels": [
+        19
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Asphalt Creep",
+      "source": "mob/mob_asphalt.kfm",
+      "bodyTexture": "mob_asphalt",
+      "secondaryTexture": "null",
+      "npcIds": [
+        148,
+        342
+      ],
+      "sourceLevels": [
+        15
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Asphalt Freak",
+      "source": "mob/mob_asphalt.kfm",
+      "bodyTexture": "mob_asphalt",
+      "secondaryTexture": "null",
+      "npcIds": [
+        155,
+        349
+      ],
+      "sourceLevels": [
+        16
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Asphalt Freak Father",
+      "source": "mob/mob_asphalt.kfm",
+      "bodyTexture": "mob_asphalt",
+      "secondaryTexture": "null",
+      "npcIds": [
+        543
+      ],
+      "sourceLevels": [
+        16
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Asphalt Thief",
+      "source": "mob/mob_asphalt.kfm",
+      "bodyTexture": "mob_asphalt",
+      "secondaryTexture": "null",
+      "npcIds": [
+        142,
+        336
+      ],
+      "sourceLevels": [
+        13
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Asphalt Thief Prince",
+      "source": "mob/mob_asphalt.kfm",
+      "bodyTexture": "mob_asphalt",
+      "secondaryTexture": "null",
+      "npcIds": [
+        530
+      ],
+      "sourceLevels": [
+        13
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Aubergine Master",
+      "source": "mob/mob_privateggplant.kfm",
+      "bodyTexture": "mob_privateggplant",
+      "secondaryTexture": "null",
+      "npcIds": [
+        219,
+        413
+      ],
+      "sourceLevels": [
+        23
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Aubergine Meanie",
+      "source": "mob/mob_privateggplant.kfm",
+      "bodyTexture": "mob_privateggplant",
+      "secondaryTexture": "null",
+      "npcIds": [
+        237,
+        431
+      ],
+      "sourceLevels": [
+        25
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Bad Burro",
+      "source": "mob/mob_tablehorse.kfm",
+      "bodyTexture": "mob_tablehorse_a",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        64,
+        258,
+        1148
+      ],
+      "sourceLevels": [
+        2
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Bad Max",
+      "source": "mob/mob_ammonia.kfm",
+      "bodyTexture": "mob_ammonia",
+      "secondaryTexture": "null",
+      "npcIds": [
+        461
+      ],
+      "sourceLevels": [
+        5
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Baleful Brute",
+      "source": "mob/mob_wharfgear.kfm",
+      "bodyTexture": "mob_wharfgear",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        205,
+        399
+      ],
+      "sourceLevels": [
+        23
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Ball-Peen Meanie",
+      "source": "mob/mob_chairshot.kfm",
+      "bodyTexture": "mob_chairshot",
+      "secondaryTexture": "null",
+      "npcIds": [
+        84,
+        278
+      ],
+      "sourceLevels": [
+        5
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Ball-Peen Slayer",
+      "source": "mob/mob_chairshot.kfm",
+      "bodyTexture": "mob_chairshot",
+      "secondaryTexture": "null",
+      "npcIds": [
+        472
+      ],
+      "sourceLevels": [
+        5
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Bare-Boned Brawler",
+      "source": "mob/mob_almonster.kfm",
+      "bodyTexture": "mob_almonster",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2101
+      ],
+      "sourceLevels": [
+        28
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Baron Bloodsucker",
+      "source": "mob/mob_vampire.kfm",
+      "bodyTexture": "mob_vampire",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        117,
+        311
+      ],
+      "sourceLevels": [
+        10
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Baron Brampire",
+      "source": "mob/mob_vampire.kfm",
+      "bodyTexture": "mob_vampire",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        505
+      ],
+      "sourceLevels": [
+        10
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Barrel Basher",
+      "source": "mob/mob_drum.kfm",
+      "bodyTexture": "mob_drum",
+      "secondaryTexture": "null",
+      "npcIds": [
+        95,
+        289
+      ],
+      "sourceLevels": [
+        7
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Barrel Brawler",
+      "source": "mob/mob_drum.kfm",
+      "bodyTexture": "mob_drum",
+      "secondaryTexture": "null",
+      "npcIds": [
+        101,
+        295
+      ],
+      "sourceLevels": [
+        7
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Barrel Buster",
+      "source": "mob/mob_drum.kfm",
+      "bodyTexture": "mob_drum",
+      "secondaryTexture": "null",
+      "npcIds": [
+        66,
+        260
+      ],
+      "sourceLevels": [
+        3
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Bash Loader",
+      "source": "mob/mob_crasher.kfm",
+      "bodyTexture": "mob_crasher",
+      "secondaryTexture": "null",
+      "npcIds": [
+        72,
+        266,
+        460
+      ],
+      "sourceLevels": [
+        4
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Batty Bloodsucker",
+      "source": "mob/mob_vampire.kfm",
+      "bodyTexture": "mob_vampire",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        111,
+        305
+      ],
+      "sourceLevels": [
+        9
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Batty Brampire",
+      "source": "mob/mob_vampire.kfm",
+      "bodyTexture": "mob_vampire",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        499
+      ],
+      "sourceLevels": [
+        9
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Beach Bully",
+      "source": "mob/mob_kingshoulderrobo.kfm",
+      "bodyTexture": "mob_kingshoulderrobo",
+      "secondaryTexture": "null",
+      "npcIds": [
+        173,
+        367
+      ],
+      "sourceLevels": [
+        18
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Big Angry Meanie",
+      "source": "mob/mob_generaleggplant.kfm",
+      "bodyTexture": "mob_generaleggplant",
+      "secondaryTexture": "null",
+      "npcIds": [
+        631
+      ],
+      "sourceLevels": [
+        26
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Big Bad Bloodsucker",
+      "source": "mob/mob_vampire.kfm",
+      "bodyTexture": "mob_vampire",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        491
+      ],
+      "sourceLevels": [
+        8
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Big Bad Burro",
+      "source": "mob/mob_tablehorse.kfm",
+      "bodyTexture": "mob_tablehorse_a",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        452,
+        1146
+      ],
+      "sourceLevels": [
+        2
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Big Bad Joke-O-Lantern",
+      "source": "mob/mob_jackolantern.kfm",
+      "bodyTexture": "mob_jackolantern",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        493
+      ],
+      "sourceLevels": [
+        8
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Big Barrel Basher",
+      "source": "mob/mob_drum.kfm",
+      "bodyTexture": "mob_drum",
+      "secondaryTexture": "null",
+      "npcIds": [
+        483
+      ],
+      "sourceLevels": [
+        7
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Big Beach Bully",
+      "source": "mob/mob_kingshoulderrobo.kfm",
+      "bodyTexture": "mob_kingshoulderrobo",
+      "secondaryTexture": "null",
+      "npcIds": [
+        561
+      ],
+      "sourceLevels": [
+        18
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Big Boardwalk Bully",
+      "source": "mob/mob_kingshoulderrobo.kfm",
+      "bodyTexture": "mob_kingshoulderrobo",
+      "secondaryTexture": "null",
+      "npcIds": [
+        555
+      ],
+      "sourceLevels": [
+        17
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Big Bully Behemoth",
+      "source": "mob/mob_mammoth.kfm",
+      "bodyTexture": "mob_mammoth",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2114
+      ],
+      "sourceLevels": [
+        32
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Big Ol' Mummy Monster",
+      "source": "mob/mob_mummy.kfm",
+      "bodyTexture": "mob_mummy",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        506
+      ],
+      "sourceLevels": [
+        10
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Bigger Brute",
+      "source": "mob/mob_wharfgear.kfm",
+      "bodyTexture": "mob_wharfgear",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        593
+      ],
+      "sourceLevels": [
+        23
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Bladed Mantis",
+      "source": "mob/mob_knifetoenail.kfm",
+      "bodyTexture": "mob_knifetoenail",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        162,
+        356
+      ],
+      "sourceLevels": [
+        14
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Blazing Hydra",
+      "source": "mob/npc_deedee.kfm",
+      "bodyTexture": "npc_deedee",
+      "secondaryTexture": "null",
+      "npcIds": [
+        525
+      ],
+      "sourceLevels": [
+        13
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Bloated Cryptworm",
+      "source": "mob/mob_gravekeeper.kfm",
+      "bodyTexture": "mob_gravekeeper",
+      "secondaryTexture": "null",
+      "npcIds": [
+        630
+      ],
+      "sourceLevels": [
+        26
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Bloodsucker",
+      "source": "mob/mob_vampire.kfm",
+      "bodyTexture": "mob_vampire",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        103,
+        297
+      ],
+      "sourceLevels": [
+        8
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Boarbill",
+      "source": "mob/mob_griffonroar.kfm",
+      "bodyTexture": "mob_griffonroar",
+      "secondaryTexture": "null",
+      "npcIds": [
+        220,
+        414,
+        2228
+      ],
+      "sourceLevels": [
+        25
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Boarbill Charger",
+      "source": "mob/mob_griffonroar.kfm",
+      "bodyTexture": "mob_griffonroar",
+      "secondaryTexture": "null",
+      "npcIds": [
+        608
+      ],
+      "sourceLevels": [
+        25
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Boarbull",
+      "source": "mob/mob_griffonroar.kfm",
+      "bodyTexture": "mob_griffonroar",
+      "secondaryTexture": "null",
+      "npcIds": [
+        185,
+        379
+      ],
+      "sourceLevels": [
+        18
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Boardwalk Brawler",
+      "source": "mob/mob_drum.kfm",
+      "bodyTexture": "mob_drum",
+      "secondaryTexture": "null",
+      "npcIds": [
+        170,
+        364
+      ],
+      "sourceLevels": [
+        17
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Boardwalk Bully",
+      "source": "mob/mob_kingshoulderrobo.kfm",
+      "bodyTexture": "mob_kingshoulderrobo",
+      "secondaryTexture": "null",
+      "npcIds": [
+        167,
+        361
+      ],
+      "sourceLevels": [
+        17
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Boss Behemoth",
+      "source": "mob/mob_telegraphpole.kfm",
+      "bodyTexture": "mob_telegraphpole",
+      "secondaryTexture": "null",
+      "npcIds": [
+        473
+      ],
+      "sourceLevels": [
+        5
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Boss Welder",
+      "source": "mob/mob_welder.kfm",
+      "bodyTexture": "mob_welder",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        565
+      ],
+      "sourceLevels": [
+        19
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Bossblade Painsaw",
+      "source": "mob/mob_powersaw.kfm",
+      "bodyTexture": "mob_powersaw",
+      "secondaryTexture": "mob_powersaw",
+      "npcIds": [
+        456
+      ],
+      "sourceLevels": [
+        3
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Brackish Beast",
+      "source": "mob/mob_swampycannibalfrog.kfm",
+      "bodyTexture": "mob_swampycannibalfrog",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        222,
+        416,
+        2626
+      ],
+      "sourceLevels": [
+        25,
+        24
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Brackish Beast Father",
+      "source": "mob/mob_swampycannibalfrog.kfm",
+      "bodyTexture": "mob_swampycannibalfrog",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        610
+      ],
+      "sourceLevels": [
+        25
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Brawler Number One",
+      "source": "mob/mob_drum.kfm",
+      "bodyTexture": "mob_drum",
+      "secondaryTexture": "null",
+      "npcIds": [
+        489
+      ],
+      "sourceLevels": [
+        7
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Breaker Bear",
+      "source": "mob/mob_bear.kfm",
+      "bodyTexture": "mob_bear",
+      "secondaryTexture": "mob_bear",
+      "npcIds": [
+        182,
+        376
+      ],
+      "sourceLevels": [
+        17
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Breaker Boss",
+      "source": "mob/mob_bear.kfm",
+      "bodyTexture": "mob_bear",
+      "secondaryTexture": "mob_bear",
+      "npcIds": [
+        570
+      ],
+      "sourceLevels": [
+        17
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Broad Canyon Creeper",
+      "source": "mob/mob_beastman.kfm",
+      "bodyTexture": "mob_beastman",
+      "secondaryTexture": "mob_beastman",
+      "npcIds": [
+        597
+      ],
+      "sourceLevels": [
+        22
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Buccaneer Commander",
+      "source": "mob/mob_pirate.kfm",
+      "bodyTexture": "mob_pirate",
+      "secondaryTexture": "mob_pirate",
+      "npcIds": [
+        482,
+        1264
+      ],
+      "sourceLevels": [
+        7
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Bullfish",
+      "source": "mob/npc_deedee.kfm",
+      "bodyTexture": "npc_deedee",
+      "secondaryTexture": "null",
+      "npcIds": [
+        150,
+        344,
+        538
+      ],
+      "sourceLevels": [
+        15
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Bully Behemoth",
+      "source": "mob/mob_mammoth.kfm",
+      "bodyTexture": "mob_mammoth",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2029,
+        2056
+      ],
+      "sourceLevels": [
+        32
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Cackling Spinetingler",
+      "source": "mob/mob_ghost.kfm",
+      "bodyTexture": "mob_ghost",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        497
+      ],
+      "sourceLevels": [
+        9
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Candy Bandit",
+      "source": "mob/mob_pirate.kfm",
+      "bodyTexture": "mob_pirate",
+      "secondaryTexture": "mob_pirate",
+      "npcIds": [
+        65,
+        259,
+        1162
+      ],
+      "sourceLevels": [
+        3
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Candy Bandit Captain",
+      "source": "mob/mob_pirate.kfm",
+      "bodyTexture": "mob_pirate",
+      "secondaryTexture": "mob_pirate",
+      "npcIds": [
+        453,
+        1161
+      ],
+      "sourceLevels": [
+        3
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Candy Buccaneer",
+      "source": "mob/mob_pirate.kfm",
+      "bodyTexture": "mob_pirate",
+      "secondaryTexture": "mob_pirate",
+      "npcIds": [
+        94,
+        288,
+        1265,
+        1316
+      ],
+      "sourceLevels": [
+        7,
+        5
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Candy Buccaneers",
+      "source": "mob/mob_pirate.kfm",
+      "bodyTexture": "mob_pirate",
+      "secondaryTexture": "mob_pirate",
+      "npcIds": [
+        1455
+      ],
+      "sourceLevels": [
+        10
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Canyon Colossus",
+      "source": "mob/mob_anispingtus.kfm",
+      "bodyTexture": "mob_anispingtus",
+      "secondaryTexture": "null",
+      "npcIds": [
+        210,
+        404
+      ],
+      "sourceLevels": [
+        22
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Canyon Creeper",
+      "source": "mob/mob_beastman.kfm",
+      "bodyTexture": "mob_beastman",
+      "secondaryTexture": "mob_beastman",
+      "npcIds": [
+        209,
+        403
+      ],
+      "sourceLevels": [
+        22
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Canyon Stalker",
+      "source": "mob/mob_beastman.kfm",
+      "bodyTexture": "mob_beastman",
+      "secondaryTexture": "mob_beastman",
+      "npcIds": [
+        206,
+        400
+      ],
+      "sourceLevels": [
+        21
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Captain Creepasaurus",
+      "source": "mob/mob_turannosaurus.kfm",
+      "bodyTexture": "mob_turannosaurus",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2105
+      ],
+      "sourceLevels": [
+        29
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Caterplug",
+      "source": "mob/mob_caterpillar.kfm",
+      "bodyTexture": "mob_caterpillar_a",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        80,
+        274
+      ],
+      "sourceLevels": [
+        4
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Cavern Wolf",
+      "source": "mob/mob_camptiger.kfm",
+      "bodyTexture": "mob_camptiger",
+      "secondaryTexture": "null",
+      "npcIds": [
+        186,
+        380
+      ],
+      "sourceLevels": [
+        18
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Cephalopod Alpha",
+      "source": "mob/mob_planetterror.kfm",
+      "bodyTexture": "mob_planetterror",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        2324
+      ],
+      "sourceLevels": [
+        35
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Cephalopod Prime",
+      "source": "mob/mob_planetterror.kfm",
+      "bodyTexture": "mob_planetterror",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        2456
+      ],
+      "sourceLevels": [
+        36
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Charged Magno Beetle",
+      "source": "mob/mob_goldbug.kfm",
+      "bodyTexture": "mob_goldbug_a",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        469
+      ],
+      "sourceLevels": [
+        4
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Clawbreaker",
+      "source": "mob/mob_gshell.kfm",
+      "bodyTexture": "mob_gshell",
+      "secondaryTexture": "null",
+      "npcIds": [
+        214,
+        408
+      ],
+      "sourceLevels": [
+        24
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Clawbreaker Fury",
+      "source": "mob/mob_gshell.kfm",
+      "bodyTexture": "mob_gshell",
+      "secondaryTexture": "null",
+      "npcIds": [
+        602
+      ],
+      "sourceLevels": [
+        24
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Cogfish",
+      "source": "mob/npc_deedee.kfm",
+      "bodyTexture": "npc_deedee",
+      "secondaryTexture": "null",
+      "npcIds": [
+        149,
+        343,
+        537
+      ],
+      "sourceLevels": [
+        15
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Colossal Centurion",
+      "source": "mob/mob_magkanta.kfm",
+      "bodyTexture": "mob_magkanta",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2065,
+        2091,
+        2123
+      ],
+      "sourceLevels": [
+        35
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Colossal Centurion Captain",
+      "source": "mob/mob_magkanta.kfm",
+      "bodyTexture": "mob_magkanta",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2068,
+        2094,
+        2126
+      ],
+      "sourceLevels": [
+        33
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Colossal Colossus",
+      "source": "mob/mob_anispingtus.kfm",
+      "bodyTexture": "mob_anispingtus",
+      "secondaryTexture": "null",
+      "npcIds": [
+        598
+      ],
+      "sourceLevels": [
+        22
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Colossal Horrordactyl",
+      "source": "mob/mob_archaeopteryx.kfm",
+      "bodyTexture": "mob_archaeopteryx",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2103
+      ],
+      "sourceLevels": [
+        28
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Column Colossus",
+      "source": "mob/mob_neverest.kfm",
+      "bodyTexture": "mob_neverest",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        3180,
+        3181,
+        3182
+      ],
+      "sourceLevels": [
+        30
+      ],
+      "cachedModel": false
+    },
+    {
+      "name": "Cootie",
+      "source": "mob/mob_blowfish.kfm",
+      "bodyTexture": "mob_blowfish",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        3286
+      ],
+      "sourceLevels": [
+        18
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Crash Leader",
+      "source": "mob/mob_crasher.kfm",
+      "bodyTexture": "mob_crasher",
+      "secondaryTexture": "null",
+      "npcIds": [
+        495
+      ],
+      "sourceLevels": [
+        8
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Crash Loader",
+      "source": "mob/mob_crasher.kfm",
+      "bodyTexture": "mob_crasher",
+      "secondaryTexture": "null",
+      "npcIds": [
+        107,
+        301,
+        1340
+      ],
+      "sourceLevels": [
+        8
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Crazy Metal Boy Scout",
+      "source": "mob/mob_crazymetal.kfm",
+      "bodyTexture": "mob_crazymetal",
+      "secondaryTexture": "null",
+      "npcIds": [
+        131,
+        325
+      ],
+      "sourceLevels": [
+        12
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Crazy Metal Troop Leader",
+      "source": "mob/mob_crazymetal.kfm",
+      "bodyTexture": "mob_crazymetal",
+      "secondaryTexture": "null",
+      "npcIds": [
+        519
+      ],
+      "sourceLevels": [
+        12
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Crazy Scribble Spawn",
+      "source": "mob/mob_scribblespawn.kfm",
+      "bodyTexture": "mob_scribblespawn",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        510
+      ],
+      "sourceLevels": [
+        10
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Creeper King",
+      "source": "mob/mob_horrorking.kfm",
+      "bodyTexture": "mob_horrorking",
+      "secondaryTexture": "null",
+      "npcIds": [
+        193,
+        387,
+        581
+      ],
+      "sourceLevels": [
+        19
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Creeposaurus Rex",
+      "source": "mob/mob_turannosaurus.kfm",
+      "bodyTexture": "mob_turannosaurus",
+      "secondaryTexture": "null",
+      "npcIds": [
+        1986,
+        2047
+      ],
+      "sourceLevels": [
+        29
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Creepy Clawdad",
+      "source": "mob/mob_blackcambaroides.kfm",
+      "bodyTexture": "mob_blackcambaroides",
+      "secondaryTexture": "null",
+      "npcIds": [
+        163,
+        357
+      ],
+      "sourceLevels": [
+        15
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Creepy Spawn",
+      "source": "mob/mob_spawn.kfm",
+      "bodyTexture": "spawn11_green",
+      "secondaryTexture": "mob_gasspawn",
+      "npcIds": [
+        96,
+        290
+      ],
+      "sourceLevels": [
+        7
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Cryptworm",
+      "source": "mob/mob_gravekeeper.kfm",
+      "bodyTexture": "mob_gravekeeper",
+      "secondaryTexture": "null",
+      "npcIds": [
+        242,
+        436
+      ],
+      "sourceLevels": [
+        26
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Cyber Stabber",
+      "source": "mob/mob_atmosquito.kfm",
+      "bodyTexture": "mob_atmosquito",
+      "secondaryTexture": "null",
+      "npcIds": [
+        471
+      ],
+      "sourceLevels": [
+        1
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Cyber Stinger",
+      "source": "mob/mob_atmosquito.kfm",
+      "bodyTexture": "mob_atmosquito",
+      "secondaryTexture": "null",
+      "npcIds": [
+        83,
+        277,
+        2514
+      ],
+      "sourceLevels": [
+        2
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Cyberus",
+      "source": "mob/mob_cerberus.kfm",
+      "bodyTexture": "mob_cerberus",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        201,
+        395,
+        2675
+      ],
+      "sourceLevels": [
+        22,
+        1
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Cyberus Zero",
+      "source": "mob/mob_cerberus.kfm",
+      "bodyTexture": "mob_cerberus",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        589
+      ],
+      "sourceLevels": [
+        22
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Cylomander",
+      "source": "mob/mob_lizardbike.kfm",
+      "bodyTexture": "mob_lizardbike",
+      "secondaryTexture": "null",
+      "npcIds": [
+        135,
+        329
+      ],
+      "sourceLevels": [
+        12
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Dagger Mantis",
+      "source": "mob/mob_knifetoenail.kfm",
+      "bodyTexture": "mob_knifetoenail",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        197,
+        391
+      ],
+      "sourceLevels": [
+        20
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Dark Fusionfly",
+      "source": "mob/mob_varietydragonflies.kfm",
+      "bodyTexture": "mob_varietydragonflies",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2057,
+        2085
+      ],
+      "sourceLevels": [
+        32
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Dark Horntail",
+      "source": "mob/mob_chameleon.kfm",
+      "bodyTexture": "mob_chameleon",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        3171,
+        3172,
+        3173
+      ],
+      "sourceLevels": [
+        31
+      ],
+      "cachedModel": false
+    },
+    {
+      "name": "Dark Skeeter",
+      "source": "mob/mob_greenhellmosquito.kfm",
+      "bodyTexture": "mob_greenhellmosquito",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        183,
+        377
+      ],
+      "sourceLevels": [
+        17
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Deep Canyon Stalker",
+      "source": "mob/mob_beastman.kfm",
+      "bodyTexture": "mob_beastman",
+      "secondaryTexture": "mob_beastman",
+      "npcIds": [
+        594
+      ],
+      "sourceLevels": [
+        21
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Def Mob1",
+      "source": "mob/mob_spawn.kfm",
+      "bodyTexture": "spawn11_green",
+      "secondaryTexture": "mob_gasspawn",
+      "npcIds": [
+        1009
+      ],
+      "sourceLevels": [
+        1
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Def Mob2",
+      "source": "mob/mob_tirefinger.kfm",
+      "bodyTexture": "mob_tirefinger",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1010
+      ],
+      "sourceLevels": [
+        10
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Demolition Bear",
+      "source": "mob/mob_bear.kfm",
+      "bodyTexture": "mob_bear",
+      "secondaryTexture": "mob_bear",
+      "npcIds": [
+        207,
+        401
+      ],
+      "sourceLevels": [
+        21
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Demolition Rex",
+      "source": "mob/mob_bear.kfm",
+      "bodyTexture": "mob_bear",
+      "secondaryTexture": "mob_bear",
+      "npcIds": [
+        595
+      ],
+      "sourceLevels": [
+        21
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Desert Broadclaw",
+      "source": "mob/mob_blackcambaroides.kfm",
+      "bodyTexture": "mob_blackcambaroides",
+      "secondaryTexture": "null",
+      "npcIds": [
+        612
+      ],
+      "sourceLevels": [
+        24
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Desert Bullfish",
+      "source": "mob/npc_deedee.kfm",
+      "bodyTexture": "npc_deedee",
+      "secondaryTexture": "null",
+      "npcIds": [
+        231,
+        425,
+        619
+      ],
+      "sourceLevels": [
+        27
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Desert Clawdad",
+      "source": "mob/mob_blackcambaroides.kfm",
+      "bodyTexture": "mob_blackcambaroides",
+      "secondaryTexture": "null",
+      "npcIds": [
+        224,
+        418
+      ],
+      "sourceLevels": [
+        24
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Destroyusall",
+      "source": "mob/mob_themepark.kfm",
+      "bodyTexture": "mob_themepark",
+      "secondaryTexture": "null",
+      "npcIds": [
+        1669,
+        1722,
+        1809
+      ],
+      "sourceLevels": [
+        13
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Dire Ape",
+      "source": "mob/mob_liongorilla.kfm",
+      "bodyTexture": "mob_liongorilla",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        233,
+        427
+      ],
+      "sourceLevels": [
+        27
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Dire Hunter",
+      "source": "mob/mob_engine.kfm",
+      "bodyTexture": "mob_engine",
+      "secondaryTexture": "null",
+      "npcIds": [
+        542
+      ],
+      "sourceLevels": [
+        16
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Dire Hydra",
+      "source": "mob/mob_firehydrant.kfm",
+      "bodyTexture": "mob_firehydrant",
+      "secondaryTexture": "mob_firehydrant",
+      "npcIds": [
+        70,
+        264
+      ],
+      "sourceLevels": [
+        3
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Dire Raptor",
+      "source": "mob/mob_engine.kfm",
+      "bodyTexture": "mob_engine",
+      "secondaryTexture": "null",
+      "npcIds": [
+        154,
+        348
+      ],
+      "sourceLevels": [
+        16
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Don Doom",
+      "source": "mob/mob_giantcrap.kfm",
+      "bodyTexture": "mob_giantcrap",
+      "secondaryTexture": "null",
+      "npcIds": [
+        454
+      ],
+      "sourceLevels": [
+        4
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Don Dread Head",
+      "source": "mob/mob_tirefinger.kfm",
+      "bodyTexture": "mob_tirefinger",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        462
+      ],
+      "sourceLevels": [
+        4
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Doom Boiler",
+      "source": "mob/mob_boiler.kfm",
+      "bodyTexture": "mob_boiler",
+      "secondaryTexture": "null",
+      "npcIds": [
+        129,
+        323
+      ],
+      "sourceLevels": [
+        11
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Doom Boiler Boss",
+      "source": "mob/mob_boiler.kfm",
+      "bodyTexture": "mob_boiler",
+      "secondaryTexture": "null",
+      "npcIds": [
+        517
+      ],
+      "sourceLevels": [
+        11
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Doom Defender",
+      "source": "mob/mob_ant.kfm",
+      "bodyTexture": "mob_ant",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        485
+      ],
+      "sourceLevels": [
+        7
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Doom Digger",
+      "source": "mob/mob_mole.kfm",
+      "bodyTexture": "mob_mole",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        187,
+        381
+      ],
+      "sourceLevels": [
+        20
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Doom Digger Dynamo",
+      "source": "mob/mob_mole.kfm",
+      "bodyTexture": "mob_mole",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        575
+      ],
+      "sourceLevels": [
+        20
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Doom Drone",
+      "source": "mob/mob_ant.kfm",
+      "bodyTexture": "mob_ant",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        97,
+        291,
+        1261,
+        1317
+      ],
+      "sourceLevels": [
+        7
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Doom Strider",
+      "source": "mob/mob_giantcrap.kfm",
+      "bodyTexture": "mob_giantcrap",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2030,
+        2069
+      ],
+      "sourceLevels": [
+        36
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Doomdozer",
+      "source": "mob/mob_bulldozer_r.kfm",
+      "bodyTexture": "mob_bulldozer_r",
+      "secondaryTexture": "null",
+      "npcIds": [
+        180,
+        374
+      ],
+      "sourceLevels": [
+        19
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Doomdozer Foreman",
+      "source": "mob/mob_bulldozer_r.kfm",
+      "bodyTexture": "mob_bulldozer_r",
+      "secondaryTexture": "null",
+      "npcIds": [
+        568
+      ],
+      "sourceLevels": [
+        19
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Dread Head",
+      "source": "mob/mob_tirefinger.kfm",
+      "bodyTexture": "mob_tirefinger",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        74,
+        268
+      ],
+      "sourceLevels": [
+        4
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Dumb Jock-O-Lantern",
+      "source": "mob/mob_jackolantern.kfm",
+      "bodyTexture": "mob_jackolantern",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        498
+      ],
+      "sourceLevels": [
+        9
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Dynamite Mouse",
+      "source": "mob/mob_dynamitemouse.kfm",
+      "bodyTexture": "mob_dynamitemouse",
+      "secondaryTexture": "mob_dynamitemouse",
+      "npcIds": [
+        139,
+        333
+      ],
+      "sourceLevels": [
+        13
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Dynamite Rat",
+      "source": "mob/mob_dynamitemouse.kfm",
+      "bodyTexture": "mob_dynamitemouse",
+      "secondaryTexture": "mob_dynamitemouse",
+      "npcIds": [
+        181,
+        375
+      ],
+      "sourceLevels": [
+        17
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Elder Skeeter Spawn",
+      "source": "mob/mob_greenhellmosquito.kfm",
+      "bodyTexture": "mob_greenhellmosquito",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        579
+      ],
+      "sourceLevels": [
+        21
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Electrotangler",
+      "source": "mob/mob_cable.kfm",
+      "bodyTexture": "mob_cable",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        475
+      ],
+      "sourceLevels": [
+        1
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Elephantine Enforcer",
+      "source": "mob/mob_trafficpolice.kfm",
+      "bodyTexture": "mob_trafficpolice",
+      "secondaryTexture": "null",
+      "npcIds": [
+        600
+      ],
+      "sourceLevels": [
+        24
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Enraged Thuggard",
+      "source": "mob/mob_bshell.kfm",
+      "bodyTexture": "mob_bshell",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        604
+      ],
+      "sourceLevels": [
+        24
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Epic Shellslug",
+      "source": "mob/mob_turtleworm.kfm",
+      "bodyTexture": "mob_turtleworm",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2125
+      ],
+      "sourceLevels": [
+        35
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Epmetaltriangle",
+      "source": "mob/mob_epmetaltriangle.kfm",
+      "bodyTexture": "mob_epmetaltriangle",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        3174
+      ],
+      "sourceLevels": [
+        1
+      ],
+      "cachedModel": false
+    },
+    {
+      "name": "Epsporeleaf ",
+      "source": "mob/mob_epsporeleaf.kfm",
+      "bodyTexture": "mob_epsporeleaf",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        3175
+      ],
+      "sourceLevels": [
+        1
+      ],
+      "cachedModel": false
+    },
+    {
+      "name": "Epstonebeam",
+      "source": "mob/mob_epstonebeam.kfm",
+      "bodyTexture": "mob_epstonebeam",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        3176
+      ],
+      "sourceLevels": [
+        1
+      ],
+      "cachedModel": false
+    },
+    {
+      "name": "Extremospawn",
+      "source": "mob/mob_fusionextremesaurus.kfm",
+      "bodyTexture": "mob_fusionextremesaurus",
+      "secondaryTexture": "null",
+      "npcIds": [
+        123,
+        317,
+        1465,
+        2309
+      ],
+      "sourceLevels": [
+        10,
+        13
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Eyebore",
+      "source": "mob/mob_threeeyes.kfm",
+      "bodyTexture": "mob_threeeyes",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2066,
+        2092
+      ],
+      "sourceLevels": [
+        35
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Eyebulb",
+      "source": "mob/mob_threeeyes.kfm",
+      "bodyTexture": "mob_threeeyes",
+      "secondaryTexture": "null",
+      "npcIds": [
+        1992,
+        2059
+      ],
+      "sourceLevels": [
+        33
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fast Monster",
+      "source": "mob/mob_tirefinger.kfm",
+      "bodyTexture": "mob_tirefinger",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1166
+      ],
+      "sourceLevels": [
+        1
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Father Freakosaurus",
+      "source": "mob/mob_turannosaurus.kfm",
+      "bodyTexture": "mob_turannosaurus",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2108
+      ],
+      "sourceLevels": [
+        30
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fire Hydra",
+      "source": "mob/npc_deedee.kfm",
+      "bodyTexture": "npc_deedee",
+      "secondaryTexture": "null",
+      "npcIds": [
+        137,
+        331
+      ],
+      "sourceLevels": [
+        13
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fire Hydra",
+      "source": "mob/mob_firehydrant.kfm",
+      "bodyTexture": "mob_firehydrant",
+      "secondaryTexture": "mob_firehydrant",
+      "npcIds": [
+        1724,
+        1725,
+        1726
+      ],
+      "sourceLevels": [
+        13
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Flashing Razor Mantis",
+      "source": "mob/mob_knifetoenail.kfm",
+      "bodyTexture": "mob_knifetoenail",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        626
+      ],
+      "sourceLevels": [
+        27
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fossil Brawler",
+      "source": "mob/mob_almonster.kfm",
+      "bodyTexture": "mob_almonster",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2043,
+        2076
+      ],
+      "sourceLevels": [
+        28
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fossil Crawler",
+      "source": "mob/mob_almonster.kfm",
+      "bodyTexture": "mob_almonster",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2039,
+        2072
+      ],
+      "sourceLevels": [
+        28
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fowl Fiend",
+      "source": "mob/mob_privatekokas.kfm",
+      "bodyTexture": "mob_privatekokas",
+      "secondaryTexture": "null",
+      "npcIds": [
+        236,
+        430
+      ],
+      "sourceLevels": [
+        25
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fowl Foe",
+      "source": "mob/mob_privatekokas.kfm",
+      "bodyTexture": "mob_privatekokas",
+      "secondaryTexture": "null",
+      "npcIds": [
+        218,
+        412
+      ],
+      "sourceLevels": [
+        23
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fowl Freak",
+      "source": "mob/mob_privatekokas.kfm",
+      "bodyTexture": "mob_privatekokas",
+      "secondaryTexture": "null",
+      "npcIds": [
+        241,
+        435
+      ],
+      "sourceLevels": [
+        26
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Freakish Frog",
+      "source": "mob/mob_swampycannibalfrog.kfm",
+      "bodyTexture": "mob_swampycannibalfrog",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        195,
+        389
+      ],
+      "sourceLevels": [
+        19
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Freakosaurus Rex",
+      "source": "mob/mob_turannosaurus.kfm",
+      "bodyTexture": "mob_turannosaurus",
+      "secondaryTexture": "null",
+      "npcIds": [
+        1988,
+        2050,
+        3122
+      ],
+      "sourceLevels": [
+        30,
+        31
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Freakshow Fred",
+      "source": "mob/npc_deedee.kfm",
+      "bodyTexture": "npc_deedee",
+      "secondaryTexture": "null",
+      "npcIds": [
+        138,
+        332,
+        526
+      ],
+      "sourceLevels": [
+        13
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Frilled Fiend",
+      "source": "mob/mob_diropu.kfm",
+      "bodyTexture": "mob_dilropu",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2044,
+        2077
+      ],
+      "sourceLevels": [
+        28
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Frilled Fiend Queen",
+      "source": "mob/mob_diropu.kfm",
+      "bodyTexture": "mob_dilropu",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2102
+      ],
+      "sourceLevels": [
+        28
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Frilled Killer",
+      "source": "mob/mob_diropu.kfm",
+      "bodyTexture": "mob_dilropu",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2040,
+        2073
+      ],
+      "sourceLevels": [
+        28
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fullblade Mantis",
+      "source": "mob/mob_knifetoenail.kfm",
+      "bodyTexture": "mob_knifetoenail",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        550
+      ],
+      "sourceLevels": [
+        14
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Furious Spawn",
+      "source": "mob/mob_spawn.kfm",
+      "bodyTexture": "spawn11_green",
+      "secondaryTexture": "mob_gasspawn",
+      "npcIds": [
+        56,
+        250,
+        444,
+        1142,
+        1144
+      ],
+      "sourceLevels": [
+        1
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fusion Ace",
+      "source": "mob/fusion_ace.kfm",
+      "bodyTexture": "fusion_ace",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        23
+      ],
+      "sourceLevels": [
+        13
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fusion Ben",
+      "source": "mob/fusion_ben.kfm",
+      "bodyTexture": "fusion_ben",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        40,
+        1716
+      ],
+      "sourceLevels": [
+        24,
+        23
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fusion Billy",
+      "source": "mob/fusion_billy.kfm",
+      "bodyTexture": "fusion_billy",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        17,
+        1200
+      ],
+      "sourceLevels": [
+        13,
+        10
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fusion Bloo",
+      "source": "mob/fusion_blooexpression.kfm",
+      "bodyTexture": "fusion_blooexpressions",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        28,
+        1638
+      ],
+      "sourceLevels": [
+        13
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fusion Blossom",
+      "source": "mob/fusion_blossom.kfm",
+      "bodyTexture": "fusion_blossom",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        5,
+        1193
+      ],
+      "sourceLevels": [
+        5,
+        8
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fusion Blowfish",
+      "source": "mob/mob_blowfish.kfm",
+      "bodyTexture": "mob_blowfish",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        3168,
+        3169,
+        3170
+      ],
+      "sourceLevels": [
+        4
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fusion Bubbles",
+      "source": "mob/fusion_bubbles.kfm",
+      "bodyTexture": "fusion_bubbles",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        3,
+        1204,
+        1719
+      ],
+      "sourceLevels": [
+        8,
+        14,
+        1
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fusion Buttercup",
+      "source": "mob/fusion_buttercup.kfm",
+      "bodyTexture": "fuison_buttercup",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        18,
+        1712,
+        2678
+      ],
+      "sourceLevels": [
+        14,
+        15,
+        1
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fusion Cheese",
+      "source": "mob/fusion_cheese.kfm",
+      "bodyTexture": "fusion_cheese",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        3145
+      ],
+      "sourceLevels": [
+        33
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fusion Chowder",
+      "source": "mob/fusion_chowder.kfm",
+      "bodyTexture": "fusion_chowder",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        3144
+      ],
+      "sourceLevels": [
+        33
+      ],
+      "cachedModel": false
+    },
+    {
+      "name": "Fusion Coco",
+      "source": "mob/fusion_coco.kfm",
+      "bodyTexture": "fusion_coco",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        29,
+        1922
+      ],
+      "sourceLevels": [
+        27,
+        25
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fusion Computress",
+      "source": "mob/fusion_computress.kfm",
+      "bodyTexture": "fusion_computress",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        9,
+        1711,
+        1718
+      ],
+      "sourceLevels": [
+        21,
+        12,
+        1
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fusion Coop",
+      "source": "mob/fusion_coopturns.kfm",
+      "bodyTexture": "fusion_coopturns",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        25,
+        1201,
+        2914
+      ],
+      "sourceLevels": [
+        19,
+        9,
+        35
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fusion Courage",
+      "source": "mob/fusion_courage.kfm",
+      "bodyTexture": "fusion_courage",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        47,
+        2279
+      ],
+      "sourceLevels": [
+        32,
+        30
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fusion Dee Dee",
+      "source": "mob/fusion_deedee.kfm",
+      "bodyTexture": "fusion_deedee",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        16,
+        1197,
+        2218
+      ],
+      "sourceLevels": [
+        12,
+        6,
+        22
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fusion DeeDee",
+      "source": "mob/fusion_deedee.kfm",
+      "bodyTexture": "fusion_deedee",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1708
+      ],
+      "sourceLevels": [
+        22
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fusion Demongo",
+      "source": "mob/fusion_demongo.kfm",
+      "bodyTexture": "fusion_demogo",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        48,
+        2036
+      ],
+      "sourceLevels": [
+        34,
+        32
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fusion Dexter",
+      "source": "mob/fusion_dexter.kfm",
+      "bodyTexture": "fusion_dexter",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        8,
+        1710,
+        1717
+      ],
+      "sourceLevels": [
+        21,
+        12,
+        1
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fusion Ed",
+      "source": "mob/fusion_ed.kfm",
+      "bodyTexture": "fusion_ed",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        45,
+        2035,
+        2907
+      ],
+      "sourceLevels": [
+        31,
+        30,
+        36
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fusion Edd",
+      "source": "mob/fusion_edd.kfm",
+      "bodyTexture": "fusion_edd",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        27,
+        1202,
+        1629,
+        2908
+      ],
+      "sourceLevels": [
+        21,
+        8,
+        17,
+        36
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fusion Eddy",
+      "source": "mob/fusion_eddy.kfm",
+      "bodyTexture": "fusion_eddy",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        19,
+        1195,
+        2909
+      ],
+      "sourceLevels": [
+        2,
+        10,
+        36
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fusion Eduardo",
+      "source": "mob/fusion_eduardo.kfm",
+      "bodyTexture": "fusion_eduardo",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1,
+        1707
+      ],
+      "sourceLevels": [
+        3,
+        17
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fusion Father",
+      "source": "mob/fusion_father.kfm",
+      "bodyTexture": "fusion_father",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        42
+      ],
+      "sourceLevels": [
+        12
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fusion Frankie",
+      "source": "mob/fusion_frankie.kfm",
+      "bodyTexture": "fusion_frankie",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        11
+      ],
+      "sourceLevels": [
+        8
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fusion Fuzzy",
+      "source": "mob/fusion_fuzzy.kfm",
+      "bodyTexture": "fusion_fuzzy",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        13
+      ],
+      "sourceLevels": [
+        10
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fusion Grim",
+      "source": "mob/fusion_grim.kfm",
+      "bodyTexture": "fusion_grim",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        26,
+        1720,
+        1919
+      ],
+      "sourceLevels": [
+        19,
+        20,
+        17
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fusion Gwen",
+      "source": "mob/fusion_gwen.kfm",
+      "bodyTexture": "fusion_gwen",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        41,
+        2038,
+        2625,
+        2837
+      ],
+      "sourceLevels": [
+        33,
+        23
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fusion Herriman",
+      "source": "mob/fusion_mrherriman.kfm",
+      "bodyTexture": "fusion_mrherriman",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        49
+      ],
+      "sourceLevels": [
+        34
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fusion Hex",
+      "source": "mob/fusion_hex.kfm",
+      "bodyTexture": "fusion_hex",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        33,
+        1920
+      ],
+      "sourceLevels": [
+        20,
+        28
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fusion Him",
+      "source": "mob/fusion_him.kfm",
+      "bodyTexture": "fusion_him",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        10,
+        1196
+      ],
+      "sourceLevels": [
+        8,
+        12
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fusion Hoss",
+      "source": "mob/fusion_hoss.kfm",
+      "bodyTexture": "fusion_hoss",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        35,
+        36
+      ],
+      "sourceLevels": [
+        23
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fusion Jack",
+      "source": "mob/fusion_samuraijack.kfm",
+      "bodyTexture": "fusion_samuraijack",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        50,
+        2037
+      ],
+      "sourceLevels": [
+        33,
+        32
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fusion Juniper",
+      "source": "mob/fusion_juniper.kfm",
+      "bodyTexture": "fusion_juniper",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        2912
+      ],
+      "sourceLevels": [
+        26
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fusion Juniper Lee",
+      "source": "mob/fusion_juniper.kfm",
+      "bodyTexture": "fusion_juniper",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        31,
+        32
+      ],
+      "sourceLevels": [
+        29,
+        22
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fusion Kankers",
+      "source": "mob/fusion_mac.kfm",
+      "bodyTexture": "fusion_mac",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        51
+      ],
+      "sourceLevels": [
+        30
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fusion Kevin",
+      "source": "mob/fusion_kevin.kfm",
+      "bodyTexture": "fusion_kevin",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        52
+      ],
+      "sourceLevels": [
+        35
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fusion Lee Kanker",
+      "source": "mob/fusion_leekanker.kfm",
+      "bodyTexture": "fusion_leekanker",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        2031
+      ],
+      "sourceLevels": [
+        33
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fusion Mac",
+      "source": "mob/fusion_mac.kfm",
+      "bodyTexture": "fusion_mac",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        30,
+        1923
+      ],
+      "sourceLevels": [
+        19,
+        26
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fusion Mandark",
+      "source": "mob/fusion_mandark.kfm",
+      "bodyTexture": "fusion_mandark",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        46,
+        2034
+      ],
+      "sourceLevels": [
+        19,
+        33
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fusion Mandy",
+      "source": "mob/fusion_mandy.kfm",
+      "bodyTexture": "fusion_mandy",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        2,
+        1921
+      ],
+      "sourceLevels": [
+        19,
+        24
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fusion Marie Kanker",
+      "source": "mob/fusion_mariekanker.kfm",
+      "bodyTexture": "fusion_mariekanker",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        2032
+      ],
+      "sourceLevels": [
+        33
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fusion Max",
+      "source": "mob/fusion_grandpamax.kfm",
+      "bodyTexture": "fusion_grandpamax",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        34,
+        1630,
+        1715
+      ],
+      "sourceLevels": [
+        22,
+        16
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fusion May Kanker",
+      "source": "mob/fusion_maykanker.kfm",
+      "bodyTexture": "fusion_maykanker",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        2033
+      ],
+      "sourceLevels": [
+        33
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fusion Mayor",
+      "source": "mob/fusion_mayor.kfm",
+      "bodyTexture": "fusion_mayor",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        6
+      ],
+      "sourceLevels": [
+        6
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fusion Mojo Jojo",
+      "source": "mob/fusion_mojojojo.kfm",
+      "bodyTexture": "fusion_mojojojo",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        44,
+        1917
+      ],
+      "sourceLevels": [
+        18,
+        25
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fusion Numbuh Five",
+      "source": "mob/fusion_numbuhfive.kfm",
+      "bodyTexture": "fusion_numbuhfive",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        14,
+        1203
+      ],
+      "sourceLevels": [
+        10,
+        7
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fusion Numbuh Four",
+      "source": "mob/fusion_numbuhfour.kfm",
+      "bodyTexture": "fusion_numbuhfour",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        38,
+        2225
+      ],
+      "sourceLevels": [
+        30,
+        25
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fusion Numbuh One",
+      "source": "mob/fusion_numbuhone.kfm",
+      "bodyTexture": "fusion_numbuhone",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        24,
+        1714,
+        2616
+      ],
+      "sourceLevels": [
+        17,
+        18,
+        20
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fusion Numbuh Three",
+      "source": "mob/fusion_numbuhthree.kfm",
+      "bodyTexture": "fusion_numbuhthree",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        37,
+        2589
+      ],
+      "sourceLevels": [
+        27,
+        12
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fusion Numbuh Two",
+      "source": "mob/fusion_numbuhtwo.kfm",
+      "bodyTexture": "fusion_numbuhtwo",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        7,
+        1194
+      ],
+      "sourceLevels": [
+        1,
+        10
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fusion Pirate",
+      "source": "mob/mob_pirate.kfm",
+      "bodyTexture": "mob_pirate",
+      "secondaryTexture": "mob_pirate",
+      "npcIds": [
+        2223
+      ],
+      "sourceLevels": [
+        24
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fusion Princess",
+      "source": "mob/fusion_princess.kfm",
+      "bodyTexture": "fusion_princess",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        4
+      ],
+      "sourceLevels": [
+        6
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fusion Scotsman",
+      "source": "mob/fusion_scotsman.kfm",
+      "bodyTexture": "fusion_scotsman",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        22,
+        1916,
+        1918
+      ],
+      "sourceLevels": [
+        15,
+        16
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fusion Shard",
+      "source": "mob/fusion_shard.kfm",
+      "bodyTexture": "fusion_shard",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        39
+      ],
+      "sourceLevels": [
+        24
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fusion Spawn",
+      "source": "mob/mob_spawn.kfm",
+      "bodyTexture": "spawn11_green",
+      "secondaryTexture": "mob_gasspawn",
+      "npcIds": [
+        55,
+        249,
+        1981,
+        2674
+      ],
+      "sourceLevels": [
+        1,
+        2
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fusion Stickybeard",
+      "source": "mob/fusion_stickbeard.kfm",
+      "bodyTexture": "fusion_stickybeard",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        20
+      ],
+      "sourceLevels": [
+        24
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fusion Tetrax",
+      "source": "mob/fusion_shard.kfm",
+      "bodyTexture": "fusion_shard",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1709,
+        1721
+      ],
+      "sourceLevels": [
+        24,
+        35
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fusion Toiletnator",
+      "source": "mob/fusion_toiletnator.kfm",
+      "bodyTexture": "fusion_toiletnator",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        43
+      ],
+      "sourceLevels": [
+        26
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fusion Utonium",
+      "source": "mob/fusion_professorutonium.kfm",
+      "bodyTexture": "fusion_professorutonium",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        15,
+        1199
+      ],
+      "sourceLevels": [
+        11
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fusion Vilgax",
+      "source": "mob/fusion_vilgax.kfm",
+      "bodyTexture": "fusion_vilgax",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        21,
+        1713
+      ],
+      "sourceLevels": [
+        22,
+        16
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fusion Wilt",
+      "source": "mob/fusion_wilt.kfm",
+      "bodyTexture": "fusion_wilt",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        12,
+        1198
+      ],
+      "sourceLevels": [
+        9,
+        5
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Fusion Zak",
+      "source": "mob/fusion_zaksaturday.kfm",
+      "bodyTexture": "fusion_zaksaturday",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        3146
+      ],
+      "sourceLevels": [
+        33
+      ],
+      "cachedModel": false
+    },
+    {
+      "name": "Fusionfly",
+      "source": "mob/mob_varietydragonflies.kfm",
+      "bodyTexture": "mob_varietydragonflies",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2053,
+        2082
+      ],
+      "sourceLevels": [
+        31
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Gatekeeper",
+      "source": "mob/mob_gatekeeper.kfm",
+      "bodyTexture": "mob_gatekeeper",
+      "secondaryTexture": "null",
+      "npcIds": [
+        3266
+      ],
+      "sourceLevels": [
+        35
+      ],
+      "cachedModel": false
+    },
+    {
+      "name": "Gear Goliath",
+      "source": "mob/mob_gear.kfm",
+      "bodyTexture": "mob_gear",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        202,
+        396
+      ],
+      "sourceLevels": [
+        23
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Gear Goliath Gladiator",
+      "source": "mob/mob_gear.kfm",
+      "bodyTexture": "mob_gear",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        590
+      ],
+      "sourceLevels": [
+        23
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Gear Goon",
+      "source": "mob/mob_gear.kfm",
+      "bodyTexture": "mob_gear",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        130,
+        324
+      ],
+      "sourceLevels": [
+        11
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "General Golem",
+      "source": "mob/mob_roadgorlem.kfm",
+      "bodyTexture": "mob_roadgorlem",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        450,
+        1147
+      ],
+      "sourceLevels": [
+        2
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Ghastly Growth",
+      "source": "mob/mob_crazyguardianent.kfm",
+      "bodyTexture": "mob_crazyguardianent",
+      "secondaryTexture": "null",
+      "npcIds": [
+        245,
+        439
+      ],
+      "sourceLevels": [
+        32
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Ghoul Golem",
+      "source": "mob/mob_roadgorlem.kfm",
+      "bodyTexture": "mob_roadgorlem",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        225,
+        419
+      ],
+      "sourceLevels": [
+        24
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Ghoulish Growth",
+      "source": "mob/mob_crazyguardianent.kfm",
+      "bodyTexture": "mob_crazyguardianent",
+      "secondaryTexture": "null",
+      "npcIds": [
+        160,
+        354
+      ],
+      "sourceLevels": [
+        14
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Ghoulish Growth Rotter",
+      "source": "mob/mob_crazyguardianent.kfm",
+      "bodyTexture": "mob_crazyguardianent",
+      "secondaryTexture": "null",
+      "npcIds": [
+        548
+      ],
+      "sourceLevels": [
+        14
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Giant Eyebore",
+      "source": "mob/mob_threeeyes.kfm",
+      "bodyTexture": "mob_threeeyes",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2124
+      ],
+      "sourceLevels": [
+        35
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Giant Eyebulb",
+      "source": "mob/mob_threeeyes.kfm",
+      "bodyTexture": "mob_threeeyes",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2117
+      ],
+      "sourceLevels": [
+        33
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Giant Graveworm",
+      "source": "mob/mob_gravekeeper.kfm",
+      "bodyTexture": "mob_gravekeeper",
+      "secondaryTexture": "null",
+      "npcIds": [
+        623
+      ],
+      "sourceLevels": [
+        25
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Giant Road Rager",
+      "source": "mob/mob_asphalt.kfm",
+      "bodyTexture": "mob_asphalt",
+      "secondaryTexture": "null",
+      "npcIds": [
+        536
+      ],
+      "sourceLevels": [
+        15
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Giant Tank Terror",
+      "source": "mob/mob_oilcaskturtle.kfm",
+      "bodyTexture": "mob_oilcaskturtle",
+      "secondaryTexture": "null",
+      "npcIds": [
+        465
+      ],
+      "sourceLevels": [
+        3
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Giga Shellworm",
+      "source": "mob/mob_turtleworm.kfm",
+      "bodyTexture": "mob_turtleworm",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2119
+      ],
+      "sourceLevels": [
+        33
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Gigatech Wing",
+      "source": "mob/mob_bat.kfm",
+      "bodyTexture": "mob_bat",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        487,
+        1262
+      ],
+      "sourceLevels": [
+        7
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Grand Master Tentakiller",
+      "source": "mob/mob_outsideoctopus.kfm",
+      "bodyTexture": "mob_outsideoctopus",
+      "secondaryTexture": "null",
+      "npcIds": [
+        556
+      ],
+      "sourceLevels": [
+        17
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Granite Grabber",
+      "source": "mob/mob_titan.kfm",
+      "bodyTexture": "mob_titan",
+      "secondaryTexture": "mob_titan",
+      "npcIds": [
+        194,
+        388
+      ],
+      "sourceLevels": [
+        19
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Gravel Golem",
+      "source": "mob/mob_roadgorlem.kfm",
+      "bodyTexture": "mob_roadgorlem",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        92,
+        286,
+        1255
+      ],
+      "sourceLevels": [
+        6
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Graveworm",
+      "source": "mob/mob_gravekeeper.kfm",
+      "bodyTexture": "mob_gravekeeper",
+      "secondaryTexture": "null",
+      "npcIds": [
+        235,
+        429
+      ],
+      "sourceLevels": [
+        25
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Great Eyebore",
+      "source": "mob/mob_threeeyes.kfm",
+      "bodyTexture": "mob_threeeyes",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2070,
+        2095,
+        2128
+      ],
+      "sourceLevels": [
+        36
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Great Eyebulb",
+      "source": "mob/mob_threeeyes.kfm",
+      "bodyTexture": "mob_threeeyes",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2062,
+        2088
+      ],
+      "sourceLevels": [
+        34
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Great Eyebulb Gazer",
+      "source": "mob/mob_threeeyes.kfm",
+      "bodyTexture": "mob_threeeyes",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2120
+      ],
+      "sourceLevels": [
+        34
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Great Ghoul Golem",
+      "source": "mob/mob_roadgorlem.kfm",
+      "bodyTexture": "mob_roadgorlem",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        613
+      ],
+      "sourceLevels": [
+        24
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Great Gravel Golem",
+      "source": "mob/mob_roadgorlem.kfm",
+      "bodyTexture": "mob_roadgorlem",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        480,
+        1256
+      ],
+      "sourceLevels": [
+        6
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Great Ironjaw",
+      "source": "mob/mob_lakeironfish.kfm",
+      "bodyTexture": "mob_lakeironfish",
+      "secondaryTexture": "mob_lakeironfish",
+      "npcIds": [
+        166,
+        360
+      ],
+      "sourceLevels": [
+        15
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Great Shellslug",
+      "source": "mob/mob_turtleworm.kfm",
+      "bodyTexture": "mob_turtleworm",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2071,
+        2096
+      ],
+      "sourceLevels": [
+        36
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Great Shellslug King",
+      "source": "mob/mob_turtleworm.kfm",
+      "bodyTexture": "mob_turtleworm",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2129
+      ],
+      "sourceLevels": [
+        36
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Great Shellworm",
+      "source": "mob/mob_turtleworm.kfm",
+      "bodyTexture": "mob_turtleworm",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2063,
+        2089
+      ],
+      "sourceLevels": [
+        34
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Great Shellworm Fury",
+      "source": "mob/mob_turtleworm.kfm",
+      "bodyTexture": "mob_turtleworm",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2121
+      ],
+      "sourceLevels": [
+        34
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Great Striding Eel",
+      "source": "mob/mob_hagenbar.kfm",
+      "bodyTexture": "mob_hagenbar",
+      "secondaryTexture": "null",
+      "npcIds": [
+        552
+      ],
+      "sourceLevels": [
+        15
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Great Terrorpin",
+      "source": "mob/mob_snappingturtle.kfm",
+      "bodyTexture": "mob_snappingturtle",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        227,
+        421
+      ],
+      "sourceLevels": [
+        26
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Great Terrorpin III",
+      "source": "mob/mob_snappingturtle.kfm",
+      "bodyTexture": "mob_snappingturtle",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        615
+      ],
+      "sourceLevels": [
+        26
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Greatstone Grabber",
+      "source": "mob/mob_titan.kfm",
+      "bodyTexture": "mob_titan",
+      "secondaryTexture": "mob_titan",
+      "npcIds": [
+        582
+      ],
+      "sourceLevels": [
+        19
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Grime Serpent",
+      "source": "mob/mob_swampysnake.kfm",
+      "bodyTexture": "mob_swampysnake",
+      "secondaryTexture": "null",
+      "npcIds": [
+        221,
+        415
+      ],
+      "sourceLevels": [
+        25
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Growth",
+      "source": "mob/mob_spawn.kfm",
+      "bodyTexture": "spawn11_green",
+      "secondaryTexture": "mob_gasspawn",
+      "npcIds": [
+        1924,
+        1925,
+        1926
+      ],
+      "sourceLevels": [
+        14
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Hardwood Hulk",
+      "source": "mob/mob_madtreant.kfm",
+      "bodyTexture": "mob_madtreant",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        586
+      ],
+      "sourceLevels": [
+        20
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Heavy Duty Pincher",
+      "source": "mob/mob_heavymachinery.kfm",
+      "bodyTexture": "mob_heavymachinery",
+      "secondaryTexture": "null",
+      "npcIds": [
+        496,
+        1266
+      ],
+      "sourceLevels": [
+        8
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Heavy Hauler",
+      "source": "mob/mob_heavymachinery.kfm",
+      "bodyTexture": "mob_heavymachinery",
+      "secondaryTexture": "null",
+      "npcIds": [
+        73,
+        267,
+        1164
+      ],
+      "sourceLevels": [
+        4
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Heavy Hunter",
+      "source": "mob/mob_robo.kfm",
+      "bodyTexture": "mob_robo",
+      "secondaryTexture": "null",
+      "npcIds": [
+        146,
+        340
+      ],
+      "sourceLevels": [
+        15
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Heavy Hunter Boss",
+      "source": "mob/mob_robo.kfm",
+      "bodyTexture": "mob_robo",
+      "secondaryTexture": "null",
+      "npcIds": [
+        534
+      ],
+      "sourceLevels": [
+        15
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Heavy Pincher",
+      "source": "mob/mob_heavymachinery.kfm",
+      "bodyTexture": "mob_heavymachinery",
+      "secondaryTexture": "null",
+      "npcIds": [
+        108,
+        302
+      ],
+      "sourceLevels": [
+        8
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Heavy Puncher",
+      "source": "mob/mob_heavymachinery.kfm",
+      "bodyTexture": "mob_heavymachinery",
+      "secondaryTexture": "null",
+      "npcIds": [
+        179,
+        373
+      ],
+      "sourceLevels": [
+        19
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "High Aubergine Master",
+      "source": "mob/mob_privateggplant.kfm",
+      "bodyTexture": "mob_privateggplant",
+      "secondaryTexture": "null",
+      "npcIds": [
+        607
+      ],
+      "sourceLevels": [
+        23
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "High Grade Dynamite Rat",
+      "source": "mob/mob_dynamitemouse.kfm",
+      "bodyTexture": "mob_dynamitemouse",
+      "secondaryTexture": "mob_dynamitemouse",
+      "npcIds": [
+        569
+      ],
+      "sourceLevels": [
+        17
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "High Hydro Hammer",
+      "source": "mob/mob_twohammerhydrant.kfm",
+      "bodyTexture": "mob_twohammerhydrant",
+      "secondaryTexture": "null",
+      "npcIds": [
+        476,
+        1258
+      ],
+      "sourceLevels": [
+        6
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "High Hydro Slammer",
+      "source": "mob/mob_twohammerhydrant.kfm",
+      "bodyTexture": "mob_twohammerhydrant",
+      "secondaryTexture": "null",
+      "npcIds": [
+        531
+      ],
+      "sourceLevels": [
+        14
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "High Necromasher",
+      "source": "mob/mob_highpriest.kfm",
+      "bodyTexture": "mob_highpriest",
+      "secondaryTexture": "null",
+      "npcIds": [
+        584
+      ],
+      "sourceLevels": [
+        20
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "High Octane Punk",
+      "source": "mob/mob_lubricator.kfm",
+      "bodyTexture": "mob_lubricator",
+      "secondaryTexture": "null",
+      "npcIds": [
+        501
+      ],
+      "sourceLevels": [
+        3
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Highblast Verminator",
+      "source": "mob/mob_cannon.kfm",
+      "bodyTexture": "mob_cannon",
+      "secondaryTexture": "null",
+      "npcIds": [
+        504
+      ],
+      "sourceLevels": [
+        3
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Highly Toxic Spawn",
+      "source": "mob/mob_gasspawn.kfm",
+      "bodyTexture": "mob_gasspawn",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        464
+      ],
+      "sourceLevels": [
+        4
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Hootie",
+      "source": "mob/mob_blowfish.kfm",
+      "bodyTexture": "mob_blowfish",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        3284
+      ],
+      "sourceLevels": [
+        4
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Horror King",
+      "source": "mob/mob_horrorking.kfm",
+      "bodyTexture": "mob_horrorking",
+      "secondaryTexture": "null",
+      "npcIds": [
+        192,
+        386
+      ],
+      "sourceLevels": [
+        21
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Horror Kingpin",
+      "source": "mob/mob_horrorking.kfm",
+      "bodyTexture": "mob_horrorking",
+      "secondaryTexture": "null",
+      "npcIds": [
+        580
+      ],
+      "sourceLevels": [
+        21
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Horrordactyl",
+      "source": "mob/mob_archaeopteryx.kfm",
+      "bodyTexture": "mob_archaeopteryx",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2045,
+        2078
+      ],
+      "sourceLevels": [
+        28
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Husky Horsie",
+      "source": "mob/mob_tablehorse.kfm",
+      "bodyTexture": "mob_tablehorse_a",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        474
+      ],
+      "sourceLevels": [
+        5
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Hydraulic Enforcer",
+      "source": "mob/mob_trafficpolice.kfm",
+      "bodyTexture": "mob_trafficpolice",
+      "secondaryTexture": "null",
+      "npcIds": [
+        212,
+        406
+      ],
+      "sourceLevels": [
+        24
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Hydro Hammer",
+      "source": "mob/mob_twohammerhydrant.kfm",
+      "bodyTexture": "mob_twohammerhydrant",
+      "secondaryTexture": "null",
+      "npcIds": [
+        88,
+        282,
+        1257
+      ],
+      "sourceLevels": [
+        6
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Hydro Slammer",
+      "source": "mob/mob_twohammerhydrant.kfm",
+      "bodyTexture": "mob_twohammerhydrant",
+      "secondaryTexture": "null",
+      "npcIds": [
+        143,
+        337
+      ],
+      "sourceLevels": [
+        14
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Hyper Fusionfly",
+      "source": "mob/mob_varietydragonflies.kfm",
+      "bodyTexture": "mob_varietydragonflies",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2111
+      ],
+      "sourceLevels": [
+        31
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Injustice Foe",
+      "source": "mob/mob_fusionheromonster.kfm",
+      "bodyTexture": "mob_fusionheromonster",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        3177,
+        3178,
+        3179
+      ],
+      "sourceLevels": [
+        30
+      ],
+      "cachedModel": false
+    },
+    {
+      "name": "Ironjaw",
+      "source": "mob/npc_deedee.kfm",
+      "bodyTexture": "npc_deedee",
+      "secondaryTexture": "null",
+      "npcIds": [
+        151,
+        345,
+        539
+      ],
+      "sourceLevels": [
+        15
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Ironside Brawler",
+      "source": "mob/mob_drum.kfm",
+      "bodyTexture": "mob_drum",
+      "secondaryTexture": "null",
+      "npcIds": [
+        558
+      ],
+      "sourceLevels": [
+        17
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Jamcycle",
+      "source": "mob/npc_deedee.kfm",
+      "bodyTexture": "npc_deedee",
+      "secondaryTexture": "null",
+      "npcIds": [
+        157,
+        351,
+        545
+      ],
+      "sourceLevels": [
+        16
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Jerk-O-Lantern",
+      "source": "mob/mob_jackolantern.kfm",
+      "bodyTexture": "mob_jackolantern",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        120,
+        314
+      ],
+      "sourceLevels": [
+        10
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Jetskill",
+      "source": "mob/mob_dolbelzet.kfm",
+      "bodyTexture": "mob_dolbelzet",
+      "secondaryTexture": "null",
+      "npcIds": [
+        169,
+        363
+      ],
+      "sourceLevels": [
+        17
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Jetskill Hunter",
+      "source": "mob/mob_dolbelzet.kfm",
+      "bodyTexture": "mob_dolbelzet",
+      "secondaryTexture": "null",
+      "npcIds": [
+        557
+      ],
+      "sourceLevels": [
+        17
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Jock-O-Lantern",
+      "source": "mob/mob_jackolantern.kfm",
+      "bodyTexture": "mob_jackolantern",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        110,
+        304
+      ],
+      "sourceLevels": [
+        9
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Joke-O-Lantern",
+      "source": "mob/mob_jackolantern.kfm",
+      "bodyTexture": "mob_jackolantern",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        105,
+        299
+      ],
+      "sourceLevels": [
+        8
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Judy",
+      "source": "mob/mob_blowfish.kfm",
+      "bodyTexture": "mob_blowfish",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        3287
+      ],
+      "sourceLevels": [
+        24
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Jumbo Clawdad",
+      "source": "mob/mob_blackcambaroides.kfm",
+      "bodyTexture": "mob_blackcambaroides",
+      "secondaryTexture": "null",
+      "npcIds": [
+        551
+      ],
+      "sourceLevels": [
+        15
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Jumbo Fowl Fiend",
+      "source": "mob/mob_privatekokas.kfm",
+      "bodyTexture": "mob_privatekokas",
+      "secondaryTexture": "null",
+      "npcIds": [
+        624
+      ],
+      "sourceLevels": [
+        25
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Jumbo Fusion Spawn",
+      "source": "mob/mob_spawn.kfm",
+      "bodyTexture": "spawn11_green",
+      "secondaryTexture": "mob_gasspawn",
+      "npcIds": [
+        443,
+        1140
+      ],
+      "sourceLevels": [
+        1
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Junkasaurus Daddy",
+      "source": "mob/mob_junkdinosaur.kfm",
+      "bodyTexture": "mob_junkdinosaur",
+      "secondaryTexture": "null",
+      "npcIds": [
+        502
+      ],
+      "sourceLevels": [
+        9
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Junkasaurus Wrecks",
+      "source": "mob/mob_junkdinosaur.kfm",
+      "bodyTexture": "mob_junkdinosaur",
+      "secondaryTexture": "null",
+      "npcIds": [
+        114,
+        308
+      ],
+      "sourceLevels": [
+        9
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Jurassic Centurion",
+      "source": "mob/mob_magkanta.kfm",
+      "bodyTexture": "mob_magkanta",
+      "secondaryTexture": "null",
+      "npcIds": [
+        1989,
+        2060
+      ],
+      "sourceLevels": [
+        34
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Jurassic Centurion Captain",
+      "source": "mob/mob_magkanta.kfm",
+      "bodyTexture": "mob_magkanta",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2064,
+        2090,
+        2122
+      ],
+      "sourceLevels": [
+        34
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Jurassic Centurion Lord",
+      "source": "mob/mob_magkanta.kfm",
+      "bodyTexture": "mob_magkanta",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2118
+      ],
+      "sourceLevels": [
+        34
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Kevin",
+      "source": "mob/npc_kevin.kfm",
+      "bodyTexture": "npc_kevin",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2226
+      ],
+      "sourceLevels": [
+        26
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Killowatt",
+      "source": "mob/mob_lightbulb.kfm",
+      "bodyTexture": "mob_lightbulb",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        215,
+        409
+      ],
+      "sourceLevels": [
+        24
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "King Basher",
+      "source": "mob/mob_ammonia.kfm",
+      "bodyTexture": "mob_ammonia",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2112
+      ],
+      "sourceLevels": [
+        31
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "King Coldblood",
+      "source": "mob/mob_lizardking.kfm",
+      "bodyTexture": "mob_lizardking",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2109
+      ],
+      "sourceLevels": [
+        30
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "King Crusher",
+      "source": "mob/mob_ammonia.kfm",
+      "bodyTexture": "mob_ammonia",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2116
+      ],
+      "sourceLevels": [
+        32
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "King Sawbreaker",
+      "source": "mob/mob_rshell.kfm",
+      "bodyTexture": "mob_rshell",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        601
+      ],
+      "sourceLevels": [
+        24
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "King Stabber Mantis",
+      "source": "mob/mob_knifetoenail.kfm",
+      "bodyTexture": "mob_knifetoenail",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        585
+      ],
+      "sourceLevels": [
+        20
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "King Stinger",
+      "source": "mob/mob_greenhellmosquito.kfm",
+      "bodyTexture": "mob_greenhellmosquito",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        521
+      ],
+      "sourceLevels": [
+        12
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "King-Size Foe",
+      "source": "mob/mob_privatekokas.kfm",
+      "bodyTexture": "mob_privatekokas",
+      "secondaryTexture": "null",
+      "npcIds": [
+        606
+      ],
+      "sourceLevels": [
+        23
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Lazy Metal Boy Scout",
+      "source": "mob/mob_crazymetal.kfm",
+      "bodyTexture": "mob_crazymetal",
+      "secondaryTexture": "null",
+      "npcIds": [
+        125,
+        319
+      ],
+      "sourceLevels": [
+        11
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Lee Kanker",
+      "source": "mob/npc_deedee.kfm",
+      "bodyTexture": "npc_deedee",
+      "secondaryTexture": "null",
+      "npcIds": [
+        963
+      ],
+      "sourceLevels": [
+        1
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Lizard King",
+      "source": "mob/mob_lizardking.kfm",
+      "bodyTexture": "mob_lizardking",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2051,
+        2080
+      ],
+      "sourceLevels": [
+        30
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Lizard Queen",
+      "source": "mob/mob_lizardking.kfm",
+      "bodyTexture": "mob_lizardking",
+      "secondaryTexture": "null",
+      "npcIds": [
+        1987,
+        2048
+      ],
+      "sourceLevels": [
+        29
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Lord Fuse",
+      "source": "mob/mob_fuselord.kfm",
+      "bodyTexture": "mob_fuselord",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2466
+      ],
+      "sourceLevels": [
+        36
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Lord Fuse",
+      "source": "mob/mob_fuselord1.kfm",
+      "bodyTexture": "mob_fuselord",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2467
+      ],
+      "sourceLevels": [
+        36
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Lord Fuse",
+      "source": "mob/mob_fuselord2.kfm",
+      "bodyTexture": "mob_fuselord",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2468
+      ],
+      "sourceLevels": [
+        36
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Lord Fuse's Left Arm",
+      "source": "mob/mob_fuselord_left_arm.kfm",
+      "bodyTexture": "mob_fuselord_left_arm",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2470
+      ],
+      "sourceLevels": [
+        36
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Lord Fuse's Right Arm",
+      "source": "mob/mob_fuselord_right_arm.kfm",
+      "bodyTexture": "mob_fuselord_right_arm",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2469
+      ],
+      "sourceLevels": [
+        36
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Lord Razortooth",
+      "source": "mob/mob_greenhellmosquito.kfm",
+      "bodyTexture": "mob_greenhellmosquito",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        554
+      ],
+      "sourceLevels": [
+        15
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Mad Mower",
+      "source": "mob/mob_lawnmower.kfm",
+      "bodyTexture": "mob_lawnmower",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        93,
+        287
+      ],
+      "sourceLevels": [
+        6
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Maelstrom Brute",
+      "source": "mob/mob_drainage.kfm",
+      "bodyTexture": "mob_drainage",
+      "secondaryTexture": "null",
+      "npcIds": [
+        494,
+        1268
+      ],
+      "sourceLevels": [
+        8
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Maelstrom Creeper",
+      "source": "mob/mob_drainage.kfm",
+      "bodyTexture": "mob_drainage",
+      "secondaryTexture": "null",
+      "npcIds": [
+        106,
+        300,
+        1267
+      ],
+      "sourceLevels": [
+        8
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Magma Hulk",
+      "source": "mob/mob_volcanogorem.kfm",
+      "bodyTexture": "mob_volcanogorem",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2049,
+        2079
+      ],
+      "sourceLevels": [
+        29
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Magma Toad Master",
+      "source": "mob/mob_fireasiantoad.kfm",
+      "bodyTexture": "mob_fireasiantoad",
+      "secondaryTexture": "null",
+      "npcIds": [
+        628
+      ],
+      "sourceLevels": [
+        27
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Magno Beetle",
+      "source": "mob/mob_goldbug.kfm",
+      "bodyTexture": "mob_goldbug_a",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        53,
+        247,
+        441,
+        1139,
+        1141
+      ],
+      "sourceLevels": [
+        1
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Mandark",
+      "source": "mob/npc_mandark.kfm",
+      "bodyTexture": "npc_mandark",
+      "secondaryTexture": "npc_mandark",
+      "npcIds": [
+        2219
+      ],
+      "sourceLevels": [
+        24
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Mandroid",
+      "source": "mob/npc_mandroid1.kfm",
+      "bodyTexture": "npc_mandroid1",
+      "secondaryTexture": "null",
+      "npcIds": [
+        1673
+      ],
+      "sourceLevels": [
+        19
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Master Magma Hulk",
+      "source": "mob/mob_volcanogorem.kfm",
+      "bodyTexture": "mob_volcanogorem",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2107
+      ],
+      "sourceLevels": [
+        29
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Master Miasma Hulk",
+      "source": "mob/mob_volcanogorem.kfm",
+      "bodyTexture": "mob_volcanogorem",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2110
+      ],
+      "sourceLevels": [
+        30
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Master Tentakiller",
+      "source": "mob/mob_outsideoctopus.kfm",
+      "bodyTexture": "mob_outsideoctopus",
+      "secondaryTexture": "null",
+      "npcIds": [
+        168,
+        362
+      ],
+      "sourceLevels": [
+        17
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Mean Behemoth",
+      "source": "mob/mob_telegraphpole.kfm",
+      "bodyTexture": "mob_telegraphpole",
+      "secondaryTexture": "null",
+      "npcIds": [
+        85,
+        279,
+        1489
+      ],
+      "sourceLevels": [
+        5
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Meanie Master",
+      "source": "mob/mob_privateggplant.kfm",
+      "bodyTexture": "mob_privateggplant",
+      "secondaryTexture": "null",
+      "npcIds": [
+        625
+      ],
+      "sourceLevels": [
+        25
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Mech Queen",
+      "source": "mob/mob_queenspider.kfm",
+      "bodyTexture": "mob_queenspider_a",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        200,
+        394
+      ],
+      "sourceLevels": [
+        22
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Mech Queen Mistress",
+      "source": "mob/mob_queenspider.kfm",
+      "bodyTexture": "mob_queenspider_a",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        588
+      ],
+      "sourceLevels": [
+        22
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Mega Creepy Spawn",
+      "source": "mob/mob_spawn.kfm",
+      "bodyTexture": "spawn11_green",
+      "secondaryTexture": "mob_gasspawn",
+      "npcIds": [
+        484
+      ],
+      "sourceLevels": [
+        7
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Mega Magma Vaulter",
+      "source": "mob/mob_beastman.kfm",
+      "bodyTexture": "mob_beastman",
+      "secondaryTexture": "mob_beastman",
+      "npcIds": [
+        620
+      ],
+      "sourceLevels": [
+        27
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Melee1",
+      "source": "mob/mob_ghost.kfm",
+      "bodyTexture": "mob_ghost",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1509
+      ],
+      "sourceLevels": [
+        1
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Melee10",
+      "source": "mob/mob_ghost.kfm",
+      "bodyTexture": "mob_ghost",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1518
+      ],
+      "sourceLevels": [
+        10
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Melee11",
+      "source": "mob/mob_ghost.kfm",
+      "bodyTexture": "mob_ghost",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1519
+      ],
+      "sourceLevels": [
+        11
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Melee12",
+      "source": "mob/mob_ghost.kfm",
+      "bodyTexture": "mob_ghost",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1520
+      ],
+      "sourceLevels": [
+        12
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Melee13",
+      "source": "mob/mob_ghost.kfm",
+      "bodyTexture": "mob_ghost",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1521
+      ],
+      "sourceLevels": [
+        13
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Melee14",
+      "source": "mob/mob_ghost.kfm",
+      "bodyTexture": "mob_ghost",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1522
+      ],
+      "sourceLevels": [
+        14
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Melee15",
+      "source": "mob/mob_ghost.kfm",
+      "bodyTexture": "mob_ghost",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1523
+      ],
+      "sourceLevels": [
+        15
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Melee16",
+      "source": "mob/mob_ghost.kfm",
+      "bodyTexture": "mob_ghost",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1524
+      ],
+      "sourceLevels": [
+        16
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Melee17",
+      "source": "mob/mob_ghost.kfm",
+      "bodyTexture": "mob_ghost",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1525
+      ],
+      "sourceLevels": [
+        17
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Melee18",
+      "source": "mob/mob_ghost.kfm",
+      "bodyTexture": "mob_ghost",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1526
+      ],
+      "sourceLevels": [
+        18
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Melee19",
+      "source": "mob/mob_ghost.kfm",
+      "bodyTexture": "mob_ghost",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1527
+      ],
+      "sourceLevels": [
+        19
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Melee2",
+      "source": "mob/mob_ghost.kfm",
+      "bodyTexture": "mob_ghost",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1510
+      ],
+      "sourceLevels": [
+        2
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Melee20",
+      "source": "mob/mob_ghost.kfm",
+      "bodyTexture": "mob_ghost",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1528
+      ],
+      "sourceLevels": [
+        20
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Melee21",
+      "source": "mob/mob_ghost.kfm",
+      "bodyTexture": "mob_ghost",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1529
+      ],
+      "sourceLevels": [
+        21
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Melee22",
+      "source": "mob/mob_ghost.kfm",
+      "bodyTexture": "mob_ghost",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1530
+      ],
+      "sourceLevels": [
+        22
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Melee23",
+      "source": "mob/mob_ghost.kfm",
+      "bodyTexture": "mob_ghost",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1531
+      ],
+      "sourceLevels": [
+        23
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Melee24",
+      "source": "mob/mob_ghost.kfm",
+      "bodyTexture": "mob_ghost",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1532
+      ],
+      "sourceLevels": [
+        24
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Melee25",
+      "source": "mob/mob_ghost.kfm",
+      "bodyTexture": "mob_ghost",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1533
+      ],
+      "sourceLevels": [
+        25
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Melee26",
+      "source": "mob/mob_ghost.kfm",
+      "bodyTexture": "mob_ghost",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1534
+      ],
+      "sourceLevels": [
+        26
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Melee27",
+      "source": "mob/mob_ghost.kfm",
+      "bodyTexture": "mob_ghost",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1535
+      ],
+      "sourceLevels": [
+        27
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Melee28",
+      "source": "mob/mob_ghost.kfm",
+      "bodyTexture": "mob_ghost",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1536
+      ],
+      "sourceLevels": [
+        28
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Melee29",
+      "source": "mob/mob_ghost.kfm",
+      "bodyTexture": "mob_ghost",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1537
+      ],
+      "sourceLevels": [
+        29
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Melee3",
+      "source": "mob/mob_ghost.kfm",
+      "bodyTexture": "mob_ghost",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1511
+      ],
+      "sourceLevels": [
+        3
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Melee30",
+      "source": "mob/mob_ghost.kfm",
+      "bodyTexture": "mob_ghost",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1538
+      ],
+      "sourceLevels": [
+        30
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Melee31",
+      "source": "mob/mob_ghost.kfm",
+      "bodyTexture": "mob_ghost",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1539
+      ],
+      "sourceLevels": [
+        31
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Melee32",
+      "source": "mob/mob_ghost.kfm",
+      "bodyTexture": "mob_ghost",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1540
+      ],
+      "sourceLevels": [
+        32
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Melee33",
+      "source": "mob/mob_ghost.kfm",
+      "bodyTexture": "mob_ghost",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1541
+      ],
+      "sourceLevels": [
+        33
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Melee34",
+      "source": "mob/mob_ghost.kfm",
+      "bodyTexture": "mob_ghost",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1542
+      ],
+      "sourceLevels": [
+        34
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Melee35",
+      "source": "mob/mob_ghost.kfm",
+      "bodyTexture": "mob_ghost",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1543
+      ],
+      "sourceLevels": [
+        35
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Melee36",
+      "source": "mob/mob_ghost.kfm",
+      "bodyTexture": "mob_ghost",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1544
+      ],
+      "sourceLevels": [
+        36
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Melee4",
+      "source": "mob/mob_ghost.kfm",
+      "bodyTexture": "mob_ghost",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1512
+      ],
+      "sourceLevels": [
+        4
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Melee5",
+      "source": "mob/mob_ghost.kfm",
+      "bodyTexture": "mob_ghost",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1513
+      ],
+      "sourceLevels": [
+        5
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Melee6",
+      "source": "mob/mob_ghost.kfm",
+      "bodyTexture": "mob_ghost",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1514
+      ],
+      "sourceLevels": [
+        6
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Melee7",
+      "source": "mob/mob_ghost.kfm",
+      "bodyTexture": "mob_ghost",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1515
+      ],
+      "sourceLevels": [
+        7
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Melee8",
+      "source": "mob/mob_ghost.kfm",
+      "bodyTexture": "mob_ghost",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1516
+      ],
+      "sourceLevels": [
+        8
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Melee9",
+      "source": "mob/mob_ghost.kfm",
+      "bodyTexture": "mob_ghost",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1517
+      ],
+      "sourceLevels": [
+        9
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Metal Brute Scout",
+      "source": "mob/mob_crazymetal.kfm",
+      "bodyTexture": "mob_crazymetal",
+      "secondaryTexture": "null",
+      "npcIds": [
+        513
+      ],
+      "sourceLevels": [
+        11
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Meteoric Guardian",
+      "source": "mob/mob_meteobug.kfm",
+      "bodyTexture": "mob_meteorbug",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        2457,
+        2458
+      ],
+      "sourceLevels": [
+        36
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Meteoric Guardian Lieutenant",
+      "source": "mob/mob_meteobug.kfm",
+      "bodyTexture": "mob_meteorbug",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        2459
+      ],
+      "sourceLevels": [
+        36
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Meteoric Sentry",
+      "source": "mob/mob_meteobug.kfm",
+      "bodyTexture": "mob_meteorbug",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        2319,
+        2320
+      ],
+      "sourceLevels": [
+        33
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Meteoric Sentry Number One",
+      "source": "mob/mob_meteobug.kfm",
+      "bodyTexture": "mob_meteorbug",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        2321
+      ],
+      "sourceLevels": [
+        33
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Miasma Hulk",
+      "source": "mob/mob_volcanogorem.kfm",
+      "bodyTexture": "mob_volcanogorem",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2052,
+        2081
+      ],
+      "sourceLevels": [
+        30
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Mighty Mighty Terrorpin",
+      "source": "mob/mob_snappingturtle.kfm",
+      "bodyTexture": "mob_snappingturtle",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        562
+      ],
+      "sourceLevels": [
+        16
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Mojo Jojo",
+      "source": "mob/npc_mojojojo.kfm",
+      "bodyTexture": "npc_mojojojo",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2220
+      ],
+      "sourceLevels": [
+        24
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Motor Master",
+      "source": "mob/mob_engine.kfm",
+      "bodyTexture": "mob_engine",
+      "secondaryTexture": "null",
+      "npcIds": [
+        463
+      ],
+      "sourceLevels": [
+        4
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Motor Raptor",
+      "source": "mob/mob_engine.kfm",
+      "bodyTexture": "mob_engine",
+      "secondaryTexture": "null",
+      "npcIds": [
+        75,
+        269
+      ],
+      "sourceLevels": [
+        4
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Motorilla",
+      "source": "mob/mob_motorgorilla.kfm",
+      "bodyTexture": "mob_motor_gorilla",
+      "secondaryTexture": "null",
+      "npcIds": [
+        134,
+        328,
+        1313
+      ],
+      "sourceLevels": [
+        12
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Motoro",
+      "source": "mob/npc_deedee.kfm",
+      "bodyTexture": "npc_deedee",
+      "secondaryTexture": "null",
+      "npcIds": [
+        158,
+        352,
+        546
+      ],
+      "sourceLevels": [
+        16
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Moussaka Master",
+      "source": "mob/mob_generaleggplant.kfm",
+      "bodyTexture": "mob_generaleggplant",
+      "secondaryTexture": "null",
+      "npcIds": [
+        217,
+        411
+      ],
+      "sourceLevels": [
+        23
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Moussaka Master Sergeant",
+      "source": "mob/mob_generaleggplant.kfm",
+      "bodyTexture": "mob_generaleggplant",
+      "secondaryTexture": "null",
+      "npcIds": [
+        605
+      ],
+      "sourceLevels": [
+        23
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Moussaka Meanie",
+      "source": "mob/mob_generaleggplant.kfm",
+      "bodyTexture": "mob_generaleggplant",
+      "secondaryTexture": "null",
+      "npcIds": [
+        243,
+        437
+      ],
+      "sourceLevels": [
+        26
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Mummy Monster",
+      "source": "mob/mob_mummy.kfm",
+      "bodyTexture": "mob_mummy",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        118,
+        312,
+        1435
+      ],
+      "sourceLevels": [
+        10
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Mussnado",
+      "source": "mob/mob_mussnado.kfm",
+      "bodyTexture": "mob_mussnado",
+      "secondaryTexture": "null",
+      "npcIds": [
+        3037
+      ],
+      "sourceLevels": [
+        36
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Necromasher",
+      "source": "mob/mob_highpriest.kfm",
+      "bodyTexture": "mob_highpriest",
+      "secondaryTexture": "null",
+      "npcIds": [
+        196,
+        390,
+        1984
+      ],
+      "sourceLevels": [
+        20,
+        24
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Neighborhood Ninja",
+      "source": "mob/mob_ninja.kfm",
+      "bodyTexture": "mob_ninja",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        91,
+        285
+      ],
+      "sourceLevels": [
+        6
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Newspaper Assassin",
+      "source": "mob/mob_ninja.kfm",
+      "bodyTexture": "mob_ninja",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        477
+      ],
+      "sourceLevels": [
+        6
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Newspaper Ninja",
+      "source": "mob/mob_ninja.kfm",
+      "bodyTexture": "mob_ninja",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        89,
+        283
+      ],
+      "sourceLevels": [
+        6
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Newsprint Ninja",
+      "source": "mob/mob_ninja.kfm",
+      "bodyTexture": "mob_ninja",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        69,
+        263
+      ],
+      "sourceLevels": [
+        3
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Newsprint Ninja Boss",
+      "source": "mob/mob_ninja.kfm",
+      "bodyTexture": "mob_ninja",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        457,
+        1158
+      ],
+      "sourceLevels": [
+        3,
+        2
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Nightmare Spider Toad",
+      "source": "mob/mob_swampycannibalfrog.kfm",
+      "bodyTexture": "mob_swampycannibalfrog",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        563
+      ],
+      "sourceLevels": [
+        16
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Nightstalker Ninja",
+      "source": "mob/mob_ninja.kfm",
+      "bodyTexture": "mob_ninja",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        479,
+        1254
+      ],
+      "sourceLevels": [
+        6
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Nitrosickle",
+      "source": "mob/mob_sawbike.kfm",
+      "bodyTexture": "mob_sawbike",
+      "secondaryTexture": "null",
+      "npcIds": [
+        535
+      ],
+      "sourceLevels": [
+        15
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Noxious Spawn",
+      "source": "mob/mob_gasspawn.kfm",
+      "bodyTexture": "mob_gasspawn",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        63,
+        257
+      ],
+      "sourceLevels": [
+        2
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Ogre Overlord",
+      "source": "mob/mob_oilmonster.kfm",
+      "bodyTexture": "mob_oilmonster",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        592
+      ],
+      "sourceLevels": [
+        23
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Oil Ogre",
+      "source": "mob/mob_oilmonster.kfm",
+      "bodyTexture": "mob_oilmonster",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        204,
+        398,
+        2676
+      ],
+      "sourceLevels": [
+        23,
+        1
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Omega Arachnid",
+      "source": "mob/mob_redwolfheadspider.kfm",
+      "bodyTexture": "mob_redwolfheadspider",
+      "secondaryTexture": "null",
+      "npcIds": [
+        572
+      ],
+      "sourceLevels": [
+        18
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Overclocked Ramcycle",
+      "source": "mob/mob_bicyclegoral.kfm",
+      "bodyTexture": "mob_bicyclegoral",
+      "secondaryTexture": "mob_bicyclegoral",
+      "npcIds": [
+        524
+      ],
+      "sourceLevels": [
+        12
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Overgrown Ghastly Growth",
+      "source": "mob/mob_crazyguardianent.kfm",
+      "bodyTexture": "mob_crazyguardianent",
+      "secondaryTexture": "null",
+      "npcIds": [
+        633
+      ],
+      "sourceLevels": [
+        32
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Overgrown Grime Serpent",
+      "source": "mob/mob_swampysnake.kfm",
+      "bodyTexture": "mob_swampysnake",
+      "secondaryTexture": "null",
+      "npcIds": [
+        609
+      ],
+      "sourceLevels": [
+        25
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Overgrown Timber Terror",
+      "source": "mob/mob_madtreant.kfm",
+      "bodyTexture": "mob_madtreant",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        509
+      ],
+      "sourceLevels": [
+        10
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Oversized Streetgrinder",
+      "source": "mob/mob_cleaner.kfm",
+      "bodyTexture": "mob_cleaner",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        529
+      ],
+      "sourceLevels": [
+        13
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Pack Arachnid",
+      "source": "mob/mob_redwolfheadspider.kfm",
+      "bodyTexture": "mob_redwolfheadspider",
+      "secondaryTexture": "null",
+      "npcIds": [
+        132,
+        326
+      ],
+      "sourceLevels": [
+        12
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Pack Arachnid Leader",
+      "source": "mob/mob_redwolfheadspider.kfm",
+      "bodyTexture": "mob_redwolfheadspider",
+      "secondaryTexture": "null",
+      "npcIds": [
+        520
+      ],
+      "sourceLevels": [
+        12
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Painsaw",
+      "source": "mob/mob_powersaw.kfm",
+      "bodyTexture": "mob_powersaw",
+      "secondaryTexture": "mob_powersaw",
+      "npcIds": [
+        68,
+        262,
+        1157
+      ],
+      "sourceLevels": [
+        3
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Pesky Pony",
+      "source": "mob/mob_tablehorse.kfm",
+      "bodyTexture": "mob_tablehorse_a",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        86,
+        280
+      ],
+      "sourceLevels": [
+        5
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Petroleum Punk",
+      "source": "mob/mob_lubricator.kfm",
+      "bodyTexture": "mob_lubricator",
+      "secondaryTexture": "null",
+      "npcIds": [
+        113,
+        307
+      ],
+      "sourceLevels": [
+        3
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Petroleum Thug",
+      "source": "mob/mob_lubricator.kfm",
+      "bodyTexture": "mob_lubricator",
+      "secondaryTexture": "null",
+      "npcIds": [
+        78,
+        272,
+        466
+      ],
+      "sourceLevels": [
+        4
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Pharaoh Creep",
+      "source": "mob/mob_mummy.kfm",
+      "bodyTexture": "mob_mummy",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        223,
+        417
+      ],
+      "sourceLevels": [
+        24
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Pharaoh Freak",
+      "source": "mob/npc_deedee.kfm",
+      "bodyTexture": "npc_deedee",
+      "secondaryTexture": "null",
+      "npcIds": [
+        229,
+        423,
+        617
+      ],
+      "sourceLevels": [
+        27
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Pharaoh Joe",
+      "source": "mob/mob_mummy.kfm",
+      "bodyTexture": "mob_mummy",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        611
+      ],
+      "sourceLevels": [
+        24
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Plug Bug",
+      "source": "mob/mob_caterpillar.kfm",
+      "bodyTexture": "mob_caterpillar_a",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        58,
+        252,
+        446
+      ],
+      "sourceLevels": [
+        1
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Pneumatic Bear",
+      "source": "mob/mob_bear.kfm",
+      "bodyTexture": "mob_bear",
+      "secondaryTexture": "mob_bear",
+      "npcIds": [
+        211,
+        405
+      ],
+      "sourceLevels": [
+        22
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Pneumatic Bear Nightmare",
+      "source": "mob/mob_bear.kfm",
+      "bodyTexture": "mob_bear",
+      "secondaryTexture": "mob_bear",
+      "npcIds": [
+        599
+      ],
+      "sourceLevels": [
+        22
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Power Painsaw",
+      "source": "mob/mob_powersaw.kfm",
+      "bodyTexture": "mob_powersaw",
+      "secondaryTexture": "mob_powersaw",
+      "npcIds": [
+        90,
+        284
+      ],
+      "sourceLevels": [
+        6
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "President Freakfrog",
+      "source": "mob/mob_swampycannibalfrog.kfm",
+      "bodyTexture": "mob_swampycannibalfrog",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        583
+      ],
+      "sourceLevels": [
+        19
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Prize Lamprey",
+      "source": "mob/mob_hagenbar.kfm",
+      "bodyTexture": "mob_hagenbar",
+      "secondaryTexture": "null",
+      "npcIds": [
+        614
+      ],
+      "sourceLevels": [
+        26
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Pushy Jerk-O-Lantern",
+      "source": "mob/mob_jackolantern.kfm",
+      "bodyTexture": "mob_jackolantern",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        508
+      ],
+      "sourceLevels": [
+        10
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Putrid Spawn",
+      "source": "mob/mob_gasspawn.kfm",
+      "bodyTexture": "mob_gasspawn",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        203,
+        397
+      ],
+      "sourceLevels": [
+        23
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Putrid Spawn Revolter",
+      "source": "mob/mob_gasspawn.kfm",
+      "bodyTexture": "mob_gasspawn",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        591
+      ],
+      "sourceLevels": [
+        23
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Queen Coldblood",
+      "source": "mob/mob_lizardking.kfm",
+      "bodyTexture": "mob_lizardking",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2106
+      ],
+      "sourceLevels": [
+        29
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Queen Fusionfly",
+      "source": "mob/mob_varietydragonflies.kfm",
+      "bodyTexture": "mob_varietydragonflies",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2115
+      ],
+      "sourceLevels": [
+        32
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Queen Skeeter",
+      "source": "mob/mob_greenhellmosquito.kfm",
+      "bodyTexture": "mob_greenhellmosquito",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        514
+      ],
+      "sourceLevels": [
+        11
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Rabid Arachnid",
+      "source": "mob/mob_redwolfheadspider.kfm",
+      "bodyTexture": "mob_redwolfheadspider",
+      "secondaryTexture": "null",
+      "npcIds": [
+        161,
+        355
+      ],
+      "sourceLevels": [
+        14
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Rabid Arachnid Leader",
+      "source": "mob/mob_redwolfheadspider.kfm",
+      "bodyTexture": "mob_redwolfheadspider",
+      "secondaryTexture": "null",
+      "npcIds": [
+        549
+      ],
+      "sourceLevels": [
+        14
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Raging Fossil Crawler",
+      "source": "mob/mob_almonster.kfm",
+      "bodyTexture": "mob_almonster",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2097
+      ],
+      "sourceLevels": [
+        28
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Ramcycle",
+      "source": "mob/mob_bicyclegoral.kfm",
+      "bodyTexture": "mob_bicyclegoral",
+      "secondaryTexture": "mob_bicyclegoral",
+      "npcIds": [
+        136,
+        330
+      ],
+      "sourceLevels": [
+        12
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Range1",
+      "source": "mob/mob_ant.kfm",
+      "bodyTexture": "mob_ant",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1545
+      ],
+      "sourceLevels": [
+        1
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Range10",
+      "source": "mob/mob_ant.kfm",
+      "bodyTexture": "mob_ant",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1554
+      ],
+      "sourceLevels": [
+        10
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Range11",
+      "source": "mob/mob_ant.kfm",
+      "bodyTexture": "mob_ant",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1555
+      ],
+      "sourceLevels": [
+        11
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Range12",
+      "source": "mob/mob_ant.kfm",
+      "bodyTexture": "mob_ant",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1556
+      ],
+      "sourceLevels": [
+        12
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Range13",
+      "source": "mob/mob_ant.kfm",
+      "bodyTexture": "mob_ant",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1557
+      ],
+      "sourceLevels": [
+        13
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Range14",
+      "source": "mob/mob_ant.kfm",
+      "bodyTexture": "mob_ant",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1558
+      ],
+      "sourceLevels": [
+        14
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Range15",
+      "source": "mob/mob_ant.kfm",
+      "bodyTexture": "mob_ant",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1559
+      ],
+      "sourceLevels": [
+        15
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Range16",
+      "source": "mob/mob_ant.kfm",
+      "bodyTexture": "mob_ant",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1560
+      ],
+      "sourceLevels": [
+        16
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Range17",
+      "source": "mob/mob_ant.kfm",
+      "bodyTexture": "mob_ant",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1561
+      ],
+      "sourceLevels": [
+        17
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Range18",
+      "source": "mob/mob_ant.kfm",
+      "bodyTexture": "mob_ant",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1562
+      ],
+      "sourceLevels": [
+        18
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Range19",
+      "source": "mob/mob_ant.kfm",
+      "bodyTexture": "mob_ant",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1563
+      ],
+      "sourceLevels": [
+        19
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Range2",
+      "source": "mob/mob_ant.kfm",
+      "bodyTexture": "mob_ant",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1546
+      ],
+      "sourceLevels": [
+        2
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Range20",
+      "source": "mob/mob_ant.kfm",
+      "bodyTexture": "mob_ant",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1564
+      ],
+      "sourceLevels": [
+        20
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Range21",
+      "source": "mob/mob_ant.kfm",
+      "bodyTexture": "mob_ant",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1565
+      ],
+      "sourceLevels": [
+        21
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Range22",
+      "source": "mob/mob_ant.kfm",
+      "bodyTexture": "mob_ant",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1566
+      ],
+      "sourceLevels": [
+        22
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Range23",
+      "source": "mob/mob_ant.kfm",
+      "bodyTexture": "mob_ant",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1567
+      ],
+      "sourceLevels": [
+        23
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Range24",
+      "source": "mob/mob_ant.kfm",
+      "bodyTexture": "mob_ant",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1568
+      ],
+      "sourceLevels": [
+        24
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Range25",
+      "source": "mob/mob_ant.kfm",
+      "bodyTexture": "mob_ant",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1569
+      ],
+      "sourceLevels": [
+        25
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Range26",
+      "source": "mob/mob_ant.kfm",
+      "bodyTexture": "mob_ant",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1570
+      ],
+      "sourceLevels": [
+        26
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Range27",
+      "source": "mob/mob_ant.kfm",
+      "bodyTexture": "mob_ant",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1571
+      ],
+      "sourceLevels": [
+        27
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Range28",
+      "source": "mob/mob_ant.kfm",
+      "bodyTexture": "mob_ant",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1572
+      ],
+      "sourceLevels": [
+        28
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Range29",
+      "source": "mob/mob_ant.kfm",
+      "bodyTexture": "mob_ant",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1573
+      ],
+      "sourceLevels": [
+        29
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Range3",
+      "source": "mob/mob_ant.kfm",
+      "bodyTexture": "mob_ant",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1547
+      ],
+      "sourceLevels": [
+        3
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Range30",
+      "source": "mob/mob_ant.kfm",
+      "bodyTexture": "mob_ant",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1574
+      ],
+      "sourceLevels": [
+        30
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Range31",
+      "source": "mob/mob_ant.kfm",
+      "bodyTexture": "mob_ant",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1575
+      ],
+      "sourceLevels": [
+        31
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Range32",
+      "source": "mob/mob_ant.kfm",
+      "bodyTexture": "mob_ant",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1576
+      ],
+      "sourceLevels": [
+        32
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Range33",
+      "source": "mob/mob_ant.kfm",
+      "bodyTexture": "mob_ant",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1577
+      ],
+      "sourceLevels": [
+        33
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Range34",
+      "source": "mob/mob_ant.kfm",
+      "bodyTexture": "mob_ant",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1578
+      ],
+      "sourceLevels": [
+        34
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Range35",
+      "source": "mob/mob_ant.kfm",
+      "bodyTexture": "mob_ant",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1579
+      ],
+      "sourceLevels": [
+        35
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Range36",
+      "source": "mob/mob_ant.kfm",
+      "bodyTexture": "mob_ant",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1580
+      ],
+      "sourceLevels": [
+        36
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Range4",
+      "source": "mob/mob_ant.kfm",
+      "bodyTexture": "mob_ant",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1548
+      ],
+      "sourceLevels": [
+        4
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Range5",
+      "source": "mob/mob_ant.kfm",
+      "bodyTexture": "mob_ant",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1549
+      ],
+      "sourceLevels": [
+        5
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Range6",
+      "source": "mob/mob_ant.kfm",
+      "bodyTexture": "mob_ant",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1550
+      ],
+      "sourceLevels": [
+        6
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Range7",
+      "source": "mob/mob_ant.kfm",
+      "bodyTexture": "mob_ant",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1551
+      ],
+      "sourceLevels": [
+        7
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Range8",
+      "source": "mob/mob_ant.kfm",
+      "bodyTexture": "mob_ant",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1552
+      ],
+      "sourceLevels": [
+        8
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Range9",
+      "source": "mob/mob_ant.kfm",
+      "bodyTexture": "mob_ant",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        1553
+      ],
+      "sourceLevels": [
+        9
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Raving Gear Goon",
+      "source": "mob/mob_gear.kfm",
+      "bodyTexture": "mob_gear",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        518
+      ],
+      "sourceLevels": [
+        11
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Raving Mad Mower",
+      "source": "mob/mob_lawnmower.kfm",
+      "bodyTexture": "mob_lawnmower",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        481
+      ],
+      "sourceLevels": [
+        6
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Razor Mantis",
+      "source": "mob/mob_knifetoenail.kfm",
+      "bodyTexture": "mob_knifetoenail",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        238,
+        432
+      ],
+      "sourceLevels": [
+        27
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Regal Freak",
+      "source": "mob/mob_privatekokas.kfm",
+      "bodyTexture": "mob_privatekokas",
+      "secondaryTexture": "null",
+      "npcIds": [
+        629
+      ],
+      "sourceLevels": [
+        26
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Riot Rogue",
+      "source": "mob/mob_twoshield.kfm",
+      "bodyTexture": "mob_twoshield",
+      "secondaryTexture": "null",
+      "npcIds": [
+        178,
+        372
+      ],
+      "sourceLevels": [
+        19
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Riot Rogue Sergeant",
+      "source": "mob/mob_twoshield.kfm",
+      "bodyTexture": "mob_twoshield",
+      "secondaryTexture": "null",
+      "npcIds": [
+        566
+      ],
+      "sourceLevels": [
+        19
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Road Golem",
+      "source": "mob/mob_roadgorlem.kfm",
+      "bodyTexture": "mob_roadgorlem",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        62,
+        256,
+        1145
+      ],
+      "sourceLevels": [
+        2
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Roadblock Rhino",
+      "source": "mob/npc_deedee.kfm",
+      "bodyTexture": "npc_deedee",
+      "secondaryTexture": "null",
+      "npcIds": [
+        159,
+        353,
+        547
+      ],
+      "sourceLevels": [
+        16
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Rockwood Creeper",
+      "source": "mob/mob_madtreant.kfm",
+      "bodyTexture": "mob_madtreant",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        578
+      ],
+      "sourceLevels": [
+        21
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Rogue Boarbull",
+      "source": "mob/mob_griffonroar.kfm",
+      "bodyTexture": "mob_griffonroar",
+      "secondaryTexture": "null",
+      "npcIds": [
+        573
+      ],
+      "sourceLevels": [
+        18
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Rudy",
+      "source": "mob/mob_blowfish.kfm",
+      "bodyTexture": "mob_blowfish",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        3285
+      ],
+      "sourceLevels": [
+        12
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Sand Creep",
+      "source": "mob/mob_sandmon.kfm",
+      "bodyTexture": "mob_sandmon",
+      "secondaryTexture": "null",
+      "npcIds": [
+        1727,
+        1728,
+        1729
+      ],
+      "sourceLevels": [
+        18
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Sawbreaker",
+      "source": "mob/mob_rshell.kfm",
+      "bodyTexture": "mob_rshell",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        213,
+        407
+      ],
+      "sourceLevels": [
+        24
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Scoria Cephalopod",
+      "source": "mob/mob_planetterror.kfm",
+      "bodyTexture": "mob_planetterror",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        2454,
+        2455
+      ],
+      "sourceLevels": [
+        36
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Scrap Scrapper",
+      "source": "mob/mob_ruingear.kfm",
+      "bodyTexture": "mob_ruingear",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        112,
+        306
+      ],
+      "sourceLevels": [
+        9
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Scrap Tyrant",
+      "source": "mob/mob_junkcar.kfm",
+      "bodyTexture": "mob_junkcar",
+      "secondaryTexture": "null",
+      "npcIds": [
+        115,
+        309
+      ],
+      "sourceLevels": [
+        9
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Scrap Tyrant Champion",
+      "source": "mob/mob_junkcar.kfm",
+      "bodyTexture": "mob_junkcar",
+      "secondaryTexture": "null",
+      "npcIds": [
+        503
+      ],
+      "sourceLevels": [
+        9
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Scrapper Superior",
+      "source": "mob/mob_ruingear.kfm",
+      "bodyTexture": "mob_ruingear",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        500
+      ],
+      "sourceLevels": [
+        9
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Scribble Spawn",
+      "source": "mob/mob_scribblespawn.kfm",
+      "bodyTexture": "mob_scribblespawn",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        122,
+        316,
+        1466
+      ],
+      "sourceLevels": [
+        10
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Scythe Simian",
+      "source": "mob/mob_flyingmonkey.kfm",
+      "bodyTexture": "mob_flyingmonkey",
+      "secondaryTexture": "null",
+      "npcIds": [
+        239,
+        433
+      ],
+      "sourceLevels": [
+        27
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Serious Spawn",
+      "source": "mob/mob_spawn.kfm",
+      "bodyTexture": "spawn11_green",
+      "secondaryTexture": "mob_gasspawn",
+      "npcIds": [
+        67,
+        261,
+        455
+      ],
+      "sourceLevels": [
+        3
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Sewer Creeper",
+      "source": "mob/mob_drainage.kfm",
+      "bodyTexture": "mob_drainage",
+      "secondaryTexture": "null",
+      "npcIds": [
+        71,
+        265,
+        1165,
+        1182
+      ],
+      "sourceLevels": [
+        3
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Sewer Stalker",
+      "source": "mob/mob_drainage.kfm",
+      "bodyTexture": "mob_drainage",
+      "secondaryTexture": "null",
+      "npcIds": [
+        459,
+        1163
+      ],
+      "sourceLevels": [
+        3
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Shady Streetlight",
+      "source": "mob/mob_streetlight.kfm",
+      "bodyTexture": "mob_streetlight",
+      "secondaryTexture": "null",
+      "npcIds": [
+        156,
+        350,
+        1633
+      ],
+      "sourceLevels": [
+        16
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Shellslug",
+      "source": "mob/mob_turtleworm.kfm",
+      "bodyTexture": "mob_turtleworm",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2067,
+        2093
+      ],
+      "sourceLevels": [
+        35
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Shellworm",
+      "source": "mob/mob_turtleworm.kfm",
+      "bodyTexture": "mob_turtleworm",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2061,
+        2087
+      ],
+      "sourceLevels": [
+        33
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Shipwrecker",
+      "source": "mob/mob_shipwreck.kfm",
+      "bodyTexture": "mob_shipwreck",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        3183,
+        3184,
+        3185
+      ],
+      "sourceLevels": [
+        31
+      ],
+      "cachedModel": false
+    },
+    {
+      "name": "Shock Bug",
+      "source": "mob/mob_caterpillar.kfm",
+      "bodyTexture": "mob_caterpillar_a",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        54,
+        248,
+        442
+      ],
+      "sourceLevels": [
+        1
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Shocktangler",
+      "source": "mob/mob_cable.kfm",
+      "bodyTexture": "mob_cable",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        87,
+        281,
+        1253
+      ],
+      "sourceLevels": [
+        1
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "ShockTangler",
+      "source": "mob/mob_cable.kfm",
+      "bodyTexture": "mob_cable",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        2513
+      ],
+      "sourceLevels": [
+        1
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Short Fuse Dynamite Mouse",
+      "source": "mob/mob_dynamitemouse.kfm",
+      "bodyTexture": "mob_dynamitemouse",
+      "secondaryTexture": "mob_dynamitemouse",
+      "npcIds": [
+        527
+      ],
+      "sourceLevels": [
+        13
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Sickle Simian",
+      "source": "mob/mob_flyingmonkey.kfm",
+      "bodyTexture": "mob_flyingmonkey",
+      "secondaryTexture": "null",
+      "npcIds": [
+        234,
+        428,
+        1998
+      ],
+      "sourceLevels": [
+        27
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Sickle Simian Hunter",
+      "source": "mob/mob_flyingmonkey.kfm",
+      "bodyTexture": "mob_flyingmonkey",
+      "secondaryTexture": "null",
+      "npcIds": [
+        622
+      ],
+      "sourceLevels": [
+        27
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Sickly Noxoius Spawn",
+      "source": "mob/mob_gasspawn.kfm",
+      "bodyTexture": "mob_gasspawn",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        451
+      ],
+      "sourceLevels": [
+        2
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Silverback Motorilla",
+      "source": "mob/mob_motorgorilla.kfm",
+      "bodyTexture": "mob_motor_gorilla",
+      "secondaryTexture": "null",
+      "npcIds": [
+        522
+      ],
+      "sourceLevels": [
+        12
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Simian Reaper",
+      "source": "mob/mob_flyingmonkey.kfm",
+      "bodyTexture": "mob_flyingmonkey",
+      "secondaryTexture": "null",
+      "npcIds": [
+        627
+      ],
+      "sourceLevels": [
+        27
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Sir Cylomaster",
+      "source": "mob/mob_lizardbike.kfm",
+      "bodyTexture": "mob_lizardbike",
+      "secondaryTexture": "null",
+      "npcIds": [
+        523
+      ],
+      "sourceLevels": [
+        12
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Sir Skeeter",
+      "source": "mob/mob_greenhellmosquito.kfm",
+      "bodyTexture": "mob_greenhellmosquito",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        571
+      ],
+      "sourceLevels": [
+        17
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Skeeter Spawn",
+      "source": "mob/mob_greenhellmosquito.kfm",
+      "bodyTexture": "mob_greenhellmosquito",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        191,
+        385
+      ],
+      "sourceLevels": [
+        21
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Skull Basher",
+      "source": "mob/mob_ammonia.kfm",
+      "bodyTexture": "mob_ammonia",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2054,
+        2083
+      ],
+      "sourceLevels": [
+        31
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Skull Crusher",
+      "source": "mob/mob_ammonia.kfm",
+      "bodyTexture": "mob_ammonia",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2058,
+        2086
+      ],
+      "sourceLevels": [
+        32
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Sky Demon",
+      "source": "mob/mob_honet.kfm",
+      "bodyTexture": "mob_honet",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        587
+      ],
+      "sourceLevels": [
+        22
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Sky Drone",
+      "source": "mob/mob_honet.kfm",
+      "bodyTexture": "mob_honet",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        199,
+        393
+      ],
+      "sourceLevels": [
+        22
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Slag Cephalopod",
+      "source": "mob/mob_planetterror.kfm",
+      "bodyTexture": "mob_planetterror",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        2322,
+        2323
+      ],
+      "sourceLevels": [
+        35
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Slag Dragon",
+      "source": "mob/mob_drestone.kfm",
+      "bodyTexture": "mob_drestone",
+      "secondaryTexture": "mob_drestone",
+      "npcIds": [
+        632
+      ],
+      "sourceLevels": [
+        30
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Slime Serpent",
+      "source": "mob/mob_swampysnake.kfm",
+      "bodyTexture": "mob_swampysnake",
+      "secondaryTexture": "null",
+      "npcIds": [
+        176,
+        370
+      ],
+      "sourceLevels": [
+        16
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Slime Serpent Slicer",
+      "source": "mob/mob_swampysnake.kfm",
+      "bodyTexture": "mob_swampysnake",
+      "secondaryTexture": "null",
+      "npcIds": [
+        564
+      ],
+      "sourceLevels": [
+        16
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Slizzard",
+      "source": "mob/mob_fishmagician.kfm",
+      "bodyTexture": "mob_fishmagician",
+      "secondaryTexture": "mob_fishmagician",
+      "npcIds": [
+        228,
+        422
+      ],
+      "sourceLevels": [
+        26
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Slizzard Chieftan",
+      "source": "mob/mob_fishmagician.kfm",
+      "bodyTexture": "mob_fishmagician",
+      "secondaryTexture": "mob_fishmagician",
+      "npcIds": [
+        616
+      ],
+      "sourceLevels": [
+        26
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Sneaky Spawn",
+      "source": "mob/mob_spawn.kfm",
+      "bodyTexture": "spawn11_green",
+      "secondaryTexture": "mob_gasspawn",
+      "npcIds": [
+        82,
+        276
+      ],
+      "sourceLevels": [
+        4
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Sonic Scorpion",
+      "source": "mob/mob_soundscorpion.kfm",
+      "bodyTexture": "mob_soundscorpion",
+      "secondaryTexture": "null",
+      "npcIds": [
+        145,
+        339,
+        533
+      ],
+      "sourceLevels": [
+        14
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Spawn Simian",
+      "source": "mob/mob_flyingmonkey.kfm",
+      "bodyTexture": "mob_flyingmonkey",
+      "secondaryTexture": "null",
+      "npcIds": [
+        189,
+        383,
+        1635
+      ],
+      "sourceLevels": [
+        20,
+        18
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Spawn Simian Captain",
+      "source": "mob/mob_flyingmonkey.kfm",
+      "bodyTexture": "mob_flyingmonkey",
+      "secondaryTexture": "null",
+      "npcIds": [
+        577
+      ],
+      "sourceLevels": [
+        20
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Spider Toad",
+      "source": "mob/mob_swampycannibalfrog.kfm",
+      "bodyTexture": "mob_swampycannibalfrog",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        175,
+        369
+      ],
+      "sourceLevels": [
+        16
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Spinetingler",
+      "source": "mob/mob_ghost.kfm",
+      "bodyTexture": "mob_ghost",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        109,
+        303,
+        1342
+      ],
+      "sourceLevels": [
+        9
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Spiny Streetlight",
+      "source": "mob/mob_streetlight.kfm",
+      "bodyTexture": "mob_streetlight",
+      "secondaryTexture": "null",
+      "npcIds": [
+        57,
+        251,
+        445,
+        1143
+      ],
+      "sourceLevels": [
+        1
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Spooka",
+      "source": "mob/mob_ghost.kfm",
+      "bodyTexture": "mob_ghost",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        104,
+        298
+      ],
+      "sourceLevels": [
+        8
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Spooka Boo",
+      "source": "mob/mob_ghost.kfm",
+      "bodyTexture": "mob_ghost",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        492,
+        1269
+      ],
+      "sourceLevels": [
+        8
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Spooky Streetlight",
+      "source": "mob/mob_streetlight.kfm",
+      "bodyTexture": "mob_streetlight",
+      "secondaryTexture": "null",
+      "npcIds": [
+        119,
+        313
+      ],
+      "sourceLevels": [
+        10
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Squidshark Rex",
+      "source": "mob/mob_squidshark.kfm",
+      "bodyTexture": "mob_squidshark",
+      "secondaryTexture": "null",
+      "npcIds": [
+        3251,
+        3252,
+        3253
+      ],
+      "sourceLevels": [
+        29
+      ],
+      "cachedModel": false
+    },
+    {
+      "name": "Squish Fish",
+      "source": "mob/npc_deedee.kfm",
+      "bodyTexture": "npc_deedee",
+      "secondaryTexture": "null",
+      "npcIds": [
+        153,
+        347,
+        541
+      ],
+      "sourceLevels": [
+        15
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Squish Scaler",
+      "source": "mob/mob_warmfish.kfm",
+      "bodyTexture": "mob_warmfish",
+      "secondaryTexture": "null",
+      "npcIds": [
+        171,
+        365
+      ],
+      "sourceLevels": [
+        18
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Stalactitan",
+      "source": "mob/mob_stalactitegolem.kfm",
+      "bodyTexture": "mob_stalactitegolem",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2463,
+        2464,
+        2465
+      ],
+      "sourceLevels": [
+        36
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Stalactite Golem",
+      "source": "mob/mob_stalactitegolem.kfm",
+      "bodyTexture": "mob_stalactitegolem",
+      "secondaryTexture": "null",
+      "npcIds": [
+        3038
+      ],
+      "sourceLevels": [
+        36
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Stone Drake",
+      "source": "mob/mob_drestone.kfm",
+      "bodyTexture": "mob_drestone",
+      "secondaryTexture": "mob_drestone",
+      "npcIds": [
+        244,
+        438
+      ],
+      "sourceLevels": [
+        30
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Stone Scorpion",
+      "source": "mob/mob_stonescorpion.kfm",
+      "bodyTexture": "mob_stonescorpion",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        3186,
+        3187,
+        3188
+      ],
+      "sourceLevels": [
+        30
+      ],
+      "cachedModel": false
+    },
+    {
+      "name": "Street Sentinel",
+      "source": "mob/mob_tireman.kfm",
+      "bodyTexture": "mob_tireman",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        102,
+        296,
+        1260
+      ],
+      "sourceLevels": [
+        7
+      ],
+      "cachedModel": false
+    },
+    {
+      "name": "Streetcrusher",
+      "source": "mob/mob_cleaner.kfm",
+      "bodyTexture": "mob_cleaner",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        144,
+        338
+      ],
+      "sourceLevels": [
+        14
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Streetcrusher Maniac",
+      "source": "mob/mob_cleaner.kfm",
+      "bodyTexture": "mob_cleaner",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        532
+      ],
+      "sourceLevels": [
+        14
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Streetgrinder",
+      "source": "mob/mob_cleaner.kfm",
+      "bodyTexture": "mob_cleaner",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        141,
+        335
+      ],
+      "sourceLevels": [
+        13
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Striding Eel",
+      "source": "mob/mob_hagenbar.kfm",
+      "bodyTexture": "mob_hagenbar",
+      "secondaryTexture": "null",
+      "npcIds": [
+        164,
+        358
+      ],
+      "sourceLevels": [
+        15
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Striding Lamprey",
+      "source": "mob/mob_hagenbar.kfm",
+      "bodyTexture": "mob_hagenbar",
+      "secondaryTexture": "null",
+      "npcIds": [
+        226,
+        420,
+        1990
+      ],
+      "sourceLevels": [
+        26
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Super Extremospawn",
+      "source": "mob/mob_fusionextremesaurus.kfm",
+      "bodyTexture": "mob_fusionextremesaurus",
+      "secondaryTexture": "null",
+      "npcIds": [
+        511
+      ],
+      "sourceLevels": [
+        10
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Super Heavy Puncher",
+      "source": "mob/mob_heavymachinery.kfm",
+      "bodyTexture": "mob_heavymachinery",
+      "secondaryTexture": "null",
+      "npcIds": [
+        567
+      ],
+      "sourceLevels": [
+        19
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Super Sneaky Spawn",
+      "source": "mob/mob_spawn.kfm",
+      "bodyTexture": "spawn11_green",
+      "secondaryTexture": "mob_gasspawn",
+      "npcIds": [
+        470,
+        1251
+      ],
+      "sourceLevels": [
+        4,
+        5
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Super Spooky Streetlight",
+      "source": "mob/mob_streetlight.kfm",
+      "bodyTexture": "mob_streetlight",
+      "secondaryTexture": "null",
+      "npcIds": [
+        507
+      ],
+      "sourceLevels": [
+        10
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Super Street Sentinel",
+      "source": "mob/mob_tireman.kfm",
+      "bodyTexture": "mob_tireman",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        490,
+        1259
+      ],
+      "sourceLevels": [
+        7
+      ],
+      "cachedModel": false
+    },
+    {
+      "name": "Supercharged Caterplug",
+      "source": "mob/mob_caterpillar.kfm",
+      "bodyTexture": "mob_caterpillar_a",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        468
+      ],
+      "sourceLevels": [
+        4
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Superfused Squish Scaler",
+      "source": "mob/mob_warmfish.kfm",
+      "bodyTexture": "mob_warmfish",
+      "secondaryTexture": "null",
+      "npcIds": [
+        559
+      ],
+      "sourceLevels": [
+        18
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Superpower Painsaw",
+      "source": "mob/mob_powersaw.kfm",
+      "bodyTexture": "mob_powersaw",
+      "secondaryTexture": "mob_powersaw",
+      "npcIds": [
+        478
+      ],
+      "sourceLevels": [
+        6
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Surging Killowatt",
+      "source": "mob/mob_lightbulb.kfm",
+      "bodyTexture": "mob_lightbulb",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        603
+      ],
+      "sourceLevels": [
+        24
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Tall Shady Streetlight",
+      "source": "mob/mob_streetlight.kfm",
+      "bodyTexture": "mob_streetlight",
+      "secondaryTexture": "null",
+      "npcIds": [
+        544
+      ],
+      "sourceLevels": [
+        16
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Talon Titan",
+      "source": "mob/mob_titan.kfm",
+      "bodyTexture": "mob_titan",
+      "secondaryTexture": "mob_titan",
+      "npcIds": [
+        208,
+        402
+      ],
+      "sourceLevels": [
+        21
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Tank Terror",
+      "source": "mob/mob_oilcaskturtle.kfm",
+      "bodyTexture": "mob_oilcaskturtle",
+      "secondaryTexture": "null",
+      "npcIds": [
+        77,
+        271
+      ],
+      "sourceLevels": [
+        3
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Tar Titan",
+      "source": "mob/mob_titan.kfm",
+      "bodyTexture": "mob_titan",
+      "secondaryTexture": "mob_titan",
+      "npcIds": [
+        246,
+        440
+      ],
+      "sourceLevels": [
+        29
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Tar Tyrant",
+      "source": "mob/npc_deedee.kfm",
+      "bodyTexture": "npc_deedee",
+      "secondaryTexture": "null",
+      "npcIds": [
+        230,
+        424,
+        618
+      ],
+      "sourceLevels": [
+        27
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Tech Drone",
+      "source": "mob/mob_ant.kfm",
+      "bodyTexture": "mob_ant",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        60,
+        254,
+        1151,
+        1152,
+        2515
+      ],
+      "sourceLevels": [
+        2
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Tech Drone Prime",
+      "source": "mob/mob_ant.kfm",
+      "bodyTexture": "mob_ant",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        448
+      ],
+      "sourceLevels": [
+        2
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Tech Queen",
+      "source": "mob/mob_queenspider.kfm",
+      "bodyTexture": "mob_queenspider_a",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        59,
+        253,
+        1150
+      ],
+      "sourceLevels": [
+        2
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Tech Queen Widow",
+      "source": "mob/mob_queenspider.kfm",
+      "bodyTexture": "mob_queenspider_a",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        447,
+        1154,
+        1155
+      ],
+      "sourceLevels": [
+        2
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Tech Tunneler",
+      "source": "mob/mob_mole.kfm",
+      "bodyTexture": "mob_mole",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        98,
+        292,
+        1263
+      ],
+      "sourceLevels": [
+        7
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Tech Tunnerler 2.1",
+      "source": "mob/mob_mole.kfm",
+      "bodyTexture": "mob_mole",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        486
+      ],
+      "sourceLevels": [
+        7
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Tech Wing",
+      "source": "mob/mob_bat.kfm",
+      "bodyTexture": "mob_bat",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        99,
+        293,
+        2677
+      ],
+      "sourceLevels": [
+        7,
+        1
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Tentakiller",
+      "source": "mob/npc_deedee.kfm",
+      "bodyTexture": "npc_deedee",
+      "secondaryTexture": "null",
+      "npcIds": [
+        152,
+        346,
+        540
+      ],
+      "sourceLevels": [
+        15
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Terra Claw",
+      "source": "mob/mob_mussnado.kfm",
+      "bodyTexture": "mob_mussnado",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2460,
+        2461,
+        2462
+      ],
+      "sourceLevels": [
+        36
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Terrordactyl",
+      "source": "mob/mob_archaeopteryx.kfm",
+      "bodyTexture": "mob_archaeopteryx",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2041,
+        2074
+      ],
+      "sourceLevels": [
+        28
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Terrordactyl Screamer",
+      "source": "mob/mob_archaeopteryx.kfm",
+      "bodyTexture": "mob_archaeopteryx",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2099
+      ],
+      "sourceLevels": [
+        28
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Terrorpin",
+      "source": "mob/mob_snappingturtle.kfm",
+      "bodyTexture": "mob_snappingturtle",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        174,
+        368
+      ],
+      "sourceLevels": [
+        16
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Test Active Mob",
+      "source": "mob/mob_tirefinger.kfm",
+      "bodyTexture": "mob_tirefinger",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        636
+      ],
+      "sourceLevels": [
+        5
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Test Lord Fuse",
+      "source": "mob/mob_fuselord.kfm",
+      "bodyTexture": "mob_fuselord",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2567
+      ],
+      "sourceLevels": [
+        36
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Test Lord Fuse",
+      "source": "mob/mob_fuselord1.kfm",
+      "bodyTexture": "mob_fuselord",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2568
+      ],
+      "sourceLevels": [
+        36
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Test Lord Fuse",
+      "source": "mob/mob_fuselord2.kfm",
+      "bodyTexture": "mob_fuselord",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2569
+      ],
+      "sourceLevels": [
+        36
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Test Lord Fuse's Left Arm",
+      "source": "mob/mob_fuselord_left_arm.kfm",
+      "bodyTexture": "mob_fuselord_left_arm",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2571
+      ],
+      "sourceLevels": [
+        36
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Test Lord Fuse's Right Arm",
+      "source": "mob/mob_fuselord_right_arm.kfm",
+      "bodyTexture": "mob_fuselord_right_arm",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2570
+      ],
+      "sourceLevels": [
+        36
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Test P&A Mob",
+      "source": "mob/fusion_ben.kfm",
+      "bodyTexture": "fusion_ben",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        637
+      ],
+      "sourceLevels": [
+        1
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Test Passive Mob",
+      "source": "mob/mob_spawn.kfm",
+      "bodyTexture": "spawn11_green",
+      "secondaryTexture": "mob_gasspawn",
+      "npcIds": [
+        635
+      ],
+      "sourceLevels": [
+        7
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Thuggard",
+      "source": "mob/mob_bshell.kfm",
+      "bodyTexture": "mob_bshell",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        216,
+        410
+      ],
+      "sourceLevels": [
+        24
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Tiger Wolf",
+      "source": "mob/mob_camptiger.kfm",
+      "bodyTexture": "mob_camptiger",
+      "secondaryTexture": "null",
+      "npcIds": [
+        124,
+        318
+      ],
+      "sourceLevels": [
+        11
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Tiger Wolf Pack Leader",
+      "source": "mob/mob_camptiger.kfm",
+      "bodyTexture": "mob_camptiger",
+      "secondaryTexture": "null",
+      "npcIds": [
+        512
+      ],
+      "sourceLevels": [
+        11
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Timber Creeper",
+      "source": "mob/mob_madtreant.kfm",
+      "bodyTexture": "mob_madtreant",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        190,
+        384
+      ],
+      "sourceLevels": [
+        21
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Timber Hulk",
+      "source": "mob/mob_madtreant.kfm",
+      "bodyTexture": "mob_madtreant",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        198,
+        392
+      ],
+      "sourceLevels": [
+        20
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Timber Terror",
+      "source": "mob/mob_madtreant.kfm",
+      "bodyTexture": "mob_madtreant",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        121,
+        315
+      ],
+      "sourceLevels": [
+        10
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Time Deviant",
+      "source": "mob/mob_fusionparadox.kfm",
+      "bodyTexture": "mob_fusionparadox",
+      "secondaryTexture": "null",
+      "npcIds": [
+        3254,
+        3255,
+        3256
+      ],
+      "sourceLevels": [
+        31
+      ],
+      "cachedModel": false
+    },
+    {
+      "name": "Titanic Talon Titan",
+      "source": "mob/mob_titan.kfm",
+      "bodyTexture": "mob_titan",
+      "secondaryTexture": "mob_titan",
+      "npcIds": [
+        596
+      ],
+      "sourceLevels": [
+        21
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Titanic Tar Titan",
+      "source": "mob/mob_titan.kfm",
+      "bodyTexture": "mob_titan",
+      "secondaryTexture": "mob_titan",
+      "npcIds": [
+        634
+      ],
+      "sourceLevels": [
+        29
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Tootie",
+      "source": "mob/mob_blowfish.kfm",
+      "bodyTexture": "mob_blowfish",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        3288
+      ],
+      "sourceLevels": [
+        30
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Towering Doom Strider",
+      "source": "mob/mob_giantcrap.kfm",
+      "bodyTexture": "mob_giantcrap",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2127
+      ],
+      "sourceLevels": [
+        36
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Toxic Spawn",
+      "source": "mob/mob_gasspawn.kfm",
+      "bodyTexture": "mob_gasspawn",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        76,
+        270
+      ],
+      "sourceLevels": [
+        4
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Tread Head",
+      "source": "mob/mob_tirefinger.kfm",
+      "bodyTexture": "mob_tirefinger",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        79,
+        273,
+        1160
+      ],
+      "sourceLevels": [
+        3
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Treadnaught",
+      "source": "mob/mob_tirefinger.kfm",
+      "bodyTexture": "mob_tirefinger",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        100,
+        294
+      ],
+      "sourceLevels": [
+        7
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Treadnaught Captain",
+      "source": "mob/mob_tirefinger.kfm",
+      "bodyTexture": "mob_tirefinger",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        488
+      ],
+      "sourceLevels": [
+        7
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Triceraclaw",
+      "source": "mob/mob_triceratops.kfm",
+      "bodyTexture": "mob_triceratops",
+      "secondaryTexture": "null",
+      "npcIds": [
+        1991,
+        2046
+      ],
+      "sourceLevels": [
+        28
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Triceraclaw Momma",
+      "source": "mob/mob_triceratops.kfm",
+      "bodyTexture": "mob_triceratops",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2100
+      ],
+      "sourceLevels": [
+        28
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Triceraclaw Poppa",
+      "source": "mob/mob_triceratops.kfm",
+      "bodyTexture": "mob_triceratops",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2104
+      ],
+      "sourceLevels": [
+        28
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Triceraclops",
+      "source": "mob/mob_triceratops.kfm",
+      "bodyTexture": "mob_triceratops",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2042,
+        2075
+      ],
+      "sourceLevels": [
+        28
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Turbo Jetskill",
+      "source": "mob/mob_dolbelzet.kfm",
+      "bodyTexture": "mob_dolbelzet",
+      "secondaryTexture": "null",
+      "npcIds": [
+        172,
+        366
+      ],
+      "sourceLevels": [
+        18
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Turbo Jetskill Slayer",
+      "source": "mob/mob_dolbelzet.kfm",
+      "bodyTexture": "mob_dolbelzet",
+      "secondaryTexture": "null",
+      "npcIds": [
+        560
+      ],
+      "sourceLevels": [
+        18
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Turbo Ventilator",
+      "source": "mob/mob_ventilatordino.kfm",
+      "bodyTexture": "mob_ventilatordino",
+      "secondaryTexture": "null",
+      "npcIds": [
+        515
+      ],
+      "sourceLevels": [
+        11
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Two-Ton Tread Head",
+      "source": "mob/mob_tirefinger.kfm",
+      "bodyTexture": "mob_tirefinger",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        467,
+        1159
+      ],
+      "sourceLevels": [
+        3
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Ultramagno Beetle",
+      "source": "mob/mob_goldbug.kfm",
+      "bodyTexture": "mob_goldbug_a",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        81,
+        275,
+        1252
+      ],
+      "sourceLevels": [
+        4
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Ultramega Destroyusall",
+      "source": "mob/mob_themepark.kfm",
+      "bodyTexture": "mob_themepark",
+      "secondaryTexture": "null",
+      "npcIds": [
+        1723
+      ],
+      "sourceLevels": [
+        13
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Unisickle",
+      "source": "mob/mob_sawbike.kfm",
+      "bodyTexture": "mob_sawbike",
+      "secondaryTexture": "null",
+      "npcIds": [
+        147,
+        341
+      ],
+      "sourceLevels": [
+        15
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Ventilator",
+      "source": "mob/mob_ventilatordino.kfm",
+      "bodyTexture": "mob_ventilatordino",
+      "secondaryTexture": "null",
+      "npcIds": [
+        127,
+        321
+      ],
+      "sourceLevels": [
+        11
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Verminator",
+      "source": "mob/mob_cannon.kfm",
+      "bodyTexture": "mob_cannon",
+      "secondaryTexture": "null",
+      "npcIds": [
+        116,
+        310
+      ],
+      "sourceLevels": [
+        3
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Vile Cabinet",
+      "source": "mob/mob_cabinester.kfm",
+      "bodyTexture": "mob_cabinester",
+      "secondaryTexture": "null",
+      "npcIds": [
+        140,
+        334,
+        1627
+      ],
+      "sourceLevels": [
+        13,
+        14
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Vile Defiler",
+      "source": "mob/mob_cabinester.kfm",
+      "bodyTexture": "mob_cabinester",
+      "secondaryTexture": "null",
+      "npcIds": [
+        528
+      ],
+      "sourceLevels": [
+        13
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Vilgax",
+      "source": "mob/npc_vilgax.kfm",
+      "bodyTexture": "npc_vilgax",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2221,
+        2913
+      ],
+      "sourceLevels": [
+        24,
+        26
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Volcano Toad",
+      "source": "mob/mob_fireasiantoad.kfm",
+      "bodyTexture": "mob_fireasiantoad",
+      "secondaryTexture": "null",
+      "npcIds": [
+        240,
+        434
+      ],
+      "sourceLevels": [
+        27
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Volcano Vaulter",
+      "source": "mob/mob_beastman.kfm",
+      "bodyTexture": "mob_beastman",
+      "secondaryTexture": "mob_beastman",
+      "npcIds": [
+        232,
+        426
+      ],
+      "sourceLevels": [
+        27
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Weird Welder",
+      "source": "mob/mob_welder.kfm",
+      "bodyTexture": "mob_welder",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        128,
+        322
+      ],
+      "sourceLevels": [
+        11
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Weird Welder Foreman",
+      "source": "mob/mob_welder.kfm",
+      "bodyTexture": "mob_welder",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        516
+      ],
+      "sourceLevels": [
+        11
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Wild Bossfish",
+      "source": "mob/mob_lakeironfish.kfm",
+      "bodyTexture": "mob_lakeironfish",
+      "secondaryTexture": "mob_lakeironfish",
+      "npcIds": [
+        553
+      ],
+      "sourceLevels": [
+        15
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Wild Cogfish",
+      "source": "mob/mob_lakeironfish.kfm",
+      "bodyTexture": "mob_lakeironfish",
+      "secondaryTexture": "mob_lakeironfish",
+      "npcIds": [
+        165,
+        359
+      ],
+      "sourceLevels": [
+        15
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Wild Skeeter",
+      "source": "mob/mob_greenhellmosquito.kfm",
+      "bodyTexture": "mob_greenhellmosquito",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        126,
+        320
+      ],
+      "sourceLevels": [
+        11
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Wild Stinger",
+      "source": "mob/mob_greenhellmosquito.kfm",
+      "bodyTexture": "mob_greenhellmosquito",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        133,
+        327
+      ],
+      "sourceLevels": [
+        12
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Wild Wing",
+      "source": "mob/mob_bat.kfm",
+      "bodyTexture": "mob_bat",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        188,
+        382
+      ],
+      "sourceLevels": [
+        20
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Wild Wing King",
+      "source": "mob/mob_bat.kfm",
+      "bodyTexture": "mob_bat",
+      "secondaryTexture": "spawn11_green",
+      "npcIds": [
+        576
+      ],
+      "sourceLevels": [
+        20
+      ],
+      "cachedModel": true
+    },
+    {
+      "name": "Wooly Behemoth",
+      "source": "mob/mob_mammoth.kfm",
+      "bodyTexture": "mob_mammoth",
+      "secondaryTexture": "null",
+      "npcIds": [
+        2055,
+        2084
+      ],
+      "sourceLevels": [
+        31
+      ],
+      "cachedModel": true
+    }
+  ]
+}

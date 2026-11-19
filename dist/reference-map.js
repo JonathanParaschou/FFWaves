@@ -23,7 +23,7 @@ export const REFERENCE_MAP={
  split:100,north:-100,zones:['DEXLABS BUNKER','HELP ROOM','UPPER HOLDOUT'],palette:{sky:'#203c55',top:'#0a162c',fog:'#203c55',ground:'#53665d',sun:'#abc6ed',light:1.4,accent:'#79d6e4'},
  dressing:buildBunkerDressingPlan(data),reference:{asset:'reference-bunker',data,source:data.source,review},enemyHeightCap:1.8,
  buildings:[],cover:[],dividers:[],walls:[],trunks:[],fixtureColliders:[],architecture:[],overhead:[],platforms:[],ramps:[],paths:[],districts:[],wayfinding:[],trees:[],rooms:[],gates,stations,spawns,
- enemies:{base:'spawn',ranged:'gas',runner:'spidertoad',elite:'asphalt'},enemyNames:['Fusion Spawn','Noxious Spawn','Spider Toad','Asphalt Destroyer'],
+ enemies:{base:'spawn',ranged:'gas',runner:'spidertoad',elite:'asphalt'},enemyNames:['Fusion Spawn','Noxious Spawn','Spider Toad','Asphalt Freak Father'],
  landmarks:[{x:0,z:16,name:'EQUIPMENT INTAKE'},{x:12,z:-11,name:'CONTAINMENT'},{x:8,z:-11,name:'OBSERVATION',floorY:3.6}],
  checkpoints:review.cameraCheckpoints.map(c=>({name:c.id.replaceAll('-',' '),position:c.eye,target:c.target}))
 };

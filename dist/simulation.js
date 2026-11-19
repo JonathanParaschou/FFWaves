@@ -7,24 +7,12 @@ import {WEAPONS,MELEE_WEAPONS,RARITIES,rollWeapon} from './weapons.js';
 import {movementState,updateMovement} from './movement.js';
 import {roundTuning} from './rounds.js';
 export {WEAPONS,RARITIES};
-export const ENEMY_TYPES={
-  spawn:{name:'Fusion Spawn',asset:'enemy-spawn',hp:64,speed:2.05,damage:16,radius:.65,height:1.6,reward:70},
-  gas:{name:'Noxious Spawn',asset:'enemy-gasspawn',hp:90,speed:1.7,damage:13,radius:.65,height:1.9,reward:90,ranged:true},
-  robo:{name:'Fusion Enforcer',asset:'enemy-robo',hp:210,speed:1.45,damage:25,radius:.9,height:2.8,reward:130},
-  asphalt:{name:'Asphalt Destroyer',asset:'enemy-asphalt',hp:900,speed:1.5,damage:33,radius:1.3,height:4.1,reward:500,elite:true},
-  spidertoad:{name:'Spider Toad',asset:'enemy-spidertoad',hp:80,speed:2.85,damage:15,radius:.6,height:1.25,reward:90,runner:true},
-  skeeter:{name:'Wild Stinger',asset:'enemy-skeeter',hp:68,speed:2.3,damage:12,radius:.5,height:1.4,hover:.65,reward:90,ranged:true},
-  stalker:{name:'Canyon Stalker',asset:'enemy-stalker',hp:125,speed:3.1,damage:21,radius:.65,height:2.3,reward:120,runner:true},
-  growth:{name:'Ghoulish Growth',asset:'enemy-growth',hp:1000,speed:1.25,damage:36,radius:1.3,height:4.5,reward:520,elite:true,slam:true},
-  dreadhead:{name:'Dread Head',asset:'enemy-dreadhead',hp:85,speed:1.9,damage:18,radius:.65,height:1.9,reward:75},
-  shocktangler:{name:'Shocktangler',asset:'enemy-shocktangler',hp:105,speed:1.65,damage:15,radius:.65,height:2.1,reward:100,ranged:true},
-  unisickle:{name:'Unisickle',asset:'enemy-unisickle',hp:155,speed:3.25,damage:23,radius:.65,height:2.25,reward:130,runner:true},
-  packarachnid:{name:'Pack Arachnid',asset:'enemy-packarachnid',hp:60,speed:2.3,damage:15,radius:.6,height:1.4,reward:70},
-  crashloader:{name:'Crash Loader',asset:'enemy-crashloader',hp:85,speed:2.1,damage:18,radius:.65,height:2.2,reward:75},
-  scraptyrant:{name:'Scrap Tyrant',asset:'enemy-scraptyrant',hp:155,speed:3.15,damage:23,radius:.7,height:2.05,reward:130,runner:true},
-  junkasaurus:{name:'Junkasaurus Wrecks',asset:'enemy-junkasaurus',hp:1200,speed:1.5,damage:36,radius:1.3,height:4.6,reward:550,elite:true,slam:true},
-  streetgrinder:{name:'Streetgrinder',asset:'enemy-streetgrinder',hp:1100,speed:1.65,damage:34,radius:1.2,height:3.7,reward:550,elite:true,slam:true}
-};
+import {ENEMY_TYPES} from './enemy-roster.js';
+export {ENEMY_TYPES} from './enemy-roster.js';
+import {planEnemyWave,takeEnemySpawn} from './enemy-director.js';
+import {moveWithActors} from './actor-collision.js';
+import {launchEnemyVolley,advanceEnemyProjectile,enemyWindup,enemyRecovery} from './enemy-attacks.js';
+
 export class Survival {
   constructor(events={}){this.events=events;this.fieldKit=loadFieldKit();this.loadout=defaultLoadout();this.layout=new OutpostLayout();this.flow=new FlowField(this.layout);this.phase='menu';this.enemies=[];this.projectiles=[];this.drops=[];this.spawnQueue=[];this.wave=0;this.player=null;this.nextId=1;this.elapsed=0}
   selectMap(id){if(this.phase!=='menu')return false;setActiveMap(id);this.layout=new OutpostLayout();this.flow=new FlowField(this.layout);this.player=null;this.wave=0;this.enemies=[];this.spawnQueue=[];return true}
@@ -34,23 +22,23 @@ export class Survival {
   get weapon(){return WEAPONS[this.equipped?.id||'pistol']}
   addCredits(n){n=Math.round(n*(this.player.buffs?.bonus>0?1.5:1));this.player.credits+=n;this.player.totalCredits+=n;this.events.credits?.(n)}
   spend(n){if(this.player.credits<n){this.events.message?.(`NEED ${n-this.player.credits} MORE CREDITS`);return false}this.player.credits-=n;return true}
-  beginWave(){this.wave++;this.waveTime=0;const pool=activeMap.enemies,swarm=this.wave%4===0,tuning=roundTuning(this.wave),count=tuning.count+(swarm?6:0);this.waveKind=this.wave%5===0?'ELITE BREACH':swarm?'SURGE':this.wave>=3?'MIXED HORDE':'OUTBREAK';this.spawnQueue=Array.from({length:count},(_,i)=>this.wave>=3&&i%6===0?pool.runner:this.wave>=2&&i%4===0?pool.ranged:swarm&&i%5===0?pool.runner:pool.base);if(this.wave%5===0){for(let i=0;i<tuning.eliteCount;i++)this.spawnQueue.push(pool.elite)}if(swarm&&this.wave>=8&&activeMap.reinforcements)for(let i=8;i<this.spawnQueue.length;i+=9)this.spawnQueue[i]=activeMap.reinforcements[(i/9|0)%activeMap.reinforcements.length];this.spawnTimer=.1;this.events.wave?.(this.wave);}
+  beginWave(){this.wave++;this.waveTime=0;this.waveKind=this.wave%5===0?'ELITE BREACH':this.wave%4===0?'SURGE':this.wave>=3?'MIXED HORDE':'OUTBREAK';this.spawnQueue=planEnemyWave(this.wave,activeMap);this.spawnTimer=.1;this.events.wave?.(this.wave);}
   spawn(type){const cfg=ENEMY_TYPES[type],p=this.player;this.flow.update(p);const valid=SPAWNS.filter(s=>(s.zone===0||s.zone===1&&this.layout.unlocked.yard||s.zone===2&&this.layout.unlocked.garden)&&distance(s,p)>(activeMap.reference?7:15)&&!this.layout.blocked(s.x,s.z,.8,s)&&(!this.flow.reachable||this.flow.reachable(s)));let point=valid[Math.floor(Math.random()*valid.length)];if(!point){point=SPAWNS.filter(s=>s.zone===0&&(!this.flow.reachable||this.flow.reachable(s))).sort((a,b)=>distance(b,p)-distance(a,p))[0]}
-    const tuning=roundTuning(this.wave),hp=Math.round(cfg.hp*tuning.health);const e={id:this.nextId++,type,x:point.x+(Math.random()-.5),z:point.z+(Math.random()-.5),floorY:point.floorY,y:0,hp,maxHp:hp,speed:cfg.speed+tuning.speed*(cfg.elite?.45:1),damage:Math.round(cfg.damage*tuning.damage),radius:Math.min(cfg.radius,activeMap.reference?.5:Infinity),height:Math.min(cfg.height,activeMap.enemyHeightCap||Infinity),state:'move',timer:0,stun:0,flash:0,attackCooldown:Math.random()*1.5,spawnTime:this.elapsed,pathTimer:0,dead:false};if(this.layout.blocked(e.x,e.z,.7,e)||Math.abs(this.layout.height(e.x,e.z,e)-this.layout.height(point.x,point.z,point))>.4){e.x=point.x;e.z=point.z}this.enemies.push(e);this.events.spawn?.(e);return e}
+    const tuning=roundTuning(this.wave),hp=Math.round(cfg.hp*tuning.health);const e={id:this.nextId++,type,x:point.x+(Math.random()-.5),z:point.z+(Math.random()-.5),floorY:point.floorY,y:0,hp,maxHp:hp,speed:cfg.speed+tuning.speed*(cfg.elite?.45:1),damage:Math.round(cfg.damage*tuning.damage),radius:Math.min(cfg.radius,activeMap.reference?.5:Infinity),height:Math.min(cfg.height,activeMap.enemyHeightCap||Infinity),hover:cfg.hover||0,state:'move',timer:0,stun:0,flash:0,attackCooldown:Math.random()*1.5,spawnTime:this.elapsed,pathTimer:0,dead:false};if(this.layout.blocked(e.x,e.z,.7,e)||Math.abs(this.layout.height(e.x,e.z,e)-this.layout.height(point.x,point.z,point))>.4){e.x=point.x;e.z=point.z}this.enemies.push(e);this.events.spawn?.(e);return e}
   update(dt,input={x:0,z:0,sprint:false,jump:false}){if(this.phase!=='playing')return;dt=Math.min(dt,.05);const p=this.player;this.elapsed+=dt;this.waveTime+=dt;p.invuln=Math.max(0,p.invuln-dt);p.fireTimer=Math.max(0,p.fireTimer-dt);p.meleeTimer=Math.max(0,p.meleeTimer-dt);this.updateMelee(dt);p.energy=Math.min(100,p.energy+dt*2.0);p.cooldowns=p.cooldowns.map(c=>Math.max(0,c-dt));for(const key of Object.keys(p.buffs))p.buffs[key]=Math.max(0,p.buffs[key]-dt);
     if(p.reloadTimer>0){p.reloadTimer-=dt;if(p.reloadTimer<=0){const w=this.equipped,mag=this.magSize(w),amount=Math.min(mag-w.ammo,w.reserve);w.ammo+=amount;w.reserve-=amount;p.reloadTimer=0;this.events.reloadEnd?.()}}
     if(this.elapsed-p.hitAt>6&&p.hp<p.maxHp)p.hp=Math.min(p.maxHp,p.hp+dt*6);
-    updateMovement(p,input,this.layout,dt,this.events);this.updateBox(dt);
+    updateMovement(p,input,this.layout,dt,this.events,this.enemies);this.updateBox(dt);
     this.flow.update(p);
     if(this.intermission>0){this.intermission-=dt;if(this.intermission<=0){this.intermission=0;this.beginWave()}}
-    else if(this.spawnQueue.length&&this.enemies.filter(e=>!e.dead).length<22){this.spawnTimer-=dt;if(this.spawnTimer<=0){this.spawn(this.spawnQueue.shift());this.spawnTimer=roundTuning(this.wave).interval}}
+    else if(this.spawnQueue.length&&this.enemies.filter(e=>!e.dead).length<22){this.spawnTimer-=dt;if(this.spawnTimer<=0){const type=takeEnemySpawn(this.spawnQueue,this.enemies);if(type)this.spawn(type);this.spawnTimer=roundTuning(this.wave).interval}}
     for(const e of this.enemies){e.timer+=dt;e.flash=Math.max(0,e.flash-dt);if(e.dead)continue;e.attackCooldown=Math.max(0,e.attackCooldown-dt);if(e.stun>0){e.stun-=dt;e.state='stunned';if(e.stun<=0){e.state='move';e.timer=0}continue}
       const cfg=ENEMY_TYPES[e.type],d=distance(e,p),altitude=Math.abs(groundHeight(e.x,e.z,e)-groundHeight(p.x,p.z,p)-p.y);if(e.slow>0)e.slow=Math.max(0,e.slow-dt);if(p.buffs.stealth>0){e.state='search';continue}
-      if(e.state==='windup'){if(e.timer>=(cfg.slam?1.05:cfg.runner?.45:.65)){if(cfg.ranged&&d<23&&this.layout.clearSight(e,p,.1)){const len=distance(e,p)||1;this.projectiles.push({id:this.nextId++,x:e.x,z:e.z,y:groundHeight(e.x,e.z,e)+e.height*.65+(cfg.hover||0),dx:(p.x-e.x)/len*10,dz:(p.z-e.z)/len*10,dy:(groundHeight(p.x,p.z,p)+p.y+p.eyeHeight*.72-groundHeight(e.x,e.z,e)-e.height*.65-(cfg.hover||0))/Math.max(.2,len/10),life:0,damage:e.damage,color:e.type==='shocktangler'?'#7de4ff':'#b6ed61'});this.events.projectile?.(this.projectiles.at(-1))}else if(d<e.radius+(cfg.slam?3.1:1.6)&&altitude<1.8&&this.layout.clearSight(e,p,.05))this.hurt(e.damage,e);e.state='recover';e.timer=0;e.attackCooldown=1.3}}
+      if(e.state==='windup'){if(e.timer>=enemyWindup(cfg)){if(cfg.ranged&&d<23&&this.layout.clearSight(e,p,.1)){launchEnemyVolley(this,e,p);}else if(d<e.radius+(cfg.slam?3.1:1.6)&&altitude<1.8&&this.layout.clearSight(e,p,.05))this.hurt(e.damage,e);e.state='recover';e.timer=0;e.attackCooldown=enemyRecovery(cfg)}}
       else if(e.state==='recover'){if(e.timer>.6){e.state='move';e.timer=0}}
       else if((d<e.radius+(cfg.slam?2.7:1.15)&&altitude<1.8&&this.layout.clearSight(e,p,.05)||cfg.ranged&&d<18&&d>4&&this.layout.clearSight(e,p,.2))&&e.attackCooldown<=0){e.state='windup';e.timer=0;this.events.windup?.(e)}
-      else{e.state='move';if(d>e.radius+.65||altitude>1.8){const dir=this.flow.direction(e,p);let sx=0,sz=0;for(const other of this.enemies){if(other===e||other.dead||Math.abs(groundHeight(other.x,other.z,other)-groundHeight(e.x,e.z,e))>1.5)continue;const dd=distance(other,e),limit=e.radius+other.radius;if(dd<limit&&dd>.01){sx+=(e.x-other.x)/dd*(limit-dd)*2;sz+=(e.z-other.z)/dd*(limit-dd)*2}}this.layout.move(e,(dir.x*e.speed*(e.slow>0?.35:1)+sx)*dt,(dir.z*e.speed*(e.slow>0?.35:1)+sz)*dt,Math.min(e.radius,.65))}}}
-    for(const b of this.projectiles){if(b.dead)continue;b.life+=dt;b.x+=b.dx*dt;b.z+=b.dz*dt;b.y+=b.dy*dt;if(distance(b,p)<.8&&Math.abs(b.y-(groundHeight(p.x,p.z,p)+p.y+p.eyeHeight*.6))<p.eyeHeight*.55){this.hurt(b.damage,b);b.dead=true}else if(b.life>4||this.layout.blockedAtHeight(b.x,b.y,b.z,.05))b.dead=true}
+      else{e.state='move';if(d>e.radius+.65||altitude>1.8){const dir=this.flow.direction(e,p);let sx=0,sz=0;for(const other of this.enemies){if(other===e||other.dead||Math.abs(groundHeight(other.x,other.z,other)-groundHeight(e.x,e.z,e))>1.5)continue;const dd=distance(other,e),limit=e.radius+other.radius;if(dd<limit&&dd>.01){sx+=(e.x-other.x)/dd*(limit-dd)*2;sz+=(e.z-other.z)/dd*(limit-dd)*2}}moveWithActors(this.layout,e,(dir.x*e.speed*(e.slow>0?.35:1)+sx)*dt,(dir.z*e.speed*(e.slow>0?.35:1)+sz)*dt,Math.min(e.radius,.65),false,[p])}}}
+    for(const b of this.projectiles){if(b.dead)continue;const hit=advanceEnemyProjectile(b,dt,this.layout,[p]);if(hit)this.hurt(b.damage,b);if(b.dead)this.events.projectileImpact?.({...b})}this.projectiles=this.projectiles.filter(b=>!b.dead);
     for(const drop of this.drops){if(drop.dead)continue;drop.life-=dt;if(drop.life<=0)drop.dead=true;else if(distance(drop,p)<2&&Math.abs(groundHeight(drop.x,drop.z,drop)-groundHeight(p.x,p.z,p)-p.y)<1.5){drop.dead=true;this.pickup(drop)}}
     if(this.enemies.length>80)this.enemies=this.enemies.filter(e=>!e.dead||this.elapsed-e.deathTime<2);
     if(!this.intermission&&!this.spawnQueue.length&&!this.enemies.some(e=>!e.dead)){this.intermission=11;this.addCredits(150+this.wave*25);p.energy=Math.min(100,p.energy+22);if(this.wave>=10)this.extraction=true;this.events.waveClear?.(this.wave)}

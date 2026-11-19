@@ -53,6 +53,15 @@ The forty guns include the previous ten plus thirty source-backed additions acro
 
 ## Wave tuning
 
+The [forty-enemy roster](docs/ENEMY-ROSTER.md) now retires entry-level monsters
+and introduces stronger source models across five tiers. Living enemy bodies
+block walking, sprinting and slides in solo, server movement and client
+prediction; corpses remain passable. Five ranged projectile families have charge
+effects, visible cores/trails and swept hit detection. Co-op launch/impact events
+preserve short-shot feedback between snapshots. The field guide at
+`/bestiary.html` previews the selected models and searches the original hostile
+table for alternative candidates.
+
 The same official deep dive describes staged pressure, later fast enemies and round-based equipment improvement. Exact CoD health formulas are not established by that reference. `rounds.js` defines this game's own curve for its 22-actor browser limit:
 
 | Round | Approximate health multiplier | Base enemy count | Elite count on elite rounds |

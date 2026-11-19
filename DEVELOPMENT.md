@@ -200,3 +200,31 @@ placement. The full build now passes 155 tests, with one optional real-Redis tes
 skipped. `python tools/review-held-weapons.py` renders the checked-in before/after,
 motion and roster sheets using baked skinned vertices. Live WebGL/performance
 review remains pending when browser access is unavailable.
+
+## Shared hostile combat
+
+Read [ENEMY-ROSTER.md](docs/ENEMY-ROSTER.md) before adding a monster. Source
+identity/skin/rig metadata lives beside the curated forty and complete hostile
+table. `enemy-roster.js` and `enemy-director.js` are shared by solo and the server;
+do not add a browser-only enemy or allow retired tiers back into late waves.
+`actor-collision.js` supplies swept body contacts to player movement, enemy
+movement, authoritative co-op and client prediction/replay. Preserve floor
+separation and static map collision.
+
+`enemy-attacks.js` owns projectile creation and swept damage. Hostile launch and
+impact events are copied into the co-op event stream independently of state
+snapshots. `enemy-projectiles.js` adopts snapshot entities, limits extrapolation,
+and rejects stale resurrection; it never applies damage. Keep the short-flight
+visual regression check when changing reconciliation or rendering.
+
+`enemy-actor.js` caches source animated-idle calibration per asset library. It
+normalizes a rendered body's height/pivot at instantiation, while the original
+clips continue playing. Raw source bind bounds alone can leave some creatures
+floating or scaled differently from their body volumes. Source JSON and shared
+template geometry stay unchanged.
+
+`tests/hostile-combat.test.mjs` adds eleven source/progression/physics/network/
+render-construction checks. The full build passes 166 tests with one optional
+real-Redis integration skipped when unconfigured. Eighty offline source-pose
+views were inspected; live browser rendering, balance and performance still
+need a play session. No external deployment is performed by packaging the repo.

@@ -36,7 +36,7 @@ const urban={
  platforms:[p('maintenance-roof',-29.5,-8.5,25,9,3.6),p('monorail-deck',0,-43.5,104,9,6)],
  ramps:[ramp('roof-west',-36,4,8,16,3.6,0),ramp('roof-east',-21,-19,8,12,0,3.6),ramp('skywalk-west',-31,-33,10,12,6,0),ramp('skywalk-east',31,-33,10,12,6,0)],
  paths:[{points:[[-39,23],[-39,-15],[-10,-18],[-6,23],[-20,28],[-39,23]],width:8,closed:true},{points:[[-7,25],[20,25],[43,25],[43,-20],[15,-20],[6,-14]],width:7},{points:[[-31,-27],[-31,-43],[0,-43],[31,-43],[31,-27]],width:5}],
- enemies:{base:'spawn',ranged:'gas',runner:'robo',elite:'asphalt'},enemyNames:['Fusion Spawn','Noxious Spawn','Fusion Enforcer','Asphalt Destroyer'],
+ enemies:{base:'spawn',ranged:'gas',runner:'robo',elite:'asphalt'},enemyNames:['Fusion Spawn','Noxious Spawn','Heavy Hunter','Asphalt Freak Father'],
  landmarks:[{x:-23,z:3,name:'FOUNTAIN'},{x:-30,z:-8,name:'SERVICE ROOF'},{x:29,z:8,name:'REACTOR'},{x:0,z:-43,name:'MONORAIL RELAY'}],
  };
 const forestNames=['SCOUT CAMP','CREEK WATCH','CANOPY RIDGE'];

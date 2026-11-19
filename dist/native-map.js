@@ -28,6 +28,6 @@ export function createNativeMap(data,catalog){
   native:{asset:catalog.id,terrain:data,source:catalog.source},
   buildings:[],cover:[],dividers:[],gates:[],rooms:[],walls:[],trunks:[],trees:[],architecture:data.obstacles||[],overhead:[],platforms:[],ramps:[],paths:[],districts:[],wayfinding:[],fixtureColliders:stations.filter(s=>s.kind==='mystery').map(s=>({x:s.x,z:s.z-2.2,w:1.8,d:.8,h:.85})),
   stations,spawns:data.points.spawns.map(p=>({zone:0,...p})),
-  enemies:{base:'spawn',ranged:'gas',runner:'robo',elite:'asphalt'},enemyNames:['Fusion Spawn','Noxious Spawn','Fusion Enforcer','Asphalt Destroyer'],landmarks:data.landmarks||[{x:start.x,z:start.z,name:'ORIGINAL CITY'}]
+  enemies:{base:'spawn',ranged:'gas',runner:'robo',elite:'asphalt'},enemyNames:['Fusion Spawn','Noxious Spawn','Heavy Hunter','Asphalt Freak Father'],landmarks:data.landmarks||[{x:start.x,z:start.z,name:'ORIGINAL CITY'}]
  };
 }

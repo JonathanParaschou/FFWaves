@@ -5449,6 +5449,582 @@
       "parts": 4,
       "triangles": 485,
       "bytes": 26498
+    },
+    "enemy-tech-drone": {
+      "url": "assets/models/enemy-tech-drone.json",
+      "source": "mob/mob_ant.kfm",
+      "bounds": {
+        "min": [
+          -1.48192,
+          0.0,
+          -1.73831
+        ],
+        "max": [
+          1.48192,
+          1.72876,
+          1.73831
+        ],
+        "size": [
+          2.96385,
+          1.72876,
+          3.47662
+        ]
+      },
+      "parts": 2,
+      "triangles": 3513,
+      "bytes": 179010
+    },
+    "enemy-cyber-stinger": {
+      "url": "assets/models/enemy-cyber-stinger.json",
+      "source": "mob/mob_atmosquito.kfm",
+      "bounds": {
+        "min": [
+          -2.00194,
+          0.0,
+          -0.77725
+        ],
+        "max": [
+          2.00194,
+          2.28632,
+          0.77725
+        ],
+        "size": [
+          4.00388,
+          2.28632,
+          1.55451
+        ]
+      },
+      "parts": 1,
+      "triangles": 1996,
+      "bytes": 153977
+    },
+    "enemy-tech-wing": {
+      "url": "assets/models/enemy-tech-wing.json",
+      "source": "mob/mob_bat.kfm",
+      "bounds": {
+        "min": [
+          -4.55447,
+          0.0,
+          -1.05872
+        ],
+        "max": [
+          4.55447,
+          3.198,
+          1.05872
+        ],
+        "size": [
+          9.10895,
+          3.198,
+          2.11743
+        ]
+      },
+      "parts": 4,
+      "triangles": 2901,
+      "bytes": 160632
+    },
+    "enemy-newsprint-ninja": {
+      "url": "assets/models/enemy-newsprint-ninja.json",
+      "source": "mob/mob_ninja.kfm",
+      "bounds": {
+        "min": [
+          -1.34664,
+          0.0,
+          -0.83271
+        ],
+        "max": [
+          1.34664,
+          2.54177,
+          0.83271
+        ],
+        "size": [
+          2.69328,
+          2.54177,
+          1.66543
+        ]
+      },
+      "parts": 3,
+      "triangles": 2696,
+      "bytes": 128583
+    },
+    "enemy-painsaw": {
+      "url": "assets/models/enemy-painsaw.json",
+      "source": "mob/mob_powersaw.kfm",
+      "bounds": {
+        "min": [
+          -2.6252,
+          0.0,
+          -1.40176
+        ],
+        "max": [
+          2.6252,
+          2.66396,
+          1.40176
+        ],
+        "size": [
+          5.25039,
+          2.66396,
+          2.80351
+        ]
+      },
+      "parts": 1,
+      "triangles": 4424,
+      "bytes": 265102
+    },
+    "enemy-motor-raptor": {
+      "url": "assets/models/enemy-motor-raptor.json",
+      "source": "mob/mob_engine.kfm",
+      "bounds": {
+        "min": [
+          -0.55957,
+          0.0,
+          -1.80421
+        ],
+        "max": [
+          0.55957,
+          1.86477,
+          1.80421
+        ],
+        "size": [
+          1.11914,
+          1.86477,
+          3.60841
+        ]
+      },
+      "parts": 1,
+      "triangles": 4139,
+      "bytes": 204153
+    },
+    "enemy-verminator": {
+      "url": "assets/models/enemy-verminator.json",
+      "source": "mob/mob_cannon.kfm",
+      "bounds": {
+        "min": [
+          -0.69655,
+          0.0,
+          -1.49813
+        ],
+        "max": [
+          0.69655,
+          1.8422,
+          1.49813
+        ],
+        "size": [
+          1.3931,
+          1.8422,
+          2.99625
+        ]
+      },
+      "parts": 1,
+      "triangles": 3557,
+      "bytes": 193161
+    },
+    "enemy-dire-hydra": {
+      "url": "assets/models/enemy-dire-hydra.json",
+      "source": "mob/mob_firehydrant.kfm",
+      "bounds": {
+        "min": [
+          -2.06993,
+          0.0,
+          -0.80251
+        ],
+        "max": [
+          2.06993,
+          3.85763,
+          0.80251
+        ],
+        "size": [
+          4.13986,
+          3.85763,
+          1.60502
+        ]
+      },
+      "parts": 1,
+      "triangles": 2362,
+      "bytes": 120571
+    },
+    "enemy-barrel-buster": {
+      "url": "assets/models/enemy-barrel-buster.json",
+      "source": "mob/mob_drum.kfm",
+      "bounds": {
+        "min": [
+          -1.00826,
+          0.0,
+          -1.00826
+        ],
+        "max": [
+          1.00826,
+          2.38465,
+          1.00826
+        ],
+        "size": [
+          2.01653,
+          2.38465,
+          2.01653
+        ]
+      },
+      "parts": 1,
+      "triangles": 3827,
+      "bytes": 183491
+    },
+    "enemy-heavy-hauler": {
+      "url": "assets/models/enemy-heavy-hauler.json",
+      "source": "mob/mob_heavymachinery.kfm",
+      "bounds": {
+        "min": [
+          -1.44069,
+          0.0,
+          -3.1413
+        ],
+        "max": [
+          1.44069,
+          4.23521,
+          3.1413
+        ],
+        "size": [
+          2.88137,
+          4.23521,
+          6.2826
+        ]
+      },
+      "parts": 1,
+      "triangles": 4827,
+      "bytes": 243548
+    },
+    "enemy-mech-queen": {
+      "url": "assets/models/enemy-mech-queen.json",
+      "source": "mob/mob_queenspider.kfm",
+      "bounds": {
+        "min": [
+          -1.19572,
+          0.0,
+          -1.56867
+        ],
+        "max": [
+          1.19572,
+          2.48364,
+          1.56867
+        ],
+        "size": [
+          2.39145,
+          2.48364,
+          3.13734
+        ]
+      },
+      "parts": 2,
+      "triangles": 4065,
+      "bytes": 270274
+    },
+    "enemy-road-golem": {
+      "url": "assets/models/enemy-road-golem.json",
+      "source": "mob/mob_roadgorlem.kfm",
+      "bounds": {
+        "min": [
+          -1.92496,
+          0.0,
+          -0.71992
+        ],
+        "max": [
+          1.92496,
+          2.7859,
+          0.71992
+        ],
+        "size": [
+          3.84991,
+          2.7859,
+          1.43983
+        ]
+      },
+      "parts": 2,
+      "triangles": 2564,
+      "bytes": 122633
+    },
+    "enemy-doom-boiler": {
+      "url": "assets/models/enemy-doom-boiler.json",
+      "source": "mob/mob_boiler.kfm",
+      "bounds": {
+        "min": [
+          -1.53285,
+          0.0,
+          -2.21486
+        ],
+        "max": [
+          1.53285,
+          3.14227,
+          2.21486
+        ],
+        "size": [
+          3.06569,
+          3.14227,
+          4.42971
+        ]
+      },
+      "parts": 1,
+      "triangles": 2476,
+      "bytes": 182915
+    },
+    "enemy-gear-goon": {
+      "url": "assets/models/enemy-gear-goon.json",
+      "source": "mob/mob_gear.kfm",
+      "bounds": {
+        "min": [
+          -1.61676,
+          0.0,
+          -0.78669
+        ],
+        "max": [
+          1.61676,
+          2.59805,
+          0.78669
+        ],
+        "size": [
+          3.23351,
+          2.59805,
+          1.57337
+        ]
+      },
+      "parts": 2,
+      "triangles": 3379,
+      "bytes": 188974
+    },
+    "enemy-weird-welder": {
+      "url": "assets/models/enemy-weird-welder.json",
+      "source": "mob/mob_welder.kfm",
+      "bounds": {
+        "min": [
+          -0.96423,
+          0.0,
+          -0.43169
+        ],
+        "max": [
+          0.96423,
+          1.94934,
+          0.43169
+        ],
+        "size": [
+          1.92846,
+          1.94934,
+          0.86338
+        ]
+      },
+      "parts": 2,
+      "triangles": 3184,
+      "bytes": 156742
+    },
+    "enemy-ventilator": {
+      "url": "assets/models/enemy-ventilator.json",
+      "source": "mob/mob_ventilatordino.kfm",
+      "bounds": {
+        "min": [
+          -0.94509,
+          0.0,
+          -1.57499
+        ],
+        "max": [
+          0.94509,
+          2.32274,
+          1.57499
+        ],
+        "size": [
+          1.89017,
+          2.32274,
+          3.14997
+        ]
+      },
+      "parts": 1,
+      "triangles": 2913,
+      "bytes": 141996
+    },
+    "enemy-killowatt": {
+      "url": "assets/models/enemy-killowatt.json",
+      "source": "mob/mob_lightbulb.kfm",
+      "bounds": {
+        "min": [
+          -1.14906,
+          0.0,
+          -0.86151
+        ],
+        "max": [
+          1.14906,
+          3.01047,
+          0.86151
+        ],
+        "size": [
+          2.29812,
+          3.01047,
+          1.72301
+        ]
+      },
+      "parts": 2,
+      "triangles": 3566,
+      "bytes": 186657
+    },
+    "enemy-hydraulic-enforcer": {
+      "url": "assets/models/enemy-hydraulic-enforcer.json",
+      "source": "mob/mob_trafficpolice.kfm",
+      "bounds": {
+        "min": [
+          -1.91876,
+          0.0,
+          -1.3309
+        ],
+        "max": [
+          1.91876,
+          2.62088,
+          1.3309
+        ],
+        "size": [
+          3.83751,
+          2.62088,
+          2.6618
+        ]
+      },
+      "parts": 1,
+      "triangles": 4847,
+      "bytes": 264584
+    },
+    "enemy-riot-rogue": {
+      "url": "assets/models/enemy-riot-rogue.json",
+      "source": "mob/mob_twoshield.kfm",
+      "bounds": {
+        "min": [
+          -1.89457,
+          0.0,
+          -0.8411
+        ],
+        "max": [
+          1.89457,
+          2.56313,
+          0.8411
+        ],
+        "size": [
+          3.78915,
+          2.56313,
+          1.6822
+        ]
+      },
+      "parts": 1,
+      "triangles": 2546,
+      "bytes": 186520
+    },
+    "enemy-sonic-scorpion": {
+      "url": "assets/models/enemy-sonic-scorpion.json",
+      "source": "mob/mob_soundscorpion.kfm",
+      "bounds": {
+        "min": [
+          -1.9573,
+          0.0,
+          -1.81124
+        ],
+        "max": [
+          1.9573,
+          3.96036,
+          1.81124
+        ],
+        "size": [
+          3.9146,
+          3.96036,
+          3.62248
+        ]
+      },
+      "parts": 1,
+      "triangles": 5451,
+      "bytes": 269266
+    },
+    "enemy-oil-ogre": {
+      "url": "assets/models/enemy-oil-ogre.json",
+      "source": "mob/mob_oilmonster.kfm",
+      "bounds": {
+        "min": [
+          -3.14152,
+          0.0,
+          -0.82093
+        ],
+        "max": [
+          3.14152,
+          2.89112,
+          0.82093
+        ],
+        "size": [
+          6.28305,
+          2.89112,
+          1.64187
+        ]
+      },
+      "parts": 2,
+      "triangles": 3013,
+      "bytes": 135528
+    },
+    "enemy-magma-hulk": {
+      "url": "assets/models/enemy-magma-hulk.json",
+      "source": "mob/mob_volcanogorem.kfm",
+      "bounds": {
+        "min": [
+          -1.7806,
+          0.0,
+          -0.78435
+        ],
+        "max": [
+          1.7806,
+          3.435,
+          0.78435
+        ],
+        "size": [
+          3.5612,
+          3.435,
+          1.56869
+        ]
+      },
+      "parts": 1,
+      "triangles": 3854,
+      "bytes": 164592
+    },
+    "enemy-eyebulb": {
+      "url": "assets/models/enemy-eyebulb.json",
+      "source": "mob/mob_threeeyes.kfm",
+      "bounds": {
+        "min": [
+          -1.67822,
+          0.0,
+          -0.90535
+        ],
+        "max": [
+          1.67822,
+          3.33792,
+          0.90535
+        ],
+        "size": [
+          3.35643,
+          3.33792,
+          1.8107
+        ]
+      },
+      "parts": 1,
+      "triangles": 3552,
+      "bytes": 166657
+    },
+    "enemy-extremospawn": {
+      "url": "assets/models/enemy-extremospawn.json",
+      "source": "mob/mob_fusionextremesaurus.kfm",
+      "bounds": {
+        "min": [
+          -3.13384,
+          0.0,
+          -3.13384
+        ],
+        "max": [
+          3.13384,
+          4.69756,
+          3.13384
+        ],
+        "size": [
+          6.26769,
+          4.69756,
+          6.26769
+        ]
+      },
+      "parts": 1,
+      "triangles": 4671,
+      "bytes": 221575
     }
   },
   "textures": {
@@ -8605,6 +9181,447 @@
         128,
         256
       ]
+    },
+    "a8c4c9dae997": {
+      "map": "assets/textures/a8c4c9dae997.webp",
+      "alpha": false,
+      "name": "mob_ant",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "e8e8748ea845": {
+      "map": "assets/textures/e8e8748ea845.webp",
+      "alpha": false,
+      "name": "mob_ant",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "d89912eab49a": {
+      "map": "assets/textures/d89912eab49a.webp",
+      "alpha": false,
+      "name": "mob_atmosquito",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "b0a98118b7df": {
+      "map": "assets/textures/b0a98118b7df.webp",
+      "alpha": false,
+      "name": "mob_atmosquito",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "789a8403effc": {
+      "map": "assets/textures/789a8403effc.webp",
+      "alpha": false,
+      "name": "mob_bat",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "53781230be6d": {
+      "map": "assets/textures/53781230be6d.webp",
+      "alpha": false,
+      "name": "mob_bat",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "62603e8239ee": {
+      "map": "assets/textures/62603e8239ee.webp",
+      "alpha": false,
+      "name": "mob_ninja",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1c5640e1b147": {
+      "map": "assets/textures/1c5640e1b147.webp",
+      "alpha": false,
+      "name": "mob_ninja",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "f125fd3f934e": {
+      "map": "assets/textures/f125fd3f934e.webp",
+      "alpha": false,
+      "name": "mob_powersaw",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "2ef7209ccfd5": {
+      "map": "assets/textures/2ef7209ccfd5.webp",
+      "alpha": false,
+      "name": "mob_powersaw",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "c51f1205d856": {
+      "map": "assets/textures/c51f1205d856.webp",
+      "alpha": false,
+      "name": "mob_engine",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "d3bf750751a6": {
+      "map": "assets/textures/d3bf750751a6.webp",
+      "alpha": false,
+      "name": "mob_engine",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "8ecbf80c29e8": {
+      "map": "assets/textures/8ecbf80c29e8.webp",
+      "alpha": false,
+      "name": "mob_cannon",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "0fdbc3485fbc": {
+      "map": "assets/textures/0fdbc3485fbc.webp",
+      "alpha": false,
+      "name": "mob_cannon",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "9501dd68ea59": {
+      "map": "assets/textures/9501dd68ea59.webp",
+      "alpha": false,
+      "name": "mob_firehydrant",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "f7d94f581501": {
+      "map": "assets/textures/f7d94f581501.webp",
+      "alpha": false,
+      "name": "mob_firehydrant",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "a96da6d0a9d0": {
+      "map": "assets/textures/a96da6d0a9d0.webp",
+      "alpha": false,
+      "name": "mob_drum",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "c87bd3606f66": {
+      "map": "assets/textures/c87bd3606f66.webp",
+      "alpha": false,
+      "name": "mob_drum",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "7cb2900ffff7": {
+      "map": "assets/textures/7cb2900ffff7.webp",
+      "alpha": false,
+      "name": "mob_heavymachinery",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "43e39da59956": {
+      "map": "assets/textures/43e39da59956.webp",
+      "alpha": false,
+      "name": "mob_heavymachinery",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "68f56f46411e": {
+      "map": "assets/textures/68f56f46411e.webp",
+      "alpha": false,
+      "name": "mob_queenspider",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "70c0d7eae957": {
+      "map": "assets/textures/70c0d7eae957.webp",
+      "alpha": false,
+      "name": "mob_queenspider_a",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "c242684ec485": {
+      "map": "assets/textures/c242684ec485.webp",
+      "alpha": false,
+      "name": "mob_roadgorlem",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "aa308ecc898a": {
+      "map": "assets/textures/aa308ecc898a.webp",
+      "alpha": false,
+      "name": "spawn11_green",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "83e638555f84": {
+      "map": "assets/textures/83e638555f84.webp",
+      "alpha": false,
+      "name": "mob_roadgorlem",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "a888df7303aa": {
+      "map": "assets/textures/a888df7303aa.webp",
+      "alpha": false,
+      "name": "mob_boiler",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "63eb67761c3a": {
+      "map": "assets/textures/63eb67761c3a.webp",
+      "alpha": false,
+      "name": "mob_boiler",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "be109ee2664d": {
+      "map": "assets/textures/be109ee2664d.webp",
+      "alpha": false,
+      "name": "mob_gear",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "478aaa39feff": {
+      "map": "assets/textures/478aaa39feff.webp",
+      "alpha": false,
+      "name": "mob_gear",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "88333cf08ed2": {
+      "map": "assets/textures/88333cf08ed2.webp",
+      "alpha": false,
+      "name": "mob_welder",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "4afb6de79863": {
+      "map": "assets/textures/4afb6de79863.webp",
+      "alpha": false,
+      "name": "mob_welder",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "9abe4f99396e": {
+      "map": "assets/textures/9abe4f99396e.webp",
+      "alpha": false,
+      "name": "mob_ventilatordino",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "6579ba9e4212": {
+      "map": "assets/textures/6579ba9e4212.webp",
+      "alpha": false,
+      "name": "mob_ventilatordino",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "7a6d9e9fad3e": {
+      "map": "assets/textures/7a6d9e9fad3e.webp",
+      "alpha": false,
+      "name": "mob_lightbulb",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "a3f6ccbe6954": {
+      "map": "assets/textures/a3f6ccbe6954.webp",
+      "alpha": false,
+      "name": "mob_lightbulb",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "77e45a800e4c": {
+      "map": "assets/textures/77e45a800e4c.webp",
+      "alpha": false,
+      "name": "mob_trafficpolice",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "94c8bc702dc5": {
+      "map": "assets/textures/94c8bc702dc5.webp",
+      "alpha": false,
+      "name": "mob_trafficpolice",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "bee8cc60a408": {
+      "map": "assets/textures/bee8cc60a408.webp",
+      "alpha": false,
+      "name": "mob_twoshield",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "017ccf5c28bb": {
+      "map": "assets/textures/017ccf5c28bb.webp",
+      "alpha": false,
+      "name": "mob_twoshield",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "575dd31992ad": {
+      "map": "assets/textures/575dd31992ad.webp",
+      "alpha": false,
+      "name": "mob_soundscorpion",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "a12f8fe1c114": {
+      "map": "assets/textures/a12f8fe1c114.webp",
+      "alpha": false,
+      "name": "mob_soundscorpion",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "c2ed2347bdbf": {
+      "map": "assets/textures/c2ed2347bdbf.webp",
+      "alpha": false,
+      "name": "mob_oilmonster",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "391002be0bb9": {
+      "map": "assets/textures/391002be0bb9.webp",
+      "alpha": false,
+      "name": "mob_oilmonster",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "d0e5dccfcbd0": {
+      "map": "assets/textures/d0e5dccfcbd0.webp",
+      "alpha": false,
+      "name": "mob_volcanogorem",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "ad1993edc6ef": {
+      "map": "assets/textures/ad1993edc6ef.webp",
+      "alpha": false,
+      "name": "mob_volcanogorem",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "653f1a8d6d1d": {
+      "map": "assets/textures/653f1a8d6d1d.webp",
+      "alpha": false,
+      "name": "mob_threeeyes",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "48c5581dde14": {
+      "map": "assets/textures/48c5581dde14.webp",
+      "alpha": false,
+      "name": "mob_threeeyes",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "434770751708": {
+      "map": "assets/textures/434770751708.webp",
+      "alpha": false,
+      "name": "mob_fusionExtremesaurus",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "5e598a612834": {
+      "map": "assets/textures/5e598a612834.webp",
+      "alpha": false,
+      "name": "mob_fusionExtremesaurus",
+      "size": [
+        256,
+        256
+      ]
     }
   },
   "surfaces": {
@@ -11109,6 +12126,102 @@
         "melee2"
       ],
       "bones": 92
+    },
+    "enemy-tech-drone": {
+      "url": "assets/animations/enemy-tech-drone.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "enemy-cyber-stinger": {
+      "url": "assets/animations/enemy-cyber-stinger.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "enemy-tech-wing": {
+      "url": "assets/animations/enemy-tech-wing.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "enemy-newsprint-ninja": {
+      "url": "assets/animations/enemy-newsprint-ninja.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "enemy-painsaw": {
+      "url": "assets/animations/enemy-painsaw.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "enemy-motor-raptor": {
+      "url": "assets/animations/enemy-motor-raptor.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "enemy-verminator": {
+      "url": "assets/animations/enemy-verminator.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "enemy-dire-hydra": {
+      "url": "assets/animations/enemy-dire-hydra.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "enemy-barrel-buster": {
+      "url": "assets/animations/enemy-barrel-buster.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "enemy-heavy-hauler": {
+      "url": "assets/animations/enemy-heavy-hauler.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "enemy-mech-queen": {
+      "url": "assets/animations/enemy-mech-queen.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "enemy-road-golem": {
+      "url": "assets/animations/enemy-road-golem.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "enemy-doom-boiler": {
+      "url": "assets/animations/enemy-doom-boiler.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "enemy-gear-goon": {
+      "url": "assets/animations/enemy-gear-goon.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "enemy-weird-welder": {
+      "url": "assets/animations/enemy-weird-welder.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "enemy-ventilator": {
+      "url": "assets/animations/enemy-ventilator.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "enemy-killowatt": {
+      "url": "assets/animations/enemy-killowatt.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "enemy-hydraulic-enforcer": {
+      "url": "assets/animations/enemy-hydraulic-enforcer.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "enemy-riot-rogue": {
+      "url": "assets/animations/enemy-riot-rogue.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "enemy-sonic-scorpion": {
+      "url": "assets/animations/enemy-sonic-scorpion.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "enemy-oil-ogre": {
+      "url": "assets/animations/enemy-oil-ogre.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "enemy-magma-hulk": {
+      "url": "assets/animations/enemy-magma-hulk.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "enemy-eyebulb": {
+      "url": "assets/animations/enemy-eyebulb.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
+    },
+    "enemy-extremospawn": {
+      "url": "assets/animations/enemy-extremospawn.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
     }
   }
 }
