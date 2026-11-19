@@ -141,3 +141,19 @@ The menu uses Main Theme. Map associations are authored adaptations: Dexlabs Bun
 The preserved original Ogg files remain unmodified. `python tools/prepare-browser-music.py` uses development-only NumPy, SoundFile and lameenc to create peak-limited, normalized 128 kbps MP3 playback copies. Run it after re-extracting original music. Catalog metadata records output hashes, gains and measured decoded RMS. These files require no Python or codec library on Vercel.
 
 Music now uses an HTML media player directly, independently of the effects/voice Web Audio graph. Playback begins from trusted input, settings expose native playback controls and a real track clock, and autoplay/network errors can be retried with Play Music. `/audio-check.html` auditions the same files without the 3D engine. The local host supplies audio/mpeg and byte ranges for seeking; Vercel serves the checked-in static MP3s.
+
+## Original hero arms in external weapon poses
+
+`dist/held-weapon.js` reuses the existing per-gun trigger/support anchors for the
+menu preview, local third-person view and remote avatars. Palm offsets derive
+from the selected hero's original skinned hand vertices. Original arm bones are
+rotated with two-bone inverse kinematics, retaining source limb lengths and
+walk/run animation. No replacement hands, new textures or external models are
+introduced. Broad silhouettes and the missing hand on Wilt are respected. These
+are authored weapon holds on the original rigs, not newly extracted source
+firearm clips. Existing first-person presentation remains unchanged.
+
+`tools/review-held-weapons.py` renders baked, posed source geometry and textures
+for Numbuh Four's before/after comparison, movement states and the full hero
+roster. The checked-in images are offline visual reviews with approximate
+lighting; they do not establish live browser performance.

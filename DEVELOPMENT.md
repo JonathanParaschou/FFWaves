@@ -179,6 +179,24 @@ Use `python tools/review-reference-geometry.py --rooms-only` for the nine-view
 room sheet; omit the flag to also review all forty viewmodels. Keep the six
 baseline cameras stable. `tests/bunker-art.test.mjs` verifies the original kit,
 source anchors, sampled shell clearance, physical/visual extents, jump/drop
-behavior and scene-relative instance transforms. The full build passes 149 tests
-with the optional real-Redis test skipped when unconfigured. This does not
+behavior and scene-relative instance transforms. That art-pass delivery passed 149 tests
+with the optional real-Redis test skipped when unconfigured. That result does not
 establish live browser lighting, frame rate or combat feel.
+
+## External hero grip poses
+
+`dist/held-weapon.js` derives external firearm attachments from the existing
+first-person trigger/support profiles without changing the first-person frame.
+`createHeroActor` applies the shared arm solve after source animation and stance
+posing, then updates accessories. All bone overrides are restored before the
+next animation frame and on returning to first person. The menu, local external
+body and remote avatars pass the selected held presentation into this same path.
+Do not reintroduce model-centre-to-wrist attachment in a separate view.
+
+`tests/held-weapon.test.mjs` checks actual gun surfaces/muzzles, all 24 heroes and
+40 guns through seven states, unmodified limb lengths and lower-body animation,
+source-asset preservation, bulky bodies, missing hands, melee and remote muzzle
+placement. The full build now passes 155 tests, with one optional real-Redis test
+skipped. `python tools/review-held-weapons.py` renders the checked-in before/after,
+motion and roster sheets using baked skinned vertices. Live WebGL/performance
+review remains pending when browser access is unavailable.

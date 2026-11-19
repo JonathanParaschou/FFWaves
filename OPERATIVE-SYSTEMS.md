@@ -6,6 +6,31 @@ The Operative menu offers 24 original full-size NPC hero bodies and 20 original 
 
 The head/back items follow original skeleton sockets with authored fitting offsets. Their fit and the new player movement are adaptations rather than recovered original player-controller animations. Gear is cosmetic; Nano selections continue to determine abilities.
 
+## External weapon alignment
+
+The loadout preview, local third-person view and remote players share
+`dist/held-weapon.js`. Firearms attach at their measured trigger grip instead of
+placing the model centre on a wrist. Each hero's palm offset is measured from the
+original skinned hand geometry. A two-bone arm solver rotates the original
+shoulder, elbow and wrist bones to meet the trigger and support grips; original
+limb lengths and lower-body clips remain intact. The pose follows aiming pitch,
+running, crouching, sliding and the lowered reload hold. Very broad bodies use a
+one-handed hold when both arms cannot reach without burying the weapon in the
+torso. Wilt keeps his original missing hand. Melee attachments use the original
+vertical handle convention. These poses are authored adaptations, not recovered
+original firearm animation clips.
+
+External muzzle flashes and remote visual trails use the held weapon's muzzle.
+Authoritative camera-aim damage is unchanged. The existing first-person camera,
+gun framing, textured hands and motion are preserved.
+
+`python tools/review-held-weapons.py` generates the inspected
+[Numbuh Four before/after and motion sheet](docs/third-person-review.jpg) and
+[24-hero weapon roster](docs/hero-weapon-roster-review.jpg). Review export bakes
+the actual skinned vertices at the current pose; it does not render the bind pose.
+Lighting is approximate. Live browser appearance and performance remain
+unverified when browser access is unavailable.
+
 ## Movement
 
 [Activision's Black Ops 6 movement guide](https://www.callofduty.com/guides/blackops6/training/call-of-duty-guides-black-ops-6-multiplayer-training-movement) describes sliding in horizontal directions while retaining combat control. This game's input timing and movement values are authored for its maps rather than claimed as exact CoD values.

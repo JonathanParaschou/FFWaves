@@ -1,4 +1,5 @@
 import * as THREE from './vendor/three.module.js';
+import {createHeldArmPose} from './held-weapon.js';
 export let HEROES=[],ACCESSORIES=[];
 export function configureHeroes(catalog){HEROES=catalog.heroes;ACCESSORIES=catalog.accessories}
 export function validateOperative(value={}){if(!value||typeof value!=='object')value={};return {hero:HEROES.some(h=>h.id===value.hero)?value.hero:HEROES[0]?.id,head:ACCESSORIES.some(a=>a.id===value.head&&a.slot==='head')?value.head:'none',back:ACCESSORIES.some(a=>a.id===value.back&&a.slot==='back')?value.back:'none'}}
@@ -15,16 +16,18 @@ export function createHeroActor(assets,selection){
  function remember(bone){if(bone&&!previous.has(bone))previous.set(bone,{position:bone.position.clone(),quaternion:bone.quaternion.clone()})}
  function rotate(key,angle){const bone=sockets[key];if(!bone||!angle)return;remember(bone);root.updateMatrixWorld(true);axis.set(1,0,0).applyQuaternion(root.quaternion);bone.parent.getWorldQuaternion(parentQ);axis.applyQuaternion(parentQ.invert()).normalize();q.setFromAxisAngle(axis,angle);bone.quaternion.premultiply(q)}
  function offset(key,dy){const bone=sockets[key];if(!bone||!dy)return;remember(bone);root.updateMatrixWorld(true);const delta=new THREE.Vector3(0,dy,0);bone.parent.getWorldQuaternion(parentQ);delta.applyQuaternion(parentQ.invert());const scale=new THREE.Vector3();bone.parent.getWorldScale(scale);delta.divide(scale);bone.position.add(delta)}
- function update(dt,{moving=false,sprinting=false,crouch=0,slide=0,firing=false,melee=0,firstPerson=false,eyeHeight=1.68}={}){
+ const heldPose=createHeldArmPose(root,body,sockets,remember);
+ function update(dt,{moving=false,sprinting=false,crouch=0,slide=0,firing=false,melee=0,firstPerson=false,eyeHeight=1.68,heldWeapon=null,pitch=0,reloadTimer=0,reloadTotal=1}={}){
   root.visible=!firstPerson;for(const item of gear)item.object.visible=!firstPerson;if(firstPerson){restore();return}
   restore();body.position.set(0,0,0);controller?.update(dt*(sprinting?1.25:crouch>.3?.7:1),moving&&slide<.3?(crouch>.3?'walk':'run'):firing?'ready':'idle');
   const bend=crouch*.8+slide*1.35;offset('pelvis',-crouch*.28-slide*.48);rotate('leftThigh',-bend);rotate('rightThigh',-bend+(slide?-.12:0));rotate('leftCalf',crouch*1.5+slide*.35);rotate('rightCalf',crouch*1.5+slide*.5);rotate('back',crouch*.2-slide*.25);
   if(firing){rotate('rightUpperArm',-.48);rotate('rightForearm',-.45)}if(melee>0){rotate('rightUpperArm',-melee*1.2);rotate('rightForearm',melee*.85);rotate('back',-melee*.15)}
   root.updateMatrixWorld(true);if(crouch>.05||slide>.05){const feet=[sockets.leftFoot,sockets.rightFoot].filter(Boolean).map(b=>root.worldToLocal(b.getWorldPosition(new THREE.Vector3())).y);if(feet.length)body.position.y=Math.max(-.4,restingFootY-Math.min(...feet));}
   root.updateMatrixWorld(true);
+  heldPose.update(dt,heldWeapon,{pitch,sprinting,reloadTimer,reloadTotal,melee,firing});
   for(const item of gear){const bone=sockets[item.slot];if(bone){root.worldToLocal(bone.getWorldPosition(item.object.position));const inverseRoot=root.getWorldQuaternion(new THREE.Quaternion()).invert(),relative=bone.getWorldQuaternion(new THREE.Quaternion()).premultiply(inverseRoot).multiply(item.base.clone().invert()),offset=item.slot==='head'?new THREE.Vector3(...hero.attachmentFit.headOffset).add(new THREE.Vector3(0,-.08,0)):new THREE.Vector3(0,-item.record.targetHeight*.5,-.16);item.object.position.add(offset.applyQuaternion(relative));item.object.quaternion.copy(relative).multiply(new THREE.Quaternion().setFromEuler(new THREE.Euler(...item.record.rotation)));}else item.object.position.set(0,item.slot==='head'?1.75:1.05,item.slot==='back'?-.16:0);item.object.visible=!firstPerson;}
 
  }
  function dispose(){restore();controller?.dispose();materials.forEach(m=>m.dispose());root.parent?.remove(root)}
- return {root,body,hero,config,gear,sockets,update,dispose};
+ return {root,body,hero,config,gear,sockets,heldPose,update,dispose};
 }
