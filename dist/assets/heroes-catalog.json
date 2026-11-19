@@ -8695,6 +8695,76 @@
       "source": "wear/back_bloo.nif",
       "bodyTexture": "back_bloo",
       "secondaryTexture": "null"
+    },
+    {
+      "id": "nergal-tendrils",
+      "name": "Nergal Tendrils",
+      "asset": "accessory-nergal-tendrils",
+      "slot": "back",
+      "height": 1.05,
+      "targetHeight": 1.05,
+      "sourceHeight": 0.28549,
+      "sourceDimensions": [
+        0.21009,
+        0.28549,
+        1.17359
+      ],
+      "offset": [
+        0,
+        0,
+        -0.16
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "portrait": "assets/ui/accessory-nergal-tendrils.webp",
+      "attachment": {
+        "preferredSocket": "back",
+        "anchor": "center",
+        "heroRootFallback": [
+          0,
+          0.64,
+          -0.14
+        ],
+        "fallbackUnits": "fraction-of-hero-height",
+        "offsetUnits": "world units at hero targetHeight 1.8",
+        "fitIsAuthored": true
+      },
+      "sourceItemId": 21,
+      "sourceTable": "m_pBackItemTable",
+      "source": "wear/back_gbmnergaltendrils.nif",
+      "bodyTexture": "rifle_autogatlingun",
+      "secondaryTexture": "null",
+      "rig": "assets/animations/accessory-nergal-tendrils.json",
+      "originalAnimations": [
+        {
+          "name": "nif-default",
+          "duration": 3.333332
+        }
+      ],
+      "displayFit": {
+        "scale": 0.5665294838321607,
+        "offset": [
+          -0.005525843243301829,
+          0.4327974701078168,
+          -0.051126002074350405
+        ],
+        "cycleBounds": {
+          "min": [
+            -0.707095993880782,
+            -0.7639451828354211,
+            -0.41774675645765974
+          ],
+          "max": [
+            0.7266036926007975,
+            1.0894446758838678,
+            0.59823516362235
+          ]
+        },
+        "method": "Uniform scale and grounding from the complete original animation cycle"
+      }
     }
   ],
   "weapons": [
@@ -10199,6 +10269,30 @@
       "parts": 1,
       "triangles": 542,
       "bytes": 27748
+    },
+    "accessory-nergal-tendrils": {
+      "url": "assets/models/accessory-nergal-tendrils.json",
+      "source": "wear/back_gbmnergaltendrils.nif",
+      "bounds": {
+        "min": [
+          -0.10505,
+          0,
+          -0.58679
+        ],
+        "max": [
+          0.10505,
+          0.28549,
+          0.58679
+        ],
+        "size": [
+          0.21009,
+          0.28549,
+          1.17359
+        ]
+      },
+      "parts": 1,
+      "triangles": 1193,
+      "bytes": 44097
     }
   },
   "textures": {
@@ -11068,6 +11162,10 @@
         "melee2"
       ],
       "bones": 92
+    },
+    "accessory-nergal-tendrils": {
+      "url": "assets/animations/accessory-nergal-tendrils.json",
+      "source": "Original FusionFall skeleton and AnimationClip curves"
     }
   },
   "failures": [],

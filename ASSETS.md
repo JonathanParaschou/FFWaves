@@ -182,3 +182,26 @@ actual skinned movement/attack poses into `docs/enemy-roster-review.jpg`. Origin
 combat textures supply ranged halos and charge effects; cores and tails are
 simple runtime geometry. First-person weapons, hero hands and the soundtrack
 are preserved.
+
+## Nergal Tendrils back accessory
+
+The 21st wearable is original item 21, **Nergal Tendrils**, from
+`m_pBackItemTable`: `wear/back_gbmnergaltendrils.nif`. The table selects the
+`rifle_autogatlingun` texture despite its weapon-like name; this original skin
+supplies the black/green tendrils. No replacement model or texture is generated.
+The recovered mesh has 1,193 triangles, a 32-bone skeleton and its original
+3.333-second looping animation. This brings the inventory to 252 models,
+109 original rigs and 998 clips.
+
+`tools/add-tentacle-backpack.py` reads the existing cache and XDT snapshot;
+`tools/fit-tentacle-backpack.mjs` measures a complete animation cycle to fit the
+accessory at a uniform wearable scale, rather than scaling its flat bind pose.
+The back-socket mount is authored for the existing 1.8-meter hero presentation.
+Original geometry and animation curves remain unchanged. The accessory loads
+on selection in the menu, local third-person view and remote-player rendering.
+It remains hidden with the full body in first person.
+
+`python tools/review-tentacle-backpack.py` produces the six-view source-mesh
+review in `docs/nergal-tendrils-review.jpg`, covering rear/front views, running,
+crouching and different hero proportions. These use approximate software
+lighting; live WebGL output and performance remain unverified.

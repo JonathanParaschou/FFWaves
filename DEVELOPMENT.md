@@ -228,3 +228,20 @@ render-construction checks. The full build passes 166 tests with one optional
 real-Redis integration skipped when unconfigured. Eighty offline source-pose
 views were inspected; live browser rendering, balance and performance still
 need a play session. No external deployment is performed by packaging the repo.
+
+## Animated wearable accessories
+
+Nergal Tendrils adds the first separately animated back accessory. Use
+`ensureOperativeAssets` before building actors in the preview, world or remote
+player renderer so the selected wearable's rig is ready. Static accessories
+retain their existing fitting and do not request animation files. Animated
+wearables own their controllers, update alongside the hero and dispose with
+the actor; the full body and its gear stay hidden in first person.
+
+The source bind pose is flat, so `displayFit` is measured from a complete
+original animation cycle by `tools/fit-tentacle-backpack.mjs`. Do not use raw
+bind-pose height for this accessory. The operative integration test covers
+on-demand loading, cache reuse, actual vertex animation on all 24 heroes,
+wearable bounds, first-person hiding and source-mesh preservation. The offline
+six-view review is in `docs/nergal-tendrils-review.jpg`; browser verification
+remains pending when live WebGL access is unavailable.

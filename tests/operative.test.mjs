@@ -7,7 +7,7 @@ import {Survival,WEAPONS} from '../dist/simulation.js';
 import {roundTuning} from '../dist/rounds.js';
 import {rollWeapon,RARITIES} from '../dist/weapons.js';
 import {MAPS,OutpostLayout} from '../dist/layout.js';
-import {configureHeroes,HEROES,ACCESSORIES,createHeroActor,validateOperative} from '../dist/avatars.js';
+import {configureHeroes,HEROES,ACCESSORIES,createHeroActor,validateOperative,ensureOperativeAssets} from '../dist/avatars.js';
 import {updateCompanion,selectCompanion} from '../dist/companions.js';
 function run(){const s=new Survival();s.start();s.intermission=999;return s}
 function tick(s,seconds,input={x:0,z:0}){for(let t=0;t<seconds;t+=.016)s.update(.016,input)}
@@ -22,4 +22,33 @@ test('round difficulty grows in stages, caps health/speed/damage, and retains in
 test('selected Nano stays inside the view during sprinting, turns and ADS without covering the sight',()=>{const p={x:-25,z:30,y:0,eyeHeight:1.68},actors=[0,1,2].map(index=>({index,object:new THREE.Group(),cast:0})),layout={blocked:()=>false};selectCompanion(actors,1);for(let i=0;i<150;i++){const yaw=i<75?0:1.3,aiming=i>110;p.x-=Math.sin(yaw)*8*.016;p.z-=Math.cos(yaw)*8*.016;for(const a of actors)updateCompanion(a,{player:p,selected:1,yaw,time:i*.016,dt:.016,moving:true,aiming,layout});const rel=actors[1].object.position.clone().sub(new THREE.Vector3(p.x,0,p.z)),forward=-rel.x*Math.sin(yaw)-rel.z*Math.cos(yaw),side=rel.x*Math.cos(yaw)-rel.z*Math.sin(yaw),horizontal=Math.tan((aiming?58.5:75)*Math.PI/360)*16/9,screenX=side/(forward*horizontal);assert.ok(forward>.4);assert.ok(Math.abs(screenX)>.16&&Math.abs(screenX)<.95,`visible periphery ${screenX}`);assert.equal(actors.filter(a=>a.object.visible).length,1)}});
 const catalog=JSON.parse(await readFile('dist/assets/heroes-catalog.json','utf8'));configureHeroes(catalog);const assets=new AssetLibrary();assets.manifest=JSON.parse(await readFile('dist/assets/manifest.json','utf8'));
 for(const item of [...HEROES,...ACCESSORIES]){const data=JSON.parse(await readFile('dist/'+assets.manifest.assets[item.asset].url,'utf8')),group=new THREE.Group();group.name=item.asset;group.userData.bounds=data.bounds;for(const part of data.parts){const geo=new THREE.BufferGeometry();geo.setAttribute('position',new THREE.Float32BufferAttribute(part.positions,3));geo.setIndex(part.indices);const mesh=new THREE.Mesh(geo,new THREE.MeshStandardMaterial());mesh.name=part.name;group.add(mesh)}assets.models.set(item.asset,group);if(item.rig)assets.rigs.set(item.asset,JSON.parse(await readFile('dist/'+item.rig,'utf8')))}
-test('expanded full hero roster supports animated body poses and socket-fitted head/back accessories',()=>{assert.equal(HEROES.length,24);assert.equal(ACCESSORIES.length,20);for(const hero of HEROES){assert.equal(hero.isNano,false);const actor=createHeroActor(assets,{hero:hero.id,head:'pirate-hat',back:'rocket-pack'});assert.ok(actor.body.userData.animation);for(const pose of [{},{moving:true},{crouch:1},{slide:1},{firing:true},{melee:.85}]){for(let i=0;i<15;i++)actor.update(.016,pose);actor.root.updateMatrixWorld(true);actor.body.userData.animation.skeleton.update();for(const gear of actor.gear){assert.ok(gear.object.position.toArray().every(Number.isFinite));assert.ok(gear.object.position.length()<3)}actor.body.traverse(mesh=>{if(mesh.isSkinnedMesh){for(let v=0;v<mesh.geometry.attributes.position.count;v+=100){const position=new THREE.Vector3();mesh.getVertexPosition(v,position);assert.ok(position.toArray().every(Number.isFinite));assert.ok(position.length()<6)}}})}actor.update(.016,{firstPerson:true});assert.equal(actor.root.visible,false,'the local full-body mesh is hidden in first person');assert.ok(actor.gear.every(g=>!g.object.visible));for(const pose of [{moving:true},{crouch:1},{slide:1},{firing:true},{melee:.8}]){actor.update(.016,{...pose,firstPerson:true});assert.equal(actor.root.visible,false)}actor.update(.016,{firstPerson:false});assert.equal(actor.root.visible,true,'third-person and remote heroes remain visible');assert.ok(actor.gear.every(g=>g.object.visible));actor.dispose()}assert.equal(validateOperative({hero:'missing',head:'rocket-pack'}).head,'none')});
+test('expanded full hero roster supports animated body poses and socket-fitted head/back accessories',()=>{assert.equal(HEROES.length,24);assert.equal(ACCESSORIES.length,21);for(const hero of HEROES){assert.equal(hero.isNano,false);const actor=createHeroActor(assets,{hero:hero.id,head:'pirate-hat',back:'rocket-pack'});assert.ok(actor.body.userData.animation);for(const pose of [{},{moving:true},{crouch:1},{slide:1},{firing:true},{melee:.85}]){for(let i=0;i<15;i++)actor.update(.016,pose);actor.root.updateMatrixWorld(true);actor.body.userData.animation.skeleton.update();for(const gear of actor.gear){assert.ok(gear.object.position.toArray().every(Number.isFinite));assert.ok(gear.object.position.length()<3)}actor.body.traverse(mesh=>{if(mesh.isSkinnedMesh){for(let v=0;v<mesh.geometry.attributes.position.count;v+=100){const position=new THREE.Vector3();mesh.getVertexPosition(v,position);assert.ok(position.toArray().every(Number.isFinite));assert.ok(position.length()<6)}}})}actor.update(.016,{firstPerson:true});assert.equal(actor.root.visible,false,'the local full-body mesh is hidden in first person');assert.ok(actor.gear.every(g=>!g.object.visible));for(const pose of [{moving:true},{crouch:1},{slide:1},{firing:true},{melee:.8}]){actor.update(.016,{...pose,firstPerson:true});assert.equal(actor.root.visible,false)}actor.update(.016,{firstPerson:false});assert.equal(actor.root.visible,true,'third-person and remote heroes remain visible');assert.ok(actor.gear.every(g=>g.object.visible));actor.dispose()}assert.equal(validateOperative({hero:'missing',head:'rocket-pack'}).head,'none')});
+
+test('Nergal Tendrils load on selection, animate on every hero and stay hidden in first person',async()=>{
+ const library=new AssetLibrary();library.manifest=assets.manifest;library.models=assets.models;
+ const originalFetch=globalThis.fetch,requests=[];
+ globalThis.fetch=async url=>{requests.push(url);return {ok:true,json:async()=>JSON.parse(await readFile('dist/'+url,'utf8'))}};
+ try{
+  const selection={hero:HEROES[0].id,back:'nergal-tendrils'};
+  const config=await ensureOperativeAssets(library,selection);
+  assert.equal(config.back,selection.back);
+  assert.deepEqual(new Set(requests),new Set([`assets/animations/${HEROES[0].asset}.json`,'assets/animations/accessory-nergal-tendrils.json']));
+  await ensureOperativeAssets(library,selection);
+  await ensureOperativeAssets(library,{...selection,back:'rocket-pack'});
+  assert.equal(requests.length,2,'cached rigs are reused and static backpacks do not request rigs');
+ }finally{globalThis.fetch=originalFetch}
+ const template=assets.models.get('accessory-nergal-tendrils'),source=Array.from(template.children[0].geometry.attributes.position.array);
+ for(const hero of HEROES){
+  const actor=createHeroActor(assets,{hero:hero.id,back:'nergal-tendrils'}),gear=actor.gear[0].object,controller=gear.userData.animation,meshes=[];
+  assert.ok(controller,'the source accessory has an independent animation controller');
+  gear.traverse(mesh=>{if(mesh.isSkinnedMesh)meshes.push(mesh)});assert.ok(meshes.length);
+  const sample=()=>{actor.root.updateMatrixWorld(true);controller.skeleton.update();const values=[];for(const mesh of meshes)for(let v=0;v<mesh.geometry.attributes.position.count;v+=23){const point=mesh.getVertexPosition(v,new THREE.Vector3());assert.ok(point.toArray().every(Number.isFinite));values.push(...point.toArray())}return values};
+  actor.update(0,{});const before=sample();
+  for(let i=0;i<30;i++)actor.update(1/60,{moving:true,sprinting:true});
+  const after=sample();assert.ok(before.some((v,i)=>Math.abs(v-after[i])>1e-5),'original tentacle vertices move independently of the hero');
+  for(const pose of [{crouch:1},{slide:1},{firing:true},{melee:.8}]){actor.update(.016,pose);sample();const size=new THREE.Box3().setFromObject(gear,true).getSize(new THREE.Vector3());assert.ok(Math.max(...size.toArray())<1.8,'animated tentacles stay at wearable scale');assert.ok(gear.position.length()<2.5)}
+  actor.update(.016,{firstPerson:true});assert.equal(actor.root.visible,false);assert.equal(gear.visible,false);
+  actor.update(.016,{firstPerson:false});assert.equal(gear.visible,true);actor.dispose();
+ }
+ assert.deepEqual(Array.from(template.children[0].geometry.attributes.position.array),source,'shared source mesh stays unchanged');
+});

@@ -37,6 +37,6 @@ export class AssetLibrary {
     if(uniqueMaterials)object.traverse(o=>{if(o.isMesh)o.material=Array.isArray(o.material)?o.material.map(cloneMaterial):cloneMaterial(o.material)});
     return object;
   }
-  async ensureRig(id){if(this.rigs.has(id))return this.rigs.get(id);if(this.rigPromises.has(id))return this.rigPromises.get(id);if(!id.startsWith('nano-')&&!id.startsWith('enemy-')&&!id.startsWith('hero-'))return null;const promise=fetch(`assets/animations/${id}.json`).then(r=>{if(!r.ok)throw new Error(`Missing original rig: ${id}`);return r.json()}).then(rig=>{this.rigs.set(id,rig);return rig});this.rigPromises.set(id,promise);return promise}
+  async ensureRig(id){if(this.rigs.has(id))return this.rigs.get(id);if(this.rigPromises.has(id))return this.rigPromises.get(id);if(!id.startsWith('nano-')&&!id.startsWith('enemy-')&&!id.startsWith('hero-')&&!(id.startsWith('accessory-')&&this.manifest.animations?.[id]))return null;const promise=fetch(`assets/animations/${id}.json`).then(r=>{if(!r.ok)throw new Error(`Missing original rig: ${id}`);return r.json()}).then(rig=>{this.rigs.set(id,rig);return rig});this.rigPromises.set(id,promise);return promise}
   surface(name,repeatX=1,repeatZ=1){const source=this.manifest.surfaces[name];if(!source)return null;const t=this.textures.get(source.map).clone();t.wrapS=t.wrapT=THREE.RepeatWrapping;t.repeat.set(repeatX,repeatZ);t.needsUpdate=true;return t}
 }

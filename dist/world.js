@@ -12,7 +12,7 @@ import { groundHeight,activeMap } from './layout.js';
 import { buildEnvironment } from './environment.js';
 import { updateCompanion,selectCompanion } from './companions.js';
 import {RemotePlayers} from './remote-players.js';
-import {createHeroActor,HEROES} from './avatars.js';
+import {ensureOperativeAssets,createHeroActor,HEROES} from './avatars.js';
 import { ViewModelMotion } from './viewmodel.js';
 import { createFirstPersonArms } from './first-person-arms.js';
 import { WEAPONS, ENEMY_TYPES } from './simulation.js';
@@ -37,7 +37,7 @@ export function buildWorld(canvas,assets){
   const heroMeleeModels={},heroPresentations={},heroMeleePresentations={};
   let operative=null,operativeGeneration=0,thirdPerson=false;const playerEye=new THREE.Vector3(),heroGunRoot=new THREE.Group(),heroGunModels={};scene.add(heroGunRoot);const heroFlash=new THREE.Sprite(new THREE.SpriteMaterial({map:glow,color:'#d8f7ff',transparent:true,opacity:0,depthWrite:false,blending:THREE.AdditiveBlending}));heroFlash.position.set(0,.15,.5);heroFlash.scale.set(.3,.3,1);heroGunRoot.add(heroFlash);for(const [id,w]of Object.entries(WEAPONS)){const held=createHeldWeapon(assets,id,w),m=held.root;heroPresentations[id]=held;m.visible=false;heroGunRoot.add(m);heroGunModels[id]=m}
   for(const [id,cfg]of Object.entries(MELEE_WEAPONS)){if(!cfg.asset)continue;const held=createHeldWeapon(assets,id,cfg),model=held.root;heroMeleePresentations[id]=held;model.visible=false;heroGunRoot.add(model);heroMeleeModels[id]=model}
-  async function setOperative(config){const generation=++operativeGeneration,hero=HEROES.find(h=>h.id===config.hero)||HEROES[0];await assets.ensureRig(hero.asset);if(generation!==operativeGeneration)return;operative?.dispose();operative=createHeroActor(assets,{...config,hero:hero.id});scene.add(operative.root);operative.root.visible=false;arms.setHero(assets,hero)}
+  async function setOperative(config){const generation=++operativeGeneration,hero=HEROES.find(h=>h.id===config.hero)||HEROES[0];await ensureOperativeAssets(assets,config);if(generation!==operativeGeneration)return;operative?.dispose();operative=createHeroActor(assets,{...config,hero:hero.id});scene.add(operative.root);operative.root.visible=false;arms.setHero(assets,hero)}
   const meleeRoot=new THREE.Group(),meleeModels={};viewScene.add(meleeRoot);for(const [id,cfg]of Object.entries(MELEE_WEAPONS)){if(!cfg.asset)continue;const model=assets.model(cfg.asset,{height:cfg.style==='heavy'?.7:.85});model.visible=false;model.position.y=-.07;meleeRoot.add(model);meleeModels[id]=model}let meleeClock=99,meleeId='fists';
   let currentGun='pistol';gunModels.pistol.visible=true;gunGroup.position.set(.28,-.44,-.67);
   const companionModels=[],menuModels=[];

@@ -2,7 +2,7 @@
 
 ## Heroes and accessories
 
-The Operative menu offers 24 original full-size NPC hero bodies and 20 original head/back accessories. They are separate from Nano models. Select a hero, choose a head item and back item, inspect the animated preview, then commit with **Use This Operative**. Cancel preserves the previous selection. The character uses original walk/run/idle clips, with authored bone posing for crouch, slide and firearm readiness. First-person arms match the selected outfit; the full body is hidden in first person to prevent cropped legs and camera intersections. F5 or H toggles a third-person camera that pulls inward near walls. Accessories appear in third person and in the preview.
+The Operative menu offers 24 original full-size NPC hero bodies and 21 original head/back accessories. They are separate from Nano models. Select a hero, choose a head item and back item, inspect the animated preview, then commit with **Use This Operative**. Cancel preserves the previous selection. The character uses original walk/run/idle clips, with authored bone posing for crouch, slide and firearm readiness. First-person arms match the selected outfit; the full body is hidden in first person to prevent cropped legs and camera intersections. F5 or H toggles a third-person camera that pulls inward near walls. Accessories appear in third person and in the preview.
 
 The head/back items follow original skeleton sockets with authored fitting offsets. Their fit and the new player movement are adaptations rather than recovered original player-controller animations. Gear is cosmetic; Nano selections continue to determine abilities.
 
@@ -86,7 +86,7 @@ Automated checks cover movement transitions, collision, slide cancellation, box 
 
 ## Field kit and deployment hub update
 
-The initial screen now centers the operative preview, with Operative, Field Kit and Nano Squad tabs. The expanded source roster has 24 heroes and 20 accessories. Field Kit validates six starter sidearms and the katana/hammer/bat; selections persist locally and join the LAN profile. New matches initialize the server player's actual starter weapon and melee ID from that validated profile. Stronger wall guns and supply-box rolls retain the existing two-firearm inventory.
+The initial screen now centers the operative preview, with Operative, Field Kit and Nano Squad tabs. The expanded source roster has 24 heroes and 21 accessories. Field Kit validates six starter sidearms and the katana/hammer/bat; selections persist locally and join the LAN profile. New matches initialize the server player's actual starter weapon and melee ID from that validated profile. Stronger wall guns and supply-box rolls retain the existing two-firearm inventory.
 
 Melee starts a visible windup before server/solo damage. Sword: 110 damage / 3.4m / 0.85s recovery. Hammer: 190 / 3m / 1.35s. Bat: 80 / 3.1m / 0.58s. Arcs, line of sight, floors, stun, cooldown and firing lockout apply. Hits are awarded after the windup, rather than instantly when V is pressed. Gameplay timing is an FPS adaptation around original weapon art.
 

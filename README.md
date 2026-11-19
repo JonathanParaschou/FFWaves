@@ -1,6 +1,6 @@
 # FusionFall: Last Signal
 
-A browser wave-survival FPS with 24 original FusionFall heroes, 20 accessories,
+A browser wave-survival FPS with 24 original FusionFall heroes, 21 accessories,
 44 Nanos, forty guns, three melee weapons and original effects. The main map is now
 Dexlabs Bunker, a measured Nacht reconstruction; four earlier maps remain as
 optional legacy prototypes.

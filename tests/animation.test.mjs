@@ -12,7 +12,7 @@ for(const file of await readdir('dist/assets/animations')){
  const object=createAnimatedModel(template,rig),controller=object.userData.animation;
  assert.ok(rig.validation.originalClips&&rig.validation.originalSkin,rig.id+' uses original animation data');
  assert.equal(rig.bones.length,rig.boneInverses.length);
- assert.ok(controller.clips.length>=2,rig.id+' has original idle/action clips');
+ assert.ok(controller.clips.length>=(rig.id.startsWith('accessory-')?1:2),rig.id+' retains its original animation clips');
  const meshes=[];object.traverse(o=>{if(o.isSkinnedMesh)meshes.push(o)});
  assert.ok(meshes.length>0,rig.id+' creates actual SkinnedMesh parts');
  const limit=Math.max(...data.bounds.size)*5+1;
@@ -24,5 +24,5 @@ for(const file of await readdir('dist/assets/animations')){
  object.position.set(15,2,-20);object.scale.setScalar(2);sampled();
  controller.dispose();rigs++;originalClips+=rig.clips.length;
 }
-const manifest=JSON.parse(await readFile('dist/assets/manifest.json','utf8'));assert.equal(rigs,Object.keys(manifest.assets).filter(id=>id.startsWith('nano-')||id.startsWith('enemy-')||id.startsWith('hero-')).length);
+const manifest=JSON.parse(await readFile('dist/assets/manifest.json','utf8'));assert.equal(rigs,Object.keys(manifest.animations).length);
 console.log(`Validated ${rigs} original rigs, ${skinnedParts} skinned mesh parts and ${originalClips} clips through Three.js bone deformation.`);
