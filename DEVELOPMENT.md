@@ -229,6 +229,13 @@ real-Redis integration skipped when unconfigured. Eighty offline source-pose
 views were inspected; live browser rendering, balance and performance still
 need a play session. No external deployment is performed by packaging the repo.
 
+Wave-transition tests classify elites through the roster instead of requiring
+one particular randomly selected monster. The simulation regression exercises
+both selection extremes at rounds 4, 5, 10 and 20, checks reward/intermission
+behavior and the 0/1/2/3 elite counts, and captures the complete queue at the
+wave event before spawning consumes it. Restore mocked randomness after each
+case so other tests keep their normal behavior.
+
 ## Animated wearable accessories
 
 Nergal Tendrils adds the first separately animated back accessory. Use

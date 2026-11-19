@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { Survival, WEAPONS } from '../dist/simulation.js';
+import { Survival, WEAPONS, ENEMY_TYPES } from '../dist/simulation.js';
 import { OutpostLayout, FlowField, STATIONS, SPAWNS, distance } from '../dist/layout.js';
 function run(){const s=new Survival();s.start();s.intermission=999;return s}
 function tick(s,seconds,input={x:0,z:0}){for(let t=0;t<seconds;t+=.025)s.update(.025,input)}
@@ -16,7 +16,28 @@ test('Dee Dee damages only enemies in range and does not award gun hit credits',
 test('damage invulnerability, armor, emergency revive, and final death',()=>{let result;const s=new Survival({finish:r=>result=r});s.start();s.intermission=999;s.player.armor=75;s.hurt(50,{x:0,z:0});assert.equal(s.player.hp,80);assert.equal(s.player.armor,45);assert.equal(s.hurt(50,{x:0,z:0}),false);s.player.invuln=0;s.player.armor=0;s.hurt(200,{x:0,z:0});assert.equal(s.player.revives,0);assert.equal(s.player.hp,55);assert.equal(s.phase,'playing');assert.equal(s.player.invuln,5);s.player.invuln=0;s.hurt(200,{x:0,z:0});assert.equal(s.phase,'result');assert.equal(result.victory,false)});
 test('telegraphed melee waits for windup and can miss when the player retreats',()=>{const s=run();s.wave=1;s.player.x=-30;s.player.z=28;const e=s.spawn('spawn');Object.assign(e,{x:-30,z:27,attackCooldown:0});tick(s,.1);assert.equal(e.state,'windup');assert.equal(s.player.hp,100);s.player.z=33;tick(s,.8);assert.equal(s.player.hp,100);assert.equal(e.state,'recover')});
 test('regeneration waits six seconds after damage and pause freezes all simulation',()=>{const s=run();s.hurt(40,{x:0,z:0});tick(s,5.9);assert.equal(s.player.hp,60);tick(s,1.1);assert.ok(s.player.hp>60);s.phase='paused';const before={time:s.elapsed,x:s.player.x,hp:s.player.hp};tick(s,2,{x:1,z:0});assert.deepEqual({time:s.elapsed,x:s.player.x,hp:s.player.hp},before)});
-test('wave clear rewards once, intermission progresses, elites spawn every fifth wave',()=>{let cleared=0;const s=new Survival({waveClear:()=>cleared++});s.start();s.wave=4;s.intermission=0;s.spawnQueue=[];s.enemies=[];tick(s,.025);assert.equal(cleared,1);const credits=s.player.credits;tick(s,1);assert.equal(cleared,1);assert.equal(s.player.credits,credits);tick(s,10.2);assert.equal(s.wave,5);assert.ok(s.spawnQueue.includes('asphalt'))});
+test('wave clear rewards once, intermission progresses, elites spawn every fifth wave',t=>{
+ for(const randomValue of [0,.999999]){
+  const random=t.mock.method(Math,'random',()=>randomValue);
+  try{
+   for(const [previousWave,expectedElites]of [[3,0],[4,1],[9,2],[19,3]]){
+    let cleared=0;const waves=[];
+    const s=new Survival({waveClear:()=>cleared++,wave:wave=>waves.push({wave,queue:[...s.spawnQueue]})});
+    s.start();s.wave=previousWave;s.intermission=0;s.spawnQueue=[];s.enemies=[];
+    const before=s.player.credits;tick(s,.025);
+    assert.equal(cleared,1);assert.equal(s.player.credits,before+150+previousWave*25);
+    const credits=s.player.credits;tick(s,1);
+    assert.equal(cleared,1);assert.equal(s.player.credits,credits);
+    tick(s,10.2);assert.equal(s.wave,previousWave+1);assert.equal(waves.length,1);
+    // Read the complete plan at the wave event, before live spawning consumes it.
+    const {wave,queue}=waves[0],elites=queue.filter(id=>ENEMY_TYPES[id].elite);
+    assert.equal(wave,s.wave);assert.equal(elites.length,expectedElites,`wave ${wave}, random ${randomValue}`);
+    for(const id of elites){const cfg=ENEMY_TYPES[id];assert.ok(cfg.fromWave<=wave&&(!cfg.toWave||wave<=cfg.toWave),`${id} is eligible for wave ${wave}`)}
+    assert.equal(cleared,1);assert.equal(s.player.credits,credits);
+   }
+  }finally{random.mock.restore()}
+ }
+});
 test('extraction stays locked until wave 10 is cleared and victory is terminal',()=>{let result;const s=new Survival({finish:r=>result=r});s.start();s.layout.unlock('yard');s.layout.unlock('garden');s.power=true;assert.equal(s.interact(at(s,'evac')),false);s.wave=10;s.intermission=0;s.spawnQueue=[];s.enemies=[];s.update(.025,{x:0,z:0});assert.ok(s.extraction);assert.ok(s.interact(at(s,'evac')));assert.equal(s.phase,'result');assert.ok(result.victory)});
 test('all stations and spawn entrances are reachable after their gates unlock',()=>{const layout=new OutpostLayout(),flow=new FlowField(layout);flow.update({x:-25,z:30});for(const s of STATIONS.filter(s=>s.zone===0))assert.ok(flow.field[flow.index(s.x,s.z)]>=0,s.id);for(const s of SPAWNS.filter(s=>s.zone!==0))assert.equal(flow.field[flow.index(s.x,s.z)],-1);layout.unlock('yard');layout.unlock('garden');flow.update({x:-25,z:30});for(const s of [...STATIONS,...SPAWNS])assert.ok(flow.field[flow.index(s.x,s.z)]>=0,s.id||JSON.stringify(s));});
 test('collision blocks sprint tunneling and bounds while leaving gates usable',()=>{const layout=new OutpostLayout(),p={x:1,z:25};layout.move(p,12,0,.42);assert.ok(p.x<4);layout.unlock('yard');layout.move(p,12,0,.42);assert.ok(p.x>6);const outside={x:-50,z:0};layout.move(outside,-100,0,.42);assert.ok(outside.x>=-52+.42)});
